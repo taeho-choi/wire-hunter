@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UE4CPP\\TestProject\\Source\\TestProject\\TestProject.Build.cs",
+		"D:\\UE4CPP\\TestProject\\Source\\TestProject.Target.cs",
+		"D:\\UE4CPP\\TestProject\\Source\\TestProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}

@@ -1,0 +1,11 @@
+﻿  Building TestProjectEditor...
+  Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 12 processes...
+    [1/4] PawnWithCamera.cpp
+    [2/4] UE4Editor-TestProject-0021.lib
+       D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Development\TestProject\UE4Editor-TestProject-0021.lib ���̺귯�� �� D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Development\TestProject\UE4Editor-TestProject-0021.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [3/4] UE4Editor-TestProject-0021.dll
+       D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Development\TestProject\UE4Editor-TestProject-0021.suppressed.lib ���̺귯�� �� D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Development\TestProject\UE4Editor-TestProject-0021.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [4/4] TestProjectEditor.target
+  Total time in Parallel executor: 1.88 seconds
+  Total execution time: 2.82 seconds
