@@ -1,0 +1,7 @@
+D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Development\TestProject\Definitions.TestProject.h
+D:\UE4CPP\TestProject\Source\TestProject\PawnWithCamera.h
+D:\UE4CPP\TestProject\Intermediate\Build\Win64\UE4Editor\Inc\TestProject\PawnWithCamera.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine/Classes/GameFramework/SpringArmComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine/Classes/Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h

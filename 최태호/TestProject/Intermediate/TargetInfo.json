@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TestProject",
+			"Path": "D:\\UE4CPP\\TestProject\\Source\\TestProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TestProjectEditor",
+			"Path": "D:\\UE4CPP\\TestProject\\Source\\TestProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

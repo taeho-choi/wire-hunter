@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TestProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2B809D9A-969B-41E7-A872-74AE30B63062}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TestProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TestProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{215E07D0-FAAC-47AD-B9A3-EBDBC020EBDE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TestProject">
+      <UniqueIdentifier>{7F9181BA-5424-4A60-917A-E17886411853}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TestProject\PawnWithCamera.cpp">
+      <Filter>Source\TestProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestProject\PawnWithCamera.h">
+      <Filter>Source\TestProject</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\TestProject\TestProject.Build.cs">
+      <Filter>Source\TestProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TestProject\TestProject.cpp">
+      <Filter>Source\TestProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestProject\TestProject.h">
+      <Filter>Source\TestProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TestProject\TestProjectGameModeBase.cpp">
+      <Filter>Source\TestProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TestProject\TestProjectGameModeBase.h">
+      <Filter>Source\TestProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
