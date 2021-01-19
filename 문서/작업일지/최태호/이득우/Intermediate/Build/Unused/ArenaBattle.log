@@ -1,0 +1,15 @@
+﻿  Parsing headers for ArenaBattleEditor
+    Running UnrealHeaderTool "D:\UE4CPP\ArenaBattle\ArenaBattle.uproject" "D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\ArenaBattleEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\최태호\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for ArenaBattleEditor in 6.69469 seconds
+  Building ArenaBattleEditor...
+  Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 5 actions with 12 processes...
+    [1/5] MyAnimInstance.cpp
+    [2/5] MyAnimInstance.gen.cpp
+    [3/5] UE4Editor-ArenaBattle-0041.lib
+       D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0041.lib ���̺귯�� �� D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0041.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [4/5] UE4Editor-ArenaBattle-0041.dll
+       D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0041.suppressed.lib ���̺귯�� �� D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\UE4Editor-ArenaBattle-0041.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [5/5] ArenaBattleEditor.target
+  Total time in Parallel executor: 5.53 seconds
+  Total execution time: 13.24 seconds

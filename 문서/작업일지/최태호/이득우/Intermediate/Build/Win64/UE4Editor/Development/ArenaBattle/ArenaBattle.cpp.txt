@@ -1,0 +1,2 @@
+D:\UE4CPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h
+D:\UE4CPP\ArenaBattle\Source\ArenaBattle\ArenaBattle.h

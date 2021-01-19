@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ArenaBattle",
+			"Path": "D:\\UE4CPP\\ArenaBattle\\Source\\ArenaBattle.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ArenaBattleEditor",
+			"Path": "D:\\UE4CPP\\ArenaBattle\\Source\\ArenaBattleEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
