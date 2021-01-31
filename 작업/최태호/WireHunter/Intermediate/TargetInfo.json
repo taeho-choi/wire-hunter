@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "WireHunter",
+			"Path": "D:\\UE4CPP\\WireHunter\\Source\\WireHunter.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "WireHunterEditor",
+			"Path": "D:\\UE4CPP\\WireHunter\\Source\\WireHunterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

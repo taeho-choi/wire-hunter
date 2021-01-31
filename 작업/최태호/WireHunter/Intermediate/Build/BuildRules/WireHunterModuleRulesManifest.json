@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UE4CPP\\WireHunter\\Source\\WireHunter\\WireHunter.Build.cs",
+		"D:\\UE4CPP\\WireHunter\\Source\\WireHunter.Target.cs",
+		"D:\\UE4CPP\\WireHunter\\Source\\WireHunterEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}
