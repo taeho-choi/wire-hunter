@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "WireHunter",
-			"Path": "D:\\UE4CPP\\WireHunter\\Source\\WireHunter.Target.cs",
+			"Path": "C:\\Users\\최태호\\Desktop\\Wire_Hunter\\작업\\최태호\\WireHunter\\Source\\WireHunter.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "WireHunterEditor",
-			"Path": "D:\\UE4CPP\\WireHunter\\Source\\WireHunterEditor.Target.cs",
+			"Path": "C:\\Users\\최태호\\Desktop\\Wire_Hunter\\작업\\최태호\\WireHunter\\Source\\WireHunterEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
