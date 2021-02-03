@@ -7,7 +7,7 @@
 		{
 			"Name": "WireHunter",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "PostEngineInit"
 		}
 	]
 }
