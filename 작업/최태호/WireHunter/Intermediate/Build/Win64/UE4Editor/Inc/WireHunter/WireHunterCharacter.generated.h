@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WIREHUNTER_WireHunterCharacter_generated_h
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_SPARSE_DATA
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_RPC_WRAPPERS
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_INCLASS_NO_PURE_DECLS \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_SPARSE_DATA
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWireHunterCharacter(); \
 	friend struct Z_Construct_UClass_AWireHunterCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AWireHunterCharacter)
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_INCLASS \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesAWireHunterCharacter(); \
 	friend struct Z_Construct_UClass_AWireHunterCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AWireHunterCharacter)
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_STANDARD_CONSTRUCTORS \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWireHunterCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWireHunterCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_ENHANCED_CONSTRUCTORS \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AWireHunterCharacter(AWireHunterCharacter&&); \
@@ -58,33 +58,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWireHunterCharacter)
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AWireHunterCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AWireHunterCharacter, FollowCamera); } \
-	FORCEINLINE static uint32 __PPO__Wire() { return STRUCT_OFFSET(AWireHunterCharacter, Wire); }
+	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AWireHunterCharacter, FollowCamera); }
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_10_PROLOG
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_GENERATED_BODY_LEGACY \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_9_PROLOG
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_SPARSE_DATA \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_RPC_WRAPPERS \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_INCLASS \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_STANDARD_CONSTRUCTORS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_SPARSE_DATA \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_13_GENERATED_BODY \
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_SPARSE_DATA \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_INCLASS_NO_PURE_DECLS \
-	WireHunter_Source_WireHunter_WireHunterCharacter_h_13_ENHANCED_CONSTRUCTORS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_SPARSE_DATA \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	WireHunter_Source_WireHunter_WireHunterCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
