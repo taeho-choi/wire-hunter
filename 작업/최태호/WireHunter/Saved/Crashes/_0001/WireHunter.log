@@ -1,0 +1,6 @@
+Not using cached read wrapper
+ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+File appears to be in a newer version (4) of the file format that we can load (max version: 3).
+Message dialog closed, result: Ok, title: Message, text: File appears to be in a newer version (4) of the file format that we can load (max version: 3).
+Could not find a valid project file, the engine will exit now.
+Engine exit requested (reason: EngineExit() was called)

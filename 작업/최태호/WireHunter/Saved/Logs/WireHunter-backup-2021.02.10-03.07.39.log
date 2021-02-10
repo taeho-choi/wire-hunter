@@ -1,8 +1,8 @@
-﻿Log file open, 02/10/21 12:13:01
+﻿Log file open, 02/10/21 12:07:26
 LogInit: Display: Running engine for game: WireHunter
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.146641
+LogStats: Stats thread started at 0.155849
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -116,6 +116,7 @@ LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
 LogInit: Warning: Incompatible or missing module: WireHunter
 Running C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/조준현/Desktop/Wire_Hunter/작업/최태호/WireHunter/WireHunter.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Creating makefile for WireHunterEditor (.uproject file is newer)
 @progress push 5%
 @progress pop
 Building WireHunterEditor...
@@ -152,4 +153,4 @@ LogModuleManager: Shutting down and abandoning module SandboxFile (6)
 LogModuleManager: Shutting down and abandoning module PakFile (4)
 LogModuleManager: Shutting down and abandoning module RSA (3)
 LogExit: Exiting.
-Log file closed, 02/10/21 12:13:16
+Log file closed, 02/10/21 12:07:39

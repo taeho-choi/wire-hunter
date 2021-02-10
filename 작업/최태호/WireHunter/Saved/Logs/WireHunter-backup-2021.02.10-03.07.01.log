@@ -1,8 +1,8 @@
-﻿Log file open, 02/10/21 12:13:01
+﻿Log file open, 02/10/21 12:06:55
 LogInit: Display: Running engine for game: WireHunter
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.146641
+LogStats: Stats thread started at 0.146543
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -115,17 +115,6 @@ LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
 LogInit: Warning: Incompatible or missing module: WireHunter
-Running C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/조준현/Desktop/Wire_Hunter/작업/최태호/WireHunter/WireHunter.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
-@progress push 5%
-@progress pop
-Building WireHunterEditor...
-Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-Building 10 actions with 12 processes...
-  @progress 'Compiling C++ source code...' 0%
-  @progress 'Compiling C++ source code...' 10%
-  [1/10] SharedPCH.Engine.ShadowErrors.cpp
-  c1xx: fatal error C1083: ?????Ϸ? ?߰? ???? ?????? ?? ?? ?????ϴ?. 'C:\Users\조????Desktop\Wire_Hunter\??업\최태??WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch': Invalid argument
-LogInit: Warning: Still incompatible or missing module: WireHunter
 LogCore: Engine exit requested (reason: EngineExit() was called)
 LogExit: Preparing to exit.
 LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
@@ -152,4 +141,4 @@ LogModuleManager: Shutting down and abandoning module SandboxFile (6)
 LogModuleManager: Shutting down and abandoning module PakFile (4)
 LogModuleManager: Shutting down and abandoning module RSA (3)
 LogExit: Exiting.
-Log file closed, 02/10/21 12:13:16
+Log file closed, 02/10/21 12:07:01
