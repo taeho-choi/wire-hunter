@@ -1,16 +1,11 @@
-﻿  Parsing headers for WireHunterEditor
-    Running UnrealHeaderTool "D:\UE4CPP\WireHunter\WireHunter.uproject" "D:\UE4CPP\WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\WireHunterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\최태호\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for WireHunterEditor in 7.290372 seconds
-  Building WireHunterEditor...
+﻿  Building WireHunterEditor...
   Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 12 processes...
-    [1/6] HealthBar.gen.cpp
-    [2/6] HealthBar.cpp
-    [3/6] WireHunterCharacter.cpp
-    [4/6] UE4Editor-WireHunter-0027.lib
-       D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0027.lib ���̺귯�� �� D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0027.exp ��ü�� �����ϰ� �ֽ��ϴ�.
-    [5/6] UE4Editor-WireHunter-0027.dll
-       D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0027.suppressed.lib ���̺귯�� �� D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0027.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
-    [6/6] WireHunterEditor.target
-  Total time in Parallel executor: 15.57 seconds
-  Total execution time: 23.94 seconds
+  Building 4 actions with 12 processes...
+    [1/4] WireHunterCharacter.cpp
+    [2/4] UE4Editor-WireHunter-0004.lib
+       D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0004.lib ���̺귯�� �� D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0004.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [3/4] UE4Editor-WireHunter-0004.dll
+       D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0004.suppressed.lib ���̺귯�� �� D:\UE4CPP\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0004.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [4/4] WireHunterEditor.target
+  Total time in Parallel executor: 4.70 seconds
+  Total execution time: 5.64 seconds
