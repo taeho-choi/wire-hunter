@@ -11,15 +11,26 @@ class AWireHunterCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	/** Camera boom positioning the camera behind the character */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+		/** Camera boom positioning the camera behind the character */
+		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class USpringArmComponent* CameraBoom;
 
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* FollowCamera;
+		class UCameraComponent* FollowCamera;
+
+	UPROPERTY(VisibleAnywhere)
+		class UWidgetComponent* HealthWidget;
 public:
 	AWireHunterCharacter();
+
+	float GetHealth() const { return Health; }
+	void SetHealth(float val) { Health = val; }
+
+	float GetMaxHealth() const { return MaxHealth; }
+	void SetMaxHealth(float val) { MaxHealth = val; }
+
+
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -30,6 +41,12 @@ public:
 	float BaseLookUpRate;
 
 protected:
+
+	// Character's Status
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float Health;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float MaxHealth = 100;
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
