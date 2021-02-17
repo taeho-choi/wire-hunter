@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\practice.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{71434542-64A4-450B-A520-6884D96A9B58}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\practice.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\practiceEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{C091C3C3-3CFA-4C06-9863-335D79BA3331}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\practice">
+      <UniqueIdentifier>{5FB1B1C8-A776-4322-A454-E0630590C198}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\practice\Fountain.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\Fountain.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyActor.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyActor.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyAnimInstance.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyAnimInstance.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyCharacter.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyCharacter.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyGameModeBase.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyGameModeBase.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyPawn.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyPawn.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\MyPlayerController.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\MyPlayerController.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\practice\practice.Build.cs">
+      <Filter>Source\practice</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\practice\practice.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\practice.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\practiceCharacter.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\practiceCharacter.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\practice\practiceGameMode.cpp">
+      <Filter>Source\practice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\practice\practiceGameMode.h">
+      <Filter>Source\practice</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
