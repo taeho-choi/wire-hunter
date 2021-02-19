@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{70A5DE10-5928-432B-95BC-D82D7466E267}</UniqueIdentifier>
+      <UniqueIdentifier>{BD79EB5E-A6C8-4975-88D6-A1F657F92D80}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A98817EA-EC90-401F-96F0-2F205F7CB06E}</UniqueIdentifier>
+      <UniqueIdentifier>{CC68223B-5A78-4960-A357-2487AFB57BBA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{152BD56C-2ACB-489E-98E2-43438A326F8D}</UniqueIdentifier>
+      <UniqueIdentifier>{74DD1421-8742-4A65-B6B1-521FFE70DC2C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\HealthBar.cpp">
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\HealthBar.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\PickUp.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\PickUp.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <None Include="..\..\Source\WireHunter\WireHunter.Build.cs">
