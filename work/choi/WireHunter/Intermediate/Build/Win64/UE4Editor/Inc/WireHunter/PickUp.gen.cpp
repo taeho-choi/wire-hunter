@@ -27,14 +27,14 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 	DEFINE_FUNCTION(APickUp::execOnPlayerEnterPickupBox)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
-		P_GET_OBJECT(AActor,Z_Param_OtherActer);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
 		P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
 		P_GET_UBOOL(Z_Param_bFromSweep);
 		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->OnPlayerEnterPickupBox(Z_Param_OverlappedComp,Z_Param_OtherActer,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+		P_THIS->OnPlayerEnterPickupBox(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
 	void APickUp::StaticRegisterNativesAPickUp()
@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		struct PickUp_eventOnPlayerEnterPickupBox_Parms
 		{
 			UPrimitiveComponent* OverlappedComp;
-			AActor* OtherActer;
+			AActor* OtherActor;
 			UPrimitiveComponent* OtherComp;
 			int32 OtherBodyIndex;
 			bool bFromSweep;
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActer;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverlappedComp_MetaData[];
 #endif
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PickUp_eventOnPlayerEnterPickupBox_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherActer = { "OtherActer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PickUp_eventOnPlayerEnterPickupBox_Parms, OtherActer), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PickUp_eventOnPlayerEnterPickupBox_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OverlappedComp_MetaData[] = {
 		{ "EditInline", "true" },
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_bFromSweep,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherBodyIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherComp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherActer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OtherActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::NewProp_OverlappedComp,
 	};
 #if WITH_METADATA
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_WireHunter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APickUp_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox, "OnPlayerEnterPickupBox" }, // 542222504
+		{ &Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox, "OnPlayerEnterPickupBox" }, // 2528269816
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickUp_Statics::Class_MetaDataParams[] = {
@@ -222,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickUp, 3208911046);
+	IMPLEMENT_CLASS(APickUp, 2271829035);
 	template<> WIREHUNTER_API UClass* StaticClass<APickUp>()
 	{
 		return APickUp::StaticClass();

@@ -37,8 +37,10 @@ void APickUp::Tick(float DeltaTime)
 
 }
 
-void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActer, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+	TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 5.0f);
 	Destroy();
 }
 
