@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunter\\WireHunter.Build.cs",
-		"D:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunter.Target.cs",
-		"D:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunterEditor.Target.cs"
+		"C:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunter\\WireHunter.Build.cs",
+		"C:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunter.Target.cs",
+		"C:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunterEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.4"
 }
