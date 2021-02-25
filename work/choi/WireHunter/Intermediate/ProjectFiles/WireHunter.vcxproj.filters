@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1F4FBA71-FFDB-4715-A45E-C679B9471C59}</UniqueIdentifier>
+      <UniqueIdentifier>{B82FB971-3C55-45C3-A65A-7A3A77EB3EF0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9868064B-400A-42A6-A79B-FF2418592EFE}</UniqueIdentifier>
+      <UniqueIdentifier>{4859C80E-D3DB-424D-BA31-88219841464A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,30 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{4FD65AAB-8E99-40E8-AB97-62026677F1C4}</UniqueIdentifier>
+      <UniqueIdentifier>{911BE77C-44E5-4E28-A994-194E9F6E6284}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Bullet.cpp">
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\Bullet.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\EditorGameMode.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\EditorGameMode.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\EditorPawn.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\EditorPawn.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\EditorPlayerController.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\EditorPlayerController.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\HealthBar.cpp">
