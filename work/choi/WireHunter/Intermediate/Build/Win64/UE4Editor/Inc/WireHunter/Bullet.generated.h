@@ -58,7 +58,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABullet); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABullet)
 
 
-#define WireHunter_Source_WireHunter_Bullet_h_12_PRIVATE_PROPERTY_OFFSET
+#define WireHunter_Source_WireHunter_Bullet_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CollisionComponent() { return STRUCT_OFFSET(ABullet, CollisionComponent); }
+
+
 #define WireHunter_Source_WireHunter_Bullet_h_9_PROLOG
 #define WireHunter_Source_WireHunter_Bullet_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

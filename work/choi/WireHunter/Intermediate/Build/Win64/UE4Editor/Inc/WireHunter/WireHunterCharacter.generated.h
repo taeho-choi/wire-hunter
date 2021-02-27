@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define WIREHUNTER_WireHunterCharacter_generated_h
 
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_SPARSE_DATA
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWireHunterCharacter(); \
@@ -63,7 +71,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AWireHunterCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__HealthWidget() { return STRUCT_OFFSET(AWireHunterCharacter, HealthWidget); } \
 	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(AWireHunterCharacter, Health); } \
-	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(AWireHunterCharacter, MaxHealth); }
+	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(AWireHunterCharacter, MaxHealth); } \
+	FORCEINLINE static uint32 __PPO__MuzzleOffset() { return STRUCT_OFFSET(AWireHunterCharacter, MuzzleOffset); } \
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AWireHunterCharacter, ProjectileClass); }
 
 
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_9_PROLOG
