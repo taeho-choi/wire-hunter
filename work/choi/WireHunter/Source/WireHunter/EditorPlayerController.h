@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "EditorPlayerController.generated.h"
 
@@ -14,4 +14,6 @@ class WIREHUNTER_API AEditorPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void OnPossess(APawn* InPawn) override;
 };

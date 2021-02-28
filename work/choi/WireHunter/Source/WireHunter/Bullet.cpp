@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Bullet.h"
 #include "Engine/Classes/GameFramework/ProjectileMovementComponent.h"
 #include "Engine/Classes/Components/SphereComponent.h"
-#include "Bullet.h"
 
 // Sets default values
 ABullet::ABullet()
