@@ -16,4 +16,10 @@ class WIREHUNTER_API AEditorPlayerController : public APlayerController
 	
 public:
 	virtual void OnPossess(APawn* InPawn) override;
+	
+	float OriginalDistance;
+
+	FHitResult Hit;
+
+	virtual void Tick(float DeltaTime) override;
 };
