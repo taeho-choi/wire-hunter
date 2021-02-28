@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define WIREHUNTER_WireHunterCharacter_generated_h
 
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_SPARSE_DATA
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS
-#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
+#define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWireHunterCharacter(); \

@@ -88,8 +88,9 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-	/*UFUNCTION()
-		void Fire();*/
+
+	UFUNCTION()
+	void Fire();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 		FVector MuzzleOffset;
