@@ -61,7 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeEditorPlayerController() {}
 		0,
 		0,
 		0,
-		0x009002A4u,
+		0x008002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AEditorPlayerController_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AEditorPlayerController_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AEditorPlayerController()
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeEditorPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEditorPlayerController, 3333065077);
+	IMPLEMENT_CLASS(AEditorPlayerController, 2087072517);
 	template<> WIREHUNTER_API UClass* StaticClass<AEditorPlayerController>()
 	{
 		return AEditorPlayerController::StaticClass();

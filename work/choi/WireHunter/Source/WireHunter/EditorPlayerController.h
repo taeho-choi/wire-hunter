@@ -10,16 +10,39 @@
  * 
  */
 UCLASS()
-class WIREHUNTER_API AEditorPlayerController : public APlayerController
+class AEditorPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
 public:
 	virtual void OnPossess(APawn* InPawn) override;
 
+	virtual void Tick(float DeltaTime) override;
+
+	float GetOriginalDistance();
+
+	FHitResult GetHit();
+
+	bool GetGrabMode();
+
+	//UFUNCTION()
+	void Click();
+
+	void Release();
+
+	FVector GetRelativeGrabLocation();
+
+protected:
+	virtual void SetupInputComponent() override;
+
+private:
 	float OriginalDistance;
 
 	FHitResult Hit;
 
-	//virtual void Tick(float DeltaTime) override;
+	bool GrabMode;
+
+	FVector RelativeGrabLocation;
+
+	UPrimitiveComponent* GrabbedComp;
 };
