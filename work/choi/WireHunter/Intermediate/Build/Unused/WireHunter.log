@@ -1,8 +1,8 @@
 ﻿  Parsing headers for WireHunterEditor
     Running UnrealHeaderTool "D:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" "D:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\WireHunterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\최태호\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for WireHunterEditor in 7.6219404 seconds
+  Reflection code generated for WireHunterEditor in 9.1993562 seconds
   Building WireHunterEditor...
   Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 13 actions with 12 processes...
+  Building 11 actions with 12 processes...
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): warning MSB5021: 빌드가 취소되었으므로 작업 실행 파일 "cmd" 및 자식 프로세스를 종료합니다.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB4181: "Exec" 작업이 false를 반환했지만 오류를 기록하지 않았습니다.

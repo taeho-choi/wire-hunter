@@ -48,12 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "// End of APawn interface\n" },
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
-		{ "ToolTip", "End of APawn interface" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWireHunterCharacter, nullptr, "Fire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWireHunterCharacter, nullptr, "Fire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWireHunterCharacter_Fire_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AWireHunterCharacter_Fire()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -119,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_WireHunter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWireHunterCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AWireHunterCharacter_Fire, "Fire" }, // 1291470025
+		{ &Z_Construct_UFunction_AWireHunterCharacter_Fire, "Fire" }, // 3577139599
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::Class_MetaDataParams[] = {
@@ -134,14 +132,14 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, ProjectileClass), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, ProjectileClass), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData[] = {
 		{ "Category", "GamePlay" },
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset = { "MuzzleOffset", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset = { "MuzzleOffset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MaxHealth_MetaData[] = {
 		{ "Category", "Status" },
@@ -244,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWireHunterCharacter, 690427191);
+	IMPLEMENT_CLASS(AWireHunterCharacter, 1839118534);
 	template<> WIREHUNTER_API UClass* StaticClass<AWireHunterCharacter>()
 	{
 		return AWireHunterCharacter::StaticClass();

@@ -88,6 +88,8 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AWireHunterCharacter::OnResetVR);
+
+	InputComponent->BindAction("Fire", IE_Pressed, this, &AWireHunterCharacter::Fire);
 }
 
 
@@ -144,5 +146,34 @@ void AWireHunterCharacter::MoveRight(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
+	}
+}
+
+void AWireHunterCharacter::Fire()
+{
+	UE_LOG(LogTemp, Log, TEXT("ASFASSAAAAAAAAA"));
+	if (ProjectileClass)
+	{
+		FVector CameraLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+
+		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
+		FRotator MuzzleRotation = CameraRotation;
+
+		MuzzleRotation.Pitch += 10.0f;
+		UWorld* World = GetWorld();
+		if (World)
+		{
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			//SpawnParams.Instigator = Instigator;
+			ABullet* Projectile = World->SpawnActor<ABullet>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+			if (Projectile)
+			{
+				FVector LaunchDirection = MuzzleRotation.Vector();
+				Projectile->FireInDirection(LaunchDirection);
+			}
+		}
 	}
 }

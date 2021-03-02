@@ -83,19 +83,19 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
 
-	UFUNCTION()
-	void Fire();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
-	FVector MuzzleOffset;
-
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-	TSubclassOf<class ABullet> ProjectileClass;
-
 public:
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UFUNCTION()
+	void Fire();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
+		FVector MuzzleOffset;
+
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+		TSubclassOf<class ABullet> ProjectileClass;
 };
 
