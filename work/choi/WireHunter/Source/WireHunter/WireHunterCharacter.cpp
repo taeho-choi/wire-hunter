@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "WireHunterCharacter.h"
+#include "Kismet/GameplayStatics.h"
 #include "Bullet.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
@@ -11,6 +12,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/WidgetComponent.h"
 #include "HealthBar.h"
+#include "Particles/ParticleSystemComponent.h"
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -89,7 +91,8 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AWireHunterCharacter::OnResetVR);
 
-	InputComponent->BindAction("Fire", IE_Pressed, this, &AWireHunterCharacter::Fire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AWireHunterCharacter::StartFire);
+	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
 }
 
 
@@ -149,31 +152,35 @@ void AWireHunterCharacter::MoveRight(float Value)
 	}
 }
 
-void AWireHunterCharacter::Fire()
+void AWireHunterCharacter::StartFire()
 {
-	UE_LOG(LogTemp, Log, TEXT("ASFASSAAAAAAAAA"));
-	if (ProjectileClass)
+	FireShot();
+	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &AWireHunterCharacter::FireShot, TimerBetweenShots, true);
+
+	//애니메이션
+}
+
+void AWireHunterCharacter::StopFire()
+{
+	GetWorldTimerManager().ClearTimer(TimerHandle_HandleRefire);
+}
+
+void AWireHunterCharacter::FireShot()
+{
+	FHitResult Hit;
+
+	const float GunRange = 50000.f;
+	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
+	const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
+
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+
+	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
 	{
-		FVector CameraLocation;
-		FRotator CameraRotation;
-		GetActorEyesViewPoint(CameraLocation, CameraRotation);
-
-		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
-		FRotator MuzzleRotation = CameraRotation;
-
-		MuzzleRotation.Pitch += 10.0f;
-		UWorld* World = GetWorld();
-		if (World)
+		if (ImpactParticle)
 		{
-			FActorSpawnParameters SpawnParams;
-			SpawnParams.Owner = this;
-			//SpawnParams.Instigator = Instigator;
-			ABullet* Projectile = World->SpawnActor<ABullet>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
-			if (Projectile)
-			{
-				FVector LaunchDirection = MuzzleRotation.Vector();
-				Projectile->FireInDirection(LaunchDirection);
-			}
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
 		}
 	}
 }

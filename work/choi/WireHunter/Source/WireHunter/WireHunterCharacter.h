@@ -21,6 +21,8 @@ class AWireHunterCharacter : public ACharacter
 
 	UPROPERTY(VisibleAnywhere)
 		class UWidgetComponent* HealthWidget;
+
+
 public:
 	AWireHunterCharacter();
 
@@ -30,7 +32,11 @@ public:
 	float GetMaxHealth() const { return MaxHealth; }
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
+	class UParticleSystem* ImpactParticle;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+		float TimerBetweenShots;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -39,6 +45,7 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
 
 protected:
 
@@ -89,8 +96,11 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	UFUNCTION()
-	void Fire();
+	void StartFire();
+	void StopFire();
+	void FireShot();
+
+	FTimerHandle TimerHandle_HandleRefire;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 		FVector MuzzleOffset;
