@@ -12,19 +12,13 @@ void AEditorPlayerController::OnPossess(APawn* InPawn){
 	DefaultClickTraceChannel = ECollisionChannel::ECC_Visibility;
 	HitResultTraceDistance = 10000.f;
 
-	//UE_LOG(LogTemp, Warning, TEXT("Original Distance: %f"), OriginalDistance);
+	//OnClicked 함수 만들어서 거기에 1 넣기
 
-	GetHitResultUnderCursor(ECC_Visibility, false, Hit);
+	/*GetHitResultUnderCursor(ECC_Visibility, false, Hit);
 	if (Hit.bBlockingHit) {
 		OriginalDistance = Hit.Distance;
 		UE_LOG(LogTemp, Warning, TEXT("Original Distance: %f"), OriginalDistance);
-	}
-}
+	}.............................................................................1번*/
 
-void AEditorPlayerController::Tick(float DeltaTime) {
-	GetHitResultUnderCursor(ECC_Visibility, false, Hit);
-	if (Hit.bBlockingHit) {
-		OriginalDistance = Hit.Distance;
-		UE_LOG(LogTemp, Warning, TEXT("Original Distance: %f"), OriginalDistance);
-	}
+	//Onclicked는 충돌체에 넣는거?
 }
