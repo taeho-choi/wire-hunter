@@ -157,7 +157,7 @@ void AWireHunterCharacter::StartFire()
 	FireShot();
 	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &AWireHunterCharacter::FireShot, TimerBetweenShots, true);
 
-	//애니메이션
+	//애니메이션aa
 }
 
 void AWireHunterCharacter::StopFire()
