@@ -1,8 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "EditorPlayerController.h"
+#include "Kismet/KismetMathLibrary.h"
 
-void AEditorPlayerController::OnPossess(APawn* InPawn){
+void AEditorPlayerController::OnPossess(APawn* InPawn) {
 	Super::OnPossess(InPawn);
 
 	bShowMouseCursor = true;
@@ -25,13 +26,13 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 	if (GrabMode) {
 		FVector WorldLocation, WorldDirection;
 		DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
-		//UE_LOG(LogTemp, Warning, TEXT("Y: %f"), WorldLocation.Y);
+
 		auto TempLocation = WorldDirection * OriginalDistance + WorldLocation;
 		auto TempT = RelativeGrabLocation;
-		/*TempT를 트랜스폼으로 변환 후 TempLocation과 Inverse 한 뒤 
-		GrabbedComp->SetWorldLocation();*/
 
-		GrabbedComp->SetWorldLocation(WorldLocation, false, false);
+		auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
+
+		GrabbedComp->SetWorldLocation(newLocation, false, false);
 	}
 }
 
@@ -39,30 +40,24 @@ void AEditorPlayerController::Click() {
 	GetHitResultUnderCursor(ECC_Visibility, false, Hit);
 	if (Hit.bBlockingHit) {
 		GrabMode = true;
-		
+
 		OriginalDistance = Hit.Distance;
-		UE_LOG(LogTemp, Warning, TEXT("Original Distance: %f"), OriginalDistance);
 
 		GrabbedComp = Hit.GetComponent();
-		
-		////////////////////////////////////////////////////////////
 
 		auto TmpLocation = (FVector)Hit.Location;
-	
+
 		auto TmpT = GrabbedComp->GetComponentLocation();
 
-		/*TmpT를 트랜스폼으로 변환 후 TmpLocation과 inverse 한 뒤 
-		RelativeGrabLocation set*/
+		RelativeGrabLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TmpT), TmpLocation);
 	}
 }
 
 void AEditorPlayerController::Release() {
-	UE_LOG(LogTemp, Warning, TEXT("Release"));
-
 	GrabMode = false;
 }
 
-float AEditorPlayerController::GetOriginalDistance(){
+float AEditorPlayerController::GetOriginalDistance() {
 	return OriginalDistance;
 }
 
