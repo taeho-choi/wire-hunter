@@ -13,6 +13,8 @@ void AEditorPlayerController::OnPossess(APawn* InPawn) {
 	HitResultTraceDistance = 10000.f;
 
 	GrabMode = false;
+
+	ConsoleCommand("ShowFlag.Bones 1");
 }
 
 void AEditorPlayerController::SetupInputComponent() {

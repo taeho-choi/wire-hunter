@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeWireHunter_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x4477DE36,
-				0x7C8A1506,
+				0x90A34C36,
+				0x809A6C45,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
