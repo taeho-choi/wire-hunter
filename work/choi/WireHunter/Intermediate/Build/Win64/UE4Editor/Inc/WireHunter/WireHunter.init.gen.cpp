@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunter_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x90A34C36,
+				0xEBE61916,
 				0x809A6C45,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -2,6 +2,11 @@
 
 #include "EditorPlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
+//#include "Components/SceneComponent.h"
+
+AEditorPlayerController::AEditorPlayerController() {
+	PhysicsHandle = CreateDefaultSubobject<UPhysicsHandleComponent>(TEXT("Physics Handle"));
+}
 
 void AEditorPlayerController::OnPossess(APawn* InPawn) {
 	Super::OnPossess(InPawn);
@@ -31,10 +36,14 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 
 		auto TempLocation = WorldDirection * OriginalDistance + WorldLocation;
 		auto TempT = RelativeGrabLocation;
+		if (GrabbedComp->IsSimulatingPhysics()) {
+			PhysicsHandle->SetTargetLocation(TempLocation);
+		}
+		else {
+			auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
 
-		auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
-
-		GrabbedComp->SetWorldLocation(newLocation, false, false);
+			GrabbedComp->SetWorldLocation(newLocation, false, false);
+		}
 	}
 }
 
@@ -47,30 +56,25 @@ void AEditorPlayerController::Click() {
 
 		GrabbedComp = Hit.GetComponent();
 
-		auto TmpLocation = (FVector)Hit.Location;
+		BoneName = Hit.BoneName;
 
-		auto TmpT = GrabbedComp->GetComponentLocation();
+		if (GrabbedComp->IsSimulatingPhysics()) {
+			PhysicsHandle->GrabComponentAtLocation(GrabbedComp, BoneName, (FVector)Hit.Location);
+		}
+		else {
+			auto TmpLocation = (FVector)Hit.Location;
 
-		RelativeGrabLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TmpT), TmpLocation);
+			auto TmpT = GrabbedComp->GetComponentLocation();
+
+			RelativeGrabLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TmpT), TmpLocation);
+		}
 	}
 }
 
 void AEditorPlayerController::Release() {
+	if (GrabbedComp->IsSimulatingPhysics()) {
+		PhysicsHandle->ReleaseComponent();
+	}
+
 	GrabMode = false;
-}
-
-float AEditorPlayerController::GetOriginalDistance() {
-	return OriginalDistance;
-}
-
-FHitResult AEditorPlayerController::GetHit() {
-	return Hit;
-}
-
-bool AEditorPlayerController::GetGrabMode() {
-	return GrabMode;
-}
-
-FVector AEditorPlayerController::GetRelativeGrabLocation() {
-	return RelativeGrabLocation;
 }

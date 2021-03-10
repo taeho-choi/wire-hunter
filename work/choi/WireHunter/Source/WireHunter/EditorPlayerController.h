@@ -4,10 +4,11 @@
 
 #include "EngineMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
 #include "EditorPlayerController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class AEditorPlayerController : public APlayerController
@@ -15,22 +16,19 @@ class AEditorPlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
+	AEditorPlayerController();
+
 	virtual void OnPossess(APawn* InPawn) override;
 
 	virtual void Tick(float DeltaTime) override;
-
-	float GetOriginalDistance();
-
-	FHitResult GetHit();
-
-	bool GetGrabMode();
 
 	//UFUNCTION()
 	void Click();
 
 	void Release();
 
-	FVector GetRelativeGrabLocation();
+	UPROPERTY(VisibleAnywhere)
+		UPhysicsHandleComponent* PhysicsHandle;
 
 protected:
 	virtual void SetupInputComponent() override;
@@ -45,4 +43,6 @@ private:
 	FVector RelativeGrabLocation;
 
 	UPrimitiveComponent* GrabbedComp;
+
+	FName BoneName;
 };
