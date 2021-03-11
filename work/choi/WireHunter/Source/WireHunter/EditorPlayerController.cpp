@@ -58,6 +58,8 @@ void AEditorPlayerController::Click() {
 
 		BoneName = Hit.BoneName;
 
+		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
+
 		if (GrabbedComp->IsSimulatingPhysics()) {
 			PhysicsHandle->GrabComponentAtLocation(GrabbedComp, BoneName, (FVector)Hit.Location);
 		}
