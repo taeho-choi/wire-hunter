@@ -4,6 +4,7 @@
 #include "Kismet/KismetMathLibrary.h"
 //#include "Components/SceneComponent.h"
 
+
 AEditorPlayerController::AEditorPlayerController() {
 	PhysicsHandle = CreateDefaultSubobject<UPhysicsHandleComponent>(TEXT("Physics Handle"));
 }
@@ -36,19 +37,22 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 
 		auto TempLocation = WorldDirection * OriginalDistance + WorldLocation;
 		auto TempT = RelativeGrabLocation;
+
 		if (GrabbedComp->IsSimulatingPhysics()) {
 			PhysicsHandle->SetTargetLocation(TempLocation);
 		}
 		else {
 			auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
-
-			GrabbedComp->SetWorldLocation(newLocation, false, false);
+			//GrabbedComp->SetWorldLocation(newLocation, false, false);
+			AvatarHandle->SetBoneLocationByName(BoneName, newLocation, EBoneSpaces::WorldSpace);
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *newLocation.ToString());
 		}
 	}
 }
 
 void AEditorPlayerController::Click() {
 	GetHitResultUnderCursor(ECC_Visibility, false, Hit);
+
 	if (Hit.bBlockingHit) {
 		GrabMode = true;
 
@@ -57,6 +61,8 @@ void AEditorPlayerController::Click() {
 		GrabbedComp = Hit.GetComponent();
 
 		BoneName = Hit.BoneName;
+
+		AvatarHandle = Cast<UPoseableMeshComponent>(GrabbedComp->GetChildComponent(0));
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
 
@@ -74,9 +80,9 @@ void AEditorPlayerController::Click() {
 }
 
 void AEditorPlayerController::Release() {
+
 	if (GrabbedComp->IsSimulatingPhysics()) {
 		PhysicsHandle->ReleaseComponent();
 	}
-
 	GrabMode = false;
 }

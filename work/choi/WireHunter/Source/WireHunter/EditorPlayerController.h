@@ -5,6 +5,7 @@
 #include "EngineMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
+#include "Components/PoseableMeshComponent.h"
 #include "EditorPlayerController.generated.h"
 
 /**
@@ -45,4 +46,6 @@ private:
 	UPrimitiveComponent* GrabbedComp;
 
 	FName BoneName;
+
+	UPoseableMeshComponent* AvatarHandle;
 };
