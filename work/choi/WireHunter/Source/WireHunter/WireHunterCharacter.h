@@ -33,6 +33,22 @@ public:
 	float GetMaxHealth() const { return MaxHealth; }
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
+	FVector GetFloatingPos() const { return FloatingPos; }
+	void SetFloatingPos(FVector val) { FloatingPos = val; }
+
+	bool GetisClimbing() const { return isClimbing; }
+	void SetisClimbing(bool val) { isClimbing = val; }
+
+	FRotator GetFloatingRot() const { return FloatingRot; }
+	void SetFloatingRot(FRotator val) { FloatingRot = val; }
+
+	FVector GetWallUpVector() const { return WallUpVector; }
+	void SetWallUpVector(FVector val) { WallUpVector = val; }
+
+	FVector GetWallRightVector() const { return WallRightVector; }
+	void SetWallRightVector(FVector val) { WallRightVector = val; }
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
 	class UParticleSystem* ImpactParticle;
 
@@ -56,8 +72,23 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float MaxHealth = 100;
 
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		FVector FloatingPos;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		FRotator FloatingRot;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isClimbing = false;
+
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		FVector WallUpVector;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		FVector WallRightVector;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	// Called every frame
+	virtual void Tick(float DeltaSeconds) override;
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();

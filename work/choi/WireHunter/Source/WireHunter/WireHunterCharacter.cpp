@@ -60,6 +60,8 @@ void AWireHunterCharacter::BeginPlay()
 	HealthBar->SetOwnerCharacter(this);
 
 	Health = 55.f;
+
+	SetFloatingPos(GetActorLocation());
 }
 
 
@@ -93,6 +95,18 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AWireHunterCharacter::StartFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
+}
+
+void AWireHunterCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (GetisClimbing())
+	{
+		SetActorLocation(GetFloatingPos());
+		SetActorRotation(GetFloatingRot());
+	}
+	SetHealth(Health += 1);
 }
 
 
@@ -134,6 +148,11 @@ void AWireHunterCharacter::MoveForward(float Value)
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
+
+		if (GetisClimbing())
+		{
+			SetFloatingPos(GetFloatingPos() + (GetWallUpVector() * (Value * 3.f)));
+		}
 	}
 }
 
@@ -144,11 +163,16 @@ void AWireHunterCharacter::MoveRight(float Value)
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
-	
+
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
+
+		if (GetisClimbing())
+		{
+			SetFloatingPos(GetFloatingPos() + (GetWallRightVector() * (Value * -3.f)));
+		}
 	}
 }
 
