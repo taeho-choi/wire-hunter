@@ -45,7 +45,7 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 			auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
 			//GrabbedComp->SetWorldLocation(newLocation, false, false);
 			AvatarHandle->SetBoneLocationByName(BoneName, newLocation, EBoneSpaces::WorldSpace);
-			UE_LOG(LogTemp, Warning, TEXT("%s"), *newLocation.ToString());
+			
 		}
 	}
 }

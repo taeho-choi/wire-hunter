@@ -27,8 +27,9 @@ void AEditorDoll::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FString name = FString("neck_01");
+	/*FString name = FString("neck_01");
 	auto location = PM->GetBoneLocationByName(FName(*name), EBoneSpaces::WorldSpace);
-	auto newLocation = FVector(location.X, location.Y, location.Z);
-	PM->SetBoneLocationByName(FName(*name), newLocation, EBoneSpaces::WorldSpace);
+	auto newLocation = FVector(location.X+10.f, location.Y+10.f, location.Z+10.f);
+	PM->SetBoneLocationByName(FName(*name), newLocation, EBoneSpaces::WorldSpace);*/
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *location.ToString());
 }
