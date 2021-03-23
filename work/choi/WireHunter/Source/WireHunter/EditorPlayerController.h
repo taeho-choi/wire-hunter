@@ -48,4 +48,6 @@ private:
 	FName BoneName;
 
 	UPoseableMeshComponent* AvatarHandle;
+
+	FVector newLocation;
 };

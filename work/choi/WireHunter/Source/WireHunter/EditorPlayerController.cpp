@@ -3,7 +3,6 @@
 #include "EditorPlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
 //#include "Components/SceneComponent.h"
-#include "Components/SkeletalMeshComponent.h"
 
 
 AEditorPlayerController::AEditorPlayerController() {
@@ -43,10 +42,13 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 			PhysicsHandle->SetTargetLocation(TempLocation);
 		}
 		else {
-			auto newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
-			//GrabbedComp->SetWorldLocation(newLocation, false, false);
-			AvatarHandle->SetBoneLocationByName(BoneName, newLocation, EBoneSpaces::WorldSpace);
-			
+			newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
+			if (GrabbedComp->IsA(USkeletalMeshComponent::StaticClass())) {
+				AvatarHandle->SetBoneLocationByName(BoneName, newLocation, EBoneSpaces::WorldSpace);
+			}
+			else {
+				GrabbedComp->SetWorldLocation(newLocation, false, false);
+			}
 		}
 	}
 }
@@ -88,4 +90,6 @@ void AEditorPlayerController::Release() {
 		PhysicsHandle->ReleaseComponent();
 	}
 	GrabMode = false;
+
+	UE_LOG(LogTemp, Warning, TEXT("%s \n"), *newLocation.ToString());
 }
