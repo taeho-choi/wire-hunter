@@ -104,9 +104,8 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	if (GetisClimbing())
 	{
 		SetActorLocation(GetFloatingPos());
-		SetActorRotation(GetFloatingRot());
+		//SetActorRotation(GetFloatingRot());
 	}
-	SetHealth(Health += 1);
 }
 
 
@@ -207,4 +206,14 @@ void AWireHunterCharacter::FireShot()
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
 		}
 	}
+}
+
+void AWireHunterCharacter::LeftTurn()
+{
+
+}
+
+void AWireHunterCharacter::RightTurn()
+{
+
 }

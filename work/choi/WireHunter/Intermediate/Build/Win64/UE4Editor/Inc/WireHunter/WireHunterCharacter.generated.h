@@ -68,7 +68,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	FORCEINLINE static uint32 __PPO__FloatingRot() { return STRUCT_OFFSET(AWireHunterCharacter, FloatingRot); } \
 	FORCEINLINE static uint32 __PPO__isClimbing() { return STRUCT_OFFSET(AWireHunterCharacter, isClimbing); } \
 	FORCEINLINE static uint32 __PPO__WallUpVector() { return STRUCT_OFFSET(AWireHunterCharacter, WallUpVector); } \
-	FORCEINLINE static uint32 __PPO__WallRightVector() { return STRUCT_OFFSET(AWireHunterCharacter, WallRightVector); }
+	FORCEINLINE static uint32 __PPO__WallRightVector() { return STRUCT_OFFSET(AWireHunterCharacter, WallRightVector); } \
+	FORCEINLINE static uint32 __PPO__isTurningRight() { return STRUCT_OFFSET(AWireHunterCharacter, isTurningRight); } \
+	FORCEINLINE static uint32 __PPO__isTurningLeft() { return STRUCT_OFFSET(AWireHunterCharacter, isTurningLeft); } \
+	FORCEINLINE static uint32 __PPO__CanTurnRight() { return STRUCT_OFFSET(AWireHunterCharacter, CanTurnRight); } \
+	FORCEINLINE static uint32 __PPO__CanTurnLeft() { return STRUCT_OFFSET(AWireHunterCharacter, CanTurnLeft); }
 
 
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_10_PROLOG
