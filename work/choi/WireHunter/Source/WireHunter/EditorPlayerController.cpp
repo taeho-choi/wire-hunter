@@ -3,6 +3,7 @@
 #include "EditorPlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
 //#include "Components/SceneComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 
 
 AEditorPlayerController::AEditorPlayerController() {
@@ -62,7 +63,9 @@ void AEditorPlayerController::Click() {
 
 		BoneName = Hit.BoneName;
 
-		AvatarHandle = Cast<UPoseableMeshComponent>(GrabbedComp->GetChildComponent(0));
+		if (GrabbedComp->IsA(USkeletalMeshComponent::StaticClass())){
+			AvatarHandle = Cast<UPoseableMeshComponent>(GrabbedComp->GetChildComponent(0));
+		}
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
 

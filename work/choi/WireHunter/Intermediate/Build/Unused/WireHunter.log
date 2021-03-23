@@ -1,18 +1,11 @@
 ﻿  Building WireHunterEditor...
   Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-<<<<<<< Updated upstream
-  Building 28 actions with 12 processes...
-EXEC : [1/28] error : Unable to create child process
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: "C:\WINDOWS\System32\chcp.com 65001 >NUL 
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073:  "C:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" WireHunterEditor Win64 Development -Project="C:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).
-=======
   Building 4 actions with 12 processes...
     [1/4] EditorPlayerController.cpp
-    [2/4] UE4Editor-WireHunter-0018.lib
-       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0018.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0018.exp ��ü�� �����ϰ� �ֽ��ϴ�.
-    [3/4] UE4Editor-WireHunter-0018.dll
-       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0018.suppressed.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0018.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [2/4] UE4Editor-WireHunter-0002.lib
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0002.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0002.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [3/4] UE4Editor-WireHunter-0002.dll
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0002.suppressed.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0002.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
     [4/4] WireHunterEditor.target
-  Total time in Parallel executor: 2.99 seconds
-  Total execution time: 3.56 seconds
->>>>>>> Stashed changes
+  Total time in Parallel executor: 3.03 seconds
+  Total execution time: 3.54 seconds

@@ -2,10 +2,6 @@
 	"BuildId": "13144385",
 	"Modules": 
 	{
-<<<<<<< Updated upstream
-		"WireHunter": "UE4Editor-WireHunter.dll"
-=======
-		"WireHunter": "UE4Editor-WireHunter-0018.dll"
->>>>>>> Stashed changes
+		"WireHunter": "UE4Editor-WireHunter-1837.dll"
 	}
 }
