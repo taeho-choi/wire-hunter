@@ -2,8 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Components/PoseableMeshComponent.h"//
 #include "EditorPawn.generated.h"
 
 UCLASS()
@@ -19,11 +20,36 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+	void SetControlMode(int32 ControlMode);
+
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(VisibleAnywhere, Category = Visual)
+		UPoseableMeshComponent* Mesh;
+
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+		USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, Category = Camera)
+		UCameraComponent* Camera;
+
+private:
+	void LookUp(float NewAxisValue);
+
+	void Turn(float NewAxisValue);
+
+	void Yaw();
+
+	void Roll();
+
+	void Pitch();
+
+	void DoBig();
+
+	void DoSmall();
 };

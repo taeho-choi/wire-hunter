@@ -5,19 +5,18 @@
 #include "EngineMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
-#include "Components/PoseableMeshComponent.h"
 #include "EditorPlayerController.generated.h"
 
 /**
  *
  */
+
 UCLASS()
 class AEditorPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
 public:
-	AEditorPlayerController();
 
 	virtual void OnPossess(APawn* InPawn) override;
 
@@ -46,8 +45,6 @@ private:
 	UPrimitiveComponent* GrabbedComp;
 
 	FName BoneName;
-
-	UPoseableMeshComponent* AvatarHandle;
 
 	FVector newLocation;
 };
