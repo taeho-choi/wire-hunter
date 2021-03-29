@@ -170,7 +170,10 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (GetWallRightVector() * (Value * -3.f)));
+			if ((!LockRightClimb && Value > 0) || (!LockLeftClimb && Value < 0))
+			{
+				SetFloatingPos(GetFloatingPos() + (GetWallRightVector() * (Value * -3.f)));
+			}
 		}
 	}
 }

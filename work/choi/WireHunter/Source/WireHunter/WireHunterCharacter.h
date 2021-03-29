@@ -48,17 +48,11 @@ public:
 	FVector GetWallRightVector() const { return WallRightVector; }
 	void SetWallRightVector(FVector val) { WallRightVector = val; }
 
-	bool GetisTurningRight() const { return isTurningRight; }
-	void SetisTurningRight(bool val) { isTurningRight = val; }
+	bool GetLockRightClimb() const { return LockRightClimb; }
+	void SetLockRightClimb(bool val) { LockRightClimb = val; }
 
-	bool GetisTurningLeft() const { return isTurningLeft; }
-	void SetisTurningLeft(bool val) { isTurningLeft = val; }
-
-	bool GetCanTurnRight() const { return CanTurnRight; }
-	void SetCanTurnRight(bool val) { CanTurnRight = val; }
-
-	bool GetCanTurnLeft() const { return CanTurnLeft; }
-	void SetCanTurnLeft(bool val) { CanTurnLeft = val; }
+	bool GetLockLeftClimb() const { return LockLeftClimb; }
+	void SetLockLeftClimb(bool val) { LockLeftClimb = val; }
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
@@ -97,13 +91,9 @@ protected:
 		FVector WallRightVector;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isTurningRight = false;
+		bool LockRightClimb = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isTurningLeft = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool CanTurnRight = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool CanTurnLeft = false;
+		bool LockLeftClimb = false;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
