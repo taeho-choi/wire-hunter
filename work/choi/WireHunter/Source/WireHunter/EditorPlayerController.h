@@ -5,6 +5,7 @@
 #include "EngineMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
+#include "Components/PoseableMeshComponent.h"
 #include "EditorPlayerController.generated.h"
 
 /**
@@ -27,13 +28,12 @@ public:
 
 	void Release();
 
-	UPROPERTY(VisibleAnywhere)
-		UPhysicsHandleComponent* PhysicsHandle;
-
 protected:
 	virtual void SetupInputComponent() override;
 
 private:
+	UPhysicsHandleComponent* PhysicsHandle;
+
 	float OriginalDistance;
 
 	FHitResult Hit;
@@ -46,5 +46,11 @@ private:
 
 	FName BoneName;
 
-	FVector newLocation;
+	FVector NewLocation;
+
+	TArray<UPoseableMeshComponent*> AvatarHandle;
+
+	TSet<FString> Bones = { FString("neck_01"), FString("spine_03"), FString("spine_02"), FString("spine_01"), FString("pelvis"),
+	FString("thigh_r"), FString("thigh_l"), FString("calf_r"), FString("calf_l"), FString("foot_r"), FString("foot_l"),
+	FString("upperarm_r"), FString("upperarm_l"), FString("lowerarm_r"), FString("lowerarm_l"), FString("hand_r"), FString("hand_l") };
 };

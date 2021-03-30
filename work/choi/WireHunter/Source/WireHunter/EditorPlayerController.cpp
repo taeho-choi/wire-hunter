@@ -37,9 +37,13 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 			PhysicsHandle->SetTargetLocation(TempLocation);
 		}
 		else {
-			newLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
-			
-			GrabbedComp->SetWorldLocation(newLocation, false, false);
+			NewLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
+
+			GrabbedComp->SetWorldLocation(NewLocation, false, false);
+
+			if (AvatarHandle.Num() > 0) {
+				AvatarHandle[0]->SetBoneLocationByName(BoneName, NewLocation, EBoneSpaces::WorldSpace);
+			}
 		}
 	}
 }
@@ -54,9 +58,14 @@ void AEditorPlayerController::Click() {
 
 		GrabbedComp = Hit.GetComponent();
 
-		BoneName = Hit.BoneName;
+		BoneName = FName(Hit.GetActor()->GetName());
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
+
+		if (Bones.Contains(*BoneName.ToString())) {
+			auto avatar = Hit.GetActor()->GetAttachParentActor();
+			avatar->GetComponents(AvatarHandle);
+		}
 
 		if (GrabbedComp->IsSimulatingPhysics()) {
 			PhysicsHandle->GrabComponentAtLocation(GrabbedComp, BoneName, (FVector)Hit.Location);
@@ -78,6 +87,6 @@ void AEditorPlayerController::Release() {
 		}
 		GrabMode = false;
 
-		UE_LOG(LogTemp, Warning, TEXT("%s \n"), *newLocation.ToString());
+		UE_LOG(LogTemp, Warning, TEXT("%s \n"), *NewLocation.ToString());
 	}
 }
