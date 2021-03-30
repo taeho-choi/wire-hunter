@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5949708F-7471-4D31-B0DF-E4813C80235D}</UniqueIdentifier>
+      <UniqueIdentifier>{65EA8A6C-0B8D-46FC-9D3F-9800B77EDA74}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{AD0CBBC1-2CA6-45EE-9D5C-200012070494}</UniqueIdentifier>
+      <UniqueIdentifier>{9BCE09B1-2506-40AE-833F-6478088091DC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{78AAC18D-9787-4C99-AA77-9B1B2A1A23CC}</UniqueIdentifier>
+      <UniqueIdentifier>{24E4A30B-3A04-418A-B3A6-AB56F3CDC0A1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Bullet.cpp">
       <Filter>Source\WireHunter</Filter>
