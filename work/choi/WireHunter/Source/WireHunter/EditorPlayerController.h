@@ -18,7 +18,6 @@ class AEditorPlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
-
 	virtual void OnPossess(APawn* InPawn) override;
 
 	virtual void Tick(float DeltaTime) override;
@@ -27,6 +26,12 @@ public:
 	void Click();
 
 	void Release();
+
+	void Yaw();
+
+	void Roll();
+
+	void Pitch();
 
 protected:
 	virtual void SetupInputComponent() override;
@@ -53,4 +58,6 @@ private:
 	TSet<FString> Bones = { FString("neck_01"), FString("spine_03"), FString("spine_02"), FString("spine_01"), FString("pelvis"),
 	FString("thigh_r"), FString("thigh_l"), FString("calf_r"), FString("calf_l"), FString("foot_r"), FString("foot_l"),
 	FString("upperarm_r"), FString("upperarm_l"), FString("lowerarm_r"), FString("lowerarm_l"), FString("hand_r"), FString("hand_l") };
+
+	float RotVal = 1.f;
 };

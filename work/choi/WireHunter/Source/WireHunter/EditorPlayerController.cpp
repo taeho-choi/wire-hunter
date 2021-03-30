@@ -4,7 +4,8 @@
 #include "Kismet/KismetMathLibrary.h"
 //#include "Components/SceneComponent.h"
 
-void AEditorPlayerController::OnPossess(APawn* InPawn) {
+void AEditorPlayerController::OnPossess(APawn* InPawn) 
+{
 	Super::OnPossess(InPawn);
 
 	bShowMouseCursor = true;
@@ -18,14 +19,20 @@ void AEditorPlayerController::OnPossess(APawn* InPawn) {
 	ConsoleCommand("ShowFlag.Bones 1");
 }
 
-void AEditorPlayerController::SetupInputComponent() {
+void AEditorPlayerController::SetupInputComponent() 
+{
 	Super::SetupInputComponent();
 
 	InputComponent->BindAction("Click", IE_Pressed, this, &AEditorPlayerController::Click);
 	InputComponent->BindAction("Click", IE_Released, this, &AEditorPlayerController::Release);
+
+	InputComponent->BindAction(TEXT("Yaw"), IE_Pressed, this, &AEditorPlayerController::Yaw);
+	InputComponent->BindAction(TEXT("Roll"), IE_Pressed, this, &AEditorPlayerController::Roll);
+	InputComponent->BindAction(TEXT("Pitch"), IE_Pressed, this, &AEditorPlayerController::Pitch);
 }
 
-void AEditorPlayerController::Tick(float DeltaTime) {
+void AEditorPlayerController::Tick(float DeltaTime) 
+{
 	if (GrabMode) {
 		FVector WorldLocation, WorldDirection;
 		DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
@@ -48,7 +55,8 @@ void AEditorPlayerController::Tick(float DeltaTime) {
 	}
 }
 
-void AEditorPlayerController::Click() {
+void AEditorPlayerController::Click() 
+{
 	GetHitResultUnderCursor(ECC_Visibility, false, Hit);
 
 	if (Hit.bBlockingHit) {
@@ -80,7 +88,8 @@ void AEditorPlayerController::Click() {
 	}
 }
 
-void AEditorPlayerController::Release() {
+void AEditorPlayerController::Release() 
+{
 	if (GrabMode) {
 		if (GrabbedComp->IsSimulatingPhysics()) {
 			PhysicsHandle->ReleaseComponent();
@@ -88,5 +97,38 @@ void AEditorPlayerController::Release() {
 		GrabMode = false;
 
 		UE_LOG(LogTemp, Warning, TEXT("%s \n"), *NewLocation.ToString());
+	}
+}
+
+void AEditorPlayerController::Yaw()
+{
+	if (AvatarHandle.Num() > 0) {
+		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::ComponentSpace);
+		auto newRot = rot.Add(0.f, 0.f, RotVal);
+
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::ComponentSpace);
+		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
+	}
+}
+
+void AEditorPlayerController::Roll()
+{
+	if (AvatarHandle.Num() > 0) {
+		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::ComponentSpace);
+		auto newRot = rot.Add(RotVal, 0.f, 0.f);
+
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::ComponentSpace);
+		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
+	}
+}
+
+void AEditorPlayerController::Pitch()
+{
+	if (AvatarHandle.Num() > 0) {
+		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::ComponentSpace);
+		auto newRot = rot.Add(0.f, RotVal, 0.f);
+
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::ComponentSpace);
+		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
 }
