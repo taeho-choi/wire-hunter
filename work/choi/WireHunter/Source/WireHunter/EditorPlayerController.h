@@ -27,11 +27,17 @@ public:
 
 	void Release();
 
-	void Yaw();
+	void AddYaw();
 
-	void Roll();
+	void AddRoll();
 
-	void Pitch();
+	void AddPitch();
+
+	void SubYaw();
+
+	void SubRoll();
+
+	void SubPitch();
 
 protected:
 	virtual void SetupInputComponent() override;
