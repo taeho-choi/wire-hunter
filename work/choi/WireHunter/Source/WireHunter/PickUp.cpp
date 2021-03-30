@@ -21,12 +21,18 @@ APickUp::APickUp()
 	PickupBox->SetGenerateOverlapEvents(true);
 	PickupBox->OnComponentBeginOverlap.AddDynamic(this, &APickUp::OnPlayerEnterPickupBox);
 	PickupBox->AttachToComponent(PickupRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/ThirdPersonCPP/GraphicResources/liquidmedicine_low_uv_id.liquidmedicine_low_uv_id'"));
+	UStaticMesh* Asset = MeshAsset.Object;
+
+	PickupMesh->SetStaticMesh(Asset);
 }
 
 // Called when the game starts or when spawned
 void APickUp::BeginPlay()
 {
 	Super::BeginPlay();
+
 	
 }
 
