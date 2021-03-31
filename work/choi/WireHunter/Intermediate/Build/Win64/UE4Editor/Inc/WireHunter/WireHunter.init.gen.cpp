@@ -21,7 +21,11 @@ void EmptyLinkFunctionForGeneratedCodeWireHunter_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
+<<<<<<< Updated upstream
 				0xC68C4CDF,
+=======
+				0xCAB9E880,
+>>>>>>> Stashed changes
 				0x3A760D29,
 				METADATA_PARAMS(nullptr, 0)
 			};
