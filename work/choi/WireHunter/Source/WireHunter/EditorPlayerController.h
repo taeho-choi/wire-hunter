@@ -88,4 +88,5 @@ private:
 
 	TArray<FTransform> PrevBoneTransforms;
 	TArray<FName> PrevBoneNames;
+	TArray<UPrimitiveComponent*> PrevGrabbedComps;
 };

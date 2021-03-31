@@ -66,7 +66,6 @@ void AEditorPlayerController::Tick(float DeltaTime)
 			if (AvatarHandle.Num() > 0) {
 				AvatarHandle[0]->SetBoneLocationByName(BoneName, NewLocation, EBoneSpaces::WorldSpace);
 			}
-
 			GrabbedComp->SetWorldLocation(NewLocation, false, false);
 		}
 	}
@@ -96,6 +95,7 @@ void AEditorPlayerController::Click()
 
 			PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 			PrevBoneNames.Push(BoneName);
+			PrevGrabbedComps.Push(GrabbedComp);
 		}
 
 		if (GrabbedComp->IsSimulatingPhysics()) {
@@ -128,12 +128,13 @@ void AEditorPlayerController::AddYaw()//1
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(0.f, 0.f, RotVal);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -144,12 +145,13 @@ void AEditorPlayerController::SubYaw()//2
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(0.f, 0.f, -RotVal);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -160,12 +162,13 @@ void AEditorPlayerController::AddRoll()//3
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(RotVal, 0.f, 0.f);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -176,12 +179,13 @@ void AEditorPlayerController::SubRoll()//4
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(-RotVal, 0.f, 0.f);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -192,12 +196,13 @@ void AEditorPlayerController::AddPitch()//5
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(0.f, RotVal, 0.f);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -208,12 +213,13 @@ void AEditorPlayerController::SubPitch()//6
 	if (AvatarHandle.Num() > 0) {
 		auto rot = AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace);
 		auto newRot = rot.Add(0.f, -RotVal, 0.f);
-		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+		AvatarHandle[0]->SetBoneRotationByName(BoneName, newRot, EBoneSpaces::WorldSpace);
+		GrabbedComp->SetWorldRotation(newRot);
 
 		PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 		PrevBoneNames.Push(BoneName);
+		PrevGrabbedComps.Push(GrabbedComp);
 
 		UE_LOG(LogTemp, Warning, TEXT("Bone: %s  Rotate: %s"), *BoneName.ToString(), *newRot.ToString());
 	}
@@ -222,11 +228,12 @@ void AEditorPlayerController::SubPitch()//6
 void AEditorPlayerController::Undo()//0
 {
 	if (AvatarHandle.Num() > 0 && PrevBoneTransforms.Num() != 0) {
-		AvatarHandle[0]->SetBoneTransformByName(PrevBoneNames.Pop(), PrevBoneTransforms.Pop(), EBoneSpaces::WorldSpace);
+		auto b = PrevBoneNames.Pop();
+		AvatarHandle[0]->SetBoneTransformByName(b, PrevBoneTransforms.Pop(), EBoneSpaces::WorldSpace);
 
-		GrabbedComp->SetWorldLocationAndRotation(AvatarHandle[0]->GetBoneLocationByName(BoneName, EBoneSpaces::WorldSpace), 
-			AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));//to Sync
+		PrevGrabbedComps.Pop()->SetWorldLocationAndRotation(AvatarHandle[0]->GetBoneLocationByName(b, EBoneSpaces::WorldSpace),
+			AvatarHandle[0]->GetBoneRotationByName(b, EBoneSpaces::WorldSpace));
 
-		UE_LOG(LogTemp, Warning, TEXT("Undo"));
+		UE_LOG(LogTemp, Warning, TEXT("Undo %d"),PrevBoneNames.Num());
 	}
 }
