@@ -6,10 +6,11 @@
 #include "GameFramework/PlayerController.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
 #include "Components/PoseableMeshComponent.h"
+//#include <vector>
 #include "EditorPlayerController.generated.h"
 
 /**
- *
+ *Bone Controller For Posing
  */
 
 UCLASS()
@@ -17,7 +18,17 @@ class AEditorPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
+private:
+	struct BoneNode
+	{
+	public:
+		FString boneName;
+		FVector location;
+	};
+
 public:
+	AEditorPlayerController();
+
 	virtual void OnPossess(APawn* InPawn) override;
 
 	virtual void Tick(float DeltaTime) override;
@@ -38,6 +49,10 @@ public:
 	void SubRoll();
 
 	void SubPitch();
+
+	void Undo();
+
+	BoneNode MakeBoneNode(FString boneName, FVector location);
 
 protected:
 	virtual void SetupInputComponent() override;
@@ -65,5 +80,12 @@ private:
 	FString("thigh_r"), FString("thigh_l"), FString("calf_r"), FString("calf_l"), FString("foot_r"), FString("foot_l"),
 	FString("upperarm_r"), FString("upperarm_l"), FString("lowerarm_r"), FString("lowerarm_l"), FString("hand_r"), FString("hand_l") };
 
-	float RotVal = 1.f;
+	float RotVal = 2.f;
+
+	const int BoneNum = 17;
+
+	TArray<TArray<BoneNode>> BoneTree;
+
+	TArray<FTransform> PrevBoneTransforms;
+	TArray<FName> PrevBoneNames;
 };

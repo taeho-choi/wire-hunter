@@ -3,11 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-<<<<<<< Updated upstream
-      <UniqueIdentifier>{D28EEB2E-3D2C-4659-98C7-6F7059B90ECA}</UniqueIdentifier>
-=======
-      <UniqueIdentifier>{8917C4C7-5856-4E4F-A627-5F7277B0C0F6}</UniqueIdentifier>
->>>>>>> Stashed changes
+      <UniqueIdentifier>{7C6B7879-7FCB-477B-AB7C-39757B0C7440}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -16,11 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-<<<<<<< Updated upstream
-      <UniqueIdentifier>{7E510BA6-FC4B-4C01-820D-61BC84EBF9C5}</UniqueIdentifier>
-=======
-      <UniqueIdentifier>{F99FD7EE-D58E-4492-9D6B-1146C96169A5}</UniqueIdentifier>
->>>>>>> Stashed changes
+      <UniqueIdentifier>{B6F4B87A-CBBA-4016-B3D5-A229A8B9110C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -38,11 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-<<<<<<< Updated upstream
-      <UniqueIdentifier>{6BC0AF37-141D-4F00-93A1-458AD1BB2F32}</UniqueIdentifier>
-=======
-      <UniqueIdentifier>{2C6AD96D-20FA-43E5-AC17-EF5DA218EE26}</UniqueIdentifier>
->>>>>>> Stashed changes
+      <UniqueIdentifier>{16D99ECD-0D71-457F-BA7A-ECED32B74FB6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Bullet.cpp">
       <Filter>Source\WireHunter</Filter>

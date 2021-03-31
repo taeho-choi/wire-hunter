@@ -40,10 +40,11 @@ void EmptyLinkFunctionForGeneratedCodeEditorPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEditorPlayerController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n *\n */" },
+		{ "Comment", "/**\n *Bone Controller For Posing\n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "EditorPlayerController.h" },
 		{ "ModuleRelativePath", "EditorPlayerController.h" },
+		{ "ToolTip", "Bone Controller For Posing" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEditorPlayerController_Statics::StaticCppClassTypeInfo = {
@@ -73,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeEditorPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEditorPlayerController, 961808088);
+	IMPLEMENT_CLASS(AEditorPlayerController, 1466796708);
 	template<> WIREHUNTER_API UClass* StaticClass<AEditorPlayerController>()
 	{
 		return AEditorPlayerController::StaticClass();
