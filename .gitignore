@@ -72,3 +72,10 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# 임의 추가
+/Saved
+/Intermediate
+/.vs
+/Build
+/Plugins
