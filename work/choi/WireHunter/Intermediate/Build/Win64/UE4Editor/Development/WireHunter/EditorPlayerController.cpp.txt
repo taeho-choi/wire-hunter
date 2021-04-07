@@ -193,3 +193,10 @@ C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Inc\WireH
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/SkeletalMeshRenderData.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/SkeletalMeshLODRenderData.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/MultiSizeIndexContainer.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/SkeletalMeshVertexBuffer.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/SkeletalMeshDuplicatedVerticesBuffer.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/SkeletalMeshVertexClothBuffer.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/MorphTargetVertexInfoBuffers.h

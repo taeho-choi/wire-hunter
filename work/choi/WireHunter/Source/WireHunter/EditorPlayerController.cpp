@@ -4,6 +4,7 @@
 #include "Kismet/KismetMathLibrary.h"
 //#include "Components/SceneComponent.h"
 //#include <algorithm>
+#include "Rendering/SkeletalMeshRenderData.h"
 
 //BoneNode AEditorPlayerController::MakeBoneNode(FString boneName, FVector location)
 //{
@@ -96,6 +97,18 @@ void AEditorPlayerController::Click()
 			PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 			PrevBoneNames.Push(BoneName);
 			PrevGrabbedComps.Push(GrabbedComp);
+
+			FSkeletalMeshRenderData* renderData = AvatarHandle[0]->GetSkeletalMeshRenderData();
+			//FSkeletalMeshLODRenderData
+			
+			for (int32 LODIndex = 0; LODIndex < renderData->LODRenderData.Num(); ++LODIndex)
+			{
+				for (uint32 Index = 0; Index < renderData->LODRenderData[LODIndex].SkinWeightVertexBuffer.GetNumVertices(); ++Index)
+				{
+					//GetBoneWeight;
+					renderData->LODRenderData[LODIndex].SkinWeightVertexBuffer.ResetVertexBoneWeights(Index);
+				}
+			}
 		}
 
 		if (GrabbedComp->IsSimulatingPhysics()) {
@@ -225,7 +238,7 @@ void AEditorPlayerController::SubPitch()//6
 	}
 }
 
-void AEditorPlayerController::Undo()//0
+void AEditorPlayerController::Undo()//num0
 {
 	if (AvatarHandle.Num() > 0 && PrevBoneTransforms.Num() != 0) {
 		auto b = PrevBoneNames.Pop();
