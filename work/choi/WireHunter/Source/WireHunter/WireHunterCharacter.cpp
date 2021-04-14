@@ -1,4 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
+// Print String Code : 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 
 #include "WireHunterCharacter.h"
 #include "Kismet/GameplayStatics.h"
@@ -13,6 +14,7 @@
 #include "Components/WidgetComponent.h"
 #include "HealthBar.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "DrawDebugHelpers.h"
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -115,6 +117,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorLocation(GetFloatingPos());
 		//SetActorRotation(GetFloatingRot());
 	}
+	WireTrace();
 }
 
 
@@ -191,7 +194,6 @@ void AWireHunterCharacter::StartFire()
 {
 	FireShot();
 	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &AWireHunterCharacter::FireShot, TimerBetweenShots, true);
-
 	//애니메이션aa
 }
 
@@ -236,23 +238,14 @@ void AWireHunterCharacter::WireTrace()
 
 	const float WireRange = 50000.f;
 	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
-	const FVector EndTrace = (FollowCamera->GetForwardVector() * WireRange) + FollowCamera->GetComponentLocation();
+	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
-
-
-
-
-
-	//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
-	//QueryParams.AddIgnoredActor(this);
-
-	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 0, 0, 1.f);
+	if (Hit.bBlockingHit)
 	{
-		if (ImpactParticle)
-		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
-		}
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
 	}
 }
