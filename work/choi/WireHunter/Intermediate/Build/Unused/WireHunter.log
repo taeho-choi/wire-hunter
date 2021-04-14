@@ -1,6 +1,20 @@
+<<<<<<< Updated upstream
 ﻿  Building WireHunterEditor...
   Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 12 processes...
     [1/4] WireHunterGameMode.cpp
 C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunterGameMode.cpp(13): error C2065: 'PlayerPawnBPClass': ������� ���� �ĺ����Դϴ�.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: ""C:\Program Files\Epic Games\UE_4.25\Engine\Build\BatchFiles\Build.bat" WireHunterEditor Win64 Development -Project="C:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).
+=======
+﻿  Invalidating makefile for WireHunterEditor (source file removed)
+  Building WireHunterEditor...
+  Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 3 actions with 12 processes...
+    [1/3] UE4Editor-WireHunter-0028.lib
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0028.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0028.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [2/3] UE4Editor-WireHunter-0028.dll
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0028.suppressed.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0028.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [3/3] WireHunterEditor.target
+  Total time in Parallel executor: 1.40 seconds
+  Total execution time: 3.87 seconds
+>>>>>>> Stashed changes

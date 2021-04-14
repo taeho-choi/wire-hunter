@@ -1,0 +1,1689 @@
+﻿Log file open, 04/14/21 19:08:10
+LogInit: Display: Running engine for game: WireHunter
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.263269
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: AMD Ryzen 5 2600X Six-Core Processor           , GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:151][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.14-10.08.11:151][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:151][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.14-10.08.11:152][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:152][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:158][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-10.08.11:158][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-10.08.11:159][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-10.08.11:160][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-10.08.11:160][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.14-10.08.11:160][  0]LogHAL: Display: Platform has ~ 16 GB [17102884864 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.14-10.08.11:160][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-10.08.11:160][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-10.08.11:161][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-10.08.11:162][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.14-10.08.11:163][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.14-10.08.11:163][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.14-10.08.11:163][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.14-10.08.11:163][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.04.14-10.08.11:163][  0]LogInit: Computer: DESKTOP-FHRPJDT
+[2021.04.14-10.08.11:163][  0]LogInit: User: ChoiTaeho
+[2021.04.14-10.08.11:163][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.04.14-10.08.11:163][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.14-10.08.11:163][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.04.14-10.08.11:163][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.14-10.08.11:163][  0]LogMemory: Process Physical Memory: 118.60 MB used, 118.60 MB peak
+[2021.04.14-10.08.11:163][  0]LogMemory: Process Virtual Memory: 107.38 MB used, 107.38 MB peak
+[2021.04.14-10.08.11:163][  0]LogMemory: Physical Memory: 4921.55 MB used,  11389.03 MB free, 16310.58 MB total
+[2021.04.14-10.08.11:163][  0]LogMemory: Virtual Memory: 5176.99 MB used,  134212552.00 MB free, 134217728.00 MB total
+[2021.04.14-10.08.11:176][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.14-10.08.11:335][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.14-10.08.11:336][  0]LogInit: Using OS detected language (ko-KR).
+[2021.04.14-10.08.11:336][  0]LogInit: Using OS detected locale (ko-KR).
+[2021.04.14-10.08.11:351][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2021.04.14-10.08.11:456][  0]LogInit: Setting process to per monitor DPI aware
+[2021.04.14-10.08.11:517][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.14-10.08.11:517][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.14-10.08.11:819][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-10.08.11:819][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.04.14-10.08.11:819][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.04.14-10.08.11:819][  0]LogD3D11RHI: D3D11 adapters:
+[2021.04.14-10.08.11:914][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2021.04.14-10.08.11:914][  0]LogD3D11RHI:       6052/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.04.14-10.08.11:917][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.04.14-10.08.11:917][  0]LogD3D11RHI:       0/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.04.14-10.08.11:917][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.04.14-10.08.11:925][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.04.14-10.08.11:925][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2021.04.14-10.08.11:925][  0]LogWindows: EnumDisplayDevices:
+[2021.04.14-10.08.11:925][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2021.04.14-10.08.11:926][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.04.14-10.08.11:927][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.04.14-10.08.11:928][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.04.14-10.08.11:929][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.04.14-10.08.11:929][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2021.04.14-10.08.11:929][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.04.14-10.08.11:929][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2021.04.14-10.08.11:929][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.04.14-10.08.11:991][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.04.14-10.08.11:992][  0]LogD3D11RHI: Async texture creation enabled
+[2021.04.14-10.08.11:992][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.04.14-10.08.12:010][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.04.14-10.08.12:472][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.04.14-10.08.12:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.04.14-10.08.12:546][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.04.14-10.08.12:546][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.04.14-10.08.12:567][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.04.14-10.08.12:582][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.04.14-10.08.12:598][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.04.14-10.08.12:613][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.04.14-10.08.12:629][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.04.14-10.08.12:647][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.04.14-10.08.12:663][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.04.14-10.08.12:708][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.04.14-10.08.12:708][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.04.14-10.08.12:737][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.04.14-10.08.12:737][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.04.14-10.08.12:753][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.14-10.08.12:771][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.14-10.08.12:787][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.14-10.08.12:803][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.14-10.08.12:803][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.14-10.08.12:820][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.14-10.08.12:959][  0]LogShaderCompilers: Guid format shader working directory is -7 characters bigger than the processId version (../../../../../../Wire-Hunter/work/choi/WireHunter/Intermediate/Shaders/WorkingDirectory/21204/).
+[2021.04.14-10.08.12:959][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/최태호/AppData/Local/Temp/UnrealShaderWorkingDir/01EA977B45A5166DD4307DBCA47E6399/'.
+[2021.04.14-10.08.12:960][  0]LogXGEController: Cleaning working directory: C:/Users/최태호/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.04.14-10.08.12:960][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.14-10.08.12:960][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.14-10.08.12:960][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.14-10.08.13:783][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: Loaded boot cache 0.04s 75MB C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-10.08.13:828][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.14-10.08.13:838][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.14-10.08.13:839][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-10.08.13:839][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.14-10.08.13:841][  0]LogDerivedDataCache: Using Local data cache path C:/Users/최태호/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.14-10.08.13:841][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.14-10.08.13:841][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.14-10.08.13:888][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.14-10.08.13:889][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.14-10.08.13:919][  0]LogAssetRegistry: FAssetRegistry took 0.0037 seconds to start up
+[2021.04.14-10.08.14:171][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-10.08.14:312][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.14-10.08.14:312][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.14-10.08.14:312][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.14-10.08.14:312][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.14-10.08.14:312][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.14-10.08.14:334][  0]LogNetVersion: WireHunter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1660872711)
+[2021.04.14-10.08.14:806][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000022B3BB7D4C0), frame # 0
+[2021.04.14-10.08.14:806][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022B3BAD2AC0), frame # 0
+[2021.04.14-10.08.14:807][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022B3BB29E00), frame # 0
+[2021.04.14-10.08.14:873][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.058321 seconds
+[2021.04.14-10.08.14:878][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.04.14-10.08.14:878][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.04.14-10.08.14:878][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.14-10.08.15:500][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.04.14-10.08.15:508][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.04.14-10.08.15:655][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.15:655][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.15:661][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.15:667][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.15:689][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.16:173][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.14-10.08.16:212][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-10.08.16:212][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-10.08.16:299][  0]LogOcInput: OculusInput pre-init called
+[2021.04.14-10.08.16:321][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.04.14-10.08.16:321][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.04.14-10.08.16:411][  0]LogEngine: Initializing Engine...
+[2021.04.14-10.08.16:412][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-10.08.16:412][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.14-10.08.16:413][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.04.14-10.08.16:527][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.14-10.08.16:539][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.04.14-10.08.16:539][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022B43314600), frame # 0
+[2021.04.14-10.08.16:539][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022B4333CB80), frame # 0
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.08.16:554][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.08.16:554][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.08.16:554][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.08.16:597][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.08.16:597][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.08.16:703][  0]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.08.16:705][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.08.16:710][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.08.16:710][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.08.16:711][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.08.16:711][  0]LogInit: FAudioDevice initialized.
+[2021.04.14-10.08.16:711][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.14-10.08.16:805][  0]LogDerivedDataCache: Saved boot cache 0.09s 75MB C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-10.08.16:805][  0]LogInit: Texture streaming: Enabled
+[2021.04.14-10.08.16:850][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.04.14-10.08.16:851][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={4D74CD4B-4943-861D-5F95-B7BE63AA54A5}
+[2021.04.14-10.08.16:851][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.04.14-10.08.16:856][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.04.14-10.08.16:921][  0]LogInit: Transaction tracking system initialized
+[2021.04.14-10.08.16:966][  0]BlueprintLog: New page: 에디터 로드
+[2021.04.14-10.08.17:099][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2021.04.14-10.08.17:353][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.04.14-10.08.17:353][  0]LogCook: Display: Mobile HDR setting 1
+[2021.04.14-10.08.17:408][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.01s
+[2021.04.14-10.08.17:408][  0]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.04.14-10.08.20:155][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  2.747 s
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: 
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: Ensure condition failed: AttachmentRules.LocationRule == EAttachmentRule::KeepRelative && AttachmentRules.RotationRule == EAttachmentRule::KeepRelative && AttachmentRules.ScaleRule == EAttachmentRule::KeepRelative [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1812]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: AttachToComponent when called from a constructor is only setting up attachment and will always be treated as KeepRelative. Consider calling SetupAttachment directly instead.
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: Stack: 
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd2f9bc119 UE4Editor-Engine.dll!DispatchCheckVerify<bool,<lambda_7a00921a8ebf9f041bed3055592f02a5> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd2e56d3c3 UE4Editor-Engine.dll!USceneComponent::AttachToComponent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1812]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd13e33a17 UE4Editor-WireHunter.dll!ADragon::ADragon() [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Dragon.cpp:18]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd44d7c273 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3672]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd45028451 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:861]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd45005bbf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:950]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd44f24465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd4563986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd456599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd697cb433 UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:561]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd697cb70d UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:63]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7553c2db4 UE4Editor.exe!FEngineLoop::Init() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:4022]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd43885cb0 UE4Editor-UnrealEd.dll!EditorInit() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\UnrealEdGlobals.cpp:93]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7553db8fb UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:149]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7553dbb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7553ee31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7553f145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd8b597034 KERNEL32.DLL!UnknownFunction []
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: [Callstack] 0x00007ffd8d3c2651 ntdll.dll!UnknownFunction []
+[2021.04.14-10.08.20:155][  0]LogOutputDevice: Error: 
+[2021.04.14-10.08.20:164][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2021.04.14-10.08.22:318][  0]LogStats:                    SendNewReport -  2.154 s
+[2021.04.14-10.08.22:318][  0]LogStats:             FDebug::EnsureFailed -  4.910 s
+[2021.04.14-10.08.23:205][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.04.14-10.08.23:205][  0]LogUnrealEdMisc: Loading editor; pre map load, took 15.256
+[2021.04.14-10.08.23:206][  0]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.14-10.08.23:206][  0]LogEditorServer: Warning: Can't find file '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2021.04.14-10.08.23:206][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.14-10.08.23:206][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.424ms.
+[2021.04.14-10.08.23:206][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.001
+[2021.04.14-10.08.23:211][  0]LogUnrealEdMisc: Total Editor Startup Time, took 15.262
+[2021.04.14-10.08.23:343][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.23:350][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.23:356][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.23:364][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.23:379][  0]LogCollectionManager: Loaded 0 collections in 0.003541 seconds
+[2021.04.14-10.08.23:398][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Saved/Collections/' took 0.00s
+[2021.04.14-10.08.23:398][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Developers/ChoiTaeho/Collections/' took 0.00s
+[2021.04.14-10.08.23:398][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Collections/' took 0.00s
+[2021.04.14-10.08.23:398][  0]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 3439 classes and 823 folders.
+[2021.04.14-10.08.23:403][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.04.14-10.08.23:525][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.04.14-10.08.23:529][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 0 folders.
+[2021.04.14-10.08.23:585][  0]LogSlate: Took 0.000320 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.14-10.08.23:587][  0]LogSlate: Took 0.001943 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2021.04.14-10.08.23:591][  0]LogSlate: Took 0.001794 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2021.04.14-10.08.23:591][  0]LogSlate: Took 0.000359 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.04.14-10.08.23:593][  0]LogSlate: Took 0.000393 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.04.14-10.08.23:647][  0]LogRenderer: Reallocating scene render targets to support 1528x632 Format 10 NumSamples 1 (Frame:1).
+[2021.04.14-10.08.23:746][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.04.14-10.08.23:746][  0]LogLoad: (Engine Initialization) Total time: 15.80 seconds
+[2021.04.14-10.08.23:746][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.14-10.08.23:800][  0]LogAssetRegistry: Asset discovery search completed in 9.8820 seconds
+[2021.04.14-10.08.23:803][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.04.14-10.08.23:805][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.14-10.08.23:839][  0]LogSlate: Took 0.000394 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.14-10.08.24:103][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.34s
+[2021.04.14-10.08.33:307][539]LogSlate: Took 0.000315 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.14-10.08.33:386][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:387][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:401][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:401][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:403][539]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.04.14-10.08.33:403][539]LogLinker: Warning: '{FileName}': 애셋에 대한 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.04.14-10.08.33:403][539]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.04.14-10.08.33:403][539]LogLinker: Warning: '{FileName}': 애셋에 대한 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.04.14-10.08.33:410][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:410][539]LoadErrors: 로드에 실패했습니다. /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 참조한 것: PersistentLevel
+[2021.04.14-10.08.33:410][539]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.04.14-10.08.33:457][539]LogAssetEditorSubsystem: Opening Asset editor for World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel
+[2021.04.14-10.08.33:471][539]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2021.04.14-10.08.33:473][539]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.14-10.08.33:473][539]LightingResults: New page: 라이팅 빌드
+[2021.04.14-10.08.33:475][539]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0005 seconds. Added 6 classes and 0 folders.
+[2021.04.14-10.08.33:475][539]LoadErrors: New page: 맵 로드중: GameLevel.umap
+[2021.04.14-10.08.33:475][539]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.08.33:475][539]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.08.33:475][539]MapCheck: New page: 맵 체크
+[2021.04.14-10.08.33:475][539]LightingResults: New page: 라이팅 빌드
+[2021.04.14-10.08.33:486][539]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022B43314600), frame # 539
+[2021.04.14-10.08.33:486][539]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022B4333CB80), frame # 539
+[2021.04.14-10.08.33:487][539]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.04.14-10.08.33:492][539]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.14-10.08.33:492][539]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.08.33:492][539]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022B432EF200), frame # 539
+[2021.04.14-10.08.33:492][539]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022B2BD74900), frame # 539
+[2021.04.14-10.08.33:506][539]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2021.04.14-10.08.33:538][539]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.14-10.08.33:540][539]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 1.807ms.
+[2021.04.14-10.08.33:540][539]LogFileHelpers: Loading map 'GameLevel' took 0.066
+[2021.04.14-10.08.56:749][223]Cmd: DELETE
+[2021.04.14-10.08.56:750][223]Cmd: ACTOR DELETE
+[2021.04.14-10.08.56:757][223]LogEditorActor: Deleted Actor: ThirdPersonCharacter_C
+[2021.04.14-10.08.56:774][223]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.04.14-10.08.56:776][223]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2021.04.14-10.08.58:487][423]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.08.58:508][423]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.08.58:508][423]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:08:58)
+[2021.04.14-10.08.58:509][423]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.04.14-10.08.58:510][423]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.04.14-10.08.58:510][423]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.08.58:522][423]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012414s)
+[2021.04.14-10.08.58:523][423]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.08.58:523][423]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022BF2D14E00), frame # 3423
+[2021.04.14-10.08.58:523][423]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022BF34E0900), frame # 3423
+[2021.04.14-10.08.58:523][423]LogPlayLevel: PIE: World Init took: (0.001235s)
+[2021.04.14-10.08.58:523][423]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013788s)
+[2021.04.14-10.08.58:537][423]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.08.58:538][423]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.08.58:538][423]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.08.58:539][423]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.08.58:539][423]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.08.58:565][423]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.08.58:565][423]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.08.58:625][423]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.08.58:625][423]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.08.58:625][423]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.08.58:626][423]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.08.58:626][423]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.08.58:637][423]LogInit: FAudioDevice initialized.
+[2021.04.14-10.08.58:648][423]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.08.58:649][423]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.08.58
+[2021.04.14-10.08.58:650][423]LogWorld: Bringing up level for play took: 0.000992
+[2021.04.14-10.08.58:650][423]LogOnline: OSS: Creating online subsystem instance for: :Context_5
+[2021.04.14-10.08.58:655][423]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.04.14-10.08.58:659][423]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.08.58:659][423]ShowFlag.Bones = "2"
+[2021.04.14-10.08.58:660][423]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.08.58:661][423]PIE: 에디터에서 플레이 총 시작 시간 0.156초입니다.
+[2021.04.14-10.08.59:876][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.59:876][561]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.08.59:876][561]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.08.59:877][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.08.59:882][561]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.08.59:883][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.08.59:897][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.08.59:915][561]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022BF34E0900), frame # 3561
+[2021.04.14-10.08.59:915][561]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022BF2D14E00), frame # 3561
+[2021.04.14-10.08.59:916][561]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2021.04.14-10.08.59:949][563]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2021.04.14-10.09.19:092][683]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.09.19:114][683]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.09.19:114][683]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:09:19)
+[2021.04.14-10.09.19:114][683]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.09.19:123][683]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009218s)
+[2021.04.14-10.09.19:124][683]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.09.19:124][683]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022BF3148600), frame # 5683
+[2021.04.14-10.09.19:124][683]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022B42C72D40), frame # 5683
+[2021.04.14-10.09.19:124][683]LogPlayLevel: PIE: World Init took: (0.000982s)
+[2021.04.14-10.09.19:124][683]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010331s)
+[2021.04.14-10.09.19:150][683]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.09.19:152][683]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.09.19:152][683]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.09.19:153][683]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.09.19:153][683]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.09.19:174][683]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.09.19:174][683]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.09.19:226][683]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.09.19:226][683]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.09.19:226][683]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.09.19:226][683]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.09.19:226][683]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.09.19:237][683]LogInit: FAudioDevice initialized.
+[2021.04.14-10.09.19:243][683]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.09.19:245][683]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.09.19
+[2021.04.14-10.09.19:245][683]LogWorld: Bringing up level for play took: 0.001944
+[2021.04.14-10.09.19:245][683]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2021.04.14-10.09.19:251][683]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.09.19:251][683]ShowFlag.Bones = "2"
+[2021.04.14-10.09.19:252][683]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.09.19:252][683]PIE: 에디터에서 플레이 총 시작 시간 0.141초입니다.
+[2021.04.14-10.09.20:326][803]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.09.20:326][803]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.09.20:327][803]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.09.20:327][803]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.09.20:334][803]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.09.20:335][803]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.09.20:362][803]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.09.20:363][803]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022BF3148600), frame # 5803
+[2021.04.14-10.09.20:363][803]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022B42C72D40), frame # 5803
+[2021.04.14-10.09.20:364][803]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.04.14-10.09.20:402][804]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2021.04.14-10.09.27:110][546]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/WireHunter.WireHunterGameMode
+[2021.04.14-10.11.13:062][862]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.11.18:178][385]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2021.04.14-10.11.18:412][385]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 125 classes and 0 folders.
+[2021.04.14-10.11.19:533][385]LogSlate: Took 0.007112 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.04.14-10.11.19:637][386]LogSlate: Took 0.000490 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.04.14-10.11.21:258][523]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.11.21:258][523]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.11.31:098][614]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.11.32:981][831]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.11.33:541][896]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.11.33:785][923]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall13)
+[2021.04.14-10.11.38:496][456]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.11.44:321][123]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2021.04.14-10.12.42:484][574]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2021.04.14-10.12.50:085][340]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.12.50:085][340]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.13.47:730][504]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.14.27:525][ 36]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2021.04.14-10.14.31:592][422]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.14.31:614][422]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.14.31:614][422]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:14:31)
+[2021.04.14-10.14.31:614][422]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.14.31:625][422]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011288s)
+[2021.04.14-10.14.31:627][422]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.14.31:627][422]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C1AF26C00), frame # 29422
+[2021.04.14-10.14.31:627][422]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C2FE5DF80), frame # 29422
+[2021.04.14-10.14.31:627][422]LogPlayLevel: PIE: World Init took: (0.001624s)
+[2021.04.14-10.14.31:627][422]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013088s)
+[2021.04.14-10.14.31:658][422]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.14.31:667][422]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.14.31:667][422]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.14.31:667][422]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.14.31:694][422]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.14.31:695][422]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.14.31:760][422]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.14.31:761][422]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.14.31:761][422]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.14.31:761][422]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.14.31:761][422]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.14.31:774][422]LogInit: FAudioDevice initialized.
+[2021.04.14-10.14.31:782][422]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.14.31:784][422]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.14.31
+[2021.04.14-10.14.31:785][422]LogWorld: Bringing up level for play took: 0.002551
+[2021.04.14-10.14.31:785][422]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2021.04.14-10.14.31:791][422]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.14.31:791][422]ShowFlag.Bones = "2"
+[2021.04.14-10.14.31:792][422]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.14.31:793][422]PIE: 에디터에서 플레이 총 시작 시간 0.182초입니다.
+[2021.04.14-10.14.32:937][537]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.14.32:937][537]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.14.32:937][537]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.14.32:938][537]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.14.32:946][537]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.14.32:948][537]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.14.32:979][537]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.14.32:980][537]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C1AF26C00), frame # 29537
+[2021.04.14-10.14.32:980][537]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C2FE5DF80), frame # 29537
+[2021.04.14-10.14.32:982][537]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2021.04.14-10.14.33:032][538]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2021.04.14-10.14.37:837][ 99]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.14.37:860][ 99]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.14.37:860][ 99]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:14:37)
+[2021.04.14-10.14.37:883][ 99]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.14.37:895][ 99]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012605s)
+[2021.04.14-10.14.37:897][ 99]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.14.37:897][ 99]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C08882A00), frame # 30099
+[2021.04.14-10.14.37:897][ 99]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C296F7100), frame # 30099
+[2021.04.14-10.14.37:897][ 99]LogPlayLevel: PIE: World Init took: (0.001367s)
+[2021.04.14-10.14.37:897][ 99]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.014183s)
+[2021.04.14-10.14.37:919][ 99]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.14.37:920][ 99]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.14.37:920][ 99]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.14.37:921][ 99]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.14.37:921][ 99]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.14.37:946][ 99]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.14.37:946][ 99]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.14.38:008][ 99]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.14.38:008][ 99]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.14.38:008][ 99]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.14.38:008][ 99]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.14.38:008][ 99]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.14.38:020][ 99]LogInit: FAudioDevice initialized.
+[2021.04.14-10.14.38:026][ 99]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.14.38:028][ 99]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.14.38
+[2021.04.14-10.14.38:028][ 99]LogWorld: Bringing up level for play took: 0.001890
+[2021.04.14-10.14.38:029][ 99]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2021.04.14-10.14.38:035][ 99]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.14.38:035][ 99]ShowFlag.Bones = "2"
+[2021.04.14-10.14.38:036][ 99]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.14.38:037][ 99]PIE: 에디터에서 플레이 총 시작 시간 0.18초입니다.
+[2021.04.14-10.14.39:903][319]Cmd: LevelEditor.ToggleImmersive
+[2021.04.14-10.14.40:023][320]LogRenderer: Reallocating scene render targets to support 1528x732 Format 10 NumSamples 1 (Frame:222).
+[2021.04.14-10.14.40:066][321]LogRenderer: Reallocating scene render targets to support 1920x1040 Format 10 NumSamples 1 (Frame:224).
+[2021.04.14-10.14.40:326][347]Cmd: LevelEditor.ToggleImmersive
+[2021.04.14-10.14.49:306][338]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.14.49:306][338]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.14.49:306][338]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.14.49:306][338]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.14.49:312][338]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.14.49:316][338]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.14.49:335][338]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.14.49:350][338]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C296F7100), frame # 31338
+[2021.04.14-10.14.49:350][338]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C08882A00), frame # 31338
+[2021.04.14-10.14.49:352][338]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2021.04.14-10.14.49:399][339]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2021.04.14-10.14.50:738][492]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.14.50:759][492]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.14.50:759][492]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:14:50)
+[2021.04.14-10.14.50:759][492]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.14.50:772][492]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013101s)
+[2021.04.14-10.14.50:773][492]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.14.50:773][492]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C23D9EC00), frame # 31492
+[2021.04.14-10.14.50:773][492]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C1AECE0C0), frame # 31492
+[2021.04.14-10.14.50:773][492]LogPlayLevel: PIE: World Init took: (0.001221s)
+[2021.04.14-10.14.50:773][492]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.014454s)
+[2021.04.14-10.14.50:799][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.14.50:801][492]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.14.50:801][492]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.14.50:801][492]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.14.50:827][492]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.14.50:827][492]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.14.50:883][492]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.14.50:883][492]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.14.50:883][492]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.14.50:883][492]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.14.50:884][492]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.14.50:895][492]LogInit: FAudioDevice initialized.
+[2021.04.14-10.14.50:905][492]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.14.50:907][492]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.14.50
+[2021.04.14-10.14.50:907][492]LogWorld: Bringing up level for play took: 0.001785
+[2021.04.14-10.14.50:907][492]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2021.04.14-10.14.50:912][492]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.14.50:912][492]ShowFlag.Bones = "2"
+[2021.04.14-10.14.50:915][492]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.14.50:916][492]PIE: 에디터에서 플레이 총 시작 시간 0.159초입니다.
+[2021.04.14-10.15.01:956][728]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.15.01:956][728]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.15.01:956][728]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.15.01:957][728]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.15.01:967][728]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.15.01:970][728]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.15.01:986][728]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.15.02:002][728]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C1AECE0C0), frame # 32728
+[2021.04.14-10.15.02:002][728]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C23D9EC00), frame # 32728
+[2021.04.14-10.15.02:004][728]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2021.04.14-10.15.02:056][729]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2021.04.14-10.15.04:387][976]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.15.04:387][976]PIE: New page: SIE 세션: GameLevel (2021. 4. 15. 오전 4:15:04)
+[2021.04.14-10.15.04:387][976]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.15.04:400][976]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012916s)
+[2021.04.14-10.15.04:401][976]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.15.04:401][976]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C087E0A00), frame # 32976
+[2021.04.14-10.15.04:401][976]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C2970DE40), frame # 32976
+[2021.04.14-10.15.04:402][976]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2021.04.14-10.15.04:402][976]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.014204s)
+[2021.04.14-10.15.04:426][976]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.15.04:427][976]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.15.04:427][976]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.15.04:428][976]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.15.04:428][976]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.15.04:450][976]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.15.04:450][976]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.15.04:506][976]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.15.04:506][976]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.15.04:506][976]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.15.04:506][976]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.15.04:506][976]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.15.04:517][976]LogInit: FAudioDevice initialized.
+[2021.04.14-10.15.04:523][976]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.15.04:524][976]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.15.04
+[2021.04.14-10.15.04:525][976]LogWorld: Bringing up level for play took: 0.001809
+[2021.04.14-10.15.04:525][976]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2021.04.14-10.15.04:530][976]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.15.04:530][976]ShowFlag.Bones = "2"
+[2021.04.14-10.15.04:530][976]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.15.04:531][976]PIE: 에디터에서 플레이 총 시작 시간 0.147초입니다.
+[2021.04.14-10.15.38:028][545]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.15.38:028][545]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.15.38:028][545]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.15.38:029][545]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.15.38:038][545]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.15.38:041][545]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.15.38:058][545]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.15.38:076][545]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C2970DE40), frame # 36545
+[2021.04.14-10.15.38:076][545]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C087E0A00), frame # 36545
+[2021.04.14-10.15.38:078][545]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2021.04.14-10.15.38:122][546]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2021.04.14-10.17.03:497][522]LogSlate: Window '프로젝트 세팅' being destroyed
+[2021.04.14-10.17.03:503][522]LogSlate: Window '프로젝트 세팅' being destroyed
+[2021.04.14-10.19.33:764][577]LogUObjectHash: Compacting FUObjectHashTables data took   3.22ms
+[2021.04.14-10.19.33:850][577]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto145C6DAA14D1BBFB328C940B7AA2D2CE5.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto1.umap'
+[2021.04.14-10.19.33:855][577]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.158
+[2021.04.14-10.19.33:855][577]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.158
+[2021.04.14-10.20.32:949][878]LogTemp: Repeating last play command: 시뮬레이트
+[2021.04.14-10.20.32:969][878]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.20.32:969][878]PIE: New page: SIE 세션: GameLevel (2021. 4. 15. 오전 4:20:32)
+[2021.04.14-10.20.32:970][878]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.20.32:980][878]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010049s)
+[2021.04.14-10.20.32:981][878]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.20.32:981][878]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022BFFC16A00), frame # 44878
+[2021.04.14-10.20.32:981][878]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C088BFEC0), frame # 44878
+[2021.04.14-10.20.32:981][878]LogPlayLevel: PIE: World Init took: (0.001372s)
+[2021.04.14-10.20.32:981][878]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011579s)
+[2021.04.14-10.20.33:033][878]LogUObjectHash: Compacting FUObjectHashTables data took   2.99ms
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.20.33:035][878]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.20.33:035][878]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.20.33:036][878]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.20.33:036][878]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.20.33:060][878]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.20.33:060][878]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.20.33:128][878]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.20.33:128][878]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.20.33:128][878]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.20.33:128][878]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.20.33:128][878]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.20.33:139][878]LogInit: FAudioDevice initialized.
+[2021.04.14-10.20.33:150][878]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.20.33:152][878]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.20.33
+[2021.04.14-10.20.33:153][878]LogWorld: Bringing up level for play took: 0.001769
+[2021.04.14-10.20.33:153][878]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2021.04.14-10.20.33:157][878]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.20.33:158][878]ShowFlag.Bones = "2"
+[2021.04.14-10.20.33:158][878]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.20.33:159][878]PIE: 에디터에서 플레이 총 시작 시간 0.192초입니다.
+[2021.04.14-10.20.47:304][440]Cmd: SELECT NONE
+[2021.04.14-10.20.48:375][549]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.20.48:375][549]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.20.48:376][549]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.20.48:376][549]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.20.48:381][549]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.20.48:384][549]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.20.48:415][549]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.20.48:416][549]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C088BFEC0), frame # 46549
+[2021.04.14-10.20.48:416][549]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022BFFC16A00), frame # 46549
+[2021.04.14-10.20.48:418][549]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2021.04.14-10.20.48:453][550]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2021.04.14-10.20.52:121][978]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.20.52:121][978]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:20:52)
+[2021.04.14-10.20.52:121][978]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.20.52:132][978]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010554s)
+[2021.04.14-10.20.52:133][978]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.20.52:133][978]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C3EC12A00), frame # 46978
+[2021.04.14-10.20.52:133][978]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022BF393C900), frame # 46978
+[2021.04.14-10.20.52:133][978]LogPlayLevel: PIE: World Init took: (0.001377s)
+[2021.04.14-10.20.52:133][978]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012086s)
+[2021.04.14-10.20.52:154][978]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2021.04.14-10.20.52:155][978]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.20.52:156][978]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.20.52:156][978]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.20.52:156][978]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.20.52:182][978]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.20.52:182][978]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.20.52:235][978]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.20.52:235][978]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.20.52:236][978]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.20.52:236][978]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.20.52:236][978]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.20.52:246][978]LogInit: FAudioDevice initialized.
+[2021.04.14-10.20.52:256][978]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.20.52:257][978]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.20.52
+[2021.04.14-10.20.52:258][978]LogWorld: Bringing up level for play took: 0.001679
+[2021.04.14-10.20.52:258][978]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2021.04.14-10.20.52:263][978]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.20.52:263][978]ShowFlag.Bones = "2"
+[2021.04.14-10.20.52:264][978]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.20.52:265][978]PIE: 에디터에서 플레이 총 시작 시간 0.147초입니다.
+[2021.04.14-10.20.57:285][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.20.57:286][561]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.20.57:286][561]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.20.57:286][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.20.57:291][561]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.20.57:293][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.20.57:310][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.20.57:328][561]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022BF393C900), frame # 47561
+[2021.04.14-10.20.57:328][561]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C3EC12A00), frame # 47561
+[2021.04.14-10.20.57:330][561]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.14-10.20.57:361][562]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2021.04.14-10.20.57:806][614]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.20.57:826][614]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.20.57:826][614]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:20:57)
+[2021.04.14-10.20.57:826][614]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.20.57:835][614]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008859s)
+[2021.04.14-10.20.57:836][614]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.20.57:836][614]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C228B5000), frame # 47614
+[2021.04.14-10.20.57:836][614]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C4C056E80), frame # 47614
+[2021.04.14-10.20.57:836][614]LogPlayLevel: PIE: World Init took: (0.001153s)
+[2021.04.14-10.20.57:836][614]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010165s)
+[2021.04.14-10.20.57:855][614]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.20.57:856][614]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.20.57:856][614]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.20.57:856][614]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.20.57:879][614]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.20.57:879][614]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.20.57:932][614]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.20.57:932][614]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.20.57:932][614]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.20.57:932][614]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.20.57:932][614]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.20.57:945][614]LogInit: FAudioDevice initialized.
+[2021.04.14-10.20.57:954][614]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.20.57:955][614]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.20.57
+[2021.04.14-10.20.57:956][614]LogWorld: Bringing up level for play took: 0.001726
+[2021.04.14-10.20.57:956][614]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2021.04.14-10.20.57:961][614]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.20.57:961][614]ShowFlag.Bones = "2"
+[2021.04.14-10.20.57:962][614]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.20.57:963][614]PIE: 에디터에서 플레이 총 시작 시간 0.14초입니다.
+[2021.04.14-10.21.02:215][109]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.02:215][109]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.02:216][109]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.21.02:216][109]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.02:220][109]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.21.02:223][109]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.02:241][109]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.02:257][109]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C4C056E80), frame # 48109
+[2021.04.14-10.21.02:257][109]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C228B5000), frame # 48109
+[2021.04.14-10.21.02:258][109]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2021.04.14-10.21.02:287][110]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2021.04.14-10.21.03:649][265]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.21.03:668][265]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.21.03:668][265]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:21:03)
+[2021.04.14-10.21.03:669][265]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.03:678][265]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009626s)
+[2021.04.14-10.21.03:679][265]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.21.03:679][265]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022BFFC17C00), frame # 48265
+[2021.04.14-10.21.03:679][265]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C390A1D00), frame # 48265
+[2021.04.14-10.21.03:679][265]LogPlayLevel: PIE: World Init took: (0.001138s)
+[2021.04.14-10.21.03:679][265]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010886s)
+[2021.04.14-10.21.03:697][265]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.21.03:699][265]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.21.03:699][265]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.21.03:699][265]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.21.03:722][265]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.21.03:722][265]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.21.03:777][265]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.21.03:777][265]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.21.03:777][265]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.21.03:777][265]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.21.03:778][265]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.21.03:788][265]LogInit: FAudioDevice initialized.
+[2021.04.14-10.21.03:799][265]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.21.03:801][265]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.21.03
+[2021.04.14-10.21.03:801][265]LogWorld: Bringing up level for play took: 0.001680
+[2021.04.14-10.21.03:801][265]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.04.14-10.21.03:807][265]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.21.03:807][265]ShowFlag.Bones = "2"
+[2021.04.14-10.21.03:808][265]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.21.03:809][265]PIE: 에디터에서 플레이 총 시작 시간 0.143초입니다.
+[2021.04.14-10.21.06:865][614]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.06:865][614]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.06:866][614]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.21.06:866][614]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.06:874][614]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.21.06:877][614]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.06:891][614]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.06:907][614]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C390A1D00), frame # 48614
+[2021.04.14-10.21.06:907][614]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022BFFC17C00), frame # 48614
+[2021.04.14-10.21.06:909][614]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2021.04.14-10.21.06:939][615]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.04.14-10.21.08:257][771]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.21.08:277][771]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.21.08:277][771]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:21:08)
+[2021.04.14-10.21.08:277][771]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.08:288][771]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010445s)
+[2021.04.14-10.21.08:289][771]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.21.08:289][771]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C08B9CE00), frame # 48771
+[2021.04.14-10.21.08:289][771]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C390A4E00), frame # 48771
+[2021.04.14-10.21.08:289][771]LogPlayLevel: PIE: World Init took: (0.001711s)
+[2021.04.14-10.21.08:289][771]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012282s)
+[2021.04.14-10.21.08:307][771]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2021.04.14-10.21.08:308][771]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.21.08:309][771]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.21.08:309][771]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.21.08:309][771]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.21.08:333][771]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.21.08:333][771]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.21.08:386][771]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.21.08:387][771]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.21.08:387][771]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.21.08:387][771]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.21.08:387][771]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.21.08:398][771]LogInit: FAudioDevice initialized.
+[2021.04.14-10.21.08:403][771]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.21.08:405][771]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.21.08
+[2021.04.14-10.21.08:405][771]LogWorld: Bringing up level for play took: 0.001988
+[2021.04.14-10.21.08:406][771]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.04.14-10.21.08:411][771]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.21.08:411][771]ShowFlag.Bones = "2"
+[2021.04.14-10.21.08:412][771]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.21.08:413][771]PIE: 에디터에서 플레이 총 시작 시간 0.138초입니다.
+[2021.04.14-10.21.10:686][ 27]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.10:686][ 27]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.10:686][ 27]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.21.10:686][ 27]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.10:694][ 27]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.21.10:697][ 27]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.10:710][ 27]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.10:727][ 27]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C390A4E00), frame # 49027
+[2021.04.14-10.21.10:727][ 27]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C08B9CE00), frame # 49027
+[2021.04.14-10.21.10:728][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2021.04.14-10.21.10:761][ 28]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.04.14-10.21.11:265][ 87]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.21.11:286][ 87]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.21.11:286][ 87]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:21:11)
+[2021.04.14-10.21.11:286][ 87]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.11:295][ 87]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009375s)
+[2021.04.14-10.21.11:296][ 87]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.21.11:296][ 87]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C0D18C800), frame # 49087
+[2021.04.14-10.21.11:296][ 87]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C088AAD40), frame # 49087
+[2021.04.14-10.21.11:296][ 87]LogPlayLevel: PIE: World Init took: (0.001068s)
+[2021.04.14-10.21.11:296][ 87]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010572s)
+[2021.04.14-10.21.11:312][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.21.11:313][ 87]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.21.11:313][ 87]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.21.11:313][ 87]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.21.11:335][ 87]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.21.11:335][ 87]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.21.11:387][ 87]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.21.11:387][ 87]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.21.11:387][ 87]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.21.11:387][ 87]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.21.11:387][ 87]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.21.11:397][ 87]LogInit: FAudioDevice initialized.
+[2021.04.14-10.21.11:407][ 87]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.21.11:408][ 87]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.21.11
+[2021.04.14-10.21.11:409][ 87]LogWorld: Bringing up level for play took: 0.001640
+[2021.04.14-10.21.11:409][ 87]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.04.14-10.21.11:414][ 87]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.21.11:414][ 87]ShowFlag.Bones = "2"
+[2021.04.14-10.21.11:415][ 87]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.21.11:416][ 87]PIE: 에디터에서 플레이 총 시작 시간 0.133초입니다.
+[2021.04.14-10.21.16:645][702]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.16:645][702]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.21.16:646][702]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.21.16:646][702]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.16:653][702]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.21.16:655][702]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.21.16:672][702]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.21.16:687][702]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C088AAD40), frame # 49702
+[2021.04.14-10.21.16:687][702]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C0D18C800), frame # 49702
+[2021.04.14-10.21.16:689][702]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2021.04.14-10.21.16:719][703]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.04.14-10.22.06:863][490]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2021.04.14-10.22.18:692][639]LogEditorTransaction: Undo 위치 리셋
+[2021.04.14-10.22.27:518][641]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.22.27:518][641]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.22.55:482][858]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.22.55:503][858]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.22.55:503][858]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:22:55)
+[2021.04.14-10.22.55:503][858]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.22.55:512][858]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009286s)
+[2021.04.14-10.22.55:513][858]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.22.55:513][858]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C68076400), frame # 55858
+[2021.04.14-10.22.55:513][858]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C38C5ED40), frame # 55858
+[2021.04.14-10.22.55:514][858]LogPlayLevel: PIE: World Init took: (0.001663s)
+[2021.04.14-10.22.55:514][858]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011124s)
+[2021.04.14-10.22.55:541][858]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2021.04.14-10.22.55:545][858]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.22.55:546][858]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.22.55:546][858]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.22.55:546][858]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.22.55:572][858]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.22.55:572][858]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.22.55:635][858]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.22.55:636][858]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.22.55:636][858]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.22.55:636][858]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.22.55:636][858]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.22.55:647][858]LogInit: FAudioDevice initialized.
+[2021.04.14-10.22.55:657][858]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.22.55:659][858]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.22.55
+[2021.04.14-10.22.55:659][858]LogWorld: Bringing up level for play took: 0.001733
+[2021.04.14-10.22.55:659][858]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2021.04.14-10.22.55:666][858]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.22.55:666][858]ShowFlag.Bones = "2"
+[2021.04.14-10.22.55:667][858]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.22.55:667][858]PIE: 에디터에서 플레이 총 시작 시간 0.168초입니다.
+[2021.04.14-10.22.57:746][ 79]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.22.57:746][ 79]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.22.57:746][ 79]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.22.57:746][ 79]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.22.57:752][ 79]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.22.57:755][ 79]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.22.57:786][ 79]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.22.57:787][ 79]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C38C5ED40), frame # 56079
+[2021.04.14-10.22.57:787][ 79]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C68076400), frame # 56079
+[2021.04.14-10.22.57:789][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2021.04.14-10.22.57:829][ 80]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2021.04.14-10.23.00:120][333]Cmd: DELETE
+[2021.04.14-10.23.00:120][333]Cmd: ACTOR DELETE
+[2021.04.14-10.23.00:121][333]LogEditorActor: Deleted Actor: ThirdPersonCharacter_C
+[2021.04.14-10.23.00:143][333]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2021.04.14-10.23.00:145][333]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2021.04.14-10.23.01:202][456]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.23.01:222][456]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.23.01:222][456]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:23:01)
+[2021.04.14-10.23.01:243][456]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.23.01:252][456]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009474s)
+[2021.04.14-10.23.01:253][456]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.23.01:253][456]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C1AF27A00), frame # 56456
+[2021.04.14-10.23.01:253][456]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C0E79DD00), frame # 56456
+[2021.04.14-10.23.01:254][456]LogPlayLevel: PIE: World Init took: (0.001058s)
+[2021.04.14-10.23.01:254][456]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010711s)
+[2021.04.14-10.23.01:274][456]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.23.01:276][456]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.23.01:276][456]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.23.01:277][456]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.23.01:277][456]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.23.01:299][456]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.23.01:299][456]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.23.01:350][456]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.23.01:350][456]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.23.01:350][456]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.23.01:350][456]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.23.01:350][456]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.23.01:360][456]LogInit: FAudioDevice initialized.
+[2021.04.14-10.23.01:367][456]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.23.01:369][456]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.23.01
+[2021.04.14-10.23.01:369][456]LogWorld: Bringing up level for play took: 0.001009
+[2021.04.14-10.23.01:369][456]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2021.04.14-10.23.01:375][456]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.23.01:375][456]ShowFlag.Bones = "2"
+[2021.04.14-10.23.01:375][456]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.23.01:376][456]PIE: 에디터에서 플레이 총 시작 시간 0.157초입니다.
+[2021.04.14-10.23.02:217][551]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.23.02:217][551]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.23.02:217][551]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.23.02:218][551]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.23.02:228][551]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.23.02:231][551]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.23.02:246][551]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.23.02:261][551]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C0E79DD00), frame # 56551
+[2021.04.14-10.23.02:261][551]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C1AF27A00), frame # 56551
+[2021.04.14-10.23.02:263][551]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.04.14-10.23.02:293][552]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2021.04.14-10.23.03:775][725]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.04.14-10.23.04:077][756]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.04.14-10.23.04:367][789]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.00:838][308]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.01:474][373]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.01:873][419]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.02:489][491]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall9)
+[2021.04.14-10.25.03:181][569]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.06:092][885]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.09:187][225]Cmd: TRANSACTION UNDO
+[2021.04.14-10.25.09:187][225]LogEditorTransaction: Undo 액터 이동
+[2021.04.14-10.25.11:242][423]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.11:583][462]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.25.16:145][988]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2021.04.14-10.25.22:982][803]Cmd: DELETE
+[2021.04.14-10.25.22:982][803]Cmd: ACTOR DELETE
+[2021.04.14-10.25.22:983][803]LogEditorActor: Deleted Actor: PlayerStart
+[2021.04.14-10.25.23:002][803]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2021.04.14-10.25.23:011][803]LogEditorActor: Deleted 1 Actors (0.029 secs)
+[2021.04.14-10.25.23:874][903]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.25.23:894][903]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.25.23:894][903]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:25:23)
+[2021.04.14-10.25.23:894][903]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.23:904][903]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009467s)
+[2021.04.14-10.25.23:904][903]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.25.23:904][903]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C01FCFA00), frame # 61903
+[2021.04.14-10.25.23:905][903]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C38C5F100), frame # 61903
+[2021.04.14-10.25.23:905][903]LogPlayLevel: PIE: World Init took: (0.001075s)
+[2021.04.14-10.25.23:905][903]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010700s)
+[2021.04.14-10.25.23:924][903]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.25.23:925][903]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.25.23:925][903]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.25.23:926][903]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.25.23:926][903]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.25.23:948][903]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.25.23:948][903]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.25.24:010][903]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.25.24:010][903]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.25.24:010][903]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.25.24:010][903]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.25.24:010][903]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.25.24:021][903]LogInit: FAudioDevice initialized.
+[2021.04.14-10.25.24:030][903]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.25.24:031][903]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.25.24
+[2021.04.14-10.25.24:031][903]LogWorld: Bringing up level for play took: 0.000963
+[2021.04.14-10.25.24:031][903]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2021.04.14-10.25.24:037][903]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.25.24:037][903]ShowFlag.Bones = "2"
+[2021.04.14-10.25.24:037][903]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.25.24:038][903]PIE: 에디터에서 플레이 총 시작 시간 0.148초입니다.
+[2021.04.14-10.25.25:366][ 56]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.25:367][ 56]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.25:367][ 56]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.25.25:367][ 56]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.25:373][ 56]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.25.25:376][ 56]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.25:392][ 56]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.25:407][ 56]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C38C5F100), frame # 62056
+[2021.04.14-10.25.25:407][ 56]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C01FCFA00), frame # 62056
+[2021.04.14-10.25.25:409][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.04.14-10.25.25:437][ 57]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2021.04.14-10.25.28:092][371]Cmd: TRANSACTION UNDO
+[2021.04.14-10.25.28:092][371]LogEditorTransaction: Undo 액터 삭제
+[2021.04.14-10.25.29:672][509]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.25.29:691][509]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.25.29:692][509]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:25:29)
+[2021.04.14-10.25.29:692][509]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.29:703][509]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011770s)
+[2021.04.14-10.25.29:704][509]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.25.29:705][509]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022C72863600), frame # 62509
+[2021.04.14-10.25.29:705][509]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C678EF380), frame # 62509
+[2021.04.14-10.25.29:705][509]LogPlayLevel: PIE: World Init took: (0.001311s)
+[2021.04.14-10.25.29:705][509]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013272s)
+[2021.04.14-10.25.29:726][509]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.25.29:728][509]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.25.29:728][509]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.25.29:729][509]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.25.29:729][509]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.25.29:752][509]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.25.29:752][509]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.25.29:805][509]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.25.29:806][509]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.25.29:806][509]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.25.29:806][509]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.25.29:806][509]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.25.29:816][509]LogInit: FAudioDevice initialized.
+[2021.04.14-10.25.29:820][509]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.25.29:822][509]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.25.29
+[2021.04.14-10.25.29:822][509]LogWorld: Bringing up level for play took: 0.000963
+[2021.04.14-10.25.29:822][509]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2021.04.14-10.25.29:828][509]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.25.29:828][509]ShowFlag.Bones = "2"
+[2021.04.14-10.25.29:828][509]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.25.29:829][509]PIE: 에디터에서 플레이 총 시작 시간 0.14초입니다.
+[2021.04.14-10.25.30:696][606]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.30:696][606]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.30:696][606]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.25.30:696][606]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.30:702][606]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.25.30:706][606]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.30:724][606]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.30:739][606]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C678EF380), frame # 62606
+[2021.04.14-10.25.30:739][606]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022C72863600), frame # 62606
+[2021.04.14-10.25.30:741][606]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.04.14-10.25.30:769][607]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2021.04.14-10.25.36:005][219]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.36:919][327]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.37:984][453]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.38:981][571]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.39:820][670]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.41:865][886]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.04.14-10.25.42:349][938]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.04.14-10.25.42:369][938]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-10.25.42:369][938]PIE: New page: PIE 세션: GameLevel (2021. 4. 15. 오전 4:25:42)
+[2021.04.14-10.25.42:369][938]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.42:379][938]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009504s)
+[2021.04.14-10.25.42:380][938]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-10.25.42:380][938]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022BF39C1800), frame # 63938
+[2021.04.14-10.25.42:380][938]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022C296F7600), frame # 63938
+[2021.04.14-10.25.42:380][938]LogPlayLevel: PIE: World Init took: (0.001367s)
+[2021.04.14-10.25.42:380][938]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011029s)
+[2021.04.14-10.25.42:400][938]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-10.25.42:405][938]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-10.25.42:405][938]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-10.25.42:406][938]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-10.25.42:406][938]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-10.25.42:428][938]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-10.25.42:428][938]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-10.25.42:480][938]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.04.14-10.25.42:480][938]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-10.25.42:481][938]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-10.25.42:481][938]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-10.25.42:481][938]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-10.25.42:491][938]LogInit: FAudioDevice initialized.
+[2021.04.14-10.25.42:499][938]LogLoad: Game class is 'WireHunterGameMode'
+[2021.04.14-10.25.42:500][938]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.04.14-19.25.42
+[2021.04.14-10.25.42:500][938]LogWorld: Bringing up level for play took: 0.000958
+[2021.04.14-10.25.42:500][938]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2021.04.14-10.25.42:506][938]Cmd: ShowFlag.Bones 2
+[2021.04.14-10.25.42:506][938]ShowFlag.Bones = "2"
+[2021.04.14-10.25.42:506][938]PIE: 서버가 로그인했습니다.
+[2021.04.14-10.25.42:507][938]PIE: 에디터에서 플레이 총 시작 시간 0.141초입니다.
+[2021.04.14-10.25.54:587][381]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.54:587][381]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.04.14-10.25.54:587][381]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.25.54:587][381]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.54:596][381]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-10.25.54:599][381]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.25.54:613][381]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-10.25.54:628][381]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022C296F7600), frame # 65381
+[2021.04.14-10.25.54:628][381]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022BF39C1800), frame # 65381
+[2021.04.14-10.25.54:630][381]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.04.14-10.25.54:665][382]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2021.04.14-10.26.05:128][562]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.04.14-10.26.05:129][562]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.04.14-10.26.14:018][609]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/BP_WireHunterCharacter.BP_WireHunterCharacter
+[2021.04.14-10.26.14:461][609]LogSlate: Window '블루프린트 클래스 추가' being destroyed
+[2021.04.14-10.26.26:508][891]LogSlate: Window 'BP_WireHunterCharacter' being destroyed
+[2021.04.14-10.26.26:553][891]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-10.26.26:553][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-10.26.37:882][127]LogEditor: Attempting to add actor of class 'WireHunterCharacter' to level at 4738.00,4072.00,6553.00
+[2021.04.14-10.26.38:042][134]LogEditor: Attempting to add actor of class 'WireHunterCharacter' to level at -2479.00,-315.60,4053.00
+[2021.04.14-10.27.00:027][569]Cmd: DELETE
+[2021.04.14-10.27.00:027][569]Cmd: ACTOR DELETE
+[2021.04.14-10.27.00:029][569]LogEditorActor: Deleted Actor: WireHunterCharacter
+[2021.04.14-10.27.00:057][569]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2021.04.14-10.27.00:065][569]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2021.04.14-10.28.01:306][669]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.14-10.28.04:067][669]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.14-10.28.04:660][728]Cmd: TRANSACTION UNDO
+[2021.04.14-10.28.04:660][728]LogEditorTransaction: Undo 액터 삭제
+[2021.04.14-10.28.05:700][785]Cmd: TRANSACTION UNDO
+[2021.04.14-10.28.05:700][785]LogEditorTransaction: Undo 액터 이동
+[2021.04.14-10.28.10:181][251]Cmd: DELETE
+[2021.04.14-10.28.10:181][251]Cmd: ACTOR DELETE
+[2021.04.14-10.28.10:199][251]LogEditorActor: Deleted Actor: WireHunterCharacter
+[2021.04.14-10.28.10:219][251]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2021.04.14-10.28.10:223][251]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2021.04.14-10.28.14:261][724]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2021.04.14-10.28.15:018][724]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.14-10.28.15:097][724]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2021.04.14-10.28.15:692][788]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2021.04.14-10.28.16:426][788]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.14-10.28.16:986][851]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2021.04.14-10.28.17:766][851]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.14-10.28.19:470][ 43]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2021.04.14-10.28.20:313][ 43]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.14-10.28.20:396][ 43]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2021.04.14-10.29.03:538][666]LogMaterial: Display: Missing cached shader map for material Material_0, compiling. 
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 34
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 29
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 19
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 14
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 9
+[2021.04.14-10.29.03:615][667]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2021.04.14-10.29.03:633][667]LogMaterial: Display: Missing cached shader map for material Material_1, compiling. 
+[2021.04.14-10.29.03:682][668]LogMaterial: Display: Missing cached shader map for material Material_2, compiling. 
+[2021.04.14-10.29.03:730][669]LogMaterial: Display: Missing cached shader map for material Material_3, compiling. 
+[2021.04.14-10.29.03:772][670]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 102
+[2021.04.14-10.29.05:986][827]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 92
+[2021.04.14-10.29.06:013][830]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 82
+[2021.04.14-10.29.06:211][852]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 72
+[2021.04.14-10.29.06:363][867]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 62
+[2021.04.14-10.29.06:603][893]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 54
+[2021.04.14-10.29.06:637][897]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 47
+[2021.04.14-10.29.06:852][921]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 41
+[2021.04.14-10.29.07:903][ 26]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 35
+[2021.04.14-10.29.08:903][ 89]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 30
+[2021.04.14-10.29.09:377][121]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 26
+[2021.04.14-10.29.09:676][141]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 22
+[2021.04.14-10.29.09:851][153]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 19
+[2021.04.14-10.29.10:061][168]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 16
+[2021.04.14-10.29.10:080][169]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 13
+[2021.04.14-10.29.10:099][170]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 11
+[2021.04.14-10.29.10:271][180]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 9
+[2021.04.14-10.29.10:534][196]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 7
+[2021.04.14-10.29.10:628][201]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 6
+[2021.04.14-10.29.10:760][210]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.04.14-10.29.11:053][229]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 4
+[2021.04.14-10.29.11:053][229]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 3
+[2021.04.14-10.29.11:149][236]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 2
+[2021.04.14-10.29.11:239][242]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 1
+[2021.04.14-10.30.27:915][840]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2021.04.14-10.30.29:276][840]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto275546DA54D45D14CD6616EA81CF272C3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto2.umap'
+[2021.04.14-10.30.29:356][840]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 1.457
+[2021.04.14-10.30.29:356][840]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.457
+[2021.04.14-10.30.29:356][840]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonCPP/Blueprints/BP_WireHunterCharacter] ([1] browsable assets)...
+[2021.04.14-10.30.29:357][840]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/Blueprints/BP_WireHunterCharacter]
+[2021.04.14-10.30.29:378][840]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BP_WireHunterCharacter_Auto2E439B0DB4FBE5964405066BD78847560.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Blueprints/BP_WireHunterCharacter_Auto2.uasset'
+[2021.04.14-10.30.29:379][840]LogFileHelpers: Auto-saving content packages took 0.023
+[2021.04.14-10.30.31:918][116]LogEditor: Attempting to add actor of class 'WireHunterCharacter' to level at 2489.00,5450.00,6474.00
+[2021.04.14-10.30.32:205][136]LogEditor: Attempting to add actor of class 'WireHunterCharacter' to level at 3598.00,3744.00,5880.00
+[2021.04.14-10.30.56:855][994]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.04.14-10.30.57:359][ 50]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall7)
+[2021.04.14-10.30.59:781][312]Cmd: DELETE
+[2021.04.14-10.30.59:781][312]Cmd: ACTOR DELETE
+[2021.04.14-10.30.59:783][312]LogEditorActor: Deleted Actor: WireHunterCharacter
+[2021.04.14-10.30.59:806][312]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2021.04.14-10.30.59:813][312]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2021.04.14-10.40.21:024][ 85]LogHotReload: New module detected: UE4Editor-WireHunter-0002.dll
+[2021.04.14-10.40.22:384][ 90]LogHotReload: Starting Hot-Reload from IDE
+[2021.04.14-10.40.22:822][ 90]LogHotReload: Re-instancing PickUp after hot-reload.
+[2021.04.14-10.40.22:855][ 90]LogHotReload: Re-instancing WireHunterCharacter after hot-reload.
+[2021.04.14-10.40.22:939][ 90]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0006 seconds. Added 12 classes and 2 folders.
+[2021.04.14-10.40.22:942][ 90]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)

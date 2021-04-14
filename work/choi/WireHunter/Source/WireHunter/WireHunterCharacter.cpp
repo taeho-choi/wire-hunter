@@ -50,6 +50,15 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+
+	//// Set Character's Mesh
+	//static ConstructorHelpers::FObjectFinder<USkeletalMesh> CharacterMesh(TEXT
+	//("/Game/Character/Mesh/SK_Mannequin.SK_Mannequin"));
+	//if (CharacterMesh.Succeeded())
+	//{
+	//	Mesh->SetSkeletalMesh(CharacterMesh.Object);
+	//}
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -219,4 +228,31 @@ void AWireHunterCharacter::LeftTurn()
 void AWireHunterCharacter::RightTurn()
 {
 
+}
+
+void AWireHunterCharacter::WireTrace()
+{
+	FHitResult Hit;
+
+	const float WireRange = 50000.f;
+	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
+	const FVector EndTrace = (FollowCamera->GetForwardVector() * WireRange) + FollowCamera->GetComponentLocation();
+
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+
+
+
+
+
+	//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
+	//QueryParams.AddIgnoredActor(this);
+
+	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+	{
+		if (ImpactParticle)
+		{
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
+		}
+	}
 }

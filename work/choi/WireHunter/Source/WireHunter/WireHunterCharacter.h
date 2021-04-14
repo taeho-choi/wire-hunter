@@ -12,9 +12,9 @@ class AWireHunterCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-		/** Camera boom positioning the camera behind the character */
-		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		class USpringArmComponent* CameraBoom;
+	/** Camera boom positioning the camera behind the character */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class USpringArmComponent* CameraBoom;
 
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -27,12 +27,14 @@ class AWireHunterCharacter : public ACharacter
 public:
 	AWireHunterCharacter();
 
+	// Character's Status
 	float GetHealth() const { return Health; }
 	void SetHealth(float val) { Health = val; }
 
 	float GetMaxHealth() const { return MaxHealth; }
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
+	// Floating
 	FVector GetFloatingPos() const { return FloatingPos; }
 	void SetFloatingPos(FVector val) { FloatingPos = val; }
 
@@ -53,6 +55,10 @@ public:
 
 	bool GetLockLeftClimb() const { return LockLeftClimb; }
 	void SetLockLeftClimb(bool val) { LockLeftClimb = val; }
+
+	// WireSystem
+	bool GetHooked() const { return Hooked; }
+	void SetHooked(bool val) { Hooked = val; }
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
@@ -78,6 +84,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float MaxHealth = 100;
 
+	// Floating
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector FloatingPos;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -94,6 +101,10 @@ protected:
 		bool LockRightClimb = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool LockLeftClimb = false;
+
+	// WireSystem
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool Hooked = false;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -139,11 +150,15 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	// Fire
 	void StartFire();
 	void StopFire();
 	void FireShot();
 	void LeftTurn();
 	void RightTurn();
+
+	// Wire
+	void WireTrace();
 
 	FTimerHandle TimerHandle_HandleRefire;
 

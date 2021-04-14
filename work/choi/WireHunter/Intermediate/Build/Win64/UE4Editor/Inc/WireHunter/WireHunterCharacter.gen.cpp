@@ -48,6 +48,11 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_MuzzleOffset;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hooked_MetaData[];
+#endif
+		static void NewProp_Hooked_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Hooked;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LockLeftClimb_MetaData[];
 #endif
 		static void NewProp_LockLeftClimb_SetBit(void* Obj);
@@ -144,6 +149,19 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset = { "MuzzleOffset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked_MetaData[] = {
+		{ "Category", "Floating" },
+		{ "Comment", "// WireSystem\n" },
+		{ "ModuleRelativePath", "WireHunterCharacter.h" },
+		{ "ToolTip", "WireSystem" },
+	};
+#endif
+	void Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked_SetBit(void* Obj)
+	{
+		((AWireHunterCharacter*)Obj)->Hooked = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked = { "Hooked", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AWireHunterCharacter), &Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked_SetBit, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_LockLeftClimb_MetaData[] = {
 		{ "Category", "Floating" },
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
@@ -200,7 +218,9 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_FloatingPos_MetaData[] = {
 		{ "Category", "Floating" },
+		{ "Comment", "// Floating\n" },
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
+		{ "ToolTip", "Floating" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_FloatingPos = { "FloatingPos", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, FloatingPos), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_FloatingPos_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_FloatingPos_MetaData)) };
@@ -285,6 +305,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWireHunterCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_LockLeftClimb,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_LockRightClimb,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_WallRightVector,
@@ -329,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWireHunterCharacter, 2388792526);
+	IMPLEMENT_CLASS(AWireHunterCharacter, 2484118757);
 	template<> WIREHUNTER_API UClass* StaticClass<AWireHunterCharacter>()
 	{
 		return AWireHunterCharacter::StaticClass();
