@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{552E1B21-6EE3-44B0-BF8D-169A45781DDC}</UniqueIdentifier>
+      <UniqueIdentifier>{AC984725-925C-49E7-9F14-FD2E1592B2BF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{DE944705-ED96-4818-9B53-C4B0BC83F106}</UniqueIdentifier>
+      <UniqueIdentifier>{2D44C646-71CA-4E35-9312-53A8B3B12421}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{47950621-466B-4732-B682-9C2C22B41F80}</UniqueIdentifier>
+      <UniqueIdentifier>{C5B7609C-A640-46FC-8733-13327C7F7287}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\Boss.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\BossAIController.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\BossAIController.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\Bullet.cpp">
       <Filter>Source\WireHunter</Filter>
     </ClCompile>

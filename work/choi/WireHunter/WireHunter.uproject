@@ -10,7 +10,8 @@
 			"LoadingPhase": "PostEngineInit",
 			"AdditionalDependencies": [
 				"UMG",
-				"Engine"
+				"Engine",
+				"AIModule"
 			]
 		}
 	]
