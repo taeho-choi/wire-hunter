@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AC984725-925C-49E7-9F14-FD2E1592B2BF}</UniqueIdentifier>
+      <UniqueIdentifier>{1032BACA-5990-418A-AC55-018BDBEC5586}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2D44C646-71CA-4E35-9312-53A8B3B12421}</UniqueIdentifier>
+      <UniqueIdentifier>{557F6AB0-B561-4595-914B-8CB06DA7BF72}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,8 +29,38 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Source\CableComponent">
+      <UniqueIdentifier>{0670755A-8EC5-4638-BBAD-A56449D66850}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CableComponent\CableComponent.Build.cs">
+      <Filter>Source\CableComponent</Filter>
+    </None>
+    <Filter Include="Source\CableComponent\Classes">
+      <UniqueIdentifier>{60619A2F-865E-4456-A292-2F7EBFB21862}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CableComponent\Classes\CableActor.h">
+      <Filter>Source\CableComponent\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CableComponent\Classes\CableComponent.h">
+      <Filter>Source\CableComponent\Classes</Filter>
+    </ClInclude>
+    <Filter Include="Source\CableComponent\Private">
+      <UniqueIdentifier>{B5751230-8FC9-48C3-B8E9-1DF4F8D993F5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CableComponent\Private\CableActor.cpp">
+      <Filter>Source\CableComponent\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CableComponent\Private\CableComponent.cpp">
+      <Filter>Source\CableComponent\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CableComponent\Private\CableComponentPlugin.cpp">
+      <Filter>Source\CableComponent\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CableComponent\Private\CableComponentStats.h">
+      <Filter>Source\CableComponent\Private</Filter>
+    </ClInclude>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{C5B7609C-A640-46FC-8733-13327C7F7287}</UniqueIdentifier>
+      <UniqueIdentifier>{88ADA074-CB4E-4486-BDF2-9E98A301A210}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
       <Filter>Source\WireHunter</Filter>

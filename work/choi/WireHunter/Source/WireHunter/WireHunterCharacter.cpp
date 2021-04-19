@@ -15,6 +15,11 @@
 #include "HealthBar.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "DrawDebugHelpers.h"
+//#include "Runtime/CableComponent/Public/CableComponent.h"
+#include "CableComponent.h"
+
+
+
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -50,6 +55,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
 	HealthWidget->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
+	Cable = CreateDefaultSubobject<UCableComponent>(TEXT("Cable"));
+	Cable->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+	Cable->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
@@ -73,6 +82,8 @@ void AWireHunterCharacter::BeginPlay()
 	Health = 55.f;
 
 	SetFloatingPos(GetActorLocation());
+
+	// Set Cable's Parameters
 }
 
 

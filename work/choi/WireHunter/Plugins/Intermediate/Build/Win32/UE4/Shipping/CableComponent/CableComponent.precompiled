@@ -1,0 +1,7 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\..\\..\\..\\..\\..\\..\\Intermediate\\Build\\Win32\\UE4\\Shipping\\Engine\\SharedPCH.Engine.ShadowErrors.h.obj",
+		"Module.CableComponent.cpp.obj",
+		"Module.CableComponent.gen.cpp.obj"
+	]
+}

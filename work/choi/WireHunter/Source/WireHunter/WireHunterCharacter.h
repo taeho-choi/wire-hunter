@@ -23,6 +23,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere)
 		class UWidgetComponent* HealthWidget;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
+		class UCableComponent* Cable;
+
 
 public:
 	AWireHunterCharacter();

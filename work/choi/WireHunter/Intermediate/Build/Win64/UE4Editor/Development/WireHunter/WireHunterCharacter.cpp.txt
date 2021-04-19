@@ -177,3 +177,5 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particl
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Plugins\Runtime\CableComponent\Source\CableComponent\Classes\CableComponent.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Plugins\Runtime\CableComponent\Intermediate\Build\Win64\UE4Editor\Inc\CableComponent\CableComponent.generated.h
