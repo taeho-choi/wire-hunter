@@ -96,6 +96,7 @@
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\HeadMountedDisplay\UE4Editor-HeadMountedDisplay.lib"
+"C:\Program Files\Epic Games\UE_4.25\Engine\Plugins\Runtime\CableComponent\Intermediate\Build\Win64\UE4Editor\Development\CableComponent\UE4Editor-CableComponent.lib"
 /OUT:"C:\Wire-Hunter\work\choi\WireHunter\Binaries\Win64\UE4Editor-WireHunter-0011.dll"
 /IMPLIB:"C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0011.suppressed.lib"
 /PDB:"C:\Wire-Hunter\work\choi\WireHunter\Binaries\Win64\UE4Editor-WireHunter-0011.pdb"

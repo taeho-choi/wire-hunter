@@ -3,6 +3,7 @@
 
 #include "WireHunterCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Bullet.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
@@ -15,8 +16,9 @@
 #include "HealthBar.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "DrawDebugHelpers.h"
-//#include "Runtime/CableComponent/Public/CableComponent.h"
 #include "CableComponent.h"
+#include "Math/Vector.h"
+#include "Math/UnrealMathUtility.h"
 
 
 
@@ -55,21 +57,16 @@ AWireHunterCharacter::AWireHunterCharacter()
 	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
 	HealthWidget->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
-	Cable = CreateDefaultSubobject<UCableComponent>(TEXT("Cable"));
-	Cable->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
-	Cable->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
+	cppWire = CreateDefaultSubobject<UCableComponent>(TEXT("cppWire"));
+	cppWire->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+	cppWire->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
+	// Set Cable's Parameters
+	cppWire->CableWidth = 3.f;
+	cppWire->CableLength = 100.f;
+	cppWire->EndLocation = FVector(120.f, 10.f, 60.f);
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
-
-
-	//// Set Character's Mesh
-	//static ConstructorHelpers::FObjectFinder<USkeletalMesh> CharacterMesh(TEXT
-	//("/Game/Character/Mesh/SK_Mannequin.SK_Mannequin"));
-	//if (CharacterMesh.Succeeded())
-	//{
-	//	Mesh->SetSkeletalMesh(CharacterMesh.Object);
-	//}
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -79,11 +76,9 @@ void AWireHunterCharacter::BeginPlay()
 	UHealthBar* HealthBar = Cast<UHealthBar>(HealthWidget->GetUserWidgetObject());
 	HealthBar->SetOwnerCharacter(this);
 
-	Health = 55.f;
+	Health = 5.f;
 
 	SetFloatingPos(GetActorLocation());
-
-	// Set Cable's Parameters
 }
 
 
@@ -117,6 +112,9 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AWireHunterCharacter::StartFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
+
+	// Bind WireShot
+	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
 }
 
 void AWireHunterCharacter::Tick(float DeltaTime)
@@ -128,7 +126,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorLocation(GetFloatingPos());
 		//SetActorRotation(GetFloatingRot());
 	}
-	WireTrace();
+	UpdateWirePosition();
 }
 
 
@@ -243,20 +241,75 @@ void AWireHunterCharacter::RightTurn()
 
 }
 
-void AWireHunterCharacter::WireTrace()
+void AWireHunterCharacter::HookWire()
 {
-	FHitResult Hit;
-
-	const float WireRange = 50000.f;
-	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
-	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
-
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 0, 0, 1.f);
-	if (Hit.bBlockingHit)
+	// 와이어가 꽂혀있을 경우 와이어를 회수
+	if (cppHooked)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
+		// 와이어를 회수
+	}
+
+	// 와이어가 꽂혀있지 않을 경우 트레이싱 히트 시 해당 지점에 와이어 꽂기
+	else
+	{
+		// 크로스헤어 지점으로 트레이싱
+		FHitResult Hit;
+
+		const float WireRange = 50000.f;
+		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
+		const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
+
+		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+		QueryParams.AddIgnoredActor(this);
+		GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+		DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+		if (Hit.bBlockingHit)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
+		}
+
+		// 트레이싱이 충돌하면 와이어를 꽂기
+		if (Hit.bBlockingHit) 
+		{
+			// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
+			//FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
+			//this->SetActorRotation(WireShotRotation);
+
+			SetCppHookLocation(Hit.Location);
+			GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
+
+
+			SetCppHooked(true);
+		}
+		else
+		{
+			// 와이어 회수 상태로
+		}
+	}
+}
+
+void AWireHunterCharacter::UpdateWirePosition()
+{
+	if (GetCppHooked())
+	{
+		if (GetCppHookMoveFinished())
+		{
+
+		}
+		else
+		{
+			FVector dis = cppWire->GetComponentLocation() - GetCppHookLocation();
+			if (dis.Size() <= 100.f)
+			{
+				SetCppHookMoveFinished(true);
+			}
+			else
+			{
+				FVector NewLocation;
+				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
+				cppWire->SetWorldLocation(NewLocation);
+				SetCppHookMoveFinished(false);
+			}
+		}
 	}
 }

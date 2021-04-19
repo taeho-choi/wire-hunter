@@ -41,6 +41,11 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cppHooked_MetaData[];
+#endif
+		static void NewProp_cppHooked_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_cppHooked;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
@@ -109,9 +114,9 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ImpactParticle;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Cable_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cppWire_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Cable;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_cppWire;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthWidget_MetaData[];
 #endif
@@ -139,6 +144,17 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked_MetaData[] = {
+		{ "Category", "WireSystem" },
+		{ "ModuleRelativePath", "WireHunterCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked_SetBit(void* Obj)
+	{
+		((AWireHunterCharacter*)Obj)->cppHooked = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked = { "cppHooked", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AWireHunterCharacter), &Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked_SetBit, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -278,14 +294,14 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ImpactParticle = { "ImpactParticle", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, ImpactParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ImpactParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ImpactParticle_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Cable_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppWire_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "cable" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "WireHunterCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Cable = { "Cable", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, Cable), Z_Construct_UClass_UCableComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Cable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Cable_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppWire = { "cppWire", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, cppWire), Z_Construct_UClass_UCableComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppWire_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppWire_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_HealthWidget_MetaData[] = {
 		{ "Category", "WireHunterCharacter" },
@@ -317,6 +333,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWireHunterCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_CameraBoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_CameraBoom_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWireHunterCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppHooked,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_MuzzleOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Hooked,
@@ -333,7 +350,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_TimerBetweenShots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_ImpactParticle,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_Cable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_cppWire,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_HealthWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWireHunterCharacter_Statics::NewProp_CameraBoom,
@@ -365,7 +382,7 @@ void EmptyLinkFunctionForGeneratedCodeWireHunterCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWireHunterCharacter, 3018617691);
+	IMPLEMENT_CLASS(AWireHunterCharacter, 2682879425);
 	template<> WIREHUNTER_API UClass* StaticClass<AWireHunterCharacter>()
 	{
 		return AWireHunterCharacter::StaticClass();

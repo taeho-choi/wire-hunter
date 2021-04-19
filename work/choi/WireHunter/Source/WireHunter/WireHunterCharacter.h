@@ -24,7 +24,7 @@ class AWireHunterCharacter : public ACharacter
 		class UWidgetComponent* HealthWidget;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
-		class UCableComponent* Cable;
+		class UCableComponent* cppWire;
 
 
 public:
@@ -142,7 +142,6 @@ protected:
 	/** Handler for when a touch input stops. */
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
 
-protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
@@ -160,8 +159,7 @@ public:
 	void LeftTurn();
 	void RightTurn();
 
-	// Wire
-	void WireTrace();
+
 
 	FTimerHandle TimerHandle_HandleRefire;
 
@@ -170,5 +168,32 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
+
+
+
+
+
+
+
+	// Convert Blueprint to C++
+
+	// Wire System
+public:
+	bool GetCppHooked() const { return cppHooked; }
+	void SetCppHooked(bool val) { cppHooked = val; }
+
+	bool GetCppHookMoveFinished() const { return cppHookMoveFinished; }
+	void SetCppHookMoveFinished(bool val) { cppHookMoveFinished = val; }
+
+	FVector GetCppHookLocation() const { return cppHookLocation; }
+	void SetCppHookLocation(FVector val) { cppHookLocation = val; }
+
+	void HookWire();
+	void UpdateWirePosition();
+protected:
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
+	bool cppHooked = false;
+	bool cppHookMoveFinished = false;
+	FVector cppHookLocation;
 };
 

@@ -62,7 +62,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AWireHunterCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AWireHunterCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__HealthWidget() { return STRUCT_OFFSET(AWireHunterCharacter, HealthWidget); } \
-	FORCEINLINE static uint32 __PPO__Cable() { return STRUCT_OFFSET(AWireHunterCharacter, Cable); } \
+	FORCEINLINE static uint32 __PPO__cppWire() { return STRUCT_OFFSET(AWireHunterCharacter, cppWire); } \
 	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(AWireHunterCharacter, Health); } \
 	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(AWireHunterCharacter, MaxHealth); } \
 	FORCEINLINE static uint32 __PPO__FloatingPos() { return STRUCT_OFFSET(AWireHunterCharacter, FloatingPos); } \
@@ -72,7 +72,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	FORCEINLINE static uint32 __PPO__WallRightVector() { return STRUCT_OFFSET(AWireHunterCharacter, WallRightVector); } \
 	FORCEINLINE static uint32 __PPO__LockRightClimb() { return STRUCT_OFFSET(AWireHunterCharacter, LockRightClimb); } \
 	FORCEINLINE static uint32 __PPO__LockLeftClimb() { return STRUCT_OFFSET(AWireHunterCharacter, LockLeftClimb); } \
-	FORCEINLINE static uint32 __PPO__Hooked() { return STRUCT_OFFSET(AWireHunterCharacter, Hooked); }
+	FORCEINLINE static uint32 __PPO__Hooked() { return STRUCT_OFFSET(AWireHunterCharacter, Hooked); } \
+	FORCEINLINE static uint32 __PPO__cppHooked() { return STRUCT_OFFSET(AWireHunterCharacter, cppHooked); }
 
 
 #define WireHunter_Source_WireHunter_WireHunterCharacter_h_10_PROLOG
