@@ -188,12 +188,19 @@ public:
 	FVector GetCppHookLocation() const { return cppHookLocation; }
 	void SetCppHookLocation(FVector val) { cppHookLocation = val; }
 
+	float GetCppHookedWireLength() const { return cppHookedWireLength; }
+	void SetCppHookedWireLength(float val) { cppHookedWireLength = val; }
+
 	void HookWire();
 	void UpdateWirePosition();
+	void WireSwing();
+	void BreakHook();
+
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;
 	bool cppHookMoveFinished = false;
+	float cppHookedWireLength;
 	FVector cppHookLocation;
 };
 

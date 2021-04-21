@@ -19,6 +19,8 @@
 #include "CableComponent.h"
 #include "Math/Vector.h"
 #include "Math/UnrealMathUtility.h"
+#include "Components/SceneComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 
 
@@ -59,11 +61,14 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	cppWire = CreateDefaultSubobject<UCableComponent>(TEXT("cppWire"));
 	cppWire->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
-	cppWire->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
+	//cppWire->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
+	cppWire->SetAttachEndTo(NULL, NAME_None);
+	cppWire->bAttachStart = true;
 	// Set Cable's Parameters
 	cppWire->CableWidth = 3.f;
 	cppWire->CableLength = 100.f;
-	cppWire->EndLocation = FVector(120.f, 10.f, 60.f);
+	cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
+	//cppWire->bEnableCollision = true;
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -126,7 +131,14 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorLocation(GetFloatingPos());
 		//SetActorRotation(GetFloatingRot());
 	}
-	UpdateWirePosition();
+
+	if (GetCharacterMovement()->IsFalling())
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
+	}
+
+	//UpdateWirePosition();
+	WireSwing();
 }
 
 
@@ -243,47 +255,62 @@ void AWireHunterCharacter::RightTurn()
 
 void AWireHunterCharacter::HookWire()
 {
-	// 와이어가 꽂혀있을 경우 와이어를 회수
-	if (cppHooked)
+	//if (GetCharacterMovement()->IsFalling())
+	if (true)
 	{
-		// 와이어를 회수
-	}
-
-	// 와이어가 꽂혀있지 않을 경우 트레이싱 히트 시 해당 지점에 와이어 꽂기
-	else
-	{
-		// 크로스헤어 지점으로 트레이싱
-		FHitResult Hit;
-
-		const float WireRange = 50000.f;
-		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
-		const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
-
-		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-		QueryParams.AddIgnoredActor(this);
-		GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-		DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-		if (Hit.bBlockingHit)
+		// 와이어가 꽂혀있을 경우 와이어를 회수
+		if (GetCppHooked())
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
+			// 와이어를 회수
+			BreakHook();
 		}
 
-		// 트레이싱이 충돌하면 와이어를 꽂기
-		if (Hit.bBlockingHit) 
-		{
-			// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
-			//FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
-			//this->SetActorRotation(WireShotRotation);
-
-			SetCppHookLocation(Hit.Location);
-			GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
-
-
-			SetCppHooked(true);
-		}
+		// 와이어가 꽂혀있지 않을 경우 트레이싱 히트 시 해당 지점에 와이어 꽂기
 		else
 		{
-			// 와이어 회수 상태로
+			// 크로스헤어 지점으로 트레이싱
+			FHitResult Hit;
+
+			const float WireRange = 50000.f;
+			const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
+			const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
+
+			FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+			QueryParams.AddIgnoredActor(this);
+			GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+			DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+			if (Hit.bBlockingHit)
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
+			}
+
+			// 트레이싱이 충돌하면 와이어를 꽂기
+			if (Hit.bBlockingHit)
+			{
+				// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
+				//FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
+				//this->SetActorRotation(WireShotRotation);
+
+				cppWire->SetVisibility(true);
+
+				SetCppHookLocation(Hit.Location);
+				GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
+
+				FVector NewLocation;
+				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
+				cppWire->SetWorldLocation(GetCppHookLocation());
+				//cppWire->EndLocation = GetActorLocation();
+				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
+				SetCppHookedWireLength(NewWireLength);
+				cppWire->CableLength = GetCppHookedWireLength();
+
+	
+				SetCppHooked(true);
+			}
+			else
+			{
+				// 와이어 회수 상태로
+			}
 		}
 	}
 }
@@ -294,7 +321,10 @@ void AWireHunterCharacter::UpdateWirePosition()
 	{
 		if (GetCppHookMoveFinished())
 		{
-
+			FRotator NewRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), GetCppHookLocation());
+			FVector NewLocation = NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(),
+																 GetWorld()->GetDeltaSeconds(), 5000.f);
+			cppWire->SetWorldLocationAndRotation(NewLocation, NewRotation);
 		}
 		else
 		{
@@ -302,14 +332,39 @@ void AWireHunterCharacter::UpdateWirePosition()
 			if (dis.Size() <= 100.f)
 			{
 				SetCppHookMoveFinished(true);
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("HookMoveFinished"));
 			}
 			else
 			{
 				FVector NewLocation;
 				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
 				cppWire->SetWorldLocation(NewLocation);
+				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
+				SetCppHookedWireLength(NewWireLength);
 				SetCppHookMoveFinished(false);
 			}
 		}
 	}
+}
+
+void AWireHunterCharacter::WireSwing()
+{
+	if (GetCppHooked())
+	{
+		cppWire->SetWorldLocation(GetCppHookLocation());
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		float dot = FVector::DotProduct(GetVelocity(), dist);
+		dist.Normalize();
+		GetCharacterMovement()->AddForce(dist * dot * -2.f);
+		cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+		GetCharacterMovement()->AirControl = 1.f;
+	}
+}
+
+void AWireHunterCharacter::BreakHook()
+{
+	SetCppHooked(false);
+	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
+	cppWire->SetWorldLocation(GetActorLocation());
+	cppWire->SetVisibility(false);
 }
