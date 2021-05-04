@@ -65,7 +65,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	cppWire->SetAttachEndTo(NULL, NAME_None);
 	cppWire->bAttachStart = true;
 	// Set Cable's Parameters
-	cppWire->CableWidth = 3.f;
+	cppWire->CableWidth = 5.f;
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
 	//cppWire->bEnableCollision = true;
