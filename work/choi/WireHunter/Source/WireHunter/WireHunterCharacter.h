@@ -191,16 +191,27 @@ public:
 	float GetCppHookedWireLength() const { return cppHookedWireLength; }
 	void SetCppHookedWireLength(float val) { cppHookedWireLength = val; }
 
+	bool GetCppisLaunching() const { return cppisLaunching; }
+	void SetCppisLaunching(bool val) { cppisLaunching = val; }
+
+	FVector GetCppWireDistance() const { return cppWireDistance; }
+	void SetCppWireDistance(FVector val) { cppWireDistance = val; }
+
 	void HookWire();
 	void UpdateWirePosition();
 	void WireSwing();
 	void BreakHook();
+	void Withdraw();
+	void PressWithdraw();
+	void Launch();
 
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;
 	bool cppHookMoveFinished = false;
 	float cppHookedWireLength;
+	bool cppisLaunching = false;
+	FVector cppWireDistance;
 	FVector cppHookLocation;
 };
 

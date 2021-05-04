@@ -65,9 +65,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	cppWire->SetAttachEndTo(NULL, NAME_None);
 	cppWire->bAttachStart = true;
 	// Set Cable's Parameters
-	cppWire->CableWidth = 5.f;
+	cppWire->CableWidth = 8.f;
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
+	cppWire->bEnableStiffness = true;
 	//cppWire->bEnableCollision = true;
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -120,6 +121,12 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// Bind WireShot
 	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
+
+	// Bind Launch
+	PlayerInputComponent->BindAction("Launch", IE_Pressed, this, &AWireHunterCharacter::Launch);
+
+	// Bind Withdraw
+	PlayerInputComponent->BindAction("Withdraw", IE_Pressed, this, &AWireHunterCharacter::PressWithdraw);
 }
 
 void AWireHunterCharacter::Tick(float DeltaTime)
@@ -132,13 +139,21 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		//SetActorRotation(GetFloatingRot());
 	}
 
-	if (GetCharacterMovement()->IsFalling())
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
-	}
+	//if (GetCharacterMovement()->IsFalling())
+	//{
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
+	//}
 
 	//UpdateWirePosition();
-	WireSwing();
+	if (cppHooked)
+	{
+		WireSwing();
+	}
+	//Launch Character
+	if (GetCppisLaunching())
+	{
+		Withdraw();
+	}
 }
 
 
@@ -275,6 +290,7 @@ void AWireHunterCharacter::HookWire()
 			const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
 			const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
+
 			FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 			QueryParams.AddIgnoredActor(this);
 			GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
@@ -303,9 +319,9 @@ void AWireHunterCharacter::HookWire()
 				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
 				SetCppHookedWireLength(NewWireLength);
 				cppWire->CableLength = GetCppHookedWireLength();
-
-	
 				SetCppHooked(true);
+				float distance = (GetActorLocation() - GetCppHookLocation()).Size();
+				GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 150000000.f);
 			}
 			else
 			{
@@ -356,7 +372,10 @@ void AWireHunterCharacter::WireSwing()
 		float dot = FVector::DotProduct(GetVelocity(), dist);
 		dist.Normalize();
 		GetCharacterMovement()->AddForce(dist * dot * -2.f);
-		cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+		if (!GetCppisLaunching())
+		{
+			cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+		}
 		GetCharacterMovement()->AirControl = 1.f;
 	}
 }
@@ -364,7 +383,37 @@ void AWireHunterCharacter::WireSwing()
 void AWireHunterCharacter::BreakHook()
 {
 	SetCppHooked(false);
+	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
 	cppWire->SetWorldLocation(GetActorLocation());
 	cppWire->SetVisibility(false);
+	SetCppisLaunching(false);
+}
+
+void AWireHunterCharacter::Withdraw()
+{
+	FVector dist = GetActorLocation() - GetCppHookLocation();
+	cppWire->CableLength = dist.Size();
+	FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 1000.f);
+	LaunchCharacter(launchVel, true, true);
+}
+
+void AWireHunterCharacter::PressWithdraw()
+{
+	if (!GetCppisLaunching())
+	{
+		SetCppisLaunching(true);
+	}
+	else
+	{
+		SetCppisLaunching(false);
+	}
+}
+
+void AWireHunterCharacter::Launch()
+{
+	FVector dist = GetActorLocation() - GetCppHookLocation();
+	cppWire->CableLength = dist.Size();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Launched"));
+	GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 50000000.f);
 }
