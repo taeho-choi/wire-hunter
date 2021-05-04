@@ -1845,3 +1845,206 @@ Bip001 TailNub
 [2021.05.04-22.31.18:220][ 26]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelDB71E9AF4485BE8503AA8A896E515C5F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
 [2021.05.04-22.31.18:250][ 26]AssetCheck: New page: 애셋 저장: GameLevel
 [2021.05.04-22.31.18:250][ 26]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.04-22.32.44:382][357]LogSlate: Window 'BT_Enemy' being destroyed
+[2021.05.04-22.32.44:385][357]LogSlate: Window 'BT_Enemy' being destroyed
+[2021.05.04-22.46.56:002][334]BlueprintLog: New page: Enemy_Character 컴파일
+[2021.05.04-22.46.56:107][334]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2021.05.04-22.46.56:628][384]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Enemy_Character" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset" SILENT=true
+[2021.05.04-22.46.56:639][384]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Enemy_CharacterD27DB85848C0EA37ADD894A04C974183.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset'
+[2021.05.04-22.46.56:649][384]AssetCheck: New page: 애셋 저장: Enemy_Character
+[2021.05.04-22.46.56:649][384]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/Enemy_Character.Enemy_Character 유효성 검사
+[2021.05.04-22.50.31:974][ 67]BlueprintLog: New page: Enemy_Character 컴파일
+[2021.05.04-22.50.32:078][ 67]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2021.05.04-22.50.33:019][163]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Enemy_Character" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset" SILENT=true
+[2021.05.04-22.50.33:029][163]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Enemy_CharacterD4C7DFB84C4199893E7E39A0E8B00D4E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset'
+[2021.05.04-22.50.33:039][163]AssetCheck: New page: 애셋 저장: Enemy_Character
+[2021.05.04-22.50.33:039][163]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/Enemy_Character.Enemy_Character 유효성 검사
+[2021.05.04-22.50.36:708][572]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.04-22.50.36:722][572]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.04-22.50.36:722][572]PIE: New page: PIE 세션: GameLevel (2021. 5. 5. 오후 4:50:36)
+[2021.05.04-22.50.36:757][572]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.50.36:769][572]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012273s)
+[2021.05.04-22.50.36:770][572]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.04-22.50.36:770][572]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000016AD888BE00), frame # 414572
+[2021.05.04-22.50.36:770][572]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000016B10A64CC0), frame # 414572
+[2021.05.04-22.50.36:770][572]LogPlayLevel: PIE: World Init took: (0.001220s)
+[2021.05.04-22.50.36:770][572]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013632s)
+[2021.05.04-22.50.36:796][572]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.04-22.50.36:798][572]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.04-22.50.36:798][572]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.04-22.50.36:799][572]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.04-22.50.36:799][572]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.04-22.50.36:801][572]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.04-22.50.36:801][572]LogAudioMixer: Display: 1: FrontRight
+[2021.05.04-22.50.36:815][572]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.04-22.50.36:816][572]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.04-22.50.36:816][572]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.04-22.50.36:816][572]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.04-22.50.36:816][572]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.04-22.50.36:829][572]LogInit: FAudioDevice initialized.
+[2021.05.04-22.50.36:834][572]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.04-22.50.36:837][572]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.05-07.50.36
+[2021.05.04-22.50.36:838][572]LogWorld: Bringing up level for play took: 0.002765
+[2021.05.04-22.50.36:838][572]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2021.05.04-22.50.36:842][572]Cmd: ShowFlag.Bones 2
+[2021.05.04-22.50.36:842][572]ShowFlag.Bones = "2"
+[2021.05.04-22.50.36:842][572]PIE: 서버가 로그인했습니다.
+[2021.05.04-22.50.36:843][572]PIE: 에디터에서 플레이 총 시작 시간 0.126초입니다.
+[2021.05.04-22.50.37:820][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.50.37:820][681]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.50.37:820][681]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.50.37:821][681]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.37:833][681]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.04-22.50.37:838][681]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.37:880][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.50.37:882][681]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016B10A64CC0), frame # 414681
+[2021.05.04-22.50.37:882][681]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016AD888BE00), frame # 414681
+[2021.05.04-22.50.37:884][681]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.05.04-22.50.37:906][682]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2021.05.04-22.50.41:471][101]LogEditorViewport: Clicking on Actor (LMB): Enemy_Character_C (Enemy_Character)
+[2021.05.04-22.50.49:208][709]LogSlate: Window 'Enemy_Controller' being destroyed
+[2021.05.04-22.50.49:210][709]LogSlate: Window 'Enemy_Controller' being destroyed
+[2021.05.04-22.50.49:235][709]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.50.49:235][709]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.49:288][709]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.50.49:288][709]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.49:330][709]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.50.49:330][709]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.49:383][709]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.05.04-22.50.49:383][709]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.50.49:383][709]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.50.50:922][866]LogAssetEditorSubsystem: Opening Asset editor for BlackboardData /Game/ThirdPersonCPP/AI/BB_Enemy.BB_Enemy
+[2021.05.04-22.50.54:568][288]LogSlate: Window 'BB_Enemy' being destroyed
+[2021.05.04-22.50.54:571][288]LogSlate: Window 'BB_Enemy' being destroyed
+[2021.05.04-22.50.56:186][465]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/ThirdPersonCPP/AI/BT_Enemy.BT_Enemy
+[2021.05.04-22.51.04:065][254]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.04-22.51.04:076][254]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.04-22.51.04:077][254]PIE: New page: PIE 세션: GameLevel (2021. 5. 5. 오후 4:51:04)
+[2021.05.04-22.51.04:077][254]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.51.04:088][254]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011149s)
+[2021.05.04-22.51.04:089][254]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.04-22.51.04:089][254]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000016AE5757400), frame # 417254
+[2021.05.04-22.51.04:089][254]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000016AA4AEFC40), frame # 417254
+[2021.05.04-22.51.04:089][254]LogPlayLevel: PIE: World Init took: (0.001577s)
+[2021.05.04-22.51.04:090][254]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012888s)
+[2021.05.04-22.51.04:112][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.04-22.51.04:118][254]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.04-22.51.04:118][254]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.04-22.51.04:119][254]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.04-22.51.04:119][254]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.04-22.51.04:121][254]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.04-22.51.04:121][254]LogAudioMixer: Display: 1: FrontRight
+[2021.05.04-22.51.04:135][254]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.04-22.51.04:135][254]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.04-22.51.04:135][254]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.04-22.51.04:135][254]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.04-22.51.04:135][254]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.04-22.51.04:148][254]LogInit: FAudioDevice initialized.
+[2021.05.04-22.51.04:156][254]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.04-22.51.04:159][254]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.05-07.51.04
+[2021.05.04-22.51.04:160][254]LogWorld: Bringing up level for play took: 0.002571
+[2021.05.04-22.51.04:160][254]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2021.05.04-22.51.04:163][254]Cmd: ShowFlag.Bones 2
+[2021.05.04-22.51.04:163][254]ShowFlag.Bones = "2"
+[2021.05.04-22.51.04:163][254]PIE: 서버가 로그인했습니다.
+[2021.05.04-22.51.04:164][254]PIE: 에디터에서 플레이 총 시작 시간 0.09초입니다.
+[2021.05.04-22.51.13:070][315]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.51.13:071][315]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.51.13:071][315]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.51.13:071][315]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.51.13:077][315]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.04-22.51.13:080][315]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.51.13:110][315]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.51.13:111][315]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016AA4AEFC40), frame # 418315
+[2021.05.04-22.51.13:111][315]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016AE5757400), frame # 418315
+[2021.05.04-22.51.13:114][315]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2021.05.04-22.51.13:143][316]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2021.05.04-22.51.14:309][454]LogEditorViewport: Clicking on Actor (LMB): Enemy_Character_C (Enemy_Character)
+[2021.05.04-22.51.14:486][471]LogEditorViewport: Clicking on Component (LMB): SkeletalMeshComponent (CharacterMesh0)
+[2021.05.04-22.51.16:269][674]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/Enemy_Character.Enemy_Character
+[2021.05.04-22.51.34:429][729]BlueprintLog: New page: Enemy_Character 컴파일
+[2021.05.04-22.51.34:480][729]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2021.05.04-22.51.34:890][770]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Enemy_Character" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset" SILENT=true
+[2021.05.04-22.51.34:900][770]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Enemy_CharacterF48C21174A22F08C2A23F78CD4BC4BB8.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset'
+[2021.05.04-22.51.34:911][770]AssetCheck: New page: 애셋 저장: Enemy_Character
+[2021.05.04-22.51.34:911][770]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/Enemy_Character.Enemy_Character 유효성 검사
+[2021.05.04-22.51.37:332][ 40]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.04-22.51.37:344][ 40]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.04-22.51.37:344][ 40]PIE: New page: PIE 세션: GameLevel (2021. 5. 5. 오후 4:51:37)
+[2021.05.04-22.51.37:344][ 40]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.51.37:356][ 40]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011478s)
+[2021.05.04-22.51.37:357][ 40]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.04-22.51.37:357][ 40]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000016AC5A1D200), frame # 421040
+[2021.05.04-22.51.37:357][ 40]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000016A813C4CC0), frame # 421040
+[2021.05.04-22.51.37:357][ 40]LogPlayLevel: PIE: World Init took: (0.001373s)
+[2021.05.04-22.51.37:357][ 40]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012996s)
+[2021.05.04-22.51.37:377][ 40]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2021.05.04-22.51.37:378][ 40]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.04-22.51.37:378][ 40]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.04-22.51.37:379][ 40]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.04-22.51.37:379][ 40]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.04-22.51.37:379][ 40]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.04-22.51.37:381][ 40]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.04-22.51.37:381][ 40]LogAudioMixer: Display: 1: FrontRight
+[2021.05.04-22.51.37:394][ 40]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.04-22.51.37:394][ 40]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.04-22.51.37:394][ 40]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.04-22.51.37:394][ 40]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.04-22.51.37:394][ 40]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.04-22.51.37:407][ 40]LogInit: FAudioDevice initialized.
+[2021.05.04-22.51.37:412][ 40]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.04-22.51.37:414][ 40]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.05-07.51.37
+[2021.05.04-22.51.37:415][ 40]LogWorld: Bringing up level for play took: 0.002561
+[2021.05.04-22.51.37:416][ 40]LogOnline: OSS: Creating online subsystem instance for: :Context_29
+[2021.05.04-22.51.37:420][ 40]Cmd: ShowFlag.Bones 2
+[2021.05.04-22.51.37:420][ 40]ShowFlag.Bones = "2"
+[2021.05.04-22.51.37:420][ 40]PIE: 서버가 로그인했습니다.
+[2021.05.04-22.51.37:420][ 40]PIE: 에디터에서 플레이 총 시작 시간 0.079초입니다.
+[2021.05.04-22.51.50:181][562]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.51.50:181][562]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.04-22.51.50:181][562]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.51.50:182][562]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.51.50:190][562]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.04-22.51.50:194][562]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.51.50:227][562]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.04-22.51.50:228][562]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016A813C4CC0), frame # 422562
+[2021.05.04-22.51.50:228][562]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016AC5A1D200), frame # 422562
+[2021.05.04-22.51.50:230][562]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.05.04-22.51.50:259][563]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2021.05.04-22.52.31:138][313]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Volumetrics)
+[2021.05.04-22.52.31:628][366]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2021.05.04-22.52.31:660][366]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel3783BC864C6FE6E9DD73BF99B7CDA457.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.04-22.52.31:687][366]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.05.04-22.52.31:687][366]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.04-22.52.33:528][586]LogEditorViewport: Clicking on Actor (LMB): Enemy_Character_C (Enemy_Character)
+[2021.05.04-22.52.33:603][591]LogEditorViewport: Clicking on Component (LMB): SkeletalMeshComponent (CharacterMesh0)
+[2021.05.04-22.52.44:113][589]BlueprintLog: New page: Enemy_Character 컴파일
+[2021.05.04-22.52.44:166][589]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2021.05.04-22.52.44:840][661]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Enemy_Character" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset" SILENT=true
+[2021.05.04-22.52.44:851][661]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Enemy_Character4964B2824DDD7ED8679B8ABA7A3E2BF4.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Enemy_Character.uasset'
+[2021.05.04-22.52.44:861][661]AssetCheck: New page: 애셋 저장: Enemy_Character
+[2021.05.04-22.52.44:861][661]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/Enemy_Character.Enemy_Character 유효성 검사
+[2021.05.04-22.52.45:908][770]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2021.05.04-22.52.45:908][770]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.04-22.52.49:148][142]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.05.04-22.52.49:559][186]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2021.05.04-22.52.49:586][186]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelFD25DB4B4887CC71ED28B0B704E2E071.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.04-22.52.49:612][186]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.05.04-22.52.49:612][186]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
