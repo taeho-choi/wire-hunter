@@ -123,7 +123,7 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
 
 	// Bind Launch
-	PlayerInputComponent->BindAction("Launch", IE_Pressed, this, &AWireHunterCharacter::Launch);
+	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::Climb);
 
 	// Bind Withdraw
 	PlayerInputComponent->BindAction("Withdraw", IE_Pressed, this, &AWireHunterCharacter::PressWithdraw);
@@ -136,7 +136,11 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	if (GetisClimbing())
 	{
 		SetActorLocation(GetFloatingPos());
-		//SetActorRotation(GetFloatingRot());
+		UpdateWallNormal();
+
+		FRotator TargetRotator = UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()) - FRotator(0, 180, 0);
+		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
+		SetActorRotation(SmoothRotator);
 	}
 
 	//if (GetCharacterMovement()->IsFalling())
@@ -198,7 +202,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (GetWallUpVector() * (Value * 3.f)));
+			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()))* 5 * Value));
 		}
 	}
 }
@@ -218,10 +222,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 		if (GetisClimbing())
 		{
-			if ((!LockRightClimb && Value > 0) || (!LockLeftClimb && Value < 0))
-			{
-				SetFloatingPos(GetFloatingPos() + (GetWallRightVector() * (Value * -3.f)));
-			}
+			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * -Value));
 		}
 	}
 }
@@ -407,13 +408,53 @@ void AWireHunterCharacter::PressWithdraw()
 	else
 	{
 		SetCppisLaunching(false);
+		BreakHook();
 	}
 }
 
-void AWireHunterCharacter::Launch()
+void AWireHunterCharacter::Climb()
 {
-	FVector dist = GetActorLocation() - GetCppHookLocation();
-	cppWire->CableLength = dist.Size();
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Launched"));
-	GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 50000000.f);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Press Climb"));
+	ClimbTrace();
+}
+
+void AWireHunterCharacter::ClimbTrace()
+{
+	FHitResult Hit;
+	SetCppWallNormal(Hit.Normal);
+
+	const float ClimbRange = 200.f;
+	const FVector StartTrace = GetActorLocation();
+	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+
+
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	if (Hit.bBlockingHit)
+	{
+		BreakHook();
+		SetisClimbing(true);
+		SetFloatingPos(GetActorLocation());
+	}
+}
+
+void AWireHunterCharacter::UpdateWallNormal()
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 200.f;
+	const FVector StartTrace = GetActorLocation();
+	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+
+
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	if (Hit.bBlockingHit)
+	{
+		SetCppWallNormal(Hit.Normal);
+	}
 }

@@ -197,13 +197,18 @@ public:
 	FVector GetCppWireDistance() const { return cppWireDistance; }
 	void SetCppWireDistance(FVector val) { cppWireDistance = val; }
 
+	FVector GetCppWallNormal() const { return cppWallNormal; }
+	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
+
 	void HookWire();
 	void UpdateWirePosition();
 	void WireSwing();
 	void BreakHook();
 	void Withdraw();
 	void PressWithdraw();
-	void Launch();
+	void Climb();
+	void ClimbTrace();
+	void UpdateWallNormal();
 
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
@@ -213,5 +218,6 @@ protected:
 	bool cppisLaunching = false;
 	FVector cppWireDistance;
 	FVector cppHookLocation;
+	FVector cppWallNormal;
 };
 
