@@ -8,6 +8,7 @@ WindowsPlatform.UpdateCachedWindowsSdks: Found Windows 10 SDK version 10.0.18362
 WindowsPlatform.UpdateCachedWindowsSdks: Found Universal CRT version 10.0.18362.0 at C:\Program Files (x86)\Windows Kits\10
 WindowsPlatform.UpdateCachedWindowsSdks: Found Windows 10 SDK version 10.0.19041.0 at C:\Program Files (x86)\Windows Kits\10
 WindowsPlatform.UpdateCachedWindowsSdks: Found Universal CRT version 10.0.19041.0 at C:\Program Files (x86)\Windows Kits\10
+DynamicCompilation.RequiresCompilation: Compiling C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\BuildRules\WireHunterModuleRules.dll: Assembly does not exist
 Log.PushStatus: Binding IntelliSense data...
 ProgressWriter.Write: @progress 'Binding IntelliSense data...' 0%
 UEBuildTarget.AddPlugin: Enabling plugin 'Paper2D' (referenced via default plugins)
@@ -253,35 +254,36 @@ Timeline.Print: [ 0.000]
 Timeline.Print: [ 0.000](+0.027) <unknown>
 Timeline.Print: [ 0.027](+0.056) XmlConfig.ReadConfigFiles()
 Timeline.Print: [ 0.083](+0.000) SingleInstanceMutex.Acquire()
-Timeline.Print: [ 0.083](+0.045) UEBuildPlatform.RegisterPlatforms()
-Timeline.Print:   0.084          [ 0.000](+0.027) Initializing InstalledPlatformInfo
-Timeline.Print:   0.112          [ 0.028](+0.000) Querying types
-Timeline.Print:   0.113          [ 0.029](+0.001) XXXPlatformFactory
-Timeline.Print:   0.114          [ 0.030](+0.000) MacPlatformFactory
-Timeline.Print:   0.114          [ 0.030](+0.000) TVOSPlatformFactory
-Timeline.Print:   0.114          [ 0.031](+0.000) AndroidPlatformFactory
-Timeline.Print:   0.115          [ 0.031](+0.000) HoloLensPlatformFactory
-Timeline.Print:   0.115          [ 0.031](+0.000) IOSPlatformFactory
-Timeline.Print:   0.115          [ 0.031](+0.000) LinuxPlatformFactory
-Timeline.Print:   0.115          [ 0.031](+0.000) LuminPlatformFactory
-Timeline.Print:   0.115          [ 0.031](+0.013) WindowsPlatformFactory
-Timeline.Print: [ 0.129](+0.245) <unknown>
-Timeline.Print: [ 0.374](+0.001) Finding engine modules
-Timeline.Print: [ 0.376](+0.002) Finding plugin modules
-Timeline.Print: [ 0.379](+0.028) <unknown>
-Timeline.Print: [ 0.407](+0.000) Finding program modules
-Timeline.Print: [ 0.407](+0.000) Finding program targets
-Timeline.Print: [ 0.407](+1.543) <unknown>
-Timeline.Print: [ 1.951](+0.000) RulesCompiler.CreateTargetRulesAssembly()
-Timeline.Print: [ 1.952](+0.001) RulesAssembly.CreateTargetRules()
-Timeline.Print: [ 1.960](+0.004) UEBuildTarget constructor
-Timeline.Print: [ 1.964](+1.237) UEBuildTarget.PreBuildSetup()
-Timeline.Print: [ 3.202](+4.795) <unknown>
-Timeline.Print: [ 7.998](+0.000) RulesCompiler.CreateTargetRulesAssembly()
-Timeline.Print: [ 7.998](+0.001) RulesAssembly.CreateTargetRules()
-Timeline.Print: [ 8.000](+0.045) UEBuildTarget constructor
-Timeline.Print:   8.000          [ 0.000](+0.045) Reading source file metadata cache
-Timeline.Print: [ 8.046](+0.140) UEBuildTarget.PreBuildSetup()
-Timeline.Print: [ 8.186](+3.056) <unknown>
-Timeline.Print: [11.243](+0.000) FileMetadataPrefetch.Stop()
-Timeline.Print: [11.245]
+Timeline.Print: [ 0.083](+0.044) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.084          [ 0.000](+0.026) Initializing InstalledPlatformInfo
+Timeline.Print:   0.111          [ 0.027](+0.000) Querying types
+Timeline.Print:   0.112          [ 0.028](+0.001) XXXPlatformFactory
+Timeline.Print:   0.113          [ 0.029](+0.000) MacPlatformFactory
+Timeline.Print:   0.113          [ 0.030](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.113          [ 0.030](+0.000) AndroidPlatformFactory
+Timeline.Print:   0.114          [ 0.030](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.114          [ 0.030](+0.000) IOSPlatformFactory
+Timeline.Print:   0.114          [ 0.030](+0.000) LinuxPlatformFactory
+Timeline.Print:   0.114          [ 0.030](+0.000) LuminPlatformFactory
+Timeline.Print:   0.114          [ 0.030](+0.013) WindowsPlatformFactory
+Timeline.Print: [ 0.128](+0.234) <unknown>
+Timeline.Print: [ 0.362](+0.002) Finding engine modules
+Timeline.Print: [ 0.364](+0.002) Finding plugin modules
+Timeline.Print: [ 0.367](+0.030) <unknown>
+Timeline.Print: [ 0.397](+0.000) Finding program modules
+Timeline.Print: [ 0.397](+0.000) Finding program targets
+Timeline.Print: [ 0.397](+0.055) <unknown>
+Timeline.Print: [ 0.453](+0.139) Compiling rules assembly (WireHunterModuleRules.dll)
+Timeline.Print: [ 0.593](+0.660) <unknown>
+Timeline.Print: [ 1.253](+0.000) RulesCompiler.CreateTargetRulesAssembly()
+Timeline.Print: [ 1.254](+0.001) RulesAssembly.CreateTargetRules()
+Timeline.Print: [ 1.261](+0.004) UEBuildTarget constructor
+Timeline.Print: [ 1.266](+1.003) UEBuildTarget.PreBuildSetup()
+Timeline.Print: [ 2.270](+0.416) <unknown>
+Timeline.Print: [ 2.686](+0.000) RulesCompiler.CreateTargetRulesAssembly()
+Timeline.Print: [ 2.686](+0.001) RulesAssembly.CreateTargetRules()
+Timeline.Print: [ 2.689](+0.000) UEBuildTarget constructor
+Timeline.Print: [ 2.689](+0.135) UEBuildTarget.PreBuildSetup()
+Timeline.Print: [ 2.825](+2.411) <unknown>
+Timeline.Print: [ 5.236](+0.000) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 5.238]

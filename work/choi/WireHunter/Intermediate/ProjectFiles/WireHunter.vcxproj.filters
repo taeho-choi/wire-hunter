@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2E338AAF-9B9E-4EC4-8CC8-EC5F535F58AC}</UniqueIdentifier>
+      <UniqueIdentifier>{8639D3FF-39EB-4B14-932D-F1BB9A1DD3B2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{ACB538A5-3B5D-4390-9A48-F7E39D6B7EEE}</UniqueIdentifier>
+      <UniqueIdentifier>{7B449E9F-BC6B-4849-BCC9-B5A7E25B837E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{B2A2AB30-6285-45AA-B9C7-4AFCCC06EC21}</UniqueIdentifier>
+      <UniqueIdentifier>{031CE2C2-D0C5-47F6-A1EF-9C327773F9DB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
       <Filter>Source\WireHunter</Filter>
@@ -56,22 +56,10 @@
     <ClInclude Include="..\..\Source\WireHunter\Dragon.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\WireHunter\EditorDoll.cpp">
-      <Filter>Source\WireHunter</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\WireHunter\EditorDoll.h">
-      <Filter>Source\WireHunter</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\EditorGameMode.cpp">
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\EditorGameMode.h">
-      <Filter>Source\WireHunter</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\WireHunter\EditorPawn.cpp">
-      <Filter>Source\WireHunter</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\WireHunter\EditorPawn.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\EditorPlayerController.cpp">
