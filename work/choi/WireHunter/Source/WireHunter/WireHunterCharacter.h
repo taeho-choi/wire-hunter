@@ -209,6 +209,7 @@ public:
 	void Climb();
 	void ClimbTrace();
 	void UpdateWallNormal();
+	void LedgeTrace();
 
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
