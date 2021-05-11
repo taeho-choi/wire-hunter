@@ -2590,3 +2590,291 @@ Bip001 TailNub
 [2021.05.11-08.56.15:787][560]LogEditorActor: Deleted 1 Actors (0.014 secs)
 [2021.05.11-08.56.16:801][682]Cmd: TRANSACTION UNDO
 [2021.05.11-08.56.16:801][682]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.57.48:571][ 47]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-08.57.56:143][952]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-08.58.02:842][743]LogEditorViewport: Clicking Background
+[2021.05.11-08.58.11:559][766]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall12)
+[2021.05.11-08.58.14:181][ 76]LogEditorViewport: Clicking Background
+[2021.05.11-08.58.37:410][800]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall12)
+[2021.05.11-08.59.17:763][539]Cmd: DELETE
+[2021.05.11-08.59.17:763][539]Cmd: ACTOR DELETE
+[2021.05.11-08.59.17:763][539]LogEditorActor: Deleted Actor: ExponentialHeightFog
+[2021.05.11-08.59.17:773][539]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.05.11-08.59.17:777][539]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2021.05.11-08.59.18:568][634]Cmd: TRANSACTION UNDO
+[2021.05.11-08.59.18:568][634]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.59.58:580][264]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv3)
+[2021.05.11-09.00.08:122][389]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv3)
+[2021.05.11-09.00.19:013][663]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv3)
+[2021.05.11-09.00.22:162][ 35]Cmd: TRANSACTION UNDO
+[2021.05.11-09.00.22:162][ 35]LogEditorTransaction: Undo 액터 이동
+[2021.05.11-09.00.35:327][535]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.00.49:050][133]LogEditorViewport: Clicking Background
+[2021.05.11-09.00.49:767][218]Cmd: TRANSACTION UNDO
+[2021.05.11-09.00.49:767][218]LogEditorTransaction: Undo 배경 클릭
+[2021.05.11-09.00.52:022][440]Cmd: TRANSACTION UNDO
+[2021.05.11-09.00.52:022][440]LogEditorTransaction: Undo 액터 클릭
+[2021.05.11-09.01.04:561][898]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-09.01.08:825][393]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.01.13:874][975]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-09.01.20:746][792]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.01.45:244][626]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.01.50:586][257]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.01.56:302][927]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.02.02:089][591]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.02.13:568][937]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv3)
+[2021.05.11-09.02.41:621][455]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.05.11-09.02.41:651][455]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto36F4CB47F4D2617871619E4BEF8B42C32.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto3.umap'
+[2021.05.11-09.02.41:652][455]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.041
+[2021.05.11-09.02.41:652][455]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.041
+[2021.05.11-09.03.40:322][420]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv6)
+[2021.05.11-09.03.57:747][485]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv6)
+[2021.05.11-09.04.03:482][161]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv6)
+[2021.05.11-09.04.14:493][451]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv6)
+[2021.05.11-09.04.21:788][301]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv2)
+[2021.05.11-09.04.29:470][179]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-09.04.45:176][967]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-09.04.48:816][392]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-09.04.54:152][ 16]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-09.05.31:255][453]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-09.05.32:377][584]Cmd: EDIT COPY
+[2021.05.11-09.05.33:047][663]Cmd: EDIT PASTE
+[2021.05.11-09.05.33:588][724]Cmd: EDIT PASTE
+[2021.05.11-09.05.34:116][784]Cmd: EDIT PASTE
+[2021.05.11-09.05.34:806][864]Cmd: EDIT PASTE
+[2021.05.11-09.05.36:042][  9]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv4)
+[2021.05.11-09.05.37:209][145]Cmd: EDIT COPY
+[2021.05.11-09.05.38:069][248]Cmd: EDIT PASTE
+[2021.05.11-09.05.38:677][318]Cmd: EDIT PASTE
+[2021.05.11-09.05.39:805][450]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv5)
+[2021.05.11-09.05.44:865][ 51]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv4)
+[2021.05.11-09.05.48:629][497]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv3)
+[2021.05.11-09.06.12:375][309]Cmd: DELETE
+[2021.05.11-09.06.12:375][309]Cmd: ACTOR DELETE
+[2021.05.11-09.06.12:376][309]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-09.06.12:385][309]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2021.05.11-09.06.12:389][309]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2021.05.11-09.06.13:085][392]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv4)
+[2021.05.11-09.06.13:300][414]Cmd: DELETE
+[2021.05.11-09.06.13:300][414]Cmd: ACTOR DELETE
+[2021.05.11-09.06.13:302][414]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-09.06.13:311][414]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.11-09.06.13:313][414]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-09.06.14:115][510]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv2)
+[2021.05.11-09.06.14:439][545]Cmd: DELETE
+[2021.05.11-09.06.14:439][545]Cmd: ACTOR DELETE
+[2021.05.11-09.06.14:440][545]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-09.06.14:450][545]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.11-09.06.14:451][545]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-09.06.15:380][656]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv5)
+[2021.05.11-09.06.15:578][676]Cmd: DELETE
+[2021.05.11-09.06.15:578][676]Cmd: ACTOR DELETE
+[2021.05.11-09.06.15:579][676]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-09.06.15:588][676]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.05.11-09.06.15:590][676]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-09.06.16:068][733]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-09.06.16:200][745]Cmd: DELETE
+[2021.05.11-09.06.16:200][745]Cmd: ACTOR DELETE
+[2021.05.11-09.06.16:201][745]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-09.06.16:210][745]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-09.06.16:212][745]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-09.06.17:669][920]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv8)
+[2021.05.11-09.07.07:933][594]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.11-09.07.07:942][594]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.11-09.07.07:942][594]PIE: New page: PIE 세션: GameLevel (2021. 5. 12. 오전 3:07:07)
+[2021.05.11-09.07.07:983][594]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.07.07:994][594]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010775s)
+[2021.05.11-09.07.07:995][594]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-09.07.07:995][594]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0F472B200), frame # 167594
+[2021.05.11-09.07.07:996][594]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F150EA9580), frame # 167594
+[2021.05.11-09.07.07:996][594]LogPlayLevel: PIE: World Init took: (0.001502s)
+[2021.05.11-09.07.07:996][594]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012448s)
+[2021.05.11-09.07.08:009][594]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-09.07.08:011][594]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-09.07.08:011][594]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-09.07.08:012][594]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-09.07.08:012][594]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-09.07.08:015][594]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-09.07.08:015][594]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-09.07.08:030][594]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-09.07.08:031][594]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-09.07.08:031][594]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-09.07.08:031][594]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-09.07.08:031][594]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-09.07.08:044][594]LogInit: FAudioDevice initialized.
+[2021.05.11-09.07.08:089][594]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.11-09.07.08:097][594]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.11-18.07.08
+[2021.05.11-09.07.08:104][594]LogWorld: Bringing up level for play took: 0.011554
+[2021.05.11-09.07.08:104][594]LogOnline: OSS: Creating online subsystem instance for: :Context_51
+[2021.05.11-09.07.08:112][594]Cmd: ShowFlag.Bones 2
+[2021.05.11-09.07.08:112][594]ShowFlag.Bones = "2"
+[2021.05.11-09.07.08:113][594]PIE: 서버가 로그인했습니다.
+[2021.05.11-09.07.08:114][594]PIE: 에디터에서 플레이 총 시작 시간 0.176초입니다.
+[2021.05.11-09.07.55:584][ 52]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.07.55:584][ 52]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.07.55:587][ 52]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.07.55:587][ 52]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.07.55:595][ 52]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.11-09.07.55:596][ 52]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.07.55:622][ 52]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.07.55:623][ 52]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F150EA9580), frame # 173052
+[2021.05.11-09.07.55:623][ 52]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F0F472B200), frame # 173052
+[2021.05.11-09.07.55:624][ 52]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.05.11-09.07.55:652][ 53]LogPlayLevel: Display: Destroying online subsystem :Context_51
+[2021.05.11-09.08.25:062][732]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.11-09.08.25:066][732]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.11-09.08.25:067][732]PIE: New page: PIE 세션: GameLevel (2021. 5. 12. 오전 3:08:25)
+[2021.05.11-09.08.25:103][732]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.08.25:113][732]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009915s)
+[2021.05.11-09.08.25:114][732]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-09.08.25:114][732]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F1477E2800), frame # 173732
+[2021.05.11-09.08.25:114][732]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F153577600), frame # 173732
+[2021.05.11-09.08.25:115][732]LogPlayLevel: PIE: World Init took: (0.001382s)
+[2021.05.11-09.08.25:115][732]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011502s)
+[2021.05.11-09.08.25:127][732]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.05.11-09.08.25:129][732]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-09.08.25:129][732]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-09.08.25:129][732]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-09.08.25:129][732]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-09.08.25:129][732]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-09.08.25:130][732]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-09.08.25:130][732]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-09.08.25:130][732]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-09.08.25:130][732]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-09.08.25:130][732]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-09.08.25:132][732]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-09.08.25:132][732]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-09.08.25:146][732]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-09.08.25:146][732]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-09.08.25:146][732]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-09.08.25:146][732]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-09.08.25:146][732]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-09.08.25:159][732]LogInit: FAudioDevice initialized.
+[2021.05.11-09.08.25:169][732]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.11-09.08.25:171][732]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.11-18.08.25
+[2021.05.11-09.08.25:171][732]LogWorld: Bringing up level for play took: 0.001218
+[2021.05.11-09.08.25:171][732]LogOnline: OSS: Creating online subsystem instance for: :Context_52
+[2021.05.11-09.08.25:175][732]Cmd: ShowFlag.Bones 2
+[2021.05.11-09.08.25:175][732]ShowFlag.Bones = "2"
+[2021.05.11-09.08.25:176][732]PIE: 서버가 로그인했습니다.
+[2021.05.11-09.08.25:176][732]PIE: 에디터에서 플레이 총 시작 시간 0.11초입니다.
+[2021.05.11-09.08.34:185][803]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.08.34:185][803]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.08.34:185][803]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.08.34:185][803]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.08.34:191][803]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.11-09.08.34:193][803]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.08.34:217][803]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.08.34:219][803]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F153577600), frame # 174803
+[2021.05.11-09.08.34:219][803]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F1477E2800), frame # 174803
+[2021.05.11-09.08.34:219][803]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2021.05.11-09.08.34:259][805]LogPlayLevel: Display: Destroying online subsystem :Context_52
+[2021.05.11-09.08.42:271][997]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.11-09.08.42:276][997]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.11-09.08.42:276][997]PIE: New page: PIE 세션: GameLevel (2021. 5. 12. 오전 3:08:42)
+[2021.05.11-09.08.42:314][997]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.08.42:323][997]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009380s)
+[2021.05.11-09.08.42:325][997]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-09.08.42:325][997]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F1A7E3DA00), frame # 174997
+[2021.05.11-09.08.42:325][997]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F0E804F380), frame # 174997
+[2021.05.11-09.08.42:325][997]LogPlayLevel: PIE: World Init took: (0.001720s)
+[2021.05.11-09.08.42:325][997]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011312s)
+[2021.05.11-09.08.42:336][997]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-09.08.42:338][997]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-09.08.42:338][997]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-09.08.42:338][997]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-09.08.42:339][997]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-09.08.42:341][997]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-09.08.42:341][997]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-09.08.42:353][997]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-09.08.42:353][997]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-09.08.42:353][997]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-09.08.42:353][997]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-09.08.42:354][997]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-09.08.42:367][997]LogInit: FAudioDevice initialized.
+[2021.05.11-09.08.42:374][997]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.11-09.08.42:376][997]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.11-18.08.42
+[2021.05.11-09.08.42:376][997]LogWorld: Bringing up level for play took: 0.001228
+[2021.05.11-09.08.42:376][997]LogOnline: OSS: Creating online subsystem instance for: :Context_53
+[2021.05.11-09.08.42:380][997]Cmd: ShowFlag.Bones 2
+[2021.05.11-09.08.42:380][997]ShowFlag.Bones = "2"
+[2021.05.11-09.08.42:381][997]PIE: 서버가 로그인했습니다.
+[2021.05.11-09.08.42:381][997]PIE: 에디터에서 플레이 총 시작 시간 0.105초입니다.
+[2021.05.11-09.08.49:627][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.08.49:627][856]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.08.49:628][856]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.08.49:628][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.08.49:638][856]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.11-09.08.49:639][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.08.49:649][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.08.49:666][856]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F0E804F380), frame # 175856
+[2021.05.11-09.08.49:666][856]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F1A7E3DA00), frame # 175856
+[2021.05.11-09.08.49:666][856]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.05.11-09.08.49:709][858]LogPlayLevel: Display: Destroying online subsystem :Context_53
+[2021.05.11-09.09.15:504][873]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.11-09.09.15:510][873]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.11-09.09.15:510][873]PIE: New page: PIE 세션: GameLevel (2021. 5. 12. 오전 3:09:15)
+[2021.05.11-09.09.15:534][873]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.09.15:543][873]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009026s)
+[2021.05.11-09.09.15:544][873]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-09.09.15:544][873]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0F4728200), frame # 176873
+[2021.05.11-09.09.15:544][873]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F0E804C680), frame # 176873
+[2021.05.11-09.09.15:544][873]LogPlayLevel: PIE: World Init took: (0.001284s)
+[2021.05.11-09.09.15:544][873]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010485s)
+[2021.05.11-09.09.15:555][873]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-09.09.15:557][873]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-09.09.15:557][873]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-09.09.15:558][873]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-09.09.15:558][873]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-09.09.15:560][873]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-09.09.15:560][873]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-09.09.15:573][873]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-09.09.15:573][873]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-09.09.15:573][873]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-09.09.15:573][873]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-09.09.15:574][873]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-09.09.15:587][873]LogInit: FAudioDevice initialized.
+[2021.05.11-09.09.15:591][873]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.11-09.09.15:593][873]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.11-18.09.15
+[2021.05.11-09.09.15:593][873]LogWorld: Bringing up level for play took: 0.001198
+[2021.05.11-09.09.15:593][873]LogOnline: OSS: Creating online subsystem instance for: :Context_54
+[2021.05.11-09.09.15:597][873]Cmd: ShowFlag.Bones 2
+[2021.05.11-09.09.15:597][873]ShowFlag.Bones = "2"
+[2021.05.11-09.09.15:598][873]PIE: 서버가 로그인했습니다.
+[2021.05.11-09.09.15:598][873]PIE: 에디터에서 플레이 총 시작 시간 0.089초입니다.
+[2021.05.11-09.09.17:314][ 74]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.09.17:314][ 74]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-09.09.17:314][ 74]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.09.17:315][ 74]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.09.17:324][ 74]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.11-09.09.17:326][ 74]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-09.09.17:335][ 74]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-09.09.17:352][ 74]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F0E804C680), frame # 177074
+[2021.05.11-09.09.17:352][ 74]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F0F4728200), frame # 177074
+[2021.05.11-09.09.17:353][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.05.11-09.09.17:393][ 78]LogPlayLevel: Display: Destroying online subsystem :Context_54
+[2021.05.11-09.09.21:015][499]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.05.11-09.09.21:039][499]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel4D7B88964B600F74F235FB95D1A98200.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.11-09.09.21:051][499]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
+[2021.05.11-09.09.21:135][499]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltDataC0E4D80A4F6E107472163DB11A7A7430.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
+[2021.05.11-09.09.21:146][499]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2021.05.11-09.09.21:146][499]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.11-09.09.21:146][499]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
