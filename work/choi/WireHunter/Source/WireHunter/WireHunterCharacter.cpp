@@ -139,7 +139,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorLocation(GetFloatingPos());
 		UpdateWallNormal();
 
-		FRotator TargetRotator = UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()) - FRotator(0, 180, 0);
+		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
 		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
 		SetActorRotation(SmoothRotator);
 	}
@@ -296,7 +296,7 @@ void AWireHunterCharacter::HookWire()
 			FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 			QueryParams.AddIgnoredActor(this);
 			GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-			DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+			//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 			if (Hit.bBlockingHit)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
@@ -464,9 +464,9 @@ void AWireHunterCharacter::LedgeTrace()
 {
 	FHitResult Hit;
 
-	const float ClimbRange = 500.f;
-	const FVector StartTrace = GetActorLocation() - FVector(0.f, 0.f, 250.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 250.f);
+	const float ClimbRange = 1000.f;
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 3.f)) - FVector(0.f, 0.f, 600.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 600.f);
 
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
