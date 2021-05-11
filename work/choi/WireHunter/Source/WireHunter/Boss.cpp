@@ -33,3 +33,7 @@ void ABoss::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+void ABoss::MoveToPlayer() 
+{
+
+}

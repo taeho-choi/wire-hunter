@@ -1,0 +1,1061 @@
+﻿Log file open, 05/11/21 16:40:55
+LogInit: Display: Running engine for game: WireHunter
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.157477
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz, GPU: NVIDIA GeForce RTX 2060
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:340][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.11-07.40.55:342][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.11-07.40.55:343][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.11-07.40.55:343][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.05.11-07.40.55:343][  0]LogHAL: Display: Platform has ~ 16 GB [17109049344 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.05.11-07.40.55:343][  0]LogInit: Going up to parent DeviceProfile []
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.11-07.40.55:343][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.05.11-07.40.55:344][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.11-07.40.55:344][  0]LogInit: Computer: 준현컴
+[2021.05.11-07.40.55:344][  0]LogInit: User: 조준현
+[2021.05.11-07.40.55:344][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.05.11-07.40.55:344][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.05.11-07.40.55:345][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.05.11-07.40.55:345][  0]LogMemory: Platform Memory Stats for Windows
+[2021.05.11-07.40.55:345][  0]LogMemory: Process Physical Memory: 116.25 MB used, 116.25 MB peak
+[2021.05.11-07.40.55:345][  0]LogMemory: Process Virtual Memory: 100.42 MB used, 100.42 MB peak
+[2021.05.11-07.40.55:345][  0]LogMemory: Physical Memory: 6443.28 MB used,  9873.18 MB free, 16316.46 MB total
+[2021.05.11-07.40.55:345][  0]LogMemory: Virtual Memory: 5169.81 MB used,  134212560.00 MB free, 134217728.00 MB total
+[2021.05.11-07.40.55:349][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.05.11-07.40.55:370][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.05.11-07.40.55:370][  0]LogInit: Using OS detected language (ko-KR).
+[2021.05.11-07.40.55:371][  0]LogInit: Using OS detected locale (ko-KR).
+[2021.05.11-07.40.55:375][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2021.05.11-07.40.55:442][  0]LogInit: Setting process to per monitor DPI aware
+[2021.05.11-07.40.55:474][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.05.11-07.40.55:474][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.05.11-07.40.55:572][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.11-07.40.55:572][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.05.11-07.40.55:572][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.05.11-07.40.55:572][  0]LogD3D11RHI: D3D11 adapters:
+[2021.05.11-07.40.55:653][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.05.11-07.40.55:653][  0]LogD3D11RHI:       5968/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.05.11-07.40.55:654][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.05.11-07.40.55:654][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.05.11-07.40.55:654][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.05.11-07.40.55:659][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.05.11-07.40.55:659][  0]LogD3D11RHI:     GPU DeviceId: 0x1e89 (for the marketing name, search the web for "GPU Device Id")
+[2021.05.11-07.40.55:659][  0]LogWindows: EnumDisplayDevices:
+[2021.05.11-07.40.55:660][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
+[2021.05.11-07.40.55:660][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.11-07.40.55:660][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.11-07.40.55:660][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.11-07.40.55:660][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.05.11-07.40.55:660][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.05.11-07.40.55:660][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.05.11-07.40.55:660][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2021.05.11-07.40.55:660][  0]LogRHI: Texture pool is 4177 MB (70% of 5968 MB)
+[2021.05.11-07.40.55:716][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.05.11-07.40.55:716][  0]LogD3D11RHI: Async texture creation enabled
+[2021.05.11-07.40.55:716][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.05.11-07.40.55:728][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.05.11-07.40.55:947][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.05.11-07.40.55:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.05.11-07.40.55:987][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.05.11-07.40.55:987][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.05.11-07.40.55:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.05.11-07.40.56:005][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.05.11-07.40.56:013][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.05.11-07.40.56:021][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.05.11-07.40.56:029][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.05.11-07.40.56:038][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.05.11-07.40.56:046][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.05.11-07.40.56:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.05.11-07.40.56:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.05.11-07.40.56:088][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.05.11-07.40.56:088][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.05.11-07.40.56:096][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.05.11-07.40.56:105][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.05.11-07.40.56:113][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.05.11-07.40.56:121][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.05.11-07.40.56:121][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.05.11-07.40.56:126][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.05.11-07.40.56:169][  0]LogShaderCompilers: Guid format shader working directory is -6 characters bigger than the processId version (../../../../../../Wire-Hunter/work/choi/WireHunter/Intermediate/Shaders/WorkingDirectory/7380/).
+[2021.05.11-07.40.56:169][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/조준현/AppData/Local/Temp/UnrealShaderWorkingDir/EC6D88E64FCA2C46F2315B9EF9D5331A/'.
+[2021.05.11-07.40.56:170][  0]LogXGEController: Cleaning working directory: C:/Users/조준현/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.05.11-07.40.56:170][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.05.11-07.40.56:170][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.05.11-07.40.56:170][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.05.11-07.40.56:810][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: Loaded boot cache 0.05s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.11-07.40.56:855][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.05.11-07.40.56:864][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.05.11-07.40.56:864][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.11-07.40.56:864][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.05.11-07.40.56:865][  0]LogDerivedDataCache: Using Local data cache path C:/Users/조준현/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.05.11-07.40.56:865][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.05.11-07.40.56:865][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.05.11-07.40.56:908][  0]LogSlate: Using FreeType 2.10.0
+[2021.05.11-07.40.56:908][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.05.11-07.40.56:931][  0]LogAssetRegistry: FAssetRegistry took 0.0023 seconds to start up
+[2021.05.11-07.40.57:108][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.11-07.40.57:200][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.05.11-07.40.57:200][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.05.11-07.40.57:200][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.05.11-07.40.57:200][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.05.11-07.40.57:200][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.05.11-07.40.57:211][  0]LogNetVersion: WireHunter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1660872711)
+[2021.05.11-07.40.57:548][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001F05364DC40), frame # 0
+[2021.05.11-07.40.57:548][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F054576AC0), frame # 0
+[2021.05.11-07.40.57:549][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0545C6000), frame # 0
+[2021.05.11-07.40.57:583][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.029940 seconds
+[2021.05.11-07.40.57:587][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.05.11-07.40.57:587][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.05.11-07.40.57:587][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.05.11-07.40.57:845][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.05.11-07.40.57:872][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.05.11-07.40.57:932][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.40.57:932][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.40.57:934][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.40.57:936][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.40.57:941][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.40.58:128][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.05.11-07.40.58:143][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.11-07.40.58:143][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.11-07.40.58:181][  0]LogOcInput: OculusInput pre-init called
+[2021.05.11-07.40.58:189][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.05.11-07.40.58:189][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.05.11-07.40.58:237][  0]LogEngine: Initializing Engine...
+[2021.05.11-07.40.58:238][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.11-07.40.58:238][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.05.11-07.40.58:238][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.05.11-07.40.58:339][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.05.11-07.40.58:345][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.05.11-07.40.58:345][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F056547C00), frame # 0
+[2021.05.11-07.40.58:345][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F056630A40), frame # 0
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-07.40.58:361][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-07.40.58:361][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-07.40.58:361][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-07.40.58:369][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-07.40.58:369][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-07.40.58:395][  0]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-07.40.58:398][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-07.40.58:399][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-07.40.58:399][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-07.40.58:400][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-07.40.58:401][  0]LogInit: FAudioDevice initialized.
+[2021.05.11-07.40.58:401][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.05.11-07.40.58:482][  0]LogDerivedDataCache: Saved boot cache 0.08s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.05.11-07.40.58:486][  0]LogInit: Texture streaming: Enabled
+[2021.05.11-07.40.58:498][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.05.11-07.40.58:498][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.05.11-07.40.58:500][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.05.11-07.40.58:614][  0]LogInit: Transaction tracking system initialized
+[2021.05.11-07.40.58:647][  0]BlueprintLog: New page: 에디터 로드
+[2021.05.11-07.40.58:698][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2021.05.11-07.40.58:825][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.05.11-07.40.58:825][  0]LogCook: Display: Mobile HDR setting 1
+[2021.05.11-07.40.58:833][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.00s
+[2021.05.11-07.40.58:863][  0]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.05.11-07.41.01:242][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  2.378 s
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: 
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: Ensure condition failed: AttachmentRules.LocationRule == EAttachmentRule::KeepRelative && AttachmentRules.RotationRule == EAttachmentRule::KeepRelative && AttachmentRules.ScaleRule == EAttachmentRule::KeepRelative [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1812]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: AttachToComponent when called from a constructor is only setting up attachment and will always be treated as KeepRelative. Consider calling SetupAttachment directly instead.
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: Stack: 
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff937c2c119 UE4Editor-Engine.dll!DispatchCheckVerify<bool,<lambda_7a00921a8ebf9f041bed3055592f02a5> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9367dd3c3 UE4Editor-Engine.dll!USceneComponent::AttachToComponent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1812]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff929f23f97 UE4Editor-WireHunter.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Dragon.cpp:18]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff96227c273 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3672]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff962528451 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:861]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff962505bbf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:950]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff962424465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff96023986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9602599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff99d5db433 UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:561]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff99d5db70d UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:63]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff789262db4 UE4Editor.exe!FEngineLoop::Init() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:4022]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff95ce65cb0 UE4Editor-UnrealEd.dll!EditorInit() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\UnrealEdGlobals.cpp:93]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff78927b8fb UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:149]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff78927bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff78928e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff78929145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9b14b7034 KERNEL32.DLL!UnknownFunction []
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9b2aa2651 ntdll.dll!UnknownFunction []
+[2021.05.11-07.41.01:242][  0]LogOutputDevice: Error: 
+[2021.05.11-07.41.01:247][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2021.05.11-07.41.02:201][  0]LogStats:                    SendNewReport -  0.955 s
+[2021.05.11-07.41.02:201][  0]LogStats:             FDebug::EnsureFailed -  3.338 s
+[2021.05.11-07.41.02:481][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.11-07.41.02:481][  0]LogUnrealEdMisc: Loading editor; pre map load, took 8.111
+[2021.05.11-07.41.02:487][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.25/FeaturePacks/StarterContent.upack)
+[2021.05.11-07.41.02:510][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2021.05.11-07.41.02:517][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2021.05.11-07.41.02:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2021.05.11-07.41.02:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2021.05.11-07.41.02:534][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2021.05.11-07.41.02:542][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2021.05.11-07.41.02:550][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2021.05.11-07.41.02:556][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2021.05.11-07.41.02:563][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2021.05.11-07.41.02:568][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2021.05.11-07.41.02:575][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2021.05.11-07.41.02:581][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2021.05.11-07.41.02:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse01.uasset"
+[2021.05.11-07.41.02:595][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse02.uasset"
+[2021.05.11-07.41.02:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2021.05.11-07.41.02:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion01.uasset"
+[2021.05.11-07.41.02:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion02.uasset"
+[2021.05.11-07.41.02:630][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2021.05.11-07.41.02:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire01.uasset"
+[2021.05.11-07.41.02:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2021.05.11-07.41.02:659][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2021.05.11-07.41.02:665][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2021.05.11-07.41.02:672][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light01.uasset"
+[2021.05.11-07.41.02:682][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2021.05.11-07.41.02:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light02.uasset"
+[2021.05.11-07.41.02:712][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2021.05.11-07.41.02:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Smoke01.uasset"
+[2021.05.11-07.41.02:724][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2021.05.11-07.41.02:729][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2021.05.11-07.41.02:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2021.05.11-07.41.02:779][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2021.05.11-07.41.02:784][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2021.05.11-07.41.02:797][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2021.05.11-07.41.02:812][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2021.05.11-07.41.02:828][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Steam01.uasset"
+[2021.05.11-07.41.02:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2021.05.11-07.41.02:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2021.05.11-07.41.02:858][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2021.05.11-07.41.02:863][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2021.05.11-07.41.02:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2021.05.11-07.41.02:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2021.05.11-07.41.02:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2021.05.11-07.41.02:894][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2021.05.11-07.41.02:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2021.05.11-07.41.02:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2021.05.11-07.41.02:909][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2021.05.11-07.41.02:914][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2021.05.11-07.41.02:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2021.05.11-07.41.02:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2021.05.11-07.41.02:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2021.05.11-07.41.02:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2021.05.11-07.41.02:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2021.05.11-07.41.03:185][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2021.05.11-07.41.03:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2021.05.11-07.41.03:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2021.05.11-07.41.03:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Minimal_Default.umap"
+[2021.05.11-07.41.03:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2021.05.11-07.41.03:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/StarterMap.umap"
+[2021.05.11-07.41.03:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2021.05.11-07.41.03:313][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2021.05.11-07.41.03:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2021.05.11-07.41.03:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2021.05.11-07.41.03:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2021.05.11-07.41.03:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2021.05.11-07.41.03:342][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2021.05.11-07.41.03:347][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2021.05.11-07.41.03:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2021.05.11-07.41.03:359][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2021.05.11-07.41.03:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2021.05.11-07.41.03:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2021.05.11-07.41.03:377][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2021.05.11-07.41.03:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2021.05.11-07.41.03:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2021.05.11-07.41.03:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2021.05.11-07.41.03:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2021.05.11-07.41.03:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2021.05.11-07.41.03:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Glass.uasset"
+[2021.05.11-07.41.03:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2021.05.11-07.41.03:425][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2021.05.11-07.41.03:430][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2021.05.11-07.41.03:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2021.05.11-07.41.03:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2021.05.11-07.41.03:446][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2021.05.11-07.41.03:452][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2021.05.11-07.41.03:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2021.05.11-07.41.03:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2021.05.11-07.41.03:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2021.05.11-07.41.03:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2021.05.11-07.41.03:478][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2021.05.11-07.41.03:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2021.05.11-07.41.03:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2021.05.11-07.41.03:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2021.05.11-07.41.03:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2021.05.11-07.41.03:505][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2021.05.11-07.41.03:510][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2021.05.11-07.41.03:515][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2021.05.11-07.41.03:520][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2021.05.11-07.41.03:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2021.05.11-07.41.03:530][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2021.05.11-07.41.03:535][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2021.05.11-07.41.03:540][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2021.05.11-07.41.03:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2021.05.11-07.41.03:550][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2021.05.11-07.41.03:555][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Explosion.uasset"
+[2021.05.11-07.41.03:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Fire.uasset"
+[2021.05.11-07.41.03:566][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Smoke.uasset"
+[2021.05.11-07.41.03:571][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Sparks.uasset"
+[2021.05.11-07.41.03:576][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2021.05.11-07.41.03:581][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2021.05.11-07.41.03:586][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2021.05.11-07.41.03:591][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2021.05.11-07.41.03:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2021.05.11-07.41.03:601][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2021.05.11-07.41.03:606][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2021.05.11-07.41.03:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2021.05.11-07.41.03:615][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2021.05.11-07.41.03:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2021.05.11-07.41.03:626][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2021.05.11-07.41.03:632][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/MaterialSphere.uasset"
+[2021.05.11-07.41.03:640][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Bush.uasset"
+[2021.05.11-07.41.03:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Chair.uasset"
+[2021.05.11-07.41.03:652][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2021.05.11-07.41.03:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Couch.uasset"
+[2021.05.11-07.41.03:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Door.uasset"
+[2021.05.11-07.41.03:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2021.05.11-07.41.03:678][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2021.05.11-07.41.03:684][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2021.05.11-07.41.03:690][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2021.05.11-07.41.03:703][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2021.05.11-07.41.03:709][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2021.05.11-07.41.03:714][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2021.05.11-07.41.03:719][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Rock.uasset"
+[2021.05.11-07.41.03:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Shelf.uasset"
+[2021.05.11-07.41.03:730][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Stairs.uasset"
+[2021.05.11-07.41.03:736][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Statue.uasset"
+[2021.05.11-07.41.03:751][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_TableRound.uasset"
+[2021.05.11-07.41.03:756][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2021.05.11-07.41.03:763][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2021.05.11-07.41.03:768][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2021.05.11-07.41.03:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2021.05.11-07.41.03:778][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2021.05.11-07.41.03:782][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2021.05.11-07.41.03:787][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2021.05.11-07.41.03:792][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2021.05.11-07.41.03:797][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2021.05.11-07.41.03:802][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2021.05.11-07.41.03:807][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2021.05.11-07.41.03:812][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2021.05.11-07.41.03:818][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2021.05.11-07.41.03:822][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2021.05.11-07.41.03:828][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2021.05.11-07.41.03:835][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2021.05.11-07.41.03:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2021.05.11-07.41.03:846][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2021.05.11-07.41.03:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2021.05.11-07.41.03:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2021.05.11-07.41.03:861][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2021.05.11-07.41.03:866][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2021.05.11-07.41.03:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2021.05.11-07.41.03:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2021.05.11-07.41.03:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2021.05.11-07.41.03:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2021.05.11-07.41.03:893][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2021.05.11-07.41.03:898][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2021.05.11-07.41.03:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2021.05.11-07.41.03:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2021.05.11-07.41.03:914][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2021.05.11-07.41.03:919][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2021.05.11-07.41.03:953][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2021.05.11-07.41.03:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2021.05.11-07.41.04:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2021.05.11-07.41.04:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2021.05.11-07.41.04:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2021.05.11-07.41.04:126][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2021.05.11-07.41.04:175][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2021.05.11-07.41.04:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2021.05.11-07.41.04:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2021.05.11-07.41.04:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2021.05.11-07.41.04:358][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2021.05.11-07.41.04:391][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2021.05.11-07.41.04:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2021.05.11-07.41.04:434][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2021.05.11-07.41.04:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2021.05.11-07.41.04:448][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2021.05.11-07.41.04:454][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2021.05.11-07.41.04:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2021.05.11-07.41.04:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2021.05.11-07.41.04:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2021.05.11-07.41.04:490][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2021.05.11-07.41.04:533][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2021.05.11-07.41.04:543][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2021.05.11-07.41.04:589][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2021.05.11-07.41.04:604][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2021.05.11-07.41.04:619][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2021.05.11-07.41.04:659][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2021.05.11-07.41.04:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2021.05.11-07.41.04:727][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2021.05.11-07.41.04:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2021.05.11-07.41.04:803][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2021.05.11-07.41.04:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2021.05.11-07.41.04:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2021.05.11-07.41.04:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2021.05.11-07.41.04:932][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2021.05.11-07.41.04:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2021.05.11-07.41.04:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2021.05.11-07.41.04:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2021.05.11-07.41.05:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2021.05.11-07.41.05:015][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Door_M.uasset"
+[2021.05.11-07.41.05:022][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Door_N.uasset"
+[2021.05.11-07.41.05:027][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2021.05.11-07.41.05:044][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2021.05.11-07.41.05:050][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2021.05.11-07.41.05:055][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2021.05.11-07.41.05:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2021.05.11-07.41.05:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2021.05.11-07.41.05:076][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2021.05.11-07.41.05:132][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2021.05.11-07.41.05:191][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2021.05.11-07.41.05:260][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2021.05.11-07.41.05:290][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2021.05.11-07.41.05:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2021.05.11-07.41.05:398][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2021.05.11-07.41.05:406][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2021.05.11-07.41.05:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2021.05.11-07.41.05:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2021.05.11-07.41.05:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2021.05.11-07.41.05:639][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2021.05.11-07.41.05:719][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2021.05.11-07.41.05:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2021.05.11-07.41.05:779][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2021.05.11-07.41.05:812][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2021.05.11-07.41.05:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2021.05.11-07.41.05:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2021.05.11-07.41.05:884][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2021.05.11-07.41.05:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2021.05.11-07.41.05:942][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2021.05.11-07.41.05:981][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2021.05.11-07.41.06:013][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2021.05.11-07.41.06:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2021.05.11-07.41.06:072][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2021.05.11-07.41.06:107][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2021.05.11-07.41.06:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2021.05.11-07.41.06:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2021.05.11-07.41.06:259][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2021.05.11-07.41.06:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2021.05.11-07.41.06:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2021.05.11-07.41.06:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2021.05.11-07.41.06:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2021.05.11-07.41.06:347][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2021.05.11-07.41.06:354][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2021.05.11-07.41.06:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2021.05.11-07.41.06:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2021.05.11-07.41.06:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2021.05.11-07.41.06:394][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2021.05.11-07.41.06:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2021.05.11-07.41.06:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2021.05.11-07.41.06:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2021.05.11-07.41.06:439][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2021.05.11-07.41.06:451][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2021.05.11-07.41.06:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2021.05.11-07.41.06:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Water_M.uasset"
+[2021.05.11-07.41.06:485][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Water_N.uasset"
+[2021.05.11-07.41.06:509][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2021.05.11-07.41.06:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2021.05.11-07.41.06:548][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2021.05.11-07.41.06:580][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2021.05.11-07.41.06:607][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2021.05.11-07.41.06:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2021.05.11-07.41.06:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2021.05.11-07.41.06:703][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2021.05.11-07.41.06:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2021.05.11-07.41.06:780][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
+[2021.05.11-07.41.06:922][  0]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Floor_400x400E52E335F4F8CB4DA28A97A80B21B5D13.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2021.05.11-07.41.06:923][  0]LogFeaturePack: Warning: Inserted 1 feature packs
+[2021.05.11-07.41.06:924][  0]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.11-07.41.06:924][  0]LightingResults: New page: 라이팅 빌드
+[2021.05.11-07.41.06:924][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-07.41.06:924][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-07.41.06:925][  0]MapCheck: New page: 맵 체크
+[2021.05.11-07.41.06:925][  0]LightingResults: New page: 라이팅 빌드
+[2021.05.11-07.41.06:936][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F056547C00), frame # 0
+[2021.05.11-07.41.06:936][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F056630A40), frame # 0
+[2021.05.11-07.41.06:937][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.05.11-07.41.07:258][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-07.41.07:258][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0E7AD5800), frame # 0
+[2021.05.11-07.41.07:258][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F0E7BF0B80), frame # 0
+[2021.05.11-07.41.07:265][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.11-07.41.07:278][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2021.05.11-07.41.07:278][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.11-07.41.07:279][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.137ms.
+[2021.05.11-07.41.07:279][  0]LogFileHelpers: Loading map 'GameLevel' took 0.355
+[2021.05.11-07.41.07:281][  0]LogUnrealEdMisc: Total Editor Startup Time, took 12.911
+[2021.05.11-07.41.07:403][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.07:408][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.07:414][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.07:419][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.07:425][  0]LogCollectionManager: Loaded 0 collections in 0.001919 seconds
+[2021.05.11-07.41.07:437][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Saved/Collections/' took 0.00s
+[2021.05.11-07.41.07:437][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Developers/조준현/Collections/' took 0.00s
+[2021.05.11-07.41.07:437][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Collections/' took 0.00s
+[2021.05.11-07.41.07:438][  0]LogContentBrowser: Native class hierarchy populated in 0.0085 seconds. Added 3439 classes and 823 folders.
+[2021.05.11-07.41.07:440][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.05.11-07.41.07:476][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.05.11-07.41.07:480][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2021.05.11-07.41.07:582][  0]LogSlate: Took 0.000153 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.05.11-07.41.07:584][  0]LogSlate: Took 0.001601 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2021.05.11-07.41.07:588][  0]LogSlate: Took 0.001595 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2021.05.11-07.41.07:588][  0]LogSlate: Took 0.000086 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.05.11-07.41.07:589][  0]LogSlate: Took 0.000090 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.05.11-07.41.07:606][  0]LogRenderer: Reallocating scene render targets to support 1376x616 Format 10 NumSamples 1 (Frame:1).
+[2021.05.11-07.41.07:634][  0]LogSlate: Took 0.000187 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.05.11-07.41.07:729][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.05.11-07.41.07:729][  0]LogLoad: (Engine Initialization) Total time: 13.36 seconds
+[2021.05.11-07.41.07:729][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.05.11-07.41.07:743][  0]AssetCheck: New page: 애셋 저장: Floor_400x400
+[2021.05.11-07.41.07:743][  0]LogContentValidation: Display: StaticMesh /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400 유효성 검사
+[2021.05.11-07.41.07:767][  0]LogAssetRegistry: Asset discovery search completed in 10.8373 seconds
+[2021.05.11-07.41.07:771][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.05.11-07.41.07:827][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.05.11-07.41.07:931][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.19s
+[2021.05.11-07.41.14:809][803]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.05.11-07.41.14:812][803]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.11-07.41.14:813][803]PIE: New page: PIE 세션: GameLevel (2021. 5. 12. 오전 1:41:14)
+[2021.05.11-07.41.14:814][803]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.05.11-07.41.14:815][803]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.05.11-07.41.14:815][803]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-07.41.14:828][803]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012637s)
+[2021.05.11-07.41.14:829][803]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-07.41.14:829][803]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0FA318C00), frame # 803
+[2021.05.11-07.41.14:829][803]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F0E802AC00), frame # 803
+[2021.05.11-07.41.14:829][803]LogPlayLevel: PIE: World Init took: (0.001190s)
+[2021.05.11-07.41.14:829][803]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013966s)
+[2021.05.11-07.41.14:845][803]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.05.11-07.41.14:847][803]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-07.41.14:847][803]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-07.41.14:847][803]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-07.41.14:847][803]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-07.41.14:848][803]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-07.41.14:848][803]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-07.41.14:848][803]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-07.41.14:848][803]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-07.41.14:848][803]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-07.41.14:848][803]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-07.41.14:852][803]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-07.41.14:852][803]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-07.41.14:866][803]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.11-07.41.14:866][803]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-07.41.14:866][803]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-07.41.14:866][803]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-07.41.14:866][803]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-07.41.14:878][803]LogInit: FAudioDevice initialized.
+[2021.05.11-07.41.14:887][803]LogLoad: Game class is 'WireHunterGameMode'
+[2021.05.11-07.41.14:889][803]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.05.11-16.41.14
+[2021.05.11-07.41.14:890][803]LogWorld: Bringing up level for play took: 0.001494
+[2021.05.11-07.41.14:890][803]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2021.05.11-07.41.14:893][803]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2021.05.11-07.41.14:896][803]Cmd: ShowFlag.Bones 2
+[2021.05.11-07.41.14:896][803]ShowFlag.Bones = "2"
+[2021.05.11-07.41.14:896][803]PIE: 서버가 로그인했습니다.
+[2021.05.11-07.41.14:898][803]PIE: 에디터에서 플레이 총 시작 시간 0.086초입니다.
+[2021.05.11-07.41.20:836][507]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.20:836][507]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.05.11-07.41.20:837][507]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-07.41.20:837][507]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-07.41.20:844][507]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.11-07.41.20:846][507]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-07.41.20:872][507]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-07.41.20:874][507]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F0E802AC00), frame # 1507
+[2021.05.11-07.41.20:874][507]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F0FA318C00), frame # 1507
+[2021.05.11-07.41.20:875][507]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2021.05.11-07.41.20:911][509]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2021.05.11-07.51.04:784][998]LogSlate: Took 0.001387 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.05.11-08.33.36:583][746]LogHotReload: New module detected: UE4Editor-WireHunter-0001.dll
+[2021.05.11-08.33.37:629][750]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.11-08.33.37:757][750]LogHotReload: Re-instancing EditorPlayerController after hot-reload.
+[2021.05.11-08.33.37:770][750]LogHotReload: Re-instancing MyHUD after hot-reload.
+[2021.05.11-08.33.37:775][750]LogHotReload: Re-instancing PickUp after hot-reload.
+[2021.05.11-08.33.37:806][750]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0010 seconds. Added 12 classes and 2 folders.
+[2021.05.11-08.33.37:808][750]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.11-08.33.37:884][750]LogContentBrowser: Native class hierarchy populated in 0.0110 seconds. Added 3439 classes and 823 folders.
+[2021.05.11-08.33.37:894][750]Display: HotReload took  0.3s.
+[2021.05.11-08.33.53:947][881]Candidate modules for hot reload:
+[2021.05.11-08.33.53:947][881]  WireHunter
+[2021.05.11-08.33.53:947][881]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,2061 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.05.11-08.33.53:949][881]Warning: Starting HotReload took  0.0s.
+[2021.05.11-08.33.55:544][ 29]CompilerResultsLog: New page: 컴파일 - 2021. 5. 12. 오전 2:33:55
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog: Building WireHunterEditor...
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog:   [1/3] UE4Editor-WireHunter-2061.lib
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-2061.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-2061.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog:   [2/3] UE4Editor-WireHunter-2061.dll
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-2061.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-2061.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog:   [3/3] WireHunterEditor.target
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog: Total time in Parallel executor: 0.93 seconds
+[2021.05.11-08.33.55:545][ 29]CompilerResultsLog: Total execution time: 1.52 seconds
+[2021.05.11-08.33.55:545][ 29]LogMainFrame: MainFrame: Module compiling took 1.601 seconds
+[2021.05.11-08.33.55:572][ 29]LogHotReload: Re-instancing PickUp after hot-reload.
+[2021.05.11-08.33.55:588][ 29]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 12 classes and 2 folders.
+[2021.05.11-08.33.55:591][ 29]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.11-08.33.55:631][ 29]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 3439 classes and 823 folders.
+[2021.05.11-08.33.55:631][ 29]Display: HotReload took  1.7s.
+[2021.05.11-08.34.00:745][622]LogEditor: Attempting to add actor of class 'Boss' to level at 6150.00,10180.00,12318.00
+[2021.05.11-08.34.01:234][662]LogEditor: Attempting to add actor of class 'Boss' to level at 9980.00,9610.00,12318.00
+[2021.05.11-08.34.02:839][837]LogSlate: Took 0.006771 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.05.11-08.35.23:204][908]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2021.05.11-08.35.23:279][908]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto16074DD784A27D624356884AA64DEC79F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto1.umap'
+[2021.05.11-08.35.23:281][908]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.091
+[2021.05.11-08.35.23:281][908]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.091
+[2021.05.11-08.35.25:505][173]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2021.05.11-08.35.56:774][880]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2021.05.11-08.35.56:799][880]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelA2E3248E4DFF91485F8AA2AFE5BB933E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.11-08.35.56:818][880]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.05.11-08.35.56:818][880]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.11-08.36.13:623][823]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2021.05.11-08.36.13:645][823]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel73E9F926437A82A7B56271AF236D1B72.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.11-08.36.13:661][823]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.05.11-08.36.13:661][823]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
