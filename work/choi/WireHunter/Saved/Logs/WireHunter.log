@@ -1059,3 +1059,1534 @@ Script Stack (0 frames):
 [2021.05.11-08.36.13:645][823]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel73E9F926437A82A7B56271AF236D1B72.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
 [2021.05.11-08.36.13:661][823]AssetCheck: New page: 애셋 저장: GameLevel
 [2021.05.11-08.36.13:661][823]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.11-08.39.35:262][577]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall7)
+[2021.05.11-08.39.36:305][694]Cmd: DELETE
+[2021.05.11-08.39.36:305][694]Cmd: ACTOR DELETE
+[2021.05.11-08.39.36:316][694]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.39.36:325][694]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2021.05.11-08.39.36:328][694]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2021.05.11-08.39.38:239][921]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall13)
+[2021.05.11-08.39.38:967][  2]Cmd: DELETE
+[2021.05.11-08.39.38:967][  2]Cmd: ACTOR DELETE
+[2021.05.11-08.39.38:968][  2]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.39.38:977][  2]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2021.05.11-08.39.38:980][  2]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2021.05.11-08.39.43:510][536]LogEditorViewport: Clicking on Actor (LMB): PickUp (HealthLiquidMedicine)
+[2021.05.11-08.39.43:578][539]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (PickupMesh)
+[2021.05.11-08.39.45:600][779]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.05.11-08.40.27:210][951]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.05.11-08.40.39:673][679]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.05.11-08.40.40:296][740]LogEditorViewport: Clicking on Actor (LMB): PickUp (HealthLiquidMedicine)
+[2021.05.11-08.40.41:220][847]Cmd: DELETE
+[2021.05.11-08.40.41:220][847]Cmd: ACTOR DELETE
+[2021.05.11-08.40.41:222][847]LogEditorActor: Deleted Actor: PickUp
+[2021.05.11-08.40.41:231][847]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2021.05.11-08.40.41:233][847]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.41:961][934]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2021.05.11-08.40.42:279][969]Cmd: DELETE
+[2021.05.11-08.40.42:279][969]Cmd: ACTOR DELETE
+[2021.05.11-08.40.42:280][969]LogEditorActor: Deleted Actor: BP_Sky_Sphere_C
+[2021.05.11-08.40.42:289][969]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2021.05.11-08.40.42:290][969]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.43:044][ 59]LogEditorViewport: Clicking on Actor (LMB): PickUp (PickUp1)
+[2021.05.11-08.40.43:543][115]Cmd: DELETE
+[2021.05.11-08.40.43:543][115]Cmd: ACTOR DELETE
+[2021.05.11-08.40.43:545][115]LogEditorActor: Deleted Actor: PickUp
+[2021.05.11-08.40.43:554][115]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.40.43:555][115]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.44:197][192]LogEditorViewport: Clicking on Actor (LMB): BP_PickUp_C (BP_PickUp)
+[2021.05.11-08.40.44:587][235]Cmd: DELETE
+[2021.05.11-08.40.44:587][235]Cmd: ACTOR DELETE
+[2021.05.11-08.40.44:588][235]LogEditorActor: Deleted Actor: BP_PickUp_C
+[2021.05.11-08.40.44:598][235]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.40.44:599][235]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.45:194][306]LogEditorViewport: Clicking on Actor (LMB): PickUp (StrongLiquidMedicine)
+[2021.05.11-08.40.45:393][326]Cmd: DELETE
+[2021.05.11-08.40.45:393][326]Cmd: ACTOR DELETE
+[2021.05.11-08.40.45:394][326]LogEditorActor: Deleted Actor: PickUp
+[2021.05.11-08.40.45:403][326]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.40.45:405][326]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.45:958][392]LogEditorViewport: Clicking on Actor (LMB): PickUp (FastLiquidMedicine)
+[2021.05.11-08.40.46:133][409]Cmd: DELETE
+[2021.05.11-08.40.46:133][409]Cmd: ACTOR DELETE
+[2021.05.11-08.40.46:135][409]LogEditorActor: Deleted Actor: PickUp
+[2021.05.11-08.40.46:144][409]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.40.46:145][409]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2021.05.11-08.40.50:123][869]MapCheck: New page: 맵 체크
+[2021.05.11-08.40.50:141][869]Cmd: MAP REBUILD ALLVISIBLE
+[2021.05.11-08.40.50:142][869]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2021.05.11-08.40.50:233][869]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=false
+[2021.05.11-08.40.50:273][869]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.05.11-08.40.50:273][869]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.05.11-08.40.50:273][869]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.05.11-08.40.50:285][869]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.05.11-08.40.50:297][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:317][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:318][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:319][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:321][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 8
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 7
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 6
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 5
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 4
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 3
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 2
+[2021.05.11-08.40.50:324][869]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.05.11-08.40.50:324][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:327][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.50:328][869]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 8
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 6
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 5
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 4
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 3
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 2
+[2021.05.11-08.40.51:495][869]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 1
+[2021.05.11-08.40.51:495][869]TextureStreamingBuild: Display: Compiling optional shaders took 1.207 seconds.
+[2021.05.11-08.40.51:512][869]LogLevel: Display: Export Material TexCoord Scales took 0.017 seconds.
+[2021.05.11-08.40.51:515][869]TextureStreamingBuild: Display: Build Texture Streaming took 0.002 seconds.
+[2021.05.11-08.40.51:523][869]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2021.05.11-08.40.51:529][869]LightingResults: New page: 라이팅 빌드 - 2021. 5. 12. 오전 2:40:51
+[2021.05.11-08.40.51:644][869]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.05.11-08.40.51:689][869]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.05.11-08.40.51:701][869]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.05.11-08.40.52:740][869]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.05.11-08.40.52:740][869]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7380
+[2021.05.11-08.40.59:221][869]LightingResults: Warning: 설정된 임포턴스 볼륨이 없는데다 씬이 꽤 커서 자동 합성된 볼륨으로는 괜찮은 결과가 나지 않을 것입니다. 씬의 퀄리티와 라이팅 빌드 시간 최적화를 위해 라이트매스 임포턴스 볼륨을 꼭 맞게 추가해 주시기 바랍니다.
+[2021.05.11-08.40.59:222][869]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.05.11-08.40.59:222][869]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.05.11-08.40.59:222][869]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.05.11-08.40.59:222][869]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.05.11-08.40.59:222][869]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.05.11-08.40.59:419][869]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2021.05.11-08.40.59:419][869]MapCheck: New page: GameLevel - 2021. 5. 12. 오전 2:40:59
+[2021.05.11-08.40.59:456][869]MapCheck: Error: WorldInfo_0 맵 라이팅을 리빌드해야 합니다. 
+[2021.05.11-08.40.59:458][869]MapCheck: Warning: Wall10 스태틱 메시 액터에 NULL StaticMesh 프로퍼티가 있습니다. 
+[2021.05.11-08.40.59:459][869]MapCheck: Warning: BP_Volumetrics_2 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.11-08.40.59:459][869]MapCheck: 맵 체크 완료: 오류 1 회, 경고 2 회, 소요 시간 39.631ms.
+[2021.05.11-08.40.59:461][869]LogEditorBuildUtils: Build time 0:09
+[2021.05.11-08.40.59:525][869]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer Curve_Rock_Material, compiling. 
+[2021.05.11-08.40.59:533][869]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer Curve_Rock_Material, compiling. 
+[2021.05.11-08.40.59:536][869]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 4
+[2021.05.11-08.40.59:536][869]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 3
+[2021.05.11-08.40.59:536][869]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 2
+[2021.05.11-08.40.59:536][869]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 1
+[2021.05.11-08.40.59:622][869]LogSlate: Took 0.008032 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.05.11-08.40.59:646][869]LogSlate: Took 0.023743 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2021.05.11-08.40.59:663][870]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer Straight_Rock_Material, compiling. 
+[2021.05.11-08.40.59:666][870]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 2
+[2021.05.11-08.40.59:666][870]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 1
+[2021.05.11-08.40.59:666][870]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer Straight_Rock_Material, compiling. 
+[2021.05.11-08.41.00:256][870]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 2
+[2021.05.11-08.41.00:256][870]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.05.11-08.41.00:421][875]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2021.05.11-08.41.05:379][265]Job is a success!
+[2021.05.11-08.41.05:733][266]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.213s
+[2021.05.11-08.41.05:733][266]LogVolumetricLightmapImport:      Indirection Texture 32x32x32 = 0.1Mb
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:      BrickData (all levels) 7.5Mb (trimmed 2.1Mb due to 0.010000 MinBrickError)
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:      Bricks at depth
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:          0: 0.6% covering 100.0% of volume
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:          1: 8.8% covering 24.2% of volume
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:          2: 90.7% covering 3.9% of volume
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:      Bricks in each level
+[2021.05.11-08.41.05:734][266]LogVolumetricLightmapImport:          GameLevel 			 1416 bricks 	 100.0% (Persistent Level)
+[2021.05.11-08.41.05:963][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_1 (AutoDXT, 1024X512)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_2 (AutoDXT, 512X256)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_2 (AutoDXT, 512X512)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_2 (DXT1, 512X512)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_3 (AutoDXT, 128X64)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_3 (DXT1, 128X128)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_4 (AutoDXT, 128X64)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_3 (AutoDXT, 128X128)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_4 (AutoDXT, 128X128)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_4 (DXT1, 128X128)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_5 (AutoDXT, 256X128)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_5 (AutoDXT, 256X256)
+[2021.05.11-08.41.05:965][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_5 (DXT1, 256X256)
+[2021.05.11-08.41.05:968][266]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_6 (AutoDXT, 128X64)
+[2021.05.11-08.41.05:968][266]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_6 (AutoDXT, 128X128)
+[2021.05.11-08.41.05:968][266]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_6 (DXT1, 128X128)
+[2021.05.11-08.41.05:969][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_2 (G8, 64X64)
+[2021.05.11-08.41.06:002][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_5 (G8, 64X64)
+[2021.05.11-08.41.06:002][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_3 (G8, 128X64)
+[2021.05.11-08.41.06:002][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_4 (G8, 256X64)
+[2021.05.11-08.41.06:002][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (G8, 256X256)
+[2021.05.11-08.41.06:002][266]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (G8, 256X256)
+[2021.05.11-08.41.06:028][266]Lightmass on 준현컴: 4.78 sec total, 221 ms importing, 27 ms setup, 534 ms photons, 3.96 sec processing, 0 ms extra exporting [15/15 mappings]. Threads: 43.6 sec total, 4.53 sec processing.
+[2021.05.11-08.41.06:028][266]LogStaticLightingSystem: GameLevel_BuiltData storing lightmap data for 15 meshes in 7 LightmapResourceClusters (2.1 Meshes per cluster).
+[2021.05.11-08.41.06:051][266]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.41.06:065][266]LogStaticLightingSystem: Illumination: 14.5 sec (165 ms encoding lightmaps, 51 ms encoding shadowmaps)
+[2021.05.11-08.41.06:066][266]LogStaticLightingSystem: Lightmap texture memory:  3.6 MB (3.6 MB streaming, 0.0 MB non-streaming), 12 textures
+[2021.05.11-08.41.06:066][266]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 6 textures
+[2021.05.11-08.41.06:224][266]DumpUnbuiltLightIteractions
+[2021.05.11-08.41.06:224][266]Lights with unbuilt interactions: 0
+[2021.05.11-08.41.06:224][266]
+[2021.05.11-08.41.06:224][266]Primitives with unbuilt interactions: 0
+[2021.05.11-08.41.06:300][267]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.05.11-08.41.06:300][267]MapCheck: New page: GameLevel - 2021. 5. 12. 오전 2:41:06
+[2021.05.11-08.41.06:300][267]MapCheck: Warning: Wall10 스태틱 메시 액터에 NULL StaticMesh 프로퍼티가 있습니다. 
+[2021.05.11-08.41.06:301][267]MapCheck: Warning: BP_Volumetrics_2 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.11-08.41.06:301][267]MapCheck: 맵 체크 완료: 오류 0 회, 경고 2 회, 소요 시간 0.415ms.
+[2021.05.11-08.41.10:420][708]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.41.10:424][708]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.42.28:841][893]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_박치기.FBX)
+[2021.05.11-08.42.28:893][893]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_박치기.FBX
+[2021.05.11-08.42.28:958][893]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.42.40:187][893]LogSlate: Window 'FBX 임포트 옵션' being destroyed
+[2021.05.11-08.42.40:248][893]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_발로차기.FBX)
+[2021.05.11-08.42.40:259][893]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_아이들.FBX)
+[2021.05.11-08.42.40:270][893]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_움직이기(수정본).FBX)
+[2021.05.11-08.42.40:281][893]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_화염발사.FBX)
+[2021.05.11-08.43.51:537][ 18]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/Boss_리깅.FBX)
+[2021.05.11-08.43.51:551][ 18]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/Boss_리깅.FBX
+[2021.05.11-08.43.51:579][ 18]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.43.57:011][ 18]LogSlate: Window 'FBX 임포트 옵션' being destroyed
+[2021.05.11-08.43.57:041][ 18]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.43.57:393][ 18]LogMaterial: Display: Material /Game/ThirdPersonCPP/AI/Standardmaterial.Standardmaterial needed to have new flag set bUsedWithSkeletalMesh !
+[2021.05.11-08.43.57:395][ 18]LogMaterial: Display: Missing cached shader map for material Standardmaterial, compiling. 
+[2021.05.11-08.43.57:433][ 18]LogMaterial: Display: Missing cached shader map for material Standardmaterial, compiling. 
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 39
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 34
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 29
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 24
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 19
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 14
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 9
+[2021.05.11-08.43.57:449][ 18]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 4
+[2021.05.11-08.43.57:462][ 18]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.43.57:731][ 18]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.43.58:186][ 18]LogSkeletalMesh: Section 0: 6954 vertices, 78 active bones
+[2021.05.11-08.43.58:188][ 18]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.43.58:193][ 18]LogSkeletalMesh: Building Skeletal Mesh Boss_리깅...
+[2021.05.11-08.43.58:567][ 18]LogSkeletalMesh: Section 0: 6954 vertices, 78 active bones
+[2021.05.11-08.43.58:568][ 18]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.43.58:607][ 18]LogSkeletalMesh: Built Skeletal Mesh [0.42s] /Game/ThirdPersonCPP/AI/Boss_리깅.Boss_리깅
+[2021.05.11-08.43.58:632][ 18]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.43.58:632][ 18]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.43.58:647][ 18]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.43.58:648][ 18]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.43.58:649][ 18]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.43.58:650][ 18]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.43.58:938][ 18]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/Boss_리깅_Anim.Boss_리깅_Anim
+[2021.05.11-08.43.58:959][ 18]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.44.01:651][256]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.44.01:655][256]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.44.14:014][678]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/Boss_Rig_Skeleton.Boss_Rig_Skeleton' ref from Metadata '/Game/ThirdPersonCPP/AI/Boss_리깅_Skeleton.PackageMetaData'
+[2021.05.11-08.44.14:045][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Boss_Rig_Skeleton" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_Rig_Skeleton.uasset" SILENT=true
+[2021.05.11-08.44.14:048][678]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_Rig_SkeletonC36E23BE4E602EA89B34318888B00487.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_Rig_Skeleton.uasset'
+[2021.05.11-08.44.14:123][678]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.05.11-08.44.14:143][678]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.05.11-08.44.14:153][678]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2021.05.11-08.44.14:194][678]AssetCheck: New page: 애셋 저장: Boss_Rig_Skeleton
+[2021.05.11-08.44.14:194][678]LogContentValidation: Display: Skeleton /Game/ThirdPersonCPP/AI/Boss_Rig_Skeleton.Boss_Rig_Skeleton 유효성 검사
+[2021.05.11-08.44.35:166][173]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/Boss_Rig.Boss_Rig' ref from Metadata '/Game/ThirdPersonCPP/AI/Boss_리깅.PackageMetaData'
+[2021.05.11-08.44.35:188][173]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Boss_Rig" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_Rig.uasset" SILENT=true
+[2021.05.11-08.44.35:231][173]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_Rig730ED1824B353BAB810F3988E29F8F6A.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_Rig.uasset'
+[2021.05.11-08.44.35:305][173]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.05.11-08.44.35:320][173]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.05.11-08.44.35:331][173]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.05.11-08.44.35:368][173]AssetCheck: New page: 애셋 저장: Boss_Rig
+[2021.05.11-08.44.35:368][173]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/Boss_Rig.Boss_Rig 유효성 검사
+[2021.05.11-08.44.36:547][302]LogAssetEditorSubsystem: Opening Asset editor for SkeletalMesh /Game/ThirdPersonCPP/AI/Boss_Rig.Boss_Rig
+[2021.05.11-08.44.36:567][302]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2021.05.11-08.44.36:772][302]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_8:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.44.36:789][302]LogContentBrowser: Native class hierarchy updated for 'PinnedCommandList' in 0.0003 seconds. Added 1 classes and 0 folders.
+[2021.05.11-08.44.36:939][302]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_8:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.44.37:240][302]LogRenderer: Reallocating scene render targets to support 1376x884 Format 10 NumSamples 1 (Frame:1).
+[2021.05.11-08.44.43:880][  8]LogSlate: Window 'Boss_Rig' being destroyed
+[2021.05.11-08.44.43:883][  8]LogSlate: Window 'Boss_Rig' being destroyed
+[2021.05.11-08.44.43:914][  8]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.43:915][  8]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.50:738][196]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_박치기.FBX)
+[2021.05.11-08.44.50:749][196]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_박치기.FBX
+[2021.05.11-08.44.50:797][196]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.44.54:713][196]LogSlate: Window 'FBX 임포트 옵션' being destroyed
+[2021.05.11-08.44.54:729][196]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.44.54:732][196]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.44.54:881][196]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.44.55:117][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.55:118][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.55:121][196]LogSkeletalMesh: Building Skeletal Mesh boss_박치기...
+[2021.05.11-08.44.55:318][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.55:319][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.55:334][196]LogSkeletalMesh: Built Skeletal Mesh [0.21s] /Game/ThirdPersonCPP/AI/boss_박치기.boss_박치기
+[2021.05.11-08.44.55:343][196]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.55:343][196]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.44.55:351][196]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.44.55:352][196]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.44.55:354][196]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.44.55:554][196]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim
+[2021.05.11-08.44.55:573][196]FBXImport: Warning: 이 FBX 씬에 스무딩 그룹 정보가 없습니다. FBX 익스포트 플러그인에서 파일을 익스포트하기 전, 'Export Smoothing Groups' (스무딩 그룹 익스포트)를 켰는지 확인해 주시기 바랍니다. 스무딩 그룹을 지원하지 않는 툴의 경우에도, 임포트시 버텍스 노멀을 제대로 유추할 수 있도록 FBX 익스포터가 익스포트시 적합한 스무딩 데이터를 생성해 줍니다. 
+[2021.05.11-08.44.55:573][196]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.44.55:630][196]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_발로차기.FBX)
+[2021.05.11-08.44.55:651][196]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_발로차기.FBX
+[2021.05.11-08.44.55:700][196]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.44.55:706][196]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.44.55:709][196]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.44.55:851][196]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.44.56:085][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.56:085][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.56:089][196]LogSkeletalMesh: Building Skeletal Mesh boss_발로차기...
+[2021.05.11-08.44.56:283][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.56:285][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.56:299][196]LogSkeletalMesh: Built Skeletal Mesh [0.21s] /Game/ThirdPersonCPP/AI/boss_발로차기.boss_발로차기
+[2021.05.11-08.44.56:307][196]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.56:307][196]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.44.56:315][196]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.44.56:316][196]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.44.56:318][196]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.44.56:615][196]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/boss_발로차기_Anim.boss_발로차기_Anim
+[2021.05.11-08.44.56:633][196]FBXImport: Warning: 이 FBX 씬에 스무딩 그룹 정보가 없습니다. FBX 익스포트 플러그인에서 파일을 익스포트하기 전, 'Export Smoothing Groups' (스무딩 그룹 익스포트)를 켰는지 확인해 주시기 바랍니다. 스무딩 그룹을 지원하지 않는 툴의 경우에도, 임포트시 버텍스 노멀을 제대로 유추할 수 있도록 FBX 익스포터가 익스포트시 적합한 스무딩 데이터를 생성해 줍니다. 
+[2021.05.11-08.44.56:633][196]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.44.56:647][196]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_아이들.FBX)
+[2021.05.11-08.44.56:668][196]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_아이들.FBX
+[2021.05.11-08.44.56:718][196]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.44.56:723][196]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.44.56:726][196]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.44.56:868][196]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.44.57:085][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.57:086][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.57:091][196]LogSkeletalMesh: Building Skeletal Mesh boss_아이들...
+[2021.05.11-08.44.57:292][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.57:293][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.57:307][196]LogSkeletalMesh: Built Skeletal Mesh [0.22s] /Game/ThirdPersonCPP/AI/boss_아이들.boss_아이들
+[2021.05.11-08.44.57:315][196]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.57:315][196]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.44.57:325][196]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.44.57:326][196]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.44.57:327][196]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.44.57:328][196]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.44.57:706][196]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/boss_아이들_Anim.boss_아이들_Anim
+[2021.05.11-08.44.57:725][196]FBXImport: Warning: 이 FBX 씬에 스무딩 그룹 정보가 없습니다. FBX 익스포트 플러그인에서 파일을 익스포트하기 전, 'Export Smoothing Groups' (스무딩 그룹 익스포트)를 켰는지 확인해 주시기 바랍니다. 스무딩 그룹을 지원하지 않는 툴의 경우에도, 임포트시 버텍스 노멀을 제대로 유추할 수 있도록 FBX 익스포터가 익스포트시 적합한 스무딩 데이터를 생성해 줍니다. 
+[2021.05.11-08.44.57:725][196]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.44.57:744][196]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_움직이기(수정본).FBX)
+[2021.05.11-08.44.57:774][196]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_움직이기(수정본).FBX
+[2021.05.11-08.44.57:829][196]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.44.57:835][196]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.44.57:839][196]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.44.57:980][196]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.44.58:197][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.58:198][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.58:203][196]LogSkeletalMesh: Building Skeletal Mesh boss_움직이기_수정본_...
+[2021.05.11-08.44.58:411][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.58:412][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.58:427][196]LogSkeletalMesh: Built Skeletal Mesh [0.23s] /Game/ThirdPersonCPP/AI/boss_움직이기_수정본_.boss_움직이기_수정본_
+[2021.05.11-08.44.58:436][196]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.58:436][196]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.44.58:445][196]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.44.58:446][196]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.44.58:448][196]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.44.59:085][196]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.boss_움직이기_수정본__Anim
+[2021.05.11-08.44.59:106][196]FBXImport: Warning: 이 FBX 씬에 스무딩 그룹 정보가 없습니다. FBX 익스포트 플러그인에서 파일을 익스포트하기 전, 'Export Smoothing Groups' (스무딩 그룹 익스포트)를 켰는지 확인해 주시기 바랍니다. 스무딩 그룹을 지원하지 않는 툴의 경우에도, 임포트시 버텍스 노멀을 제대로 유추할 수 있도록 FBX 익스포터가 익스포트시 적합한 스무딩 데이터를 생성해 줍니다. 
+[2021.05.11-08.44.59:106][196]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.44.59:122][196]LogFactory: FactoryCreateFile: SkeletalMesh with FbxFactory (0 0 ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_화염발사.FBX)
+[2021.05.11-08.44.59:152][196]LogFbx: Loading FBX Scene from ../../../../../../Wire-Hunter/work/이혜빈/보스/boss_화염발사.FBX
+[2021.05.11-08.44.59:204][196]LogFbx: FBX Scene Loaded Succesfully
+[2021.05.11-08.44.59:210][196]LogFbx: Valid bind pose for Pose (BIND_POSES) - boss_low_??????
+[2021.05.11-08.44.59:213][196]LogFbx: Triangulating skeletal mesh boss_low_진짜
+[2021.05.11-08.44.59:362][196]LogFbx: Warning: Bones digested - 99  Depth of hierarchy - 15
+[2021.05.11-08.44.59:591][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.59:592][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.59:596][196]LogSkeletalMesh: Building Skeletal Mesh boss_화염발사...
+[2021.05.11-08.44.59:789][196]LogSkeletalMesh: Section 0: 6728 vertices, 78 active bones
+[2021.05.11-08.44.59:790][196]LogSkeletalMesh: Section 0: Material=0, 10272 triangles
+[2021.05.11-08.44.59:804][196]LogSkeletalMesh: Built Skeletal Mesh [0.21s] /Game/ThirdPersonCPP/AI/boss_화염발사.boss_화염발사
+[2021.05.11-08.44.59:813][196]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.44.59:813][196]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(0) Bip001
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(2) Bip001 Spine
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(4) Bip001 Spine2
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(5) Bip001 Spine3
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(6) Bip001 Neck
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(7) Bip001 Neck1
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(8) Bip001 Neck2
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(9) Bip001 Head
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(10) Bip001 HeadNub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(11) Bip001 Ponytail1
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(12) Bip001 Ponytail1Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(13) Bip001 Ponytail2
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(14) Bip001 Ponytail2Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(15) Bip001 L Clavicle
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(16) Bip001 L UpperArm
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(17) Bip001 L Forearm
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(18) Bip001 L Hand
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(19) Bip001 L Finger0
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(20) Bip001 L Finger01
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(21) Bip001 L Finger02
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(22) Bip001 L Finger0Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(23) Bip001 L Finger1
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(24) Bip001 L Finger11
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(25) Bip001 L Finger12
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(26) Bip001 L Finger1Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(27) Bip001 L Finger2
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(28) Bip001 L Finger21
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(29) Bip001 L Finger22
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(30) Bip001 L Finger2Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(31) Bip001 L Finger3
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(32) Bip001 L Finger31
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(33) Bip001 L Finger32
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(34) Bip001 L Finger3Nub
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(35) Bip001 R Clavicle
+[2021.05.11-08.44.59:822][196]LogFbx: SortedLinks :(36) Bip001 R UpperArm
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(37) Bip001 R Forearm
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(38) Bip001 R Hand
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(39) Bip001 R Finger0
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(40) Bip001 R Finger01
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(41) Bip001 R Finger02
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(42) Bip001 R Finger0Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(43) Bip001 R Finger1
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(44) Bip001 R Finger11
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(45) Bip001 R Finger12
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(46) Bip001 R Finger1Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(47) Bip001 R Finger2
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(48) Bip001 R Finger21
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(49) Bip001 R Finger22
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(50) Bip001 R Finger2Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(51) Bip001 R Finger3
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(52) Bip001 R Finger31
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(53) Bip001 R Finger32
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(54) Bip001 R Finger3Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(55) Bip001 L Thigh
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(56) Bip001 L Calf
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(57) Bip001 L Foot
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(58) Bip001 L Toe0
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(59) Bip001 L Toe01
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(60) Bip001 L Toe02
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(61) Bip001 L Toe0Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(62) Bip001 L Toe1
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(63) Bip001 L Toe11
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(64) Bip001 L Toe12
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(65) Bip001 L Toe1Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(66) Bip001 L Toe2
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(67) Bip001 L Toe21
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(68) Bip001 L Toe22
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(69) Bip001 L Toe2Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(70) Bip001 L Toe3
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(71) Bip001 L Toe31
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(72) Bip001 L Toe32
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(73) Bip001 L Toe3Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(74) Bip001 R Thigh
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(75) Bip001 R Calf
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(76) Bip001 R Foot
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(77) Bip001 R Toe0
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(78) Bip001 R Toe01
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(79) Bip001 R Toe02
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(80) Bip001 R Toe0Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(81) Bip001 R Toe1
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(82) Bip001 R Toe11
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(83) Bip001 R Toe12
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(84) Bip001 R Toe1Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(85) Bip001 R Toe2
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(86) Bip001 R Toe21
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(87) Bip001 R Toe22
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(88) Bip001 R Toe2Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(89) Bip001 R Toe3
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(90) Bip001 R Toe31
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(91) Bip001 R Toe32
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(92) Bip001 R Toe3Nub
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(93) Bip001 Tail
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(94) Bip001 Tail1
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(95) Bip001 Tail2
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(96) Bip001 Tail3
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(97) Bip001 Tail4
+[2021.05.11-08.44.59:823][196]LogFbx: SortedLinks :(98) Bip001 TailNub
+[2021.05.11-08.44.59:825][196]LogFbx: Parsing AnimStack Take 001
+[2021.05.11-08.45.00:166][196]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/AI/boss_화염발사_Anim.boss_화염발사_Anim
+[2021.05.11-08.45.00:188][196]FBXImport: Warning: 이 FBX 씬에 스무딩 그룹 정보가 없습니다. FBX 익스포트 플러그인에서 파일을 익스포트하기 전, 'Export Smoothing Groups' (스무딩 그룹 익스포트)를 켰는지 확인해 주시기 바랍니다. 스무딩 그룹을 지원하지 않는 툴의 경우에도, 임포트시 버텍스 노멀을 제대로 유추할 수 있도록 FBX 익스포터가 익스포트시 적합한 스무딩 데이터를 생성해 줍니다. 
+[2021.05.11-08.45.00:189][196]FBXImport: Warning: 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 HeadNub  
+Bip001 Ponytail1Nub  
+Bip001 Ponytail2Nub  
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 L Finger2Nub  
+Bip001 L Finger3Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 R Finger2Nub  
+Bip001 R Finger3Nub  
+Bip001 L Toe0Nub  
+Bip001 L Toe1Nub  
+Bip001 L Toe2Nub  
+Bip001 L Toe3Nub  
+Bip001 R Toe0Nub  
+Bip001 R Toe1Nub  
+Bip001 R Toe2Nub  
+Bip001 R Toe3Nub  
+Bip001 TailNub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2021.05.11-08.45.02:879][482]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.45.02:882][482]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.11-08.45.08:666][159]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim
+[2021.05.11-08.45.08:678][159]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_14:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.45.08:770][159]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_14:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.45.09:028][159]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.45.11:631][392]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.45.11:634][392]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.45.11:674][392]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.11:674][392]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.11:684][392]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.11:684][392]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.11:726][392]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.11:726][392]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.13:399][574]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_발로차기_Anim.boss_발로차기_Anim
+[2021.05.11-08.45.13:404][574]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_17:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.45.13:487][574]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_17:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.45.13:707][574]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.45.25:736][651]LogSlate: Window 'boss_발로차기_Anim' being destroyed
+[2021.05.11-08.45.25:739][651]LogSlate: Window 'boss_발로차기_Anim' being destroyed
+[2021.05.11-08.45.25:775][651]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.25:775][651]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.25:781][651]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.25:781][651]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.25:826][651]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.25:826][651]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.31:683][342]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_아이들_Anim.boss_아이들_Anim
+[2021.05.11-08.45.31:687][342]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_20:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.45.31:773][342]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_20:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.45.32:006][342]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.45.37:415][818]LogSlate: Window 'boss_아이들_Anim' being destroyed
+[2021.05.11-08.45.37:419][818]LogSlate: Window 'boss_아이들_Anim' being destroyed
+[2021.05.11-08.45.37:445][818]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.37:445][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.37:451][818]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.37:451][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.37:492][818]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.37:492][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.41:202][212]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.boss_움직이기_수정본__Anim
+[2021.05.11-08.45.41:206][212]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_23:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.45.41:288][212]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_23:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.45.41:520][212]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.45.58:710][755]LogSlate: Window 'boss_움직이기_수정본__Anim' being destroyed
+[2021.05.11-08.45.58:714][755]LogSlate: Window 'boss_움직이기_수정본__Anim' being destroyed
+[2021.05.11-08.45.58:735][755]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.58:735][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.58:741][755]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.58:741][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.45.58:780][755]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.45.58:780][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.00:400][932]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_화염발사_Anim.boss_화염발사_Anim
+[2021.05.11-08.46.00:404][932]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_26:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.00:490][932]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_26:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.00:717][932]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.46.06:096][404]LogSlate: Window 'boss_화염발사_Anim' being destroyed
+[2021.05.11-08.46.06:100][404]LogSlate: Window 'boss_화염발사_Anim' being destroyed
+[2021.05.11-08.46.06:100][404]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.06:100][404]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.06:106][404]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.06:106][404]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.06:147][404]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.06:147][404]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.07:601][562]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim
+[2021.05.11-08.46.07:605][562]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_29:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.07:673][562]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_29:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.07:901][562]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.46.15:723][260]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.46.15:727][260]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.46.15:754][260]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.15:754][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.15:760][260]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.15:760][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.15:802][260]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.15:802][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.17:184][410]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim
+[2021.05.11-08.46.17:188][410]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_32:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.17:257][410]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_32:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.17:477][410]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.46.28:462][402]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.46.28:466][402]LogSlate: Window 'boss_박치기_Anim' being destroyed
+[2021.05.11-08.46.28:495][402]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.28:495][402]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.28:501][402]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.28:501][402]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.28:544][402]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.28:544][402]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.30:034][562]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_화염발사_Anim.boss_화염발사_Anim
+[2021.05.11-08.46.30:038][562]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_35:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.30:107][562]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_35:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.30:329][562]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.46.39:191][346]LogSlate: Window 'boss_화염발사_Anim' being destroyed
+[2021.05.11-08.46.39:196][346]LogSlate: Window 'boss_화염발사_Anim' being destroyed
+[2021.05.11-08.46.39:224][346]LogWorld: UWorld::CleanupWorld for World_35, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.39:224][346]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.39:230][346]LogWorld: UWorld::CleanupWorld for World_37, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.39:230][346]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.39:273][346]LogWorld: UWorld::CleanupWorld for World_36, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.39:273][346]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.41:701][621]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_아이들_Anim.boss_아이들_Anim
+[2021.05.11-08.46.41:706][621]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_38:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.41:775][621]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_38:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.42:007][621]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.46.49:903][313]LogSlate: Window 'boss_아이들_Anim' being destroyed
+[2021.05.11-08.46.49:906][313]LogSlate: Window 'boss_아이들_Anim' being destroyed
+[2021.05.11-08.46.49:934][313]LogWorld: UWorld::CleanupWorld for World_38, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.49:934][313]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.49:941][313]LogWorld: UWorld::CleanupWorld for World_40, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.49:941][313]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.49:980][313]LogWorld: UWorld::CleanupWorld for World_39, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.46.49:980][313]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.46.50:902][407]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ThirdPersonCPP/AI/boss_발로차기_Anim.boss_발로차기_Anim
+[2021.05.11-08.46.50:907][407]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_41:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.05.11-08.46.50:975][407]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_41:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.05.11-08.46.51:221][407]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.05.11-08.47.04:225][574]LogSlate: Window 'boss_발로차기_Anim' being destroyed
+[2021.05.11-08.47.04:228][574]LogSlate: Window 'boss_발로차기_Anim' being destroyed
+[2021.05.11-08.47.04:229][574]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.47.04:229][574]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.47.04:236][574]LogWorld: UWorld::CleanupWorld for World_43, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.47.04:236][574]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.47.04:280][574]LogWorld: UWorld::CleanupWorld for World_42, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.47.04:280][574]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.47.30:972][778]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2021.05.11-08.47.31:003][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto2DD4261C74A57C34C2B9D69BF8E58138F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto2.umap'
+[2021.05.11-08.47.31:003][778]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.058
+[2021.05.11-08.47.31:004][778]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.058
+[2021.05.11-08.47.31:004][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/Boss_리깅_Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:026][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/Boss_리깅_Anim.Boss_리깅_Anim]
+[2021.05.11-08.47.31:026][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/Boss_리깅_Anim]
+[2021.05.11-08.47.31:033][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_리깅_Anim_Auto2871EE09349E7ADA46E59C7A7BE1553FA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/Boss_리깅_Anim_Auto2.uasset'
+[2021.05.11-08.47.31:033][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:051][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset.Boss_리깅_PhysicsAsset]
+[2021.05.11-08.47.31:051][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset]
+[2021.05.11-08.47.31:060][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_리깅_PhysicsAsset_Auto229DBD4FE44626C667987649BEFDBD702.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:061][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/Standardmaterial] ([1] browsable assets)...
+[2021.05.11-08.47.31:079][778]OBJ SavePackage:     Rendered thumbnail for [Material /Game/ThirdPersonCPP/AI/Standardmaterial.Standardmaterial]
+[2021.05.11-08.47.31:080][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/Standardmaterial]
+[2021.05.11-08.47.31:086][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Standardmaterial_Auto20143E01F440787AA6399EAB07D8E4469.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/Standardmaterial_Auto2.uasset'
+[2021.05.11-08.47.31:087][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_박치기] ([1] browsable assets)...
+[2021.05.11-08.47.31:108][778]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ThirdPersonCPP/AI/boss_박치기.boss_박치기]
+[2021.05.11-08.47.31:108][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_박치기]
+[2021.05.11-08.47.31:155][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기_Auto2ED7809DC4C941AB7DD5D3F937CB22F13.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_박치기_Auto2.uasset'
+[2021.05.11-08.47.31:156][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:176][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset.boss_박치기_PhysicsAsset]
+[2021.05.11-08.47.31:176][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset]
+[2021.05.11-08.47.31:186][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기_PhysicsAsset_Auto20469014D4ECF884BB3EFA2A86381CA48.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:186][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_박치기_Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:205][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim]
+[2021.05.11-08.47.31:205][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_박치기_Anim]
+[2021.05.11-08.47.31:211][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기_Anim_Auto2AE2D01324A53BCE43D5105BFE7D0242A.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_박치기_Anim_Auto2.uasset'
+[2021.05.11-08.47.31:212][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_발로차기] ([1] browsable assets)...
+[2021.05.11-08.47.31:230][778]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ThirdPersonCPP/AI/boss_발로차기.boss_발로차기]
+[2021.05.11-08.47.31:230][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_발로차기]
+[2021.05.11-08.47.31:273][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기_Auto289033E90448BF2744FCC248D16CE0244.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_발로차기_Auto2.uasset'
+[2021.05.11-08.47.31:274][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:294][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset.boss_발로차기_PhysicsAsset]
+[2021.05.11-08.47.31:294][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset]
+[2021.05.11-08.47.31:304][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기_PhysicsAsset_Auto27F81721848EF390E34A4E7B0AE942813.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:304][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_발로차기_Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:323][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/boss_발로차기_Anim.boss_발로차기_Anim]
+[2021.05.11-08.47.31:323][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_발로차기_Anim]
+[2021.05.11-08.47.31:329][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기_Anim_Auto25FC6153045DCCE36897FCB86AA78B39D.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_발로차기_Anim_Auto2.uasset'
+[2021.05.11-08.47.31:330][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_아이들] ([1] browsable assets)...
+[2021.05.11-08.47.31:349][778]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ThirdPersonCPP/AI/boss_아이들.boss_아이들]
+[2021.05.11-08.47.31:349][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_아이들]
+[2021.05.11-08.47.31:391][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들_Auto278A787204122828B7E2932953C3291EA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_아이들_Auto2.uasset'
+[2021.05.11-08.47.31:392][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:412][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset.boss_아이들_PhysicsAsset]
+[2021.05.11-08.47.31:412][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset]
+[2021.05.11-08.47.31:421][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들_PhysicsAsset_Auto22F400970493FA909CDFD0CBC38886481.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:422][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_아이들_Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:440][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/boss_아이들_Anim.boss_아이들_Anim]
+[2021.05.11-08.47.31:440][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_아이들_Anim]
+[2021.05.11-08.47.31:447][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들_Anim_Auto2686F0BEB4CFC6A51720526971D6CEB24.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_아이들_Anim_Auto2.uasset'
+[2021.05.11-08.47.31:447][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본_] ([1] browsable assets)...
+[2021.05.11-08.47.31:466][778]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ThirdPersonCPP/AI/boss_움직이기_수정본_.boss_움직이기_수정본_]
+[2021.05.11-08.47.31:466][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본_]
+[2021.05.11-08.47.31:507][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본__Auto26B804721403FE28304992AAADF136498.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Auto2.uasset'
+[2021.05.11-08.47.31:508][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:527][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset.boss_움직이기_수정본__PhysicsAsset]
+[2021.05.11-08.47.31:527][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset]
+[2021.05.11-08.47.31:536][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본__PhysicsAsset_Auto3FCA81C54A5D8D71355868A076BA0643.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:537][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:555][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.boss_움직이기_수정본__Anim]
+[2021.05.11-08.47.31:555][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim]
+[2021.05.11-08.47.31:563][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본__Anim_Auto26B9B7BC6447AF8A8C187848B0F54E295.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim_Auto2.uasset'
+[2021.05.11-08.47.31:564][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_화염발사] ([1] browsable assets)...
+[2021.05.11-08.47.31:582][778]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ThirdPersonCPP/AI/boss_화염발사.boss_화염발사]
+[2021.05.11-08.47.31:582][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_화염발사]
+[2021.05.11-08.47.31:623][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사_Auto2EC05A18746BE8B7AEA262A99C492D3D7.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_화염발사_Auto2.uasset'
+[2021.05.11-08.47.31:624][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset] ([1] browsable assets)...
+[2021.05.11-08.47.31:644][778]OBJ SavePackage:     Rendered thumbnail for [PhysicsAsset /Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset.boss_화염발사_PhysicsAsset]
+[2021.05.11-08.47.31:644][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset]
+[2021.05.11-08.47.31:654][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사_PhysicsAsset_Auto23B5E63A8433E1483C83BE4870F94D8CF.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset_Auto2.uasset'
+[2021.05.11-08.47.31:655][778]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonCPP/AI/boss_화염발사_Anim] ([1] browsable assets)...
+[2021.05.11-08.47.31:673][778]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ThirdPersonCPP/AI/boss_화염발사_Anim.boss_화염발사_Anim]
+[2021.05.11-08.47.31:673][778]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/boss_화염발사_Anim]
+[2021.05.11-08.47.31:680][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사_Anim_Auto2C21F829F4BC0CD24F19C35B133223E35.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/boss_화염발사_Anim_Auto2.uasset'
+[2021.05.11-08.47.31:680][778]LogFileHelpers: Auto-saving content packages took 0.677
+[2021.05.11-08.48.03:414][532]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.05.11-08.48.03:437][532]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelBCCAF20B48FA3DAB3EB73AA8242A13A3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.11-08.48.03:446][532]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
+[2021.05.11-08.48.03:508][532]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltData3D0E08C94AC0DB3588B57D9C6BC6E374.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
+[2021.05.11-08.48.03:518][532]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2021.05.11-08.48.03:518][532]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.11-08.48.03:518][532]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
+[2021.05.11-08.48.07:373][964]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Boss_리깅_Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_리깅_Anim.uasset" SILENT=true
+[2021.05.11-08.48.07:376][964]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_리깅_AnimBBC9B3C6479A5235DA0CE28D6DC2D899.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_리깅_Anim.uasset'
+[2021.05.11-08.48.07:389][964]AssetCheck: New page: 애셋 저장: Boss_리깅_Anim
+[2021.05.11-08.48.07:389][964]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/Boss_리깅_Anim.Boss_리깅_Anim 유효성 검사
+[2021.05.11-08.48.07:990][ 23]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset.uasset" SILENT=true
+[2021.05.11-08.48.07:998][ 23]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Boss_리깅_PhysicsAssetBF2EA50543453E64489127B8B80E59A0.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset.uasset'
+[2021.05.11-08.48.08:010][ 23]AssetCheck: New page: 애셋 저장: Boss_리깅_PhysicsAsset
+[2021.05.11-08.48.08:010][ 23]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/Boss_리깅_PhysicsAsset.Boss_리깅_PhysicsAsset 유효성 검사
+[2021.05.11-08.48.08:504][ 76]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_박치기" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기.uasset" SILENT=true
+[2021.05.11-08.48.08:548][ 76]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기4C251F7D47F3F2CA91CC76AB2CCF504F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기.uasset'
+[2021.05.11-08.48.08:558][ 76]AssetCheck: New page: 애셋 저장: boss_박치기
+[2021.05.11-08.48.08:558][ 76]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/boss_박치기.boss_박치기 유효성 검사
+[2021.05.11-08.48.09:039][125]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_박치기_Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기_Anim.uasset" SILENT=true
+[2021.05.11-08.48.09:042][125]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기_Anim6B0E53AC462809811A33D7833A495A41.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기_Anim.uasset'
+[2021.05.11-08.48.09:050][125]AssetCheck: New page: 애셋 저장: boss_박치기_Anim
+[2021.05.11-08.48.09:050][125]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/boss_박치기_Anim.boss_박치기_Anim 유효성 검사
+[2021.05.11-08.48.09:622][184]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset.uasset" SILENT=true
+[2021.05.11-08.48.09:630][184]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_박치기_PhysicsAsset473466F8412280E44C31C2BFFA2ED375.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset.uasset'
+[2021.05.11-08.48.09:638][184]AssetCheck: New page: 애셋 저장: boss_박치기_PhysicsAsset
+[2021.05.11-08.48.09:639][184]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/boss_박치기_PhysicsAsset.boss_박치기_PhysicsAsset 유효성 검사
+[2021.05.11-08.48.10:122][232]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_발로차기" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기.uasset" SILENT=true
+[2021.05.11-08.48.10:162][232]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기E3FED0414380323A85A9B388CD572715.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기.uasset'
+[2021.05.11-08.48.10:171][232]AssetCheck: New page: 애셋 저장: boss_발로차기
+[2021.05.11-08.48.10:171][232]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/boss_발로차기.boss_발로차기 유효성 검사
+[2021.05.11-08.48.11:406][361]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset.uasset" SILENT=true
+[2021.05.11-08.48.11:413][361]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기_PhysicsAsset5E41E274410316844446D5AE6411A48C.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset.uasset'
+[2021.05.11-08.48.11:427][361]AssetCheck: New page: 애셋 저장: boss_발로차기_PhysicsAsset
+[2021.05.11-08.48.11:427][361]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/boss_발로차기_PhysicsAsset.boss_발로차기_PhysicsAsset 유효성 검사
+[2021.05.11-08.48.11:955][411]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_발로차기_Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기_Anim.uasset" SILENT=true
+[2021.05.11-08.48.11:958][411]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_발로차기_Anim53C060D649103CCE1A3159BFBA91CC27.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_발로차기_Anim.uasset'
+[2021.05.11-08.48.11:967][411]AssetCheck: New page: 애셋 저장: boss_발로차기_Anim
+[2021.05.11-08.48.11:967][411]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/boss_발로차기_Anim.boss_발로차기_Anim 유효성 검사
+[2021.05.11-08.48.12:506][463]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_아이들" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들.uasset" SILENT=true
+[2021.05.11-08.48.12:544][463]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들5B8F9ACE46FD79412D6EB882D1B8C5F3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들.uasset'
+[2021.05.11-08.48.12:552][463]AssetCheck: New page: 애셋 저장: boss_아이들
+[2021.05.11-08.48.12:553][463]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/boss_아이들.boss_아이들 유효성 검사
+[2021.05.11-08.48.13:055][515]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_아이들_Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들_Anim.uasset" SILENT=true
+[2021.05.11-08.48.13:059][515]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들_AnimE40ADA0E4B52545121DACEA95B311315.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들_Anim.uasset'
+[2021.05.11-08.48.13:067][515]AssetCheck: New page: 애셋 저장: boss_아이들_Anim
+[2021.05.11-08.48.13:067][515]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/boss_아이들_Anim.boss_아이들_Anim 유효성 검사
+[2021.05.11-08.48.13:605][571]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset.uasset" SILENT=true
+[2021.05.11-08.48.13:613][571]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_아이들_PhysicsAssetEE2D50F343C4DDCC7E36CABC4FFF1A2F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset.uasset'
+[2021.05.11-08.48.13:622][571]AssetCheck: New page: 애셋 저장: boss_아이들_PhysicsAsset
+[2021.05.11-08.48.13:622][571]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/boss_아이들_PhysicsAsset.boss_아이들_PhysicsAsset 유효성 검사
+[2021.05.11-08.48.14:455][661]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_움직이기_수정본_" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_움직이기_수정본_.uasset" SILENT=true
+[2021.05.11-08.48.14:494][661]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본_8F2795D144D347042E36F5BE41B03849.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_움직이기_수정본_.uasset'
+[2021.05.11-08.48.14:503][661]AssetCheck: New page: 애셋 저장: boss_움직이기_수정본_
+[2021.05.11-08.48.14:503][661]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/boss_움직이기_수정본_.boss_움직이기_수정본_ 유효성 검사
+[2021.05.11-08.48.15:690][791]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/Standardmaterial" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Standardmaterial.uasset" SILENT=true
+[2021.05.11-08.48.15:692][791]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Standardmaterial1011A98D40102FB91BC907BBDCD28A27.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/Standardmaterial.uasset'
+[2021.05.11-08.48.15:702][791]AssetCheck: New page: 애셋 저장: Standardmaterial
+[2021.05.11-08.48.15:702][791]LogContentValidation: Display: Material /Game/ThirdPersonCPP/AI/Standardmaterial.Standardmaterial 유효성 검사
+[2021.05.11-08.48.16:221][845]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset.uasset" SILENT=true
+[2021.05.11-08.48.16:229][845]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사_PhysicsAsset22C167494FEFA3738DFDA39DEBB3FAF3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset.uasset'
+[2021.05.11-08.48.16:237][845]AssetCheck: New page: 애셋 저장: boss_화염발사_PhysicsAsset
+[2021.05.11-08.48.16:237][845]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/boss_화염발사_PhysicsAsset.boss_화염발사_PhysicsAsset 유효성 검사
+[2021.05.11-08.48.16:723][895]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_화염발사_Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사_Anim.uasset" SILENT=true
+[2021.05.11-08.48.16:727][895]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사_Anim38A92D074DDA136740C44794696FCAE2.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사_Anim.uasset'
+[2021.05.11-08.48.16:740][895]AssetCheck: New page: 애셋 저장: boss_화염발사_Anim
+[2021.05.11-08.48.16:740][895]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/boss_화염발사_Anim.boss_화염발사_Anim 유효성 검사
+[2021.05.11-08.48.17:222][944]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_화염발사" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사.uasset" SILENT=true
+[2021.05.11-08.48.17:260][944]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_화염발사6E340A18411AD6B1F63BB6B12B045B01.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_화염발사.uasset'
+[2021.05.11-08.48.17:269][944]AssetCheck: New page: 애셋 저장: boss_화염발사
+[2021.05.11-08.48.17:269][944]LogContentValidation: Display: SkeletalMesh /Game/ThirdPersonCPP/AI/boss_화염발사.boss_화염발사 유효성 검사
+[2021.05.11-08.48.17:898][ 11]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본__PhysicsAsset1AFDFB8349701A2CD5EDFEAB7948A97E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset.uasset'
+[2021.05.11-08.48.17:907][ 11]AssetCheck: New page: 애셋 저장: boss_움직이기_수정본__PhysicsAsset
+[2021.05.11-08.48.17:907][ 11]LogContentValidation: Display: PhysicsAsset /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__PhysicsAsset.boss_움직이기_수정본__PhysicsAsset 유효성 검사
+[2021.05.11-08.48.18:373][ 61]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.uasset" SILENT=true
+[2021.05.11-08.48.18:377][ 61]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/boss_움직이기_수정본__AnimB7EEDAE9451BBA538F3A32971A373354.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.uasset'
+[2021.05.11-08.48.18:385][ 61]AssetCheck: New page: 애셋 저장: boss_움직이기_수정본__Anim
+[2021.05.11-08.48.18:385][ 61]LogContentValidation: Display: AnimSequence /Game/ThirdPersonCPP/AI/boss_움직이기_수정본__Anim.boss_움직이기_수정본__Anim 유효성 검사
+[2021.05.11-08.48.42:020][504]Cmd: MODE GRID=0
+[2021.05.11-08.48.43:871][724]Cmd: MODE GRID=1
+[2021.05.11-08.48.46:547][ 40]LogEditorViewport: Clicking Background
+[2021.05.11-08.50.28:528][376]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-08.50.39:412][647]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-08.51.06:150][783]LogMaterial: Display: Missing cached shader map for material Material_0, compiling. 
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 34
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 29
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 19
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 14
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 9
+[2021.05.11-08.51.06:184][784]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2021.05.11-08.51.06:200][784]LogMaterial: Display: Missing cached shader map for material Material_1, compiling. 
+[2021.05.11-08.51.06:229][785]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 34
+[2021.05.11-08.51.06:255][785]LogMaterial: Display: Missing cached shader map for material Material_2, compiling. 
+[2021.05.11-08.51.06:293][786]LogMaterial: Display: Missing cached shader map for material Material_3, compiling. 
+[2021.05.11-08.51.08:426][889]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 97
+[2021.05.11-08.51.08:426][889]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 87
+[2021.05.11-08.51.08:426][889]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 77
+[2021.05.11-08.51.08:817][914]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 67
+[2021.05.11-08.51.08:912][919]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 58
+[2021.05.11-08.51.08:912][919]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 50
+[2021.05.11-08.51.09:212][938]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 43
+[2021.05.11-08.51.09:417][951]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 37
+[2021.05.11-08.51.11:692][ 95]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 32
+[2021.05.11-08.51.12:027][119]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 27
+[2021.05.11-08.51.12:119][125]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 23
+[2021.05.11-08.51.12:549][152]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 20
+[2021.05.11-08.51.13:098][186]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 17
+[2021.05.11-08.51.13:149][190]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 14
+[2021.05.11-08.51.13:341][204]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 12
+[2021.05.11-08.51.13:432][209]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 10
+[2021.05.11-08.51.13:576][218]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 8
+[2021.05.11-08.51.13:785][230]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 6
+[2021.05.11-08.51.13:900][238]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 5
+[2021.05.11-08.51.14:200][256]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 4
+[2021.05.11-08.51.14:308][263]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.05.11-08.51.14:324][264]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 2
+[2021.05.11-08.51.14:377][268]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.05.11-08.51.27:079][744]LogAssetEditorSubsystem: Opening Asset editor for World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel
+[2021.05.11-08.51.27:088][744]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2021.05.11-08.51.27:096][744]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.11-08.51.27:096][744]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.27:096][744]LoadErrors: New page: 맵 로드중: GameLevel.umap
+[2021.05.11-08.51.27:098][744]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.51.27:100][744]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.51.27:100][744]MapCheck: New page: 맵 체크
+[2021.05.11-08.51.27:100][744]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.27:113][744]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F0E7AD5800), frame # 73744
+[2021.05.11-08.51.27:113][744]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F0E7BF0B80), frame # 73744
+[2021.05.11-08.51.27:114][744]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2021.05.11-08.51.27:135][744]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-08.51.27:136][744]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F0F9C58600), frame # 73744
+[2021.05.11-08.51.27:136][744]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F0E7FCA200), frame # 73744
+[2021.05.11-08.51.27:288][744]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.11-08.51.27:299][744]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.05.11-08.51.27:306][744]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.11-08.51.27:306][744]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.099ms.
+[2021.05.11-08.51.27:306][744]LogFileHelpers: Loading map 'GameLevel' took 0.209
+[2021.05.11-08.51.29:051][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:051][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:069][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:069][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:070][944]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.05.11-08.51.29:070][944]LogLinker: Warning: '{FileName}': 애셋에 대한 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.05.11-08.51.29:070][944]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.05.11-08.51.29:070][944]LogLinker: Warning: '{FileName}': 애셋에 대한 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.05.11-08.51.29:077][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:077][944]LoadErrors: 로드에 실패했습니다. /Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData.EditorLevel_BuiltData 참조한 것: PersistentLevel
+[2021.05.11-08.51.29:077][944]LogLinker: Warning: '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap' 로드 도중 '/Game/ThirdPersonCPP/Maps/EditorLevel_BuiltData' 로드에 실패했습니다: 애셋에 대한 파일을 찾을 수 없습니다.
+[2021.05.11-08.51.29:089][944]LogAssetEditorSubsystem: Opening Asset editor for World /Game/ThirdPersonCPP/Maps/EditorLevel.EditorLevel
+[2021.05.11-08.51.29:099][944]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.05.11-08.51.29:100][944]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/EditorLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.11-08.51.29:101][944]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.29:101][944]LoadErrors: New page: 맵 로드중: EditorLevel.umap
+[2021.05.11-08.51.29:102][944]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.51.29:102][944]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.51.29:102][944]MapCheck: New page: 맵 체크
+[2021.05.11-08.51.29:102][944]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.29:112][944]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F0E7FCA200), frame # 73944
+[2021.05.11-08.51.29:112][944]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F0F9C58600), frame # 73944
+[2021.05.11-08.51.29:113][944]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2021.05.11-08.51.29:246][944]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.11-08.51.29:246][944]LogAIModule: Creating AISystem for world EditorLevel
+[2021.05.11-08.51.29:246][944]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F144733200), frame # 73944
+[2021.05.11-08.51.29:247][944]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F144DD34C0), frame # 73944
+[2021.05.11-08.51.29:258][944]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2021.05.11-08.51.29:265][944]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.11-08.51.29:266][944]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.101ms.
+[2021.05.11-08.51.29:266][944]LogFileHelpers: Loading map 'EditorLevel' took 0.165
+[2021.05.11-08.51.33:154][397]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.51.36:514][397]LogSlate: Window 'Delete Assets' being destroyed
+[2021.05.11-08.51.59:546][ 60]LogAssetEditorSubsystem: Opening Asset editor for World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel
+[2021.05.11-08.51.59:555][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2021.05.11-08.51.59:558][ 60]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.11-08.51.59:558][ 60]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.59:558][ 60]LoadErrors: New page: 맵 로드중: GameLevel.umap
+[2021.05.11-08.51.59:585][ 60]LogWorld: UWorld::CleanupWorld for EditorLevel, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-08.51.59:585][ 60]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-08.51.59:585][ 60]MapCheck: New page: 맵 체크
+[2021.05.11-08.51.59:585][ 60]LightingResults: New page: 라이팅 빌드
+[2021.05.11-08.51.59:595][ 60]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001F144DD34C0), frame # 77060
+[2021.05.11-08.51.59:595][ 60]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001F144733200), frame # 77060
+[2021.05.11-08.51.59:596][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.05.11-08.51.59:802][ 60]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.11-08.51.59:802][ 60]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.11-08.51.59:802][ 60]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001F1A8029C00), frame # 77060
+[2021.05.11-08.51.59:802][ 60]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001F10578E200), frame # 77060
+[2021.05.11-08.51.59:812][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.05.11-08.51.59:819][ 60]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.11-08.51.59:819][ 60]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.097ms.
+[2021.05.11-08.51.59:819][ 60]LogFileHelpers: Loading map 'GameLevel' took 0.261
+[2021.05.11-08.52.02:009][316]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-08.52.20:588][520]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Curve_Rock_low_uv)
+[2021.05.11-08.52.37:574][257]LogEditorViewport: Clicking Background
+[2021.05.11-08.52.43:371][946]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall12)
+[2021.05.11-08.52.46:023][249]LogEditorViewport: Clicking Background
+[2021.05.11-08.52.47:216][391]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall12)
+[2021.05.11-08.52.47:866][465]LogEditorViewport: Clicking Background
+[2021.05.11-08.52.52:763][ 33]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall14)
+[2021.05.11-08.52.55:277][311]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall18)
+[2021.05.11-08.52.57:997][617]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall16)
+[2021.05.11-08.52.58:569][681]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall17)
+[2021.05.11-08.53.00:901][946]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall20)
+[2021.05.11-08.53.04:878][387]Cmd: DELETE
+[2021.05.11-08.53.04:878][387]Cmd: ACTOR DELETE
+[2021.05.11-08.53.04:880][387]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.04:880][387]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.04:880][387]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.04:880][387]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.04:888][387]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.53.04:892][387]LogEditorActor: Deleted 4 Actors (0.014 secs)
+[2021.05.11-08.53.06:708][601]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall18)
+[2021.05.11-08.53.07:131][642]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall19)
+[2021.05.11-08.53.07:857][725]Cmd: DELETE
+[2021.05.11-08.53.07:857][725]Cmd: ACTOR DELETE
+[2021.05.11-08.53.07:858][725]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.07:859][725]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.07:868][725]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.11-08.53.07:870][725]LogEditorActor: Deleted 2 Actors (0.013 secs)
+[2021.05.11-08.53.29:866][288]Cmd: DELETE
+[2021.05.11-08.53.29:866][288]Cmd: ACTOR DELETE
+[2021.05.11-08.53.29:867][288]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.53.29:877][288]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2021.05.11-08.53.29:881][288]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2021.05.11-08.54.46:793][ 81]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-08.54.52:349][737]Cmd: DELETE
+[2021.05.11-08.54.52:349][737]Cmd: ACTOR DELETE
+[2021.05.11-08.54.52:350][737]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.54.52:360][737]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.05.11-08.54.52:363][737]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2021.05.11-08.54.53:819][910]Cmd: DELETE
+[2021.05.11-08.54.53:819][910]Cmd: ACTOR DELETE
+[2021.05.11-08.54.53:820][910]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.05.11-08.54.53:830][910]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2021.05.11-08.54.53:832][910]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2021.05.11-08.54.55:879][156]Cmd: DELETE
+[2021.05.11-08.54.55:879][156]Cmd: ACTOR DELETE
+[2021.05.11-08.54.55:889][156]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.11-08.54.55:890][156]LogEditorActor: Deleted 0 Actors (0.011 secs)
+[2021.05.11-08.55.27:727][958]Cmd: DELETE
+[2021.05.11-08.55.27:727][958]Cmd: ACTOR DELETE
+[2021.05.11-08.55.27:737][958]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.11-08.55.27:740][958]LogEditorActor: Deleted 0 Actors (0.012 secs)
+[2021.05.11-08.55.35:658][902]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.35:659][902]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.55.36:120][916]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.36:120][916]LogEditorTransaction: Undo 액터 클릭
+[2021.05.11-08.55.36:969][ 11]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.36:969][ 11]LogEditorTransaction: Undo 액터 클릭
+[2021.05.11-08.55.38:029][136]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.38:029][136]LogEditorTransaction: Undo 액터 클릭
+[2021.05.11-08.55.38:738][221]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.38:738][221]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.55.39:647][330]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.39:647][330]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.55.45:674][ 27]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Straight_Rock_low_uv)
+[2021.05.11-08.55.56:302][290]Cmd: DELETE
+[2021.05.11-08.55.56:302][290]Cmd: ACTOR DELETE
+[2021.05.11-08.55.56:303][290]LogEditorActor: Deleted Actor: BP_Volumetrics_C
+[2021.05.11-08.55.56:313][290]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.05.11-08.55.56:317][290]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2021.05.11-08.55.57:398][420]Cmd: TRANSACTION UNDO
+[2021.05.11-08.55.57:398][420]LogEditorTransaction: Undo 액터 삭제
+[2021.05.11-08.56.15:773][560]Cmd: DELETE
+[2021.05.11-08.56.15:773][560]Cmd: ACTOR DELETE
+[2021.05.11-08.56.15:774][560]LogEditorActor: Deleted Actor: ExponentialHeightFog
+[2021.05.11-08.56.15:784][560]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.05.11-08.56.15:787][560]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2021.05.11-08.56.16:801][682]Cmd: TRANSACTION UNDO
+[2021.05.11-08.56.16:801][682]LogEditorTransaction: Undo 액터 삭제
