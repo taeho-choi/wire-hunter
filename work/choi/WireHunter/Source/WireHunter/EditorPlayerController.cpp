@@ -63,22 +63,22 @@ void AEditorPlayerController::Click()
 
 		BoneName = Hit.BoneName;
 
-		/*BoneName = FName(Hit.GetActor()->GetName());
+		BoneName = FName(Hit.GetActor()->GetName());
 
-		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());*/
+		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
 
-		//if (Bones.Contains(*BoneName.ToString())) {
-		//	auto avatar = Hit.GetActor()->GetAttachParentActor();
-		//	avatar->GetComponents(AvatarHandle);
+		if (Bones.Contains(*BoneName.ToString())) {
+			auto avatar = Hit.GetActor()->GetAttachParentActor();
+			avatar->GetComponents(AvatarHandle);
 
-		//	GrabbedComp->SetWorldLocation(AvatarHandle[0]->GetBoneLocationByName(BoneName, EBoneSpaces::WorldSpace));//to Sync
-		//	GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
+			GrabbedComp->SetWorldLocation(AvatarHandle[0]->GetBoneLocationByName(BoneName, EBoneSpaces::WorldSpace));//to Sync
+			GrabbedComp->SetWorldRotation(AvatarHandle[0]->GetBoneRotationByName(BoneName, EBoneSpaces::WorldSpace));
 
-		//	PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
-		//	PrevBoneNames.Push(BoneName);
-		//	PrevGrabbedComps.Push(GrabbedComp);
+			PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
+			PrevBoneNames.Push(BoneName);
+			PrevGrabbedComps.Push(GrabbedComp);
 
-		//	FSkeletalMeshRenderData* renderData = AvatarHandle[0]->GetSkeletalMeshRenderData();
+			//FSkeletalMeshRenderData* renderData = AvatarHandle[0]->GetSkeletalMeshRenderData();
 			//FSkeletalMeshLODRenderData
 
 			//for (int32 LODIndex = 0; LODIndex < renderData->LODRenderData.Num(); ++LODIndex)
@@ -89,7 +89,7 @@ void AEditorPlayerController::Click()
 			//		renderData->LODRenderData[LODIndex].SkinWeightVertexBuffer.ResetVertexBoneWeights(Index);
 			//	}
 			//}
-		//}
+		}
 
 		if (GrabbedComp->IsSimulatingPhysics()) {
 			PhysicsHandle->GrabComponentAtLocation(GrabbedComp, BoneName, (FVector)Hit.Location);
