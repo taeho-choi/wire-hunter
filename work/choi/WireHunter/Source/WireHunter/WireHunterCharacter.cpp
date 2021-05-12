@@ -368,6 +368,7 @@ void AWireHunterCharacter::UpdateWirePosition()
 void AWireHunterCharacter::WireSwing()
 {
 	if (GetCppHooked())
+	if (GetCppHooked())
 	{
 		cppWire->SetWorldLocation(GetCppHookLocation());
 		FVector dist = GetActorLocation() - GetCppHookLocation();

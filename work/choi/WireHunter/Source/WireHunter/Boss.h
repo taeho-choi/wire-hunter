@@ -4,6 +4,7 @@
 
 #include "EngineMinimal.h"
 #include "GameFramework/Character.h"
+#include "BossAIController.h"
 
 #include "Boss.generated.h"
 
@@ -26,8 +27,32 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	void FindPlayer();
+
+	void FacePlayer();
+
+	void SetInterpolationLocation();
+
+	void SetInterpolationRotation();
 
 private:
-	void MoveToPlayer();
-	
+	FVector TargetLocation;
+
+	FRotator TargetRotation;
+
+	float YawValue;
+	float RollValue;
+	float PitchValue;
+
+	float XValue;
+	float YValue;
+	float ZValue;
+
+	ABossAIController* Controller;
+
+	static int InterpolationValueLoc;
+	static int InterpolationValueRot;
+
+	FVector v;
 };
