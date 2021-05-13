@@ -9,6 +9,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/PointLightComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -71,6 +72,13 @@ AWireHunterCharacter::AWireHunterCharacter()
 	cppWire->bEnableStiffness = true;
 	//cppWire->bEnableCollision = true;
 
+	WirePointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("WirePointLight"));
+	WirePointLight->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+	WirePointLight->SetLightColor(FLinearColor(0.f, 255.f, 0.f));
+	WirePointLight->SetWorldLocation(FVector(108.f, 0.f, -76.f));
+	WirePointLight->SetVisibility(false);
+
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -82,6 +90,7 @@ void AWireHunterCharacter::BeginPlay()
 	UHealthBar* HealthBar = Cast<UHealthBar>(HealthWidget->GetUserWidgetObject());
 	HealthBar->SetOwnerCharacter(this);
 
+	TimerBetweenShots = 0.1f;
 	Health = 5.f;
 
 	SetFloatingPos(GetActorLocation());
@@ -159,6 +168,8 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	{
 		Withdraw();
 	}
+
+	WireTrace();
 }
 
 
@@ -203,14 +214,14 @@ void AWireHunterCharacter::MoveForward(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()))* 5 * Value));
+			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * Value));
 		}
 	}
 }
 
 void AWireHunterCharacter::MoveRight(float Value)
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
+	if ((Controller != NULL) && (Value != 0.0f))
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -260,16 +271,39 @@ void AWireHunterCharacter::FireShot()
 	}
 }
 
-void AWireHunterCharacter::LeftTurn()
+void AWireHunterCharacter::WireTrace()
 {
+	const float WireRange = 7000.f;
+	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
+	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
+
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(WireHit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (WireHit.bBlockingHit)
+	{
+		if (!GetCppHooked() && !GetisClimbing())
+		{
+			WirePointLight->SetVisibility(true);
+		}
+
+		WirePointLight->AttenuationRadius = WireHit.Distance * 0.035f;
+		if (WirePointLight->AttenuationRadius < 30.f)
+		{
+			WirePointLight->AttenuationRadius = 30.f;
+		}
+		
+		WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal*15);
+		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
+	}
+	else
+	{
+		WirePointLight->SetVisibility(false);
+	}
+	
 }
-
-void AWireHunterCharacter::RightTurn()
-{
-
-}
-
 void AWireHunterCharacter::HookWire()
 {
 	//if (GetCharacterMovement()->IsFalling())
@@ -278,7 +312,6 @@ void AWireHunterCharacter::HookWire()
 		// 와이어가 꽂혀있을 경우 와이어를 회수
 		if (GetCppHooked())
 		{
-			// 와이어를 회수
 			BreakHook();
 		}
 
@@ -286,32 +319,34 @@ void AWireHunterCharacter::HookWire()
 		else
 		{
 			// 크로스헤어 지점으로 트레이싱
-			FHitResult Hit;
+			//FHitResult Hit;
 
-			const float WireRange = 50000.f;
-			const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
-			const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
+			//const float WireRange = 6000.f;
+			//const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
+			//const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
 
-			FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-			QueryParams.AddIgnoredActor(this);
-			GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-			//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-			if (Hit.bBlockingHit)
+			//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+			//QueryParams.AddIgnoredActor(this);
+			//GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+			////DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+			if (WireHit.bBlockingHit)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
 			}
 
 			// 트레이싱이 충돌하면 와이어를 꽂기
-			if (Hit.bBlockingHit)
+			if (WireHit.bBlockingHit)
 			{
+				WirePointLight->SetVisibility(false);
+
 				// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
-				//FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
-				//this->SetActorRotation(WireShotRotation);
+				// FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
+				// this->SetActorRotation(WireShotRotation);
 
 				cppWire->SetVisibility(true);
 
-				SetCppHookLocation(Hit.Location);
+				SetCppHookLocation(WireHit.Location);
 				GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
 
 				FVector NewLocation;
@@ -409,7 +444,6 @@ void AWireHunterCharacter::PressWithdraw()
 	}
 	else
 	{
-		SetCppisLaunching(false);
 		BreakHook();
 	}
 }
@@ -417,7 +451,15 @@ void AWireHunterCharacter::PressWithdraw()
 void AWireHunterCharacter::Climb()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Press Climb"));
-	ClimbTrace();
+	if (!GetisClimbing())
+	{
+		ClimbTrace();
+	}
+	else
+	{
+		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+		SetisClimbing(false);
+	}
 }
 
 void AWireHunterCharacter::ClimbTrace()

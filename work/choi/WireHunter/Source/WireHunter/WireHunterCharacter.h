@@ -26,6 +26,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UCableComponent* cppWire;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
+		class UPointLightComponent* WirePointLight;
+
 
 public:
 	AWireHunterCharacter();
@@ -68,7 +71,7 @@ public:
 	class UParticleSystem* ImpactParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-		float TimerBetweenShots;
+	float TimerBetweenShots;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -156,8 +159,6 @@ public:
 	void StartFire();
 	void StopFire();
 	void FireShot();
-	void LeftTurn();
-	void RightTurn();
 
 
 
@@ -210,6 +211,7 @@ public:
 	void ClimbTrace();
 	void UpdateWallNormal();
 	void LedgeTrace();
+	void WireTrace();
 
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
@@ -220,5 +222,6 @@ protected:
 	FVector cppWireDistance;
 	FVector cppHookLocation;
 	FVector cppWallNormal;
+	FHitResult WireHit;
 };
 

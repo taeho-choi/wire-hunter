@@ -63,6 +63,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWireHunterCharacter); \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AWireHunterCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__HealthWidget() { return STRUCT_OFFSET(AWireHunterCharacter, HealthWidget); } \
 	FORCEINLINE static uint32 __PPO__cppWire() { return STRUCT_OFFSET(AWireHunterCharacter, cppWire); } \
+	FORCEINLINE static uint32 __PPO__WirePointLight() { return STRUCT_OFFSET(AWireHunterCharacter, WirePointLight); } \
 	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(AWireHunterCharacter, Health); } \
 	FORCEINLINE static uint32 __PPO__MaxHealth() { return STRUCT_OFFSET(AWireHunterCharacter, MaxHealth); } \
 	FORCEINLINE static uint32 __PPO__FloatingPos() { return STRUCT_OFFSET(AWireHunterCharacter, FloatingPos); } \
