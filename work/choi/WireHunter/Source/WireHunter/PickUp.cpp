@@ -3,6 +3,7 @@
 
 #include "PickUp.h"
 #include "Components/BoxComponent.h"
+#include "TimerManager.h"
 
 // Sets default values
 APickUp::APickUp()
@@ -12,28 +13,29 @@ APickUp::APickUp()
 
 	PickupRoot = CreateDefaultSubobject<USceneComponent>(TEXT("PuckupRoot"));
 	RootComponent = PickupRoot;
+	PickupRoot->SetWorldScale3D(FVector(3.f, 3.f, 3.f));
 	
 	PickupMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PickupMesh"));
 	PickupMesh->AttachToComponent(PickupRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	PickupMesh->SetVisibility(false);
+	PickupMesh->SetWorldScale3D(FVector(7.f, 7.f, 7.f));
+	PickupMesh->SetWorldLocation(GetActorLocation() + FVector(0.f, 0.f, -35.f));
+	PickupMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	PickupBox = CreateDefaultSubobject<UBoxComponent>(TEXT("PuckupBox"));
-	PickupBox->SetWorldScale3D(FVector(1.0f, 1.0f, 1.0f));
 	PickupBox->SetGenerateOverlapEvents(true);
 	PickupBox->OnComponentBeginOverlap.AddDynamic(this, &APickUp::OnPlayerEnterPickupBox);
 	PickupBox->AttachToComponent(PickupRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	PickupBox->SetWorldScale3D(FVector(0.5f, 0.5f, 1.f));
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/ThirdPersonCPP/GraphicResources/liquidmedicine_low_uv_id.liquidmedicine_low_uv_id'"));
-	UStaticMesh* Asset = MeshAsset.Object;
-
-	PickupMesh->SetStaticMesh(Asset);
+	isSpawned = false;
 }
 
 // Called when the game starts or when spawned
 void APickUp::BeginPlay()
 {
 	Super::BeginPlay();
-
-	
+	GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, true, 0.f);
 }
 
 // Called every frame
@@ -46,7 +48,10 @@ void APickUp::Tick(float DeltaTime)
 void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-	TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 5.0f);
-	Destroy();
+	PickupMesh->SetVisibility(false);
 }
 
+void APickUp::RandomSpawn()
+{
+	PickupMesh->SetVisibility(true);
+}

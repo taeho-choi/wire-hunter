@@ -69,7 +69,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APickUp); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APickUp)
 
 
-#define WireHunter_Source_WireHunter_PickUp_h_14_PRIVATE_PROPERTY_OFFSET
+#define WireHunter_Source_WireHunter_PickUp_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__isSpawned() { return STRUCT_OFFSET(APickUp, isSpawned); }
+
+
 #define WireHunter_Source_WireHunter_PickUp_h_11_PROLOG
 #define WireHunter_Source_WireHunter_PickUp_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		{ "ModuleRelativePath", "PickUp.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APickUp, nullptr, "OnPlayerEnterPickupBox", nullptr, nullptr, sizeof(PickUp_eventOnPlayerEnterPickupBox_Parms), Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APickUp, nullptr, "OnPlayerEnterPickupBox", nullptr, nullptr, sizeof(PickUp_eventOnPlayerEnterPickupBox_Parms), Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -149,6 +149,11 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PickupRoot_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PickupRoot;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isSpawned_MetaData[];
+#endif
+		static void NewProp_isSpawned_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isSpawned;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -158,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_WireHunter,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APickUp_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox, "OnPlayerEnterPickupBox" }, // 2528269816
+		{ &Z_Construct_UFunction_APickUp_OnPlayerEnterPickupBox, "OnPlayerEnterPickupBox" }, // 3589046171
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickUp_Statics::Class_MetaDataParams[] = {
@@ -190,10 +195,22 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APickUp_Statics::NewProp_PickupRoot = { "PickupRoot", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickUp, PickupRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APickUp_Statics::NewProp_PickupRoot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickUp_Statics::NewProp_PickupRoot_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned_MetaData[] = {
+		{ "Category", "Spawn" },
+		{ "ModuleRelativePath", "PickUp.h" },
+	};
+#endif
+	void Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned_SetBit(void* Obj)
+	{
+		((APickUp*)Obj)->isSpawned = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned = { "isSpawned", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APickUp), &Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned_SetBit, METADATA_PARAMS(Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APickUp_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickUp_Statics::NewProp_PickupBox,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickUp_Statics::NewProp_PickupMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickUp_Statics::NewProp_PickupRoot,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickUp_Statics::NewProp_isSpawned,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APickUp_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APickUp>::IsAbstract,
@@ -222,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodePickUp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickUp, 2271829035);
+	IMPLEMENT_CLASS(APickUp, 633918796);
 	template<> WIREHUNTER_API UClass* StaticClass<APickUp>()
 	{
 		return APickUp::StaticClass();

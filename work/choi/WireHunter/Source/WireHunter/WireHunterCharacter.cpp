@@ -296,7 +296,7 @@ void AWireHunterCharacter::WireTrace()
 		}
 		
 		WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal*15);
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
+		//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
 	}
 	else
 	{
@@ -332,7 +332,7 @@ void AWireHunterCharacter::HookWire()
 			////DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 			if (WireHit.bBlockingHit)
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
+				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
 			}
 
 			// 트레이싱이 충돌하면 와이어를 꽂기
@@ -347,7 +347,7 @@ void AWireHunterCharacter::HookWire()
 				cppWire->SetVisibility(true);
 
 				SetCppHookLocation(WireHit.Location);
-				GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
+				//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
 
 				FVector NewLocation;
 				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
@@ -358,7 +358,11 @@ void AWireHunterCharacter::HookWire()
 				cppWire->CableLength = GetCppHookedWireLength();
 				SetCppHooked(true);
 				float distance = (GetActorLocation() - GetCppHookLocation()).Size();
-				GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 150000000.f);
+
+				// 와이어 부착 후 Swing 힘을 더 세게
+				// GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 150000000.f);
+				GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
+
 			}
 			else
 			{
@@ -385,7 +389,7 @@ void AWireHunterCharacter::UpdateWirePosition()
 			if (dis.Size() <= 100.f)
 			{
 				SetCppHookMoveFinished(true);
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("HookMoveFinished"));
+				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("HookMoveFinished"));
 			}
 			else
 			{
@@ -450,7 +454,7 @@ void AWireHunterCharacter::PressWithdraw()
 
 void AWireHunterCharacter::Climb()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Press Climb"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Press Climb"));
 	if (!GetisClimbing())
 	{
 		ClimbTrace();
