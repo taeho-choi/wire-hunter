@@ -45,17 +45,17 @@ void ABoss::h(FStructNode next, FStructNode end)
 {
 	int x = abs(end.first - next.first);
 	int y = abs(end.second - next.second);
-	ScoreH[next.first][next.second] = (x + y) * 10;
+	ScoreH[next.second][next.first] = (x + y) * 10;
 }
 
 void ABoss::g(FStructNode now, FStructNode next, int plus)
 {
-	ScoreG[next.first][next.second] = ScoreF[now.first][now.second] + plus;
+	ScoreG[next.second][next.first] = ScoreF[now.second][now.first] + plus;
 }
 
 void ABoss::f(FStructNode next)
 {
-	ScoreF[next.first][next.second] = ScoreG[next.first][next.second] + ScoreH[next.first][next.second];
+	ScoreF[next.second][next.first] = ScoreG[next.second][next.first] + ScoreH[next.second][next.first];
 }
 
 FStructNode ABoss::FindTop()//가중치가 가장 작은 노드 반환
@@ -112,8 +112,8 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		for (int j = 0; j < 10; ++j) {
 			if (map[i][j] == '$') {
 				FStructNode obstacle;
-				obstacle.first = i;
-				obstacle.second = j;
+				obstacle.first = j;
+				obstacle.second = i;
 				Closed.Push(obstacle);
 			}
 		}
@@ -161,7 +161,7 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 			f(tmp);
 
 			FStructWeight pushed;
-			pushed.weight = ScoreF[x][y];
+			pushed.weight = ScoreF[y][x];
 			pushed.node = tmp;
 			Min.Push(pushed);
 		}

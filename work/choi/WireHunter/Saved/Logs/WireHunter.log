@@ -18554,3 +18554,15 @@ Script Stack (0 frames):
 [2021.05.15-08.01.48:032][998]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
 [2021.05.15-08.01.48:095][998]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 3445 classes and 826 folders.
 [2021.05.15-08.01.48:098][998]Display: HotReload took  0.2s.
+[2021.05.15-08.49.34:525][837]LogHotReload: New module detected: UE4Editor-WireHunter-0051.dll
+[2021.05.15-08.49.35:217][840]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-08.49.35:264][840]LogClass: StructNode HotReload.
+[2021.05.15-08.49.35:264][840]LogClass: StructWeight HotReload.
+[2021.05.15-08.49.35:266][840]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-08.49.35:276][840]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-08.49.35:283][840]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-08.49.35:289][840]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-08.49.35:299][840]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0006 seconds. Added 17 classes and 2 folders.
+[2021.05.15-08.49.35:300][840]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
+[2021.05.15-08.49.35:353][840]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 3445 classes and 826 folders.
+[2021.05.15-08.49.35:356][840]Display: HotReload took  0.1s.
