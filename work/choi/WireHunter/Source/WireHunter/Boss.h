@@ -66,7 +66,7 @@ public:
 
 	void h(FStructNode next, FStructNode end);
 
-	void g(FStructNode now, FStructNode next, int plus);
+	void g(FStructNode next, int plus);
 
 	void f(FStructNode next);
 
@@ -79,6 +79,4 @@ public:
 	void RemoveTop();
 
 	int FindElement(float x, float y);
-
-	void Init();
 };

@@ -48,9 +48,9 @@ void ABoss::h(FStructNode next, FStructNode end)
 	ScoreH[next.second][next.first] = (x + y) * 10;
 }
 
-void ABoss::g(FStructNode now, FStructNode next, int plus)
+void ABoss::g(FStructNode next, int plus)
 {
-	ScoreG[next.second][next.first] = ScoreF[now.second][now.first] + plus;
+	ScoreG[next.second][next.first] =  plus;
 }
 
 void ABoss::f(FStructNode next)
@@ -72,20 +72,6 @@ FStructNode ABoss::FindTop()//가중치가 가장 작은 노드 반환
 	return Min[idx].node;
 }
 
-void ABoss::RemoveTop()
-{
-	auto max = Min[0].weight;
-	int idx = 0;
-	for (int i = 1; i < Min.Num(); ++i) {
-		if (Min[i].weight > max) {
-			max = Min[i].weight;
-			idx = i;
-		}
-	}
-
-	Min.RemoveAt(idx);
-}
-
 int ABoss::FindElement(float x, float y)
 {
 	for (int i = 0; i < Closed.Num(); ++i) {
@@ -98,6 +84,10 @@ int ABoss::FindElement(float x, float y)
 
 void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 {
+	Min.Empty();
+	Path.Empty();
+	Closed.Empty();
+
 	memset(ScoreF, 9999, sizeof(ScoreF));
 	memset(ScoreG, 9999, sizeof(ScoreG));
 	memset(ScoreH, 9999, sizeof(ScoreH));
@@ -119,17 +109,12 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		}
 	}
 
-	FStructNode now;
 	while (Path.Last().first != goal.first || Path.Last().second != goal.second) {
-		now = FindTop();//at first, there is only start point in Min arr. 
+		FStructNode now = FindTop();//at first, there is only start point in Min arr. 
 		Closed.Push(now);
-		RemoveTop();
-
-		Min.Empty(); // or new creation
 		Path.Push(now);
 
-		memset(ScoreG, 9999, sizeof(ScoreG));
-		memset(ScoreH, 9999, sizeof(ScoreH));
+		Min.Empty(); // or new creation
 
 		int dx[8] = { 0, 1, 1, 1, 0, -1, -1, -1};
 		int dy[8] = { 1, 1, 0, -1, -1, -1, 0, 1 };
@@ -151,13 +136,12 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 			tmp.second = y;
 			h(goal, tmp);
 			if (dx[i] == 0 || dy[i] == 0) {
-				g(now, tmp, 10);
+				g(tmp, 10);
 			}
 			else {
-				g(now, tmp, 14);
+				g(tmp, 14);
 			}
 
-			memset(ScoreF, 9999, sizeof(ScoreF));
 			f(tmp);
 
 			FStructWeight pushed;
@@ -167,15 +151,9 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		}
 	}
 
-	for (int i = 0; i < Path.Num(); ++i) {
-		//print path
+	for (int i = 2; i < Path.Num(); ++i) {
+		//print path from index2
 	}
-}
-
-void ABoss::Init() {
-	Min.Empty();
-	Path.Empty();
-	Closed.Empty();
 }
 
 // Called when the game starts or when spawned
