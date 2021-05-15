@@ -56,19 +56,17 @@ void ABoss::Tick(float DeltaTime)
 	FindPlayer();
 	FacePlayer();
 
-	UE_LOG(LogTemp, Warning, TEXT("T : %s"), *this->GetActorLocation().ToString());
+	UE_LOG(LogTemp, Warning, TEXT("TargetLoc : %s"), *this->TargetLocation.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("1111111111111111111111111111111111111111111111111 : %s"), *this->GetActorLocation().ToString());
+	UE_LOG(LogTemp, Warning, TEXT("TargetRot : %s"), *this->TargetRotation.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("222222222222222222222222222222222222222222222222222 : %s"), *this->GetActorRotation().ToString());
 
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 1.f);
-	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 1.f);
+	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 0.5f);
+	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 
 	this->SetActorLocationAndRotation(movement, rot);
 
-	/*if(abs(this->GetActorLocation().X - TargetLocation.X) > movement.X){
-		this->SetActorLocation(this->GetActorLocation() + movement);
-	}
-	else {
-		this->SetActorLocation(TargetLocation);
-	}*/
+
 }
 
 // Called to bind functionality to input
