@@ -8,7 +8,7 @@
 // Sets default values
 ABoss::ABoss()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
@@ -45,32 +45,30 @@ void ABoss::BeginPlay()
 
 	//////////////////////////////////////////////////////////////////////
 
-	FindPlayer();
-	FacePlayer();
 
-	SetInterpolationLocation();
-	SetInterpolationRotation();
 }
 
 // Called every frame
 void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
-	auto goalRot = TargetRotation;
-	auto goalLoc = TargetLocation;
 
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, DeltaTime, 1000.f);
+	FindPlayer();
+	FacePlayer();
 
-	if(abs(this->GetActorLocation().X - TargetLocation.X) > movement.X){
+	UE_LOG(LogTemp, Warning, TEXT("T : %s"), *this->GetActorLocation().ToString());
+
+	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 1.f);
+	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 1.f);
+
+	this->SetActorLocationAndRotation(movement, rot);
+
+	/*if(abs(this->GetActorLocation().X - TargetLocation.X) > movement.X){
 		this->SetActorLocation(this->GetActorLocation() + movement);
 	}
 	else {
 		this->SetActorLocation(TargetLocation);
-	}
-
-	UE_LOG(LogTemp, Error, TEXT("movement : %s"), *movement.ToString());
-	UE_LOG(LogTemp, Warning, TEXT("T : %s"), *TargetLocation.ToString());
+	}*/
 }
 
 // Called to bind functionality to input

@@ -273,7 +273,7 @@ void AWireHunterCharacter::FireShot()
 
 void AWireHunterCharacter::WireTrace()
 {
-	const float WireRange = 7000.f;
+	const float WireRange = 12000.f;
 	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
 	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
