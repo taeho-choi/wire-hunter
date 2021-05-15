@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{70E89B6C-E2D1-439E-A096-806934FB14EC}</UniqueIdentifier>
+      <UniqueIdentifier>{A75B02A2-0A75-4F46-BDC7-7052E7D6CD99}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{380C1C4D-6DAF-48B1-B351-95B2B6752F55}</UniqueIdentifier>
+      <UniqueIdentifier>{F48BA4E6-7468-4300-B5BB-9C1D0A0CBD0F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{CFDAD3C1-F577-4984-A31B-4377F9AFC039}</UniqueIdentifier>
+      <UniqueIdentifier>{C5E7CBF2-C2D3-4A61-A9E1-FB51C23EA2E9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
       <Filter>Source\WireHunter</Filter>
@@ -92,6 +92,12 @@
     <ClInclude Include="..\..\Source\WireHunter\MyLevelScriptActor.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\NodeStructure.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\NodeStructure.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\PickUp.cpp">
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
@@ -108,6 +114,12 @@
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\StrengthPotion.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\WeightStructure.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\WeightStructure.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <None Include="..\..\Source\WireHunter\WireHunter.Build.cs">

@@ -18160,3 +18160,397 @@ Script Stack (0 frames):
 [2021.05.15-05.03.41:920][932]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
 [2021.05.15-05.03.41:920][932]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
 [2021.05.15-05.03.44:598][213]LogEditorViewport: Clicking Background
+[2021.05.15-05.05.12:328][821]MapCheck: New page: 맵 체크
+[2021.05.15-05.05.12:341][821]Cmd: MAP REBUILD ALLVISIBLE
+[2021.05.15-05.05.12:341][821]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2021.05.15-05.05.12:529][821]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=false
+[2021.05.15-05.05.12:571][821]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.05.15-05.05.12:571][821]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.05.15-05.05.12:571][821]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.05.15-05.05.12:584][821]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2021.05.15-05.05.12:599][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:621][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:622][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:623][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:624][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 10
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 8
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 7
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 6
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2021.05.15-05.05.12:628][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 3
+[2021.05.15-05.05.12:628][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. Is special engine material.
+[2021.05.15-05.05.12:659][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:664][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:668][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:670][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.12:671][821]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 62
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 61
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 60
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 59
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 58
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 57
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 56
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 55
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 54
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 53
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 52
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 51
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 50
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 49
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 48
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 47
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 46
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 45
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 44
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 43
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 42
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 41
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 40
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 39
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 38
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 37
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 36
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 35
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 34
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 33
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 32
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 31
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 30
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 29
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 28
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 27
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 26
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 25
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 23
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 22
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 21
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 20
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 19
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 18
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 17
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 16
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 15
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 14
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 13
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 12
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 11
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 10
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 7
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 6
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 5
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 4
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 3
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 2
+[2021.05.15-05.05.15:973][821]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 1
+[2021.05.15-05.05.15:973][821]TextureStreamingBuild: Display: Compiling optional shaders took 3.383 seconds.
+[2021.05.15-05.05.15:988][821]LogLevel: Display: Export Material TexCoord Scales took 0.014 seconds.
+[2021.05.15-05.05.15:991][821]TextureStreamingBuild: Display: Build Texture Streaming took 0.003 seconds.
+[2021.05.15-05.05.16:001][821]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.15-05.05.16:008][821]LightingResults: New page: 라이팅 빌드 - 2021. 5. 15. 오후 11:05:16
+[2021.05.15-05.05.16:069][821]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.05.15-05.05.16:116][821]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.05.15-05.05.16:129][821]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.05.15-05.05.16:652][821]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.05.15-05.05.16:653][821]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7056
+[2021.05.15-05.05.23:382][821]LightingResults: Warning: 설정된 임포턴스 볼륨이 없는데다 씬이 꽤 커서 자동 합성된 볼륨으로는 괜찮은 결과가 나지 않을 것입니다. 씬의 퀄리티와 라이팅 빌드 시간 최적화를 위해 라이트매스 임포턴스 볼륨을 꼭 맞게 추가해 주시기 바랍니다.
+[2021.05.15-05.05.23:384][821]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.05.15-05.05.23:384][821]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.05.15-05.05.23:384][821]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.05.15-05.05.23:384][821]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.05.15-05.05.23:384][821]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.05.15-05.05.23:683][821]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2021.05.15-05.05.23:683][821]MapCheck: New page: GameLevel - 2021. 5. 15. 오후 11:05:23
+[2021.05.15-05.05.23:684][821]MapCheck: Error: WorldInfo_0 맵 라이팅을 리빌드해야 합니다. 
+[2021.05.15-05.05.23:686][821]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.15-05.05.23:687][821]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
+[2021.05.15-05.05.23:687][821]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.15-05.05.23:687][821]MapCheck: 맵 체크 완료: 오류 1 회, 경고 3 회, 소요 시간 3.889ms.
+[2021.05.15-05.05.23:689][821]LogEditorBuildUtils: Build time 0:11
+[2021.05.15-05.05.23:835][822]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2021.05.15-05.05.27:148][ 51]Job is a success!
+[2021.05.15-05.05.27:385][ 53]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.055s
+[2021.05.15-05.05.27:386][ 53]LogVolumetricLightmapImport:      Indirection Texture 32x32x32 = 0.1Mb
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:      BrickData (all levels) 0.8Mb (trimmed 1.1Mb due to 0.010000 MinBrickError)
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:      Bricks at depth
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:          0: 4.8% covering 100.0% of volume
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:          1: 23.5% covering 7.6% of volume
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:          2: 71.7% covering 0.4% of volume
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:      Bricks in each level
+[2021.05.15-05.05.27:387][ 53]LogVolumetricLightmapImport:          GameLevel 			 166 bricks 	 100.0% (Persistent Level)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_1 (AutoDXT, 512X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_2 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_2 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_2 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_3 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_4 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_3 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_3 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_4 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_4 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_5 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_5 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_5 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_6 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_6 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_6 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_7 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_7 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_7 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_8 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_8 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_8 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_9 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_9 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_9 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_10 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_10 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_10 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_11 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_11 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_11 (DXT1, 128X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_12 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_12 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_12 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_13 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_13 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_14 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_13 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_14 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_14 (DXT1, 256X256)
+[2021.05.15-05.05.27:732][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_15 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_15 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_15 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_16 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_16 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_16 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_17 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_17 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_17 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_18 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_18 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_18 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_19 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_19 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_19 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_20 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_20 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_20 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_21 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_21 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_21 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_22 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_22 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_22 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_23 (AutoDXT, 256X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_23 (AutoDXT, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_23 (DXT1, 256X256)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: SkyOcclusion1_24 (AutoDXT, 128X64)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_24 (AutoDXT, 128X128)
+[2021.05.15-05.05.27:733][ 53]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_24 (DXT1, 128X128)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_64 (G8, 128X64)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_58 (G8, 128X64)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_65 (G8, 128X64)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_61 (G8, 256X64)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_59 (G8, 128X64)
+[2021.05.15-05.05.27:867][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_60 (G8, 128X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_66 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_56 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_62 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_67 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_68 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_69 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_70 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_57 (G8, 128X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_71 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_74 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_73 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_72 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_75 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_63 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_77 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_78 (G8, 64X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_76 (G8, 256X64)
+[2021.05.15-05.05.27:868][ 53]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_55 (G8, 256X256)
+[2021.05.15-05.05.27:868][ 53]Lightmass on 준현컴: 3.41 sec total, 159 ms importing, 62 ms setup, 370 ms photons, 2.72 sec processing, 0 ms extra exporting [62/62 mappings]. Threads: 29.9 sec total, 9.12 sec processing.
+[2021.05.15-05.05.27:868][ 53]LogStaticLightingSystem: GameLevel_BuiltData storing lightmap data for 62 meshes in 24 LightmapResourceClusters (2.6 Meshes per cluster).
+[2021.05.15-05.05.27:890][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2021.05.15-05.05.27:908][ 53]LogStaticLightingSystem: Illumination: 11.8 sec (350 ms encoding lightmaps, 34 ms encoding shadowmaps)
+[2021.05.15-05.05.27:909][ 53]LogStaticLightingSystem: Lightmap texture memory:  3.6 MB (3.6 MB streaming, 0.0 MB non-streaming), 48 textures
+[2021.05.15-05.05.27:909][ 53]LogStaticLightingSystem: Shadowmap texture memory: 0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 24 textures
+[2021.05.15-05.05.28:385][ 53]DumpUnbuiltLightIteractions
+[2021.05.15-05.05.28:385][ 53]Lights with unbuilt interactions: 0
+[2021.05.15-05.05.28:385][ 53]
+[2021.05.15-05.05.28:385][ 53]Primitives with unbuilt interactions: 0
+[2021.05.15-05.05.28:481][ 54]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.05.15-05.05.28:481][ 54]MapCheck: New page: GameLevel - 2021. 5. 15. 오후 11:05:28
+[2021.05.15-05.05.28:481][ 54]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.15-05.05.28:482][ 54]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
+[2021.05.15-05.05.28:482][ 54]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.15-05.05.28:482][ 54]MapCheck: 맵 체크 완료: 오류 0 회, 경고 3 회, 소요 시간 1.133ms.
+[2021.05.15-05.05.32:870][527]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.15-05.05.32:874][527]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.15-05.06.17:029][821]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2021.05.15-05.06.17:071][821]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel7519D3BC44D9DDC598CA3BBD17282277.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.15-05.06.17:090][821]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
+[2021.05.15-05.06.17:240][821]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltDataDCA7FAEB43955DC3CE199AB7731104DA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
+[2021.05.15-05.06.17:251][821]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2021.05.15-05.06.17:251][821]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.15-05.06.17:251][821]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
+[2021.05.15-05.12.01:396][141]LogHotReload: New module detected: UE4Editor-WireHunter-0039.dll
+[2021.05.15-05.12.02:071][144]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-05.12.02:110][144]LogClass: Could not find existing class Boss in package /Script/WireHunter for HotReload, assuming new class
+[2021.05.15-05.12.02:126][144]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-05.12.02:137][144]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-05.12.02:145][144]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-05.12.02:150][144]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-05.12.02:163][144]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0013 seconds. Added 15 classes and 2 folders.
+[2021.05.15-05.12.02:165][144]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.15-05.12.02:225][144]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 3443 classes and 826 folders.
+[2021.05.15-05.12.02:229][144]Display: HotReload took  0.2s.
+[2021.05.15-05.29.45:407][314]LogHotReload: New module detected: UE4Editor-WireHunter-0040.dll
+[2021.05.15-05.29.46:096][317]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-05.29.46:136][317]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-05.29.46:144][317]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-05.29.46:150][317]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-05.29.46:155][317]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-05.29.46:163][317]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0005 seconds. Added 15 classes and 2 folders.
+[2021.05.15-05.29.46:164][317]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.15-05.29.46:210][317]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 3443 classes and 826 folders.
+[2021.05.15-05.29.46:213][317]Display: HotReload took  0.1s.
+[2021.05.15-05.30.19:898][417]LogHotReload: New module detected: UE4Editor-WireHunter-0042.dll
+[2021.05.15-05.30.20:579][420]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-05.30.20:617][420]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-05.30.20:625][420]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-05.30.20:631][420]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-05.30.20:637][420]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-05.30.20:645][420]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 15 classes and 2 folders.
+[2021.05.15-05.30.20:647][420]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.15-05.30.20:687][420]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 3443 classes and 826 folders.
+[2021.05.15-05.30.20:690][420]Display: HotReload took  0.1s.
+[2021.05.15-05.30.54:420][520]LogHotReload: New module detected: UE4Editor-WireHunter-0043.dll
+[2021.05.15-05.30.55:095][523]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-05.30.55:144][523]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-05.30.55:152][523]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-05.30.55:158][523]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-05.30.55:163][523]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-05.30.55:171][523]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 15 classes and 2 folders.
+[2021.05.15-05.30.55:173][523]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2021.05.15-05.30.55:218][523]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 3443 classes and 826 folders.
+[2021.05.15-05.30.55:221][523]Display: HotReload took  0.1s.
+[2021.05.15-05.47.16:854][890]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.05.15-05.47.16:854][890]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2021.05.15-05.47.16:894][890]LogSlate: Took 0.008576 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.05.15-05.47.19:530][184]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.05.15-05.47.39:973][625]Running C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" -game -rocket -progress
+[2021.05.15-05.47.40:277][625]Discovering modules, targets and source code for project...
+[2021.05.15-05.47.41:683][625]Binding IntelliSense data...
+[2021.05.15-05.47.45:211][625]C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Public' does not exist.
+[2021.05.15-05.47.45:211][625]C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Classes' does not exist.
+[2021.05.15-05.47.45:412][625]Binding IntelliSense data... 100%
+[2021.05.15-05.47.45:413][625]Writing project files...
+[2021.05.15-05.47.48:935][625]Writing project files... 100%
+[2021.05.15-05.47.49:058][625]Candidate modules for hot reload:
+[2021.05.15-05.47.49:058][625]  WireHunter
+[2021.05.15-05.47.49:058][625]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,4366 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: New page: 컴파일 - 2021. 5. 15. 오후 11:47:54
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: Creating makefile for WireHunterEditor (no existing makefile)
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Public' does not exist.
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Classes' does not exist.
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: Parsing headers for WireHunterEditor
+[2021.05.15-05.47.54:714][625]CompilerResultsLog:   Running UnrealHeaderTool "C:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" "C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\WireHunterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\??????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.05.15-05.47.54:714][625]CompilerResultsLog: Error: C:/Wire-Hunter/work/choi/WireHunter/Source/WireHunter/Boss.h(42)  : Error: 'struct' is not allowed here
+[2021.05.15-05.47.54:714][625]LogMainFrame: MainFrame: Module compiling took 5.660 seconds
+[2021.05.15-05.47.54:714][625]Warning: HotReload failed, recompile failed
+[2021.05.15-05.47.54:714][625]Warning: RebindPackages failed because compilation failed.
+[2021.05.15-05.47.59:416][625]LogSlate: Window '메시지' being destroyed
+[2021.05.15-05.47.59:419][625]Message dialog closed, result: Yes, title: 메시지, text: 'NodeStructure' 클래스 추가에 성공했지만, 'WireHunter' 모듈을 다시 컴파일해야 콘텐츠 브라우저에 나타날 것입니다. 'WireHunter' 모듈을 자동으로 핫 리로드하는 데 실패했습니다.
+
+출력 로그를 열어 자세한 내용을 확인하시겠습니까?
+[2021.05.15-05.47.59:420][625]LogSlate: Window 'C++ 클래스 추가' being destroyed
+[2021.05.15-05.48.19:278][  0]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.05.15-05.48.19:278][  0]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2021.05.15-05.48.24:707][621]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.05.15-05.48.36:053][979]Running C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" -game -rocket -progress
+[2021.05.15-05.48.36:356][979]Discovering modules, targets and source code for project...
+[2021.05.15-05.48.37:464][979]Binding IntelliSense data...
+[2021.05.15-05.48.38:980][979]C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Public' does not exist.
+[2021.05.15-05.48.38:980][979]C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Classes' does not exist.
+[2021.05.15-05.48.39:081][979]Binding IntelliSense data... 100%
+[2021.05.15-05.48.39:082][979]Writing project files...
+[2021.05.15-05.48.41:901][979]Writing project files... 100%
+[2021.05.15-05.48.42:021][979]Candidate modules for hot reload:
+[2021.05.15-05.48.42:021][979]  WireHunter
+[2021.05.15-05.48.42:022][979]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,8512 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: New page: 컴파일 - 2021. 5. 15. 오후 11:48:47
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: Creating makefile for WireHunterEditor (no existing makefile)
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Public' does not exist.
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Classes' does not exist.
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: Parsing headers for WireHunterEditor
+[2021.05.15-05.48.47:628][979]CompilerResultsLog:   Running UnrealHeaderTool "C:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" "C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\WireHunterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\??????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.05.15-05.48.47:628][979]CompilerResultsLog: Error: C:/Wire-Hunter/work/choi/WireHunter/Source/WireHunter/Boss.h(42)  : Error: 'struct' is not allowed here
+[2021.05.15-05.48.47:628][979]LogMainFrame: MainFrame: Module compiling took 5.609 seconds
+[2021.05.15-05.48.47:628][979]Warning: HotReload failed, recompile failed
+[2021.05.15-05.48.47:628][979]Warning: RebindPackages failed because compilation failed.
+[2021.05.15-05.48.49:771][979]LogSlate: Window '메시지' being destroyed
+[2021.05.15-05.48.49:774][979]Message dialog closed, result: No, title: 메시지, text: 'WeightStructure' 클래스 추가에 성공했지만, 'WireHunter' 모듈을 다시 컴파일해야 콘텐츠 브라우저에 나타날 것입니다. 'WireHunter' 모듈을 자동으로 핫 리로드하는 데 실패했습니다.
+
+출력 로그를 열어 자세한 내용을 확인하시겠습니까?
+[2021.05.15-05.48.49:774][979]LogSlate: Window 'C++ 클래스 추가' being destroyed
+[2021.05.15-05.57.22:256][735]LogHotReload: New module detected: UE4Editor-WireHunter-0046.dll
+[2021.05.15-05.57.22:945][738]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-05.57.23:000][738]LogClass: Could not find existing class NodeStructure in package /Script/WireHunter for HotReload, assuming new class
+[2021.05.15-05.57.23:000][738]LogClass: Could not find existing class WeightStructure in package /Script/WireHunter for HotReload, assuming new class
+[2021.05.15-05.57.23:001][738]LogClass: Could not find existing type StructNode for HotReload. Assuming new
+[2021.05.15-05.57.23:006][738]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-05.57.23:015][738]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-05.57.23:022][738]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-05.57.23:027][738]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-05.57.23:037][738]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0006 seconds. Added 17 classes and 2 folders.
+[2021.05.15-05.57.23:039][738]Display: HotReload successful (1 functions remapped  1 scriptstructs remapped)
+[2021.05.15-05.57.23:083][738]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 3445 classes and 826 folders.
+[2021.05.15-05.57.23:087][738]Display: HotReload took  0.1s.
+[2021.05.15-06.00.27:503][288]LogHotReload: New module detected: UE4Editor-WireHunter-0047.dll
+[2021.05.15-06.00.28:190][291]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-06.00.28:241][291]LogClass: StructNode HotReload.
+[2021.05.15-06.00.28:241][291]LogClass: Could not find existing type StructWeight for HotReload. Assuming new
+[2021.05.15-06.00.28:244][291]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-06.00.28:252][291]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-06.00.28:258][291]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-06.00.28:264][291]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-06.00.28:272][291]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 17 classes and 2 folders.
+[2021.05.15-06.00.28:273][291]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
+[2021.05.15-06.00.28:315][291]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 3445 classes and 826 folders.
+[2021.05.15-06.00.28:317][291]Display: HotReload took  0.1s.
+[2021.05.15-06.16.38:430][184]LogHotReload: New module detected: UE4Editor-WireHunter-0048.dll
+[2021.05.15-06.16.39:113][187]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-06.16.39:159][187]LogClass: StructNode HotReload.
+[2021.05.15-06.16.39:159][187]LogClass: StructWeight HotReload.
+[2021.05.15-06.16.39:162][187]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-06.16.39:170][187]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-06.16.39:176][187]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-06.16.39:182][187]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-06.16.39:190][187]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 17 classes and 2 folders.
+[2021.05.15-06.16.39:191][187]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
+[2021.05.15-06.16.39:234][187]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 3445 classes and 826 folders.
+[2021.05.15-06.16.39:238][187]Display: HotReload took  0.1s.
+[2021.05.15-08.01.47:223][995]LogHotReload: New module detected: UE4Editor-WireHunter-0050.dll
+[2021.05.15-08.01.47:911][998]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.15-08.01.47:989][998]LogClass: StructNode HotReload.
+[2021.05.15-08.01.47:989][998]LogClass: StructWeight HotReload.
+[2021.05.15-08.01.47:994][998]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.05.15-08.01.48:007][998]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.05.15-08.01.48:015][998]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.05.15-08.01.48:020][998]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.05.15-08.01.48:030][998]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0007 seconds. Added 17 classes and 2 folders.
+[2021.05.15-08.01.48:032][998]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
+[2021.05.15-08.01.48:095][998]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 3445 classes and 826 folders.
+[2021.05.15-08.01.48:098][998]Display: HotReload took  0.2s.

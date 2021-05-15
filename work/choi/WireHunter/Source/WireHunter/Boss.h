@@ -5,9 +5,8 @@
 #include "EngineMinimal.h"
 #include "GameFramework/Character.h"
 #include "BossAIController.h"
-
-#include "Containers/Map.h"
-#include "Kismet/KismetMathLibrary.h"
+#include "NodeStructure.h"
+#include "WeightStructure.h"
 
 #include "Boss.generated.h"
 
@@ -23,29 +22,6 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
-	void FindPlayer();
-
-	void FacePlayer();
-
-	void SetInterpolationLocation();
-
-	void SetInterpolationRotation();
-
-	void AStar();
-
-	void h();
-
-	void g();
-
-	void f();
 
 private:
 	FVector TargetLocation;
@@ -65,10 +41,42 @@ private:
 	static int InterpolationValueLoc;
 	static int InterpolationValueRot;
 
-	typedef TTuple<float, float> Node;
-	typedef TTuple<int, Node> Weight;
+	FStructNode Start, Goal;
+	TArray<FStructWeight> Min;
+	TArray<FStructNode> Path;
+	TArray<FStructNode> Closed;
+	int ScoreF[10][10];
+	int ScoreG[10][10];
+	int ScoreH[10][10];
 
-	TArray<Node> Path;
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	void FindPlayer();
 
+	void FacePlayer();
+
+	void SetInterpolationLocation();
+
+	void SetInterpolationRotation();
+
+	void h(FStructNode next, FStructNode end);
+
+	void g(FStructNode now, FStructNode next, int plus);
+
+	void f(FStructNode next);
+
+	void AStar(char map[10][10], FStructNode start, FStructNode goal);
+
+	void MakeMap();
+
+	FStructNode FindTop();
+
+	void RemoveTop();
+
+	int FindElement(float x, float y);
 };

@@ -3,12 +3,18 @@
 #include "Boss.h"
 #include "GameFramework/Actor.h"
 #include "Math/UnrealMathUtility.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 ABoss::ABoss()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+}
+
+void ABoss::MakeMap() 
+{
+
 }
 
 void ABoss::FindPlayer()
@@ -35,20 +41,135 @@ void ABoss::SetInterpolationLocation()//per tick
 	ZValue = abs(this->GetActorLocation().Z - TargetLocation.Z) / 1000;
 }
 
-void ABoss::AStar() {
-
+void ABoss::h(FStructNode next, FStructNode end)
+{
+	int x = abs(end.first - next.first);
+	int y = abs(end.second - next.second);
+	ScoreH[next.first][next.second] = (x + y) * 10;
 }
 
-void ABoss::h() {
-
+void ABoss::g(FStructNode now, FStructNode next, int plus)
+{
+	ScoreG[next.first][next.second] = ScoreF[now.first][now.second] + plus;
 }
 
-void ABoss::g() {
-
+void ABoss::f(FStructNode next)
+{
+	ScoreF[next.first][next.second] = ScoreG[next.first][next.second] + ScoreH[next.first][next.second];
 }
 
-void ABoss::f() {
+FStructNode ABoss::FindTop()//가중치가 가장 작은 노드 반환
+{
+	auto min = Min[0].weight;
+	int idx = 0;
+	for (int i = 1; i < Min.Num(); ++i) {
+		if (Min[i].weight < min) {
+			min = Min[i].weight;
+			idx = i;
+		}
+	}
 
+	return Min[idx].node;
+}
+
+void ABoss::RemoveTop()
+{
+	auto max = Min[0].weight;
+	int idx = 0;
+	for (int i = 1; i < Min.Num(); ++i) {
+		if (Min[i].weight > max) {
+			max = Min[i].weight;
+			idx = i;
+		}
+	}
+
+	Min.RemoveAt(idx);
+}
+
+int ABoss::FindElement(float x, float y)
+{
+	for (int i = 0; i < Closed.Num(); ++i) {
+		if (Closed[i].first == x && Closed[i].second == y) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
+{
+	memset(ScoreF, 9999, sizeof(ScoreF));
+	memset(ScoreG, 9999, sizeof(ScoreG));
+	memset(ScoreH, 9999, sizeof(ScoreH));
+
+	FStructWeight a;
+	a.node = start;
+	a.weight = 0;
+	Min.Push(a);//or Emplace()
+	Path.Push(start);
+
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 10; ++j) {
+			if (map[i][j] == '$') {
+				FStructNode obstacle;
+				obstacle.first = i;
+				obstacle.second = j;
+				Closed.Push(obstacle);
+			}
+		}
+	}
+
+	FStructNode now;
+	while (Path.Last().first != goal.first || Path.Last().second != goal.second) {
+		now = FindTop();//at first, there is only start point in Min arr. 
+		Closed.Push(now);
+		RemoveTop();
+
+		Min.Empty(); // or new creation
+		Path.Push(now);
+
+		memset(ScoreG, 9999, sizeof(ScoreG));
+		memset(ScoreH, 9999, sizeof(ScoreH));
+
+		int dx[8] = { 0, 1, 1, 1, 0, -1, -1, -1};
+		int dy[8] = { 1, 1, 0, -1, -1, -1, 0, 1 };
+
+		for (int i = 0; i < 8; ++i) {
+			int x = now.first + dx[i];
+			int	y = now.second + dy[i];
+			if (x < 0 || y < 0 || x > 9 || y > 9) {
+				continue;
+			}
+
+			int idx = FindElement(x, y);//in Closed
+			if (idx != -1) {
+				continue;
+			}
+
+			FStructNode tmp;
+			tmp.first = x;
+			tmp.second = y;
+			h(goal, tmp);
+			if (dx[i] == 0 || dy[i] == 0) {
+				g(now, tmp, 10);
+			}
+			else {
+				g(now, tmp, 14);
+			}
+
+			memset(ScoreF, 9999, sizeof(ScoreF));
+			f(tmp);
+
+			FStructWeight pushed;
+			pushed.weight = ScoreF[x][y];
+			pushed.node = tmp;
+			Min.Push(pushed);
+		}
+	}
+
+	for (int i = 0; i < Path.Num(); ++i) {
+		//print path
+	}
 }
 
 // Called when the game starts or when spawned
