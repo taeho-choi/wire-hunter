@@ -2,7 +2,6 @@
 
 #include "Boss.h"
 #include "GameFramework/Actor.h"
-#include "Kismet/KismetMathLibrary.h"
 #include "Math/UnrealMathUtility.h"
 
 // Sets default values
@@ -34,6 +33,22 @@ void ABoss::SetInterpolationLocation()//per tick
 	XValue = abs(this->GetActorLocation().X - TargetLocation.X) / 1000;
 	YValue = abs(this->GetActorLocation().Y - TargetLocation.Y) / 1000;
 	ZValue = abs(this->GetActorLocation().Z - TargetLocation.Z) / 1000;
+}
+
+void ABoss::AStar() {
+
+}
+
+void ABoss::h() {
+
+}
+
+void ABoss::g() {
+
+}
+
+void ABoss::f() {
+
 }
 
 // Called when the game starts or when spawned

@@ -6,6 +6,9 @@
 #include "GameFramework/Character.h"
 #include "BossAIController.h"
 
+#include "Containers/Map.h"
+#include "Kismet/KismetMathLibrary.h"
+
 #include "Boss.generated.h"
 
 UCLASS()
@@ -36,6 +39,14 @@ public:
 
 	void SetInterpolationRotation();
 
+	void AStar();
+
+	void h();
+
+	void g();
+
+	void f();
+
 private:
 	FVector TargetLocation;
 
@@ -54,5 +65,10 @@ private:
 	static int InterpolationValueLoc;
 	static int InterpolationValueRot;
 
-	FVector v;
+	typedef TTuple<float, float> Node;
+	typedef TTuple<int, Node> Weight;
+
+	TArray<Node> Path;
+
+
 };
