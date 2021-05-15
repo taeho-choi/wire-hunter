@@ -4,6 +4,7 @@
 #include "WireHunterCharacter.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Kismet/KismetSystemLibrary.h"
 #include "Bullet.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
@@ -180,12 +181,12 @@ void AWireHunterCharacter::OnResetVR()
 
 void AWireHunterCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		Jump();
+	Jump();
 }
 
 void AWireHunterCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		StopJumping();
+	StopJumping();
 }
 
 void AWireHunterCharacter::TurnAtRate(float Rate)
@@ -294,15 +295,15 @@ void AWireHunterCharacter::WireTrace()
 		{
 			WirePointLight->AttenuationRadius = 30.f;
 		}
-		
-		WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal*15);
+
+		WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal * 15);
 		//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
 	}
 	else
 	{
 		WirePointLight->SetVisibility(false);
 	}
-	
+
 }
 void AWireHunterCharacter::HookWire()
 {
@@ -380,7 +381,7 @@ void AWireHunterCharacter::UpdateWirePosition()
 		{
 			FRotator NewRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), GetCppHookLocation());
 			FVector NewLocation = NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(),
-																 GetWorld()->GetDeltaSeconds(), 5000.f);
+				GetWorld()->GetDeltaSeconds(), 5000.f);
 			cppWire->SetWorldLocationAndRotation(NewLocation, NewRotation);
 		}
 		else
@@ -407,19 +408,19 @@ void AWireHunterCharacter::UpdateWirePosition()
 void AWireHunterCharacter::WireSwing()
 {
 	if (GetCppHooked())
-	if (GetCppHooked())
-	{
-		cppWire->SetWorldLocation(GetCppHookLocation());
-		FVector dist = GetActorLocation() - GetCppHookLocation();
-		float dot = FVector::DotProduct(GetVelocity(), dist);
-		dist.Normalize();
-		GetCharacterMovement()->AddForce(dist * dot * -2.f);
-		if (!GetCppisLaunching())
+		if (GetCppHooked())
 		{
-			cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+			cppWire->SetWorldLocation(GetCppHookLocation());
+			FVector dist = GetActorLocation() - GetCppHookLocation();
+			float dot = FVector::DotProduct(GetVelocity(), dist);
+			dist.Normalize();
+			GetCharacterMovement()->AddForce(dist * dot * -2.f);
+			if (!GetCppisLaunching())
+			{
+				cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+			}
+			GetCharacterMovement()->AirControl = 1.f;
 		}
-		GetCharacterMovement()->AirControl = 1.f;
-	}
 }
 
 void AWireHunterCharacter::BreakHook()
@@ -434,10 +435,13 @@ void AWireHunterCharacter::BreakHook()
 
 void AWireHunterCharacter::Withdraw()
 {
-	FVector dist = GetActorLocation() - GetCppHookLocation();
-	cppWire->CableLength = dist.Size();
-	FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 1000.f);
-	LaunchCharacter(launchVel, true, true);
+	if (GetCppHooked())
+	{
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		cppWire->CableLength = dist.Size();
+		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 1000.f);
+		LaunchCharacter(launchVel, true, true);
+	}
 }
 
 void AWireHunterCharacter::PressWithdraw()
@@ -461,8 +465,8 @@ void AWireHunterCharacter::Climb()
 	}
 	else
 	{
-		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
 		SetisClimbing(false);
+		GetCharacterMovement()->AddForce(GetCppWallNormal() * 10000000);
 	}
 }
 
@@ -483,6 +487,8 @@ void AWireHunterCharacter::ClimbTrace()
 	if (Hit.bBlockingHit)
 	{
 		BreakHook();
+		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 		SetisClimbing(true);
 		SetFloatingPos(GetActorLocation());
 	}
@@ -512,8 +518,8 @@ void AWireHunterCharacter::LedgeTrace()
 	FHitResult Hit;
 
 	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 3.f)) - FVector(0.f, 0.f, 600.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 600.f);
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 3.f)) - FVector(0.f, 0.f, 100.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 100.f);
 
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);

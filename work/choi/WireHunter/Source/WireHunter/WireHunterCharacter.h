@@ -29,6 +29,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UPointLightComponent* WirePointLight;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+		class UAnimMontage* LedgeClimb;
+
 
 public:
 	AWireHunterCharacter();
