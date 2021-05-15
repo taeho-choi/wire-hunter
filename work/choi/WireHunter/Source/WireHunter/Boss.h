@@ -79,4 +79,6 @@ public:
 	void RemoveTop();
 
 	int FindElement(float x, float y);
+
+	void Init();
 };

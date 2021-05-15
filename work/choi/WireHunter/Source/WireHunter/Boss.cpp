@@ -172,6 +172,12 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 	}
 }
 
+void ABoss::Init() {
+	Min.Empty();
+	Path.Empty();
+	Closed.Empty();
+}
+
 // Called when the game starts or when spawned
 void ABoss::BeginPlay()
 {
