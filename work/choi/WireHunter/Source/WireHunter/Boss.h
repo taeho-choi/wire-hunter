@@ -7,6 +7,7 @@
 #include "BossAIController.h"
 #include "NodeStructure.h"
 #include "WeightStructure.h"
+#include "Obstacle.h"
 
 #include "Boss.generated.h"
 
@@ -49,6 +50,8 @@ private:
 	int ScoreG[10][10];
 	int ScoreH[10][10];
 
+	FVector RealMap[10][10];
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -71,8 +74,6 @@ public:
 	void MakeMap();
 
 	FStructNode FindTop();
-
-	void RemoveTop();
 
 	int FindElement(float x, float y);
 };

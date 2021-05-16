@@ -18,8 +18,44 @@ void ABoss::MakeMap()
 {
 	UWorld* world = GetWorld();
 
+	TArray<FVector> buffer;
+
 	for (const auto& e : TActorRange<AObstacle>(world)) {
-		UE_LOG(LogTemp, Warning, TEXT("Actor: %s"), *e->GetName());
+		auto loc = e->GetActorLocation();
+		buffer.Push(loc);
+	}
+
+
+
+	/*TArray<TArray<FVector>> MapSortArr;
+	TArray<FVector> mapSortArr;
+
+	int idx = 0;
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 5; ++j) {
+			mapSortArr.Push(buffer[idx++]);
+		}
+		MapSortArr.Push(mapSortArr);
+		mapSortArr.Empty();
+	}
+
+	for (int i = 0; i < 10; ++i) {
+		MapSortArr[i].Sort([](const FVector& A, const FVector& B) {
+			return A.X > B.X;
+		});
+	}
+
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 5; ++j) {
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *MapSortArr[i][j].ToString());
+		}
+		UE_LOG(LogTemp, Warning, TEXT("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"));
+	}*/
+
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 10; ++j) {
+
+		}
 	}
 }
 
