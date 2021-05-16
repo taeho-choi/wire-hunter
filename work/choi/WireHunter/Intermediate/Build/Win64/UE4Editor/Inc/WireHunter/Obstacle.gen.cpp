@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 // Cross Module References
 	WIREHUNTER_API UClass* Z_Construct_UClass_AObstacle_NoRegister();
 	WIREHUNTER_API UClass* Z_Construct_UClass_AObstacle();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_AStaticMeshActor();
 	UPackage* Z_Construct_UPackage__Script_WireHunter();
 // End Cross Module References
 	void AObstacle::StaticRegisterNativesAObstacle()
@@ -35,13 +35,16 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AObstacle_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_AStaticMeshActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_WireHunter,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObstacle_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
+		{ "HideCategories", "Input" },
 		{ "IncludePath", "Obstacle.h" },
 		{ "ModuleRelativePath", "Obstacle.h" },
+		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AObstacle_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeObstacle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObstacle, 2769119295);
+	IMPLEMENT_CLASS(AObstacle, 954854265);
 	template<> WIREHUNTER_API UClass* StaticClass<AObstacle>()
 	{
 		return AObstacle::StaticClass();

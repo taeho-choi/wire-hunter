@@ -4,6 +4,8 @@
 #include "GameFramework/Actor.h"
 #include "Math/UnrealMathUtility.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Obstacle.h"
+#include "Runtime/Engine/Public/EngineUtils.h"
 
 // Sets default values
 ABoss::ABoss()
@@ -14,7 +16,11 @@ ABoss::ABoss()
 
 void ABoss::MakeMap() 
 {
-	GetWorld()->GetLevels().Num();
+	UWorld* world = GetWorld();
+
+	for (const auto& e : TActorRange<AObstacle>(world)) {
+		UE_LOG(LogTemp, Warning, TEXT("Actor: %s"), *e->GetName());
+	}
 }
 
 void ABoss::FindPlayer()
@@ -25,20 +31,6 @@ void ABoss::FindPlayer()
 void ABoss::FacePlayer()
 {
 	TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
-}
-
-void ABoss::SetInterpolationRotation()//per tick
-{
-	YawValue = abs(this->GetActorRotation().Yaw - TargetRotation.Yaw) / 100;
-	RollValue = abs(this->GetActorRotation().Roll - TargetRotation.Roll) / 100;
-	PitchValue = abs(this->GetActorRotation().Pitch - TargetRotation.Pitch) / 100;
-}
-
-void ABoss::SetInterpolationLocation()//per tick
-{
-	XValue = abs(this->GetActorLocation().X - TargetLocation.X) / 1000;
-	YValue = abs(this->GetActorLocation().Y - TargetLocation.Y) / 1000;
-	ZValue = abs(this->GetActorLocation().Z - TargetLocation.Z) / 1000;
 }
 
 void ABoss::h(FStructNode next, FStructNode end)
@@ -165,7 +157,7 @@ void ABoss::BeginPlay()
 
 	//////////////////////////////////////////////////////////////////////
 
-
+	MakeMap();
 }
 
 // Called every frame
@@ -176,10 +168,10 @@ void ABoss::Tick(float DeltaTime)
 	FindPlayer();
 	FacePlayer();
 
-	UE_LOG(LogTemp, Warning, TEXT("TargetLoc : %s"), *this->TargetLocation.ToString());
+	/*UE_LOG(LogTemp, Warning, TEXT("TargetLoc : %s"), *this->TargetLocation.ToString());
 	UE_LOG(LogTemp, Warning, TEXT("1111111111111111111111111111111111111111111111111 : %s"), *this->GetActorLocation().ToString());
 	UE_LOG(LogTemp, Warning, TEXT("TargetRot : %s"), *this->TargetRotation.ToString());
-	UE_LOG(LogTemp, Warning, TEXT("222222222222222222222222222222222222222222222222222 : %s"), *this->GetActorRotation().ToString());
+	UE_LOG(LogTemp, Warning, TEXT("222222222222222222222222222222222222222222222222222 : %s"), *this->GetActorRotation().ToString());*/
 
 	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 0.5f);
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);

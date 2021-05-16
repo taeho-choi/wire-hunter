@@ -60,10 +60,6 @@ public:
 
 	void FacePlayer();
 
-	void SetInterpolationLocation();
-
-	void SetInterpolationRotation();
-
 	void h(FStructNode next, FStructNode end);
 
 	void g(FStructNode next, int plus);
