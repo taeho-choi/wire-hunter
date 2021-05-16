@@ -841,3 +841,339 @@ Script Stack (0 frames):
 [2021.05.16-13.18.55:858][125]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
 [2021.05.16-13.18.55:901][125]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 3446 classes and 826 folders.
 [2021.05.16-13.18.55:913][125]Display: HotReload took  0.2s.
+[2021.05.16-13.35.45:377][292]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.36.32:961][811]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.36.34:269][966]Cmd: EDIT COPY
+[2021.05.16-13.36.34:767][ 23]Cmd: EDIT PASTE
+[2021.05.16-13.36.53:799][296]Cmd: TRANSACTION UNDO
+[2021.05.16-13.36.53:799][296]LogEditorTransaction: Undo 액터 이동
+[2021.05.16-13.36.55:154][411]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
+[2021.05.16-13.36.55:791][486]Cmd: EDIT COPY
+[2021.05.16-13.36.56:450][565]Cmd: EDIT PASTE
+[2021.05.16-13.37.04:384][511]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle3)
+[2021.05.16-13.37.04:889][570]Cmd: EDIT COPY
+[2021.05.16-13.37.05:443][636]Cmd: EDIT PASTE
+[2021.05.16-13.37.12:616][471]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle4)
+[2021.05.16-13.37.13:232][543]Cmd: EDIT COPY
+[2021.05.16-13.37.13:719][601]Cmd: EDIT PASTE
+[2021.05.16-13.37.21:594][516]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.37.23:201][696]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
+[2021.05.16-13.37.26:846][107]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.37.27:611][184]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle2)
+[2021.05.16-13.37.28:291][262]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle3)
+[2021.05.16-13.37.29:847][423]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle4)
+[2021.05.16-13.37.30:537][491]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle5)
+[2021.05.16-13.37.32:767][740]Cmd: EDIT COPY
+[2021.05.16-13.37.33:267][787]Cmd: EDIT PASTE
+[2021.05.16-13.37.45:352][227]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Clouds)
+[2021.05.16-13.37.47:110][434]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.37.51:740][968]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.37.53:056][120]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
+[2021.05.16-13.37.58:720][796]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.38.01:634][142]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.38.03:633][378]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.38.05:905][647]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.38.06:761][746]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.38.07:861][874]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.38.09:440][ 60]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.38.11:074][252]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.38.13:936][564]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.38.16:615][852]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
+[2021.05.16-13.38.18:120][ 28]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle5)
+[2021.05.16-13.38.19:109][143]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
+[2021.05.16-13.38.25:727][923]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
+[2021.05.16-13.38.31:009][546]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
+[2021.05.16-13.38.36:528][186]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.38.39:250][499]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
+[2021.05.16-13.38.51:066][882]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
+[2021.05.16-13.38.52:164][ 10]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
+[2021.05.16-13.38.54:497][286]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
+[2021.05.16-13.38.57:853][685]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
+[2021.05.16-13.39.00:759][ 30]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
+[2021.05.16-13.39.02:006][176]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.39.03:820][390]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
+[2021.05.16-13.39.05:985][646]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
+[2021.05.16-13.39.07:417][814]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
+[2021.05.16-13.39.09:363][ 44]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
+[2021.05.16-13.39.10:578][186]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.05.16-13.39.14:920][702]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.39.24:200][782]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.39.24:877][859]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle2)
+[2021.05.16-13.39.25:484][928]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle3)
+[2021.05.16-13.39.27:560][171]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle4)
+[2021.05.16-13.39.29:259][355]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle5)
+[2021.05.16-13.39.31:224][584]Cmd: EDIT COPY
+[2021.05.16-13.39.31:674][638]Cmd: EDIT PASTE
+[2021.05.16-13.39.37:119][283]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.39.38:774][478]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
+[2021.05.16-13.39.39:806][598]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.39.40:571][686]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle12)
+[2021.05.16-13.39.41:037][738]Cmd: TRANSACTION UNDO
+[2021.05.16-13.39.41:037][738]LogEditorTransaction: Undo 액터 클릭
+[2021.05.16-13.39.41:473][750]Cmd: TRANSACTION UNDO
+[2021.05.16-13.39.41:473][750]LogEditorTransaction: Undo 액터 클릭
+[2021.05.16-13.39.41:909][794]Cmd: TRANSACTION UNDO
+[2021.05.16-13.39.41:909][794]LogEditorTransaction: Undo 액터 클릭
+[2021.05.16-13.39.42:331][842]Cmd: TRANSACTION UNDO
+[2021.05.16-13.39.42:331][842]LogEditorTransaction: Undo 액터 클릭
+[2021.05.16-13.39.47:239][417]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Clouds)
+[2021.05.16-13.39.49:446][665]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.39.50:131][738]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle7)
+[2021.05.16-13.39.51:472][876]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle8)
+[2021.05.16-13.39.52:178][947]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle9)
+[2021.05.16-13.39.53:857][119]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle10)
+[2021.05.16-13.39.55:457][298]Cmd: EDIT COPY
+[2021.05.16-13.39.55:835][332]Cmd: EDIT PASTE
+[2021.05.16-13.40.05:264][449]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle11)
+[2021.05.16-13.40.06:071][542]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle12)
+[2021.05.16-13.40.06:884][636]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle13)
+[2021.05.16-13.40.08:889][871]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle14)
+[2021.05.16-13.40.10:007][  1]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle15)
+[2021.05.16-13.40.11:430][168]Cmd: EDIT COPY
+[2021.05.16-13.40.11:915][226]Cmd: EDIT PASTE
+[2021.05.16-13.40.22:506][442]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle16)
+[2021.05.16-13.40.24:209][640]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle17)
+[2021.05.16-13.40.24:931][723]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle18)
+[2021.05.16-13.40.25:645][805]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle19)
+[2021.05.16-13.40.26:343][885]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle20)
+[2021.05.16-13.40.27:067][968]Cmd: EDIT COPY
+[2021.05.16-13.40.27:572][ 28]Cmd: EDIT PASTE
+[2021.05.16-13.40.44:422][ 17]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle21)
+[2021.05.16-13.40.45:884][176]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle22)
+[2021.05.16-13.40.46:710][271]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle23)
+[2021.05.16-13.40.48:280][454]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle24)
+[2021.05.16-13.40.48:993][536]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle25)
+[2021.05.16-13.40.49:857][636]Cmd: EDIT COPY
+[2021.05.16-13.40.50:379][698]Cmd: EDIT PASTE
+[2021.05.16-13.41.02:087][ 67]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle26)
+[2021.05.16-13.41.03:517][213]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle27)
+[2021.05.16-13.41.04:129][270]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle28)
+[2021.05.16-13.41.04:817][349]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle29)
+[2021.05.16-13.41.05:525][430]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle30)
+[2021.05.16-13.41.06:247][513]Cmd: EDIT COPY
+[2021.05.16-13.41.06:771][575]Cmd: EDIT PASTE
+[2021.05.16-13.41.17:876][886]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle31)
+[2021.05.16-13.41.18:566][965]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle32)
+[2021.05.16-13.41.19:355][ 56]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle33)
+[2021.05.16-13.41.20:176][151]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle34)
+[2021.05.16-13.41.20:849][228]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle35)
+[2021.05.16-13.41.21:496][302]Cmd: EDIT COPY
+[2021.05.16-13.41.21:925][353]Cmd: EDIT PASTE
+[2021.05.16-13.41.36:045][ 16]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle36)
+[2021.05.16-13.41.37:271][141]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle37)
+[2021.05.16-13.41.37:831][191]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle38)
+[2021.05.16-13.41.38:346][247]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle39)
+[2021.05.16-13.41.38:876][307]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle40)
+[2021.05.16-13.41.39:490][377]Cmd: EDIT COPY
+[2021.05.16-13.41.39:919][428]Cmd: EDIT PASTE
+[2021.05.16-13.41.51:794][816]MapCheck: New page: 맵 체크
+[2021.05.16-13.41.51:810][816]Cmd: MAP REBUILD ALLVISIBLE
+[2021.05.16-13.41.51:811][816]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2021.05.16-13.41.51:882][816]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=false
+[2021.05.16-13.41.51:883][816]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:0087
+[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.05.16-13.41.51:914][816]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2021.05.16-13.41.51:927][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:946][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:947][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:948][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:949][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:951][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:952][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:953][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:954][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 16
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 15
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 14
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 12
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 11
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 10
+[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 9
+[2021.05.16-13.41.51:956][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:957][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.51:958][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 16
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 15
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 14
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 12
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 11
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 10
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 9
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 8
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 7
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 6
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 4
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 3
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
+[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 1
+[2021.05.16-13.41.53:213][816]TextureStreamingBuild: Display: Compiling optional shaders took 1.294 seconds.
+[2021.05.16-13.41.53:250][816]LogLevel: Display: Export Material TexCoord Scales took 0.037 seconds.
+[2021.05.16-13.41.53:254][816]TextureStreamingBuild: Display: Build Texture Streaming took 0.003 seconds.
+[2021.05.16-13.41.53:263][816]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.05.16-13.41.53:278][816]LightingResults: New page: 라이팅 빌드 - 2021. 5. 17. 오전 7:41:53
+[2021.05.16-13.41.53:320][816]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.05.16-13.41.53:363][816]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.05.16-13.41.53:376][816]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.05.16-13.41.53:912][816]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.05.16-13.41.53:912][816]LogSwarmInterface: [TryOpenConnection] Local Process ID is 23168
+[2021.05.16-13.42.00:711][816]LightingResults: Warning: 설정된 임포턴스 볼륨이 없는데다 씬이 꽤 커서 자동 합성된 볼륨으로는 괜찮은 결과가 나지 않을 것입니다. 씬의 퀄리티와 라이팅 빌드 시간 최적화를 위해 라이트매스 임포턴스 볼륨을 꼭 맞게 추가해 주시기 바랍니다.
+[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.05.16-13.42.01:020][816]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2021.05.16-13.42.01:020][816]MapCheck: New page: GameLevel - 2021. 5. 17. 오전 7:42:01
+[2021.05.16-13.42.01:021][816]MapCheck: Error: WorldInfo_0 맵 라이팅을 리빌드해야 합니다. 
+[2021.05.16-13.42.01:023][816]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.16-13.42.01:023][816]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
+[2021.05.16-13.42.01:024][816]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.16-13.42.01:024][816]MapCheck: 맵 체크 완료: 오류 1 회, 경고 3 회, 소요 시간 3.596ms.
+[2021.05.16-13.42.01:027][816]LogEditorBuildUtils: Build time 0:09
+[2021.05.16-13.42.01:167][817]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2021.05.16-13.42.04:205][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2021.05.16-13.42.04:270][ 27]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto1AD27658E49F65CB04C9D75AD69127C1E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto1.umap'
+[2021.05.16-13.42.04:271][ 27]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.076
+[2021.05.16-13.42.04:271][ 27]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.076
+[2021.05.16-13.42.07:766][323]Job is a success!
+[2021.05.16-13.42.08:070][324]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.162s
+[2021.05.16-13.42.08:070][324]LogVolumetricLightmapImport:      Indirection Texture 32x32x32 = 0.1Mb
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      BrickData (all levels) 5.0Mb (trimmed 4.9Mb due to 0.010000 MinBrickError)
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      Bricks at depth
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          0: 0.9% covering 100.0% of volume
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          1: 15.0% covering 26.2% of volume
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          2: 84.1% covering 2.3% of volume
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      Bricks in each level
+[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          GameLevel 			 895 bricks 	 100.0% (Persistent Level)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_1 (AutoDXT, 512X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_1 (DXT1, 512X512)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_1 (AutoDXT, 512X512)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_3 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_2 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_3 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_3 (DXT1, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_2 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_2 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_4 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_4 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_4 (DXT1, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_5 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_5 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_5 (DXT1, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_6 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_6 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_6 (DXT1, 128X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_7 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_7 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_8 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_7 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_8 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_8 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_9 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_9 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_9 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_10 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_10 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_10 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_11 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_11 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_11 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_12 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_12 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_12 (DXT1, 256X256)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_13 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_13 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_13 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_14 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_14 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_14 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_15 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_15 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_15 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_16 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_16 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_16 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_17 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_17 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_17 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_18 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_18 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_18 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_19 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_19 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_19 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_20 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_20 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_20 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_21 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_21 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_21 (DXT1, 128X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_22 (AutoDXT, 256X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_22 (AutoDXT, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_22 (DXT1, 256X256)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_23 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_23 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_23 (DXT1, 128X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_24 (AutoDXT, 128X64)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_24 (AutoDXT, 128X128)
+[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_24 (DXT1, 128X128)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_3 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_5 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_4 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_8 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_6 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_2 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_7 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_9 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_11 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_10 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_12 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_13 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_14 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_16 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_20 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_17 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_23 (G8, 64X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_18 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_22 (G8, 128X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_15 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_21 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_19 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (G8, 256X64)
+[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (G8, 256X256)
+[2021.05.16-13.42.08:573][324]Lightmass on 준현컴: 6.75 sec total, 212 ms importing, 40 ms setup, 1.17 sec photons, 5.22 sec processing, 0 ms extra exporting [62/62 mappings]. Threads: 57.3 sec total, 9.00 sec processing.
+[2021.05.16-13.42.08:574][324]LogStaticLightingSystem: GameLevel_BuiltData storing lightmap data for 62 meshes in 24 LightmapResourceClusters (2.6 Meshes per cluster).
+[2021.05.16-13.42.08:595][324]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2021.05.16-13.42.08:605][324]LogStaticLightingSystem: Illumination: 15.3 sec (351 ms encoding lightmaps, 24 ms encoding shadowmaps)
+[2021.05.16-13.42.08:606][324]LogStaticLightingSystem: Lightmap texture memory:  3.6 MB (3.6 MB streaming, 0.0 MB non-streaming), 48 textures
+[2021.05.16-13.42.08:606][324]LogStaticLightingSystem: Shadowmap texture memory: 0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 24 textures
+[2021.05.16-13.42.08:716][324]DumpUnbuiltLightIteractions
+[2021.05.16-13.42.08:716][324]Lights with unbuilt interactions: 0
+[2021.05.16-13.42.08:716][324]
+[2021.05.16-13.42.08:716][324]Primitives with unbuilt interactions: 0
+[2021.05.16-13.42.08:798][325]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.05.16-13.42.08:798][325]MapCheck: New page: GameLevel - 2021. 5. 17. 오전 7:42:08
+[2021.05.16-13.42.08:798][325]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.16-13.42.08:799][325]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
+[2021.05.16-13.42.08:799][325]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
+[2021.05.16-13.42.08:799][325]MapCheck: 맵 체크 완료: 오류 0 회, 경고 3 회, 소요 시간 0.599ms.
+[2021.05.16-13.42.11:080][552]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.16-13.42.11:084][552]LogSlate: Window '메시지 로그' being destroyed
+[2021.05.16-13.42.37:104][643]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.42.39:024][868]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.05.16-13.42.40:738][ 70]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
+[2021.05.16-13.43.45:529][337]LogEditorViewport: Clicking on Actor (LMB): Boss (Boss1)
+[2021.05.16-13.44.19:564][299]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2021.05.16-13.44.19:601][299]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelAE43038A47696600275AB193ECB23E0F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.05.16-13.44.19:610][299]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
+[2021.05.16-13.44.19:767][299]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltDataD76B1CCD46FA085490C3FDAF7E09CAFF.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
+[2021.05.16-13.44.19:776][299]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2021.05.16-13.44.19:776][299]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.05.16-13.44.19:776][299]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
