@@ -9,6 +9,7 @@
 #include "WeightStructure.h"
 #include "Obstacle.h"
 #include "TimerManager.h"
+#include "Fireball.h"
 
 #include "Boss.generated.h"
 
@@ -24,6 +25,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UFUNCTION(BlueprintCallable)
+		void Spawn();
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<AFireball> ToSpawn;
+
+	FTimerHandle SpawnTimerHandle;
 
 private:
 	FVector TargetLocation;

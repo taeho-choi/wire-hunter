@@ -537,3 +537,8 @@ void AWireHunterCharacter::LedgeTrace()
 		SetisClimbing(false);
 	}
 }
+
+void AWireHunterCharacter::Knockback(FVector force)
+{
+	GetCharacterMovement()->AddForce(force);
+}

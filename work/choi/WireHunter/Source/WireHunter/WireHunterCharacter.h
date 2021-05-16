@@ -216,6 +216,8 @@ public:
 	void LedgeTrace();
 	void WireTrace();
 
+	void Knockback(FVector force);
+
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;

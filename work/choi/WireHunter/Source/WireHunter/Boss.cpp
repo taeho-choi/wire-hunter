@@ -273,6 +273,8 @@ void ABoss::BeginPlay()
 	
 	bAStarReady = true;
 	DoAStar();
+
+	GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
 }
 
 void ABoss::DoAStar()
@@ -347,4 +349,23 @@ void ABoss::Tick(float DeltaTime)
 void ABoss::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
+
+void ABoss::Spawn()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Spawned"));
+	if (ToSpawn)
+	{
+		UWorld* world = GetWorld();
+		if (world)
+		{
+			FActorSpawnParameters spawnParams;
+			spawnParams.Owner = this;
+
+			FRotator rot;
+			FVector spawnLocation = GetActorLocation();
+
+			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
+		}
+	}
 }

@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WIREHUNTER_Boss_generated_h
 
-#define WireHunter_Source_WireHunter_Boss_h_18_SPARSE_DATA
-#define WireHunter_Source_WireHunter_Boss_h_18_RPC_WRAPPERS
-#define WireHunter_Source_WireHunter_Boss_h_18_RPC_WRAPPERS_NO_PURE_DECLS
-#define WireHunter_Source_WireHunter_Boss_h_18_INCLASS_NO_PURE_DECLS \
+#define WireHunter_Source_WireHunter_Boss_h_19_SPARSE_DATA
+#define WireHunter_Source_WireHunter_Boss_h_19_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawn);
+
+
+#define WireHunter_Source_WireHunter_Boss_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawn);
+
+
+#define WireHunter_Source_WireHunter_Boss_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABoss(); \
 	friend struct Z_Construct_UClass_ABoss_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ABoss)
 
 
-#define WireHunter_Source_WireHunter_Boss_h_18_INCLASS \
+#define WireHunter_Source_WireHunter_Boss_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesABoss(); \
 	friend struct Z_Construct_UClass_ABoss_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(ABoss)
 
 
-#define WireHunter_Source_WireHunter_Boss_h_18_STANDARD_CONSTRUCTORS \
+#define WireHunter_Source_WireHunter_Boss_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABoss(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABoss) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define WireHunter_Source_WireHunter_Boss_h_18_ENHANCED_CONSTRUCTORS \
+#define WireHunter_Source_WireHunter_Boss_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABoss(ABoss&&); \
@@ -58,28 +66,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABoss); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABoss)
 
 
-#define WireHunter_Source_WireHunter_Boss_h_18_PRIVATE_PROPERTY_OFFSET
-#define WireHunter_Source_WireHunter_Boss_h_15_PROLOG
-#define WireHunter_Source_WireHunter_Boss_h_18_GENERATED_BODY_LEGACY \
+#define WireHunter_Source_WireHunter_Boss_h_19_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ToSpawn() { return STRUCT_OFFSET(ABoss, ToSpawn); }
+
+
+#define WireHunter_Source_WireHunter_Boss_h_16_PROLOG
+#define WireHunter_Source_WireHunter_Boss_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WireHunter_Source_WireHunter_Boss_h_18_PRIVATE_PROPERTY_OFFSET \
-	WireHunter_Source_WireHunter_Boss_h_18_SPARSE_DATA \
-	WireHunter_Source_WireHunter_Boss_h_18_RPC_WRAPPERS \
-	WireHunter_Source_WireHunter_Boss_h_18_INCLASS \
-	WireHunter_Source_WireHunter_Boss_h_18_STANDARD_CONSTRUCTORS \
+	WireHunter_Source_WireHunter_Boss_h_19_PRIVATE_PROPERTY_OFFSET \
+	WireHunter_Source_WireHunter_Boss_h_19_SPARSE_DATA \
+	WireHunter_Source_WireHunter_Boss_h_19_RPC_WRAPPERS \
+	WireHunter_Source_WireHunter_Boss_h_19_INCLASS \
+	WireHunter_Source_WireHunter_Boss_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WireHunter_Source_WireHunter_Boss_h_18_GENERATED_BODY \
+#define WireHunter_Source_WireHunter_Boss_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WireHunter_Source_WireHunter_Boss_h_18_PRIVATE_PROPERTY_OFFSET \
-	WireHunter_Source_WireHunter_Boss_h_18_SPARSE_DATA \
-	WireHunter_Source_WireHunter_Boss_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	WireHunter_Source_WireHunter_Boss_h_18_INCLASS_NO_PURE_DECLS \
-	WireHunter_Source_WireHunter_Boss_h_18_ENHANCED_CONSTRUCTORS \
+	WireHunter_Source_WireHunter_Boss_h_19_PRIVATE_PROPERTY_OFFSET \
+	WireHunter_Source_WireHunter_Boss_h_19_SPARSE_DATA \
+	WireHunter_Source_WireHunter_Boss_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	WireHunter_Source_WireHunter_Boss_h_19_INCLASS_NO_PURE_DECLS \
+	WireHunter_Source_WireHunter_Boss_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
