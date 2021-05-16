@@ -29,18 +29,7 @@ private:
 
 	FRotator TargetRotation;
 
-	float YawValue;
-	float RollValue;
-	float PitchValue;
-
-	float XValue;
-	float YValue;
-	float ZValue;
-
 	ABossAIController* Controller;
-
-	static int InterpolationValueLoc;
-	static int InterpolationValueRot;
 
 	FStructNode Start, Goal;
 	TArray<FStructWeight> Min;
@@ -53,13 +42,17 @@ private:
 	FVector RealMap[10][10];
 	char Map[10][10];//how to mark the player loc?
 
-public:	
+	FVector RealGoal;
+
+	int PathIdx;
+
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
 	void FindPlayer();
 
 	void FacePlayer();
@@ -77,4 +70,10 @@ public:
 	FStructNode FindTop();
 
 	int FindElement(float x, float y);
+
+	TArray<FStructNode> Regulate();
+
+	float FindDistance(FVector a, FVector b);
+
+	void SetRealGoal();
 };

@@ -14,7 +14,7 @@ ABoss::ABoss()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-void ABoss::MakeMap() 
+void ABoss::MakeMap()
 {
 	UWorld* world = GetWorld();
 
@@ -27,7 +27,7 @@ void ABoss::MakeMap()
 
 	buffer.Sort([](const FVector& A, const FVector& B) {
 		return A.Y > B.Y;
-	});
+		});
 
 	TArray<TArray<FVector>> MapSortArr;
 	TArray<FVector> mapSortArr;
@@ -35,7 +35,7 @@ void ABoss::MakeMap()
 	int idx = 0;
 	for (int i = 0; i < 10; ++i) {
 		for (int j = 0; j < 5; ++j) {
-				mapSortArr.Push(buffer[idx++]);
+			mapSortArr.Push(buffer[idx++]);
 		}
 		MapSortArr.Push(mapSortArr);
 		mapSortArr.Empty();
@@ -44,7 +44,7 @@ void ABoss::MakeMap()
 	for (int i = 0; i < 10; ++i) {
 		MapSortArr[i].Sort([](const FVector& A, const FVector& B) {
 			return A.X > B.X;
-		});
+			});
 	}
 
 	float diff_x = abs(MapSortArr[0][0].X - MapSortArr[0][1].X) / 2;
@@ -62,17 +62,17 @@ void ABoss::MakeMap()
 			////////////////////////////////////////////////////////////////////
 			else {//wall
 				Map[i][j] = '$';
-				RealMap[i][j] = MapSortArr[i][j/2];
+				RealMap[i][j] = MapSortArr[i][j / 2];
 			}
 		}
 	}
 
-	for (int i = 0; i < 10; ++i) {
+	/*for (int i = 0; i < 10; ++i) {
 		for (int j = 0; j < 10; ++j) {
 			UE_LOG(LogTemp, Warning, TEXT("%s"), *RealMap[i][j].ToString());
 		}
 		UE_LOG(LogTemp, Warning, TEXT("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"));
-	}
+	}*/
 }
 
 void ABoss::FindPlayer()
@@ -85,6 +85,77 @@ void ABoss::FacePlayer()
 	TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
 }
 
+float ABoss::FindDistance(FVector a, FVector b)
+{
+	float x = a.X - b.X;
+	float y = a.Y - b.Y;
+	x = x * x;
+	y = y * y;
+	float c = x + y;
+	float ret = sqrt(c);
+
+	return ret;
+}
+
+TArray<FStructNode> ABoss::Regulate()
+{
+	float min_g = 40000.f;
+	int x_g = 10;
+	int y_g = 10;
+
+	float min_s = 40000.f;
+	int x_s = 10;
+	int y_s = 10;
+
+	auto myLoc = this->GetActorLocation();
+
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 10; ++j) {
+
+			if ((i % 2 == 0 && j % 2 == 1) || i % 2 == 1 && j % 2 == 0) {//space
+
+				auto d = FindDistance(RealMap[i][j], TargetLocation);
+
+				if (d < min_g) {
+					min_g = d;
+					x_g = i;
+					y_g = j;
+				}
+
+				d = FindDistance(RealMap[i][j], myLoc);
+
+				if (d < min_s) {
+					min_s = d;
+					x_s = i;
+					y_s = j;
+				}
+
+			}
+
+			else {
+				continue;
+			}
+
+		}
+	}
+
+	TArray<FStructNode> tmpArr;
+
+	FStructNode tmpNode;
+
+	tmpNode.first = y_s;
+	tmpNode.second = x_s;
+
+	tmpArr.Push(tmpNode);
+
+	tmpNode.first = y_g;
+	tmpNode.second = x_g;
+
+	tmpArr.Push(tmpNode);
+
+	return tmpArr;
+}
+
 void ABoss::h(FStructNode next, FStructNode end)
 {
 	int x = abs(end.first - next.first);
@@ -94,7 +165,7 @@ void ABoss::h(FStructNode next, FStructNode end)
 
 void ABoss::g(FStructNode next, int plus)
 {
-	ScoreG[next.second][next.first] =  plus;
+	ScoreG[next.second][next.first] = plus;
 }
 
 void ABoss::f(FStructNode next)
@@ -160,7 +231,7 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 
 		Min.Empty(); // or new creation
 
-		int dx[8] = { 0, 1, 1, 1, 0, -1, -1, -1};
+		int dx[8] = { 0, 1, 1, 1, 0, -1, -1, -1 };
 		int dy[8] = { 1, 1, 0, -1, -1, -1, 0, 1 };
 
 		for (int i = 0; i < 8; ++i) {
@@ -195,8 +266,8 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		}
 	}
 
-	for (int i = 2; i < Path.Num(); ++i) {
-		//print path from index2
+	for (int i = 0; i < Path.Num(); ++i) {
+		UE_LOG(LogTemp, Warning, TEXT("%d >> x: %d / y: %d"), i + 1, Path[i].first, Path[i].second);
 	}
 }
 
@@ -209,23 +280,49 @@ void ABoss::BeginPlay()
 
 	//////////////////////////////////////////////////////////////////////
 
+	PathIdx = 0;
+
 	MakeMap();
+	FindPlayer();
+	auto ret = Regulate();
+
+	/*FStructNode s;
+	s.first = 2;
+	s.second = 7;
+	FStructNode g;
+	g.first = 9;
+	g.second = 4;*/
+
+	UE_LOG(LogTemp, Warning, TEXT("%d %d %d %d"), ret[0].first, ret[0].second, ret[1].first, ret[1].second);
+
+	AStar(Map, ret[0], ret[1]);
 }
 
-// Called every frame
+void ABoss::SetRealGoal()
+{
+	if (this->GetActorLocation() == RealGoal) {
+		PathIdx++;
+	}
+	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
+	RealGoal.Z = TargetLocation.Z;
+
+
+}
+
+// Called every frame+
 void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FindPlayer();
 	FacePlayer();
 
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 0.5f);
+	SetRealGoal();
+
+	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 2.5f);
+
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 
 	this->SetActorLocationAndRotation(movement, rot);
-
-
 }
 
 // Called to bind functionality to input
