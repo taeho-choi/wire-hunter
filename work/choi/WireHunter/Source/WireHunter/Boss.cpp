@@ -25,15 +25,17 @@ void ABoss::MakeMap()
 		buffer.Push(loc);
 	}
 
+	buffer.Sort([](const FVector& A, const FVector& B) {
+		return A.Y > B.Y;
+	});
 
-
-	/*TArray<TArray<FVector>> MapSortArr;
+	TArray<TArray<FVector>> MapSortArr;
 	TArray<FVector> mapSortArr;
 
 	int idx = 0;
 	for (int i = 0; i < 10; ++i) {
 		for (int j = 0; j < 5; ++j) {
-			mapSortArr.Push(buffer[idx++]);
+				mapSortArr.Push(buffer[idx++]);
 		}
 		MapSortArr.Push(mapSortArr);
 		mapSortArr.Empty();
@@ -45,17 +47,31 @@ void ABoss::MakeMap()
 		});
 	}
 
-	for (int i = 0; i < 10; ++i) {
-		for (int j = 0; j < 5; ++j) {
-			UE_LOG(LogTemp, Warning, TEXT("%s"), *MapSortArr[i][j].ToString());
-		}
-		UE_LOG(LogTemp, Warning, TEXT("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"));
-	}*/
+	float diff_x = abs(MapSortArr[0][0].X - MapSortArr[0][1].X) / 2;
+	float diff_y = abs(MapSortArr[0][0].Y - MapSortArr[1][0].Y);
 
 	for (int i = 0; i < 10; ++i) {
 		for (int j = 0; j < 10; ++j) {
-
+			Map[i][j] = '*';
+			if (i % 2 == 0 && j % 2 == 1) {//space
+				RealMap[i][j] = RealMap[i][j - 1] - FVector(diff_x, 0.f, 0.f);
+			}
+			else if (i % 2 == 1 && j % 2 == 0) {
+				RealMap[i][j] = RealMap[i - 1][j] - FVector(0.f, diff_y, 0.f);
+			}
+			////////////////////////////////////////////////////////////////////
+			else {//wall
+				Map[i][j] = '$';
+				RealMap[i][j] = MapSortArr[i][j/2];
+			}
 		}
+	}
+
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 0; j < 10; ++j) {
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *RealMap[i][j].ToString());
+		}
+		UE_LOG(LogTemp, Warning, TEXT("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"));
 	}
 }
 
@@ -203,11 +219,6 @@ void ABoss::Tick(float DeltaTime)
 
 	FindPlayer();
 	FacePlayer();
-
-	/*UE_LOG(LogTemp, Warning, TEXT("TargetLoc : %s"), *this->TargetLocation.ToString());
-	UE_LOG(LogTemp, Warning, TEXT("1111111111111111111111111111111111111111111111111 : %s"), *this->GetActorLocation().ToString());
-	UE_LOG(LogTemp, Warning, TEXT("TargetRot : %s"), *this->TargetRotation.ToString());
-	UE_LOG(LogTemp, Warning, TEXT("222222222222222222222222222222222222222222222222222 : %s"), *this->GetActorRotation().ToString());*/
 
 	auto movement = FMath::VInterpTo(this->GetActorLocation(), TargetLocation, GetWorld()->GetDeltaSeconds(), 0.5f);
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);

@@ -51,6 +51,7 @@ private:
 	int ScoreH[10][10];
 
 	FVector RealMap[10][10];
+	char Map[10][10];//how to mark the player loc?
 
 public:	
 	// Called every frame
