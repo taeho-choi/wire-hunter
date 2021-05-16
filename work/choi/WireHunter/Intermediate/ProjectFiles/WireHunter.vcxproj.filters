@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5739FA3A-EA22-4ADD-A1ED-2DA9295597F1}</UniqueIdentifier>
+      <UniqueIdentifier>{3CD79002-BB3A-4D08-9D09-EF3F40591556}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F7A070C6-4B81-4894-869C-A7A7EE6D1392}</UniqueIdentifier>
+      <UniqueIdentifier>{35F6D7D8-04E0-4C0A-A7F6-BAFCE5F2E6DE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{5618751B-38F9-4EAD-9CA5-AC12968E77B6}</UniqueIdentifier>
+      <UniqueIdentifier>{E3E07A43-1C23-44E9-B29D-FFCD1142FAB4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
       <Filter>Source\WireHunter</Filter>
@@ -96,6 +96,12 @@
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\NodeStructure.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\Obstacle.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\Obstacle.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\PickUp.cpp">

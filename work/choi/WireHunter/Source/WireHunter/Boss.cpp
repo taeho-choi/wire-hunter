@@ -14,7 +14,7 @@ ABoss::ABoss()
 
 void ABoss::MakeMap() 
 {
-
+	GetWorld()->GetLevels().Num();
 }
 
 void ABoss::FindPlayer()
