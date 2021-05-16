@@ -200,10 +200,6 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 	memset(ScoreG, 9999, sizeof(ScoreG));
 	memset(ScoreH, 9999, sizeof(ScoreH));
 
-	FStructWeight a;
-	a.node = start;
-	a.weight = 0;
-	Min.Push(a);//or Emplace()
 	Path.Push(start);
 
 	for (int i = 0; i < 10; ++i) {
@@ -217,13 +213,8 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		}
 	}
 
+	FStructNode now = start;
 	while (Path.Last().first != goal.first || Path.Last().second != goal.second) {
-		FStructNode now = FindTop();//at first, there is only start point in Min arr. 
-		Closed.Push(now);
-		Path.Push(now);
-
-		Min.Empty(); // or new creation
-
 		int dx[8] = { 0, 1, 1, 1, 0, -1, -1, -1 };
 		int dy[8] = { 1, 1, 0, -1, -1, -1, 0, 1 };
 
@@ -242,7 +233,7 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 			FStructNode tmp;
 			tmp.first = x;
 			tmp.second = y;
-			h(goal, tmp);
+			h(tmp, goal);
 			if (dx[i] == 0 || dy[i] == 0) {
 				g(tmp, 10);
 			}
@@ -257,6 +248,11 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 			pushed.node = tmp;
 			Min.Push(pushed);
 		}
+		now = FindTop();//at first, there is only start point in Min arr. 
+		Closed.Push(now);
+		Path.Push(now);
+
+		Min.Empty(); // or new creation
 	}
 
 	for (int i = 0; i < Path.Num(); ++i) {
@@ -329,7 +325,7 @@ void ABoss::Tick(float DeltaTime)
 	FacePlayer();
 
 	Delta += DeltaTime;
-	if (Delta > 1.5f) {
+	if (Delta > 4.f) {
 		Delta = 0.f;
 		bMoveReady = true;
 	}
@@ -340,7 +336,7 @@ void ABoss::Tick(float DeltaTime)
 
 	DoAStar();
 
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 2.5f);
+	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.f);
 
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 

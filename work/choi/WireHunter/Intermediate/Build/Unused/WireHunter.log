@@ -1,6 +1,11 @@
 ﻿  Building WireHunterEditor...
   Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 1 action with 12 processes...
-    [1/1] WireHunterEditor.target
-  Total time in Parallel executor: 0.15 seconds
-  Total execution time: 0.62 seconds
+  Building 4 actions with 12 processes...
+    [1/4] Boss.cpp
+    [2/4] UE4Editor-WireHunter-0017.lib
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0017.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0017.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [3/4] UE4Editor-WireHunter-0017.dll
+       C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0017.suppressed.lib ���̺귯�� �� C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-0017.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+    [4/4] WireHunterEditor.target
+  Total time in Parallel executor: 3.47 seconds
+  Total execution time: 3.97 seconds
