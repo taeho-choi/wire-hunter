@@ -51,6 +51,8 @@ private:
 
 	float Delta;
 
+	bool bAStarReady;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -83,4 +85,6 @@ public:
 	void SetRealGoal();
 
 	void SetBMoveReady();
+
+	void DoAStar();
 };
