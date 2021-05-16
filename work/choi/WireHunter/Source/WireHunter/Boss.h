@@ -8,6 +8,7 @@
 #include "NodeStructure.h"
 #include "WeightStructure.h"
 #include "Obstacle.h"
+#include "TimerManager.h"
 
 #include "Boss.generated.h"
 
@@ -46,6 +47,10 @@ private:
 
 	int PathIdx;
 
+	bool bMoveReady;
+
+	float Delta;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -76,4 +81,6 @@ public:
 	float FindDistance(FVector a, FVector b);
 
 	void SetRealGoal();
+
+	void SetBMoveReady();
 };

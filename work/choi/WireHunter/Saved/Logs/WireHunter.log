@@ -1,8 +1,8 @@
-﻿Log file open, 05/16/21 22:10:59
+﻿Log file open, 05/17/21 00:08:12
 LogInit: Display: Running engine for game: WireHunter
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.251312
+LogStats: Stats thread started at 0.176858
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -116,109 +116,6 @@ LogPluginManager: Mounting plugin Synthesis
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
-LogInit: Warning: Incompatible or missing module: WireHunter
-Running C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
-Creating makefile for WireHunterEditor (no existing makefile)
-C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Public' does not exist.
-C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\WireHunter.Build.cs: warning: Referenced directory 'C:\Wire-Hunter\work\choi\WireHunter\Source\CableComponent\Classes' does not exist.
-@progress push 5%
-Parsing headers for WireHunterEditor
-  Running UnrealHeaderTool "C:\Wire-Hunter\work\choi\WireHunter\WireHunter.uproject" "C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\WireHunterEditor\Development\WireHunterEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\??????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-Reflection code generated for WireHunterEditor in 5.2988341 seconds
-@progress pop
-Building WireHunterEditor...
-Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-Building 42 actions with 12 processes...
-  @progress 'Compiling C++ source code...' 0%
-  @progress 'Compiling C++ source code...' 2%
-  [1/42] SharedPCH.Engine.ShadowErrors.cpp
-  @progress 'Compiling C++ source code...' 5%
-  [2/42] Obstacle.cpp
-  @progress 'Compiling C++ source code...' 7%
-  [3/42] MyHUD.cpp
-  @progress 'Compiling C++ source code...' 10%
-  [4/42] Dragon.cpp
-  @progress 'Compiling C++ source code...' 12%
-  [5/42] StrengthPotion.cpp
-  @progress 'Compiling C++ source code...' 14%
-  [6/42] WireHunterGameMode.cpp
-  @progress 'Compiling C++ source code...' 17%
-  [7/42] HealingPotion.cpp
-  @progress 'Compiling C++ source code...' 19%
-  [8/42] SpeedPotion.cpp
-  @progress 'Compiling C++ source code...' 21%
-  [9/42] PickUp.cpp
-  @progress 'Compiling C++ source code...' 24%
-  [10/42] WireHunter.cpp
-  @progress 'Compiling C++ source code...' 26%
-  [11/42] WeightStructure.cpp
-  @progress 'Compiling C++ source code...' 29%
-  [12/42] MyLevelScriptActor.cpp
-  @progress 'Compiling C++ source code...' 31%
-  [13/42] NodeStructure.cpp
-  @progress 'Compiling C++ source code...' 33%
-  [14/42] BossAIController.cpp
-  @progress 'Compiling C++ source code...' 36%
-  [15/42] NodeStructure.gen.cpp
-  @progress 'Compiling C++ source code...' 38%
-  [16/42] HealingPotion.gen.cpp
-  @progress 'Compiling C++ source code...' 40%
-  [17/42] MyHUD.gen.cpp
-  @progress 'Compiling C++ source code...' 43%
-  [18/42] MyLevelScriptActor.gen.cpp
-  @progress 'Compiling C++ source code...' 45%
-  [19/42] Bullet.gen.cpp
-  @progress 'Compiling C++ source code...' 48%
-  [20/42] PickUp.gen.cpp
-  @progress 'Compiling C++ source code...' 50%
-  [21/42] SpeedPotion.gen.cpp
-  @progress 'Compiling C++ source code...' 52%
-  [22/42] StrengthPotion.gen.cpp
-  @progress 'Compiling C++ source code...' 55%
-  [23/42] BossAIController.gen.cpp
-  @progress 'Compiling C++ source code...' 57%
-  [24/42] WireHunter.init.gen.cpp
-  @progress 'Compiling C++ source code...' 60%
-  [25/42] EditorGameMode.cpp
-  @progress 'Compiling C++ source code...' 62%
-  [26/42] WeightStructure.gen.cpp
-  @progress 'Compiling C++ source code...' 64%
-  [27/42] WireHunterCharacter.gen.cpp
-  @progress 'Compiling C++ source code...' 67%
-  [28/42] WireHunterGameMode.gen.cpp
-  @progress 'Compiling C++ source code...' 69%
-  [29/42] Obstacle.gen.cpp
-  @progress 'Compiling C++ source code...' 71%
-  [30/42] Bullet.cpp
-  @progress 'Compiling C++ source code...' 74%
-  [31/42] Dragon.gen.cpp
-  @progress 'Compiling C++ source code...' 76%
-  [32/42] EditorPlayerController.cpp
-  @progress 'Compiling C++ source code...' 79%
-  [33/42] EditorGameMode.gen.cpp
-  @progress 'Compiling C++ source code...' 81%
-  [34/42] HealthBar.cpp
-  @progress 'Compiling C++ source code...' 83%
-  [35/42] EditorPlayerController.gen.cpp
-  @progress 'Compiling C++ source code...' 86%
-  [36/42] Boss.cpp
-  @progress 'Compiling C++ source code...' 88%
-  [37/42] HealthBar.gen.cpp
-  @progress 'Compiling C++ source code...' 90%
-  [38/42] WireHunterCharacter.cpp
-  @progress 'Compiling C++ source code...' 93%
-  [39/42] Boss.gen.cpp
-  @progress 'Compiling C++ source code...' 95%
-  [40/42] UE4Editor-WireHunter.lib
-     C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-  @progress 'Compiling C++ source code...' 98%
-  [41/42] UE4Editor-WireHunter.dll
-     C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-  @progress 'Compiling C++ source code...' 100%
-  [42/42] WireHunterEditor.target
-  WARNING: Unable to read 'C:\Wire-Hunter\work\choi\WireHunter\Binaries\Win64\UE4Editor.modules'; ignoring.
-Total time in Parallel executor: 29.72 seconds
-Total execution time: 37.00 seconds
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1
@@ -299,881 +196,498 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.05.16-13.11.39:484][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2021.05.16-13.11.39:484][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:485][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.05.16-13.11.39:493][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.05.16-13.11.39:494][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.05.16-13.11.39:495][  0]LogInit: Selected Device Profile: [Windows]
-[2021.05.16-13.11.39:496][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.05.16-13.11.39:498][  0]LogHAL: Display: Platform has ~ 16 GB [17109049344 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.05.16-13.11.39:498][  0]LogInit: Going up to parent DeviceProfile []
-[2021.05.16-13.11.39:498][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:498][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.05.16-13.11.39:499][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.05.16-13.11.39:500][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.05.16-13.11.39:500][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.05.16-13.11.39:500][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.05.16-13.11.39:500][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.05.16-13.11.39:500][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
-[2021.05.16-13.11.39:502][  0]LogInit: Computer: 준현컴
-[2021.05.16-13.11.39:502][  0]LogInit: User: 조준현
-[2021.05.16-13.11.39:503][  0]LogInit: CPU Page size=4096, Cores=6
-[2021.05.16-13.11.39:503][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.05.16-13.11.39:503][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2021.05.16-13.11.39:504][  0]LogMemory: Platform Memory Stats for Windows
-[2021.05.16-13.11.39:504][  0]LogMemory: Process Physical Memory: 122.64 MB used, 122.64 MB peak
-[2021.05.16-13.11.39:504][  0]LogMemory: Process Virtual Memory: 99.03 MB used, 99.03 MB peak
-[2021.05.16-13.11.39:504][  0]LogMemory: Physical Memory: 5571.27 MB used,  10745.19 MB free, 16316.46 MB total
-[2021.05.16-13.11.39:504][  0]LogMemory: Virtual Memory: 5230.55 MB used,  134212496.00 MB free, 134217728.00 MB total
-[2021.05.16-13.11.39:508][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.05.16-13.11.39:691][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.05.16-13.11.39:697][  0]LogInit: Using OS detected language (ko-KR).
-[2021.05.16-13.11.39:697][  0]LogInit: Using OS detected locale (ko-KR).
-[2021.05.16-13.11.39:704][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
-[2021.05.16-13.11.39:831][  0]LogInit: Setting process to per monitor DPI aware
-[2021.05.16-13.11.39:962][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.05.16-13.11.39:962][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.05.16-13.11.42:178][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.05.16-13.11.42:178][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2021.05.16-13.11.42:178][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2021.05.16-13.11.42:178][  0]LogD3D11RHI: D3D11 adapters:
-[2021.05.16-13.11.42:269][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
-[2021.05.16-13.11.42:269][  0]LogD3D11RHI:       5968/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2021.05.16-13.11.42:270][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2021.05.16-13.11.42:270][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2021.05.16-13.11.42:270][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2021.05.16-13.11.42:279][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2021.05.16-13.11.42:279][  0]LogD3D11RHI:     GPU DeviceId: 0x1e89 (for the marketing name, search the web for "GPU Device Id")
-[2021.05.16-13.11.42:279][  0]LogWindows: EnumDisplayDevices:
-[2021.05.16-13.11.42:279][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
-[2021.05.16-13.11.42:279][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
-[2021.05.16-13.11.42:279][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
-[2021.05.16-13.11.42:279][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
-[2021.05.16-13.11.42:279][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2021.05.16-13.11.42:279][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
-[2021.05.16-13.11.42:279][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
-[2021.05.16-13.11.42:279][  0]LogD3D11RHI:      Driver Date: 9-30-2020
-[2021.05.16-13.11.42:280][  0]LogRHI: Texture pool is 4177 MB (70% of 5968 MB)
-[2021.05.16-13.11.42:336][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2021.05.16-13.11.42:338][  0]LogD3D11RHI: Async texture creation enabled
-[2021.05.16-13.11.42:338][  0]LogD3D11RHI: Array index from any shader is supported
-[2021.05.16-13.11.42:425][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2021.05.16-13.11.42:660][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.05.16-13.11.42:682][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.05.16-13.11.42:715][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.05.16-13.11.42:715][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.05.16-13.11.42:727][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.05.16-13.11.42:739][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.05.16-13.11.42:749][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.05.16-13.11.42:760][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.05.16-13.11.42:772][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.05.16-13.11.42:783][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.05.16-13.11.42:793][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.05.16-13.11.42:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.05.16-13.11.42:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.05.16-13.11.42:838][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.05.16-13.11.42:838][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.05.16-13.11.42:850][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.05.16-13.11.42:861][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.05.16-13.11.42:872][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.05.16-13.11.42:883][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.05.16-13.11.42:883][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.05.16-13.11.42:897][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.05.16-13.11.43:035][  0]LogShaderCompilers: Guid format shader working directory is -7 characters bigger than the processId version (../../../../../../Wire-Hunter/work/choi/WireHunter/Intermediate/Shaders/WorkingDirectory/23168/).
-[2021.05.16-13.11.43:035][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/조준현/AppData/Local/Temp/UnrealShaderWorkingDir/F9BD890F4F14DF8F8298EFBAD57D783D/'.
-[2021.05.16-13.11.43:039][  0]LogXGEController: Cleaning working directory: C:/Users/조준현/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2021.05.16-13.11.43:039][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2021.05.16-13.11.43:039][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2021.05.16-13.11.43:039][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.05.16-13.11.45:738][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: Loaded boot cache 0.19s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.05.16-13.11.45:931][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.05.16-13.11.45:956][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.05.16-13.11.45:956][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.05.16-13.11.45:956][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.05.16-13.11.45:957][  0]LogDerivedDataCache: Using Local data cache path C:/Users/조준현/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.05.16-13.11.45:957][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.05.16-13.11.45:957][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.05.16-13.11.46:018][  0]LogSlate: Using FreeType 2.10.0
-[2021.05.16-13.11.46:026][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.05.16-13.11.46:068][  0]LogAssetRegistry: FAssetRegistry took 0.0057 seconds to start up
-[2021.05.16-13.11.46:639][  0]LogInit: Selected Device Profile: [Windows]
-[2021.05.16-13.11.46:898][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.05.16-13.11.46:898][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.05.16-13.11.46:898][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.05.16-13.11.46:898][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.05.16-13.11.46:899][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.05.16-13.11.46:952][  0]LogNetVersion: WireHunter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1660872711)
-[2021.05.16-13.11.47:784][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000164EED29800), frame # 0
-[2021.05.16-13.11.47:784][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000164EEC7E840), frame # 0
-[2021.05.16-13.11.47:789][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000164EECC5E00), frame # 0
-[2021.05.16-13.11.47:856][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.038536 seconds
-[2021.05.16-13.11.47:861][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
-[2021.05.16-13.11.47:861][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
-[2021.05.16-13.11.47:861][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.05.16-13.11.48:755][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.05.16-13.11.48:765][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.05.16-13.11.48:921][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.11.48:922][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.11.48:938][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.11.48:947][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.11.48:961][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.11.49:465][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.05.16-13.11.49:495][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.05.16-13.11.49:495][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.05.16-13.11.49:577][  0]LogOcInput: OculusInput pre-init called
-[2021.05.16-13.11.49:597][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2021.05.16-13.11.49:597][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2021.05.16-13.11.49:757][  0]LogEngine: Initializing Engine...
-[2021.05.16-13.11.49:760][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.05.16-13.11.49:760][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.05.16-13.11.49:764][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.002 s
-[2021.05.16-13.11.49:872][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.05.16-13.11.49:932][  0]LogAIModule: Creating AISystem for world Untitled
-[2021.05.16-13.11.49:932][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000164F5F43C00), frame # 0
-[2021.05.16-13.11.49:933][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000164F5F9BB00), frame # 0
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.05.16-13.11.49:952][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.05.16-13.11.49:952][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.05.16-13.11.49:955][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.05.16-13.11.49:955][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.05.16-13.11.49:979][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.05.16-13.11.49:979][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.05.16-13.11.50:034][  0]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
-[2021.05.16-13.11.50:042][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.05.16-13.11.50:043][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.05.16-13.11.50:043][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.05.16-13.11.50:045][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.05.16-13.11.50:047][  0]LogInit: FAudioDevice initialized.
-[2021.05.16-13.11.50:048][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.05.16-13.11.50:116][  0]LogDerivedDataCache: Saved boot cache 0.07s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.05.16-13.11.50:118][  0]LogInit: Texture streaming: Enabled
-[2021.05.16-13.11.50:141][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2021.05.16-13.11.50:141][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2021.05.16-13.11.50:145][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2021.05.16-13.11.50:342][  0]LogInit: Transaction tracking system initialized
-[2021.05.16-13.11.50:536][  0]BlueprintLog: New page: 에디터 로드
-[2021.05.16-13.11.50:750][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
-[2021.05.16-13.11.51:026][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2021.05.16-13.11.51:026][  0]LogCook: Display: Mobile HDR setting 1
-[2021.05.16-13.11.51:090][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.00s
-[2021.05.16-13.11.51:090][  0]LogOutputDevice: Warning: 
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:422][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.05.16-15.08.12:422][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.05.16-15.08.12:423][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:423][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:424][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.16-15.08.12:424][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.16-15.08.12:425][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.16-15.08.12:425][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.16-15.08.12:425][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.05.16-15.08.12:425][  0]LogHAL: Display: Platform has ~ 16 GB [17109049344 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.05.16-15.08.12:425][  0]LogInit: Going up to parent DeviceProfile []
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.16-15.08.12:426][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.05.16-15.08.12:427][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.05.16-15.08.12:427][  0]LogInit: Computer: 준현컴
+[2021.05.16-15.08.12:427][  0]LogInit: User: 조준현
+[2021.05.16-15.08.12:427][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.05.16-15.08.12:428][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.05.16-15.08.12:428][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.05.16-15.08.12:428][  0]LogMemory: Platform Memory Stats for Windows
+[2021.05.16-15.08.12:428][  0]LogMemory: Process Physical Memory: 116.20 MB used, 116.20 MB peak
+[2021.05.16-15.08.12:428][  0]LogMemory: Process Virtual Memory: 100.24 MB used, 100.24 MB peak
+[2021.05.16-15.08.12:428][  0]LogMemory: Physical Memory: 10175.60 MB used,  6140.86 MB free, 16316.46 MB total
+[2021.05.16-15.08.12:428][  0]LogMemory: Virtual Memory: 5169.93 MB used,  134212560.00 MB free, 134217728.00 MB total
+[2021.05.16-15.08.12:432][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.05.16-15.08.12:462][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.05.16-15.08.12:463][  0]LogInit: Using OS detected language (ko-KR).
+[2021.05.16-15.08.12:463][  0]LogInit: Using OS detected locale (ko-KR).
+[2021.05.16-15.08.12:472][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2021.05.16-15.08.12:596][  0]LogInit: Setting process to per monitor DPI aware
+[2021.05.16-15.08.12:622][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.05.16-15.08.12:622][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.05.16-15.08.12:840][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.16-15.08.12:840][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.05.16-15.08.12:840][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.05.16-15.08.12:840][  0]LogD3D11RHI: D3D11 adapters:
+[2021.05.16-15.08.12:908][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.05.16-15.08.12:908][  0]LogD3D11RHI:       5968/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.05.16-15.08.12:910][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.05.16-15.08.12:910][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.05.16-15.08.12:910][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.05.16-15.08.12:915][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.05.16-15.08.12:915][  0]LogD3D11RHI:     GPU DeviceId: 0x1e89 (for the marketing name, search the web for "GPU Device Id")
+[2021.05.16-15.08.12:915][  0]LogWindows: EnumDisplayDevices:
+[2021.05.16-15.08.12:915][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
+[2021.05.16-15.08.12:915][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.16-15.08.12:915][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.16-15.08.12:915][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.05.16-15.08.12:915][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.05.16-15.08.12:915][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.05.16-15.08.12:915][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.05.16-15.08.12:915][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2021.05.16-15.08.12:916][  0]LogRHI: Texture pool is 4177 MB (70% of 5968 MB)
+[2021.05.16-15.08.12:961][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.05.16-15.08.12:961][  0]LogD3D11RHI: Async texture creation enabled
+[2021.05.16-15.08.12:961][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.05.16-15.08.12:974][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.05.16-15.08.13:194][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.05.16-15.08.13:214][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.05.16-15.08.13:237][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.05.16-15.08.13:237][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.05.16-15.08.13:246][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.05.16-15.08.13:254][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.05.16-15.08.13:263][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.05.16-15.08.13:271][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.05.16-15.08.13:280][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.05.16-15.08.13:289][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.05.16-15.08.13:298][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.05.16-15.08.13:326][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.05.16-15.08.13:326][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.05.16-15.08.13:342][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.05.16-15.08.13:342][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.05.16-15.08.13:351][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.05.16-15.08.13:361][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.05.16-15.08.13:370][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.05.16-15.08.13:379][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.05.16-15.08.13:379][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.05.16-15.08.13:385][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.05.16-15.08.13:439][  0]LogShaderCompilers: Guid format shader working directory is -7 characters bigger than the processId version (../../../../../../Wire-Hunter/work/choi/WireHunter/Intermediate/Shaders/WorkingDirectory/23612/).
+[2021.05.16-15.08.13:439][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/조준현/AppData/Local/Temp/UnrealShaderWorkingDir/498E3D4D4918CBB4496FFB86CF9E4B2C/'.
+[2021.05.16-15.08.13:440][  0]LogXGEController: Cleaning working directory: C:/Users/조준현/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.05.16-15.08.13:440][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.05.16-15.08.13:440][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.05.16-15.08.13:440][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.05.16-15.08.14:291][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: Loaded boot cache 0.19s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.16-15.08.14:484][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.05.16-15.08.14:493][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.05.16-15.08.14:493][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.16-15.08.14:493][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.05.16-15.08.14:494][  0]LogDerivedDataCache: Using Local data cache path C:/Users/조준현/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.05.16-15.08.14:494][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.05.16-15.08.14:494][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.05.16-15.08.14:538][  0]LogSlate: Using FreeType 2.10.0
+[2021.05.16-15.08.14:538][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.05.16-15.08.14:561][  0]LogAssetRegistry: FAssetRegistry took 0.0022 seconds to start up
+[2021.05.16-15.08.14:758][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.16-15.08.14:859][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.05.16-15.08.14:859][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.05.16-15.08.14:859][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.05.16-15.08.14:859][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.05.16-15.08.14:859][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.05.16-15.08.14:871][  0]LogNetVersion: WireHunter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1660872711)
+[2021.05.16-15.08.15:292][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001B16E35DC40), frame # 0
+[2021.05.16-15.08.15:292][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B16E2B6AC0), frame # 0
+[2021.05.16-15.08.15:293][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B16E302000), frame # 0
+[2021.05.16-15.08.15:331][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.033358 seconds
+[2021.05.16-15.08.15:336][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.05.16-15.08.15:336][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.05.16-15.08.15:336][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.05.16-15.08.15:691][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.05.16-15.08.15:695][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.05.16-15.08.15:777][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.15:777][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.15:781][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.15:784][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.15:790][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.16:025][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.05.16-15.08.16:043][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.16-15.08.16:043][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.16-15.08.16:086][  0]LogOcInput: OculusInput pre-init called
+[2021.05.16-15.08.16:097][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.05.16-15.08.16:097][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.05.16-15.08.16:150][  0]LogEngine: Initializing Engine...
+[2021.05.16-15.08.16:153][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.16-15.08.16:153][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.05.16-15.08.16:154][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.05.16-15.08.16:253][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.05.16-15.08.16:262][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.05.16-15.08.16:262][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B1766C7C00), frame # 0
+[2021.05.16-15.08.16:262][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B176723B00), frame # 0
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.16-15.08.16:273][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.16-15.08.16:273][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.16-15.08.16:273][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.16-15.08.16:282][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.16-15.08.16:282][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.05.16-15.08.16:308][  0]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.05.16-15.08.16:313][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.16-15.08.16:315][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.16-15.08.16:315][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.16-15.08.16:316][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.16-15.08.16:317][  0]LogInit: FAudioDevice initialized.
+[2021.05.16-15.08.16:317][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.05.16-15.08.16:382][  0]LogDerivedDataCache: Saved boot cache 0.06s 75MB C:/Users/조준현/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.05.16-15.08.16:382][  0]LogInit: Texture streaming: Enabled
+[2021.05.16-15.08.16:395][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.05.16-15.08.16:395][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={BCEF82B0-46EB-19EA-C9DC-B9973D9ACA6F}
+[2021.05.16-15.08.16:395][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.05.16-15.08.16:396][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.05.16-15.08.16:427][  0]LogInit: Transaction tracking system initialized
+[2021.05.16-15.08.16:453][  0]BlueprintLog: New page: 에디터 로드
+[2021.05.16-15.08.16:523][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2021.05.16-15.08.16:663][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.05.16-15.08.16:663][  0]LogCook: Display: Mobile HDR setting 1
+[2021.05.16-15.08.16:680][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.01s
+[2021.05.16-15.08.16:680][  0]LogOutputDevice: Warning: 
 
 Script Stack (0 frames):
 
-[2021.05.16-13.12.03:643][  0]LogStats: FPlatformStackWalk::StackWalkAndDump - 12.553 s
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: === Handled ensure: ===
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: 
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: Ensure condition failed: AttachmentRules.LocationRule == EAttachmentRule::KeepRelative && AttachmentRules.RotationRule == EAttachmentRule::KeepRelative && AttachmentRules.ScaleRule == EAttachmentRule::KeepRelative [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1812]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: AttachToComponent when called from a constructor is only setting up attachment and will always be treated as KeepRelative. Consider calling SetupAttachment directly instead.
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: Stack: 
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbeb5c119 UE4Editor-Engine.dll!DispatchCheckVerify<bool,<lambda_7a00921a8ebf9f041bed3055592f02a5> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbd70d3c3 UE4Editor-Engine.dll!USceneComponent::AttachToComponent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1812]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fff956789c7 UE4Editor-WireHunter.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Dragon.cpp:18]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd855c273 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3672]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8808451 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:861]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd87e5bbf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:950]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8704465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8e1986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8e399f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff80269b433 UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:561]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff80269b70d UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:63]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a12db4 UE4Editor.exe!FEngineLoop::Init() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:4022]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbc485cb0 UE4Editor-UnrealEd.dll!EditorInit() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\UnrealEdGlobals.cpp:93]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a2b8fb UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:149]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a2bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a3e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a4145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8139f7034 KERNEL32.DLL!UnknownFunction []
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8159a2651 ntdll.dll!UnknownFunction []
-[2021.05.16-13.12.03:644][  0]LogOutputDevice: Error: 
-[2021.05.16-13.12.03:654][  0]LogStats:                SubmitErrorReport -  0.000 s
-[2021.05.16-13.12.05:413][  0]LogStats:                    SendNewReport -  1.759 s
-[2021.05.16-13.12.05:413][  0]LogStats:             FDebug::EnsureFailed - 14.323 s
-[2021.05.16-13.12.05:940][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2021.05.16-13.12.05:941][  0]LogUnrealEdMisc: Loading editor; pre map load, took 68.065
-[2021.05.16-13.12.05:948][  0]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.05.16-13.12.05:952][  0]LightingResults: New page: 라이팅 빌드
-[2021.05.16-13.12.05:975][  0]LogTemp: Resetting audio stream to device id 
-[2021.05.16-13.12.05:991][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.05.16-13.12.05:991][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.05.16-13.12.06:045][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.05.16-13.12.06:050][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.05.16-13.12.06:055][  0]MapCheck: New page: 맵 체크
-[2021.05.16-13.12.06:055][  0]LightingResults: New page: 라이팅 빌드
-[2021.05.16-13.12.06:127][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000164F5F43C00), frame # 0
-[2021.05.16-13.12.06:127][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000164F5F9BB00), frame # 0
-[2021.05.16-13.12.06:130][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
-[2021.05.16-13.12.06:772][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Jog_Rt_Rifle.Jog_Rt_Rifle
-[2021.05.16-13.12.06:772][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Jog_Lt_Rifle.Jog_Lt_Rifle
-[2021.05.16-13.12.06:783][  0]LogAIModule: Creating AISystem for world GameLevel
-[2021.05.16-13.12.06:783][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000164E401A400), frame # 0
-[2021.05.16-13.12.06:783][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000164E404B380), frame # 0
-[2021.05.16-13.12.06:853][  0]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+[2021.05.16-15.08.22:773][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  6.092 s
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: 
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: Ensure condition failed: AttachmentRules.LocationRule == EAttachmentRule::KeepRelative && AttachmentRules.RotationRule == EAttachmentRule::KeepRelative && AttachmentRules.ScaleRule == EAttachmentRule::KeepRelative [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1812]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: AttachToComponent when called from a constructor is only setting up attachment and will always be treated as KeepRelative. Consider calling SetupAttachment directly instead.
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: Stack: 
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbeb5c119 UE4Editor-Engine.dll!DispatchCheckVerify<bool,<lambda_7a00921a8ebf9f041bed3055592f02a5> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbd70d3c3 UE4Editor-Engine.dll!USceneComponent::AttachToComponent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1812]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fff95ba93a7 UE4Editor-WireHunter-7673.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Dragon.cpp:18]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd855c273 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3672]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8808451 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:861]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd87e5bbf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:950]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8704465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8e1986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffd8e399f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007ff80458b433 UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:561]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007ff80458b70d UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:63]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a12db4 UE4Editor.exe!FEngineLoop::Init() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:4022]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007fffbc485cb0 UE4Editor-UnrealEd.dll!EditorInit() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\UnrealEdGlobals.cpp:93]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a2b8fb UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:149]
+[2021.05.16-15.08.22:773][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a2bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.05.16-15.08.22:774][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a3e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.05.16-15.08.22:774][  0]LogOutputDevice: Error: [Callstack] 0x00007ff692a4145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.05.16-15.08.22:774][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8139f7034 KERNEL32.DLL!UnknownFunction []
+[2021.05.16-15.08.22:774][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8159a2651 ntdll.dll!UnknownFunction []
+[2021.05.16-15.08.22:774][  0]LogOutputDevice: Error: 
+[2021.05.16-15.08.22:775][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2021.05.16-15.08.23:738][  0]LogStats:                    SendNewReport -  0.964 s
+[2021.05.16-15.08.23:738][  0]LogStats:             FDebug::EnsureFailed -  7.058 s
+[2021.05.16-15.08.24:049][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.05.16-15.08.24:050][  0]LogUnrealEdMisc: Loading editor; pre map load, took 12.780
+[2021.05.16-15.08.24:050][  0]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.16-15.08.24:050][  0]LightingResults: New page: 라이팅 빌드
+[2021.05.16-15.08.24:051][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.05.16-15.08.24:051][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.16-15.08.24:051][  0]MapCheck: New page: 맵 체크
+[2021.05.16-15.08.24:051][  0]LightingResults: New page: 라이팅 빌드
+[2021.05.16-15.08.24:060][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B1766C7C00), frame # 0
+[2021.05.16-15.08.24:060][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B176723B00), frame # 0
+[2021.05.16-15.08.24:061][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.05.16-15.08.24:533][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.05.16-15.08.24:533][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B1D9228E00), frame # 0
+[2021.05.16-15.08.24:533][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B1D91C2AC0), frame # 0
+[2021.05.16-15.08.24:537][  0]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
 	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
 	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:0087
-[2021.05.16-13.12.06:912][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.05.16-13.12.06:960][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
-[2021.05.16-13.12.06:966][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.05.16-13.12.06:968][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 1.86ms.
-[2021.05.16-13.12.06:968][  0]LogFileHelpers: Loading map 'GameLevel' took 1.026
-[2021.05.16-13.12.07:054][  0]LogUnrealEdMisc: Total Editor Startup Time, took 69.178
-[2021.05.16-13.12.07:304][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.05.16-13.12.07:311][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.05.16-13.12.07:317][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.05.16-13.12.07:322][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.05.16-13.12.07:343][  0]LogCollectionManager: Loaded 0 collections in 0.001929 seconds
-[2021.05.16-13.12.07:394][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Saved/Collections/' took 0.00s
-[2021.05.16-13.12.07:395][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Developers/조준현/Collections/' took 0.00s
-[2021.05.16-13.12.07:395][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Collections/' took 0.00s
-[2021.05.16-13.12.07:395][  0]LogContentBrowser: Native class hierarchy populated in 0.0113 seconds. Added 3446 classes and 826 folders.
-[2021.05.16-13.12.07:409][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2021.05.16-13.12.07:530][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2021.05.16-13.12.07:550][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 0 folders.
-[2021.05.16-13.12.07:868][  0]LogSlate: Took 0.001220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2021.05.16-13.12.07:888][  0]LogSlate: Took 0.016863 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
-[2021.05.16-13.12.07:913][  0]LogSlate: Took 0.016953 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
-[2021.05.16-13.12.07:915][  0]LogSlate: Took 0.001109 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2021.05.16-13.12.07:917][  0]LogSlate: Took 0.001072 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2021.05.16-13.12.07:921][  0]LogSlate: Took 0.001064 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2021.05.16-13.12.07:951][  0]LogSlate: Took 0.016409 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
-[2021.05.16-13.12.07:966][  0]LogSlate: Took 0.015068 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
-[2021.05.16-13.12.07:968][  0]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: 'ϰ (U+03f0)'
-[2021.05.16-13.12.07:990][  0]LogSlate: Took 0.020495 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
-[2021.05.16-13.12.08:126][  0]LogRenderer: Reallocating scene render targets to support 1376x616 Format 10 NumSamples 1 (Frame:1).
-[2021.05.16-13.12.08:374][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2021.05.16-13.12.08:374][  0]LogLoad: (Engine Initialization) Total time: 70.50 seconds
-[2021.05.16-13.12.08:374][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.05.16-13.12.08:535][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Climb.Climb
-[2021.05.16-13.12.08:535][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_Jump.ThirdPerson_Jump
-[2021.05.16-13.12.08:535][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2021.05.16-13.12.08:611][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.16s
-[2021.05.16-13.12.08:620][  1]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Crouch_to_Stand.Crouch_to_Stand
-[2021.05.16-13.12.08:620][  1]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Hang_Idle.Hang_Idle
-[2021.05.16-13.12.08:620][  1]LogAssetRegistry: Asset discovery search completed in 22.5543 seconds
-[2021.05.16-13.12.08:628][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
-[2021.05.16-13.12.08:908][  4]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop
-[2021.05.16-13.12.08:908][  4]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start
-[2021.05.16-13.12.08:938][  5]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Idle_Rifle_Hip.Idle_Rifle_Hip
-[2021.05.16-13.12.08:938][  5]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Jog_Bwd_Rifle.Jog_Bwd_Rifle
-[2021.05.16-13.12.09:052][ 14]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonCPP/GraphicResources/Character/Animations/Jog_Fwd_Rifle.Jog_Fwd_Rifle
-[2021.05.16-13.16.27:018][110]LogSlate: Took 0.001199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.05.16-13.16.31:389][610]LogEditor: Attempting to add actor of class 'Boss' to level at 14890.00,49100.00,12318.00
-[2021.05.16-13.16.31:729][633]LogEditor: Attempting to add actor of class 'Boss' to level at 10080.00,51660.00,12318.00
-[2021.05.16-13.16.33:419][823]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (land)
-[2021.05.16-13.16.34:674][968]Cmd: TRANSACTION UNDO
-[2021.05.16-13.16.34:674][968]LogEditorTransaction: Undo 액터 클릭 (더블클릭)
-[2021.05.16-13.16.34:715][968]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.05.16-13.16.42:615][844]LogEditor: Attempting to add actor of class 'Obstacle' to level at 18060.00,46250.00,15140.00
-[2021.05.16-13.16.43:034][892]LogEditor: Attempting to add actor of class 'Obstacle' to level at 17970.00,46280.00,15250.00
-[2021.05.16-13.17.05:051][356]Cmd: TRANSACTION UNDO
-[2021.05.16-13.17.05:051][356]LogEditorTransaction: Undo 컴포넌트 사용된 머티리얼을 대체합니다.
-[2021.05.16-13.17.06:085][432]Cmd: TRANSACTION UNDO
-[2021.05.16-13.17.06:085][432]LogEditorTransaction: Undo 스케일 설정
-[2021.05.16-13.17.42:796][593]LogSlate: Took 0.008676 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2021.05.16-13.18.15:163][334]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
-[2021.05.16-13.18.15:222][334]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel8413460D4460116A8E2C6A9224E31042.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
-[2021.05.16-13.18.15:244][334]AssetCheck: New page: 애셋 저장: GameLevel
-[2021.05.16-13.18.15:244][334]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
-[2021.05.16-13.18.55:078][122]LogHotReload: New module detected: UE4Editor-WireHunter-0001.dll
-[2021.05.16-13.18.55:760][125]LogHotReload: Starting Hot-Reload from IDE
-[2021.05.16-13.18.55:804][125]LogClass: Could not find existing class Boss in package /Script/WireHunter for HotReload, assuming new class
-[2021.05.16-13.18.55:809][125]LogClass: StructNode HotReload.
-[2021.05.16-13.18.55:809][125]LogClass: StructWeight HotReload.
-[2021.05.16-13.18.55:814][125]LogHotReload: Re-instancing Boss after hot-reload.
-[2021.05.16-13.18.55:837][125]LogHotReload: Re-instancing HealingPotion after hot-reload.
-[2021.05.16-13.18.55:844][125]LogHotReload: Re-instancing SpeedPotion after hot-reload.
-[2021.05.16-13.18.55:849][125]LogHotReload: Re-instancing StrengthPotion after hot-reload.
-[2021.05.16-13.18.55:856][125]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 18 classes and 2 folders.
-[2021.05.16-13.18.55:858][125]Display: HotReload successful (1 functions remapped  2 scriptstructs remapped)
-[2021.05.16-13.18.55:901][125]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 3446 classes and 826 folders.
-[2021.05.16-13.18.55:913][125]Display: HotReload took  0.2s.
-[2021.05.16-13.35.45:377][292]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.36.32:961][811]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.36.34:269][966]Cmd: EDIT COPY
-[2021.05.16-13.36.34:767][ 23]Cmd: EDIT PASTE
-[2021.05.16-13.36.53:799][296]Cmd: TRANSACTION UNDO
-[2021.05.16-13.36.53:799][296]LogEditorTransaction: Undo 액터 이동
-[2021.05.16-13.36.55:154][411]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
-[2021.05.16-13.36.55:791][486]Cmd: EDIT COPY
-[2021.05.16-13.36.56:450][565]Cmd: EDIT PASTE
-[2021.05.16-13.37.04:384][511]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle3)
-[2021.05.16-13.37.04:889][570]Cmd: EDIT COPY
-[2021.05.16-13.37.05:443][636]Cmd: EDIT PASTE
-[2021.05.16-13.37.12:616][471]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle4)
-[2021.05.16-13.37.13:232][543]Cmd: EDIT COPY
-[2021.05.16-13.37.13:719][601]Cmd: EDIT PASTE
-[2021.05.16-13.37.21:594][516]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.37.23:201][696]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
-[2021.05.16-13.37.26:846][107]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.37.27:611][184]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle2)
-[2021.05.16-13.37.28:291][262]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle3)
-[2021.05.16-13.37.29:847][423]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle4)
-[2021.05.16-13.37.30:537][491]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle5)
-[2021.05.16-13.37.32:767][740]Cmd: EDIT COPY
-[2021.05.16-13.37.33:267][787]Cmd: EDIT PASTE
-[2021.05.16-13.37.45:352][227]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Clouds)
-[2021.05.16-13.37.47:110][434]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.37.51:740][968]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.37.53:056][120]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
-[2021.05.16-13.37.58:720][796]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.38.01:634][142]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.38.03:633][378]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.38.05:905][647]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.38.06:761][746]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.38.07:861][874]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.38.09:440][ 60]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.38.11:074][252]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.38.13:936][564]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.38.16:615][852]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
-[2021.05.16-13.38.18:120][ 28]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle5)
-[2021.05.16-13.38.19:109][143]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
-[2021.05.16-13.38.25:727][923]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
-[2021.05.16-13.38.31:009][546]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
-[2021.05.16-13.38.36:528][186]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.38.39:250][499]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
-[2021.05.16-13.38.51:066][882]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
-[2021.05.16-13.38.52:164][ 10]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
-[2021.05.16-13.38.54:497][286]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
-[2021.05.16-13.38.57:853][685]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle10)
-[2021.05.16-13.39.00:759][ 30]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
-[2021.05.16-13.39.02:006][176]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.39.03:820][390]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
-[2021.05.16-13.39.05:985][646]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
-[2021.05.16-13.39.07:417][814]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle8)
-[2021.05.16-13.39.09:363][ 44]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle9)
-[2021.05.16-13.39.10:578][186]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
-[2021.05.16-13.39.14:920][702]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.39.24:200][782]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.39.24:877][859]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle2)
-[2021.05.16-13.39.25:484][928]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle3)
-[2021.05.16-13.39.27:560][171]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle4)
-[2021.05.16-13.39.29:259][355]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle5)
-[2021.05.16-13.39.31:224][584]Cmd: EDIT COPY
-[2021.05.16-13.39.31:674][638]Cmd: EDIT PASTE
-[2021.05.16-13.39.37:119][283]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.39.38:774][478]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle2)
-[2021.05.16-13.39.39:806][598]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.39.40:571][686]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle12)
-[2021.05.16-13.39.41:037][738]Cmd: TRANSACTION UNDO
-[2021.05.16-13.39.41:037][738]LogEditorTransaction: Undo 액터 클릭
-[2021.05.16-13.39.41:473][750]Cmd: TRANSACTION UNDO
-[2021.05.16-13.39.41:473][750]LogEditorTransaction: Undo 액터 클릭
-[2021.05.16-13.39.41:909][794]Cmd: TRANSACTION UNDO
-[2021.05.16-13.39.41:909][794]LogEditorTransaction: Undo 액터 클릭
-[2021.05.16-13.39.42:331][842]Cmd: TRANSACTION UNDO
-[2021.05.16-13.39.42:331][842]LogEditorTransaction: Undo 액터 클릭
-[2021.05.16-13.39.47:239][417]LogEditorViewport: Clicking on Actor (LMB): BP_Volumetrics_C (BP_Clouds)
-[2021.05.16-13.39.49:446][665]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.39.50:131][738]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle7)
-[2021.05.16-13.39.51:472][876]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle8)
-[2021.05.16-13.39.52:178][947]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle9)
-[2021.05.16-13.39.53:857][119]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle10)
-[2021.05.16-13.39.55:457][298]Cmd: EDIT COPY
-[2021.05.16-13.39.55:835][332]Cmd: EDIT PASTE
-[2021.05.16-13.40.05:264][449]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle11)
-[2021.05.16-13.40.06:071][542]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle12)
-[2021.05.16-13.40.06:884][636]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle13)
-[2021.05.16-13.40.08:889][871]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle14)
-[2021.05.16-13.40.10:007][  1]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle15)
-[2021.05.16-13.40.11:430][168]Cmd: EDIT COPY
-[2021.05.16-13.40.11:915][226]Cmd: EDIT PASTE
-[2021.05.16-13.40.22:506][442]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle16)
-[2021.05.16-13.40.24:209][640]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle17)
-[2021.05.16-13.40.24:931][723]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle18)
-[2021.05.16-13.40.25:645][805]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle19)
-[2021.05.16-13.40.26:343][885]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle20)
-[2021.05.16-13.40.27:067][968]Cmd: EDIT COPY
-[2021.05.16-13.40.27:572][ 28]Cmd: EDIT PASTE
-[2021.05.16-13.40.44:422][ 17]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle21)
-[2021.05.16-13.40.45:884][176]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle22)
-[2021.05.16-13.40.46:710][271]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle23)
-[2021.05.16-13.40.48:280][454]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle24)
-[2021.05.16-13.40.48:993][536]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle25)
-[2021.05.16-13.40.49:857][636]Cmd: EDIT COPY
-[2021.05.16-13.40.50:379][698]Cmd: EDIT PASTE
-[2021.05.16-13.41.02:087][ 67]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle26)
-[2021.05.16-13.41.03:517][213]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle27)
-[2021.05.16-13.41.04:129][270]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle28)
-[2021.05.16-13.41.04:817][349]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle29)
-[2021.05.16-13.41.05:525][430]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle30)
-[2021.05.16-13.41.06:247][513]Cmd: EDIT COPY
-[2021.05.16-13.41.06:771][575]Cmd: EDIT PASTE
-[2021.05.16-13.41.17:876][886]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle31)
-[2021.05.16-13.41.18:566][965]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle32)
-[2021.05.16-13.41.19:355][ 56]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle33)
-[2021.05.16-13.41.20:176][151]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle34)
-[2021.05.16-13.41.20:849][228]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle35)
-[2021.05.16-13.41.21:496][302]Cmd: EDIT COPY
-[2021.05.16-13.41.21:925][353]Cmd: EDIT PASTE
-[2021.05.16-13.41.36:045][ 16]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle36)
-[2021.05.16-13.41.37:271][141]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle37)
-[2021.05.16-13.41.37:831][191]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle38)
-[2021.05.16-13.41.38:346][247]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle39)
-[2021.05.16-13.41.38:876][307]LogEditorViewport: Clicking on Actor (CTRL LMB): Obstacle (Obstacle40)
-[2021.05.16-13.41.39:490][377]Cmd: EDIT COPY
-[2021.05.16-13.41.39:919][428]Cmd: EDIT PASTE
-[2021.05.16-13.41.51:794][816]MapCheck: New page: 맵 체크
-[2021.05.16-13.41.51:810][816]Cmd: MAP REBUILD ALLVISIBLE
-[2021.05.16-13.41.51:811][816]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2021.05.16-13.41.51:882][816]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=false
-[2021.05.16-13.41.51:883][816]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
-	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
-	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:0087
-[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
-[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
-[2021.05.16-13.41.51:897][816]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
-[2021.05.16-13.41.51:914][816]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
-[2021.05.16-13.41.51:927][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:946][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:947][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:948][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:949][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:951][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:952][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:953][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:954][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 16
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 15
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 14
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 12
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 11
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 10
-[2021.05.16-13.41.51:956][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 9
-[2021.05.16-13.41.51:956][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:957][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.51:958][816]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 16
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 15
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 14
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 12
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 11
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 10
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 9
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 8
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 7
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 6
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 4
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 3
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
-[2021.05.16-13.41.53:213][816]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 1
-[2021.05.16-13.41.53:213][816]TextureStreamingBuild: Display: Compiling optional shaders took 1.294 seconds.
-[2021.05.16-13.41.53:250][816]LogLevel: Display: Export Material TexCoord Scales took 0.037 seconds.
-[2021.05.16-13.41.53:254][816]TextureStreamingBuild: Display: Build Texture Streaming took 0.003 seconds.
-[2021.05.16-13.41.53:263][816]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
-[2021.05.16-13.41.53:278][816]LightingResults: New page: 라이팅 빌드 - 2021. 5. 17. 오전 7:41:53
-[2021.05.16-13.41.53:320][816]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2021.05.16-13.41.53:363][816]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2021.05.16-13.41.53:376][816]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2021.05.16-13.41.53:912][816]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2021.05.16-13.41.53:912][816]LogSwarmInterface: [TryOpenConnection] Local Process ID is 23168
-[2021.05.16-13.42.00:711][816]LightingResults: Warning: 설정된 임포턴스 볼륨이 없는데다 씬이 꽤 커서 자동 합성된 볼륨으로는 괜찮은 결과가 나지 않을 것입니다. 씬의 퀄리티와 라이팅 빌드 시간 최적화를 위해 라이트매스 임포턴스 볼륨을 꼭 맞게 추가해 주시기 바랍니다.
-[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2021.05.16-13.42.00:713][816]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2021.05.16-13.42.01:020][816]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2021.05.16-13.42.01:020][816]MapCheck: New page: GameLevel - 2021. 5. 17. 오전 7:42:01
-[2021.05.16-13.42.01:021][816]MapCheck: Error: WorldInfo_0 맵 라이팅을 리빌드해야 합니다. 
-[2021.05.16-13.42.01:023][816]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
-[2021.05.16-13.42.01:023][816]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
-[2021.05.16-13.42.01:024][816]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
-[2021.05.16-13.42.01:024][816]MapCheck: 맵 체크 완료: 오류 1 회, 경고 3 회, 소요 시간 3.596ms.
-[2021.05.16-13.42.01:027][816]LogEditorBuildUtils: Build time 0:09
-[2021.05.16-13.42.01:167][817]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
-[2021.05.16-13.42.04:205][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
-[2021.05.16-13.42.04:270][ 27]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto1AD27658E49F65CB04C9D75AD69127C1E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto1.umap'
-[2021.05.16-13.42.04:271][ 27]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.076
-[2021.05.16-13.42.04:271][ 27]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.076
-[2021.05.16-13.42.07:766][323]Job is a success!
-[2021.05.16-13.42.08:070][324]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.162s
-[2021.05.16-13.42.08:070][324]LogVolumetricLightmapImport:      Indirection Texture 32x32x32 = 0.1Mb
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      BrickData (all levels) 5.0Mb (trimmed 4.9Mb due to 0.010000 MinBrickError)
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      Bricks at depth
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          0: 0.9% covering 100.0% of volume
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          1: 15.0% covering 26.2% of volume
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          2: 84.1% covering 2.3% of volume
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:      Bricks in each level
-[2021.05.16-13.42.08:071][324]LogVolumetricLightmapImport:          GameLevel 			 895 bricks 	 100.0% (Persistent Level)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_1 (AutoDXT, 512X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_1 (DXT1, 512X512)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_1 (AutoDXT, 512X512)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_3 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_2 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_3 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_3 (DXT1, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_2 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_2 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_4 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_4 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_4 (DXT1, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_5 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_5 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_5 (DXT1, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_6 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_6 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_6 (DXT1, 128X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_7 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_7 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_8 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_7 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_8 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_8 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_9 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_9 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_9 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_10 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_10 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_10 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_11 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_11 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_11 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_12 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_12 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_12 (DXT1, 256X256)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_13 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:460][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_13 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_13 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_14 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_14 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_14 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_15 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_15 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_15 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_16 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_16 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_16 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_17 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_17 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_17 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_18 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_18 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_18 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_19 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_19 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_19 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_20 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_20 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_20 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_21 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_21 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_21 (DXT1, 128X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_22 (AutoDXT, 256X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_22 (AutoDXT, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_22 (DXT1, 256X256)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_23 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_23 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_23 (DXT1, 128X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_24 (AutoDXT, 128X64)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_24 (AutoDXT, 128X128)
-[2021.05.16-13.42.08:461][324]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_24 (DXT1, 128X128)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_3 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_5 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_4 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_8 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_6 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_2 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_7 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_9 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_11 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_10 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_12 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_13 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_14 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_16 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_20 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_17 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_23 (G8, 64X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_18 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_22 (G8, 128X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_15 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_21 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_19 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (G8, 256X64)
-[2021.05.16-13.42.08:573][324]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (G8, 256X256)
-[2021.05.16-13.42.08:573][324]Lightmass on 준현컴: 6.75 sec total, 212 ms importing, 40 ms setup, 1.17 sec photons, 5.22 sec processing, 0 ms extra exporting [62/62 mappings]. Threads: 57.3 sec total, 9.00 sec processing.
-[2021.05.16-13.42.08:574][324]LogStaticLightingSystem: GameLevel_BuiltData storing lightmap data for 62 meshes in 24 LightmapResourceClusters (2.6 Meshes per cluster).
-[2021.05.16-13.42.08:595][324]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
-[2021.05.16-13.42.08:605][324]LogStaticLightingSystem: Illumination: 15.3 sec (351 ms encoding lightmaps, 24 ms encoding shadowmaps)
-[2021.05.16-13.42.08:606][324]LogStaticLightingSystem: Lightmap texture memory:  3.6 MB (3.6 MB streaming, 0.0 MB non-streaming), 48 textures
-[2021.05.16-13.42.08:606][324]LogStaticLightingSystem: Shadowmap texture memory: 0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 24 textures
-[2021.05.16-13.42.08:716][324]DumpUnbuiltLightIteractions
-[2021.05.16-13.42.08:716][324]Lights with unbuilt interactions: 0
-[2021.05.16-13.42.08:716][324]
-[2021.05.16-13.42.08:716][324]Primitives with unbuilt interactions: 0
-[2021.05.16-13.42.08:798][325]Cmd: MAP CHECK NOTIFYRESULTS
-[2021.05.16-13.42.08:798][325]MapCheck: New page: GameLevel - 2021. 5. 17. 오전 7:42:08
-[2021.05.16-13.42.08:798][325]MapCheck: Warning: BP_Clouds 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
-[2021.05.16-13.42.08:799][325]MapCheck: Warning: BP_Volumetric_Cloud_Layer 콜리전이 켜져있으나 (EditorSkySphere) 스태틱 메시에 단순 또는 복합 콜리전이 없습니다. 
-[2021.05.16-13.42.08:799][325]MapCheck: Warning: BP_Volumetric_Cloud_Layer 커다란 액터가 프리-섀도를 받고 있어, bCastDynamicShadow 를 _False_ 로 설정하지 않으면 엄청난 퍼포먼스 영향이 있을 것입니다. 
-[2021.05.16-13.42.08:799][325]MapCheck: 맵 체크 완료: 오류 0 회, 경고 3 회, 소요 시간 0.599ms.
-[2021.05.16-13.42.11:080][552]LogSlate: Window '메시지 로그' being destroyed
-[2021.05.16-13.42.11:084][552]LogSlate: Window '메시지 로그' being destroyed
-[2021.05.16-13.42.37:104][643]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.42.39:024][868]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
-[2021.05.16-13.42.40:738][ 70]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle1)
-[2021.05.16-13.43.45:529][337]LogEditorViewport: Clicking on Actor (LMB): Boss (Boss1)
-[2021.05.16-13.44.19:564][299]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
-[2021.05.16-13.44.19:601][299]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelAE43038A47696600275AB193ECB23E0F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
-[2021.05.16-13.44.19:610][299]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
-[2021.05.16-13.44.19:767][299]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltDataD76B1CCD46FA085490C3FDAF7E09CAFF.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
-[2021.05.16-13.44.19:776][299]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
-[2021.05.16-13.44.19:776][299]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
-[2021.05.16-13.44.19:776][299]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
+[2021.05.16-15.08.24:542][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.16-15.08.24:564][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2021.05.16-15.08.24:568][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.16-15.08.24:568][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.17ms.
+[2021.05.16-15.08.24:568][  0]LogFileHelpers: Loading map 'GameLevel' took 0.519
+[2021.05.16-15.08.24:571][  0]LogUnrealEdMisc: Total Editor Startup Time, took 13.302
+[2021.05.16-15.08.24:692][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.16-15.08.24:699][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.16-15.08.24:708][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.16-15.08.24:716][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.16-15.08.24:722][  0]LogCollectionManager: Loaded 0 collections in 0.001797 seconds
+[2021.05.16-15.08.24:734][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Saved/Collections/' took 0.00s
+[2021.05.16-15.08.24:734][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Developers/조준현/Collections/' took 0.00s
+[2021.05.16-15.08.24:734][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Collections/' took 0.00s
+[2021.05.16-15.08.24:735][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 3446 classes and 826 folders.
+[2021.05.16-15.08.24:738][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.05.16-15.08.24:857][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.05.16-15.08.24:860][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2021.05.16-15.08.24:970][  0]LogSlate: Took 0.000168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.05.16-15.08.24:988][  0]LogSlate: Took 0.017188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2021.05.16-15.08.25:007][  0]LogSlate: Took 0.017619 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2021.05.16-15.08.25:008][  0]LogSlate: Took 0.000196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.05.16-15.08.25:010][  0]LogSlate: Took 0.001072 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.05.16-15.08.25:011][  0]LogSlate: Took 0.001022 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.05.16-15.08.25:054][  0]LogSlate: Took 0.017065 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2021.05.16-15.08.25:117][  0]LogRenderer: Reallocating scene render targets to support 1376x616 Format 10 NumSamples 1 (Frame:1).
+[2021.05.16-15.08.25:255][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.05.16-15.08.25:255][  0]LogLoad: (Engine Initialization) Total time: 13.99 seconds
+[2021.05.16-15.08.25:255][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.05.16-15.08.25:308][  0]LogAssetRegistry: Asset discovery search completed in 10.7479 seconds
+[2021.05.16-15.08.25:313][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.05.16-15.08.25:318][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.05.16-15.08.25:610][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.34s

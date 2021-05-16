@@ -66,13 +66,6 @@ void ABoss::MakeMap()
 			}
 		}
 	}
-
-	/*for (int i = 0; i < 10; ++i) {
-		for (int j = 0; j < 10; ++j) {
-			UE_LOG(LogTemp, Warning, TEXT("%s"), *RealMap[i][j].ToString());
-		}
-		UE_LOG(LogTemp, Warning, TEXT("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"));
-	}*/
 }
 
 void ABoss::FindPlayer()
@@ -280,33 +273,39 @@ void ABoss::BeginPlay()
 
 	//////////////////////////////////////////////////////////////////////
 
-	PathIdx = 0;
+	PathIdx = 1;
 
 	MakeMap();
 	FindPlayer();
 	auto ret = Regulate();
 
-	/*FStructNode s;
-	s.first = 2;
-	s.second = 7;
-	FStructNode g;
-	g.first = 9;
-	g.second = 4;*/
-
 	UE_LOG(LogTemp, Warning, TEXT("%d %d %d %d"), ret[0].first, ret[0].second, ret[1].first, ret[1].second);
 
 	AStar(Map, ret[0], ret[1]);
+
+	/*for (int i = 0; i < Path.Num(); ++i) {
+		RealGoal = RealMap[Path[i].second][Path[i].first];
+		UE_LOG(LogTemp, Warning, TEXT("RealGoal: %s"), *RealGoal.ToString());
+
+	}*/
+
+	bMoveReady = true;
+}
+
+void ABoss::SetBMoveReady() 
+{
+	bMoveReady = true;
 }
 
 void ABoss::SetRealGoal()
 {
-	if (this->GetActorLocation() == RealGoal) {
+	if (Path.Num() > PathIdx) {
 		PathIdx++;
 	}
 	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
 	RealGoal.Z = TargetLocation.Z;
 
-
+	bMoveReady = false;
 }
 
 // Called every frame+
@@ -314,9 +313,17 @@ void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	Delta += DeltaTime;
+	if (Delta > 1.5f) {
+		Delta = 0.f;
+		bMoveReady = true;
+	}
+
 	FacePlayer();
 
-	SetRealGoal();
+	if (bMoveReady) {
+		SetRealGoal();
+	}
 
 	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 2.5f);
 
