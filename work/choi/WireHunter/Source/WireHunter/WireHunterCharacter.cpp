@@ -465,8 +465,11 @@ void AWireHunterCharacter::Climb()
 	}
 	else
 	{
+		GetCharacterMovement()->bOrientRotationToMovement = true;
 		SetisClimbing(false);
-		GetCharacterMovement()->AddForce(GetCppWallNormal() * 10000000);
+		//GetCharacterMovement()->AddForce(GetCppWallNormal() * 50000000);
+		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000).ToString()));
+		GetCharacterMovement()->AddForce(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000);
 	}
 }
 
@@ -480,15 +483,17 @@ void AWireHunterCharacter::ClimbTrace()
 	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
 
 
+
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
 	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 	if (Hit.bBlockingHit)
 	{
+		GetCharacterMovement()->bOrientRotationToMovement = false;
 		BreakHook();
 		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
-		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 		SetisClimbing(true);
 		SetFloatingPos(GetActorLocation());
 	}
@@ -503,10 +508,11 @@ void AWireHunterCharacter::UpdateWallNormal()
 	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
 
 
+
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 	if (Hit.bBlockingHit)
 	{
 		SetCppWallNormal(Hit.Normal);
@@ -518,16 +524,16 @@ void AWireHunterCharacter::LedgeTrace()
 	FHitResult Hit;
 
 	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 3.f)) - FVector(0.f, 0.f, 100.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 100.f);
-
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) - FVector(0.f, 0.f, 600.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 600.f);
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
 	if (!Hit.bBlockingHit)
 	{
+		//PlayAnimMontage(LedgeClimb, 1, NAME_None);
 		SetisClimbing(false);
 	}
 }
