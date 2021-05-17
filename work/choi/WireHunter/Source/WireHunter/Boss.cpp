@@ -329,7 +329,7 @@ void ABoss::Tick(float DeltaTime)
 	FacePlayer();
 
 	Delta += DeltaTime;
-	if (Delta > 2.f) {
+	if (Delta > 1.5f) {
 		Delta = 0.f;
 		bMoveReady = true;
 	}
@@ -340,7 +340,7 @@ void ABoss::Tick(float DeltaTime)
 
 	DoAStar();
 
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.f);
+	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.5f);
 
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 

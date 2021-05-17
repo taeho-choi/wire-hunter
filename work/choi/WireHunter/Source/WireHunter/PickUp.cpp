@@ -4,6 +4,7 @@
 #include "PickUp.h"
 #include "Components/BoxComponent.h"
 #include "TimerManager.h"
+#include "WireHunterCharacter.h"
 
 // Sets default values
 APickUp::APickUp()
@@ -47,8 +48,11 @@ void APickUp::Tick(float DeltaTime)
 
 void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-	PickupMesh->SetVisibility(false);
+	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+	{
+		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+		PickupMesh->SetVisibility(false);
+	}
 }
 
 void APickUp::RandomSpawn()

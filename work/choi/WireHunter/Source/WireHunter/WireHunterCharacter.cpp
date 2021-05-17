@@ -23,6 +23,7 @@
 #include "Math/UnrealMathUtility.h"
 #include "Components/SceneComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Boss.h"
 
 
 
@@ -92,7 +93,7 @@ void AWireHunterCharacter::BeginPlay()
 	HealthBar->SetOwnerCharacter(this);
 
 	TimerBetweenShots = 0.1f;
-	Health = 5.f;
+	Health = 30.f;
 
 	SetFloatingPos(GetActorLocation());
 }
@@ -174,11 +175,12 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
 	// Game Over
 	if (Health <= 0
-		|| GetActorLocation().X < -3000.f
-		|| GetActorLocation().X > 50000.f
-		|| GetActorLocation().Y < -2000.f
-		|| GetActorLocation().Y > 50000.f
-		|| GetActorLocation().Z < 300.f)
+		//|| GetActorLocation().X < -3000.f
+		//|| GetActorLocation().X > 50000.f
+		//|| GetActorLocation().Y < -2000.f
+		//|| GetActorLocation().Y > 50000.f
+		//|| GetActorLocation().Z < 300.f)
+		)
 	{
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 	}
@@ -285,7 +287,7 @@ void AWireHunterCharacter::FireShot()
 
 void AWireHunterCharacter::WireTrace()
 {
-	const float WireRange = 12000.f;
+	const float WireRange = 7000.f;
 	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
 	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
 
@@ -307,7 +309,10 @@ void AWireHunterCharacter::WireTrace()
 			WirePointLight->AttenuationRadius = 30.f;
 		}
 
-		WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal * 15);
+		if (WireHit.Actor->GetName() != FString(TEXT("Boss_1")))
+		{
+			WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal * 15);
+		}
 		//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
 	}
 	else
@@ -523,7 +528,7 @@ void AWireHunterCharacter::UpdateWallNormal()
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 	if (Hit.bBlockingHit)
 	{
 		SetCppWallNormal(Hit.Normal);
@@ -541,7 +546,7 @@ void AWireHunterCharacter::LedgeTrace()
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
+	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
 	if (!Hit.bBlockingHit)
 	{
 		//PlayAnimMontage(LedgeClimb, 1, NAME_None);

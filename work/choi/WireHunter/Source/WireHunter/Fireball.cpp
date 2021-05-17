@@ -7,7 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "WireHunterCharacter.h"
 #include "Kismet/KismetMathLibrary.h"
-#include "Obstacle.h"
+#include "Boss.h"
 
 // Sets default values
 AFireball::AFireball()
@@ -27,8 +27,11 @@ AFireball::AFireball()
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
 	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/StarterContent/Materials/M_Fireball.M_Fireball'"));
+	static ConstructorHelpers::FObjectFinder<UParticleSystem>Particle(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
 	UStaticMesh* Asset = MeshAsset.Object;
 	UMaterial* Material = MaterialAsset.Object;
+	UParticleSystem* ParticleAsset = Particle.Object;
+	ImpactParticle = ParticleAsset;
 	FireballMesh->SetStaticMesh(Asset);
 	FireballMesh->SetMaterial(0, Material);
 	FireballMesh->SetWorldScale3D(FVector(1.f, 1.f, 1.f));
@@ -50,7 +53,6 @@ void AFireball::BeginPlay()
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 	TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
 	SetActorRotation(TargetRotation);
-
 }
 
 // Called every frame
@@ -58,12 +60,16 @@ void AFireball::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 40));
+	if (GetActorLocation().Z < 0.f)
+	{
+		this->Destroy();
+	}
 
 }
 
 void AFireball::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()) || OtherActor->IsA(AObstacle::StaticClass()))
+	if (!OtherActor->IsA(ABoss::StaticClass()))
 	{
 		if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
 		{
@@ -72,11 +78,10 @@ void AFireball::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, U
 			TargetCharacter->BreakHook();
 			TargetCharacter->SetisClimbing(false);
 			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
 		}
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
 		this->Destroy();
 	}
-
 }
 

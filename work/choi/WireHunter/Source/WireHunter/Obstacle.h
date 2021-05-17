@@ -13,5 +13,4 @@ UCLASS()
 class WIREHUNTER_API AObstacle : public AStaticMeshActor
 {
 	GENERATED_BODY()
-	
 };
