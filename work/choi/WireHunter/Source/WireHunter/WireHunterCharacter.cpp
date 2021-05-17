@@ -171,6 +171,17 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	}
 
 	WireTrace();
+
+	// Game Over
+	if (Health <= 0
+		|| GetActorLocation().X < -3000.f
+		|| GetActorLocation().X > 50000.f
+		|| GetActorLocation().Y < -2000.f
+		|| GetActorLocation().Y > 50000.f
+		|| GetActorLocation().Z < 300.f)
+	{
+		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+	}
 }
 
 
