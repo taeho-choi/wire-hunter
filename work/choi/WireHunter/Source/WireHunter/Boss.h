@@ -61,6 +61,10 @@ private:
 
 	bool bAStarReady;
 
+	float Top;
+
+	bool bFireballReady;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -91,8 +95,6 @@ public:
 	float FindDistance(FVector a, FVector b);
 
 	void SetRealGoal();
-
-	void SetBMoveReady();
 
 	void DoAStar();
 };

@@ -270,11 +270,15 @@ void ABoss::BeginPlay()
 	//////////////////////////////////////////////////////////////////////
 
 	MakeMap();
-	
+
+	Top = 17000.f;
+
+	bFireballReady = false;
+
 	bAStarReady = true;
 	DoAStar();
 
-	GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
+	//GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
 }
 
 void ABoss::DoAStar()
@@ -284,39 +288,37 @@ void ABoss::DoAStar()
 		FindPlayer();
 		auto ret = Regulate();
 
+		Spawn();
+
 		UE_LOG(LogTemp, Warning, TEXT("%d %d %d %d"), ret[0].first, ret[0].second, ret[1].first, ret[1].second);
 
 		AStar(Map, ret[0], ret[1]);
 
-		/*for (int i = 0; i < Path.Num(); ++i) {
+		/*for (int i = 0; i < Path.Nusm(); ++i) {
 			RealGoal = RealMap[Path[i].second][Path[i].first];
 			UE_LOG(LogTemp, Warning, TEXT("RealGoal: %s"), *RealGoal.ToString());
 
 		}*/
-
-		bMoveReady = true;
-		bAStarReady = false;
+		bFireballReady = true;
 	}
-}
-
-void ABoss::SetBMoveReady() 
-{
-	bMoveReady = true;
+	bAStarReady = false;
 }
 
 void ABoss::SetRealGoal()
 {
-	if (Path.Num()-1 > PathIdx) {
+	if (Path.Num() - 1 > PathIdx) {
 		PathIdx++;
 	}
 	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
 	RealGoal.Z = TargetLocation.Z;
 
-	bMoveReady = false;
-
 	if (Path.Num() - 1 == PathIdx) {
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *this->GetActorLocation().ToString());
+
 		bAStarReady = true;
 	}
+
+	bMoveReady = false;
 }
 
 // Called every frame+
@@ -327,7 +329,7 @@ void ABoss::Tick(float DeltaTime)
 	FacePlayer();
 
 	Delta += DeltaTime;
-	if (Delta > 4.f) {
+	if (Delta > 2.f) {
 		Delta = 0.f;
 		bMoveReady = true;
 	}
@@ -353,19 +355,22 @@ void ABoss::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABoss::Spawn()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Spawned"));
-	if (ToSpawn)
-	{
-		UWorld* world = GetWorld();
-		if (world)
+	if (bFireballReady) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Spawned"));
+		if (ToSpawn)
 		{
-			FActorSpawnParameters spawnParams;
-			spawnParams.Owner = this;
+			UWorld* world = GetWorld();
+			if (world)
+			{
+				FActorSpawnParameters spawnParams;
+				spawnParams.Owner = this;
 
-			FRotator rot;
-			FVector spawnLocation = GetActorLocation();
+				FRotator rot;
+				FVector spawnLocation = GetActorLocation();
 
-			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
+				world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
+			}
 		}
 	}
+	bFireballReady = false;
 }
