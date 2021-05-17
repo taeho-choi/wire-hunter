@@ -310,7 +310,7 @@ void ABoss::SetRealGoal()
 		PathIdx++;
 	}
 	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
-	RealGoal.Z = TargetLocation.Z;
+	RealGoal.Z = TargetLocation.Z + 800.f;
 
 	if (Path.Num() - 1 == PathIdx) {
 		UE_LOG(LogTemp, Warning, TEXT("%s"), *this->GetActorLocation().ToString());
