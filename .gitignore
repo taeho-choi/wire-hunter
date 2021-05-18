@@ -74,8 +74,7 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # 임의 추가
-/Saved
-/Intermediate
-/.vs
-/Build
-/Plugins
+Binaries/
+Intermediate/
+Build/
+DerivedDataCache
