@@ -77,4 +77,4 @@ DerivedDataCache/*
 Binaries/
 Intermediate/
 Build/
-DerivedDataCache
+DerivedDataCache/
