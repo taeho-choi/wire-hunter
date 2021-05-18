@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5F82DDB4-720D-40F5-A069-C7198315C99E}</ProjectGuid>
+    <ProjectGuid>{237AFF2F-A3A6-43E2-9EC9-F245C9CFCEE6}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>WireHunter</RootNamespace>
     <PlatformToolset>v142</PlatformToolset>
