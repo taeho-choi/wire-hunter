@@ -17,7 +17,7 @@ APickUp::APickUp()
 	PickupRoot->SetWorldScale3D(FVector(3.f, 3.f, 3.f));
 	
 	PickupMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PickupMesh"));
-	PickupMesh->AttachToComponent(PickupRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	PickupMesh->SetupAttachment(PickupRoot);
 	PickupMesh->SetVisibility(false);
 	PickupMesh->SetWorldScale3D(FVector(7.f, 7.f, 7.f));
 	PickupMesh->SetWorldLocation(GetActorLocation() + FVector(0.f, 0.f, -35.f));
@@ -26,7 +26,7 @@ APickUp::APickUp()
 	PickupBox = CreateDefaultSubobject<UBoxComponent>(TEXT("PuckupBox"));
 	PickupBox->SetGenerateOverlapEvents(true);
 	PickupBox->OnComponentBeginOverlap.AddDynamic(this, &APickUp::OnPlayerEnterPickupBox);
-	PickupBox->AttachToComponent(PickupRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	PickupBox->SetupAttachment(PickupRoot);
 	PickupBox->SetWorldScale3D(FVector(0.5f, 0.5f, 1.f));
 
 	isSpawned = false;

@@ -20,7 +20,7 @@ AFireball::AFireball()
 	FireballRoot->SetWorldScale3D(FVector(3.f, 3.f, 3.f));
 
 	FireballMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("FireballMesh"));
-	FireballMesh->AttachToComponent(FireballRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	FireballMesh->SetupAttachment(FireballRoot);
 	FireballMesh->SetWorldScale3D(FVector(7.f, 7.f, 7.f));
 	FireballMesh->SetWorldLocation(GetActorLocation() + FVector(0.f, 0.f, 0.f));
 	FireballMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -41,7 +41,7 @@ AFireball::AFireball()
 	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
 	SphereCollision->SetGenerateOverlapEvents(true);
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AFireball::OnHit);
-	SphereCollision->AttachToComponent(FireballRoot, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+	SphereCollision->SetupAttachment(FireballRoot);
 	SphereCollision->SetWorldScale3D(FVector(1.6f, 1.6f, 1.6f));
 }
 

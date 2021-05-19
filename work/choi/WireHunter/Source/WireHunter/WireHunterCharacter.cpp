@@ -60,10 +60,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
-	HealthWidget->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	HealthWidget->SetupAttachment(RootComponent);
 
 	cppWire = CreateDefaultSubobject<UCableComponent>(TEXT("cppWire"));
-	cppWire->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+	cppWire->SetupAttachment(this->GetRootComponent());
 	//cppWire->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
 	cppWire->SetAttachEndTo(NULL, NAME_None);
 	cppWire->bAttachStart = true;
@@ -75,7 +75,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	//cppWire->bEnableCollision = true;
 
 	WirePointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("WirePointLight"));
-	WirePointLight->AttachToComponent(this->GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+	WirePointLight->SetupAttachment(this->GetRootComponent());
 	WirePointLight->SetLightColor(FLinearColor(0.f, 255.f, 0.f));
 	WirePointLight->SetWorldLocation(FVector(108.f, 0.f, -76.f));
 	WirePointLight->SetVisibility(false);
