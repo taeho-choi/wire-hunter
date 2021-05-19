@@ -36,7 +36,7 @@ APickUp::APickUp()
 void APickUp::BeginPlay()
 {
 	Super::BeginPlay();
-	GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, true, 0.f);
+	GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 0.f);
 }
 
 // Called every frame
@@ -52,6 +52,7 @@ void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor
 	{
 		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
 		PickupMesh->SetVisibility(false);
+		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 0.f);
 	}
 }
 

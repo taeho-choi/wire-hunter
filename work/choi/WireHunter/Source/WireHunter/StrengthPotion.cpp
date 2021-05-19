@@ -23,10 +23,15 @@ void AStrengthPotion::BeginPlay()
 
 void AStrengthPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-	//TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 100.0f);
-	PickupMesh->SetVisibility(false);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Ate StrengthPotion!"));
+	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+	{
+		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+		TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 10.0f);
+		PickupMesh->SetVisibility(false);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Ate StrengthPotion!"));
+		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
+	}
+
 }
 
 // Called every frame
