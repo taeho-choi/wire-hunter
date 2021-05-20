@@ -14,7 +14,7 @@
 #include "Boss.generated.h"
 
 UCLASS()
-class WIREHUNTER_API ABoss : public ACharacter
+class WIREHUNTER_API ABoss : public APawn
 {
 	GENERATED_BODY()
 
@@ -28,12 +28,25 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 		void Spawn();
+
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AFireball> ToSpawn;
 
 	FTimerHandle SpawnTimerHandle;
 
+	UPROPERTY(EditAnywhere)
+		USceneComponent* BossRoot;
+
+	UPROPERTY(EditAnywhere)
+		USkeletalMeshComponent* BossSkeletalMesh;
+
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float Health;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float MaxHealth = 100;
+
 private:
+
 	FVector TargetLocation;
 
 	FRotator TargetRotation;
@@ -97,4 +110,13 @@ public:
 	void SetRealGoal();
 
 	void DoAStar();
+
+	float GetHealth() const { return Health; }
+
+	void SetHealth(float value) { Health = value; }
+
+	float GetMaxHealth() const { return MaxHealth; }
+
+	void SetMaxHealth(float value) { MaxHealth = value; }
+
 };

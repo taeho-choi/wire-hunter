@@ -277,6 +277,27 @@ void AWireHunterCharacter::FireShot()
 
 	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
 	{
+		//if (!OtherActor->IsA(ABoss::StaticClass()))
+		//{
+		//	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+		//	{
+		//		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+		//		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
+		//		TargetCharacter->BreakHook();
+		//		TargetCharacter->SetisClimbing(false);
+		//		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+		//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
+		//	}
+		//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
+		//	this->Destroy();
+		//}
+		if (Hit.Actor->IsA(ABoss::StaticClass()))
+		{
+			ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
+			TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
+			GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), TargetBoss->GetHealth()));
+
+		}
 		if (ImpactParticle)
 		{
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));

@@ -7,11 +7,30 @@
 #include "Obstacle.h"
 #include "Runtime/Engine/Public/EngineUtils.h"
 
+
 // Sets default values
 ABoss::ABoss()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FireballRoot"));
+	RootComponent = BossRoot;
+
+
+	BossSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BossSkeletalMesh"));
+	BossSkeletalMesh->SetupAttachment(BossRoot);
+	BossSkeletalMesh->SetWorldScale3D(FVector(13.f, 13.f, 13.f));
+	BossSkeletalMesh->SetWorldRotation(FRotator(0.f, -90.f, 0.f));
+
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh>SkeletalMeshAsset(TEXT("SkeletalMesh'/Game/ThirdPersonCPP/AI/Boss_Rig.Boss_Rig'"));
+	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/GraphicResources/Boss/M_Boss.M_Boss'"));
+	USkeletalMesh* Asset = SkeletalMeshAsset.Object;
+	UMaterial* Material = MaterialAsset.Object;
+	BossSkeletalMesh->SetSkeletalMesh(Asset);
+	BossSkeletalMesh->SetMaterial(0, Material);
+
+	SetHealth(100);
 }
 
 void ABoss::MakeMap()
