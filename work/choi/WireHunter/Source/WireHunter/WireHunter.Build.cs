@@ -17,7 +17,7 @@ public class WireHunter : ModuleRules
 		//PrivateDependencyModuleNames.AddRange(new string[] { "CableComponent" });
 		//PrivateIncludePathModuleNames.AddRange(new string[] { "CableComponent" });
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "CableComponent"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "CableComponent", "Paper2D"});
 		PublicIncludePaths.AddRange(new string[] { "CableComponent/Public", "CableComponent/Classes" });
 
 	}
