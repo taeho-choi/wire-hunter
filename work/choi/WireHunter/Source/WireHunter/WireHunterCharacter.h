@@ -38,6 +38,10 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
 		class USceneCaptureComponent2D* MinimapCapture;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
+		class UPaperSpriteComponent* PlayerPointer;
+
+
 public:
 	AWireHunterCharacter();
 

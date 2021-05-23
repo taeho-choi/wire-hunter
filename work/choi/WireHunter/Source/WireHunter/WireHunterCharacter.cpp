@@ -25,7 +25,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "Boss.h"
-
+#include "PaperSpriteComponent.h"
+#include "PaperSprite.h"
 
 
 
@@ -88,6 +89,13 @@ AWireHunterCharacter::AWireHunterCharacter()
 	WirePointLight->SetLightColor(FLinearColor(0.f, 255.f, 0.f));
 	WirePointLight->SetWorldLocation(FVector(108.f, 0.f, -76.f));
 	WirePointLight->SetVisibility(false);
+
+	PlayerPointer = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("PlayerPointer"));
+	PlayerPointer->SetupAttachment(this->GetRootComponent());
+	PlayerPointer->SetWorldRotation(FRotator(0.f, 90.f, -90.f));
+	PlayerPointer->SetOwnerNoSee(true);
+	PlayerPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
+	PlayerPointer->SetWorldLocation(FVector(0.f, 0.f, 10000.f));
 
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 

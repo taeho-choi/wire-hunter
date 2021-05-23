@@ -6,6 +6,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Obstacle.h"
 #include "Runtime/Engine/Public/EngineUtils.h"
+#include "PaperSpriteComponent.h"
 
 
 // Sets default values
@@ -29,6 +30,15 @@ ABoss::ABoss()
 	UMaterial* Material = MaterialAsset.Object;
 	BossSkeletalMesh->SetSkeletalMesh(Asset);
 	BossSkeletalMesh->SetMaterial(0, Material);
+
+	BossPointer = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("BossPointer"));
+	BossPointer->SetupAttachment(this->GetRootComponent());
+	BossPointer->SetWorldRotation(FRotator(0.f, 90.f, -90.f));
+	BossPointer->SetOwnerNoSee(true);
+	BossPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
+	BossPointer->SetWorldLocation(FVector(0.f, 0.f, 2000.f));
+	BossPointer->BodyInstance.bLockXRotation = true;
+	BossPointer->BodyInstance.bLockYRotation = true;
 
 	SetHealth(100);
 }
@@ -344,7 +354,6 @@ void ABoss::SetRealGoal()
 void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	FacePlayer();
 
 	Delta += DeltaTime;
