@@ -41,6 +41,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
 		class UPaperSpriteComponent* PlayerPointer;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gun, meta = (AllowPrivateAccess = "true"))
+		class USkeletalMeshComponent* Gun;
+
 
 public:
 	AWireHunterCharacter();
@@ -81,6 +84,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
 	class UParticleSystem* ImpactParticle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
+	class UParticleSystem* MuzzleParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	float TimerBetweenShots;
@@ -214,7 +220,6 @@ public:
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
 	void HookWire();
-	void UpdateWirePosition();
 	void WireSwing();
 	void BreakHook();
 	void Withdraw();

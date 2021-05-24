@@ -10,6 +10,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "Components/PointLightComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
@@ -97,6 +98,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	PlayerPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
 	PlayerPointer->SetWorldLocation(FVector(0.f, 0.f, 10000.f));
 
+	Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
+	Gun->SetupAttachment(this->GetMesh());
+	Gun->AttachTo(this->GetMesh(), TEXT("Rifle"), EAttachLocation::SnapToTargetIncludingScale, true);
+
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -177,7 +182,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
 	//}
 
-	//UpdateWirePosition();
 	if (cppHooked)
 	{
 		WireSwing();
@@ -320,6 +324,11 @@ void AWireHunterCharacter::FireShot()
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
 		}
 	}
+
+	if (MuzzleParticle)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle, Gun->GetSocketTransform(FName("b_gun_muzzleflash")));
+	}
 }
 
 void AWireHunterCharacter::WireTrace()
@@ -404,7 +413,7 @@ void AWireHunterCharacter::HookWire()
 				//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
 
 				FVector NewLocation;
-				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
+				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
 				cppWire->SetWorldLocation(GetCppHookLocation());
 				//cppWire->EndLocation = GetActorLocation();
 				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
@@ -421,38 +430,6 @@ void AWireHunterCharacter::HookWire()
 			else
 			{
 				// 와이어 회수 상태로
-			}
-		}
-	}
-}
-
-void AWireHunterCharacter::UpdateWirePosition()
-{
-	if (GetCppHooked())
-	{
-		if (GetCppHookMoveFinished())
-		{
-			FRotator NewRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), GetCppHookLocation());
-			FVector NewLocation = NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(),
-				GetWorld()->GetDeltaSeconds(), 5000.f);
-			cppWire->SetWorldLocationAndRotation(NewLocation, NewRotation);
-		}
-		else
-		{
-			FVector dis = cppWire->GetComponentLocation() - GetCppHookLocation();
-			if (dis.Size() <= 100.f)
-			{
-				SetCppHookMoveFinished(true);
-				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("HookMoveFinished"));
-			}
-			else
-			{
-				FVector NewLocation;
-				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 10.f);
-				cppWire->SetWorldLocation(NewLocation);
-				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
-				SetCppHookedWireLength(NewWireLength);
-				SetCppHookMoveFinished(false);
 			}
 		}
 	}
@@ -518,11 +495,11 @@ void AWireHunterCharacter::Climb()
 	}
 	else
 	{
-		GetCharacterMovement()->bOrientRotationToMovement = true;
+		//GetCharacterMovement()->bOrientRotationToMovement = true;
 		SetisClimbing(false);
-		//GetCharacterMovement()->AddForce(GetCppWallNormal() * 50000000);
 		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000).ToString()));
-		GetCharacterMovement()->AddForce(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000);
+		//GetCharacterMovement()->AddForce(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000);
+		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);
 	}
 }
 
@@ -543,7 +520,7 @@ void AWireHunterCharacter::ClimbTrace()
 	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 	if (Hit.bBlockingHit)
 	{
-		GetCharacterMovement()->bOrientRotationToMovement = false;
+		//GetCharacterMovement()->bOrientRotationToMovement = false;
 		BreakHook();
 		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
 		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
