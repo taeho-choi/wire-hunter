@@ -5,6 +5,8 @@
 #include "Components/BoxComponent.h"
 #include "TimerManager.h"
 #include "WireHunterCharacter.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APickUp::APickUp()
@@ -48,12 +50,6 @@ void APickUp::Tick(float DeltaTime)
 
 void APickUp::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
-	{
-		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-		PickupMesh->SetVisibility(false);
-		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 0.f);
-	}
 }
 
 void APickUp::RandomSpawn()

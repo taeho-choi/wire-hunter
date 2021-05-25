@@ -99,8 +99,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	PlayerPointer->SetWorldLocation(FVector(0.f, 0.f, 10000.f));
 
 	Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
-	Gun->SetupAttachment(this->GetMesh());
-	Gun->AttachTo(this->GetMesh(), TEXT("Rifle"), EAttachLocation::SnapToTargetIncludingScale, true);
+	Gun->SetupAttachment(this->GetMesh(), TEXT("Rifle"));
 
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 

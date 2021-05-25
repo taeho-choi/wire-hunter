@@ -2,6 +2,8 @@
 
 
 #include "StrengthPotion.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AStrengthPotion::AStrengthPotion()
@@ -23,13 +25,14 @@ void AStrengthPotion::BeginPlay()
 
 void AStrengthPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+	if (PickupMesh->IsVisible() == true && OtherActor->IsA(AWireHunterCharacter::StaticClass()))
 	{
 		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
 		TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 10.0f);
 		PickupMesh->SetVisibility(false);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Ate StrengthPotion!"));
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickParticle, GetTransform());
 	}
 
 }

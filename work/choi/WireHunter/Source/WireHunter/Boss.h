@@ -40,8 +40,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 		USkeletalMeshComponent* BossSkeletalMesh;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
-		class UPaperSpriteComponent* BossPointer;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
+	//	class UPaperSpriteComponent* BossPointer;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float Health;

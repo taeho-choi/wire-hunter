@@ -2,6 +2,8 @@
 
 
 #include "HealingPotion.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AHealingPotion::AHealingPotion()
@@ -23,13 +25,14 @@ void AHealingPotion::BeginPlay()
 
 void AHealingPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+	if (PickupMesh->IsVisible() == true && OtherActor->IsA(AWireHunterCharacter::StaticClass()))
 	{
 		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
 		TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 10.0f);
 		PickupMesh->SetVisibility(false);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Ate HealingPotion!"));
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickParticle, GetTransform());
 	}
 }
 

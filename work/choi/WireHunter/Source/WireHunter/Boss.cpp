@@ -31,16 +31,17 @@ ABoss::ABoss()
 	BossSkeletalMesh->SetSkeletalMesh(Asset);
 	BossSkeletalMesh->SetMaterial(0, Material);
 
-	BossPointer = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("BossPointer"));
-	BossPointer->SetupAttachment(this->GetRootComponent());
-	BossPointer->SetWorldRotation(FRotator(0.f, 90.f, -90.f));
-	BossPointer->SetOwnerNoSee(true);
-	BossPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
-	BossPointer->SetWorldLocation(FVector(0.f, 0.f, 2000.f));
-	BossPointer->BodyInstance.bLockXRotation = true;
-	BossPointer->BodyInstance.bLockYRotation = true;
+	//BossPointer = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("BossPointer"));
+	//BossPointer->SetupAttachment(this->GetRootComponent());
+	//BossPointer->SetWorldRotation(FRotator(0.f, 90.f, -90.f));
+	//BossPointer->SetOwnerNoSee(true);
+	//BossPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
+	//BossPointer->SetWorldLocation(FVector(0.f, 0.f, 2000.f));
+	//BossPointer->BodyInstance.bLockXRotation = true;
+	//BossPointer->BodyInstance.bLockYRotation = true;
 
 	SetHealth(100);
+	BossSkeletalMesh->SetSimulatePhysics(false);
 }
 
 void ABoss::MakeMap()
@@ -354,25 +355,37 @@ void ABoss::SetRealGoal()
 void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	FacePlayer();
 
-	Delta += DeltaTime;
-	if (Delta > 1.5f) {
-		Delta = 0.f;
-		bMoveReady = true;
+	if (Health > 0)
+	{
+		FacePlayer();
+
+		Delta += DeltaTime;
+		if (Delta > 1.5f) {
+			Delta = 0.f;
+			bMoveReady = true;
+		}
+
+		if (bMoveReady) {
+			SetRealGoal();
+		}
+
+		DoAStar();
+
+		auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.5f);
+
+		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
+
+		this->SetActorLocationAndRotation(movement, rot);
 	}
-
-	if (bMoveReady) {
-		SetRealGoal();
+	else
+	{
+		BossSkeletalMesh->SetSimulatePhysics(true);
+		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f)
+		{
+			Destroy();
+		}
 	}
-
-	DoAStar();
-
-	auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.5f);
-
-	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
-
-	this->SetActorLocationAndRotation(movement, rot);
 }
 
 // Called to bind functionality to input
