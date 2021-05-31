@@ -14,5 +14,15 @@ class WIREHUNTER_API ABossAIController : public AAIController
 {
 	GENERATED_BODY()
 
-	void doBT();
+public:
+	ABossAIController();
+
+	virtual void OnPossess(APawn* InPawn) override;
+
+private:
+	UPROPERTY()
+		class UBehaviorTree* BTAsset;
+
+	UPROPERTY()
+		class UBlackboardData* BBAsset;
 };
