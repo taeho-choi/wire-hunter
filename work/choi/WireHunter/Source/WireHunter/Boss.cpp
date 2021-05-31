@@ -8,7 +8,6 @@
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
 
-
 // Sets default values
 ABoss::ABoss()
 {
@@ -17,7 +16,6 @@ ABoss::ABoss()
 
 	BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FireballRoot"));
 	RootComponent = BossRoot;
-
 
 	BossSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BossSkeletalMesh"));
 	BossSkeletalMesh->SetupAttachment(BossRoot);
@@ -295,43 +293,20 @@ void ABoss::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Controller = Cast<ABossAIController>(GetController());
-
 	//////////////////////////////////////////////////////////////////////
 
 	MakeMap();
-
-	Top = 17000.f;
-
-	bFireballReady = false;
-
-	bAStarReady = true;
-	DoAStar();
 
 	//GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
 }
 
 void ABoss::DoAStar()
 {
-	if (bAStarReady) {
-		PathIdx = 0;
-		FindPlayer();
-		auto ret = Regulate();
+	FindPlayer();
+	
+	auto ret = Regulate();
 
-		Spawn();
-
-		UE_LOG(LogTemp, Warning, TEXT("%d %d %d %d"), ret[0].first, ret[0].second, ret[1].first, ret[1].second);
-
-		AStar(Map, ret[0], ret[1]);
-
-		/*for (int i = 0; i < Path.Nusm(); ++i) {
-			RealGoal = RealMap[Path[i].second][Path[i].first];
-			UE_LOG(LogTemp, Warning, TEXT("RealGoal: %s"), *RealGoal.ToString());
-
-		}*/
-		bFireballReady = true;
-	}
-	bAStarReady = false;
+	AStar(Map, ret[0], ret[1]);
 }
 
 void ABoss::SetRealGoal()
@@ -341,14 +316,6 @@ void ABoss::SetRealGoal()
 	}
 	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
 	RealGoal.Z = TargetLocation.Z + 800.f;
-
-	if (Path.Num() - 1 == PathIdx) {
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *this->GetActorLocation().ToString());
-
-		bAStarReady = true;
-	}
-
-	bMoveReady = false;
 }
 
 // Called every frame+
@@ -356,33 +323,13 @@ void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (Health > 0)
-	{
-		FacePlayer();
+	FacePlayer();
+	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
+	this->SetActorRotation(rot);
 
-		Delta += DeltaTime;
-		if (Delta > 1.5f) {
-			Delta = 0.f;
-			bMoveReady = true;
-		}
-
-		if (bMoveReady) {
-			SetRealGoal();
-		}
-
-		DoAStar();
-
-		auto movement = FMath::VInterpTo(this->GetActorLocation(), RealGoal, GetWorld()->GetDeltaSeconds(), 1.5f);
-
-		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
-
-		this->SetActorLocationAndRotation(movement, rot);
-	}
-	else
-	{
+	if (Health < 0){
 		BossSkeletalMesh->SetSimulatePhysics(true);
-		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f)
-		{
+		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f){
 			Destroy();
 		}
 	}
@@ -396,22 +343,16 @@ void ABoss::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABoss::Spawn()
 {
-	if (bFireballReady) {
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Spawned"));
-		if (ToSpawn)
-		{
-			UWorld* world = GetWorld();
-			if (world)
-			{
-				FActorSpawnParameters spawnParams;
-				spawnParams.Owner = this;
+	if (ToSpawn){
+		UWorld* world = GetWorld();
+		if (world){
+			FActorSpawnParameters spawnParams;
+			spawnParams.Owner = this;
 
-				FRotator rot;
-				FVector spawnLocation = GetActorLocation();
+			FRotator rot;
+			FVector spawnLocation = GetActorLocation();
 
-				world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
-			}
+			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
 		}
 	}
-	bFireballReady = false;
 }

@@ -49,37 +49,28 @@ protected:
 		float MaxHealth = 100;
 
 private:
+	char Map[10][10];
 
 	FVector TargetLocation;
-
 	FRotator TargetRotation;
-
-	ABossAIController* Controller;
-
 	FStructNode Start, Goal;
+
 	TArray<FStructWeight> Min;
-	TArray<FStructNode> Path;
 	TArray<FStructNode> Closed;
 	int ScoreF[10][10];
 	int ScoreG[10][10];
 	int ScoreH[10][10];
 
 	FVector RealMap[10][10];
-	char Map[10][10];//how to mark the player loc?
 
+	UPROPERTY(EditAnywhere)
 	FVector RealGoal;
 
+	UPROPERTY(EditAnywhere)
+	TArray<FStructNode> Path;
+
+	UPROPERTY(EditAnywhere)
 	int PathIdx;
-
-	bool bMoveReady;
-
-	float Delta;
-
-	bool bAStarReady;
-
-	float Top;
-
-	bool bFireballReady;
 
 public:
 	// Called every frame
@@ -110,9 +101,13 @@ public:
 
 	float FindDistance(FVector a, FVector b);
 
+	UFUNCTION(BlueprintCallable)
 	void SetRealGoal();
 
+	UFUNCTION(BlueprintCallable)
 	void DoAStar();
+
+	//
 
 	float GetHealth() const { return Health; }
 
@@ -121,5 +116,4 @@ public:
 	float GetMaxHealth() const { return MaxHealth; }
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
-
 };
