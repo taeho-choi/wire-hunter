@@ -63,14 +63,7 @@ private:
 
 	FVector RealMap[10][10];
 
-	UPROPERTY(EditAnywhere)
-	FVector RealGoal;
-
-	UPROPERTY(EditAnywhere)
 	TArray<FStructNode> Path;
-
-	UPROPERTY(EditAnywhere)
-	int PathIdx;
 
 public:
 	// Called every frame
@@ -102,10 +95,13 @@ public:
 	float FindDistance(FVector a, FVector b);
 
 	UFUNCTION(BlueprintCallable)
-	void SetRealGoal();
+	FVector GetGoal();
 
 	UFUNCTION(BlueprintCallable)
-	void DoAStar();
+		TArray<FStructNode> DoAStar();
+
+	UFUNCTION(BlueprintCallable)
+		FVector GetPath();
 
 	//
 

@@ -305,22 +305,37 @@ void ABoss::BeginPlay()
 	//GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
 }
 
-void ABoss::DoAStar()
+TArray<FStructNode> ABoss::DoAStar()
 {
 	FindPlayer();
 	
 	auto ret = Regulate();
 
 	AStar(Map, ret[0], ret[1]);
+
+	return Path;
 }
 
-void ABoss::SetRealGoal()
+FVector ABoss::GetGoal()
 {
-	if (Path.Num() - 1 > PathIdx) {
-		PathIdx++;
-	}
-	RealGoal = RealMap[Path[PathIdx].second][Path[PathIdx].first];
-	RealGoal.Z = TargetLocation.Z + 800.f;
+	FVector goal;
+	goal = RealMap[Path[Path.Num()-1].second][Path[Path.Num() - 1].first];
+	goal.Z = TargetLocation.Z + 1000.f;
+
+	return goal;
+}
+
+FVector ABoss::GetPath()////////////////////////////////////////////////////
+{
+	FVector path;
+	path = RealMap[Path[0].second][Path[0].first];
+	path.Z = TargetLocation.Z + 1000.f;
+
+	Path.RemoveAt(0);
+
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *path.ToString());
+
+	return path;
 }
 
 // Called every frame+
