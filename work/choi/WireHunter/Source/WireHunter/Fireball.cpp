@@ -84,4 +84,3 @@ void AFireball::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, U
 		this->Destroy();
 	}
 }
-
