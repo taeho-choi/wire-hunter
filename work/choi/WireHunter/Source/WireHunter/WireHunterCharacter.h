@@ -35,6 +35,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
 		class UAnimMontage* LedgeClimb;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+		class UAnimMontage* ReloadAnim;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
 		class USceneCaptureComponent2D* MinimapCapture;
 
@@ -53,6 +56,12 @@ public:
 
 	float GetMaxHealth() const { return MaxHealth; }
 	void SetMaxHealth(float val) { MaxHealth = val; }
+
+	float GetBullets() const { return Bullets; }
+	void SetBullets(float val) { Bullets = val; }
+
+	float GetMaxBullets() const { return MaxBullets; }
+	void SetMaxBullets(float val) { MaxBullets = val; }
 
 	// Floating
 	FVector GetFloatingPos() const { return FloatingPos; }
@@ -104,6 +113,10 @@ protected:
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float MaxHealth = 100;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		int MaxBullets = 30;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		int Bullets;
 
 	// Floating
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -174,6 +187,12 @@ public:
 	void StartFire();
 	void StopFire();
 	void FireShot();
+<<<<<<< Updated upstream
+=======
+	void Reload();
+	void Reloaded();
+
+>>>>>>> Stashed changes
 
 	FTimerHandle TimerHandle_HandleRefire;
 

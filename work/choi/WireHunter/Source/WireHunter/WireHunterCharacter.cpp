@@ -114,6 +114,7 @@ void AWireHunterCharacter::BeginPlay()
 
 	TimerBetweenShots = 0.1f;
 	Health = 30.f;
+	Bullets = 30;
 
 	SetFloatingPos(GetActorLocation());
 }
@@ -158,6 +159,9 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// Bind Withdraw
 	PlayerInputComponent->BindAction("Withdraw", IE_Pressed, this, &AWireHunterCharacter::PressWithdraw);
+
+	// Reload
+	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AWireHunterCharacter::Reload);
 }
 
 void AWireHunterCharacter::Tick(float DeltaTime)
@@ -285,48 +289,58 @@ void AWireHunterCharacter::StopFire()
 
 void AWireHunterCharacter::FireShot()
 {
-	FHitResult Hit;
-
-	const float GunRange = 50000.f;
-	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
-	const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
-
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-
-	if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+	if (GetBullets() > 0)
 	{
-		//if (!OtherActor->IsA(ABoss::StaticClass()))
-		//{
-		//	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
-		//	{
-		//		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-		//		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
-		//		TargetCharacter->BreakHook();
-		//		TargetCharacter->SetisClimbing(false);
-		//		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-		//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
-		//	}
-		//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
-		//	this->Destroy();
-		//}
-		if (Hit.Actor->IsA(ABoss::StaticClass()))
+		SetBullets(GetBullets() - 1);
+		FHitResult Hit;
+
+		const float GunRange = 50000.f;
+		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
+		const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
+
+		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
+		QueryParams.AddIgnoredActor(this);
+
+		if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
 		{
-			ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
-			TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
-			GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), TargetBoss->GetHealth()));
+			//if (!OtherActor->IsA(ABoss::StaticClass()))
+			//{
+			//	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
+			//	{
+			//		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+			//		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
+			//		TargetCharacter->BreakHook();
+			//		TargetCharacter->SetisClimbing(false);
+			//		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+			//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
+			//	}
+			//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
+			//	this->Destroy();
+			//}
+			if (Hit.Actor->IsA(ABoss::StaticClass()))
+			{
+				ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
+				TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
+				GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), TargetBoss->GetHealth()));
+
+			}
+			if (ImpactParticle)
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
+			}
 
 		}
-		if (ImpactParticle)
+
+		if (MuzzleParticle)
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle, Gun->GetSocketTransform(FName("b_gun_muzzleflash")));
 		}
 	}
+}
 
-	if (MuzzleParticle)
-	{
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle, Gun->GetSocketTransform(FName("b_gun_muzzleflash")));
-	}
+void AWireHunterCharacter::Reload()
+{
+	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
 void AWireHunterCharacter::WireTrace()
@@ -390,7 +404,8 @@ void AWireHunterCharacter::HookWire()
 			//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 			//QueryParams.AddIgnoredActor(this);
 			//GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-			////DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+			////
+
 			if (WireHit.bBlockingHit)
 			{
 				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
@@ -571,6 +586,7 @@ void AWireHunterCharacter::Knockback(FVector force)
 	GetCharacterMovement()->AddForce(force);
 }
 
+<<<<<<< Updated upstream
 //void AWireHunterCharacter::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 //{
 //	if (OtherActor->IsA(ABoss::StaticClass())) {
@@ -581,3 +597,6 @@ void AWireHunterCharacter::Knockback(FVector force)
 //		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
 //	}GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("On Hit"));
 //}
+=======
+
+>>>>>>> Stashed changes
