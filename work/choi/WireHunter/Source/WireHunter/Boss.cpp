@@ -8,6 +8,8 @@
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
 #include "BossAIController.h"
+#include "WireHunterCharacter.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values
 ABoss::ABoss()
@@ -30,14 +32,11 @@ ABoss::ABoss()
 	BossSkeletalMesh->SetSkeletalMesh(Asset);
 	BossSkeletalMesh->SetMaterial(0, Material);
 
-	//BossPointer = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("BossPointer"));
-	//BossPointer->SetupAttachment(this->GetRootComponent());
-	//BossPointer->SetWorldRotation(FRotator(0.f, 90.f, -90.f));
-	//BossPointer->SetOwnerNoSee(true);
-	//BossPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
-	//BossPointer->SetWorldLocation(FVector(0.f, 0.f, 2000.f));
-	//BossPointer->BodyInstance.bLockXRotation = true;
-	//BossPointer->BodyInstance.bLockYRotation = true;
+	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
+	SphereCollision->SetGenerateOverlapEvents(true);//½ºÄÌ·¹Å» ¸Þ½Ã¶û¸¸ false ÇÏ¸é µÉ µí. ÀÏ´Ü ¸ð¾çÀ¸·Î ¾È °ãÄ¡°Ô ÇØ³ð.
+	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
+	SphereCollision->SetupAttachment(BossRoot);
+	SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
 
 	SetHealth(100);
 	BossSkeletalMesh->SetSimulatePhysics(false);
@@ -355,6 +354,8 @@ void ABoss::Tick(float DeltaTime)
 			Destroy();
 		}
 	}
+
+	//DetectKick();
 }
 
 // Called to bind functionality to input
@@ -383,3 +384,44 @@ void ABoss::Lightning()
 {
 
 }
+
+void ABoss::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->IsA(AWireHunterCharacter::StaticClass())) {
+		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
+		TargetCharacter->BreakHook();
+		TargetCharacter->SetisClimbing(false);
+		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
+	}
+}
+
+//void ABoss::DetectKick()
+//{
+//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Kick!"));
+//	FHitResult hit;
+//
+//	const float range = 2000.f;
+//	FVector startTrace = BossRoot->GetComponentLocation();
+//	FVector endTrace = (BossRoot->GetForwardVector() * range) + startTrace;
+//
+//	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
+//	queryParams.AddIgnoredActor(this);
+//	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
+//	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+//
+//	if (hit.bBlockingHit)
+//	{
+//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!"));
+//		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
+//		{
+//			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
+//			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
+//			TargetCharacter->BreakHook();
+//			TargetCharacter->SetisClimbing(false);
+//			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+//			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Kick!"));
+//		}
+//	}
+//}

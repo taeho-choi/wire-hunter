@@ -44,7 +44,6 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gun, meta = (AllowPrivateAccess = "true"))
 		class USkeletalMeshComponent* Gun;
 
-
 public:
 	AWireHunterCharacter();
 
@@ -81,7 +80,6 @@ public:
 	bool GetHooked() const { return Hooked; }
 	void SetHooked(bool val) { Hooked = val; }
 
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
 	class UParticleSystem* ImpactParticle;
 
@@ -98,7 +96,6 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
-
 
 protected:
 
@@ -178,8 +175,6 @@ public:
 	void StopFire();
 	void FireShot();
 
-
-
 	FTimerHandle TimerHandle_HandleRefire;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
@@ -187,12 +182,6 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
-
-
-
-
-
-
 
 	// Convert Blueprint to C++
 
@@ -232,6 +221,8 @@ public:
 
 	void Knockback(FVector force);
 
+	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;
@@ -243,4 +234,3 @@ protected:
 	FVector cppWallNormal;
 	FHitResult WireHit;
 };
-

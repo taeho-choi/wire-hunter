@@ -28,8 +28,7 @@
 #include "Boss.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
-
-
+#include "Boss.h"
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -571,3 +570,14 @@ void AWireHunterCharacter::Knockback(FVector force)
 {
 	GetCharacterMovement()->AddForce(force);
 }
+
+//void AWireHunterCharacter::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+//{
+//	if (OtherActor->IsA(ABoss::StaticClass())) {
+//		this->SetHealth(this->GetHealth() - 1);
+//		this->BreakHook();
+//		this->SetisClimbing(false);
+//		this->Knockback((this->GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
+//	}GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("On Hit"));
+//}

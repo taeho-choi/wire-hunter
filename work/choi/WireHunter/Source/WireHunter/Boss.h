@@ -40,8 +40,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 		USkeletalMeshComponent* BossSkeletalMesh;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
-	//	class UPaperSpriteComponent* BossPointer;
+	UPROPERTY(EditAnywhere)
+		UShapeComponent* SphereCollision;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float Health;
@@ -116,4 +116,9 @@ public:
 	float GetMaxHealth() const { return MaxHealth; }
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
+
+	void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	/*UFUNCTION(BlueprintCallable)
+	void DetectKick();*/
 };
