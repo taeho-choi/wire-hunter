@@ -10,6 +10,7 @@
 #include "Obstacle.h"
 #include "TimerManager.h"
 #include "Fireball.h"
+#include "Lightning.h"
 
 #include "Boss.generated.h"
 
@@ -32,7 +33,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AFireball> ToSpawn;
 
-	FTimerHandle SpawnTimerHandle;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<ALightning> ToLightning;
 
 	UPROPERTY(EditAnywhere)
 		USceneComponent* BossRoot;
@@ -65,6 +67,8 @@ private:
 
 	TArray<FStructNode> Path;
 
+	TArray<FVector> Obstacles;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -73,7 +77,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintCallable)
-	FVector FindPlayer();
+		FVector FindPlayer();
 
 	void FacePlayer();
 
@@ -96,7 +100,7 @@ public:
 	float FindDistance(FVector a, FVector b);
 
 	UFUNCTION(BlueprintCallable)
-	FVector GetGoal();
+		FVector GetGoal();
 
 	UFUNCTION(BlueprintCallable)
 		TArray<FStructNode> DoAStar();

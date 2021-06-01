@@ -187,12 +187,8 @@ public:
 	void StartFire();
 	void StopFire();
 	void FireShot();
-<<<<<<< Updated upstream
-=======
 	void Reload();
 	void Reloaded();
-
->>>>>>> Stashed changes
 
 	FTimerHandle TimerHandle_HandleRefire;
 

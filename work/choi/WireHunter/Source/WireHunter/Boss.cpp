@@ -35,7 +35,7 @@ ABoss::ABoss()
 	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
 	SphereCollision->SetGenerateOverlapEvents(true);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
-	SphereCollision->SetupAttachment(BossRoot);
+	SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
 	SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
 
 	SetHealth(100);
@@ -56,6 +56,8 @@ void ABoss::MakeMap()
 		auto loc = e->GetActorLocation();
 		buffer.Push(loc);
 	}
+
+	Obstacles = buffer;
 
 	buffer.Sort([](const FVector& A, const FVector& B) {
 		return A.Y > B.Y;
@@ -103,7 +105,7 @@ void ABoss::MakeMap()
 FVector ABoss::FindPlayer()
 {
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-	
+
 	return TargetLocation;
 }
 
@@ -309,7 +311,7 @@ void ABoss::BeginPlay()
 TArray<FStructNode> ABoss::DoAStar()
 {
 	FindPlayer();
-	
+
 	auto ret = Regulate();
 
 	AStar(Map, ret[0], ret[1]);
@@ -320,7 +322,7 @@ TArray<FStructNode> ABoss::DoAStar()
 FVector ABoss::GetGoal()
 {
 	FVector goal;
-	goal = RealMap[Path[Path.Num()-1].second][Path[Path.Num() - 1].first];
+	goal = RealMap[Path[Path.Num() - 1].second][Path[Path.Num() - 1].first];
 	goal.Z = TargetLocation.Z + 1000.f;
 
 	return goal;
@@ -348,9 +350,9 @@ void ABoss::Tick(float DeltaTime)
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 	this->SetActorRotation(rot);
 
-	if (Health < 0){
+	if (Health < 0) {
 		BossSkeletalMesh->SetSimulatePhysics(true);
-		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f){
+		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f) {
 			Destroy();
 		}
 	}
@@ -366,14 +368,14 @@ void ABoss::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABoss::Spawn()
 {
-	if (ToSpawn){
+	if (ToSpawn) {
 		UWorld* world = GetWorld();
-		if (world){
+		if (world) {
 			FActorSpawnParameters spawnParams;
 			spawnParams.Owner = this;
 
 			FRotator rot;
-			FVector spawnLocation = GetActorLocation();
+			FVector spawnLocation = this->GetActorLocation();
 
 			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
 		}
@@ -382,7 +384,19 @@ void ABoss::Spawn()
 
 void ABoss::Lightning()
 {
+	if (ToLightning) {
+		UWorld* world = GetWorld();
+		if (world) {
+			FActorSpawnParameters spawnParams;
+			spawnParams.Owner = this;
 
+			FRotator rot;
+			int randIdx = rand() % 50;
+			FVector spawnLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 25000.f);
+
+			world->SpawnActor<ALightning>(ToLightning, spawnLocation, rot, spawnParams);
+		}
+	}
 }
 
 void ABoss::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

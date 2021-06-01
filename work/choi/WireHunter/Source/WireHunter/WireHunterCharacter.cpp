@@ -586,7 +586,6 @@ void AWireHunterCharacter::Knockback(FVector force)
 	GetCharacterMovement()->AddForce(force);
 }
 
-<<<<<<< Updated upstream
 //void AWireHunterCharacter::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 //{
 //	if (OtherActor->IsA(ABoss::StaticClass())) {
@@ -597,6 +596,3 @@ void AWireHunterCharacter::Knockback(FVector force)
 //		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
 //	}GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("On Hit"));
 //}
-=======
-
->>>>>>> Stashed changes
