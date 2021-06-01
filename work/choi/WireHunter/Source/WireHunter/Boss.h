@@ -72,7 +72,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	void FindPlayer();
+	UFUNCTION(BlueprintCallable)
+	FVector FindPlayer();
 
 	void FacePlayer();
 
@@ -102,6 +103,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		FVector GetPath();
+
+	UFUNCTION(BlueprintCallable)
+		void Lightning();
 
 	//
 

@@ -101,9 +101,11 @@ void ABoss::MakeMap()
 	}
 }
 
-void ABoss::FindPlayer()
+FVector ABoss::FindPlayer()
 {
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+	
+	return TargetLocation;
 }
 
 void ABoss::FacePlayer()
@@ -375,4 +377,9 @@ void ABoss::Spawn()
 			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
 		}
 	}
+}
+
+void ABoss::Lightning()
+{
+
 }
