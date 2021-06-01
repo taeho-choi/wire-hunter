@@ -33,7 +33,7 @@ ABoss::ABoss()
 	BossSkeletalMesh->SetMaterial(0, Material);
 
 	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
-	SphereCollision->SetGenerateOverlapEvents(true);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
+	SphereCollision->SetGenerateOverlapEvents(false);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
 	SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
 	SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
