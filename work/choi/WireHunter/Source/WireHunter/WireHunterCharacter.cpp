@@ -113,7 +113,7 @@ void AWireHunterCharacter::BeginPlay()
 	HealthBar->SetOwnerCharacter(this);
 
 	TimerBetweenShots = 0.1f;
-	Health = 30.f;
+	Health = 50.f;
 	Bullets = 30;
 
 	SetFloatingPos(GetActorLocation());
@@ -303,20 +303,6 @@ void AWireHunterCharacter::FireShot()
 
 		if (GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
 		{
-			//if (!OtherActor->IsA(ABoss::StaticClass()))
-			//{
-			//	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()))
-			//	{
-			//		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-			//		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
-			//		TargetCharacter->BreakHook();
-			//		TargetCharacter->SetisClimbing(false);
-			//		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-			//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
-			//	}
-			//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
-			//	this->Destroy();
-			//}
 			if (Hit.Actor->IsA(ABoss::StaticClass()))
 			{
 				ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
