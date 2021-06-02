@@ -891,3 +891,1481 @@ Script Stack (0 frames):
 [2021.06.01-23.50.34:491][336]LogPlayLevel: Display: Destroying online subsystem :Context_6
 [2021.06.01-23.52.30:957][275]LogSlate: Window '메시지 로그' being destroyed
 [2021.06.01-23.52.30:960][275]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.01-23.53.17:267][294]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.01-23.53.17:275][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.01-23.53.17:275][294]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 5:53:17)
+[2021.06.01-23.53.17:302][294]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.01-23.53.17:312][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009860s)
+[2021.06.01-23.53.17:313][294]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.01-23.53.17:313][294]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE1C9E4A00), frame # 24294
+[2021.06.01-23.53.17:313][294]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BDDC149BC0), frame # 24294
+[2021.06.01-23.53.17:314][294]LogPlayLevel: PIE: World Init took: (0.001413s)
+[2021.06.01-23.53.17:314][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011445s)
+[2021.06.01-23.53.17:323][294]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2021.06.01-23.53.17:326][294]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.01-23.53.17:327][294]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.01-23.53.17:327][294]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.01-23.53.17:327][294]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.01-23.53.17:329][294]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.01-23.53.17:329][294]LogAudioMixer: Display: 1: FrontRight
+[2021.06.01-23.53.17:342][294]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.01-23.53.17:343][294]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.01-23.53.17:343][294]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.01-23.53.17:343][294]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.01-23.53.17:343][294]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.01-23.53.17:355][294]LogInit: FAudioDevice initialized.
+[2021.06.01-23.53.17:356][294]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.01-23.53.17:364][294]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.01-23.53.17:367][294]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.01-23.53.17:367][294]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.01-23.53.17:368][294]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-08.53.17
+[2021.06.01-23.53.17:369][294]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.01-23.53.17:370][294]LogWorld: Bringing up level for play took: 0.004776
+[2021.06.01-23.53.17:370][294]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2021.06.01-23.53.17:374][294]Cmd: ShowFlag.Bones 2
+[2021.06.01-23.53.17:374][294]ShowFlag.Bones = "2"
+[2021.06.01-23.53.17:374][294]PIE: 서버가 로그인했습니다.
+[2021.06.01-23.53.17:375][294]PIE: 에디터에서 플레이 총 시작 시간 0.101초입니다.
+[2021.06.01-23.53.19:120][499]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.01-23.53.19:436][499]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.316 s
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: 
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: Ensure condition failed: !Primitive->Bounds.BoxExtent.ContainsNaN() && !Primitive->Bounds.Origin.ContainsNaN() && !FMath::IsNaN(Primitive->Bounds.SphereRadius) && FMath::IsFinite(Primitive->Bounds.SphereRadius) [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Renderer/Private/RendererScene.cpp] [Line: 1462]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: Nans found on Bounds for Primitive BossSkeletalMesh: Origin X=nan Y=nan Z=nan, BoxExtent X=0.000 Y=0.000 Z=0.000, SphereRadius 0.000000
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: Stack: 
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa032b0b83 UE4Editor-Renderer.dll!DispatchCheckVerify<bool,<lambda_7ef331a14eb49a3a3c02d7ac3b6ff39b> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa02f7696a UE4Editor-Renderer.dll!FScene::UpdatePrimitiveTransform() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Renderer\Private\RendererScene.cpp:1461]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa187ad3a0 UE4Editor-Engine.dll!UPrimitiveComponent::SendRenderTransform_Concurrent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\PrimitiveComponent.cpp:596]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa1871d948 UE4Editor-Engine.dll!UActorComponent::DoDeferredRenderUpdates_Concurrent() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\ActorComponent.cpp:1590]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa18bd843a UE4Editor-Engine.dll!<lambda_dcda81c1d02aa08c77d55514fdce7396>::operator()() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\LevelTick.cpp:1053]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa18bcdf51 UE4Editor-Engine.dll!ParallelForImpl::ParallelForWithPreWorkInternal<TFunctionRef<void __cdecl(int)> >() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Async\ParallelFor.h:263]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa18c1db57 UE4Editor-Engine.dll!UWorld::SendAllEndOfFrameUpdates() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\LevelTick.cpp:1066]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa188030cd UE4Editor-Engine.dll!UReflectionCaptureComponent::UpdateReflectionCaptureContents() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\ReflectionCaptureComponent.cpp:1059]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa16cdaf8b UE4Editor-UnrealEd.dll!UEditorEngine::Tick() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\EditorEngine.cpp:1703]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa175b37e6 UE4Editor-UnrealEd.dll!UUnrealEdEngine::Tick() [D:\Build\++UE4\Sync\Engine\Source\Editor\UnrealEd\Private\UnrealEdEngine.cpp:414]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ff734027800 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:4850]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.01-23.53.19:436][499]LogOutputDevice: Error: 
+[2021.06.01-23.53.19:439][499]LogStats:                SubmitErrorReport -  0.000 s
+[2021.06.01-23.53.19:761][499]LogStats:                    SendNewReport -  0.322 s
+[2021.06.01-23.53.19:761][499]LogStats:             FDebug::EnsureFailed -  0.641 s
+[2021.06.01-23.53.28:096][492]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.01-23.53.28:096][492]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.01-23.53.28:097][492]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.01-23.53.28:098][492]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.53.28:108][492]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.01-23.53.28:110][492]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.53.28:120][492]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.01-23.53.28:137][492]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BDDC149BC0), frame # 25492
+[2021.06.01-23.53.28:137][492]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE1C9E4A00), frame # 25492
+[2021.06.01-23.53.28:139][492]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.06.01-23.53.28:241][493]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2021.06.01-23.53.29:699][636]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.01-23.53.29:702][636]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.01-23.53.31:451][831]LogRenderer: Reallocating scene render targets to support 1668x672 Format 10 NumSamples 1 (Frame:19144).
+[2021.06.01-23.53.31:476][832]LogRenderer: Reallocating scene render targets to support 1668x684 Format 10 NumSamples 1 (Frame:19146).
+[2021.06.01-23.53.31:503][833]LogRenderer: Reallocating scene render targets to support 1668x700 Format 10 NumSamples 1 (Frame:19148).
+[2021.06.01-23.53.31:525][834]LogRenderer: Reallocating scene render targets to support 1668x716 Format 10 NumSamples 1 (Frame:19150).
+[2021.06.01-23.53.31:550][835]LogRenderer: Reallocating scene render targets to support 1668x720 Format 10 NumSamples 1 (Frame:19152).
+[2021.06.01-23.53.31:571][836]LogRenderer: Reallocating scene render targets to support 1668x728 Format 10 NumSamples 1 (Frame:19154).
+[2021.06.01-23.53.31:706][851]LogRenderer: Reallocating scene render targets to support 1668x732 Format 10 NumSamples 1 (Frame:19170).
+[2021.06.01-23.53.31:742][853]LogRenderer: Reallocating scene render targets to support 1668x736 Format 10 NumSamples 1 (Frame:19174).
+[2021.06.01-23.53.31:773][856]LogRenderer: Reallocating scene render targets to support 1668x744 Format 10 NumSamples 1 (Frame:19178).
+[2021.06.01-23.53.31:793][857]LogRenderer: Reallocating scene render targets to support 1668x748 Format 10 NumSamples 1 (Frame:19180).
+[2021.06.01-23.53.31:817][858]LogRenderer: Reallocating scene render targets to support 1668x752 Format 10 NumSamples 1 (Frame:19182).
+[2021.06.01-23.53.40:151][855]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.01-23.53.40:159][855]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.01-23.53.40:159][855]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 5:53:40)
+[2021.06.01-23.53.40:192][855]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.01-23.53.40:200][855]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007761s)
+[2021.06.01-23.53.40:201][855]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.01-23.53.40:201][855]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BDE4C31A00), frame # 26855
+[2021.06.01-23.53.40:201][855]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BDD41A1300), frame # 26855
+[2021.06.01-23.53.40:201][855]LogPlayLevel: PIE: World Init took: (0.000993s)
+[2021.06.01-23.53.40:201][855]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.008894s)
+[2021.06.01-23.53.40:211][855]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.01-23.53.40:213][855]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.01-23.53.40:213][855]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.01-23.53.40:213][855]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.01-23.53.40:216][855]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.01-23.53.40:216][855]LogAudioMixer: Display: 1: FrontRight
+[2021.06.01-23.53.40:229][855]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.01-23.53.40:229][855]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.01-23.53.40:229][855]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.01-23.53.40:229][855]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.01-23.53.40:229][855]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.01-23.53.40:241][855]LogInit: FAudioDevice initialized.
+[2021.06.01-23.53.40:241][855]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.01-23.53.40:247][855]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.01-23.53.40:249][855]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.01-23.53.40:249][855]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.01-23.53.40:250][855]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-08.53.40
+[2021.06.01-23.53.40:251][855]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.01-23.53.40:252][855]LogWorld: Bringing up level for play took: 0.004678
+[2021.06.01-23.53.40:252][855]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2021.06.01-23.53.40:256][855]Cmd: ShowFlag.Bones 2
+[2021.06.01-23.53.40:256][855]ShowFlag.Bones = "2"
+[2021.06.01-23.53.40:256][855]PIE: 서버가 로그인했습니다.
+[2021.06.01-23.53.40:257][855]PIE: 에디터에서 플레이 총 시작 시간 0.098초입니다.
+[2021.06.01-23.53.50:935][133]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16116.543
+[2021.06.01-23.53.51:760][232]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16116.543
+[2021.06.01-23.54.02:262][491]LogTemp: Warning: X=16000.000 Y=20000.000 Z=15899.926
+[2021.06.01-23.54.02:312][497]LogTemp: Warning: X=20000.000 Y=24000.000 Z=15899.926
+[2021.06.01-23.54.07:948][173]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16113.223
+[2021.06.01-23.54.19:595][567]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.01-23.54.19:596][567]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.01-23.54.19:596][567]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.01-23.54.19:599][567]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.54.19:605][567]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.01-23.54.19:607][567]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.54.19:617][567]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.01-23.54.19:633][567]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BDD41A1300), frame # 31567
+[2021.06.01-23.54.19:633][567]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BDE4C31A00), frame # 31567
+[2021.06.01-23.54.19:634][567]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.06.01-23.54.19:711][568]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2021.06.01-23.54.20:652][645]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.01-23.54.20:655][645]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.01-23.54.29:241][412]LogSlate: Took 0.000131 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.06.01-23.54.29:259][412]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss
+[2021.06.01-23.54.29:328][412]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.01-23.54.29:356][412]LogSlate: Took 0.001517 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.06.01-23.56.46:877][287]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_GetBack.BTT_GetBack
+[2021.06.01-23.56.47:128][287]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 125 classes and 0 folders.
+[2021.06.01-23.56.47:879][288]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.06.01-23.56.58:494][491]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_Move.BTT_Move
+[2021.06.01-23.57.02:181][884]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.06.01-23.57.02:182][884]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.57.03:072][972]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.06.01-23.57.03:072][972]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.01-23.57.17:153][586]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.01-23.57.47:907][186]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.01-23.57.47:936][186]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.01-23.57.47:957][186]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss0027C216469206E81A42A7BB01AF3E6E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.01-23.57.47:970][186]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.01-23.57.47:970][186]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.01.34:273][778]LogProperty: Warning: ObjectProperty /Script/AIModule.BTCompositeChild:ChildTask: unresolved reference to 'BTTask_Wait'"BehaviorTreeGraphNode_Task_29.BTTask_Wait_7"')'
+[2021.06.02-00.01.34:273][778]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_21.BTComposite_Sequence_22"''
+[2021.06.02-00.01.34:274][778]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.01.38:900][234]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.01.38:900][234]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.01.40:760][409]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.01.40:770][409]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.01.40:791][409]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss13301B664E1DA5AF79B7698AE98A054A.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.01.40:802][409]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.01.40:802][409]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.02.29:955][658]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.32:296][918]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.34:512][167]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.36:043][327]LogBehaviorTree: Warning: Kick Loop[56]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.36:043][327]LogBehaviorTree: Warning: Kick Loop[56]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.40:448][816]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.42:443][ 44]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.44:674][301]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.46:886][545]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.02.46:886][545]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.13:164][489]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.13:962][577]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.18:740][109]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.18:740][109]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.20:952][344]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.23:216][599]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.26:426][945]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.26:426][945]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.29:241][237]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.29:893][308]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.32:710][604]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.32:710][604]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.33:944][724]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.03.33:957][724]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.03.33:978][724]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss616B77104CCF497E23B4F5B82DD26713.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.03.33:989][724]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.03.33:989][724]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.06.44:597][888]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2021.06.02-00.06.44:664][888]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel4AF38A6A4FB8FE5F6320A79BFA1CC079.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.06.02-00.06.44:687][888]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.06.02-00.06.44:687][888]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.06.02-00.06.57:728][431]LogEditorViewport: Clicking on Actor (LMB): Boss (Boss5)
+[2021.06.02-00.06.57:815][437]LogEditorViewport: Clicking on Component (LMB): SkeletalMeshComponent (BossSkeletalMesh)
+[2021.06.02-00.07.52:399][801]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-00.07.52:410][801]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-00.07.52:410][801]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 6:07:52)
+[2021.06.02-00.07.52:442][801]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-00.07.52:450][801]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007785s)
+[2021.06.02-00.07.52:451][801]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-00.07.52:451][801]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BD6AA33200), frame # 109801
+[2021.06.02-00.07.52:451][801]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE6A7925C0), frame # 109801
+[2021.06.02-00.07.52:451][801]LogPlayLevel: PIE: World Init took: (0.001037s)
+[2021.06.02-00.07.52:451][801]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.008966s)
+[2021.06.02-00.07.52:470][801]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2021.06.02-00.07.52:478][801]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-00.07.52:478][801]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-00.07.52:478][801]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-00.07.52:478][801]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-00.07.52:478][801]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-00.07.52:479][801]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-00.07.52:479][801]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-00.07.52:479][801]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-00.07.52:479][801]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-00.07.52:479][801]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-00.07.52:482][801]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-00.07.52:482][801]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-00.07.52:496][801]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-00.07.52:496][801]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-00.07.52:496][801]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-00.07.52:496][801]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-00.07.52:496][801]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-00.07.52:508][801]LogInit: FAudioDevice initialized.
+[2021.06.02-00.07.52:508][801]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-00.07.52:514][801]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-00.07.52:517][801]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-00.07.52:517][801]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-00.07.52:518][801]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-09.07.52
+[2021.06.02-00.07.52:520][801]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.07.52:520][801]LogWorld: Bringing up level for play took: 0.004934
+[2021.06.02-00.07.52:520][801]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.06.02-00.07.52:525][801]Cmd: ShowFlag.Bones 2
+[2021.06.02-00.07.52:525][801]ShowFlag.Bones = "2"
+[2021.06.02-00.07.52:526][801]PIE: 서버가 로그인했습니다.
+[2021.06.02-00.07.52:526][801]PIE: 에디터에서 플레이 총 시작 시간 0.119초입니다.
+[2021.06.02-00.08.04:056][181]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16094.416
+[2021.06.02-00.08.04:404][222]LogTemp: Warning: X=0.000 Y=12000.000 Z=16094.416
+[2021.06.02-00.08.05:647][371]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16094.416
+[2021.06.02-00.08.06:890][520]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16094.416
+[2021.06.02-00.08.07:750][619]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-00.08.07:750][619]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-00.08.07:750][619]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.08.07:751][619]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.08.07:755][619]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-00.08.07:758][619]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.08.07:774][619]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-00.08.07:789][619]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE6A7925C0), frame # 111619
+[2021.06.02-00.08.07:789][619]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BD6AA33200), frame # 111619
+[2021.06.02-00.08.07:791][619]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2021.06.02-00.08.07:891][620]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.06.02-00.08.08:910][712]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-00.08.08:913][712]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-00.09.15:523][997]LogHotReload: New module detected: UE4Editor-WireHunter-0002.dll
+[2021.06.02-00.09.16:202][  0]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.02-00.09.16:285][  0]LogClass: StructNode HotReload.
+[2021.06.02-00.09.16:285][  0]LogClass: StructWeight HotReload.
+[2021.06.02-00.09.16:288][  0]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-00.09.16:421][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.133 s
+[2021.06.02-00.09.16:421][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-00.09.16:421][  0]LogOutputDevice: Error: 
+[2021.06.02-00.09.16:421][  0]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: Stack: 
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9ecc6d828 UE4Editor-WireHunter-0002.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9ecc45fc0 UE4Editor-WireHunter-0002.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f67944be UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f6783d4e UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a995 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796b33 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1266]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796e01 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1256]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f678f836 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:546]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa54b6ed1d UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef6839 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:796]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bc6 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:955]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b708 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadFromIDE() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1535]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c3e1 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1479]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-00.09.16:422][  0]LogOutputDevice: Error: 
+[2021.06.02-00.09.16:433][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2021.06.02-00.09.16:683][  0]LogStats:                    SendNewReport -  0.250 s
+[2021.06.02-00.09.16:683][  0]LogStats:             FDebug::EnsureFailed -  0.395 s
+[2021.06.02-00.09.16:684][  0]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-00.09.16:706][  0]LogHotReload: Re-instancing Fireball after hot-reload.
+[2021.06.02-00.09.16:724][  0]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-00.09.16:755][  0]LogHotReload: Re-instancing Lightning after hot-reload.
+[2021.06.02-00.09.16:773][  0]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-00.09.16:805][  0]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-00.09.16:831][  0]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.02-00.09.16:834][  0]Display: HotReload successful (9 functions remapped  2 scriptstructs remapped)
+[2021.06.02-00.09.16:906][  0]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-00.09.16:909][  0]Display: HotReload took  0.7s.
+[2021.06.02-00.09.23:086][337]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2021.06.02-00.09.23:130][337]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelC036BE984114EF2DCCD4B7B5B411B24D.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.06.02-00.09.23:151][337]AssetCheck: New page: 애셋 저장: GameLevel
+[2021.06.02-00.09.23:151][337]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.06.02-00.09.46:921][ 79]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_GetBack.BTT_GetBack
+[2021.06.02-00.10.03:814][ 22]BlueprintLog: New page: BTT_GetBack 컴파일
+[2021.06.02-00.10.03:877][ 22]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2021.06.02-00.10.04:505][ 86]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_GetBack" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_GetBack.uasset" SILENT=true
+[2021.06.02-00.10.04:522][ 86]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_GetBack7504CDFB4031442412767D8A13957422.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_GetBack.uasset'
+[2021.06.02-00.10.04:534][ 86]AssetCheck: New page: 애셋 저장: BTT_GetBack
+[2021.06.02-00.10.04:534][ 86]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_GetBack.BTT_GetBack 유효성 검사
+[2021.06.02-00.10.21:071][884]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_FireballMove.BTT_FireballMove
+[2021.06.02-00.10.32:255][148]BlueprintLog: New page: BTT_FireballMove 컴파일
+[2021.06.02-00.10.32:291][148]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2021.06.02-00.10.32:823][201]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_FireballMove" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_FireballMove.uasset" SILENT=true
+[2021.06.02-00.10.32:837][201]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_FireballMove8BCE4D6A494D72504A84BFAEEA385CEC.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_FireballMove.uasset'
+[2021.06.02-00.10.32:850][201]AssetCheck: New page: 애셋 저장: BTT_FireballMove
+[2021.06.02-00.10.32:850][201]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_FireballMove.BTT_FireballMove 유효성 검사
+[2021.06.02-00.10.39:634][959]BlueprintLog: New page: BTT_GetBack 컴파일
+[2021.06.02-00.10.39:670][959]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2021.06.02-00.10.40:340][ 27]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_GetBack" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_GetBack.uasset" SILENT=true
+[2021.06.02-00.10.40:354][ 27]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_GetBackCB6A537F45E0C197D008CBB4BB7BE92B.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_GetBack.uasset'
+[2021.06.02-00.10.40:364][ 27]AssetCheck: New page: 애셋 저장: BTT_GetBack
+[2021.06.02-00.10.40:364][ 27]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_GetBack.BTT_GetBack 유효성 검사
+[2021.06.02-00.11.22:789][ 68]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.12.21:326][695]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.14.13:152][916]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.14.13:164][916]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.14.13:186][916]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossB7C356AD49D2DC66488C58AEF9383960.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.14.13:197][916]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.14.13:197][916]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.17.40:171][302]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetUpPosition.BTT_SetUpPosition
+[2021.06.02-00.17.49:858][404]BlueprintLog: New page: BTT_SetUpPosition 컴파일
+[2021.06.02-00.17.49:896][404]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2021.06.02-00.17.50:621][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetUpPosition" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetUpPosition.uasset" SILENT=true
+[2021.06.02-00.17.50:634][483]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetUpPositionEB9BD1AD467FBCDC861AF2AE2014B63C.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetUpPosition.uasset'
+[2021.06.02-00.17.50:646][483]AssetCheck: New page: 애셋 저장: BTT_SetUpPosition
+[2021.06.02-00.17.50:646][483]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetUpPosition.BTT_SetUpPosition 유효성 검사
+[2021.06.02-00.18.00:668][539]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.18.00:668][539]LogBehaviorTree: Warning: Kick Loop[54]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.18.02:300][712]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.18.02:300][712]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.18.14:662][ 51]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.18.14:673][ 51]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.18.14:692][ 51]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossEE36CA5B46AC528C2DA5C79340A79735.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.18.14:704][ 51]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.18.14:704][ 51]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.20.11:727][423]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.20.11:747][423]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss34AB687F40CAA7935183CF8BEFA90168.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.20.11:757][423]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.20.11:757][423]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.21.42:432][240]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.21.44:225][393]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.21.44:248][393]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.21.44:267][393]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss96EB0B00494E5BA4D9BB979AA9EFAA5C.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.21.44:278][393]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.21.44:278][393]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.24.13:473][ 81]LogHotReload: New module detected: UE4Editor-WireHunter-0003.dll
+[2021.06.02-00.24.14:162][ 84]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.02-00.24.14:244][ 84]LogClass: StructNode HotReload.
+[2021.06.02-00.24.14:244][ 84]LogClass: StructWeight HotReload.
+[2021.06.02-00.24.14:245][ 84]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-00.24.14:379][ 84]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.133 s
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: 
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: Stack: 
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9ec44d828 UE4Editor-WireHunter-0003.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9ec425fc0 UE4Editor-WireHunter-0003.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f67944be UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f6783d4e UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a995 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796b33 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1266]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796e01 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1256]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f678f836 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:546]
+[2021.06.02-00.24.14:379][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa54b6ed1d UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef6839 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:796]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bc6 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:955]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b708 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadFromIDE() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1535]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c3e1 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1479]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-00.24.14:380][ 84]LogOutputDevice: Error: 
+[2021.06.02-00.24.14:391][ 84]LogStats:             FDebug::EnsureFailed -  0.145 s
+[2021.06.02-00.24.14:392][ 84]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-00.24.14:424][ 84]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-00.24.14:467][ 84]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-00.24.14:502][ 84]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-00.24.14:535][ 84]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.02-00.24.14:538][ 84]Display: HotReload successful (9 functions remapped  2 scriptstructs remapped)
+[2021.06.02-00.24.14:606][ 84]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-00.24.14:609][ 84]Display: HotReload took  0.4s.
+[2021.06.02-00.28.37:614][275]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.29.54:863][277]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.29.54:882][277]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.29.54:904][277]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss74A704B74CDF2E56968B539960AACF46.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.29.54:921][277]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.29.54:921][277]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.30.38:425][992]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.30.38:452][992]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BB_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BB_Boss.uasset" SILENT=true
+[2021.06.02-00.30.38:462][992]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BB_Boss873376754D1A5C176C29C6AFD9723CE0.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BB_Boss.uasset'
+[2021.06.02-00.30.38:474][992]AssetCheck: New page: 애셋 저장: BB_Boss
+[2021.06.02-00.30.38:474][992]LogContentValidation: Display: BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss 유효성 검사
+[2021.06.02-00.30.39:566][115]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.31.12:157][408]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-00.31.12:157][408]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New
+[2021.06.02-00.31.12:481][408]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-00.31.13:686][536]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTTask_BlueprintBase_NewAF9A14A54879BD140B6108B2926D90B1.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.uasset'
+[2021.06.02-00.31.13:696][536]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-00.31.13:705][536]AssetCheck: New page: 애셋 저장: BTTask_BlueprintBase_New
+[2021.06.02-00.31.13:705][536]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New 유효성 검사
+[2021.06.02-00.31.25:801][905]LogUObjectHash: Compacting FUObjectHashTables data took   3.82ms
+[2021.06.02-00.31.25:810][905]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetClosed.SKEL_BTT_SetClosed_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-00.31.25:810][905]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetClosed.BTT_SetClosed_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-00.31.25:834][905]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetClosed" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset" SILENT=true
+[2021.06.02-00.31.25:836][905]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetClosed1EBB907445BCF2CB889081B9A0FFB0D3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset'
+[2021.06.02-00.31.26:018][905]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms
+[2021.06.02-00.31.26:057][905]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2021.06.02-00.31.26:088][905]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.06.02-00.31.26:128][905]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_SetClosed.
+[2021.06.02-00.31.26:136][905]AssetCheck: New page: 애셋 저장: BTT_SetClosed
+[2021.06.02-00.31.26:136][905]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetClosed.BTT_SetClosed 유효성 검사
+[2021.06.02-00.31.37:936][ 53]LogBehaviorTree: Warning: Kick Loop[56]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.09:830][150]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:923][156]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:923][156]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:946][158]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:946][158]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:967][160]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.19:968][160]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.20:003][163]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.32.20:003][163]LogBehaviorTree: Warning: Kick Loop[55]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.33.47:997][120]LogBehaviorTree: Warning: Kick Loop[56]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.34.18:986][723]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.35.02:407][778]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition
+[2021.06.02-00.35.41:127][229]BlueprintLog: New page: BTT_SetPrevPosition 컴파일
+[2021.06.02-00.35.41:183][229]LogUObjectHash: Compacting FUObjectHashTables data took   3.18ms
+[2021.06.02-00.35.41:794][290]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetPrevPosition" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset" SILENT=true
+[2021.06.02-00.35.41:807][290]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetPrevPositionFAA1CD114B046853878933A1A5D9DCBF.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset'
+[2021.06.02-00.35.41:819][290]AssetCheck: New page: 애셋 저장: BTT_SetPrevPosition
+[2021.06.02-00.35.41:819][290]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition 유효성 검사
+[2021.06.02-00.35.59:041][290]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.35.59:061][290]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.35.59:082][290]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossF6DAB2ED439B6EEF192DC9AF6B6E2ED4.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.35.59:095][290]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.35.59:095][290]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.38.01:059][464]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2021.06.02-00.38.01:063][464]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.039
+[2021.06.02-00.38.01:064][464]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonCPP/AI/BTT_SetClosed] ([1] browsable assets)...
+[2021.06.02-00.38.01:064][464]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/BTT_SetClosed]
+[2021.06.02-00.38.01:077][464]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetClosed_Auto155739D654A0C70F120D274B6E0862167.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/BTT_SetClosed_Auto1.uasset'
+[2021.06.02-00.38.01:078][464]LogFileHelpers: Auto-saving content packages took 0.016
+[2021.06.02-00.38.16:348][238]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle6)
+[2021.06.02-00.38.21:963][905]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.06.02-00.38.23:725][112]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle12)
+[2021.06.02-00.38.28:791][715]LogEditorViewport: Clicking on Actor (LMB): Obstacle (Obstacle7)
+[2021.06.02-00.44.51:152][326]BlueprintLog: New page: BTT_SetClosed 컴파일
+[2021.06.02-00.44.51:207][326]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2021.06.02-00.44.51:813][378]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetClosed" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset" SILENT=true
+[2021.06.02-00.44.51:827][378]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetClosed27BBA07548C065DBDF4EED801FFD491E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset'
+[2021.06.02-00.44.51:839][378]AssetCheck: New page: 애셋 저장: BTT_SetClosed
+[2021.06.02-00.44.51:839][378]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetClosed.BTT_SetClosed 유효성 검사
+[2021.06.02-00.44.57:402][923]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.44.57:402][923]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.44.57:992][974]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.44.57:992][974]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.44.58:592][ 28]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.44.58:592][ 28]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.44.59:662][123]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.44.59:663][123]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.46.46:181][944]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPlayerLocation.BTT_SetPlayerLocation
+[2021.06.02-00.48.40:699][602]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.48.45:111][977]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.48.45:111][977]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.49.02:014][463]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.49.02:038][463]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.49.02:060][463]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossB00FAABB41F2893677D97B92A0A17795.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.49.02:077][463]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.49.02:077][463]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-00.52.38:127][661]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition
+[2021.06.02-00.52.44:792][284]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.52.44:792][284]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.52.49:550][740]BlueprintLog: New page: BTT_SetPlayerLocation 컴파일
+[2021.06.02-00.52.49:624][740]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2021.06.02-00.52.50:045][775]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetPlayerLocation" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPlayerLocation.uasset" SILENT=true
+[2021.06.02-00.52.50:058][775]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetPlayerLocation37CDABE44A1CD8F058869190E0811990.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPlayerLocation.uasset'
+[2021.06.02-00.52.50:071][775]AssetCheck: New page: 애셋 저장: BTT_SetPlayerLocation
+[2021.06.02-00.52.50:071][775]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPlayerLocation.BTT_SetPlayerLocation 유효성 검사
+[2021.06.02-00.53.35:823][974]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.53.35:823][974]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.53.36:640][ 41]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.53.36:640][ 41]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.53.48:959][123]LogRenderer: Reallocating scene render targets to support 1668x756 Format 10 NumSamples 1 (Frame:314339).
+[2021.06.02-00.53.48:984][124]LogRenderer: Reallocating scene render targets to support 1668x760 Format 10 NumSamples 1 (Frame:314341).
+[2021.06.02-00.53.49:012][125]LogRenderer: Reallocating scene render targets to support 1668x768 Format 10 NumSamples 1 (Frame:314343).
+[2021.06.02-00.53.49:037][126]LogRenderer: Reallocating scene render targets to support 1668x772 Format 10 NumSamples 1 (Frame:314345).
+[2021.06.02-00.53.49:062][127]LogRenderer: Reallocating scene render targets to support 1668x776 Format 10 NumSamples 1 (Frame:314347).
+[2021.06.02-00.53.49:109][129]LogRenderer: Reallocating scene render targets to support 1668x780 Format 10 NumSamples 1 (Frame:314351).
+[2021.06.02-00.53.49:132][130]LogRenderer: Reallocating scene render targets to support 1668x784 Format 10 NumSamples 1 (Frame:314353).
+[2021.06.02-00.53.49:165][132]LogRenderer: Reallocating scene render targets to support 1668x788 Format 10 NumSamples 1 (Frame:314356).
+[2021.06.02-00.53.49:212][134]LogRenderer: Reallocating scene render targets to support 1668x792 Format 10 NumSamples 1 (Frame:314360).
+[2021.06.02-00.53.51:670][393]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-00.53.51:685][393]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-00.53.51:685][393]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 6:53:51)
+[2021.06.02-00.53.51:685][393]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-00.53.51:694][393]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008566s)
+[2021.06.02-00.53.51:694][393]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-00.53.51:694][393]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE446BEA00), frame # 329393
+[2021.06.02-00.53.51:694][393]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE5ED31E40), frame # 329393
+[2021.06.02-00.53.51:695][393]LogPlayLevel: PIE: World Init took: (0.001043s)
+[2021.06.02-00.53.51:695][393]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009736s)
+[2021.06.02-00.53.51:751][393]LogUObjectHash: Compacting FUObjectHashTables data took   3.57ms
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-00.53.51:764][393]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-00.53.51:764][393]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-00.53.51:764][393]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-00.53.51:767][393]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-00.53.51:767][393]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-00.53.51:783][393]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-00.53.51:783][393]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-00.53.51:783][393]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-00.53.51:783][393]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-00.53.51:785][393]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-00.53.51:795][393]LogInit: FAudioDevice initialized.
+[2021.06.02-00.53.51:795][393]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-00.53.51:801][393]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-00.53.51:804][393]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-00.53.51:804][393]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-00.53.51:805][393]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-09.53.51
+[2021.06.02-00.53.51:807][393]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.53.51:807][393]LogWorld: Bringing up level for play took: 0.005347
+[2021.06.02-00.53.51:808][393]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.06.02-00.53.51:812][393]Cmd: ShowFlag.Bones 2
+[2021.06.02-00.53.51:812][393]ShowFlag.Bones = "2"
+[2021.06.02-00.53.51:812][393]PIE: 서버가 로그인했습니다.
+[2021.06.02-00.53.51:813][393]PIE: 에디터에서 플레이 총 시작 시간 0.136초입니다.
+[2021.06.02-00.53.51:873][395]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16623.287
+[2021.06.02-00.53.52:221][434]LogTemp: Warning: X=0.000 Y=12000.000 Z=16623.287
+[2021.06.02-00.53.53:467][573]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16623.287
+[2021.06.02-00.53.54:708][713]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16623.287
+[2021.06.02-00.53.55:951][853]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16623.287
+[2021.06.02-00.53.57:192][991]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16623.287
+[2021.06.02-00.53.58:435][129]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16623.287
+[2021.06.02-00.54.16:724][109]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-00.54.16:724][109]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-00.54.16:725][109]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-00.54.16:728][109]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.54.16:737][109]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-00.54.16:740][109]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-00.54.16:756][109]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-00.54.16:772][109]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE5ED31E40), frame # 332109
+[2021.06.02-00.54.16:772][109]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE446BEA00), frame # 332109
+[2021.06.02-00.54.16:774][109]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2021.06.02-00.54.16:877][110]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.06.02-00.54.18:234][234]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-00.54.18:237][234]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-00.54.30:517][703]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_GetBack.BTT_GetBack
+[2021.06.02-00.56.27:085][554]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetVinter.BTT_SetVinter
+[2021.06.02-00.58.54:806][113]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetClosed.BTT_SetClosed
+[2021.06.02-00.59.50:250][635]BlueprintLog: New page: BTT_SetClosed 컴파일
+[2021.06.02-00.59.50:289][635]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2021.06.02-00.59.50:777][685]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetClosed" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset" SILENT=true
+[2021.06.02-00.59.50:792][685]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetClosedC6DAC45B4A6111337DA420A53C61179F.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetClosed.uasset'
+[2021.06.02-00.59.50:802][685]AssetCheck: New page: 애셋 저장: BTT_SetClosed
+[2021.06.02-00.59.50:802][685]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetClosed.BTT_SetClosed 유효성 검사
+[2021.06.02-00.59.55:343][208]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-00.59.55:360][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-00.59.55:382][208]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossE767E7804FA569EE2BBFEAB22E245725.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-00.59.55:393][208]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-00.59.55:393][208]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.00.29:928][278]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.00.29:938][278]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.00.29:938][278]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:00:29)
+[2021.06.02-01.00.29:963][278]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.00.29:971][278]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008071s)
+[2021.06.02-01.00.29:972][278]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.00.29:972][278]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE374E5E00), frame # 376278
+[2021.06.02-01.00.29:972][278]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE2BD9F380), frame # 376278
+[2021.06.02-01.00.29:972][278]LogPlayLevel: PIE: World Init took: (0.001034s)
+[2021.06.02-01.00.29:972][278]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009269s)
+[2021.06.02-01.00.29:996][278]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.00.29:998][278]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.00.29:998][278]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.00.29:999][278]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.00.29:999][278]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.00.30:001][278]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.00.30:001][278]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.00.30:015][278]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.00.30:016][278]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.00.30:016][278]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.00.30:016][278]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.00.30:017][278]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.00.30:027][278]LogInit: FAudioDevice initialized.
+[2021.06.02-01.00.30:028][278]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.00.30:036][278]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.00.30:038][278]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.00.30:038][278]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.00.30:039][278]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.00.30
+[2021.06.02-01.00.30:041][278]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.00.30:042][278]LogWorld: Bringing up level for play took: 0.005151
+[2021.06.02-01.00.30:042][278]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2021.06.02-01.00.30:046][278]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.00.30:046][278]ShowFlag.Bones = "2"
+[2021.06.02-01.00.30:047][278]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.00.30:047][278]PIE: 에디터에서 플레이 총 시작 시간 0.113초입니다.
+[2021.06.02-01.00.46:669][198]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.00.46:669][198]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.00.46:669][198]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.00.46:670][198]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.00.46:674][198]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.00.46:678][198]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.00.46:715][198]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.00.46:718][198]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE2BD9F380), frame # 378198
+[2021.06.02-01.00.46:718][198]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE374E5E00), frame # 378198
+[2021.06.02-01.00.46:720][198]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2021.06.02-01.00.46:825][199]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2021.06.02-01.00.47:951][303]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.00.47:956][303]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.01.29:762][245]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition
+[2021.06.02-01.01.33:601][492]LogSlate: Window '변수 삭제' being destroyed
+[2021.06.02-01.01.34:669][612]BlueprintLog: New page: BTT_SetPrevPosition 컴파일
+[2021.06.02-01.01.34:670][612]LogBlueprint: Error: [Compiler BTT_SetPrevPosition] ' Key ' 핀의 현재 값이 유효하지 않습니다: 'Key' 핀에는 반드시 입력이 연결되어 있어야 합니다 ("by ref" 파라미터는 작업하기에 유효한 입력을 기대합니다).
+[2021.06.02-01.01.34:710][612]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2021.06.02-01.01.35:380][686]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetPrevPosition" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset" SILENT=true
+[2021.06.02-01.01.35:393][686]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetPrevPositionEABA18784BC608CB371A599A63AFC2F3.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset'
+[2021.06.02-01.01.35:403][686]AssetCheck: New page: 애셋 저장: BTT_SetPrevPosition
+[2021.06.02-01.01.35:403][686]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition 유효성 검사
+[2021.06.02-01.01.53:037][783]BlueprintLog: New page: BTT_SetPrevPosition 컴파일
+[2021.06.02-01.01.53:076][783]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2021.06.02-01.01.53:564][836]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetPrevPosition" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset" SILENT=true
+[2021.06.02-01.01.53:576][836]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetPrevPosition3C07157C4C9DB9FDF3A01F922AFB1D6D.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetPrevPosition.uasset'
+[2021.06.02-01.01.53:587][836]AssetCheck: New page: 애셋 저장: BTT_SetPrevPosition
+[2021.06.02-01.01.53:587][836]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetPrevPosition.BTT_SetPrevPosition 유효성 검사
+[2021.06.02-01.01.59:999][597]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.02.00:015][597]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.02.00:036][597]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss78AA74964E94F00B2CBE5A84FD5D5DDA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.02.00:048][597]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.02.00:048][597]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.04.16:588][ 14]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-01.04.18:800][252]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-01.04.18:800][252]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New
+[2021.06.02-01.04.19:053][252]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-01.04.47:255][497]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2021.06.02-01.04.47:263][497]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_Set.SKEL_BTT_Set_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-01.04.47:263][497]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_Set.BTT_Set_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-01.04.47:288][497]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_Set" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Set.uasset" SILENT=true
+[2021.06.02-01.04.47:290][497]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_Set8E26E06B4493F0504D0FFBA0DDE66D9D.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Set.uasset'
+[2021.06.02-01.04.47:429][497]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2021.06.02-01.04.47:461][497]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2021.06.02-01.04.47:487][497]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2021.06.02-01.04.47:524][497]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_Set.
+[2021.06.02-01.04.47:530][497]AssetCheck: New page: 애셋 저장: BTT_Set
+[2021.06.02-01.04.47:530][497]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_Set.BTT_Set 유효성 검사
+[2021.06.02-01.06.19:657][547]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2021.06.02-01.06.19:665][547]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetBackClosed.BTT_SetBackClosed_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTT_Set.PackageMetaData'
+[2021.06.02-01.06.19:665][547]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetBackClosed.SKEL_BTT_SetBackClosed_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTT_Set.PackageMetaData'
+[2021.06.02-01.06.19:693][547]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetBackClosed" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetBackClosed.uasset" SILENT=true
+[2021.06.02-01.06.19:696][547]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetBackClosed81D5D9F44E032E767D555EA5946EF276.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetBackClosed.uasset'
+[2021.06.02-01.06.19:848][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2021.06.02-01.06.19:880][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2021.06.02-01.06.19:907][547]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2021.06.02-01.06.19:944][547]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_SetBackClosed.
+[2021.06.02-01.06.19:950][547]AssetCheck: New page: 애셋 저장: BTT_SetBackClosed
+[2021.06.02-01.06.19:950][547]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetBackClosed.BTT_SetBackClosed 유효성 검사
+[2021.06.02-01.06.42:149][ 47]LogBehaviorTree: Warning: Kick Loop[59]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.06.45:070][358]LogBehaviorTree: Warning: Kick Loop[59]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.06.47:619][633]LogBehaviorTree: Warning: Kick Loop[59]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.07.50:519][700]BlueprintLog: New page: BTT_SetBackClosed 컴파일
+[2021.06.02-01.07.50:564][700]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2021.06.02-01.07.51:177][765]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetBackClosed" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetBackClosed.uasset" SILENT=true
+[2021.06.02-01.07.51:189][765]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetBackClosed7583C19F479D127E1578E79BB2792013.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetBackClosed.uasset'
+[2021.06.02-01.07.51:199][765]AssetCheck: New page: 애셋 저장: BTT_SetBackClosed
+[2021.06.02-01.07.51:199][765]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetBackClosed.BTT_SetBackClosed 유효성 검사
+[2021.06.02-01.07.57:961][517]LogBehaviorTree: Warning: Kick Loop[59]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.07.57:977][517]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.07.57:999][517]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss4D96E4DB417C3E44F94BED890FE499B5.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.07.58:010][517]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.07.58:010][517]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.08.00:651][772]LogRenderer: Reallocating scene render targets to support 1668x800 Format 10 NumSamples 1 (Frame:402259).
+[2021.06.02-01.08.00:677][773]LogRenderer: Reallocating scene render targets to support 1668x808 Format 10 NumSamples 1 (Frame:402261).
+[2021.06.02-01.08.00:698][774]LogRenderer: Reallocating scene render targets to support 1668x812 Format 10 NumSamples 1 (Frame:402263).
+[2021.06.02-01.08.00:720][775]LogRenderer: Reallocating scene render targets to support 1668x828 Format 10 NumSamples 1 (Frame:402265).
+[2021.06.02-01.08.00:743][776]LogRenderer: Reallocating scene render targets to support 1668x832 Format 10 NumSamples 1 (Frame:402267).
+[2021.06.02-01.08.00:765][777]LogRenderer: Reallocating scene render targets to support 1668x840 Format 10 NumSamples 1 (Frame:402269).
+[2021.06.02-01.08.00:788][778]LogRenderer: Reallocating scene render targets to support 1668x844 Format 10 NumSamples 1 (Frame:402271).
+[2021.06.02-01.08.03:224][ 36]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.08.03:237][ 36]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.08.03:237][ 36]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:08:03)
+[2021.06.02-01.08.03:237][ 36]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.08.03:245][ 36]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008221s)
+[2021.06.02-01.08.03:246][ 36]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.08.03:246][ 36]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE66C38200), frame # 422036
+[2021.06.02-01.08.03:246][ 36]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE2BD9DA80), frame # 422036
+[2021.06.02-01.08.03:246][ 36]LogPlayLevel: PIE: World Init took: (0.000962s)
+[2021.06.02-01.08.03:246][ 36]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009297s)
+[2021.06.02-01.08.03:275][ 36]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.08.03:278][ 36]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.08.03:278][ 36]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.08.03:279][ 36]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.08.03:279][ 36]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.08.03:281][ 36]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.08.03:281][ 36]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.08.03:295][ 36]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.08.03:295][ 36]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.08.03:295][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.08.03:295][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.08.03:296][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.08.03:306][ 36]LogInit: FAudioDevice initialized.
+[2021.06.02-01.08.03:307][ 36]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.08.03:315][ 36]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.08.03:318][ 36]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.08.03:318][ 36]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.08.03:319][ 36]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.08.03
+[2021.06.02-01.08.03:321][ 36]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.08.03:321][ 36]LogWorld: Bringing up level for play took: 0.005175
+[2021.06.02-01.08.03:321][ 36]LogOnline: OSS: Creating online subsystem instance for: :Context_27
+[2021.06.02-01.08.03:326][ 36]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.08.03:326][ 36]ShowFlag.Bones = "2"
+[2021.06.02-01.08.03:326][ 36]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.08.03:327][ 36]PIE: 에디터에서 플레이 총 시작 시간 0.096초입니다.
+[2021.06.02-01.08.03:383][ 38]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16651.840
+[2021.06.02-01.08.03:727][ 78]LogTemp: Warning: X=0.000 Y=12000.000 Z=16651.840
+[2021.06.02-01.08.04:972][222]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16651.840
+[2021.06.02-01.08.06:212][366]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16651.840
+[2021.06.02-01.08.07:451][509]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16651.840
+[2021.06.02-01.08.08:698][653]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16651.840
+[2021.06.02-01.08.09:934][794]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16651.840
+[2021.06.02-01.08.59:671][449]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16093.118
+[2021.06.02-01.08.59:709][453]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16093.118
+[2021.06.02-01.09.15:170][210]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16122.264
+[2021.06.02-01.09.19:263][681]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16126.372
+[2021.06.02-01.09.21:782][966]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.09.21:782][966]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.09.21:783][966]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.09.21:784][966]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.09.21:797][966]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.09.21:800][966]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.09.21:840][966]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.09.21:842][966]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE2BD9DA80), frame # 430966
+[2021.06.02-01.09.21:842][966]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE66C38200), frame # 430966
+[2021.06.02-01.09.21:844][966]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2021.06.02-01.09.21:959][967]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2021.06.02-01.09.31:470][ 33]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.09.31:473][ 33]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.11.01:231][510]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.10:596][611]LogBehaviorTree: Warning: Kick Loop[59]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.13:954][987]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.28:627][684]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.28:652][684]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.11.28:674][684]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossC60A437C4B4240E87BC9B98D0106012C.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.11.28:687][684]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.11.28:687][684]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.11.40:415][ 63]LogBehaviorTree: Warning: Kick Loop[58]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.40:435][ 63]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.11.40:456][ 63]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss6BCC678F4DA3FD09BBD6A2AA9AC226A0.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.11.40:472][ 63]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.11.40:472][ 63]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.11.42:686][291]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.11.42:696][291]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.11.42:696][291]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:11:42)
+[2021.06.02-01.11.42:732][291]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.11.42:740][291]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007951s)
+[2021.06.02-01.11.42:741][291]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.11.42:741][291]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE7084F800), frame # 447291
+[2021.06.02-01.11.42:741][291]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BEA1DF4E00), frame # 447291
+[2021.06.02-01.11.42:741][291]LogPlayLevel: PIE: World Init took: (0.000999s)
+[2021.06.02-01.11.42:741][291]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009092s)
+[2021.06.02-01.11.42:769][291]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.11.42:773][291]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.11.42:773][291]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.11.42:774][291]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.11.42:774][291]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.11.42:776][291]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.11.42:776][291]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.11.42:790][291]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.11.42:790][291]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.11.42:790][291]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.11.42:790][291]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.11.42:792][291]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.11.42:802][291]LogInit: FAudioDevice initialized.
+[2021.06.02-01.11.42:803][291]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.11.42:811][291]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.11.42:813][291]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.11.42:813][291]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.11.42:814][291]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.11.42
+[2021.06.02-01.11.42:816][291]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.11.42:817][291]LogWorld: Bringing up level for play took: 0.005247
+[2021.06.02-01.11.42:817][291]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2021.06.02-01.11.42:821][291]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.11.42:821][291]ShowFlag.Bones = "2"
+[2021.06.02-01.11.42:821][291]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.11.42:822][291]PIE: 에디터에서 플레이 총 시작 시간 0.129초입니다.
+[2021.06.02-01.11.55:896][827]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16117.931
+[2021.06.02-01.11.55:931][831]LogTemp: Warning: X=0.000 Y=12000.000 Z=16117.931
+[2021.06.02-01.11.57:188][977]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16117.931
+[2021.06.02-01.11.58:427][121]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16117.931
+[2021.06.02-01.11.59:670][266]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16117.931
+[2021.06.02-01.12.00:912][411]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16117.931
+[2021.06.02-01.12.06:554][ 76]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16081.903
+[2021.06.02-01.12.10:971][594]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16081.903
+[2021.06.02-01.12.13:226][854]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.12.13:226][854]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.12.13:226][854]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.12.13:227][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.12.13:234][854]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.12.13:238][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.12.13:280][854]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.12.13:281][854]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BEA1DF4E00), frame # 450854
+[2021.06.02-01.12.13:281][854]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE7084F800), frame # 450854
+[2021.06.02-01.12.13:284][854]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2021.06.02-01.12.13:399][855]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2021.06.02-01.12.14:555][963]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.12.14:557][963]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.12.26:764][395]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.12.49:310][ 66]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.12.49:320][ 66]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.12.49:321][ 66]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:12:49)
+[2021.06.02-01.12.49:321][ 66]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.12.49:329][ 66]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008130s)
+[2021.06.02-01.12.49:330][ 66]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.12.49:330][ 66]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE39FFA600), frame # 455066
+[2021.06.02-01.12.49:330][ 66]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE70C40680), frame # 455066
+[2021.06.02-01.12.49:330][ 66]LogPlayLevel: PIE: World Init took: (0.000929s)
+[2021.06.02-01.12.49:330][ 66]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009168s)
+[2021.06.02-01.12.49:364][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   5.44ms
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.12.49:367][ 66]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.12.49:367][ 66]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.12.49:368][ 66]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.12.49:368][ 66]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.12.49:371][ 66]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.12.49:371][ 66]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.12.49:385][ 66]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.12.49:385][ 66]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.12.49:385][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.12.49:385][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.12.49:387][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.12.49:397][ 66]LogInit: FAudioDevice initialized.
+[2021.06.02-01.12.49:397][ 66]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.12.49:405][ 66]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.12.49:407][ 66]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.12.49:407][ 66]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.12.49:408][ 66]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.12.49
+[2021.06.02-01.12.49:409][ 66]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.12.49:410][ 66]LogWorld: Bringing up level for play took: 0.004996
+[2021.06.02-01.12.49:410][ 66]LogOnline: OSS: Creating online subsystem instance for: :Context_29
+[2021.06.02-01.12.49:414][ 66]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.12.49:414][ 66]ShowFlag.Bones = "2"
+[2021.06.02-01.12.49:415][ 66]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.12.49:416][ 66]PIE: 에디터에서 플레이 총 시작 시간 0.098초입니다.
+[2021.06.02-01.12.49:461][ 68]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16651.516
+[2021.06.02-01.12.49:805][109]LogTemp: Warning: X=0.000 Y=12000.000 Z=16651.516
+[2021.06.02-01.12.51:052][257]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16651.516
+[2021.06.02-01.12.52:296][404]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16651.516
+[2021.06.02-01.12.53:541][551]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16651.516
+[2021.06.02-01.12.54:783][698]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16651.516
+[2021.06.02-01.12.56:025][845]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16651.516
+[2021.06.02-01.13.09:815][478]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.13.09:815][478]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.13.09:816][478]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.13.09:816][478]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.13.09:825][478]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.13.09:828][478]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.13.09:869][478]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.13.09:870][478]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE70C40680), frame # 457478
+[2021.06.02-01.13.09:870][478]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE39FFA600), frame # 457478
+[2021.06.02-01.13.09:873][478]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2021.06.02-01.13.09:969][479]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2021.06.02-01.13.11:050][574]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.13.11:055][574]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.13.48:933][ 34]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.13.48:941][ 34]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.13.48:941][ 34]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_91:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_92:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_93:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_94:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_95:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_96:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.14.38:487][860]LogProperty: Warning: ObjectProperty /Script/AIModule.BTCompositeChild:ChildTask: unresolved reference to 'BTT_SetVinter_C'"BehaviorTreeGraphNode_Task_14.BTT_SetVinter_C_3"')'
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_91:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_92:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:487][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_93:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:488][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_94:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:488][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_95:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:488][860]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_96:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.14.38:488][860]LogProperty: Warning: ObjectProperty /Script/AIModule.BTCompositeChild:ChildTask: unresolved reference to 'BTT_GetBack_C'"BehaviorTreeGraphNode_Task_23.BTT_GetBack_C_3"',Decorators=(BTDecorator_ConditionalLoop'"BehaviorTreeGraphNode_Decorator_49.BTDecorator_ConditionalLoop_6"'))'
+[2021.06.02-01.14.38:488][860]LogProperty: Warning: ObjectProperty Decorators./Script/AIModule.BTCompositeChild:Decorators: unresolved reference to 'BTDecorator_ConditionalLoop'"BehaviorTreeGraphNode_Decorator_49.BTDecorator_ConditionalLoop_6"'))'
+[2021.06.02-01.14.38:488][860]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.14.38:488][860]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.14.38:488][860]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.14.38:496][860]LogBehaviorTree: Warning: Kick Loop[57]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.43:536][440]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.43:536][440]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.46:969][837]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:273][871]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:761][924]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:762][924]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:794][925]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:794][925]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:857][932]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:857][932]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:917][939]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:917][939]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:976][946]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.47:976][946]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.48:139][965]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.48:139][965]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:882][618]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:883][618]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:899][620]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:899][620]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:908][621]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:908][621]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:926][623]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:926][623]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:926][623]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:936][624]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:936][624]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:953][626]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:953][626]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:987][630]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.53:987][630]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:037][635]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:037][635]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:058][637]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:058][637]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:077][639]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:077][639]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:095][641]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:095][641]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:109][642]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:109][642]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:144][646]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:144][646]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:396][675]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:567][695]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:568][695]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:594][698]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:594][698]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:607][699]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:607][699]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:624][701]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:625][701]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:735][714]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:735][714]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:761][717]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:761][717]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:788][720]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.14.54:788][720]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.15.38:748][799]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.15.39:103][840]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.15.53:569][458]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.15.53:569][458]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.18.38:183][ 30]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_91:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_92:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_93:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_94:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_95:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_96:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_97:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_23 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_98:BehaviorTreeGraphNode_Task_23
+[2021.06.02-01.20.07:511][664]LogProperty: Warning: ObjectProperty /Script/AIModule.BTCompositeChild:ChildTask: unresolved reference to 'BTT_GetBack_C'"BehaviorTreeGraphNode_Task_23.BTT_GetBack_C_3"',Decorators=(BTDecorator_ConditionalLoop'"BehaviorTreeGraphNode_Decorator_19.BTDecorator_ConditionalLoop_6"'))'
+[2021.06.02-01.20.07:511][664]LogProperty: Warning: ObjectProperty Decorators./Script/AIModule.BTCompositeChild:Decorators: unresolved reference to 'BTDecorator_ConditionalLoop'"BehaviorTreeGraphNode_Decorator_19.BTDecorator_ConditionalLoop_6"'))'
+[2021.06.02-01.20.07:511][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_91:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_92:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_93:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_94:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_95:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_96:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_97:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogUObjectHash: Warning: Ambiguous path search, could be BehaviorTreeGraphNode_Task /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss:Behavior Tree.BehaviorTreeGraphNode_Task_14 or BehaviorTreeGraphNode_Task /Engine/Transient.EdGraph_98:BehaviorTreeGraphNode_Task_14
+[2021.06.02-01.20.07:512][664]LogProperty: Warning: ObjectProperty /Script/AIModule.BTCompositeChild:ChildTask: unresolved reference to 'BTT_SetVinter_C'"BehaviorTreeGraphNode_Task_14.BTT_SetVinter_C_3"')'
+[2021.06.02-01.20.07:512][664]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.20.07:512][664]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.20.07:512][664]LogProperty: Warning: ObjectProperty /Script/AIModule.BTNode:ParentNode: unresolved reference to 'BTComposite_Sequence'"BehaviorTreeGraphNode_Composite_13.BTComposite_Sequence_10"''
+[2021.06.02-01.20.07:521][664]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.20.13:330][351]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.20.13:330][351]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.20.39:005][395]LogBehaviorTree: Warning: Kick Loop[66]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.22.42:230][ 66]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.22.42:240][ 66]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.22.42:240][ 66]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:22:42)
+[2021.06.02-01.22.42:240][ 66]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.22.42:249][ 66]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008675s)
+[2021.06.02-01.22.42:250][ 66]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.22.42:250][ 66]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE64CFD400), frame # 525066
+[2021.06.02-01.22.42:250][ 66]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE4FA79580), frame # 525066
+[2021.06.02-01.22.42:250][ 66]LogPlayLevel: PIE: World Init took: (0.001100s)
+[2021.06.02-01.22.42:250][ 66]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009892s)
+[2021.06.02-01.22.42:285][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.22.42:289][ 66]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.22.42:289][ 66]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.22.42:289][ 66]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.22.42:292][ 66]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.22.42:292][ 66]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.22.42:307][ 66]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.22.42:307][ 66]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.22.42:307][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.22.42:307][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.22.42:307][ 66]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.22.42:318][ 66]LogInit: FAudioDevice initialized.
+[2021.06.02-01.22.42:319][ 66]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.22.42:325][ 66]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.22.42:327][ 66]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.22.42:327][ 66]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.22.42:328][ 66]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.22.42
+[2021.06.02-01.22.42:330][ 66]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.22.42:331][ 66]LogWorld: Bringing up level for play took: 0.005399
+[2021.06.02-01.22.42:331][ 66]LogOnline: OSS: Creating online subsystem instance for: :Context_30
+[2021.06.02-01.22.42:335][ 66]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.22.42:335][ 66]ShowFlag.Bones = "2"
+[2021.06.02-01.22.42:336][ 66]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.22.42:336][ 66]PIE: 에디터에서 플레이 총 시작 시간 0.099초입니다.
+[2021.06.02-01.22.42:385][ 68]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16650.125
+[2021.06.02-01.22.42:731][109]LogTemp: Warning: X=0.000 Y=12000.000 Z=16650.125
+[2021.06.02-01.22.43:968][247]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16650.125
+[2021.06.02-01.22.45:210][393]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16650.125
+[2021.06.02-01.22.46:452][541]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16650.125
+[2021.06.02-01.22.47:700][689]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16650.125
+[2021.06.02-01.22.48:946][836]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16650.125
+[2021.06.02-01.22.56:035][679]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.22.56:035][679]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.22.56:035][679]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.22.56:036][679]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.22.56:043][679]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.22.56:046][679]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.22.56:086][679]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.22.56:088][679]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE4FA79580), frame # 526679
+[2021.06.02-01.22.56:088][679]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE64CFD400), frame # 526679
+[2021.06.02-01.22.56:090][679]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.06.02-01.22.56:206][680]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2021.06.02-01.22.57:288][779]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.22.57:293][779]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.23.18:313][267]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.23.18:323][267]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.23.18:323][267]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:23:18)
+[2021.06.02-01.23.18:373][267]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.23.18:385][267]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011796s)
+[2021.06.02-01.23.18:386][267]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.23.18:386][267]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE4FCCAA00), frame # 529267
+[2021.06.02-01.23.18:386][267]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE4F90AD40), frame # 529267
+[2021.06.02-01.23.18:386][267]LogPlayLevel: PIE: World Init took: (0.000973s)
+[2021.06.02-01.23.18:386][267]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.012929s)
+[2021.06.02-01.23.18:414][267]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.23.18:417][267]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.23.18:417][267]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.23.18:417][267]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.23.18:419][267]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.23.18:420][267]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.23.18:434][267]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.23.18:434][267]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.23.18:434][267]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.23.18:434][267]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.23.18:436][267]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.23.18:445][267]LogInit: FAudioDevice initialized.
+[2021.06.02-01.23.18:445][267]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.23.18:455][267]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.23.18:457][267]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.23.18:457][267]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.23.18:458][267]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.23.18
+[2021.06.02-01.23.18:460][267]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.23.18:461][267]LogWorld: Bringing up level for play took: 0.005373
+[2021.06.02-01.23.18:461][267]LogOnline: OSS: Creating online subsystem instance for: :Context_31
+[2021.06.02-01.23.18:465][267]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.23.18:465][267]ShowFlag.Bones = "2"
+[2021.06.02-01.23.18:466][267]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.23.18:466][267]PIE: 에디터에서 플레이 총 시작 시간 0.146초입니다.
+[2021.06.02-01.23.33:536][867]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.23.33:536][867]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.23.33:537][867]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.23.33:537][867]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.23.33:545][867]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.23.33:549][867]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.23.33:576][867]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.23.33:592][867]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE4F90AD40), frame # 530867
+[2021.06.02-01.23.33:592][867]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE4FCCAA00), frame # 530867
+[2021.06.02-01.23.33:594][867]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2021.06.02-01.23.33:693][868]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2021.06.02-01.23.35:027][982]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.23.35:032][982]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.24.26:829][ 58]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.24.27:060][ 84]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.24.27:823][175]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.25.09:978][150]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.25.09:988][150]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.25.09:988][150]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:25:09)
+[2021.06.02-01.25.09:988][150]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.25.09:997][150]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008518s)
+[2021.06.02-01.25.09:997][150]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.25.09:998][150]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BEA55CFA00), frame # 542150
+[2021.06.02-01.25.09:998][150]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE4FCD6C00), frame # 542150
+[2021.06.02-01.25.09:998][150]LogPlayLevel: PIE: World Init took: (0.000933s)
+[2021.06.02-01.25.09:998][150]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009562s)
+[2021.06.02-01.25.10:030][150]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.25.10:034][150]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.25.10:034][150]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.25.10:035][150]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.25.10:035][150]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.25.10:037][150]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.25.10:037][150]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.25.10:051][150]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.25.10:052][150]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.25.10:052][150]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.25.10:052][150]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.25.10:054][150]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.25.10:064][150]LogInit: FAudioDevice initialized.
+[2021.06.02-01.25.10:064][150]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.25.10:073][150]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.25.10:076][150]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.25.10:076][150]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.25.10:077][150]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.25.10
+[2021.06.02-01.25.10:079][150]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.25.10:080][150]LogWorld: Bringing up level for play took: 0.005618
+[2021.06.02-01.25.10:080][150]LogOnline: OSS: Creating online subsystem instance for: :Context_32
+[2021.06.02-01.25.10:084][150]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.25.10:084][150]ShowFlag.Bones = "2"
+[2021.06.02-01.25.10:085][150]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.25.10:085][150]PIE: 에디터에서 플레이 총 시작 시간 0.099초입니다.
+[2021.06.02-01.25.20:055][ 86]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.25.20:055][ 86]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.25.20:055][ 86]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.25.20:056][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.25.20:066][ 86]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.25.20:069][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.25.20:121][ 86]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.25.20:123][ 86]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE4FCD6C00), frame # 543086
+[2021.06.02-01.25.20:123][ 86]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BEA55CFA00), frame # 543086
+[2021.06.02-01.25.20:125][ 86]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2021.06.02-01.25.20:231][ 87]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2021.06.02-01.25.21:551][196]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.25.21:556][196]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.25.29:831][ 93]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.25.29:841][ 93]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.25.29:842][ 93]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:25:29)
+[2021.06.02-01.25.29:862][ 93]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.25.29:877][ 93]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014177s)
+[2021.06.02-01.25.29:878][ 93]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.25.29:878][ 93]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE481BE400), frame # 544093
+[2021.06.02-01.25.29:878][ 93]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE4FE5D6C0), frame # 544093
+[2021.06.02-01.25.29:878][ 93]LogPlayLevel: PIE: World Init took: (0.001263s)
+[2021.06.02-01.25.29:879][ 93]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.015726s)
+[2021.06.02-01.25.29:909][ 93]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.25.29:912][ 93]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.25.29:912][ 93]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.25.29:912][ 93]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.25.29:915][ 93]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.25.29:915][ 93]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.25.29:928][ 93]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.25.29:928][ 93]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.25.29:928][ 93]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.25.29:928][ 93]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.25.29:930][ 93]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.25.29:940][ 93]LogInit: FAudioDevice initialized.
+[2021.06.02-01.25.29:941][ 93]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.25.29:950][ 93]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.25.29:953][ 93]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.25.29:953][ 93]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.25.29:954][ 93]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.25.29
+[2021.06.02-01.25.29:955][ 93]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.25.29:956][ 93]LogWorld: Bringing up level for play took: 0.005390
+[2021.06.02-01.25.29:956][ 93]LogOnline: OSS: Creating online subsystem instance for: :Context_33
+[2021.06.02-01.25.29:961][ 93]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.25.29:961][ 93]ShowFlag.Bones = "2"
+[2021.06.02-01.25.29:961][ 93]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.25.29:962][ 93]PIE: 에디터에서 플레이 총 시작 시간 0.123초입니다.
+[2021.06.02-01.25.30:015][ 95]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16633.312
+[2021.06.02-01.25.30:375][130]LogTemp: Warning: X=0.000 Y=12000.000 Z=16633.312
+[2021.06.02-01.25.31:623][263]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16633.312
+[2021.06.02-01.25.32:871][396]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16633.312
+[2021.06.02-01.25.34:118][516]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16633.312
+[2021.06.02-01.25.35:359][649]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16633.312
+[2021.06.02-01.25.36:601][778]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16633.312
+[2021.06.02-01.25.42:936][441]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.25.42:936][441]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.25.42:936][441]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.25.42:936][441]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.25.42:942][441]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.25.42:946][441]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.25.42:971][441]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.25.42:987][441]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE4FE5D6C0), frame # 545441
+[2021.06.02-01.25.42:988][441]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE481BE400), frame # 545441
+[2021.06.02-01.25.42:990][441]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2021.06.02-01.25.43:095][442]LogPlayLevel: Display: Destroying online subsystem :Context_33
+[2021.06.02-01.25.44:328][551]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.25.44:333][551]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.26.05:936][  3]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.12:445][697]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.12:446][697]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.13:960][871]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.13:960][871]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.47:893][756]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.47:894][756]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.54:229][474]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.54:229][474]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.57:077][800]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.57:077][800]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.59:592][ 92]LogBehaviorTree: Warning: Kick Loop[63]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.27.59:592][ 92]LogBehaviorTree: Warning: Kick Loop[63]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.28.11:173][406]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.28.11:173][406]LogBehaviorTree: Warning: Kick Loop[64]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.28.14:846][823]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.28.14:846][823]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.28.28:731][417]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.30.24:543][374]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.30.24:561][374]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.30.24:584][374]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossC835EE0244ECC4EF8DD569A105C44760.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.30.24:600][374]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.30.24:600][374]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.30.39:991][ 67]LogBehaviorTree: Warning: Kick Loop[65]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.30.40:010][ 67]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.30.40:035][ 67]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossAAD5A7D84F56BFD5A6053A90F7EDA143.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.30.40:049][ 67]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.30.40:049][ 67]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.31.29:469][616]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.31.29:528][623]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.31.39:280][785]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.31.44:734][439]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.31.46:167][611]LogBehaviorTree: Warning: Kick Loop[61]> Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.32.15:754][124]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.32.15:764][124]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.32.15:764][124]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:32:15)
+[2021.06.02-01.32.15:803][124]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.32.15:811][124]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008043s)
+[2021.06.02-01.32.15:812][124]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.32.15:812][124]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE8AC58A00), frame # 587124
+[2021.06.02-01.32.15:812][124]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE4FA7B380), frame # 587124
+[2021.06.02-01.32.15:812][124]LogPlayLevel: PIE: World Init took: (0.001069s)
+[2021.06.02-01.32.15:812][124]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009261s)
+[2021.06.02-01.32.15:843][124]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.32.15:846][124]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.32.15:846][124]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.32.15:847][124]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.32.15:847][124]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.32.15:849][124]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.32.15:849][124]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.32.15:863][124]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.32.15:864][124]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.32.15:864][124]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.32.15:864][124]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.32.15:866][124]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.32.15:876][124]LogInit: FAudioDevice initialized.
+[2021.06.02-01.32.15:876][124]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.32.15:880][124]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.32.15:882][124]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.32.15:882][124]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.32.15:883][124]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.32.15
+[2021.06.02-01.32.15:885][124]LogBehaviorTree: Warning: > Failed to find key 'KickInter' in BB asset BlackboardData /Game/ThirdPersonCPP/AI/BB_Boss.BB_Boss. BB Key Selector will be set to 'Invalid'
+[2021.06.02-01.32.15:886][124]LogWorld: Bringing up level for play took: 0.005573
+[2021.06.02-01.32.15:886][124]LogOnline: OSS: Creating online subsystem instance for: :Context_34
+[2021.06.02-01.32.15:890][124]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.32.15:890][124]ShowFlag.Bones = "2"
+[2021.06.02-01.32.15:891][124]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.32.15:891][124]PIE: 에디터에서 플레이 총 시작 시간 0.13초입니다.
+[2021.06.02-01.32.15:941][126]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16631.504
+[2021.06.02-01.32.16:290][167]LogTemp: Warning: X=0.000 Y=12000.000 Z=16631.504
+[2021.06.02-01.32.17:531][310]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16631.504
+[2021.06.02-01.32.18:775][454]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16631.504
+[2021.06.02-01.32.20:017][596]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16631.504
+[2021.06.02-01.32.21:258][729]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16631.504
+[2021.06.02-01.32.22:504][872]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16631.504
+[2021.06.02-01.32.27:792][494]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.32.31:545][931]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.32.31:545][931]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.32.31:546][931]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.32.31:548][931]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.32.31:557][931]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.32.31:561][931]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.32.31:601][931]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.32.31:603][931]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE4FA7B380), frame # 588931
+[2021.06.02-01.32.31:603][931]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE8AC58A00), frame # 588931
+[2021.06.02-01.32.31:605][931]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2021.06.02-01.32.31:710][932]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2021.06.02-01.32.33:357][ 94]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.32.33:362][ 94]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.33.20:631][681]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.33.20:653][681]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossE9F7DCE344B6D6699A07EEB96C6D440B.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.33.20:665][681]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.33.20:666][681]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.33.22:603][894]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.33.22:613][894]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.33.22:614][894]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:33:22)
+[2021.06.02-01.33.22:652][894]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.33.22:660][894]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007753s)
+[2021.06.02-01.33.22:661][894]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.33.22:661][894]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE4823E600), frame # 594894
+[2021.06.02-01.33.22:661][894]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE5284AE80), frame # 594894
+[2021.06.02-01.33.22:661][894]LogPlayLevel: PIE: World Init took: (0.000897s)
+[2021.06.02-01.33.22:661][894]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.008783s)
+[2021.06.02-01.33.22:689][894]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.33.22:691][894]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.33.22:691][894]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.33.22:692][894]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.33.22:692][894]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.33.22:694][894]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.33.22:694][894]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.33.22:708][894]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.33.22:708][894]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.33.22:708][894]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.33.22:708][894]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.33.22:709][894]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.33.22:720][894]LogInit: FAudioDevice initialized.
+[2021.06.02-01.33.22:720][894]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.33.22:730][894]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.33.22:733][894]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.33.22:733][894]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.33.22:734][894]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.33.22
+[2021.06.02-01.33.22:736][894]LogWorld: Bringing up level for play took: 0.005256
+[2021.06.02-01.33.22:737][894]LogOnline: OSS: Creating online subsystem instance for: :Context_35
+[2021.06.02-01.33.22:741][894]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.33.22:741][894]ShowFlag.Bones = "2"
+[2021.06.02-01.33.22:741][894]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.33.22:742][894]PIE: 에디터에서 플레이 총 시작 시간 0.131초입니다.
+[2021.06.02-01.33.22:791][896]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16629.711
+[2021.06.02-01.33.23:136][936]LogTemp: Warning: X=0.000 Y=12000.000 Z=16629.711
+[2021.06.02-01.33.24:380][ 82]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16629.711
+[2021.06.02-01.33.25:619][229]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16629.711
+[2021.06.02-01.33.29:085][624]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16629.711
+[2021.06.02-01.33.30:331][757]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16629.711
+[2021.06.02-01.33.31:577][891]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16629.711
+[2021.06.02-01.33.36:869][471]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.33.42:559][105]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.33.52:740][220]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.34.38:882][229]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16071.215
+[2021.06.02-01.34.38:919][233]LogTemp: Warning: X=16000.000 Y=20000.000 Z=16071.215
+[2021.06.02-01.34.39:076][245]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.34.39:076][245]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.34.39:077][245]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.34.39:077][245]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.34.39:083][245]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.34.39:087][245]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.34.39:114][245]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.34.39:130][245]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE5284AE80), frame # 603245
+[2021.06.02-01.34.39:130][245]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE4823E600), frame # 603245
+[2021.06.02-01.34.39:132][245]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2021.06.02-01.34.39:249][246]LogPlayLevel: Display: Destroying online subsystem :Context_35
+[2021.06.02-01.34.46:304][  0]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.34.46:309][  0]LogSlate: Window '메시지 로그' being destroyed

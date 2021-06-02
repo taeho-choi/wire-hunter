@@ -38,7 +38,7 @@ ABoss::ABoss()
 	SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
 	SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
 
-	SetHealth(100);
+	SetHealth(2000);
 	BossSkeletalMesh->SetSimulatePhysics(false);
 
 	//need line to set default ai controller.
@@ -306,6 +306,10 @@ void ABoss::BeginPlay()
 	MakeMap();
 
 	//GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
+
+	FacePlayer();
+	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
+	this->SetActorRotation(rot);
 }
 
 TArray<FStructNode> ABoss::DoAStar()
