@@ -44,6 +44,8 @@ ABoss::ABoss()
 	//need line to set default ai controller.
 	AIControllerClass = ABossAIController::StaticClass();
 	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
+
+	ToFace = false;
 }
 
 void ABoss::MakeMap()
@@ -350,9 +352,11 @@ void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FacePlayer();
-	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
-	this->SetActorRotation(rot);
+	if (ToFace) {
+		FacePlayer();
+		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
+		this->SetActorRotation(rot);
+	}
 
 	if (Health < 0) {
 		BossSkeletalMesh->SetSimulatePhysics(true);

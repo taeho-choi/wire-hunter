@@ -2369,3 +2369,554 @@ Script Stack (0 frames):
 [2021.06.02-01.34.39:249][246]LogPlayLevel: Display: Destroying online subsystem :Context_35
 [2021.06.02-01.34.46:304][  0]LogSlate: Window '메시지 로그' being destroyed
 [2021.06.02-01.34.46:309][  0]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.38.30:358][582]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_SetUpPosition.BTT_SetUpPosition
+[2021.06.02-01.38.39:599][640]BlueprintLog: New page: BTT_SetUpPosition 컴파일
+[2021.06.02-01.38.39:651][640]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2021.06.02-01.38.40:243][703]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetUpPosition" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetUpPosition.uasset" SILENT=true
+[2021.06.02-01.38.40:257][703]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetUpPositionBA83B1FC4F02C60873F01FBBA64EF386.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetUpPosition.uasset'
+[2021.06.02-01.38.40:269][703]AssetCheck: New page: 애셋 저장: BTT_SetUpPosition
+[2021.06.02-01.38.40:269][703]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetUpPosition.BTT_SetUpPosition 유효성 검사
+[2021.06.02-01.39.16:892][ 31]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_FireballMove.BTT_FireballMove
+[2021.06.02-01.39.24:407][891]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.39.24:417][891]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.39.24:417][891]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:39:24)
+[2021.06.02-01.39.24:452][891]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.39.24:462][891]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009367s)
+[2021.06.02-01.39.24:463][891]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.39.24:463][891]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BE7B240200), frame # 628891
+[2021.06.02-01.39.24:463][891]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BE254E0F40), frame # 628891
+[2021.06.02-01.39.24:463][891]LogPlayLevel: PIE: World Init took: (0.001016s)
+[2021.06.02-01.39.24:463][891]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.010556s)
+[2021.06.02-01.39.24:494][891]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.39.24:496][891]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.39.24:496][891]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.39.24:496][891]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.39.24:499][891]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.39.24:499][891]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.39.24:513][891]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.39.24:513][891]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.39.24:513][891]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.39.24:513][891]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.39.24:514][891]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.39.24:525][891]LogInit: FAudioDevice initialized.
+[2021.06.02-01.39.24:525][891]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.39.24:539][891]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.39.24:542][891]LogScript: Warning: CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.
+	ThirdPerson_AnimBP_C /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_WHCharacter.CharacterMesh0.ThirdPerson_AnimBP_C_0
+	Function /Game/ThirdPersonCPP/GraphicResources/Character/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:ExecuteUbergraph_ThirdPerson_AnimBP:026D
+[2021.06.02-01.39.24:542][891]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.39.24:543][891]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.39.24
+[2021.06.02-01.39.24:545][891]LogWorld: Bringing up level for play took: 0.005348
+[2021.06.02-01.39.24:545][891]LogOnline: OSS: Creating online subsystem instance for: :Context_38
+[2021.06.02-01.39.24:550][891]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.39.24:550][891]ShowFlag.Bones = "2"
+[2021.06.02-01.39.24:551][891]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.39.24:551][891]PIE: 에디터에서 플레이 총 시작 시간 0.137초입니다.
+[2021.06.02-01.39.24:597][893]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16629.096
+[2021.06.02-01.39.24:947][935]LogTemp: Warning: X=0.000 Y=12000.000 Z=16629.096
+[2021.06.02-01.39.26:192][ 84]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16629.096
+[2021.06.02-01.39.27:438][233]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16629.096
+[2021.06.02-01.39.28:682][382]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16629.096
+[2021.06.02-01.39.29:928][531]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16629.096
+[2021.06.02-01.39.31:175][680]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16629.096
+[2021.06.02-01.39.38:063][506]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.39.54:606][482]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.39.54:606][482]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.39.54:606][482]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.39.54:607][482]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.39.54:611][482]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.39.54:615][482]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.39.54:658][482]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.39.54:660][482]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BE254E0F40), frame # 632482
+[2021.06.02-01.39.54:660][482]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BE7B240200), frame # 632482
+[2021.06.02-01.39.54:663][482]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.06.02-01.39.54:772][483]LogPlayLevel: Display: Destroying online subsystem :Context_38
+[2021.06.02-01.40.01:296][225]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.40.01:298][225]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.41.13:317][579]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.41.13:345][579]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss4269072744F3713247CD52849D64BFFE.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.41.13:356][579]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.41.13:356][579]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.49.33:517][660]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.49.33:540][660]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss6602F29F4F130933C73C509E2EE3B6FA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.49.33:554][660]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.49.33:554][660]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.49.35:523][865]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.49.35:533][865]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.49.35:533][865]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:49:35)
+[2021.06.02-01.49.35:534][865]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.49.35:542][865]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008055s)
+[2021.06.02-01.49.35:543][865]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.49.35:543][865]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BEBE674C00), frame # 699865
+[2021.06.02-01.49.35:543][865]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BEBE824F40), frame # 699865
+[2021.06.02-01.49.35:543][865]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2021.06.02-01.49.35:543][865]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.009330s)
+[2021.06.02-01.49.35:578][865]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.49.35:580][865]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.49.35:580][865]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.49.35:580][865]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.49.35:581][865]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.49.35:583][865]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.49.35:583][865]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.49.35:598][865]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.49.35:598][865]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.49.35:599][865]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.49.35:599][865]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.49.35:599][865]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.49.35:610][865]LogInit: FAudioDevice initialized.
+[2021.06.02-01.49.35:610][865]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.49.35:617][865]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.49.35:620][865]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.49.35:623][865]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.49.35
+[2021.06.02-01.49.35:625][865]LogWorld: Bringing up level for play took: 0.007262
+[2021.06.02-01.49.35:625][865]LogOnline: OSS: Creating online subsystem instance for: :Context_39
+[2021.06.02-01.49.35:630][865]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.49.35:630][865]ShowFlag.Bones = "2"
+[2021.06.02-01.49.35:630][865]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.49.35:631][865]PIE: 에디터에서 플레이 총 시작 시간 0.101초입니다.
+[2021.06.02-01.49.38:954][211]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16122.326
+[2021.06.02-01.49.39:308][248]LogTemp: Warning: X=0.000 Y=12000.000 Z=16122.326
+[2021.06.02-01.49.40:556][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.49.40:556][378]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.49.40:556][378]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.49.40:557][378]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.49.40:565][378]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.49.40:569][378]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.49.40:612][378]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.49.40:614][378]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BEBE824F40), frame # 700378
+[2021.06.02-01.49.40:614][378]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BEBE674C00), frame # 700378
+[2021.06.02-01.49.40:616][378]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2021.06.02-01.49.40:713][379]LogPlayLevel: Display: Destroying online subsystem :Context_39
+[2021.06.02-01.49.42:144][503]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.49.42:148][503]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.50.18:303][778]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-01.50.18:324][778]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossD1D3A71A4B945D23E0FA0AABDFE793CA.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-01.50.18:335][778]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-01.50.18:335][778]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-01.50.20:145][984]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.02-01.50.20:155][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.02-01.50.20:155][984]PIE: New page: PIE 세션: GameLevel (2021. 6. 2. 오후 7:50:20)
+[2021.06.02-01.50.20:155][984]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.50.20:163][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007481s)
+[2021.06.02-01.50.20:163][984]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.02-01.50.20:164][984]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001BEA662FE00), frame # 704984
+[2021.06.02-01.50.20:164][984]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001BEA6754E00), frame # 704984
+[2021.06.02-01.50.20:164][984]LogPlayLevel: PIE: World Init took: (0.000899s)
+[2021.06.02-01.50.20:164][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.008479s)
+[2021.06.02-01.50.20:195][984]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2021.06.02-01.50.20:196][984]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.02-01.50.20:196][984]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.02-01.50.20:196][984]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.02-01.50.20:197][984]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.02-01.50.20:197][984]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.02-01.50.20:197][984]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.02-01.50.20:197][984]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.02-01.50.20:197][984]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.02-01.50.20:197][984]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.02-01.50.20:197][984]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.02-01.50.20:199][984]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.02-01.50.20:199][984]LogAudioMixer: Display: 1: FrontRight
+[2021.06.02-01.50.20:212][984]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.02-01.50.20:212][984]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.02-01.50.20:212][984]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.02-01.50.20:212][984]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.02-01.50.20:214][984]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.02-01.50.20:224][984]LogInit: FAudioDevice initialized.
+[2021.06.02-01.50.20:224][984]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.02-01.50.20:234][984]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.02-01.50.20:237][984]PIE: Error: 블루프린트 런타임 오류: "CharacterRef 프로퍼티를 읽으려던 중 None 에 접근했습니다.". 블루프린트: ThirdPerson_AnimBP 함수: Execute Ubergraph Third Person Anim BP 그래프: EventGraph 노드: Climb- 설정
+[2021.06.02-01.50.20:238][984]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.02-10.50.20
+[2021.06.02-01.50.20:240][984]LogWorld: Bringing up level for play took: 0.005054
+[2021.06.02-01.50.20:240][984]LogOnline: OSS: Creating online subsystem instance for: :Context_40
+[2021.06.02-01.50.20:244][984]Cmd: ShowFlag.Bones 2
+[2021.06.02-01.50.20:244][984]ShowFlag.Bones = "2"
+[2021.06.02-01.50.20:245][984]PIE: 서버가 로그인했습니다.
+[2021.06.02-01.50.20:245][984]PIE: 에디터에서 플레이 총 시작 시간 0.093초입니다.
+[2021.06.02-01.50.23:162][330]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16122.326
+[2021.06.02-01.50.23:506][371]LogTemp: Warning: X=0.000 Y=12000.000 Z=16122.326
+[2021.06.02-01.50.24:751][520]LogTemp: Warning: X=4000.000 Y=16000.000 Z=16122.326
+[2021.06.02-01.50.25:996][669]LogTemp: Warning: X=8000.000 Y=20000.000 Z=16122.326
+[2021.06.02-01.50.27:241][818]LogTemp: Warning: X=12000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.50.28:482][966]LogTemp: Warning: X=16000.000 Y=28000.000 Z=16122.326
+[2021.06.02-01.50.29:723][114]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.50.36:612][940]LogTemp: Warning: X=20000.000 Y=24000.000 Z=16122.326
+[2021.06.02-01.50.39:195][246]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.50.39:195][246]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.02-01.50.39:195][246]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-01.50.39:196][246]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.50.39:205][246]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.02-01.50.39:209][246]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-01.50.39:251][246]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.02-01.50.39:253][246]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001BEA6754E00), frame # 707246
+[2021.06.02-01.50.39:253][246]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001BEA662FE00), frame # 707246
+[2021.06.02-01.50.39:255][246]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2021.06.02-01.50.39:364][247]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2021.06.02-01.50.40:955][408]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.50.40:958][408]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.02-01.56.37:397][234]LogHotReload: New module detected: UE4Editor-WireHunter-0004.dll
+[2021.06.02-01.56.38:079][237]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.02-01.56.38:160][237]LogClass: Could not find existing class Boss in package /Script/WireHunter for HotReload, assuming new class
+[2021.06.02-01.56.38:160][237]LogClass: Function DoAStar is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function FindPlayer is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function GetGoal is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function GetPath is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function GetToFace is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function Lightning is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function SetToFace is new.
+[2021.06.02-01.56.38:161][237]LogClass: Function Spawn is new.
+[2021.06.02-01.56.38:191][237]LogClass: StructNode HotReload.
+[2021.06.02-01.56.38:191][237]LogClass: StructWeight HotReload.
+[2021.06.02-01.56.38:192][237]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-01.56.38:340][237]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.147 s
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: 
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: Stack: 
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff9ec3cd828 UE4Editor-WireHunter-0004.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff9ec3a5fc0 UE4Editor-WireHunter-0004.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa54c4c273 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3672]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef8451 UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:861]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bbf UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:950]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b708 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadFromIDE() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1535]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c3e1 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1479]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-01.56.38:340][237]LogOutputDevice: Error: 
+[2021.06.02-01.56.38:347][237]LogStats:             FDebug::EnsureFailed -  0.155 s
+[2021.06.02-01.56.38:358][237]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-01.56.38:408][237]LogHotReload: Re-instancing Fireball after hot-reload.
+[2021.06.02-01.56.38:446][237]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-01.56.38:493][237]LogHotReload: Re-instancing Lightning after hot-reload.
+[2021.06.02-01.56.38:541][237]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-01.56.38:595][237]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-01.56.38:650][237]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0011 seconds. Added 19 classes and 2 folders.
+[2021.06.02-01.56.38:654][237]Display: HotReload successful (3 functions remapped  2 scriptstructs remapped)
+[2021.06.02-01.56.38:746][237]LogContentBrowser: Native class hierarchy populated in 0.0123 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-01.56.38:749][237]Display: HotReload took  0.7s.
+[2021.06.02-01.59.28:414][908]Candidate modules for hot reload:
+[2021.06.02-01.59.28:414][908]  WireHunter
+[2021.06.02-01.59.28:414][908]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,3818 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.06.02-01.59.28:415][908]Warning: Starting HotReload took  0.0s.
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog: New page: 컴파일 - 2021. 6. 2. 오후 7:59:29
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog: Building WireHunterEditor...
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog:   [1/3] UE4Editor-WireHunter-3818.lib
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3818.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3818.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog:   [2/3] UE4Editor-WireHunter-3818.dll
+[2021.06.02-01.59.29:969][ 35]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3818.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3818.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.02-01.59.29:970][ 35]CompilerResultsLog:   [3/3] WireHunterEditor.target
+[2021.06.02-01.59.29:970][ 35]CompilerResultsLog: Total time in Parallel executor: 0.94 seconds
+[2021.06.02-01.59.29:970][ 35]CompilerResultsLog: Total execution time: 1.49 seconds
+[2021.06.02-01.59.29:970][ 35]LogMainFrame: MainFrame: Module compiling took 1.558 seconds
+[2021.06.02-01.59.30:042][ 35]LogClass: StructNode HotReload.
+[2021.06.02-01.59.30:043][ 35]LogClass: StructWeight HotReload.
+[2021.06.02-01.59.30:047][ 35]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-01.59.30:181][ 35]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.134 s
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: 
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: Stack: 
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9ec34d828 UE4Editor-WireHunter-3818.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9ec325fc0 UE4Editor-WireHunter-3818.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f67944be UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f6783d4e UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
+[2021.06.02-01.59.30:181][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a995 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796b33 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1266]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796e01 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1256]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f678f836 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:546]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa54b6ed1d UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef6839 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:796]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bc6 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:955]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f6789617 UE4Editor-HotReload.dll!UE4Function_Private::TFunctionRefCaller<<lambda_d85446a946c3f6776c68ebfeb93e5785>,void __cdecl(TMap<FName,FString,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<FName,FString,0> > const &,bool,enum ECompilationResult::Type)>::Call() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Templates\Function.h:549]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a1ad UE4Editor-HotReload.dll!FHotReloadModule::CheckForFinishedModuleDLLCompile() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1865]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c057 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1427]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-01.59.30:182][ 35]LogOutputDevice: Error: 
+[2021.06.02-01.59.30:191][ 35]LogStats:             FDebug::EnsureFailed -  0.144 s
+[2021.06.02-01.59.30:191][ 35]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-01.59.30:241][ 35]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-01.59.30:295][ 35]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-01.59.30:345][ 35]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-01.59.30:396][ 35]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.02-01.59.30:400][ 35]Display: HotReload successful (11 functions remapped  2 scriptstructs remapped)
+[2021.06.02-01.59.30:485][ 35]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-01.59.30:486][ 35]Display: HotReload took  2.1s.
+[2021.06.02-02.01.07:343][512]LogHotReload: New module detected: UE4Editor-WireHunter-0006.dll
+[2021.06.02-02.01.08:024][515]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.02-02.01.08:111][515]LogClass: StructNode HotReload.
+[2021.06.02-02.01.08:111][515]LogClass: StructWeight HotReload.
+[2021.06.02-02.01.08:114][515]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-02.01.08:243][515]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.129 s
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: 
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: Stack: 
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9eab9d828 UE4Editor-WireHunter-0006.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9eab75fc0 UE4Editor-WireHunter-0006.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f67944be UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f6783d4e UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a995 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796b33 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1266]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796e01 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1256]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f678f836 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:546]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa54b6ed1d UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef6839 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:796]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bc6 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:955]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b708 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadFromIDE() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1535]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c3e1 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1479]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-02.01.08:243][515]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-02.01.08:244][515]LogOutputDevice: Error: 
+[2021.06.02-02.01.08:256][515]LogStats:             FDebug::EnsureFailed -  0.142 s
+[2021.06.02-02.01.08:256][515]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-02.01.08:301][515]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-02.01.08:354][515]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-02.01.08:406][515]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-02.01.08:458][515]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.02-02.01.08:464][515]Display: HotReload successful (11 functions remapped  2 scriptstructs remapped)
+[2021.06.02-02.01.08:564][515]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-02.01.08:567][515]Display: HotReload took  0.5s.
+[2021.06.02-02.12.52:750][675]Candidate modules for hot reload:
+[2021.06.02-02.12.52:750][675]  WireHunter
+[2021.06.02-02.12.52:750][675]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,3223 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.06.02-02.12.52:751][675]Warning: Starting HotReload took  0.0s.
+[2021.06.02-02.12.54:308][807]CompilerResultsLog: New page: 컴파일 - 2021. 6. 2. 오후 8:12:54
+[2021.06.02-02.12.54:308][807]CompilerResultsLog: Building WireHunterEditor...
+[2021.06.02-02.12.54:308][807]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.02-02.12.54:308][807]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.06.02-02.12.54:308][807]CompilerResultsLog:   [1/3] UE4Editor-WireHunter-3223.lib
+[2021.06.02-02.12.54:308][807]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3223.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3223.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.02-02.12.54:308][807]CompilerResultsLog:   [2/3] UE4Editor-WireHunter-3223.dll
+[2021.06.02-02.12.54:308][807]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3223.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3223.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.02-02.12.54:309][807]CompilerResultsLog:   [3/3] WireHunterEditor.target
+[2021.06.02-02.12.54:309][807]CompilerResultsLog: Total time in Parallel executor: 0.97 seconds
+[2021.06.02-02.12.54:309][807]CompilerResultsLog: Total execution time: 1.50 seconds
+[2021.06.02-02.12.54:309][807]LogMainFrame: MainFrame: Module compiling took 1.561 seconds
+[2021.06.02-02.12.54:419][807]LogClass: StructNode HotReload.
+[2021.06.02-02.12.54:419][807]LogClass: StructWeight HotReload.
+[2021.06.02-02.12.54:423][807]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.06.02-02.12.54:548][807]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.125 s
+[2021.06.02-02.12.54:548][807]LogOutputDevice: Error: === Handled ensure: ===
+[2021.06.02-02.12.54:548][807]LogOutputDevice: Error: 
+[2021.06.02-02.12.54:548][807]LogOutputDevice: Error: Ensure condition failed: this->IsBound() [File:C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl] [Line: 1132]
+[2021.06.02-02.12.54:548][807]LogOutputDevice: Error: Unable to bind delegate to 'OnHit' (function might not be marked as a UFUNCTION or object may be pending kill)
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: Stack: 
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9ece2d828 UE4Editor-WireHunter-3223.dll!DispatchCheckVerify<bool,<lambda_d1acd25b4c0462b0407b0194b56ca6c9> >() [C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:161]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9ece05fc0 UE4Editor-WireHunter-3223.dll!UnknownFunction [C:\Wire-Hunter\work\choi\WireHunter\Source\WireHunter\Boss.cpp:37]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f67944be UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f6783d4e UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a995 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796b33 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1266]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f6796e01 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1256]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f678f836 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:546]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa54b6ed1d UE4Editor-CoreUObject.dll!TBaseMulticastDelegate<void>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa54ef6839 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:796]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa54ed5bc6 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:955]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa54df4465 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool)>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:859]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa1c43986a UE4Editor-Core.dll!TBaseMulticastDelegate<void,FName,bool>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:1013]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa1c4599f0 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:500]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa1c458b08 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:334]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f678b9b2 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f6789617 UE4Editor-HotReload.dll!UE4Function_Private::TFunctionRefCaller<<lambda_d85446a946c3f6776c68ebfeb93e5785>,void __cdecl(TMap<FName,FString,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<FName,FString,0> > const &,bool,enum ECompilationResult::Type)>::Call() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Templates\Function.h:549]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f678a1ad UE4Editor-HotReload.dll!FHotReloadModule::CheckForFinishedModuleDLLCompile() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1865]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff9f679c057 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1427]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa1c1bd0a9 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff73402a213 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5051]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff73403ba7c UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:169]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff73403bb5a UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff73404e31d UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:268]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ff73405145a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa8f047034 KERNEL32.DLL!UnknownFunction []
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: [Callstack] 0x00007ffa903e2651 ntdll.dll!UnknownFunction []
+[2021.06.02-02.12.54:549][807]LogOutputDevice: Error: 
+[2021.06.02-02.12.54:558][807]LogStats:             FDebug::EnsureFailed -  0.134 s
+[2021.06.02-02.12.54:558][807]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.02-02.12.54:612][807]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.02-02.12.54:671][807]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.02-02.12.54:727][807]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.02-02.12.54:797][807]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0006 seconds. Added 19 classes and 2 folders.
+[2021.06.02-02.12.54:809][807]Display: HotReload successful (11 functions remapped  2 scriptstructs remapped)
+[2021.06.02-02.12.54:936][807]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 3447 classes and 826 folders.
+[2021.06.02-02.12.54:936][807]Display: HotReload took  2.2s.
+[2021.06.02-02.14.10:016][941]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-02.14.14:104][405]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-02.14.14:104][405]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New
+[2021.06.02-02.14.14:454][405]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-02.14.19:557][  9]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTTask_BlueprintBase_NewA58A58564BC76DDED1834EBFE89FC94A.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.uasset'
+[2021.06.02-02.14.19:566][  9]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-02.14.19:581][  9]AssetCheck: New page: 애셋 저장: BTTask_BlueprintBase_New
+[2021.06.02-02.14.19:581][  9]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New 유효성 검사
+[2021.06.02-02.14.33:520][583]LogUObjectHash: Compacting FUObjectHashTables data took  12.35ms
+[2021.06.02-02.14.33:531][583]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetToFace.SKEL_BTT_SetToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-02.14.33:531][583]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetToFace.BTT_SetToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-02.14.33:555][583]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetToFace.uasset" SILENT=true
+[2021.06.02-02.14.33:557][583]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetToFace4BC2136B4AB4EE09DFFDF2A946C19338.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetToFace.uasset'
+[2021.06.02-02.14.33:796][583]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2021.06.02-02.14.33:840][583]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2021.06.02-02.14.33:876][583]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.06.02-02.14.33:917][583]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_SetToFace.
+[2021.06.02-02.14.33:925][583]AssetCheck: New page: 애셋 저장: BTT_SetToFace
+[2021.06.02-02.14.33:925][583]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetToFace.BTT_SetToFace 유효성 검사
+[2021.06.02-02.14.42:387][467]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.42:387][467]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.43:572][575]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.43:573][575]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.44:383][645]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.44:383][645]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.45:323][727]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.45:323][727]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.46:243][811]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.46:243][811]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.47:583][938]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.47:583][938]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.14.48:733][ 48]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.06.02-02.14.48:733][ 48]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.02-02.16.04:180][761]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2021.06.02-02.16.04:194][761]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.079
+[2021.06.02-02.16.04:195][761]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonCPP/AI/BTT_SetToFace] ([1] browsable assets)...
+[2021.06.02-02.16.04:195][761]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/BTT_SetToFace]
+[2021.06.02-02.16.04:207][761]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetToFace_Auto26C1273EA4D8EDBF286A92C9A36147545.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/BTT_SetToFace_Auto2.uasset'
+[2021.06.02-02.16.04:208][761]LogFileHelpers: Auto-saving content packages took 0.013
+[2021.06.02-02.19.50:269][946]LogUObjectHash: Compacting FUObjectHashTables data took   4.72ms
+[2021.06.02-02.19.50:295][946]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.BTT_SetTrueToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTT_SetToFace.PackageMetaData'
+[2021.06.02-02.19.50:295][946]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.SKEL_BTT_SetTrueToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTT_SetToFace.PackageMetaData'
+[2021.06.02-02.19.50:318][946]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetTrueToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset" SILENT=true
+[2021.06.02-02.19.50:322][946]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetTrueToFaceBE37FEA24D2C41DE5BF6EFA3B4E916C4.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset'
+[2021.06.02-02.19.50:553][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2021.06.02-02.19.50:578][946]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2021.06.02-02.19.50:598][946]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2021.06.02-02.19.50:638][946]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.
+[2021.06.02-02.19.50:645][946]AssetCheck: New page: 애셋 저장: BTT_SetTrueToFace
+[2021.06.02-02.19.50:645][946]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.BTT_SetTrueToFace 유효성 검사
+[2021.06.02-02.20.01:576][185]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-02.20.02:937][309]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.06.02-02.20.02:937][309]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New
+[2021.06.02-02.20.03:193][309]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.
+[2021.06.02-02.20.16:878][917]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2021.06.02-02.20.16:890][917]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetFalseToFace.SKEL_BTT_SetFalseToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-02.20.16:890][917]LogMetaData: Removing '/Game/ThirdPersonCPP/AI/BTT_SetFalseToFace.BTT_SetFalseToFace_C' ref from Metadata '/Game/ThirdPersonCPP/AI/BTTask_BlueprintBase_New.PackageMetaData'
+[2021.06.02-02.20.16:920][917]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetFalseToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetFalseToFace.uasset" SILENT=true
+[2021.06.02-02.20.16:922][917]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetFalseToFace1124F82A42DCD7E63246B9BA039FB7E5.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetFalseToFace.uasset'
+[2021.06.02-02.20.17:056][917]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2021.06.02-02.20.17:083][917]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2021.06.02-02.20.17:103][917]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2021.06.02-02.20.17:141][917]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/ThirdPersonCPP/AI/BTT_SetFalseToFace.
+[2021.06.02-02.20.17:147][917]AssetCheck: New page: 애셋 저장: BTT_SetFalseToFace
+[2021.06.02-02.20.17:148][917]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetFalseToFace.BTT_SetFalseToFace 유효성 검사
+[2021.06.02-02.20.30:108][448]LogEditorTransaction: Undo 현 선택을 삭제합니다.
+[2021.06.02-02.21.01:811][131]BlueprintLog: New page: BTT_SetTrueToFace 컴파일
+[2021.06.02-02.21.01:834][131]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2021.06.02-02.21.02:706][217]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetTrueToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset" SILENT=true
+[2021.06.02-02.21.02:719][217]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetTrueToFace0C35542D498957083E8AFE8058E1C70B.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset'
+[2021.06.02-02.21.02:730][217]AssetCheck: New page: 애셋 저장: BTT_SetTrueToFace
+[2021.06.02-02.21.02:730][217]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.BTT_SetTrueToFace 유효성 검사
+[2021.06.02-02.21.06:406][643]BlueprintLog: New page: BTT_SetTrueToFace 컴파일
+[2021.06.02-02.21.06:429][643]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2021.06.02-02.21.07:038][710]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetTrueToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset" SILENT=true
+[2021.06.02-02.21.07:050][710]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetTrueToFaceF9B0C4EE4DBAC98FFAAEC3897F1FB393.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetTrueToFace.uasset'
+[2021.06.02-02.21.07:060][710]AssetCheck: New page: 애셋 저장: BTT_SetTrueToFace
+[2021.06.02-02.21.07:060][710]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetTrueToFace.BTT_SetTrueToFace 유효성 검사
+[2021.06.02-02.21.44:455][ 76]BlueprintLog: New page: BTT_SetFalseToFace 컴파일
+[2021.06.02-02.21.44:480][ 76]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2021.06.02-02.21.45:340][169]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_SetFalseToFace" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetFalseToFace.uasset" SILENT=true
+[2021.06.02-02.21.45:353][169]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_SetFalseToFace5E8E062A4A23C5D5D667FC802B2B1D3B.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_SetFalseToFace.uasset'
+[2021.06.02-02.21.45:364][169]AssetCheck: New page: 애셋 저장: BTT_SetFalseToFace
+[2021.06.02-02.21.45:364][169]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_SetFalseToFace.BTT_SetFalseToFace 유효성 검사
+[2021.06.02-02.24.04:160][431]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AI/BTT_Arrived.BTT_Arrived
+[2021.06.02-02.25.01:236][702]BlueprintLog: New page: BTT_Arrived 컴파일
+[2021.06.02-02.25.01:277][702]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2021.06.02-02.25.02:047][781]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_Arrived" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Arrived.uasset" SILENT=true
+[2021.06.02-02.25.02:063][781]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_Arrived66C3E4EF45C42B4D982CA2A46FF522E2.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Arrived.uasset'
+[2021.06.02-02.25.02:079][781]AssetCheck: New page: 애셋 저장: BTT_Arrived
+[2021.06.02-02.25.02:079][781]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_Arrived.BTT_Arrived 유효성 검사
+[2021.06.02-02.25.10:088][691]Cmd: TRANSACTION UNDO
+[2021.06.02-02.25.10:088][691]LogEditorTransaction: Undo 핀 링크 생성
+[2021.06.02-02.25.10:631][706]Cmd: TRANSACTION UNDO
+[2021.06.02-02.25.10:631][706]LogEditorTransaction: Undo 노드 이동
+[2021.06.02-02.25.11:114][758]Cmd: TRANSACTION UNDO
+[2021.06.02-02.25.11:114][758]LogEditorTransaction: Undo 핀 링크 생성
+[2021.06.02-02.25.11:628][813]Cmd: TRANSACTION UNDO
+[2021.06.02-02.25.11:628][813]LogEditorTransaction: Undo Bool 핀 값 변경
+[2021.06.02-02.25.12:550][912]Cmd: TRANSACTION UNDO
+[2021.06.02-02.25.12:550][912]LogEditorTransaction: Undo 노드 추가
+[2021.06.02-02.25.15:375][218]BlueprintLog: New page: BTT_Arrived 컴파일
+[2021.06.02-02.25.15:414][218]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2021.06.02-02.25.16:081][276]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_Arrived" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Arrived.uasset" SILENT=true
+[2021.06.02-02.25.16:096][276]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_ArrivedA80116804B45AAD923C828AE6158938E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_Arrived.uasset'
+[2021.06.02-02.25.16:105][276]AssetCheck: New page: 애셋 저장: BTT_Arrived
+[2021.06.02-02.25.16:106][276]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_Arrived.BTT_Arrived 유효성 검사
+[2021.06.02-02.25.45:065][497]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-02.25.45:088][497]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossE9501C9041516F10F7D7F1B30B77D3B7.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-02.25.45:099][497]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-02.25.45:099][497]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-02.27.48:370][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-02.27.48:392][678]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossA721ACA54AECDB71CDD61695C0EC0609.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-02.27.48:403][678]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-02.27.48:403][678]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.02-02.28.04:604][194]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.02-02.28.04:625][194]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss6B21320445A0FBABF946ED88CEAE1640.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.02-02.28.04:638][194]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.02-02.28.04:638][194]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사

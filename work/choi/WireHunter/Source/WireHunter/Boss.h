@@ -69,6 +69,8 @@ private:
 
 	TArray<FVector> Obstacles;
 
+	bool ToFace;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -110,6 +112,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		void Lightning();
+
+	UFUNCTION(BlueprintCallable)
+	bool GetToFace() const { return ToFace; }
+
+	UFUNCTION(BlueprintCallable)
+	void SetToFace(bool b) { ToFace = b; }
 
 	//
 
