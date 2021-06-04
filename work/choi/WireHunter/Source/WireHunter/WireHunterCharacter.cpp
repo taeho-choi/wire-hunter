@@ -253,6 +253,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * Value));
 		}
 	}
+	SetMoveForwardValue(Value);
 }
 
 void AWireHunterCharacter::MoveRight(float Value)
@@ -273,6 +274,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * -Value));
 		}
 	}
+	SetMoveRightValue(Value);
 }
 
 void AWireHunterCharacter::StartFire()

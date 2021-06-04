@@ -63,6 +63,12 @@ public:
 	float GetMaxBullets() const { return MaxBullets; }
 	void SetMaxBullets(float val) { MaxBullets = val; }
 
+	float GetMoveRightValue() const { return MoveRightValue; }
+	void SetMoveRightValue(float val) { MoveRightValue = val; }
+
+	float GetMoveForwardValue() const { return MoveForwardValue; }
+	void SetMoveForwardValue(float val) { MoveForwardValue = val; }
+
 	// Floating
 	FVector GetFloatingPos() const { return FloatingPos; }
 	void SetFloatingPos(FVector val) { FloatingPos = val; }
@@ -117,6 +123,10 @@ protected:
 		int MaxBullets = 30;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int Bullets;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float MoveForwardValue;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+		float MoveRightValue;
 
 	// Floating
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
