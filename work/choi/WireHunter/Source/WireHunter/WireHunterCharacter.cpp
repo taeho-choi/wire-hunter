@@ -319,7 +319,7 @@ void AWireHunterCharacter::FireShot()
 
 		if (MuzzleParticle)
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle, Gun->GetSocketTransform(FName("b_gun_muzzleflash")));
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")));
 		}
 	}
 }
