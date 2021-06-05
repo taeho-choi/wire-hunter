@@ -28,7 +28,6 @@
 #include "Boss.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
-#include "Boss.h"
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -167,7 +166,6 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 void AWireHunterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	if (GetisClimbing())
 	{
 		LedgeTrace();
@@ -253,7 +251,14 @@ void AWireHunterCharacter::MoveForward(float Value)
 			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * Value));
 		}
 	}
-	SetMoveForwardValue(Value);
+	if ((int)Value * 10 < GetMoveForwardValue())
+	{
+		SetMoveForwardValue(GetMoveForwardValue() - 1);
+	}
+	else if ((int)Value * 10 > GetMoveForwardValue())
+	{
+		SetMoveForwardValue(GetMoveForwardValue() + 1);
+	}
 }
 
 void AWireHunterCharacter::MoveRight(float Value)
@@ -274,7 +279,15 @@ void AWireHunterCharacter::MoveRight(float Value)
 			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * -Value));
 		}
 	}
-	SetMoveRightValue(Value);
+
+	if ((int)Value * 10 < GetMoveRightValue())
+	{
+		SetMoveRightValue(GetMoveRightValue() - 1);
+	}
+	else if ((int)Value * 10 > GetMoveRightValue())
+	{
+		SetMoveRightValue(GetMoveRightValue() + 1);
+	}
 }
 
 void AWireHunterCharacter::StartFire()
@@ -555,17 +568,20 @@ void AWireHunterCharacter::LedgeTrace()
 	FHitResult Hit;
 
 	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) - FVector(0.f, 0.f, 600.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) - FVector(0.f, 0.f, 600.f);
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
+	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
 	if (!Hit.bBlockingHit)
 	{
-		//PlayAnimMontage(LedgeClimb, 1, NAME_None);
 		SetisClimbing(false);
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+		PlayAnimMontage(LedgeClimb, 1, NAME_None);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Ledge Climb On!!"));
+		
 	}
 }
 
@@ -583,4 +599,10 @@ void AWireHunterCharacter::Knockback(FVector force)
 //		this->Knockback((this->GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
 //		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
 //	}GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("On Hit"));
+//}
+
+//void AWireHunterCharacter::AnimNotify_LedgeClimbEnd()
+//{
+//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("LedgeClimbing False!!!!!!!!!"));
+//	SetisLedgeClimbing(false);
 //}

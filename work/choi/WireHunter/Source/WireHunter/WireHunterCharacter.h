@@ -63,11 +63,11 @@ public:
 	float GetMaxBullets() const { return MaxBullets; }
 	void SetMaxBullets(float val) { MaxBullets = val; }
 
-	float GetMoveRightValue() const { return MoveRightValue; }
-	void SetMoveRightValue(float val) { MoveRightValue = val; }
+	int GetMoveRightValue() const { return MoveRightValue; }
+	void SetMoveRightValue(int val) { MoveRightValue = val; }
 
-	float GetMoveForwardValue() const { return MoveForwardValue; }
-	void SetMoveForwardValue(float val) { MoveForwardValue = val; }
+	int GetMoveForwardValue() const { return MoveForwardValue; }
+	void SetMoveForwardValue(int val) { MoveForwardValue = val; }
 
 	// Floating
 	FVector GetFloatingPos() const { return FloatingPos; }
@@ -75,6 +75,9 @@ public:
 
 	bool GetisClimbing() const { return isClimbing; }
 	void SetisClimbing(bool val) { isClimbing = val; }
+
+	bool GetisLedgeClimbing() const { return isLedgeClimbing; }
+	void SetisLedgeClimbing(bool val) { isLedgeClimbing = val; }
 
 	FRotator GetFloatingRot() const { return FloatingRot; }
 	void SetFloatingRot(FRotator val) { FloatingRot = val; }
@@ -124,9 +127,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int Bullets;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
-		float MoveForwardValue;
+		int MoveForwardValue;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
-		float MoveRightValue;
+		int MoveRightValue;
 
 	// Floating
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -135,6 +138,9 @@ protected:
 		FRotator FloatingRot;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isClimbing = false;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isLedgeClimbing = false;
+
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallUpVector;
