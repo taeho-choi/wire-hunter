@@ -263,7 +263,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * Value));
+			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * Value * GetWorld()->GetDeltaSeconds()));
 		}
 	}
 	if ((int)Value * 10 < GetMoveForwardValue())
@@ -291,7 +291,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 5 * -Value));
+			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * -Value * GetWorld()->GetDeltaSeconds()));
 		}
 	}
 
@@ -499,7 +499,7 @@ void AWireHunterCharacter::Withdraw()
 	{
 		FVector dist = GetActorLocation() - GetCppHookLocation();
 		cppWire->CableLength = dist.Size();
-		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 1000.f);
+		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 2000.f);
 		LaunchCharacter(launchVel, true, true);
 	}
 }
@@ -591,7 +591,7 @@ void AWireHunterCharacter::LedgeTrace()
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
+	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
 	if (!Hit.bBlockingHit)
 	{
 		SetisClimbing(false);
