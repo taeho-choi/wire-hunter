@@ -50,6 +50,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float MaxHealth = 2000;
 
+
 private:
 	char Map[10][10];
 

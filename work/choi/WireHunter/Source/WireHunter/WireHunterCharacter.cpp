@@ -177,6 +177,16 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorRotation(SmoothRotator);
 	}
 
+	if (GetisWithdrawing())
+	{
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), dist.Size()));
+		if (dist.Size() < 60.f)
+		{
+			SetisWithdrawing(false);
+		}
+	}
+
 	//if (GetCharacterMovement()->IsFalling())
 	//{
 	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
@@ -203,6 +213,11 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		|| GetActorLocation().Z < 300.f)
 	{
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+	}
+	if (Bullets == 0 && isBulletEmpty == false)
+	{
+		Reload();
+		isBulletEmpty = true;
 	}
 }
 
@@ -341,6 +356,7 @@ void AWireHunterCharacter::FireShot()
 
 void AWireHunterCharacter::Reload()
 {
+	isBulletEmpty = false;
 	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
@@ -493,6 +509,7 @@ void AWireHunterCharacter::PressWithdraw()
 	if (!GetCppisLaunching())
 	{
 		SetCppisLaunching(true);
+		SetisWithdrawing(true);
 	}
 	else
 	{

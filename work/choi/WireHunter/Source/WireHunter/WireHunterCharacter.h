@@ -79,6 +79,9 @@ public:
 	bool GetisLedgeClimbing() const { return isLedgeClimbing; }
 	void SetisLedgeClimbing(bool val) { isLedgeClimbing = val; }
 
+	bool GetisWithdrawing() const { return isWithdrawing; }
+	void SetisWithdrawing(bool val) { isWithdrawing = val; }
+
 	FRotator GetFloatingRot() const { return FloatingRot; }
 	void SetFloatingRot(FRotator val) { FloatingRot = val; }
 
@@ -93,6 +96,7 @@ public:
 
 	bool GetLockLeftClimb() const { return LockLeftClimb; }
 	void SetLockLeftClimb(bool val) { LockLeftClimb = val; }
+
 
 	// WireSystem
 	bool GetHooked() const { return Hooked; }
@@ -140,7 +144,10 @@ protected:
 		bool isClimbing = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isLedgeClimbing = false;
-
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isWithdrawing = false;
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isBulletEmpty = false;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallUpVector;

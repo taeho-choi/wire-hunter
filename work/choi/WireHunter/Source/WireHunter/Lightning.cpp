@@ -70,7 +70,9 @@ void ALightning::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, 
 			TargetCharacter->BreakHook();
 			TargetCharacter->SetisClimbing(false);
 			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("PPPAttacked"));
 		}
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("1111Attacked"));
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
 		this->Destroy();
 	}
