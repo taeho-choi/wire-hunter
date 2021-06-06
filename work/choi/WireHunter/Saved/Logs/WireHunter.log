@@ -1174,3 +1174,15 @@ Script Stack (0 frames):
 [2021.06.06-05.42.46:747][835]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonCPP/AI/BT_Boss]
 [2021.06.06-05.42.46:768][835]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_Boss_Auto123E222C94B190C8D393757BC07C19BC7.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/AI/BT_Boss_Auto1.uasset'
 [2021.06.06-05.42.46:770][835]LogFileHelpers: Auto-saving content packages took 0.023
+[2021.06.06-05.43.34:224][106]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BT_Boss" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset" SILENT=true
+[2021.06.06-05.43.34:245][106]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BT_BossFAD029924C7BBE3E71DB9D97E78929CF.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BT_Boss.uasset'
+[2021.06.06-05.43.34:257][106]AssetCheck: New page: 애셋 저장: BT_Boss
+[2021.06.06-05.43.34:257][106]LogContentValidation: Display: BehaviorTree /Game/ThirdPersonCPP/AI/BT_Boss.BT_Boss 유효성 검사
+[2021.06.06-05.43.35:627][269]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2021.06.06-05.43.36:118][315]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.06.06-05.43.36:166][315]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevelC2261CB041F20D4B9FE6CF88C4663FA7.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap'
+[2021.06.06-05.43.36:184][315]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/Maps/GameLevel_BuiltData" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset" SILENT=true
+[2021.06.06-05.43.36:300][315]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_BuiltData23BADFC143F2E1AB84103887B76A30D9.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel_BuiltData.uasset'
+[2021.06.06-05.43.36:318][315]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2021.06.06-05.43.36:318][315]LogContentValidation: Display: World /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel 유효성 검사
+[2021.06.06-05.43.36:318][315]LogContentValidation: Display: MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/GameLevel_BuiltData.GameLevel_BuiltData 유효성 검사
