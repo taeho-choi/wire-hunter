@@ -407,18 +407,6 @@ void ABoss::Lightning()
 	}
 }
 
-void ABoss::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	if (OtherActor->IsA(AWireHunterCharacter::StaticClass())) {
-		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
-		TargetCharacter->BreakHook();
-		TargetCharacter->SetisClimbing(false);
-		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
-	}
-}
-
 void ABoss::DetectKick()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Kick!"));
