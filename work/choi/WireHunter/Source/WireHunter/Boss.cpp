@@ -32,11 +32,11 @@ ABoss::ABoss()
 	BossSkeletalMesh->SetSkeletalMesh(Asset);
 	BossSkeletalMesh->SetMaterial(0, Material);
 
-	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
-	SphereCollision->SetGenerateOverlapEvents(false);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
-	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
-	SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
-	SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
+	//SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
+	//SphereCollision->SetGenerateOverlapEvents(false);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
+	//SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
+	//SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
+	//SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
 
 	SetHealth(2000);
 	BossSkeletalMesh->SetSimulatePhysics(false);
@@ -419,31 +419,31 @@ void ABoss::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrim
 	}
 }
 
-//void ABoss::DetectKick()
-//{
-//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Kick!"));
-//	FHitResult hit;
-//
-//	const float range = 2000.f;
-//	FVector startTrace = BossRoot->GetComponentLocation();
-//	FVector endTrace = (BossRoot->GetForwardVector() * range) + startTrace;
-//
-//	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
-//	queryParams.AddIgnoredActor(this);
-//	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
-//	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-//
-//	if (hit.bBlockingHit)
-//	{
-//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!"));
-//		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
-//		{
-//			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-//			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
-//			TargetCharacter->BreakHook();
-//			TargetCharacter->SetisClimbing(false);
-//			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-//			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Kick!"));
-//		}
-//	}
-//}
+void ABoss::DetectKick()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Kick!"));
+	FHitResult hit;
+
+	const float range = 2000.f;
+	FVector startTrace = BossRoot->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
+	FVector endTrace = (BossRoot->GetForwardVector() * range) + startTrace;
+
+	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
+	queryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
+	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+
+	if (hit.bBlockingHit)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!"));
+		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
+		{
+			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
+			TargetCharacter->BreakHook();
+			TargetCharacter->SetisClimbing(false);
+			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Kick!"));
+		}
+	}
+}
