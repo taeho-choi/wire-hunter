@@ -48,7 +48,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
-		float MaxHealth = 200;
+		float MaxHealth = 100;
 
 
 private:
