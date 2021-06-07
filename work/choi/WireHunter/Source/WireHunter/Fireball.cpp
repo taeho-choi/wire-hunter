@@ -59,7 +59,7 @@ void AFireball::BeginPlay()
 void AFireball::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 40));
+	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 80));
 	if (GetActorLocation().Z < 0.f){
 		this->Destroy();
 	}
