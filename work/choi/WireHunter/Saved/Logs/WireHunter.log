@@ -2235,3 +2235,93 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.06.07-05.15.29:467][ 35]LogPlayLevel: Display: Destroying online subsystem :Context_19
 [2021.06.07-05.15.32:078][298]LogSlate: Window '메시지 로그' being destroyed
 [2021.06.07-05.15.32:083][298]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.07-05.17.11:473][441]BlueprintLog: New page: BTT_DecideAttack 컴파일
+[2021.06.07-05.17.11:522][441]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2021.06.07-05.17.12:001][487]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonCPP/AI/BTT_DecideAttack" FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_DecideAttack.uasset" SILENT=true
+[2021.06.07-05.17.12:076][487]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/BTT_DecideAttack222A061144DC355F2FB73ABB2D98941C.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/AI/BTT_DecideAttack.uasset'
+[2021.06.07-05.17.12:094][487]AssetCheck: New page: 애셋 저장: BTT_DecideAttack
+[2021.06.07-05.17.12:094][487]LogContentValidation: Display: Blueprint /Game/ThirdPersonCPP/AI/BTT_DecideAttack.BTT_DecideAttack 유효성 검사
+[2021.06.07-05.17.17:814][107]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.07-05.17.17:836][107]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.07-05.17.17:837][107]PIE: New page: PIE 세션: GameLevel (2021. 6. 7. 오후 11:17:17)
+[2021.06.07-05.17.17:868][107]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.07-05.17.17:878][107]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010296s)
+[2021.06.07-05.17.17:879][107]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.07-05.17.17:880][107]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001C36B950E00), frame # 181107
+[2021.06.07-05.17.17:880][107]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001C37AB50E00), frame # 181107
+[2021.06.07-05.17.17:880][107]LogPlayLevel: PIE: World Init took: (0.001304s)
+[2021.06.07-05.17.17:880][107]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.011804s)
+[2021.06.07-05.17.17:915][107]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.07-05.17.17:917][107]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.07-05.17.17:917][107]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.07-05.17.17:917][107]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.07-05.17.17:918][107]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.07-05.17.17:942][107]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.07-05.17.17:942][107]LogAudioMixer: Display: 1: FrontRight
+[2021.06.07-05.17.18:002][107]LogAudioMixer: Display: Using Audio Device Realtek Digital Output(Realtek High Definition Audio)
+[2021.06.07-05.17.18:002][107]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.07-05.17.18:002][107]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.07-05.17.18:002][107]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.07-05.17.18:003][107]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.07-05.17.18:015][107]LogInit: FAudioDevice initialized.
+[2021.06.07-05.17.18:015][107]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.07-05.17.18:023][107]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.07-05.17.18:027][107]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.07-14.17.18
+[2021.06.07-05.17.18:030][107]LogWorld: Bringing up level for play took: 0.006567
+[2021.06.07-05.17.18:031][107]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.06.07-05.17.18:035][107]Cmd: ShowFlag.Bones 2
+[2021.06.07-05.17.18:035][107]ShowFlag.Bones = "2"
+[2021.06.07-05.17.18:036][107]PIE: 서버가 로그인했습니다.
+[2021.06.07-05.17.18:037][107]PIE: 에디터에서 플레이 총 시작 시간 0.206초입니다.
+[2021.06.07-05.17.35:207][164]LogTemp: Warning: 1 >> x: 7 / y: 6
+[2021.06.07-05.17.35:208][164]LogTemp: Warning: 2 >> x: 8 / y: 5
+[2021.06.07-05.17.35:208][164]LogTemp: Warning: 3 >> x: 9 / y: 4
+[2021.06.07-05.17.35:208][164]LogTemp: Warning: 4 >> x: 8 / y: 3
+[2021.06.07-05.17.35:208][164]LogTemp: Warning: 5 >> x: 9 / y: 2
+[2021.06.07-05.17.35:216][165]LogTemp: Warning: X=-4000.000 Y=8000.000 Z=16068.063
+[2021.06.07-05.17.36:558][326]LogTemp: Warning: X=-7999.033 Y=12000.000 Z=16068.063
+[2021.06.07-05.17.38:824][598]LogTemp: Warning: X=-11999.033 Y=16000.000 Z=16068.063
+[2021.06.07-05.17.40:416][789]LogTemp: Warning: X=-8000.000 Y=20000.000 Z=16068.063
+[2021.06.07-05.17.42:744][ 65]LogTemp: Warning: X=-12000.000 Y=24000.000 Z=16068.063
+[2021.06.07-05.17.52:270][208]LogTemp: Warning: 1 >> x: 9 / y: 2
+[2021.06.07-05.17.52:270][208]LogTemp: Warning: 2 >> x: 8 / y: 1
+[2021.06.07-05.17.52:270][208]LogTemp: Warning: 3 >> x: 9 / y: 0
+[2021.06.07-05.17.52:278][209]LogTemp: Warning: X=-12000.000 Y=24000.000 Z=16088.938
+[2021.06.07-05.17.53:420][346]LogTemp: Warning: X=-8000.000 Y=28000.000 Z=16088.938
+[2021.06.07-05.17.55:845][637]LogTemp: Warning: X=-12000.000 Y=32000.000 Z=16088.938
+[2021.06.07-05.18.05:545][801]LogTemp: Warning: 1 >> x: 9 / y: 0
+[2021.06.07-05.18.05:545][801]LogTemp: Warning: 2 >> x: 8 / y: 1
+[2021.06.07-05.18.05:554][802]LogTemp: Warning: X=-12000.000 Y=32000.000 Z=16118.257
+[2021.06.07-05.18.06:853][958]LogTemp: Warning: X=-8000.000 Y=28000.000 Z=16118.257
+[2021.06.07-05.18.15:535][995]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.07-05.18.15:535][995]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.07-05.18.15:535][995]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.07-05.18.15:536][995]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.07-05.18.15:543][995]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.07-05.18.15:548][995]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.07-05.18.15:601][995]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.07-05.18.15:603][995]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001C37AB50E00), frame # 187995
+[2021.06.07-05.18.15:603][995]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001C36B950E00), frame # 187995
+[2021.06.07-05.18.15:606][995]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2021.06.07-05.18.15:746][996]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.06.07-05.18.16:335][ 42]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.07-05.18.16:339][ 42]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.07-05.19.17:551][336]LogHotReload: New module detected: UE4Editor-WireHunter-0045.dll
+[2021.06.07-05.19.18:594][340]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.07-05.19.18:991][340]LogClass: StructNode HotReload.
+[2021.06.07-05.19.18:991][340]LogClass: StructWeight HotReload.
+[2021.06.07-05.19.18:994][340]LogHotReload: Re-instancing Boss after hot-reload.
+[2021.06.07-05.19.19:030][340]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.07-05.19.19:070][340]LogHotReload: Re-instancing Lightning after hot-reload.
+[2021.06.07-05.19.19:100][340]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.07-05.19.19:140][340]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.07-05.19.19:189][340]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0006 seconds. Added 19 classes and 2 folders.
+[2021.06.07-05.19.19:194][340]Display: HotReload successful (12 functions remapped  2 scriptstructs remapped)
+[2021.06.07-05.19.19:297][340]LogContentBrowser: Native class hierarchy populated in 0.0122 seconds. Added 3447 classes and 826 folders.
+[2021.06.07-05.19.19:309][340]Display: HotReload took  0.7s.

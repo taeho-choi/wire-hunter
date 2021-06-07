@@ -38,7 +38,7 @@ ABoss::ABoss()
 	//SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
 	//SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
 
-	SetHealth(2000);
+	SetHealth(200);
 	BossSkeletalMesh->SetSimulatePhysics(false);
 
 	//need line to set default ai controller.
