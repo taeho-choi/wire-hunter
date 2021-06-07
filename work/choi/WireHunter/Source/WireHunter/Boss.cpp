@@ -293,9 +293,9 @@ void ABoss::AStar(char map[10][10], FStructNode start, FStructNode goal)
 		Min.Empty(); // or new creation
 	}
 
-	/*for (int i = 0; i < Path.Num(); ++i) {
+	for (int i = 0; i < Path.Num(); ++i) {
 		UE_LOG(LogTemp, Warning, TEXT("%d >> x: %d / y: %d"), i + 1, Path[i].first, Path[i].second);
-	}*/
+	}
 }
 
 // Called when the game starts or when spawned

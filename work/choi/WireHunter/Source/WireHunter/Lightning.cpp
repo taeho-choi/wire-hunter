@@ -58,7 +58,7 @@ void ALightning::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	auto pos = this->GetActorLocation();
-	this->SetActorLocation(pos - FVector(0.f, 0.f, 40.f));
+	this->SetActorLocation(pos - FVector(0.f, 0.f, 80.f));
 }
 
 void ALightning::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
