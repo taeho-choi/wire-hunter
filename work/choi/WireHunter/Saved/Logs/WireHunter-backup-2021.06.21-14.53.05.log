@@ -1,0 +1,1504 @@
+﻿Log file open, 06/21/21 23:49:13
+LogInit: Display: Running engine for game: WireHunter
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.761306
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin BlueprintMaterialTextureNodes
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Volumetrics
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: AMD Ryzen 5 2600X Six-Core Processor           , GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.06.21-14.49.14:786][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.06.21-14.49.14:786][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:787][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:795][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.06.21-14.49.14:795][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.06.21-14.49.14:796][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.06.21-14.49.14:796][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.21-14.49.14:797][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.06.21-14.49.14:797][  0]LogHAL: Display: Platform has ~ 16 GB [17102884864 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.06.21-14.49.14:797][  0]LogInit: Going up to parent DeviceProfile []
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.21-14.49.14:798][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Scalability.ini]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.06.21-14.49.14:799][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.06.21-14.49.14:801][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.06.21-14.49.14:801][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.06.21-14.49.14:801][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.06.21-14.49.14:801][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Wire-Hunter/work/choi/WireHunter/Saved/Config/Windows/Engine.ini]
+[2021.06.21-14.49.14:801][  0]LogInit: Computer: DESKTOP-FHRPJDT
+[2021.06.21-14.49.14:801][  0]LogInit: User: ChoiTaeho
+[2021.06.21-14.49.14:801][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.06.21-14.49.14:801][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.06.21-14.49.14:801][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.06.21-14.49.14:801][  0]LogMemory: Platform Memory Stats for Windows
+[2021.06.21-14.49.14:801][  0]LogMemory: Process Physical Memory: 121.69 MB used, 121.69 MB peak
+[2021.06.21-14.49.14:801][  0]LogMemory: Process Virtual Memory: 99.21 MB used, 99.21 MB peak
+[2021.06.21-14.49.14:801][  0]LogMemory: Physical Memory: 5470.86 MB used,  10839.72 MB free, 16310.58 MB total
+[2021.06.21-14.49.14:801][  0]LogMemory: Virtual Memory: 5169.48 MB used,  134212560.00 MB free, 134217728.00 MB total
+[2021.06.21-14.49.14:815][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.06.21-14.49.15:075][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.06.21-14.49.15:077][  0]LogInit: Using OS detected language (ko-KR).
+[2021.06.21-14.49.15:077][  0]LogInit: Using OS detected locale (ko-KR).
+[2021.06.21-14.49.15:101][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2021.06.21-14.49.15:337][  0]LogInit: Setting process to per monitor DPI aware
+[2021.06.21-14.49.15:504][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.06.21-14.49.15:504][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.06.21-14.49.19:711][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.06.21-14.49.19:711][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.06.21-14.49.19:711][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.06.21-14.49.19:711][  0]LogD3D11RHI: D3D11 adapters:
+[2021.06.21-14.49.19:897][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2021.06.21-14.49.19:897][  0]LogD3D11RHI:       6052/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.06.21-14.49.19:906][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.06.21-14.49.19:906][  0]LogD3D11RHI:       0/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.06.21-14.49.19:906][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.06.21-14.49.19:919][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.06.21-14.49.19:920][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2021.06.21-14.49.19:920][  0]LogWindows: EnumDisplayDevices:
+[2021.06.21-14.49.19:920][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2021.06.21-14.49.19:923][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.06.21-14.49.19:925][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.06.21-14.49.19:928][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.06.21-14.49.19:930][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.06.21-14.49.19:930][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2021.06.21-14.49.19:930][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.06.21-14.49.19:930][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2021.06.21-14.49.19:930][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.06.21-14.49.20:031][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.06.21-14.49.20:032][  0]LogD3D11RHI: Async texture creation enabled
+[2021.06.21-14.49.20:032][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.06.21-14.49.20:078][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.06.21-14.49.20:728][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.06.21-14.49.20:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.06.21-14.49.20:820][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.06.21-14.49.20:820][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.06.21-14.49.20:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.06.21-14.49.20:866][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.06.21-14.49.20:887][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.06.21-14.49.20:908][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.06.21-14.49.20:930][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.06.21-14.49.20:950][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.06.21-14.49.20:972][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.06.21-14.49.21:026][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.06.21-14.49.21:026][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.06.21-14.49.21:059][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.06.21-14.49.21:059][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.06.21-14.49.21:081][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.06.21-14.49.21:104][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.06.21-14.49.21:124][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.06.21-14.49.21:145][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.06.21-14.49.21:145][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.06.21-14.49.21:175][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.06.21-14.49.21:417][  0]LogShaderCompilers: Guid format shader working directory is -7 characters bigger than the processId version (../../../../../../Wire-Hunter/work/choi/WireHunter/Intermediate/Shaders/WorkingDirectory/44376/).
+[2021.06.21-14.49.21:418][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/최태호/AppData/Local/Temp/UnrealShaderWorkingDir/4556FA5A431A86DC7F058DB73E7DE09D/'.
+[2021.06.21-14.49.21:420][  0]LogXGEController: Cleaning working directory: C:/Users/최태호/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.06.21-14.49.21:420][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.06.21-14.49.21:420][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.06.21-14.49.21:420][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.06.21-14.49.25:521][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: Loaded boot cache 0.20s 76MB C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Wire-Hunter/work/choi/WireHunter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.21-14.49.25:720][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.06.21-14.49.25:747][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.06.21-14.49.25:748][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.21-14.49.25:748][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.06.21-14.49.25:750][  0]LogDerivedDataCache: Using Local data cache path C:/Users/최태호/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.06.21-14.49.25:750][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.06.21-14.49.25:750][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.06.21-14.49.25:803][  0]LogSlate: Using FreeType 2.10.0
+[2021.06.21-14.49.25:819][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.06.21-14.49.25:863][  0]LogAssetRegistry: FAssetRegistry took 0.0050 seconds to start up
+[2021.06.21-14.49.26:233][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.21-14.49.26:577][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.06.21-14.49.26:577][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.06.21-14.49.26:577][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.06.21-14.49.26:577][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.06.21-14.49.26:577][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.06.21-14.49.26:657][  0]LogNetVersion: WireHunter 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1660872711)
+[2021.06.21-14.49.28:307][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000029C2287E9C0), frame # 0
+[2021.06.21-14.49.28:307][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000029C26CB3740), frame # 0
+[2021.06.21-14.49.28:311][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000029C2288AA00), frame # 0
+[2021.06.21-14.49.28:425][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.080787 seconds
+[2021.06.21-14.49.28:431][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.06.21-14.49.28:431][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.06.21-14.49.28:431][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.06.21-14.49.29:841][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.06.21-14.49.29:854][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.06.21-14.49.30:092][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.30:093][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.30:110][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.30:121][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.30:147][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.30:938][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.06.21-14.49.30:997][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.21-14.49.30:997][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.21-14.49.31:150][  0]LogOcInput: OculusInput pre-init called
+[2021.06.21-14.49.31:181][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.06.21-14.49.31:181][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.06.21-14.49.31:355][  0]LogEngine: Initializing Engine...
+[2021.06.21-14.49.31:358][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.06.21-14.49.31:358][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.06.21-14.49.31:361][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2021.06.21-14.49.31:748][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.06.21-14.49.31:749][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2021.06.21-14.49.31:749][  0]LogUObjectGlobals: Warning: 'Object /Game/ThirdPersonCPP/GraphicResources/Cursor/UI_Cursor.UI_Cursor_C' 오브젝트를 찾는 데 실패했습니다.
+[2021.06.21-14.49.31:749][  0]LogLoad: Warning: UUserInterfaceSettings::ForceLoadResources: Failed to load cursor resource 0.
+[2021.06.21-14.49.31:749][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.06.21-14.49.31:783][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.06.21-14.49.31:783][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000029C299F7C00), frame # 0
+[2021.06.21-14.49.31:783][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000029C29A65580), frame # 0
+[2021.06.21-14.49.31:799][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.21-14.49.31:799][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.21-14.49.31:799][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.21-14.49.31:799][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.21-14.49.31:800][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.21-14.49.31:800][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.21-14.49.31:800][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.21-14.49.31:800][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.21-14.49.31:801][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.21-14.49.31:801][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.21-14.49.31:854][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.21-14.49.31:855][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.06.21-14.49.31:946][  0]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.06.21-14.49.31:947][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.21-14.49.31:982][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.21-14.49.31:982][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.21-14.49.31:984][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.21-14.49.31:985][  0]LogInit: FAudioDevice initialized.
+[2021.06.21-14.49.31:985][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.06.21-14.49.32:079][  0]LogDerivedDataCache: Saved boot cache 0.09s 75MB C:/Users/최태호/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.06.21-14.49.32:080][  0]LogInit: Texture streaming: Enabled
+[2021.06.21-14.49.32:134][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.06.21-14.49.32:134][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.06.21-14.49.32:142][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.06.21-14.49.32:444][  0]LogInit: Transaction tracking system initialized
+[2021.06.21-14.49.32:515][  0]BlueprintLog: New page: 에디터 로드
+[2021.06.21-14.49.32:770][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2021.06.21-14.49.33:499][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.06.21-14.49.33:499][  0]LogCook: Display: Mobile HDR setting 1
+[2021.06.21-14.49.34:167][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.03s
+[2021.06.21-14.49.36:101][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2021.06.21-14.49.36:102][  0]LogUnrealEdMisc: Loading editor; pre map load, took 27.102
+[2021.06.21-14.49.36:113][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.25/FeaturePacks/StarterContent.upack)
+[2021.06.21-14.49.36:125][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2021.06.21-14.49.36:133][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2021.06.21-14.49.36:140][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2021.06.21-14.49.36:149][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2021.06.21-14.49.36:156][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2021.06.21-14.49.36:163][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2021.06.21-14.49.36:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2021.06.21-14.49.36:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2021.06.21-14.49.36:186][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2021.06.21-14.49.36:193][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2021.06.21-14.49.36:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2021.06.21-14.49.36:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2021.06.21-14.49.36:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse01.uasset"
+[2021.06.21-14.49.36:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse02.uasset"
+[2021.06.21-14.49.36:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2021.06.21-14.49.36:240][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion01.uasset"
+[2021.06.21-14.49.36:247][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion02.uasset"
+[2021.06.21-14.49.36:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2021.06.21-14.49.36:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire01.uasset"
+[2021.06.21-14.49.36:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2021.06.21-14.49.36:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2021.06.21-14.49.36:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2021.06.21-14.49.36:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light01.uasset"
+[2021.06.21-14.49.36:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2021.06.21-14.49.36:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light02.uasset"
+[2021.06.21-14.49.36:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2021.06.21-14.49.36:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Smoke01.uasset"
+[2021.06.21-14.49.36:334][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2021.06.21-14.49.36:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2021.06.21-14.49.36:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2021.06.21-14.49.36:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2021.06.21-14.49.36:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2021.06.21-14.49.36:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2021.06.21-14.49.36:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2021.06.21-14.49.36:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Steam01.uasset"
+[2021.06.21-14.49.36:425][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2021.06.21-14.49.36:444][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2021.06.21-14.49.36:452][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2021.06.21-14.49.36:459][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2021.06.21-14.49.36:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2021.06.21-14.49.36:474][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2021.06.21-14.49.36:481][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2021.06.21-14.49.36:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2021.06.21-14.49.36:497][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2021.06.21-14.49.36:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2021.06.21-14.49.36:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2021.06.21-14.49.36:518][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2021.06.21-14.49.36:526][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2021.06.21-14.49.36:532][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2021.06.21-14.49.36:542][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2021.06.21-14.49.36:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2021.06.21-14.49.36:565][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2021.06.21-14.49.36:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2021.06.21-14.49.36:732][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2021.06.21-14.49.36:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2021.06.21-14.49.36:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Minimal_Default.umap"
+[2021.06.21-14.49.36:767][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2021.06.21-14.49.36:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/StarterMap.umap"
+[2021.06.21-14.49.36:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2021.06.21-14.49.36:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2021.06.21-14.49.36:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2021.06.21-14.49.36:858][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Basic_Wall.uasset".
+[2021.06.21-14.49.36:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2021.06.21-14.49.36:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2021.06.21-14.49.36:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2021.06.21-14.49.36:890][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2021.06.21-14.49.36:898][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2021.06.21-14.49.36:907][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2021.06.21-14.49.36:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2021.06.21-14.49.36:923][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2021.06.21-14.49.36:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2021.06.21-14.49.36:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2021.06.21-14.49.36:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2021.06.21-14.49.36:953][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2021.06.21-14.49.36:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2021.06.21-14.49.36:968][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2021.06.21-14.49.36:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Glass.uasset"
+[2021.06.21-14.49.36:983][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2021.06.21-14.49.36:992][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2021.06.21-14.49.37:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2021.06.21-14.49.37:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2021.06.21-14.49.37:014][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2021.06.21-14.49.37:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2021.06.21-14.49.37:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2021.06.21-14.49.37:036][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Gold.uasset".
+[2021.06.21-14.49.37:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2021.06.21-14.49.37:052][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2021.06.21-14.49.37:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2021.06.21-14.49.37:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2021.06.21-14.49.37:077][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2021.06.21-14.49.37:085][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2021.06.21-14.49.37:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2021.06.21-14.49.37:102][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2021.06.21-14.49.37:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2021.06.21-14.49.37:115][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2021.06.21-14.49.37:123][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2021.06.21-14.49.37:131][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2021.06.21-14.49.37:139][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2021.06.21-14.49.37:147][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2021.06.21-14.49.37:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2021.06.21-14.49.37:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2021.06.21-14.49.37:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2021.06.21-14.49.37:181][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2021.06.21-14.49.37:188][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Explosion.uasset".
+[2021.06.21-14.49.37:196][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Fire.uasset"
+[2021.06.21-14.49.37:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Smoke.uasset"
+[2021.06.21-14.49.37:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Sparks.uasset"
+[2021.06.21-14.49.37:222][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2021.06.21-14.49.37:229][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Burst.uasset".
+[2021.06.21-14.49.37:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2021.06.21-14.49.37:245][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset".
+[2021.06.21-14.49.37:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2021.06.21-14.49.37:260][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/m_flare_01.uasset".
+[2021.06.21-14.49.37:268][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2021.06.21-14.49.37:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2021.06.21-14.49.37:280][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset".
+[2021.06.21-14.49.37:289][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset".
+[2021.06.21-14.49.37:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2021.06.21-14.49.37:305][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/MaterialSphere.uasset"
+[2021.06.21-14.49.37:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Bush.uasset"
+[2021.06.21-14.49.37:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Chair.uasset"
+[2021.06.21-14.49.37:332][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2021.06.21-14.49.37:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Couch.uasset"
+[2021.06.21-14.49.37:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Door.uasset"
+[2021.06.21-14.49.37:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2021.06.21-14.49.37:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2021.06.21-14.49.37:375][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2021.06.21-14.49.37:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2021.06.21-14.49.37:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2021.06.21-14.49.37:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2021.06.21-14.49.37:411][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2021.06.21-14.49.37:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Rock.uasset"
+[2021.06.21-14.49.37:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Shelf.uasset"
+[2021.06.21-14.49.37:437][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Stairs.uasset"
+[2021.06.21-14.49.37:445][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_Statue.uasset"
+[2021.06.21-14.49.37:465][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_TableRound.uasset"
+[2021.06.21-14.49.37:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2021.06.21-14.49.37:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2021.06.21-14.49.37:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2021.06.21-14.49.37:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2021.06.21-14.49.37:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2021.06.21-14.49.37:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2021.06.21-14.49.37:521][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2021.06.21-14.49.37:530][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2021.06.21-14.49.37:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2021.06.21-14.49.37:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2021.06.21-14.49.37:553][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2021.06.21-14.49.37:560][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2021.06.21-14.49.37:566][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2021.06.21-14.49.37:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2021.06.21-14.49.37:581][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2021.06.21-14.49.37:593][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2021.06.21-14.49.37:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2021.06.21-14.49.37:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2021.06.21-14.49.37:622][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2021.06.21-14.49.37:630][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2021.06.21-14.49.37:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2021.06.21-14.49.37:644][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2021.06.21-14.49.37:653][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Sphere.uasset".
+[2021.06.21-14.49.37:662][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2021.06.21-14.49.37:669][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2021.06.21-14.49.37:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2021.06.21-14.49.37:684][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2021.06.21-14.49.37:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2021.06.21-14.49.37:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2021.06.21-14.49.37:706][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2021.06.21-14.49.37:713][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2021.06.21-14.49.37:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2021.06.21-14.49.37:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2021.06.21-14.49.37:770][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2021.06.21-14.49.37:798][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2021.06.21-14.49.37:832][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2021.06.21-14.49.37:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2021.06.21-14.49.37:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2021.06.21-14.49.37:936][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2021.06.21-14.49.37:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2021.06.21-14.49.37:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2021.06.21-14.49.38:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2021.06.21-14.49.38:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2021.06.21-14.49.38:065][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2021.06.21-14.49.38:091][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2021.06.21-14.49.38:099][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Burst_M.uasset".
+[2021.06.21-14.49.38:108][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2021.06.21-14.49.38:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2021.06.21-14.49.38:126][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2021.06.21-14.49.38:134][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2021.06.21-14.49.38:144][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2021.06.21-14.49.38:160][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2021.06.21-14.49.38:170][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2021.06.21-14.49.38:202][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2021.06.21-14.49.38:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2021.06.21-14.49.38:244][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2021.06.21-14.49.38:258][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2021.06.21-14.49.38:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2021.06.21-14.49.38:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2021.06.21-14.49.38:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2021.06.21-14.49.38:358][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2021.06.21-14.49.38:388][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2021.06.21-14.49.38:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2021.06.21-14.49.38:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2021.06.21-14.49.38:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2021.06.21-14.49.38:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2021.06.21-14.49.38:512][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2021.06.21-14.49.38:533][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2021.06.21-14.49.38:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2021.06.21-14.49.38:565][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2021.06.21-14.49.38:579][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2021.06.21-14.49.38:589][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Door_M.uasset"
+[2021.06.21-14.49.38:598][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Door_N.uasset"
+[2021.06.21-14.49.38:606][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2021.06.21-14.49.38:612][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Explosion_SubUV.uasset".
+[2021.06.21-14.49.38:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2021.06.21-14.49.38:628][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset".
+[2021.06.21-14.49.38:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2021.06.21-14.49.38:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2021.06.21-14.49.38:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2021.06.21-14.49.38:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2021.06.21-14.49.38:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2021.06.21-14.49.38:751][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2021.06.21-14.49.38:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2021.06.21-14.49.38:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2021.06.21-14.49.38:838][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2021.06.21-14.49.38:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2021.06.21-14.49.38:860][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2021.06.21-14.49.38:866][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_MacroVariation.uasset".
+[2021.06.21-14.49.38:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2021.06.21-14.49.38:921][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2021.06.21-14.49.38:927][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Gold_D.uasset".
+[2021.06.21-14.49.38:936][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Gold_N.uasset".
+[2021.06.21-14.49.38:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2021.06.21-14.49.38:985][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2021.06.21-14.49.39:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2021.06.21-14.49.39:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2021.06.21-14.49.39:026][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset".
+[2021.06.21-14.49.39:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2021.06.21-14.49.39:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2021.06.21-14.49.39:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2021.06.21-14.49.39:093][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset".
+[2021.06.21-14.49.39:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2021.06.21-14.49.39:140][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2021.06.21-14.49.39:179][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2021.06.21-14.49.39:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2021.06.21-14.49.39:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2021.06.21-14.49.39:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2021.06.21-14.49.39:340][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2021.06.21-14.49.39:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2021.06.21-14.49.39:371][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2021.06.21-14.49.39:384][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Smoke_SubUV.uasset".
+[2021.06.21-14.49.39:392][  0]LogPackFactory: Error: Unable to copy file "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset".
+[2021.06.21-14.49.39:402][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2021.06.21-14.49.39:411][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2021.06.21-14.49.39:421][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2021.06.21-14.49.39:446][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2021.06.21-14.49.39:456][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2021.06.21-14.49.39:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2021.06.21-14.49.39:478][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2021.06.21-14.49.39:487][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2021.06.21-14.49.39:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2021.06.21-14.49.39:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2021.06.21-14.49.39:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2021.06.21-14.49.39:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Water_M.uasset"
+[2021.06.21-14.49.39:551][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Water_N.uasset"
+[2021.06.21-14.49.39:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2021.06.21-14.49.39:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2021.06.21-14.49.39:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2021.06.21-14.49.39:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2021.06.21-14.49.39:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2021.06.21-14.49.39:673][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2021.06.21-14.49.39:688][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2021.06.21-14.49.39:709][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2021.06.21-14.49.39:724][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2021.06.21-14.49.39:808][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
+[2021.06.21-14.49.39:989][  0]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Floor_400x400CC79C65F4BFD5A762CB1BE915853D95E.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2021.06.21-14.49.39:994][  0]LogFeaturePack: Warning: Inserted 1 feature packs
+[2021.06.21-14.49.39:996][  0]Cmd: MAP LOAD FILE="../../../../../../Wire-Hunter/work/choi/WireHunter/Content/ThirdPersonCPP/Maps/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.06.21-14.49.39:997][  0]LightingResults: New page: 라이팅 빌드
+[2021.06.21-14.49.40:000][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.49.40:001][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.49.40:001][  0]MapCheck: New page: 맵 체크
+[2021.06.21-14.49.40:001][  0]LightingResults: New page: 라이팅 빌드
+[2021.06.21-14.49.40:016][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000029C299F7C00), frame # 0
+[2021.06.21-14.49.40:016][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000029C29A65580), frame # 0
+[2021.06.21-14.49.40:018][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2021.06.21-14.49.41:470][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.21-14.49.41:470][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000029C2D1BBE00), frame # 0
+[2021.06.21-14.49.41:470][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000029C37B6AFC0), frame # 0
+[2021.06.21-14.49.41:504][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.06.21-14.49.41:521][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2021.06.21-14.49.41:522][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.06.21-14.49.41:522][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.308ms.
+[2021.06.21-14.49.41:522][  0]LogFileHelpers: Loading map 'GameLevel' took 1.527
+[2021.06.21-14.49.41:541][  0]LogUnrealEdMisc: Total Editor Startup Time, took 32.542
+[2021.06.21-14.49.41:704][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.49.41:714][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.49.41:722][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.49.41:731][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.49.41:757][  0]LogCollectionManager: Loaded 0 collections in 0.003721 seconds
+[2021.06.21-14.49.41:801][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Saved/Collections/' took 0.00s
+[2021.06.21-14.49.41:801][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Developers/ChoiTaeho/Collections/' took 0.00s
+[2021.06.21-14.49.41:801][  0]LogFileCache: Scanning file cache for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/Collections/' took 0.00s
+[2021.06.21-14.49.41:801][  0]LogContentBrowser: Native class hierarchy populated in 0.0182 seconds. Added 3447 classes and 826 folders.
+[2021.06.21-14.49.41:810][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.06.21-14.49.42:378][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.06.21-14.49.42:386][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 2 classes and 0 folders.
+[2021.06.21-14.49.42:475][  0]LogSlate: Took 0.008282 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.06.21-14.49.42:492][  0]LogSlate: Took 0.015907 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2021.06.21-14.49.42:512][  0]LogSlate: Took 0.017153 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2021.06.21-14.49.42:519][  0]LogSlate: Took 0.007536 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.06.21-14.49.42:530][  0]LogSlate: Took 0.008190 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.06.21-14.49.42:615][  0]LogRenderer: Reallocating scene render targets to support 1340x600 Format 10 NumSamples 1 (Frame:1).
+[2021.06.21-14.49.42:670][  0]LogSlate: Took 0.009149 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.06.21-14.49.42:738][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.06.21-14.49.42:738][  0]LogLoad: (Engine Initialization) Total time: 33.74 seconds
+[2021.06.21-14.49.42:738][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.06.21-14.49.42:760][  0]AssetCheck: New page: 애셋 저장: Floor_400x400
+[2021.06.21-14.49.42:760][  0]LogContentValidation: Display: StaticMesh /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400 유효성 검사
+[2021.06.21-14.49.42:952][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.06.21-14.49.43:028][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Wire-Hunter/work/choi/WireHunter/Content/' took 0.27s
+[2021.06.21-14.49.43:045][  1]LogAssetRegistry: Asset discovery search completed in 17.1831 seconds
+[2021.06.21-14.49.43:048][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000005 seconds (updated 0 objects)
+[2021.06.21-14.49.46:069][ 10]LogSlate: Took 0.000451 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.06.21-14.50.17:104][206]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.21-14.50.17:127][206]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.21-14.50.17:130][206]PIE: New page: PIE 세션: GameLevel (2021. 6. 22. 오전 8:50:17)
+[2021.06.21-14.50.17:131][206]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.06.21-14.50.17:133][206]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.06.21-14.50.17:133][206]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.21-14.50.17:146][206]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013134s)
+[2021.06.21-14.50.17:147][206]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.21-14.50.17:147][206]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000029C63B37E00), frame # 206
+[2021.06.21-14.50.17:147][206]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000029C17214F40), frame # 206
+[2021.06.21-14.50.17:147][206]LogPlayLevel: PIE: World Init took: (0.001086s)
+[2021.06.21-14.50.17:147][206]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.014365s)
+[2021.06.21-14.50.17:160][206]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.21-14.50.17:164][206]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.21-14.50.17:164][206]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.21-14.50.17:165][206]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.21-14.50.17:165][206]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.21-14.50.17:188][206]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.21-14.50.17:188][206]LogAudioMixer: Display: 1: FrontRight
+[2021.06.21-14.50.17:246][206]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.06.21-14.50.17:246][206]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.21-14.50.17:246][206]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.21-14.50.17:246][206]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.21-14.50.17:247][206]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.21-14.50.17:257][206]LogInit: FAudioDevice initialized.
+[2021.06.21-14.50.17:258][206]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.21-14.50.17:264][206]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.21-14.50.17:269][206]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.21-23.50.17
+[2021.06.21-14.50.17:275][206]LogWorld: Bringing up level for play took: 0.008307
+[2021.06.21-14.50.17:275][206]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2021.06.21-14.50.17:282][206]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.06.21-14.50.17:283][206]Cmd: ShowFlag.Bones 2
+[2021.06.21-14.50.17:285][206]ShowFlag.Bones = "2"
+[2021.06.21-14.50.17:288][206]PIE: 서버가 로그인했습니다.
+[2021.06.21-14.50.17:289][206]PIE: 에디터에서 플레이 총 시작 시간 0.165초입니다.
+[2021.06.21-14.50.29:808][588]LogTemp: Warning: 1 >> x: 1 / y: 8
+[2021.06.21-14.50.29:809][588]LogTemp: Warning: 2 >> x: 2 / y: 7
+[2021.06.21-14.50.29:809][588]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.21-14.50.29:818][589]LogTemp: Warning: X=2914.051 Y=16000.000 Z=15744.091
+[2021.06.21-14.50.32:253][850]LogTemp: Warning: X=12000.000 Y=-74302.047 Z=15744.091
+[2021.06.21-14.50.34:818][141]LogTemp: Warning: X=-9085.949 Y=20000.000 Z=15744.091
+[2021.06.21-14.50.43:698][105]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.50.43:698][105]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.21-14.50.43:699][105]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.50.43:700][105]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.50.43:707][105]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.21-14.50.43:709][105]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.50.43:738][105]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.50.43:741][105]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000029C63B37E00), frame # 3105
+[2021.06.21-14.50.43:741][105]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000029C17214F40), frame # 3105
+[2021.06.21-14.50.43:742][105]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.06.21-14.50.43:869][105]LogSlate: Took 0.009287 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.06.21-14.50.43:886][105]LogSlate: Took 0.015873 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2021.06.21-14.50.43:897][106]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2021.06.21-14.50.44:191][114]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.21-14.50.44:196][114]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.21-14.51.00:811][825]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/ThirdPersonCPP/GraphicResources/Rock/Straight_Rock_low_uv_.Straight_Rock_low_uv_
+[2021.06.21-14.51.01:354][825]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.51.01:354][825]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.51.02:979][948]LogRenderer: Reallocating scene render targets to support 1432x920 Format 10 NumSamples 1 (Frame:1).
+[2021.06.21-14.51.02:979][948]LogSlate: Took 0.009559 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.06.21-14.51.03:006][950]LogSlate: Window 'Straight_Rock_low_uv_' being destroyed
+[2021.06.21-14.51.58:929][997]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.51.58:929][997]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.52.02:677][381]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.21-14.52.02:709][381]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.21-14.52.02:709][381]PIE: New page: PIE 세션: GameLevel (2021. 6. 22. 오전 8:52:02)
+[2021.06.21-14.52.02:709][381]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.21-14.52.02:725][381]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015656s)
+[2021.06.21-14.52.02:726][381]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.21-14.52.02:726][381]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000029C634C3C00), frame # 10381
+[2021.06.21-14.52.02:726][381]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000029C37D68E00), frame # 10381
+[2021.06.21-14.52.02:726][381]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2021.06.21-14.52.02:726][381]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.016943s)
+[2021.06.21-14.52.02:741][381]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.21-14.52.02:748][381]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.21-14.52.02:748][381]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.21-14.52.02:749][381]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.21-14.52.02:749][381]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.21-14.52.02:776][381]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.21-14.52.02:776][381]LogAudioMixer: Display: 1: FrontRight
+[2021.06.21-14.52.02:834][381]LogAudioMixer: Display: Using Audio Device 헤드폰(SHOQBOX SB7200 SERIES Stereo)
+[2021.06.21-14.52.02:834][381]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.21-14.52.02:834][381]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.21-14.52.02:834][381]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.21-14.52.02:835][381]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.21-14.52.02:845][381]LogInit: FAudioDevice initialized.
+[2021.06.21-14.52.02:846][381]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.21-14.52.02:853][381]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.21-14.52.02:858][381]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.21-23.52.02
+[2021.06.21-14.52.02:861][381]LogWorld: Bringing up level for play took: 0.007831
+[2021.06.21-14.52.02:861][381]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2021.06.21-14.52.02:863][381]Cmd: ShowFlag.Bones 2
+[2021.06.21-14.52.02:864][381]ShowFlag.Bones = "2"
+[2021.06.21-14.52.02:865][381]PIE: 서버가 로그인했습니다.
+[2021.06.21-14.52.02:865][381]PIE: 에디터에서 플레이 총 시작 시간 0.161초입니다.
+[2021.06.21-14.52.03:592][445]Cmd: LevelEditor.ToggleImmersive
+[2021.06.21-14.52.03:718][446]LogRenderer: Reallocating scene render targets to support 1480x920 Format 10 NumSamples 1 (Frame:66).
+[2021.06.21-14.52.03:761][447]LogRenderer: Reallocating scene render targets to support 1920x1040 Format 10 NumSamples 1 (Frame:68).
+[2021.06.21-14.52.03:788][448]LogTemp: Warning: 1 >> x: 3 / y: 8
+[2021.06.21-14.52.03:788][448]LogTemp: Warning: 2 >> x: 4 / y: 7
+[2021.06.21-14.52.03:788][448]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.21-14.52.03:788][448]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.21-14.52.03:788][448]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.21-14.52.03:798][449]LogTemp: Warning: X=-1085.949 Y=12000.000 Z=16080.340
+[2021.06.21-14.52.05:948][677]LogTemp: Warning: X=-4000.000 Y=-74302.047 Z=16080.340
+[2021.06.21-14.52.08:297][915]LogTemp: Warning: X=-9085.949 Y=20000.000 Z=16080.340
+[2021.06.21-14.52.10:890][183]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16080.340
+[2021.06.21-14.52.13:795][478]LogTemp: Warning: X=-9085.949 Y=28000.000 Z=16080.340
+[2021.06.21-14.52.56:006][634]LogTemp: Warning: 1 >> x: 1 / y: 8
+[2021.06.21-14.52.56:006][634]LogTemp: Warning: 2 >> x: 2 / y: 7
+[2021.06.21-14.52.56:006][634]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.21-14.52.56:006][634]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.21-14.52.56:006][634]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.21-14.52.56:016][635]LogTemp: Warning: X=2914.051 Y=16000.000 Z=16128.016
+[2021.06.21-14.52.58:447][886]LogTemp: Warning: X=12000.000 Y=-74302.047 Z=16128.016
+[2021.06.21-14.52.59:517][993]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.52.59:517][993]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.21-14.52.59:518][993]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.52.59:519][993]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.52.59:538][993]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.21-14.52.59:540][993]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.21-14.52.59:569][993]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.21-14.52.59:571][993]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000029C37D68E00), frame # 15993
+[2021.06.21-14.52.59:571][993]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000029C634C3C00), frame # 15993
+[2021.06.21-14.52.59:573][993]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.06.21-14.52.59:696][994]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2021.06.21-14.53.00:174][ 19]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.21-14.53.00:190][ 19]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.21-14.53.02:182][199]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2021.06.21-14.53.02:260][199]LogSlate: Window 'WireHunter - 언리얼 에디터' being destroyed
+[2021.06.21-14.53.02:264][199]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft 입력기).
+[2021.06.21-14.53.02:401][200]Cmd: QUIT_EDITOR
+[2021.06.21-14.53.02:401][200]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.06.21-14.53.02:414][200]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.06.21-14.53.03:437][200]LogExit: Preparing to exit.
+[2021.06.21-14.53.04:162][200]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.53.04:162][200]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.53.04:162][200]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.06.21-14.53.04:172][200]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.06.21-14.53.04:182][200]LogExit: Editor shut down
+[2021.06.21-14.53.04:183][200]LogExit: Transaction tracking system shut down
+[2021.06.21-14.53.04:477][200]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (0000029C2287E9C0), frame # 16200
+[2021.06.21-14.53.04:477][200]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000029C26CB3740), frame # 16200
+[2021.06.21-14.53.04:477][200]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000029C2288AA00), frame # 16200
+[2021.06.21-14.53.04:487][200]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000029C2D1BBE00), frame # 16200
+[2021.06.21-14.53.04:487][200]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000029C37B6AFC0), frame # 16200
+[2021.06.21-14.53.04:516][200]LogExit: Object subsystem successfully closed.
+[2021.06.21-14.53.04:549][200]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.06.21-14.53.04:630][200]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (802)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (800)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module Voice (798)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (796)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module SceneOutliner (794)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module AddContentDialog (792)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module WidgetCarousel (791)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module EditorWidgets (788)
+[2021.06.21-14.53.04:631][200]LogModuleManager: Shutting down and abandoning module CollectionManager (786)
+[2021.06.21-14.53.04:632][200]LogModuleManager: Shutting down and abandoning module StatsViewer (784)
+[2021.06.21-14.53.04:632][200]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (782)
+[2021.06.21-14.53.04:632][200]LogModuleManager: Shutting down and abandoning module FoliageEdit (780)
+[2021.06.21-14.53.04:632][200]LogModuleManager: Shutting down and abandoning module LandscapeEditor (778)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module MeshPaintMode (776)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (774)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module ActorPickerMode (772)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (770)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (768)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module AutomationWorker (766)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module SteamVREditor (764)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module OculusMR (762)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module GooglePADEditor (760)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (758)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (756)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (754)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (752)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (750)
+[2021.06.21-14.53.04:633][200]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (748)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (746)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (744)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (742)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module WebMMedia (740)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (738)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (736)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module SequenceRecorder (735)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (732)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (730)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (728)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (726)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (724)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (722)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (720)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (718)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (716)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (714)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module PlanarCut (712)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module CharacterAI (710)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module TextureAlignMode (708)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module BspMode (706)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module PlacementMode (705)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module GeometryMode (702)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (700)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module SmartSnapping (698)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module WireHunter (696)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module SessionServices (694)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module MeshPaint (692)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module ViewportSnapping (690)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module ViewportInteraction (688)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module ClothPainter (686)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (685)
+[2021.06.21-14.53.04:634][200]LogModuleManager: Shutting down and abandoning module LogVisualizer (682)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module IntroTutorials (680)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (679)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (676)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (674)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (672)
+[2021.06.21-14.53.04:635][200]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (671)
+[2021.06.21-14.53.05:059][200]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (668)
+[2021.06.21-14.53.05:059][200]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (666)
+[2021.06.21-14.53.05:059][200]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (664)
+[2021.06.21-14.53.05:059][200]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (662)
+[2021.06.21-14.53.05:059][200]LogModuleManager: Shutting down and abandoning module TraceInsights (660)
+[2021.06.21-14.53.05:061][200]LogModuleManager: Shutting down and abandoning module TraceServices (659)
+[2021.06.21-14.53.05:061][200]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (656)
+[2021.06.21-14.53.05:061][200]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (654)
+[2021.06.21-14.53.05:061][200]LogModuleManager: Shutting down and abandoning module InputBindingEditor (652)
+[2021.06.21-14.53.05:061][200]LogModuleManager: Shutting down and abandoning module MergeActors (650)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (648)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module LocalizationService (647)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module HardwareTargeting (644)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (642)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module UndoHistory (640)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module XmlParser (638)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module Blutility (636)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (634)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (633)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (630)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module SettingsEditor (628)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module ProjectLauncher (626)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module SessionFrontend (624)
+[2021.06.21-14.53.05:062][200]LogModuleManager: Shutting down and abandoning module ProfilerClient (622)
+[2021.06.21-14.53.05:063][200]LogModuleManager: Shutting down and abandoning module DeviceManager (620)
+[2021.06.21-14.53.05:063][200]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (619)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module AutomationController (616)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module AutomationWindow (614)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module Layers (612)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (610)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module DetailCustomizations (608)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module PackagesDialog (606)
+[2021.06.21-14.53.05:094][200]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (604)
+[2021.06.21-14.53.05:095][200]LogModuleManager: Shutting down and abandoning module Persona (602)
+[2021.06.21-14.53.05:095][200]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (601)
+[2021.06.21-14.53.05:095][200]LogModuleManager: Shutting down and abandoning module AnimGraph (599)
+[2021.06.21-14.53.05:095][200]LogModuleManager: Shutting down and abandoning module Kismet (596)
+[2021.06.21-14.53.05:096][200]LogModuleManager: Shutting down and abandoning module KismetWidgets (595)
+[2021.06.21-14.53.05:096][200]LogModuleManager: Shutting down and abandoning module GraphEditor (592)
+[2021.06.21-14.53.05:097][200]LogModuleManager: Shutting down and abandoning module StructViewer (590)
+[2021.06.21-14.53.05:097][200]LogModuleManager: Shutting down and abandoning module ClassViewer (588)
+[2021.06.21-14.53.05:097][200]LogModuleManager: Shutting down and abandoning module Toolbox (586)
+[2021.06.21-14.53.05:097][200]LogModuleManager: Shutting down and abandoning module ModuleUI (584)
+[2021.06.21-14.53.05:097][200]LogModuleManager: Shutting down and abandoning module OutputLog (582)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module GammaUI (580)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module Documentation (578)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module LiveCoding (576)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module LevelSequence (574)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (572)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module MovieScene (570)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (568)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module LauncherPlatform (566)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module AnalyticsET (564)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module PortalServices (562)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module PortalRpc (560)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module MessagingRpc (558)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (556)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module AudioMixerCore (555)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module AIModule (552)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module GameplayDebugger (551)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module AITestSuite (549)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module NavigationSystem (547)
+[2021.06.21-14.53.05:098][200]LogModuleManager: Shutting down and abandoning module ProfilerService (544)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module TaskGraph (542)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module ScreenshotTools (540)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module SynthesisEditor (538)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module Synthesis (536)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (534)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (532)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module OculusEditor (530)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module OculusInput (528)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (526)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module GooglePAD (524)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module EditableMesh (522)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (520)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module CableComponent (518)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module AudioCapture (516)
+[2021.06.21-14.53.05:142][200]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (515)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module AssetTags (512)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (510)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (508)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module AppleImageUtils (506)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module AndroidPermission (504)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (502)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (500)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module TemplateSequence (498)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (496)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (494)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (492)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (490)
+[2021.06.21-14.53.05:143][200]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (489)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (486)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (484)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MediaCompositing (482)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module ImgMedia (480)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (478)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (476)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (474)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (472)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (470)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (468)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (466)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module MeshConversion (464)
+[2021.06.21-14.53.05:148][200]LogModuleManager: Shutting down and abandoning module DynamicMesh (462)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (460)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometricObjects (458)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (456)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (455)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (452)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (450)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (448)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (446)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module ChaosNiagara (444)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module FractureEditor (442)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (440)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module ChaosCloth (438)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module BackChannel (436)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (434)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module AutomationUtils (432)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module AlembicImporter (430)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module AlembicLibrary (429)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCache (428)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (427)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (422)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (420)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (418)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module PluginBrowser (416)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (414)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (412)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (410)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module CurveEditorTools (408)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (406)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module CryptoKeys (404)
+[2021.06.21-14.53.05:150][200]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (402)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (400)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module UObjectPlugin (398)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (396)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (394)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (392)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (390)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module GitSourceControl (388)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module SourceControl (387)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (384)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (382)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (380)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (378)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (376)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (374)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (372)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module Paper2DEditor (370)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module SoundFields (368)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module SignificanceManager (366)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (364)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (362)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (358)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module ActorSequence (356)
+[2021.06.21-14.53.05:151][200]LogModuleManager: Shutting down and abandoning module UdpMessaging (354)
+[2021.06.21-14.53.05:252][200]LogModuleManager: Shutting down and abandoning module TcpMessaging (352)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (350)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (348)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (346)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (344)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (342)
+[2021.06.21-14.53.05:352][200]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (340)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (338)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (336)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (334)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapController (332)
+[2021.06.21-14.53.05:352][200]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (330)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module MagicLeapAR (328)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module AugmentedReality (327)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (324)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module Niagara (322)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module SignalProcessing (321)
+[2021.06.21-14.53.05:352][200]LogModuleManager: Shutting down and abandoning module NiagaraEditor (319)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module NiagaraCore (316)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (314)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (312)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module FacialAnimation (310)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module DataValidation (308)
+[2021.06.21-14.53.05:353][200]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (306)
+[2021.06.21-14.53.05:354][200]LogModuleManager: Shutting down and abandoning module LevelEditor (305)
+[2021.06.21-14.53.05:354][200]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (304)
+[2021.06.21-14.53.05:354][200]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (302)
+[2021.06.21-14.53.05:354][200]LogModuleManager: Shutting down and abandoning module MainFrame (300)
+[2021.06.21-14.53.05:354][200]LogModuleManager: Shutting down and abandoning module HotReload (299)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module ToolMenus (295)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module TreeMap (293)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module AnimationSharing (290)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (288)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module Paper2D (286)
+[2021.06.21-14.53.05:356][200]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (284)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (282)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module BlueprintMaterialTextureNodes (280)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (278)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module PacketHandler (276)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (274)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (272)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module MediaAssets (270)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module Overlay (268)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module OverlayEditor (267)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module VREditor (264)
+[2021.06.21-14.53.05:357][200]LogModuleManager: Shutting down and abandoning module StringTableEditor (262)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (260)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (258)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module FunctionalTesting (256)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (254)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module UMG (252)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module UMGEditor (251)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module MessageLog (249)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module MaterialEditor (247)
+[2021.06.21-14.53.05:358][200]LogModuleManager: Shutting down and abandoning module ContentBrowser (246)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (245)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module SlateReflector (238)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module Slate (236)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module SlateCore (234)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (232)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module UnrealEd (230)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module MRMesh (228)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (226)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (224)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module XAudio2 (222)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module Networking (220)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module Core (218)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module MovieSceneTools (216)
+[2021.06.21-14.53.05:360][200]LogModuleManager: Shutting down and abandoning module CurveEditor (215)
+[2021.06.21-14.53.05:361][200]LogModuleManager: Shutting down and abandoning module Sequencer (213)
+[2021.06.21-14.53.05:362][200]LogModuleManager: Shutting down and abandoning module EditorStyle (212)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module KismetCompiler (208)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module MeshBuilder (206)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module MeshUtilities (204)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (203)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (202)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (201)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (199)
+[2021.06.21-14.53.05:363][200]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (197)
+[2021.06.21-14.53.05:364][200]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (195)
+[2021.06.21-14.53.05:364][200]LogModuleManager: Shutting down and abandoning module MaterialBaking (191)
+[2021.06.21-14.53.05:364][200]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (186)
+[2021.06.21-14.53.05:364][200]LogModuleManager: Shutting down and abandoning module DerivedDataCache (184)
+[2021.06.21-14.53.05:364][200]LogModuleManager: Shutting down and abandoning module XGEController (182)
+[2021.06.21-14.53.05:364][200]LogXGEController: Cleaning working directory: C:/Users/최태호/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TargetPlatform (180)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (179)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (177)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (175)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (173)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (171)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (169)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (167)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (165)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (163)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (161)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module ImageWrapper (160)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (157)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (155)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (153)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (151)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (149)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (147)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (145)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (143)
+[2021.06.21-14.53.05:365][200]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (141)
+[2021.06.21-14.53.05:366][200]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (139)
+[2021.06.21-14.53.05:366][200]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (137)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (135)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (133)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (131)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (129)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (127)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (125)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module Messaging (123)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (121)
+[2021.06.21-14.53.05:367][200]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (119)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (117)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module InputCore (114)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module Settings (112)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (110)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module PhysXCooking (108)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module ChaosSolvers (106)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (105)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module Chaos (102)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (100)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (99)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module AVEncoder (98)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (94)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module SteamVRInput (92)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module SteamVR (90)
+[2021.06.21-14.53.05:370][200]LogHMD: Freeing OpenVRDLLHandle.
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module OculusHMD (88)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (86)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (84)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (82)
+[2021.06.21-14.53.05:370][200]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (78)
+[2021.06.21-14.53.05:372][200]LogModuleManager: Shutting down and abandoning module XMPP (73)
+[2021.06.21-14.53.05:372][200]LogModuleManager: Shutting down and abandoning module WebSockets (72)
+[2021.06.21-14.53.05:393][200]LogModuleManager: Shutting down and abandoning module HTTP (69)
+[2021.06.21-14.53.05:393][200]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.06.21-14.53.05:393][200]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B944312F1-4FDF-2934-76E1-FAB3C49B46EC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=fd90a27249c03c80c1682da8d2c423b4%7C4bc832c39cdb49199fb401fd37827f1e%7Cc406ea3d-4923-478e-855f-fea2c07f6364&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2021.06.21-14.53.05:403][200]LogModuleManager: Shutting down and abandoning module SSL (68)
+[2021.06.21-14.53.05:404][200]LogModuleManager: Shutting down and abandoning module WmfMedia (64)
+[2021.06.21-14.53.05:406][200]LogModuleManager: Shutting down and abandoning module Media (63)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module MagicLeap (60)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (58)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module NiagaraShader (56)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module Volumetrics (54)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2021.06.21-14.53.05:407][200]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2021.06.21-14.53.05:408][200]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2021.06.21-14.53.05:409][200]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2021.06.21-14.53.05:409][200]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2021.06.21-14.53.05:409][200]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2021.06.21-14.53.05:409][200]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2021.06.21-14.53.05:410][200]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2021.06.21-14.53.05:410][200]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.06.21-14.53.05:411][200]LogD3D11RHI: Shutdown
+[2021.06.21-14.53.05:411][200]LogD3D11RHI: CleanupD3DDevice
+[2021.06.21-14.53.05:431][200]LogExit: Exiting.
+[2021.06.21-14.53.05:454][200]Log file closed, 06/21/21 23:53:05
