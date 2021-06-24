@@ -50,11 +50,23 @@ class AWireHunterCharacter : public ACharacter
 public:
 	AWireHunterCharacter();
 
-	// Character's Status
-	float GetHealth() const { return Health; }
-	void SetHealth(float val) { Health = val; }
+	//R
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
-	float GetMaxHealth() const { return MaxHealth; }
+	// Character's Status
+	UFUNCTION(BlueprintPure, Category = "Health")
+		FORCEINLINE float GetHealth() const { return Health; }
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		void SetHealth(float healthValue);
+
+	UFUNCTION(BlueprintPure, Category = "Health")
+		FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
+
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
 	float GetBullets() const { return Bullets; }
@@ -122,10 +134,10 @@ public:
 protected:
 
 	// Character's Status
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status", ReplicatedUsing=OnRep_CurrentHealth)
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
-		float MaxHealth = 100;
+		float MaxHealth;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MaxBullets = 30;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
@@ -271,4 +283,11 @@ protected:
 	FVector cppHookLocation;
 	FVector cppWallNormal;
 	FHitResult WireHit;
+
+	//R
+
+	UFUNCTION()
+		void OnRep_CurrentHealth();
+
+	void OnHealthUpdate();
 };

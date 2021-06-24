@@ -28,6 +28,9 @@
 #include "Boss.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
+//R
+#include "Net/UnrealNetwork.h"
+#include "Engine/Engine.h"
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
@@ -102,6 +105,11 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	//R
+	MaxHealth = 100.f;
+	Health = MaxHealth;
+	bReplicates = true;
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -623,3 +631,59 @@ void AWireHunterCharacter::Knockback(FVector force)
 //	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("LedgeClimbing False!!!!!!!!!"));
 //	SetisLedgeClimbing(false);
 //}
+
+//R
+
+void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray <FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AWireHunterCharacter, Health);
+}
+
+void AWireHunterCharacter::OnHealthUpdate()
+{
+	if (IsLocallyControlled())
+	{
+		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+		if (Health <= 0)
+		{
+			FString deathMessage = FString::Printf(TEXT("You have been killed."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, deathMessage);
+		}
+	}
+
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		FString healthMessage = FString::Printf(TEXT("%s now has %f health remaining."), *GetFName().ToString(), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+	}
+
+	//Functions that occur on all machines. 
+	/*
+		Any special functionality that should occur as a result of damage or death should be placed here.
+	*/
+}
+
+void AWireHunterCharacter::OnRep_CurrentHealth()
+{
+	OnHealthUpdate();
+}
+
+void AWireHunterCharacter::SetHealth(float healthValue)
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		Health = FMath::Clamp(healthValue, 0.f, MaxHealth);
+		OnHealthUpdate();
+	}
+}
+
+float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	float damageApplied = Health - DamageTaken;
+	SetHealth(damageApplied);
+	return damageApplied;
+}
