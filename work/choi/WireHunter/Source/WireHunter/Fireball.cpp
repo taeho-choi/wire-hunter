@@ -111,16 +111,16 @@ void AFireball::Tick(float DeltaTime)
 
 void AFireball::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (!OtherActor->IsA(ABoss::StaticClass())){
-		if (OtherActor->IsA(AWireHunterCharacter::StaticClass())){
-			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
-			TargetCharacter->BreakHook();
-			TargetCharacter->SetisClimbing(false);
-			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Attacked"));
-		}
+	if (OtherActor->IsA(AWireHunterCharacter::StaticClass()) && !OtherActor->IsA(ABoss::StaticClass()))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Fireball Hithithithit"));
+		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
+		TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 10.0f);
+		TargetCharacter->BreakHook();
+		TargetCharacter->SetisClimbing(false);
+		TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
 		this->Destroy();
 	}
 }
+

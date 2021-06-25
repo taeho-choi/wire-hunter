@@ -108,7 +108,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	//R
 	MaxHealth = 100.f;
-	Health = MaxHealth;
+	Health = MaxHealth - 30;
 	bReplicates = true;
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> ImpactParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -124,7 +124,6 @@ void AWireHunterCharacter::BeginPlay()
 	HealthBar->SetOwnerCharacter(this);
 
 	TimerBetweenShots = 0.1f;
-	Health = 50.f;
 	Bullets = 30;
 
 	SetFloatingPos(GetActorLocation());
@@ -354,7 +353,7 @@ void AWireHunterCharacter::FireShot()
 			}
 			if (ImpactParticle)
 			{
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint));
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint), true, EPSCPoolMethod::AutoRelease);
 			}
 
 		}
