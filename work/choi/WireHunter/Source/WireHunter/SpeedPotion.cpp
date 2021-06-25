@@ -14,6 +14,8 @@ ASpeedPotion::ASpeedPotion()
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/ThirdPersonCPP/GraphicResources/Potion/liquidmedicine_fast_low_uv_id.liquidmedicine_fast_low_uv_id'"));
 	UStaticMesh* Asset = MeshAsset.Object;
 	PickupMesh->SetStaticMesh(Asset);
+
+	bReplicates = true;
 }
 
 // Called when the game starts or when spawned

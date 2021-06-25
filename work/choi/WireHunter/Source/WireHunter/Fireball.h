@@ -29,15 +29,34 @@ public:
 	UPROPERTY(EditAnywhere)
 		USceneComponent* FireballRoot;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 		UStaticMeshComponent* FireballMesh;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 		UShapeComponent* SphereCollision;
 
-	UPROPERTY(EditAnywhere, Category = Gameplay)
+	UPROPERTY(EditAnywhere, Category = "Effects")
 		UParticleSystem* ImpactParticle;
 
 	UFUNCTION()
 		virtual void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	//R
+
+	/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+		class UProjectileMovementComponent* ProjectileMovementComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Damage")
+		TSubclassOf<class UDamageType> DamageType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Damage")
+		float Damage;
+
+protected:
+	virtual void Destroyed() override;
+
+	UFUNCTION(Category = "Projectile")
+		void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+*/
+
 };

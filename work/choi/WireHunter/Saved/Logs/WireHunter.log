@@ -1510,3 +1510,1043 @@ Error: CDO Constructor (WireHunterGameMode): Failed to find /Game/ThirdPersonCPP
 [2021.06.24-13.04.46:917][744]LogSavePackage: Moving '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/GameLevel_Auto197E2B2994E953C51A1BDEDB4892DEDD8.tmp' to '../../../../../../Wire-Hunter/work/choi/WireHunter/Saved/Autosaves/Game/ThirdPersonCPP/Maps/GameLevel_Auto1.umap'
 [2021.06.24-13.04.46:918][744]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/GameLevel' took 0.092
 [2021.06.24-13.04.46:918][744]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.092
+[2021.06.25-05.03.00:306][837]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.03.00:406][837]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.03.00:418][837]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:03:00)
+[2021.06.25-05.03.00:477][837]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.03.00:669][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.187983s)
+[2021.06.25-05.03.00:689][837]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.03.00:690][837]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E62D2CEA00), frame # 200837
+[2021.06.25-05.03.00:692][837]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6BDFE4B80), frame # 200837
+[2021.06.25-05.03.00:695][837]LogPlayLevel: PIE: World Init took: (0.026135s)
+[2021.06.25-05.03.00:696][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.219497s)
+[2021.06.25-05.03.00:768][837]LogUObjectHash: Compacting FUObjectHashTables data took   6.67ms
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.03.00:991][837]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.03.00:991][837]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.03.00:995][837]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.03.00:995][837]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.03.01:005][837]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.03.01:005][837]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.03.01:026][837]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.03.01:037][837]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.03.01:037][837]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.03.01:037][837]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.03.01:047][837]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.03.01:049][837]LogInit: FAudioDevice initialized.
+[2021.06.25-05.03.01:053][837]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.03.01:080][837]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.03.01:097][837]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.03.01
+[2021.06.25-05.03.01:109][837]LogWorld: Bringing up level for play took: 0.027352
+[2021.06.25-05.03.01:111][837]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2021.06.25-05.03.01:122][837]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.03.01:123][837]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.03.01:123][837]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.03.01:123][837]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.03.01:123][837]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.03.01:123][837]LogNet: GameNetDriver IpNetDriver_8 IpNetDriver listening on port 17777
+[2021.06.25-05.03.01:127][837]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.03.01:131][837]ShowFlag.Bones = "2"
+[2021.06.25-05.03.01:146][837]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.03.01:148][837]PIE: 에디터에서 플레이 총 시작 시간 0.78초입니다.
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.03.01:151][837]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.03.01:151][837]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.03.01:152][837]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.03.01:152][837]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.03.01:154][837]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.03.01:154][837]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.03.01:168][837]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.03.01:185][837]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.03.01:185][837]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.03.01:185][837]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.03.01:194][837]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.03.01:196][837]LogInit: FAudioDevice initialized.
+[2021.06.25-05.03.01:197][837]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.03.01:255][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.03.01:255][837]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.03.01:256][837]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.03.01:256][837]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.03.01:261][837]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.03.01:261][837]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.03.01:308][837]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.03.01:309][837]PIE: 에디터에서 플레이 총 시작 시간 0.943초입니다.
+[2021.06.25-05.03.02:036][898]LogTemp: Warning: 1 >> x: 3 / y: 8
+[2021.06.25-05.03.02:036][898]LogTemp: Warning: 2 >> x: 4 / y: 7
+[2021.06.25-05.03.02:036][898]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.03.02:036][898]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.03.02:036][898]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.03.02:046][899]LogTemp: Warning: X=-1085.949 Y=12000.000 Z=16080.340
+[2021.06.25-05.03.02:274][922]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59143
+[2021.06.25-05.03.02:276][922]LogHandshake: SendConnectChallenge. Timestamp: 1.986842, Cookie: 011168173171194065097199223128012081110198178229064082081127
+[2021.06.25-05.03.02:277][922]LogHandshake: SendChallengeResponse. Timestamp: 1.986842, Cookie: 011168173171194065097199223128012081110198178229064082081127
+[2021.06.25-05.03.02:285][923]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:59143
+[2021.06.25-05.03.02:285][923]LogHandshake: SendChallengeAck. InCookie: 011168173171194065097199223128012081110198178229064082081127
+[2021.06.25-05.03.02:285][923]LogNet: Server accepting post-challenge connection from: 127.0.0.1:59143
+[2021.06.25-05.03.02:286][923]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.03.02:286][923]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:03:02, [UNetConnection] RemoteAddr: 127.0.0.1:59143, Name: IpConnection_9, Driver: GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.03.02:286][923]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:59143, Name: IpConnection_9, Driver: GameNetDriver IpNetDriver_8, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.03.02:287][923]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: PendingNetDriver IpNetDriver_9, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.03.02:294][924]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.03.02:294][924]LogNet: Remote platform little endian=1
+[2021.06.25-05.03.02:294][924]LogNet: This platform little endian=1
+[2021.06.25-05.03.02:295][924]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2021.06.25-05.03.02:305][925]LogNet: Login request: ?Name=?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB userId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB platform: NULL
+[2021.06.25-05.03.02:306][925]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.03.02:306][925]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.03.02:306][925]LogWorld: BeginTearingDown for /Temp/Untitled_5
+[2021.06.25-05.03.02:306][925]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.03.02:306][925]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.03.02:320][925]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2021.06.25-05.03.02:340][925]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.03.02:340][925]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E62D5D6600), frame # 200925
+[2021.06.25-05.03.02:340][925]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6BDFE6FC0), frame # 200925
+[2021.06.25-05.03.02:344][925]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.03.02
+[2021.06.25-05.03.02:345][925]LogWorld: Bringing up level for play took: 0.003707
+[2021.06.25-05.03.02:347][925]LogLoad: Took 0.041164 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.03.02:348][925]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.03.02:356][926]LogNet: Client netspeed is 10000
+[2021.06.25-05.03.02:356][926]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-CDE4E7834FF0798D7A1A1688C40F61FB?SplitscreenCount=1
+[2021.06.25-05.03.02:356][926]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.03.02:370][926]LogNet: Join succeeded: 271
+[2021.06.25-05.03.02:758][945]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.03.02:812][948]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.03.02:867][951]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.03.02:867][951]ShowFlag.Bones = "2"
+[2021.06.25-05.03.04:575][978]LogTemp: Warning: X=-4000.000 Y=-74302.047 Z=16080.340
+[2021.06.25-05.03.06:915][ 72]LogTemp: Warning: X=-9085.949 Y=20000.000 Z=16080.340
+[2021.06.25-05.03.09:442][171]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16080.340
+[2021.06.25-05.03.12:279][285]LogTemp: Warning: X=-9085.949 Y=28000.000 Z=16080.340
+[2021.06.25-05.03.31:502][ 51]LogTemp: Warning: 1 >> x: 1 / y: 8
+[2021.06.25-05.03.31:502][ 51]LogTemp: Warning: 2 >> x: 2 / y: 7
+[2021.06.25-05.03.31:502][ 51]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.03.31:502][ 51]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.03.31:502][ 51]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.03.31:529][ 52]LogTemp: Warning: X=2914.051 Y=16000.000 Z=16112.386
+[2021.06.25-05.03.33:951][149]LogTemp: Warning: X=12000.000 Y=-74302.047 Z=16112.386
+[2021.06.25-05.03.36:503][251]LogTemp: Warning: X=-9085.949 Y=20000.000 Z=16112.386
+[2021.06.25-05.03.39:532][370]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16112.386
+[2021.06.25-05.03.41:812][460]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.03.41:812][460]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.03.41:812][460]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.03.41:831][460]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.03.41:833][460]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.03.41:843][460]LogNet: World NetDriver shutdown IpNetDriver_9 [GameNetDriver]
+[2021.06.25-05.03.41:843][460]LogNet: DestroyNamedNetDriver IpNetDriver_9 [GameNetDriver]
+[2021.06.25-05.03.41:844][460]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: GameNetDriver IpNetDriver_9, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB, Channels: 12, Time: 2021.06.25-05.03.41
+[2021.06.25-05.03.41:844][460]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_8, Driver: GameNetDriver IpNetDriver_9, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB
+[2021.06.25-05.03.41:844][460]LogExit: GameNetDriver IpNetDriver_9 shut down
+[2021.06.25-05.03.41:844][460]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.03.41:845][460]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.03.41:845][460]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.03.41:846][460]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.03.41:846][460]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.03.41:853][460]LogNet: World NetDriver shutdown IpNetDriver_8 [GameNetDriver]
+[2021.06.25-05.03.41:853][460]LogNet: DestroyNamedNetDriver IpNetDriver_8 [GameNetDriver]
+[2021.06.25-05.03.41:853][460]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:59143, Name: IpConnection_9, Driver: GameNetDriver IpNetDriver_8, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB
+[2021.06.25-05.03.41:853][460]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:59143, Name: IpConnection_9, Driver: GameNetDriver IpNetDriver_8, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB, Channels: 12, Time: 2021.06.25-05.03.41
+[2021.06.25-05.03.41:853][460]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:59143, Name: IpConnection_9, Driver: GameNetDriver IpNetDriver_8, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-CDE4E7834FF0798D7A1A1688C40F61FB
+[2021.06.25-05.03.41:853][460]LogExit: GameNetDriver IpNetDriver_8 shut down
+[2021.06.25-05.03.41:854][460]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.03.41:856][460]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.03.41:896][460]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.03.41:913][460]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6BDFE6FC0), frame # 202460
+[2021.06.25-05.03.41:913][460]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E62D5D6600), frame # 202460
+[2021.06.25-05.03.41:914][460]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6BDFE4B80), frame # 202460
+[2021.06.25-05.03.41:914][460]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E62D2CEA00), frame # 202460
+[2021.06.25-05.03.41:915][460]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.06.25-05.03.42:067][461]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2021.06.25-05.03.42:067][461]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2021.06.25-05.03.43:437][581]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.03.43:440][581]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.21.54:119][261]LogHotReload: New module detected: UE4Editor-WireHunter-0010.dll
+[2021.06.25-05.21.55:435][266]LogHotReload: Starting Hot-Reload from IDE
+[2021.06.25-05.21.55:519][266]LogClass: Could not find existing class Fireball in package /Script/WireHunter for HotReload, assuming new class
+[2021.06.25-05.21.55:520][266]LogClass: Function OnHit is new.
+[2021.06.25-05.21.55:520][266]LogClass: Function OnProjectileImpact is new.
+[2021.06.25-05.21.55:526][266]LogClass: StructNode HotReload.
+[2021.06.25-05.21.55:527][266]LogClass: StructWeight HotReload.
+[2021.06.25-05.21.55:555][266]LogHotReload: Re-instancing Fireball after hot-reload.
+[2021.06.25-05.21.55:565][266]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.25-05.21.55:592][266]LogHotReload: Re-instancing Lightning after hot-reload.
+[2021.06.25-05.21.55:600][266]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.25-05.21.55:614][266]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.25-05.21.55:630][266]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0015 seconds. Added 19 classes and 2 folders.
+[2021.06.25-05.21.55:631][266]Display: HotReload successful (16 functions remapped  2 scriptstructs remapped)
+[2021.06.25-05.21.55:745][266]LogContentBrowser: Native class hierarchy populated in 0.0199 seconds. Added 3447 classes and 826 folders.
+[2021.06.25-05.21.55:749][266]Display: HotReload took  0.3s.
+[2021.06.25-05.21.58:339][357]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.21.58:360][357]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.21.58:360][357]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:21:58)
+[2021.06.25-05.21.58:360][357]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.21.58:372][357]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011506s)
+[2021.06.25-05.21.58:373][357]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.21.58:373][357]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E62D659A00), frame # 219357
+[2021.06.25-05.21.58:373][357]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A500A980), frame # 219357
+[2021.06.25-05.21.58:373][357]LogPlayLevel: PIE: World Init took: (0.001677s)
+[2021.06.25-05.21.58:373][357]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013346s)
+[2021.06.25-05.21.58:387][357]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.21.58:399][357]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.21.58:399][357]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.21.58:400][357]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.21.58:400][357]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.21.58:404][357]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.21.58:404][357]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.21.58:420][357]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.21.58:422][357]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.21.58:422][357]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.21.58:422][357]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.21.58:424][357]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.21.58:436][357]LogInit: FAudioDevice initialized.
+[2021.06.25-05.21.58:437][357]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.21.58:446][357]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.21.58:451][357]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.21.58
+[2021.06.25-05.21.58:454][357]LogWorld: Bringing up level for play took: 0.007416
+[2021.06.25-05.21.58:454][357]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2021.06.25-05.21.58:457][357]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.21.58:457][357]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.21.58:457][357]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.21.58:457][357]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.21.58:457][357]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.21.58:457][357]LogNet: GameNetDriver IpNetDriver_10 IpNetDriver listening on port 17777
+[2021.06.25-05.21.58:458][357]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.21.58:458][357]ShowFlag.Bones = "2"
+[2021.06.25-05.21.58:459][357]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.21.58:460][357]PIE: 에디터에서 플레이 총 시작 시간 0.108초입니다.
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.21.58:461][357]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.21.58:461][357]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.21.58:462][357]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.21.58:462][357]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.21.58:464][357]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.21.58:464][357]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.21.58:477][357]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.21.58:482][357]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.21.58:482][357]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.21.58:482][357]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.21.58:485][357]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.21.58:490][357]LogInit: FAudioDevice initialized.
+[2021.06.25-05.21.58:491][357]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.21.58:544][357]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.21.58:544][357]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.21.58:544][357]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.21.58:544][357]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.21.58:545][357]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.21.58:545][357]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.21.58:546][357]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.21.58:547][357]PIE: 에디터에서 플레이 총 시작 시간 0.196초입니다.
+[2021.06.25-05.21.59:350][420]LogTemp: Warning: 1 >> x: 3 / y: 8
+[2021.06.25-05.21.59:350][420]LogTemp: Warning: 2 >> x: 4 / y: 7
+[2021.06.25-05.21.59:350][420]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.21.59:350][420]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.21.59:350][420]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.21.59:360][421]LogTemp: Warning: X=-1085.949 Y=12000.000 Z=16080.340
+[2021.06.25-05.21.59:557][440]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52108
+[2021.06.25-05.21.59:557][440]LogHandshake: SendConnectChallenge. Timestamp: 1.228454, Cookie: 074079022187024042183099163134056047202073249220020029249233
+[2021.06.25-05.21.59:558][440]LogHandshake: SendChallengeResponse. Timestamp: 1.228454, Cookie: 074079022187024042183099163134056047202073249220020029249233
+[2021.06.25-05.21.59:568][441]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52108
+[2021.06.25-05.21.59:568][441]LogHandshake: SendChallengeAck. InCookie: 074079022187024042183099163134056047202073249220020029249233
+[2021.06.25-05.21.59:568][441]LogNet: Server accepting post-challenge connection from: 127.0.0.1:52108
+[2021.06.25-05.21.59:569][441]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.21.59:569][441]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:21:59, [UNetConnection] RemoteAddr: 127.0.0.1:52108, Name: IpConnection_11, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.21.59:569][441]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:52108, Name: IpConnection_11, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.21.59:570][441]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_10, Driver: PendingNetDriver IpNetDriver_11, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.21.59:577][442]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.21.59:577][442]LogNet: Remote platform little endian=1
+[2021.06.25-05.21.59:577][442]LogNet: This platform little endian=1
+[2021.06.25-05.21.59:578][442]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2021.06.25-05.21.59:585][443]LogNet: Login request: ?Name=?????ῷé-965EF4EE451E54A9198BBB98CF26CD19 userId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19 platform: NULL
+[2021.06.25-05.21.59:586][443]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.21.59:586][443]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.21.59:587][443]LogWorld: BeginTearingDown for /Temp/Untitled_6
+[2021.06.25-05.21.59:587][443]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.21.59:587][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.21.59:599][443]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2021.06.25-05.21.59:614][443]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.21.59:614][443]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6C32F7E00), frame # 219443
+[2021.06.25-05.21.59:614][443]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E675C62D40), frame # 219443
+[2021.06.25-05.21.59:617][443]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.21.59
+[2021.06.25-05.21.59:618][443]LogWorld: Bringing up level for play took: 0.002428
+[2021.06.25-05.21.59:619][443]LogLoad: Took 0.032069 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.21.59:619][443]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.21.59:625][444]LogNet: Client netspeed is 10000
+[2021.06.25-05.21.59:626][444]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-965EF4EE451E54A9198BBB98CF26CD19?SplitscreenCount=1
+[2021.06.25-05.21.59:626][444]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.21.59:629][444]LogNet: Join succeeded: 273
+[2021.06.25-05.21.59:991][462]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.22.00:047][465]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.22.00:099][468]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.22.00:099][468]ShowFlag.Bones = "2"
+[2021.06.25-05.22.01:491][523]LogTemp: Warning: X=-4000.000 Y=-74302.047 Z=16080.340
+[2021.06.25-05.22.03:824][618]LogTemp: Warning: X=-17085.949 Y=20000.000 Z=16080.340
+[2021.06.25-05.22.06:699][734]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16080.340
+[2021.06.25-05.22.09:691][854]LogTemp: Warning: X=-9085.949 Y=28000.000 Z=16080.340
+[2021.06.25-05.22.28:999][630]LogTemp: Warning: 1 >> x: 1 / y: 8
+[2021.06.25-05.22.28:999][630]LogTemp: Warning: 2 >> x: 2 / y: 7
+[2021.06.25-05.22.28:999][630]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.22.28:999][630]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.22.28:999][630]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.22.29:024][631]LogTemp: Warning: X=2914.051 Y=16000.000 Z=16128.471
+[2021.06.25-05.22.31:416][727]LogTemp: Warning: X=4000.000 Y=-74302.047 Z=16128.471
+[2021.06.25-05.22.33:215][799]LogTemp: Warning: X=-17085.949 Y=20000.000 Z=16128.471
+[2021.06.25-05.22.35:542][891]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.22.35:542][891]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.22.35:543][891]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.22.35:564][891]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.22.35:565][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.22.35:576][891]LogNet: World NetDriver shutdown IpNetDriver_11 [GameNetDriver]
+[2021.06.25-05.22.35:576][891]LogNet: DestroyNamedNetDriver IpNetDriver_11 [GameNetDriver]
+[2021.06.25-05.22.35:576][891]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_10, Driver: GameNetDriver IpNetDriver_11, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19, Channels: 22, Time: 2021.06.25-05.22.35
+[2021.06.25-05.22.35:576][891]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_10, Driver: GameNetDriver IpNetDriver_11, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19
+[2021.06.25-05.22.35:577][891]LogExit: GameNetDriver IpNetDriver_11 shut down
+[2021.06.25-05.22.35:577][891]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.22.35:577][891]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.22.35:578][891]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.22.35:578][891]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.22.35:579][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.22.35:584][891]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2021.06.25-05.22.35:584][891]LogNet: DestroyNamedNetDriver IpNetDriver_10 [GameNetDriver]
+[2021.06.25-05.22.35:584][891]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:52108, Name: IpConnection_11, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19
+[2021.06.25-05.22.35:584][891]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:52108, Name: IpConnection_11, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19, Channels: 22, Time: 2021.06.25-05.22.35
+[2021.06.25-05.22.35:584][891]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:52108, Name: IpConnection_11, Driver: GameNetDriver IpNetDriver_10, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-965EF4EE451E54A9198BBB98CF26CD19
+[2021.06.25-05.22.35:585][891]LogExit: GameNetDriver IpNetDriver_10 shut down
+[2021.06.25-05.22.35:585][891]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.22.35:587][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.22.35:627][891]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.22.35:629][891]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E675C62D40), frame # 220891
+[2021.06.25-05.22.35:629][891]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6C32F7E00), frame # 220891
+[2021.06.25-05.22.35:630][891]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A500A980), frame # 220891
+[2021.06.25-05.22.35:630][891]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E62D659A00), frame # 220891
+[2021.06.25-05.22.35:631][891]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2021.06.25-05.22.35:787][892]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2021.06.25-05.22.35:787][892]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2021.06.25-05.22.37:270][ 19]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.22.37:286][ 19]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.25.19:333][287]Candidate modules for hot reload:
+[2021.06.25-05.25.19:333][287]  WireHunter
+[2021.06.25-05.25.19:334][287]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,6245 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.06.25-05.25.19:336][287]Warning: Starting HotReload took  0.0s.
+[2021.06.25-05.25.21:034][422]CompilerResultsLog: New page: 컴파일 - 2021. 6. 25. 오후 11:25:21
+[2021.06.25-05.25.21:034][422]CompilerResultsLog: Building WireHunterEditor...
+[2021.06.25-05.25.21:034][422]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.25-05.25.21:034][422]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.06.25-05.25.21:034][422]CompilerResultsLog:   [1/3] UE4Editor-WireHunter-6245.lib
+[2021.06.25-05.25.21:034][422]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-6245.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-6245.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.25-05.25.21:035][422]CompilerResultsLog:   [2/3] UE4Editor-WireHunter-6245.dll
+[2021.06.25-05.25.21:035][422]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-6245.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-6245.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.25-05.25.21:035][422]CompilerResultsLog:   [3/3] WireHunterEditor.target
+[2021.06.25-05.25.21:035][422]CompilerResultsLog: Total time in Parallel executor: 0.87 seconds
+[2021.06.25-05.25.21:035][422]CompilerResultsLog: Total execution time: 1.62 seconds
+[2021.06.25-05.25.21:035][422]LogMainFrame: MainFrame: Module compiling took 1.708 seconds
+[2021.06.25-05.25.21:076][422]LogClass: Could not find existing class Fireball in package /Script/WireHunter for HotReload, assuming new class
+[2021.06.25-05.25.21:077][422]LogClass: Function OnHit is new.
+[2021.06.25-05.25.21:081][422]LogClass: StructNode HotReload.
+[2021.06.25-05.25.21:081][422]LogClass: StructWeight HotReload.
+[2021.06.25-05.25.21:093][422]LogHotReload: Re-instancing Fireball after hot-reload.
+[2021.06.25-05.25.21:100][422]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.25-05.25.21:117][422]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.25-05.25.21:128][422]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.25-05.25.21:142][422]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.25-05.25.21:144][422]Display: HotReload successful (16 functions remapped  2 scriptstructs remapped)
+[2021.06.25-05.25.21:182][422]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 3447 classes and 826 folders.
+[2021.06.25-05.25.21:182][422]Display: HotReload took  1.9s.
+[2021.06.25-05.25.24:922][786]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.25.24:938][786]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.25.24:938][786]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:25:24)
+[2021.06.25-05.25.24:972][786]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.25.24:988][786]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016046s)
+[2021.06.25-05.25.24:992][786]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.25.24:992][786]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E67F07E400), frame # 222786
+[2021.06.25-05.25.24:992][786]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E60FF99300), frame # 222786
+[2021.06.25-05.25.24:992][786]LogPlayLevel: PIE: World Init took: (0.004151s)
+[2021.06.25-05.25.24:992][786]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.020398s)
+[2021.06.25-05.25.25:003][786]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.25.25:014][786]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.25.25:014][786]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.25.25:015][786]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.25.25:015][786]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.25.25:018][786]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.25.25:018][786]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.25.25:033][786]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.25.25:034][786]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.25.25:034][786]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.25.25:034][786]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.25.25:040][786]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.25.25:047][786]LogInit: FAudioDevice initialized.
+[2021.06.25-05.25.25:048][786]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.25.25:054][786]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.25.25:058][786]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.25.25
+[2021.06.25-05.25.25:061][786]LogWorld: Bringing up level for play took: 0.006321
+[2021.06.25-05.25.25:061][786]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2021.06.25-05.25.25:064][786]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.25.25:064][786]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.25.25:064][786]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.25.25:064][786]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.25.25:064][786]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.25.25:064][786]LogNet: GameNetDriver IpNetDriver_12 IpNetDriver listening on port 17777
+[2021.06.25-05.25.25:064][786]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.25.25:065][786]ShowFlag.Bones = "2"
+[2021.06.25-05.25.25:066][786]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.25.25:066][786]PIE: 에디터에서 플레이 총 시작 시간 0.132초입니다.
+[2021.06.25-05.25.25:068][786]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.25.25:068][786]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.25.25:069][786]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.25.25:069][786]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.25.25:069][786]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.25.25:072][786]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.25.25:072][786]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.25.25:083][786]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.25.25:085][786]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.25.25:085][786]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.25.25:085][786]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.25.25:086][786]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.25.25:096][786]LogInit: FAudioDevice initialized.
+[2021.06.25-05.25.25:097][786]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.25.25:150][786]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.25.25:151][786]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.25.25:151][786]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.25.25:151][786]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.25.25:151][786]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.25.25:151][786]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.25.25:153][786]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.25.25:154][786]PIE: 에디터에서 플레이 총 시작 시간 0.22초입니다.
+[2021.06.25-05.25.26:172][882]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51399
+[2021.06.25-05.25.26:172][882]LogHandshake: SendConnectChallenge. Timestamp: 1.277685, Cookie: 223165204027154070102114079171016132205111240169185234158249
+[2021.06.25-05.25.26:173][882]LogHandshake: SendChallengeResponse. Timestamp: 1.277685, Cookie: 223165204027154070102114079171016132205111240169185234158249
+[2021.06.25-05.25.26:182][883]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51399
+[2021.06.25-05.25.26:183][883]LogHandshake: SendChallengeAck. InCookie: 223165204027154070102114079171016132205111240169185234158249
+[2021.06.25-05.25.26:183][883]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51399
+[2021.06.25-05.25.26:183][883]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.25.26:184][883]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:25:26, [UNetConnection] RemoteAddr: 127.0.0.1:51399, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_12, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.25.26:184][883]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51399, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_12, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.25.26:184][883]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: PendingNetDriver IpNetDriver_13, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.25.26:192][884]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.25.26:192][884]LogNet: Remote platform little endian=1
+[2021.06.25-05.25.26:192][884]LogNet: This platform little endian=1
+[2021.06.25-05.25.26:193][884]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.06.25-05.25.26:202][885]LogNet: Login request: ?Name=?????ῷé-DBCA7A524BD008887A331FA47C9CBC12 userId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12 platform: NULL
+[2021.06.25-05.25.26:203][885]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.25.26:203][885]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.25.26:203][885]LogWorld: BeginTearingDown for /Temp/Untitled_7
+[2021.06.25-05.25.26:203][885]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.25.26:204][885]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.25.26:214][885]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.06.25-05.25.26:231][885]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.25.26:232][885]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6BDC03E00), frame # 222885
+[2021.06.25-05.25.26:232][885]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A9DC5E40), frame # 222885
+[2021.06.25-05.25.26:236][885]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.25.26
+[2021.06.25-05.25.26:236][885]LogWorld: Bringing up level for play took: 0.002969
+[2021.06.25-05.25.26:239][885]LogLoad: Took 0.035613 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.25.26:239][885]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.25.26:246][886]LogNet: Client netspeed is 10000
+[2021.06.25-05.25.26:246][886]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-DBCA7A524BD008887A331FA47C9CBC12?SplitscreenCount=1
+[2021.06.25-05.25.26:246][886]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.25.26:249][886]LogNet: Join succeeded: 275
+[2021.06.25-05.25.26:633][904]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.25.26:693][907]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.25.26:749][910]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.25.26:749][910]ShowFlag.Bones = "2"
+[2021.06.25-05.25.37:844][352]LogTemp: Warning: 1 >> x: 1 / y: 8
+[2021.06.25-05.25.37:844][352]LogTemp: Warning: 2 >> x: 2 / y: 7
+[2021.06.25-05.25.37:844][352]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.25.37:844][352]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.25.37:844][352]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.25.37:869][353]LogTemp: Warning: X=2914.051 Y=16000.000 Z=16085.090
+[2021.06.25-05.25.40:287][451]LogTemp: Warning: X=4000.000 Y=-74302.047 Z=16085.090
+[2021.06.25-05.25.42:109][524]LogTemp: Warning: X=-17085.949 Y=20000.000 Z=16085.090
+[2021.06.25-05.25.45:107][644]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16085.090
+[2021.06.25-05.25.48:136][766]LogTemp: Warning: X=-9085.949 Y=28000.000 Z=16085.090
+[2021.06.25-05.26.00:009][241]LogNet: Browse: /Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.26.00:009][241]LogLoad: LoadMap: /Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.26.00:009][241]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.26.00:009][241]LogNet: World NetDriver shutdown IpNetDriver_13 [GameNetDriver]
+[2021.06.25-05.26.00:009][241]LogNet: DestroyNamedNetDriver IpNetDriver_13 [GameNetDriver]
+[2021.06.25-05.26.00:009][241]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: GameNetDriver IpNetDriver_13, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12, Channels: 12, Time: 2021.06.25-05.26.00
+[2021.06.25-05.26.00:009][241]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_12, Driver: GameNetDriver IpNetDriver_13, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12
+[2021.06.25-05.26.00:009][241]LogExit: GameNetDriver IpNetDriver_13 shut down
+[2021.06.25-05.26.00:010][241]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.26.00:010][241]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.26.00:039][241]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A9DC5E40), frame # 224241
+[2021.06.25-05.26.00:039][241]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6BDC03E00), frame # 224241
+[2021.06.25-05.26.00:041][241]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2021.06.25-05.26.00:074][241]LogAIModule: Creating AISystem for world GameMenuLevel
+[2021.06.25-05.26.00:074][241]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E63B7D8600), frame # 224241
+[2021.06.25-05.26.00:074][241]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A4B2D080), frame # 224241
+[2021.06.25-05.26.00:074][241]LogLoad: Game class is 'EditorGameMode'
+[2021.06.25-05.26.00:075][241]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameMenuLevel.GameMenuLevel up for play (max tick rate 0) at 2021.06.25-14.26.00
+[2021.06.25-05.26.00:075][241]LogWorld: Bringing up level for play took: 0.000418
+[2021.06.25-05.26.00:076][241]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.06.25-05.26.00:076][241]Cmd: ShowFlag.Bones 1
+[2021.06.25-05.26.00:076][241]ShowFlag.Bones = "1"
+[2021.06.25-05.26.00:079][241]LogLoad: Took 0.070904 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/GameMenuLevel)
+[2021.06.25-05.26.00:089][242]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2021.06.25-05.26.00:089][242]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51399, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_12, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12
+[2021.06.25-05.26.00:089][242]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51399, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_12, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12, Channels: 12, Time: 2021.06.25-05.26.00
+[2021.06.25-05.26.00:089][242]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51399, Name: IpConnection_13, Driver: GameNetDriver IpNetDriver_12, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-DBCA7A524BD008887A331FA47C9CBC12
+[2021.06.25-05.26.00:091][242]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.26.08:853][ 81]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.26.08:853][ 81]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameMenuLevel
+[2021.06.25-05.26.08:853][ 81]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.26.08:858][ 81]LogWorld: UWorld::CleanupWorld for GameMenuLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.26.08:858][ 81]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.26.08:862][ 81]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.26.08:863][ 81]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.26.08:863][ 81]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.26.08:863][ 81]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.26.08:864][ 81]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.26.08:871][ 81]LogNet: World NetDriver shutdown IpNetDriver_12 [GameNetDriver]
+[2021.06.25-05.26.08:871][ 81]LogNet: DestroyNamedNetDriver IpNetDriver_12 [GameNetDriver]
+[2021.06.25-05.26.08:871][ 81]LogExit: GameNetDriver IpNetDriver_12 shut down
+[2021.06.25-05.26.08:872][ 81]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.26.08:874][ 81]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.26.08:913][ 81]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.26.08:915][ 81]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A4B2D080), frame # 225081
+[2021.06.25-05.26.08:915][ 81]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E63B7D8600), frame # 225081
+[2021.06.25-05.26.08:915][ 81]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E60FF99300), frame # 225081
+[2021.06.25-05.26.08:915][ 81]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E67F07E400), frame # 225081
+[2021.06.25-05.26.08:917][ 81]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2021.06.25-05.26.09:026][ 82]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.06.25-05.26.09:026][ 82]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2021.06.25-05.26.10:895][243]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.26.10:899][243]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.41.23:994][286]Candidate modules for hot reload:
+[2021.06.25-05.41.23:994][286]  WireHunter
+[2021.06.25-05.41.23:995][286]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=WireHunter,3759 WireHunterEditor Win64 Development -Project="C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject" "C:/Wire-Hunter/work/choi/WireHunter/WireHunter.uproject"  -IgnoreJunk]
+[2021.06.25-05.41.23:997][286]Warning: Starting HotReload took  0.0s.
+[2021.06.25-05.41.25:812][433]CompilerResultsLog: New page: 컴파일 - 2021. 6. 25. 오후 11:41:25
+[2021.06.25-05.41.25:812][433]CompilerResultsLog: Building WireHunterEditor...
+[2021.06.25-05.41.25:813][433]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.25-05.41.25:813][433]CompilerResultsLog: Building 3 actions with 12 processes...
+[2021.06.25-05.41.25:813][433]CompilerResultsLog:   [1/3] UE4Editor-WireHunter-3759.lib
+[2021.06.25-05.41.25:813][433]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3759.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3759.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.25-05.41.25:813][433]CompilerResultsLog:   [2/3] UE4Editor-WireHunter-3759.dll
+[2021.06.25-05.41.25:813][433]CompilerResultsLog:      C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3759.suppressed.lib ???̺귯?? ?? C:\Wire-Hunter\work\choi\WireHunter\Intermediate\Build\Win64\UE4Editor\Development\WireHunter\UE4Editor-WireHunter-3759.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2021.06.25-05.41.25:813][433]CompilerResultsLog:   [3/3] WireHunterEditor.target
+[2021.06.25-05.41.25:813][433]CompilerResultsLog: Total time in Parallel executor: 1.06 seconds
+[2021.06.25-05.41.25:813][433]CompilerResultsLog: Total execution time: 1.75 seconds
+[2021.06.25-05.41.25:813][433]LogMainFrame: MainFrame: Module compiling took 1.820 seconds
+[2021.06.25-05.41.25:863][433]LogClass: StructNode HotReload.
+[2021.06.25-05.41.25:863][433]LogClass: StructWeight HotReload.
+[2021.06.25-05.41.25:866][433]LogHotReload: Re-instancing Bullet after hot-reload.
+[2021.06.25-05.41.25:871][433]LogHotReload: Re-instancing Fireball after hot-reload.
+[2021.06.25-05.41.25:876][433]LogHotReload: Re-instancing HealingPotion after hot-reload.
+[2021.06.25-05.41.25:889][433]LogHotReload: Re-instancing Lightning after hot-reload.
+[2021.06.25-05.41.25:895][433]LogHotReload: Re-instancing SpeedPotion after hot-reload.
+[2021.06.25-05.41.25:907][433]LogHotReload: Re-instancing StrengthPotion after hot-reload.
+[2021.06.25-05.41.25:920][433]LogContentBrowser: Native class hierarchy updated for 'WireHunter' in 0.0004 seconds. Added 19 classes and 2 folders.
+[2021.06.25-05.41.25:922][433]Display: HotReload successful (17 functions remapped  2 scriptstructs remapped)
+[2021.06.25-05.41.25:971][433]LogContentBrowser: Native class hierarchy populated in 0.0174 seconds. Added 3447 classes and 826 folders.
+[2021.06.25-05.41.25:971][433]Display: HotReload took  2.0s.
+[2021.06.25-05.41.28:037][648]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.41.28:055][648]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.41.28:055][648]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:41:28)
+[2021.06.25-05.41.28:055][648]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.41.28:068][648]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013087s)
+[2021.06.25-05.41.28:069][648]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.41.28:069][648]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6BDA20800), frame # 247648
+[2021.06.25-05.41.28:069][648]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A9DC5440), frame # 247648
+[2021.06.25-05.41.28:069][648]LogPlayLevel: PIE: World Init took: (0.001158s)
+[2021.06.25-05.41.28:069][648]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.014380s)
+[2021.06.25-05.41.28:081][648]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.41.28:088][648]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.41.28:088][648]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.41.28:088][648]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.41.28:092][648]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.41.28:092][648]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.41.28:109][648]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.41.28:111][648]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.41.28:111][648]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.41.28:111][648]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.41.28:112][648]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.41.28:122][648]LogInit: FAudioDevice initialized.
+[2021.06.25-05.41.28:123][648]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.41.28:137][648]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.41.28:141][648]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.41.28
+[2021.06.25-05.41.28:144][648]LogWorld: Bringing up level for play took: 0.006331
+[2021.06.25-05.41.28:144][648]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.06.25-05.41.28:146][648]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.41.28:146][648]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.41.28:146][648]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.41.28:146][648]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.41.28:146][648]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.28:146][648]LogNet: GameNetDriver IpNetDriver_14 IpNetDriver listening on port 17777
+[2021.06.25-05.41.28:147][648]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.41.28:147][648]ShowFlag.Bones = "2"
+[2021.06.25-05.41.28:148][648]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.41.28:149][648]PIE: 에디터에서 플레이 총 시작 시간 0.097초입니다.
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.41.28:151][648]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.41.28:151][648]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.41.28:152][648]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.41.28:152][648]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.41.28:155][648]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.41.28:155][648]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.41.28:173][648]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.41.28:175][648]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.41.28:175][648]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.41.28:175][648]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.41.28:179][648]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.41.28:186][648]LogInit: FAudioDevice initialized.
+[2021.06.25-05.41.28:187][648]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.41.28:235][648]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.41.28:235][648]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.41.28:236][648]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.41.28:236][648]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.41.28:236][648]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.28:236][648]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.41.28:238][648]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.41.28:239][648]PIE: 에디터에서 플레이 총 시작 시간 0.187초입니다.
+[2021.06.25-05.41.29:251][744]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55476
+[2021.06.25-05.41.29:251][744]LogHandshake: SendConnectChallenge. Timestamp: 1.220920, Cookie: 132216148085114111220033245020122091101099255036083039212043
+[2021.06.25-05.41.29:252][744]LogHandshake: SendChallengeResponse. Timestamp: 1.220920, Cookie: 132216148085114111220033245020122091101099255036083039212043
+[2021.06.25-05.41.29:260][745]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55476
+[2021.06.25-05.41.29:260][745]LogHandshake: SendChallengeAck. InCookie: 132216148085114111220033245020122091101099255036083039212043
+[2021.06.25-05.41.29:260][745]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55476
+[2021.06.25-05.41.29:260][745]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.29:260][745]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:41:29, [UNetConnection] RemoteAddr: 127.0.0.1:55476, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_14, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.29:260][745]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55476, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_14, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.29:262][745]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_14, Driver: PendingNetDriver IpNetDriver_15, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.29:271][746]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.41.29:271][746]LogNet: Remote platform little endian=1
+[2021.06.25-05.41.29:271][746]LogNet: This platform little endian=1
+[2021.06.25-05.41.29:272][746]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.06.25-05.41.29:281][747]LogNet: Login request: ?Name=?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038 userId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038 platform: NULL
+[2021.06.25-05.41.29:283][747]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.41.29:283][747]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.41.29:284][747]LogWorld: BeginTearingDown for /Temp/Untitled_8
+[2021.06.25-05.41.29:284][747]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.41.29:284][747]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.41.29:294][747]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2021.06.25-05.41.29:310][747]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.41.29:310][747]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6BD5B9400), frame # 247747
+[2021.06.25-05.41.29:310][747]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A55AE700), frame # 247747
+[2021.06.25-05.41.29:314][747]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.41.29
+[2021.06.25-05.41.29:314][747]LogWorld: Bringing up level for play took: 0.003150
+[2021.06.25-05.41.29:315][747]LogLoad: Took 0.032177 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.41.29:315][747]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.41.29:323][748]LogNet: Client netspeed is 10000
+[2021.06.25-05.41.29:323][748]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-AF872BCF4D06B714BC0B6BB53C87B038?SplitscreenCount=1
+[2021.06.25-05.41.29:324][748]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.41.29:326][748]LogNet: Join succeeded: 278
+[2021.06.25-05.41.29:705][768]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.41.29:793][773]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.41.29:793][773]ShowFlag.Bones = "2"
+[2021.06.25-05.41.29:861][776]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.41.39:383][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.41.39:383][146]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.41.39:383][146]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.41.39:407][146]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.41.39:408][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.41.39:417][146]LogNet: World NetDriver shutdown IpNetDriver_15 [GameNetDriver]
+[2021.06.25-05.41.39:417][146]LogNet: DestroyNamedNetDriver IpNetDriver_15 [GameNetDriver]
+[2021.06.25-05.41.39:417][146]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_14, Driver: GameNetDriver IpNetDriver_15, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038, Channels: 27, Time: 2021.06.25-05.41.39
+[2021.06.25-05.41.39:417][146]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_14, Driver: GameNetDriver IpNetDriver_15, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038
+[2021.06.25-05.41.39:417][146]LogExit: GameNetDriver IpNetDriver_15 shut down
+[2021.06.25-05.41.39:418][146]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.41.39:418][146]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.41.39:418][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.41.39:418][146]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.41.39:419][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.41.39:426][146]LogNet: World NetDriver shutdown IpNetDriver_14 [GameNetDriver]
+[2021.06.25-05.41.39:426][146]LogNet: DestroyNamedNetDriver IpNetDriver_14 [GameNetDriver]
+[2021.06.25-05.41.39:427][146]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:55476, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_14, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038
+[2021.06.25-05.41.39:427][146]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55476, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_14, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038, Channels: 27, Time: 2021.06.25-05.41.39
+[2021.06.25-05.41.39:427][146]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55476, Name: IpConnection_15, Driver: GameNetDriver IpNetDriver_14, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-AF872BCF4D06B714BC0B6BB53C87B038
+[2021.06.25-05.41.39:427][146]LogExit: GameNetDriver IpNetDriver_14 shut down
+[2021.06.25-05.41.39:427][146]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.41.39:429][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.41.39:467][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.41.39:469][146]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A55AE700), frame # 248146
+[2021.06.25-05.41.39:469][146]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6BD5B9400), frame # 248146
+[2021.06.25-05.41.39:470][146]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A9DC5440), frame # 248146
+[2021.06.25-05.41.39:470][146]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6BDA20800), frame # 248146
+[2021.06.25-05.41.39:471][146]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.06.25-05.41.39:580][147]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.06.25-05.41.39:581][147]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.06.25-05.41.40:862][255]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.41.40:876][255]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.41.52:644][ 50]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.41.52:657][ 50]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.41.52:658][ 50]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:41:52)
+[2021.06.25-05.41.52:658][ 50]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.41.52:669][ 50]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011861s)
+[2021.06.25-05.41.52:671][ 50]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.41.52:671][ 50]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E62D337600), frame # 249050
+[2021.06.25-05.41.52:671][ 50]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A55AC540), frame # 249050
+[2021.06.25-05.41.52:671][ 50]LogPlayLevel: PIE: World Init took: (0.001082s)
+[2021.06.25-05.41.52:671][ 50]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013073s)
+[2021.06.25-05.41.52:681][ 50]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.41.52:686][ 50]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.41.52:686][ 50]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.41.52:687][ 50]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.41.52:687][ 50]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.41.52:689][ 50]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.41.52:689][ 50]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.41.52:707][ 50]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.41.52:707][ 50]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.41.52:707][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.41.52:708][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.41.52:708][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.41.52:720][ 50]LogInit: FAudioDevice initialized.
+[2021.06.25-05.41.52:721][ 50]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.41.52:726][ 50]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.41.52:730][ 50]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.41.52
+[2021.06.25-05.41.52:734][ 50]LogWorld: Bringing up level for play took: 0.006334
+[2021.06.25-05.41.52:734][ 50]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2021.06.25-05.41.52:736][ 50]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.41.52:736][ 50]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.41.52:736][ 50]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.41.52:736][ 50]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.41.52:736][ 50]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.52:736][ 50]LogNet: GameNetDriver IpNetDriver_16 IpNetDriver listening on port 17777
+[2021.06.25-05.41.52:736][ 50]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.41.52:736][ 50]ShowFlag.Bones = "2"
+[2021.06.25-05.41.52:738][ 50]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.41.52:738][ 50]PIE: 에디터에서 플레이 총 시작 시간 0.081초입니다.
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.41.52:739][ 50]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.41.52:739][ 50]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.41.52:740][ 50]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.41.52:740][ 50]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.41.52:742][ 50]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.41.52:742][ 50]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.41.52:754][ 50]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.41.52:755][ 50]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.41.52:755][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.41.52:755][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.41.52:755][ 50]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.41.52:768][ 50]LogInit: FAudioDevice initialized.
+[2021.06.25-05.41.52:768][ 50]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.41.52:818][ 50]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.41.52:818][ 50]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.41.52:818][ 50]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.41.52:819][ 50]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.41.52:819][ 50]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.52:819][ 50]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.41.52:821][ 50]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.41.52:822][ 50]PIE: 에디터에서 플레이 총 시작 시간 0.165초입니다.
+[2021.06.25-05.41.53:828][144]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54566
+[2021.06.25-05.41.53:828][144]LogHandshake: SendConnectChallenge. Timestamp: 1.201137, Cookie: 026190094233072196217220080000226149214074188071101040007055
+[2021.06.25-05.41.53:829][144]LogHandshake: SendChallengeResponse. Timestamp: 1.201137, Cookie: 026190094233072196217220080000226149214074188071101040007055
+[2021.06.25-05.41.53:837][145]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54566
+[2021.06.25-05.41.53:837][145]LogHandshake: SendChallengeAck. InCookie: 026190094233072196217220080000226149214074188071101040007055
+[2021.06.25-05.41.53:837][145]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54566
+[2021.06.25-05.41.53:837][145]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.41.53:837][145]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:41:53, [UNetConnection] RemoteAddr: 127.0.0.1:54566, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_16, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.53:837][145]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54566, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_16, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.53:838][145]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_16, Driver: PendingNetDriver IpNetDriver_17, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.41.53:847][146]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.41.53:847][146]LogNet: Remote platform little endian=1
+[2021.06.25-05.41.53:847][146]LogNet: This platform little endian=1
+[2021.06.25-05.41.53:848][146]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2021.06.25-05.41.53:857][147]LogNet: Login request: ?Name=?????ῷé-E18DD3E9460649DE4597EC93D19C7E61 userId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61 platform: NULL
+[2021.06.25-05.41.53:859][147]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.41.53:859][147]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.41.53:859][147]LogWorld: BeginTearingDown for /Temp/Untitled_9
+[2021.06.25-05.41.53:859][147]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.41.53:859][147]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.41.53:871][147]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2021.06.25-05.41.53:888][147]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.41.53:888][147]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6A4FE5800), frame # 249147
+[2021.06.25-05.41.53:888][147]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A55AD080), frame # 249147
+[2021.06.25-05.41.53:892][147]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.41.53
+[2021.06.25-05.41.53:892][147]LogWorld: Bringing up level for play took: 0.002518
+[2021.06.25-05.41.53:893][147]LogLoad: Took 0.034094 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.41.53:893][147]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.41.53:901][148]LogNet: Client netspeed is 10000
+[2021.06.25-05.41.53:901][148]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-E18DD3E9460649DE4597EC93D19C7E61?SplitscreenCount=1
+[2021.06.25-05.41.53:901][148]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.41.53:904][148]LogNet: Join succeeded: 280
+[2021.06.25-05.41.54:277][167]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.41.54:277][167]ShowFlag.Bones = "2"
+[2021.06.25-05.41.54:347][170]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.41.54:524][177]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.42.04:954][593]LogNet: Browse: /Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.42.04:954][593]LogLoad: LoadMap: /Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.42.04:954][593]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.42.04:955][593]LogNet: World NetDriver shutdown IpNetDriver_16 [GameNetDriver]
+[2021.06.25-05.42.04:955][593]LogNet: DestroyNamedNetDriver IpNetDriver_16 [GameNetDriver]
+[2021.06.25-05.42.04:955][593]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:54566, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_16, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61
+[2021.06.25-05.42.04:955][593]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54566, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_16, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61, Channels: 25, Time: 2021.06.25-05.42.04
+[2021.06.25-05.42.04:955][593]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54566, Name: IpConnection_17, Driver: GameNetDriver IpNetDriver_16, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61
+[2021.06.25-05.42.04:955][593]LogExit: GameNetDriver IpNetDriver_16 shut down
+[2021.06.25-05.42.04:956][593]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.42.04:956][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.42.04:993][593]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A55AC540), frame # 249593
+[2021.06.25-05.42.04:993][593]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E62D337600), frame # 249593
+[2021.06.25-05.42.04:997][593]LogUObjectHash: Compacting FUObjectHashTables data took   2.69ms
+[2021.06.25-05.42.05:006][593]LogAIModule: Creating AISystem for world GameMenuLevel
+[2021.06.25-05.42.05:006][593]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E624604400), frame # 249593
+[2021.06.25-05.42.05:006][593]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E62AD65F80), frame # 249593
+[2021.06.25-05.42.05:006][593]LogLoad: Game class is 'EditorGameMode'
+[2021.06.25-05.42.05:007][593]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameMenuLevel.GameMenuLevel up for play (max tick rate 0) at 2021.06.25-14.42.05
+[2021.06.25-05.42.05:007][593]LogWorld: Bringing up level for play took: 0.000277
+[2021.06.25-05.42.05:007][593]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.06.25-05.42.05:008][593]Cmd: ShowFlag.Bones 1
+[2021.06.25-05.42.05:008][593]ShowFlag.Bones = "1"
+[2021.06.25-05.42.05:008][593]LogLoad: Took 0.053625 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/GameMenuLevel)
+[2021.06.25-05.42.05:009][593]LogNet: Error: UEngine::BroadcastNetworkFailure: FailureType = FailureReceived, ErrorString = 호스트가 접속을 끊었습니다., Driver = GameNetDriver IpNetDriver_17
+[2021.06.25-05.42.05:009][593]LogNet: Warning: Network Failure: GameNetDriver[FailureReceived]: 호스트가 접속을 끊었습니다.
+[2021.06.25-05.42.05:009][593]LogNet: NetworkFailure: FailureReceived, Error: '호스트가 접속을 끊었습니다.'
+[2021.06.25-05.42.05:009][593]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_16, Driver: GameNetDriver IpNetDriver_17, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61, Channels: 25, Time: 2021.06.25-05.42.05
+[2021.06.25-05.42.05:009][593]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_16, Driver: GameNetDriver IpNetDriver_17, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-E18DD3E9460649DE4597EC93D19C7E61
+[2021.06.25-05.42.05:009][593]LogNet: Error: UEngine::BroadcastNetworkFailure: FailureType = ConnectionLost, ErrorString = 호스트와의 접속이 끊어졌습니다., Driver = GameNetDriver IpNetDriver_17
+[2021.06.25-05.42.05:021][594]LogNet: Browse: /Game/ThirdPersonCPP/Maps/GameMenuLevel?closed
+[2021.06.25-05.42.05:021][594]LogNet: Connection failed; returning to Entry
+[2021.06.25-05.42.05:021][594]LogLoad: LoadMap: /Game/ThirdPersonCPP/Maps/GameMenuLevel?closed
+[2021.06.25-05.42.05:021][594]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.42.05:021][594]LogNet: World NetDriver shutdown IpNetDriver_17 [GameNetDriver]
+[2021.06.25-05.42.05:021][594]LogNet: DestroyNamedNetDriver IpNetDriver_17 [GameNetDriver]
+[2021.06.25-05.42.05:021][594]LogExit: GameNetDriver IpNetDriver_17 shut down
+[2021.06.25-05.42.05:022][594]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.42.05:023][594]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.42.05:034][594]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A55AD080), frame # 249594
+[2021.06.25-05.42.05:034][594]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6A4FE5800), frame # 249594
+[2021.06.25-05.42.05:036][594]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2021.06.25-05.42.05:044][594]LogAIModule: Creating AISystem for world GameMenuLevel
+[2021.06.25-05.42.05:044][594]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E63FC34800), frame # 249594
+[2021.06.25-05.42.05:044][594]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E62AD65E40), frame # 249594
+[2021.06.25-05.42.05:044][594]LogLoad: Game class is 'EditorGameMode'
+[2021.06.25-05.42.05:045][594]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameMenuLevel.GameMenuLevel up for play (max tick rate 0) at 2021.06.25-14.42.05
+[2021.06.25-05.42.05:045][594]LogWorld: Bringing up level for play took: 0.000297
+[2021.06.25-05.42.05:045][594]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.06.25-05.42.05:046][594]Cmd: ShowFlag.Bones 1
+[2021.06.25-05.42.05:046][594]ShowFlag.Bones = "1"
+[2021.06.25-05.42.05:047][594]LogLoad: Took 0.026040 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/GameMenuLevel)
+[2021.06.25-05.42.05:056][594]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2021.06.25-05.42.11:923][413]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.42.11:923][413]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameMenuLevel
+[2021.06.25-05.42.11:923][413]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.42.11:928][413]LogWorld: UWorld::CleanupWorld for GameMenuLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.42.11:928][413]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.42.11:939][413]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameMenuLevel
+[2021.06.25-05.42.11:940][413]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.42.11:940][413]LogWorld: UWorld::CleanupWorld for GameMenuLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.42.11:940][413]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.42.11:949][413]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.42.11:951][413]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.42.11:959][413]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.42.11:990][413]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E62AD65E40), frame # 250413
+[2021.06.25-05.42.11:990][413]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E63FC34800), frame # 250413
+[2021.06.25-05.42.11:990][413]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E62AD65F80), frame # 250413
+[2021.06.25-05.42.11:990][413]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E624604400), frame # 250413
+[2021.06.25-05.42.11:990][413]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2021.06.25-05.42.12:107][414]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2021.06.25-05.42.12:107][414]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2021.06.25-05.42.13:471][522]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.42.13:475][522]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.42.32:219][276]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.42.34:171][467]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.42.35:470][593]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.42.43:739][372]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.42.45:808][570]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.42.47:381][721]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.43.01:056][105]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.43.06:585][655]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2021.06.25-05.43.10:195][971]LogEditorViewport: Clicking on Actor (LMB): BP_WHCharacter_C (BP_WHCharacter)
+[2021.06.25-05.43.19:828][492]LogTemp: Repeating last play command: 선택된 뷰포트
+[2021.06.25-05.43.19:841][492]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.25-05.43.19:842][492]PIE: New page: PIE 세션: GameLevel (2021. 6. 25. 오후 11:43:19)
+[2021.06.25-05.43.19:842][492]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.43.19:854][492]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011908s)
+[2021.06.25-05.43.19:855][492]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.43.19:855][492]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6BDA22800), frame # 256492
+[2021.06.25-05.43.19:855][492]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A9DC5E40), frame # 256492
+[2021.06.25-05.43.19:855][492]LogPlayLevel: PIE: World Init took: (0.001093s)
+[2021.06.25-05.43.19:855][492]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/GameLevel.GameLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel (0.013130s)
+[2021.06.25-05.43.19:866][492]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.43.19:872][492]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.43.19:872][492]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.43.19:873][492]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.43.19:873][492]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.43.19:876][492]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.43.19:876][492]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.43.19:895][492]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.43.19:895][492]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.43.19:895][492]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.43.19:895][492]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.43.19:896][492]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.43.19:896][492]LogInit: FAudioDevice initialized.
+[2021.06.25-05.43.19:897][492]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.43.19:912][492]LogLoad: Game class is 'WireHunterGameMode'
+[2021.06.25-05.43.19:915][492]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.43.19
+[2021.06.25-05.43.19:919][492]LogWorld: Bringing up level for play took: 0.006389
+[2021.06.25-05.43.19:919][492]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2021.06.25-05.43.19:921][492]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.25-05.43.19:921][492]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.25-05.43.19:921][492]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.25-05.43.19:921][492]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.25-05.43.19:921][492]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.43.19:921][492]LogNet: GameNetDriver IpNetDriver_18 IpNetDriver listening on port 17777
+[2021.06.25-05.43.19:921][492]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.43.19:921][492]ShowFlag.Bones = "2"
+[2021.06.25-05.43.19:923][492]PIE: 서버가 로그인했습니다.
+[2021.06.25-05.43.19:924][492]PIE: 에디터에서 플레이 총 시작 시간 0.083초입니다.
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.25-05.43.19:925][492]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.25-05.43.19:925][492]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.25-05.43.19:926][492]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.25-05.43.19:926][492]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.25-05.43.19:928][492]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.25-05.43.19:928][492]LogAudioMixer: Display: 1: FrontRight
+[2021.06.25-05.43.19:951][492]LogAudioMixer: Display: Using Audio Device Realtek HD Audio 2nd output(Realtek(R) Audio)
+[2021.06.25-05.43.19:951][492]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.25-05.43.19:951][492]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.25-05.43.19:951][492]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.25-05.43.19:952][492]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.25-05.43.19:963][492]LogInit: FAudioDevice initialized.
+[2021.06.25-05.43.19:964][492]PIE: Warning: UGameViewportClient::AddCursor: 'UI_Cursor_C' 커서 클래스를 로드할 수 없습니다.
+[2021.06.25-05.43.20:004][492]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.43.20:004][492]LogNet: Browse: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/GameMenuLevel
+[2021.06.25-05.43.20:004][492]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2021.06.25-05.43.20:004][492]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2021.06.25-05.43.20:004][492]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.43.20:005][492]LogNet: Game client on port 17777, rate 10000
+[2021.06.25-05.43.20:006][492]PIE: 클라이언트가 로그인했습니다.
+[2021.06.25-05.43.20:007][492]PIE: 에디터에서 플레이 총 시작 시간 0.166초입니다.
+[2021.06.25-05.43.20:846][558]LogTemp: Warning: 1 >> x: 3 / y: 8
+[2021.06.25-05.43.20:846][558]LogTemp: Warning: 2 >> x: 4 / y: 7
+[2021.06.25-05.43.20:846][558]LogTemp: Warning: 3 >> x: 3 / y: 6
+[2021.06.25-05.43.20:846][558]LogTemp: Warning: 4 >> x: 4 / y: 5
+[2021.06.25-05.43.20:846][558]LogTemp: Warning: 5 >> x: 3 / y: 4
+[2021.06.25-05.43.20:857][559]LogTemp: Warning: X=-1085.949 Y=12000.000 Z=16080.340
+[2021.06.25-05.43.21:019][570]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57619
+[2021.06.25-05.43.21:019][570]LogHandshake: SendConnectChallenge. Timestamp: 1.204153, Cookie: 071098105132240185117064096219068242157116163125137040129205
+[2021.06.25-05.43.21:020][570]LogHandshake: SendChallengeResponse. Timestamp: 1.204153, Cookie: 071098105132240185117064096219068242157116163125137040129205
+[2021.06.25-05.43.21:031][571]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:57619
+[2021.06.25-05.43.21:031][571]LogHandshake: SendChallengeAck. InCookie: 071098105132240185117064096219068242157116163125137040129205
+[2021.06.25-05.43.21:031][571]LogNet: Server accepting post-challenge connection from: 127.0.0.1:57619
+[2021.06.25-05.43.21:032][571]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.25-05.43.21:032][571]LogNet: NotifyAcceptedConnection: Name: GameLevel, TimeStamp: 06/25/21 14:43:21, [UNetConnection] RemoteAddr: 127.0.0.1:57619, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.43.21:032][571]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:57619, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.43.21:033][571]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_18, Driver: PendingNetDriver IpNetDriver_19, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.06.25-05.43.21:046][572]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel.GameLevel: Accepted
+[2021.06.25-05.43.21:046][572]LogNet: Remote platform little endian=1
+[2021.06.25-05.43.21:046][572]LogNet: This platform little endian=1
+[2021.06.25-05.43.21:048][572]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2021.06.25-05.43.21:059][573]LogNet: Login request: ?Name=?????ῷé-093582BC4C76C75E945FC48C69F7A453 userId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453 platform: NULL
+[2021.06.25-05.43.21:060][573]LogNet: Welcomed by server (Level: /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel, Game: /Script/WireHunter.WireHunterGameMode)
+[2021.06.25-05.43.21:060][573]LogLoad: LoadMap: 127.0.0.1:17777/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel?game=/Script/WireHunter.WireHunterGameMode
+[2021.06.25-05.43.21:060][573]LogWorld: BeginTearingDown for /Temp/Untitled_10
+[2021.06.25-05.43.21:061][573]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.43.21:061][573]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.43.21:072][573]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.06.25-05.43.21:086][573]LogAIModule: Creating AISystem for world GameLevel
+[2021.06.25-05.43.21:086][573]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002E6B081BE00), frame # 256573
+[2021.06.25-05.43.21:086][573]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002E6A9DC5F80), frame # 256573
+[2021.06.25-05.43.21:089][573]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel.GameLevel up for play (max tick rate 0) at 2021.06.25-14.43.21
+[2021.06.25-05.43.21:089][573]LogWorld: Bringing up level for play took: 0.002423
+[2021.06.25-05.43.21:090][573]LogLoad: Took 0.029140 seconds to LoadMap(/Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel)
+[2021.06.25-05.43.21:090][573]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2021.06.25-05.43.21:104][574]LogNet: Client netspeed is 10000
+[2021.06.25-05.43.21:104][574]LogNet: Join request: /Game/ThirdPersonCPP/Maps/GameMenuLevel?Name=??ῷé-093582BC4C76C75E945FC48C69F7A453?SplitscreenCount=1
+[2021.06.25-05.43.21:105][574]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.43.21:107][574]LogNet: Join succeeded: 284
+[2021.06.25-05.43.21:560][597]Cmd: ShowFlag.Bones 2
+[2021.06.25-05.43.21:561][597]ShowFlag.Bones = "2"
+[2021.06.25-05.43.21:626][600]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.43.21:733][604]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.06.25-05.43.23:013][654]LogTemp: Warning: X=-4000.000 Y=-74302.047 Z=16080.340
+[2021.06.25-05.43.25:337][745]LogTemp: Warning: X=-9085.949 Y=20000.000 Z=16080.340
+[2021.06.25-05.43.27:912][844]LogTemp: Warning: X=4000.000 Y=-66302.047 Z=16080.340
+[2021.06.25-05.43.30:762][954]LogTemp: Warning: X=-9085.949 Y=28000.000 Z=16080.340
+[2021.06.25-05.43.37:499][214]LogCharacterMovement: BP_WHCharacter_C_0 is stuck and failed to move! Velocity: X=-87.01 Y=214.15 Z=0.00 Location: X=-11278.46 Y=27406.37 Z=15110.22 Normal: X=-0.66 Y=-0.35 Z=-0.67 PenetrationDepth:7.200 Actor:Boss_5 Component:BossSkeletalMesh BoneName:Bip001-R-UpperArm (0 other events since notify)
+[2021.06.25-05.43.46:294][555]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.43.46:294][555]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_1_GameLevel
+[2021.06.25-05.43.46:295][555]LogSlate: Window 'WireHunter 프리뷰 [NetMode: Client 2] (64-bit/Windows) ' being destroyed
+[2021.06.25-05.43.46:303][555]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.43.46:305][555]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.43.46:312][555]LogNet: World NetDriver shutdown IpNetDriver_19 [GameNetDriver]
+[2021.06.25-05.43.46:312][555]LogNet: DestroyNamedNetDriver IpNetDriver_19 [GameNetDriver]
+[2021.06.25-05.43.46:312][555]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_18, Driver: GameNetDriver IpNetDriver_19, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453, Channels: 21, Time: 2021.06.25-05.43.46
+[2021.06.25-05.43.46:312][555]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_18, Driver: GameNetDriver IpNetDriver_19, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453
+[2021.06.25-05.43.46:312][555]LogExit: GameNetDriver IpNetDriver_19 shut down
+[2021.06.25-05.43.46:313][555]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_GameLevel
+[2021.06.25-05.43.46:313][555]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2021.06.25-05.43.46:314][555]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.43.46:314][555]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.06.25-05.43.46:315][555]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.43.46:322][555]LogNet: World NetDriver shutdown IpNetDriver_18 [GameNetDriver]
+[2021.06.25-05.43.46:322][555]LogNet: DestroyNamedNetDriver IpNetDriver_18 [GameNetDriver]
+[2021.06.25-05.43.46:322][555]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:57619, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453
+[2021.06.25-05.43.46:322][555]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:57619, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453, Channels: 21, Time: 2021.06.25-05.43.46
+[2021.06.25-05.43.46:322][555]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:57619, Name: IpConnection_19, Driver: GameNetDriver IpNetDriver_18, IsServer: YES, PC: PlayerController_1, Owner: PlayerController_1, UniqueId: NULL:?????ῷé-093582BC4C76C75E945FC48C69F7A453
+[2021.06.25-05.43.46:322][555]LogExit: GameNetDriver IpNetDriver_18 shut down
+[2021.06.25-05.43.46:323][555]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.25-05.43.46:325][555]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.25-05.43.46:364][555]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.25-05.43.46:367][555]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A9DC5E40), frame # 257555
+[2021.06.25-05.43.46:367][555]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6BDA22800), frame # 257555
+[2021.06.25-05.43.46:368][555]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002E6A9DC5F80), frame # 257555
+[2021.06.25-05.43.46:368][555]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002E6B081BE00), frame # 257555
+[2021.06.25-05.43.46:369][555]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2021.06.25-05.43.46:526][556]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2021.06.25-05.43.46:526][556]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2021.06.25-05.43.48:551][740]LogSlate: Window '메시지 로그' being destroyed
+[2021.06.25-05.43.48:555][740]LogSlate: Window '메시지 로그' being destroyed

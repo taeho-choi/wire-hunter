@@ -22,6 +22,7 @@ ABullet::ABullet()
 	ProjectileMovementComponent->bShouldBounce = true;
 	ProjectileMovementComponent->Bounciness = 0.3f;
 
+	bReplicates = true;
 }
 
 // Called when the game starts or when spawned

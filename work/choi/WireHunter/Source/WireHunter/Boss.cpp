@@ -46,6 +46,8 @@ ABoss::ABoss()
 	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
 
 	ToFace = false;
+
+	bReplicates = true;
 }
 
 void ABoss::MakeMap()

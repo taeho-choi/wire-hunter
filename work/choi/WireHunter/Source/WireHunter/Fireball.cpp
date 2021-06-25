@@ -2,12 +2,20 @@
 
 
 #include "Fireball.h"
-#include "Components/SphereComponent.h"
-#include "Particles/ParticleSystemComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "WireHunterCharacter.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Boss.h"
+
+//R
+
+#include "Components/SphereComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "GameFramework/DamageType.h"
+#include "Particles/ParticleSystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "UObject/ConstructorHelpers.h"
 
 // Sets default values
 AFireball::AFireball()
@@ -39,11 +47,47 @@ AFireball::AFireball()
 	FireballMesh->SetWorldLocation(FVector(0.f, 0.f, -50.f));
 
 	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
+	SphereCollision->SetupAttachment(FireballRoot);
 	SphereCollision->SetGenerateOverlapEvents(true);
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AFireball::OnHit);
-	SphereCollision->SetupAttachment(FireballRoot);
 	SphereCollision->SetWorldScale3D(FVector(1.6f, 1.6f, 1.6f));
+
+	//R
+
+	/*if (HasAuthority()) {
+		SphereCollision->OnComponentHit.AddDynamic(this, &AFireball::OnProjectileImpact);
+	}*/
+
+	bReplicates = true;
+	
+	/*SphereCollision->SetCollisionProfileName(TEXT("BlockAllDynamic"));
+
+	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
+	ProjectileMovementComponent->SetUpdatedComponent(FireballRoot);
+	ProjectileMovementComponent->InitialSpeed = 1500.f;
+	ProjectileMovementComponent->MaxSpeed = 1500.f;
+	ProjectileMovementComponent->bRotationFollowsVelocity = true;
+	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
+
+	DamageType = UDamageType::StaticClass();
+	Damage = 10.f;*/
 }
+
+//R
+//void AFireball::Destroyed()
+//{
+//	FVector spawnLocation = GetActorLocation();
+//	UGameplayStatics::SpawnEmitterAtLocation(this, ImpactParticle, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+//}
+//
+//void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+//{
+//	if (OtherActor)
+//	{
+//		UGameplayStatics::ApplyPointDamage(OtherActor, Damage, NormalImpulse, Hit, GetInstigator()->Controller, this, DamageType);
+//	}
+//	Destroy();
+//}
 
 // Called when the game starts or when spawned
 void AFireball::BeginPlay()
