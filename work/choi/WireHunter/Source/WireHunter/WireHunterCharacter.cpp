@@ -110,6 +110,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	MaxHealth = 100.f;
 	Health = MaxHealth;
 	bReplicates = true;
+
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> ImpactParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
+	UParticleSystem* ParticleAsset = ImpactParticleAsset.Object;
+	ImpactParticle = ParticleAsset;
 }
 
 void AWireHunterCharacter::BeginPlay()
