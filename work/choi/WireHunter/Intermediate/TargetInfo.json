@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "WireHunter",
+			"Path": "C:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunter.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "WireHunterEditor",
+			"Path": "C:\\Wire-Hunter\\work\\choi\\WireHunter\\Source\\WireHunterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
