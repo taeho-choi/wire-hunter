@@ -78,10 +78,3 @@ DerivedDataCache/*
 **/DerivedDataCache/
 **/Intermediate/
 **/Saved/
-
-/Binaries
-/Build
-/Intermediate
-/DerivedDataCache
-/Saved
-/.VC.db
