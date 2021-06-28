@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\WireHunter.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{7A9D5FB7-A196-4F46-899B-1AC865DD3F51}</UniqueIdentifier>
+      <UniqueIdentifier>{70B23C4D-0761-478A-8BA2-9D56E3FE8962}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\WireHunter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{73423633-7987-4984-B2D9-829D75CB950F}</UniqueIdentifier>
+      <UniqueIdentifier>{D7526430-765E-4745-A9DC-8A7490695D64}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\WireHunter">
-      <UniqueIdentifier>{536AD0E9-C409-4579-8322-B217AA2E09CF}</UniqueIdentifier>
+      <UniqueIdentifier>{FEC5A14D-C530-4FD2-9FD9-F21B179C5CAE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\WireHunter\Boss.cpp">
       <Filter>Source\WireHunter</Filter>
@@ -84,6 +84,12 @@
       <Filter>Source\WireHunter</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\WireHunter\Lightning.h">
+      <Filter>Source\WireHunter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WireHunter\MainMenu.cpp">
+      <Filter>Source\WireHunter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WireHunter\MainMenu.h">
       <Filter>Source\WireHunter</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\WireHunter\MyHUD.cpp">
