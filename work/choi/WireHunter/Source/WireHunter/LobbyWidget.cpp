@@ -17,7 +17,7 @@ void ULobbyWidget::NativeConstruct()
 void ULobbyWidget::CreateServerHandler()
 {
 	UGameplayStatics::OpenLevel(GetWorld(), FName("GameLevel"), true, ((FString)(L"Listen")));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Press CreateServer"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Press CreateServer"));
 
 	//ALobbyPlayerController* PC = Cast<ALobbyPlayerController>(GetOwningPlayer());
 	//if (PC)
@@ -29,7 +29,8 @@ void ULobbyWidget::CreateServerHandler()
 
 void ULobbyWidget::JoinServerHandler()
 {
-	UGameplayStatics::OpenLevel(GetWorld(), FName("124.57.148.59")); // Level 이름 대신 IP 주소.
+	FString Address = IPAddressTextBox->GetText().ToString();
+	UGameplayStatics::OpenLevel(GetWorld(), FName(Address)); // Level 이름 대신 IP 주소.
 	//ALobbyPlayerController* PC = Cast<ALobbyPlayerController>(GetOwningPlayer());
 	//if (PC)
 	//{

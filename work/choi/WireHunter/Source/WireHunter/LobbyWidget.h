@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/Button.h"
+#include "Components/EditableTextBox.h"
 #include "LobbyWidget.generated.h"
 
 /**
@@ -22,6 +23,8 @@ private:
 		class UButton* CreateServerBtn;
 	UPROPERTY(Meta = (BindWidget))
 		class UButton* JoinServerBtn;
+	UPROPERTY(Meta = (BindWidget))
+		class UEditableTextBox* IPAddressTextBox;
 
 	UFUNCTION()
 		void CreateServerHandler();
