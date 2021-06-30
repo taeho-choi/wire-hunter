@@ -172,6 +172,9 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// Reload
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AWireHunterCharacter::Reload);
+
+	// Chat
+	PlayerInputComponent->BindAction("Enter", IE_Pressed, this, &AWireHunterCharacter::Reload);
 }
 
 void AWireHunterCharacter::Tick(float DeltaTime)
