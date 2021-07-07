@@ -17,6 +17,8 @@ ABoss::ABoss()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	bReplicates = true;
+
 	BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FireballRoot"));
 	RootComponent = BossRoot;
 
@@ -36,10 +38,8 @@ ABoss::ABoss()
 
 	//need line to set default ai controller.
 	AIControllerClass = ABossAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 	ToFace = false;
-
-	bReplicates = true;
 }
 
 void ABoss::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -47,6 +47,8 @@ void ABoss::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeP
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ABoss, Health);
+	/*DOREPLIFETIME(ABoss, BossRoot);
+	DOREPLIFETIME(ABoss, BossSkeletalMesh);*/
 }
 
 void ABoss::MakeMap()

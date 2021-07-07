@@ -57,10 +57,10 @@ private:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<ALightning> ToLightning;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Replicated)
 		USceneComponent* BossRoot;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Replicated)
 		USkeletalMeshComponent* BossSkeletalMesh;
 
 public:
