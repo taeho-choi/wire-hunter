@@ -126,7 +126,7 @@ void AWireHunterCharacter::BeginPlay()
 	TimerBetweenShots = 0.1f;
 	Bullets = 30;
 
-	SetFloatingPos(GetActorLocation());
+	//SetFloatingPos(GetActorLocation());
 }
 
 
@@ -183,7 +183,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	if (GetisClimbing())
 	{
 		LedgeTrace();
-		SetActorLocation(GetFloatingPos());
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 		UpdateWallNormal();
 
 		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
@@ -277,7 +277,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * Value * GetWorld()->GetDeltaSeconds()));
+			//SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * Value * GetWorld()->GetDeltaSeconds()));
 		}
 	}
 	if ((int)Value * 10 < GetMoveForwardValue())
@@ -305,7 +305,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 		if (GetisClimbing())
 		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * -Value * GetWorld()->GetDeltaSeconds()));
+			//SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * -Value * GetWorld()->GetDeltaSeconds()));
 		}
 	}
 
@@ -571,6 +571,8 @@ void AWireHunterCharacter::ClimbTrace()
 		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 		SetisClimbing(true);
 		SetFloatingPos(GetActorLocation());
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+
 	}
 }
 
@@ -599,8 +601,8 @@ void AWireHunterCharacter::LedgeTrace()
 	FHitResult Hit;
 
 	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 110.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 110.f);
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
