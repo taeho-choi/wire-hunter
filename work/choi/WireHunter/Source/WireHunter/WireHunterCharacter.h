@@ -230,9 +230,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 		FVector MuzzleOffset;
 
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class ABullet> ProjectileClass;
-
 	// Convert Blueprint to C++
 
 	// Wire System
