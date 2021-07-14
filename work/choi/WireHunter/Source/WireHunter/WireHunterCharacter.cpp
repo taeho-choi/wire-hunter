@@ -84,6 +84,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
 	cppWire->bEnableStiffness = true;
 	//cppWire->bEnableCollision = true;
+	cppWire->SetIsReplicated(true);
 
 	WirePointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("WirePointLight"));
 	WirePointLight->SetupAttachment(this->GetRootComponent());
@@ -115,6 +116,14 @@ AWireHunterCharacter::AWireHunterCharacter()
 	ImpactParticle = ParticleAsset;
 }
 
+void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AWireHunterCharacter, cppWire);
+	DOREPLIFETIME(AWireHunterCharacter, Health);
+}
+
 void AWireHunterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -127,7 +136,6 @@ void AWireHunterCharacter::BeginPlay()
 
 	SetFloatingPos(GetActorLocation());
 }
-
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -197,11 +205,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		}
 	}
 
-	//if (GetCharacterMovement()->IsFalling())
-	//{
-	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Falling"));
-	//}
-
 	if (cppHooked)
 	{
 		WireSwing();
@@ -215,12 +218,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	WireTrace();
 
 	// Game Over
-	if (Health <= 0
-		//|| GetActorLocation().X < -3000.f
-		//|| GetActorLocation().X > 50000.f
-		//|| GetActorLocation().Y < -2000.f
-		//|| GetActorLocation().Y > 50000.f
-		|| GetActorLocation().Z < 300.f)
+	if (Health <= 0|| GetActorLocation().Z < 300.f)
 	{
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 	}
@@ -354,7 +352,6 @@ void AWireHunterCharacter::FireShot()
 			{
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint), true, EPSCPoolMethod::AutoRelease);
 			}
-
 		}
 
 		if (MuzzleParticle)
@@ -406,6 +403,7 @@ void AWireHunterCharacter::WireTrace()
 	}
 
 }
+
 void AWireHunterCharacter::HookWire()
 {
 	//if (GetCharacterMovement()->IsFalling())
@@ -426,7 +424,6 @@ void AWireHunterCharacter::HookWire()
 			//const float WireRange = 6000.f;
 			//const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
 			//const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
-
 
 			//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 			//QueryParams.AddIgnoredActor(this);
@@ -553,8 +550,6 @@ void AWireHunterCharacter::ClimbTrace()
 	const FVector StartTrace = GetActorLocation();
 	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
 
-
-
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
@@ -577,8 +572,6 @@ void AWireHunterCharacter::UpdateWallNormal()
 	const float ClimbRange = 200.f;
 	const FVector StartTrace = GetActorLocation();
 	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
-
-
 
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
@@ -636,13 +629,6 @@ void AWireHunterCharacter::Knockback(FVector force)
 
 //R
 
-void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray <FLifetimeProperty>& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(AWireHunterCharacter, Health);
-}
-
 void AWireHunterCharacter::OnHealthUpdate()
 {
 	if (IsLocallyControlled())
@@ -662,11 +648,6 @@ void AWireHunterCharacter::OnHealthUpdate()
 		FString healthMessage = FString::Printf(TEXT("%s now has %f health remaining."), *GetFName().ToString(), Health);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
 	}
-
-	//Functions that occur on all machines. 
-	/*
-		Any special functionality that should occur as a result of damage or death should be placed here.
-	*/
 }
 
 void AWireHunterCharacter::OnRep_CurrentHealth()

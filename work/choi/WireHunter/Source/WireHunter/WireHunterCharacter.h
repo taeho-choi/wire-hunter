@@ -26,7 +26,7 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere)
 		class UWidgetComponent* HealthWidget;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UCableComponent* cppWire;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
