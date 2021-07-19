@@ -327,6 +327,9 @@ void AWireHunterCharacter::StopFire()
 
 void AWireHunterCharacter::FireShot()
 {
+	// [REVIEW]dragon-kurve 여기서도 데미지 처리가 로컬에서 실행되므로 제대로 처리가 안될거임
+	// Bullet의 경우 replication이 진행되어야 하고
+	// LineTrace 및 데미지 경우에는 서버에서 실행되어야 함
 	if (GetBullets() > 0)
 	{
 		SetBullets(GetBullets() - 1);
@@ -449,6 +452,8 @@ void AWireHunterCharacter::HookWire()
 				SetCppHookLocation(WireHit.Location);
 				//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
 
+				// [REVIEW]dragon-kurve 이 경우 모든 클라이언트에서 보이게 하려면 서버에서 실행해야 함
+				// AddForce와 같은 문제임
 				FVector NewLocation;
 				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
 				cppWire->SetWorldLocation(GetCppHookLocation());
@@ -461,6 +466,10 @@ void AWireHunterCharacter::HookWire()
 
 				// 와이어 부착 후 Swing 힘을 더 세게
 				// GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 150000000.f);
+
+				// [REVIEW]dragon-kurve 서버에서 실행해야 하는데 클라이언트에서만 실행되고 있음
+				// 이 경우 클라이언트에서 위치를 바꾸려고 시도하지만 동기화 후 서버의 위치로 다시 이동함
+				// Authority에 따라 분기해야 함
 				GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 
 			}
@@ -474,7 +483,6 @@ void AWireHunterCharacter::HookWire()
 
 void AWireHunterCharacter::WireSwing()
 {
-	if (GetCppHooked())
 		if (GetCppHooked())
 		{
 			cppWire->SetWorldLocation(GetCppHookLocation());
