@@ -48,6 +48,7 @@ class AWireHunterCharacter : public ACharacter
 		class USkeletalMeshComponent* Gun;
 
 public:
+
 	AWireHunterCharacter();
 
 	//R
@@ -98,13 +99,6 @@ public:
 
 	FVector GetWallRightVector() const { return WallRightVector; }
 	void SetWallRightVector(FVector val) { WallRightVector = val; }
-
-	bool GetLockRightClimb() const { return LockRightClimb; }
-	void SetLockRightClimb(bool val) { LockRightClimb = val; }
-
-	bool GetLockLeftClimb() const { return LockLeftClimb; }
-	void SetLockLeftClimb(bool val) { LockLeftClimb = val; }
-
 
 	// WireSystem
 	bool GetHooked() const { return Hooked; }
@@ -159,11 +153,6 @@ protected:
 		FVector WallUpVector;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallRightVector;
-
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool LockRightClimb = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool LockLeftClimb = false;
 
 	// WireSystem
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -224,10 +213,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 		FVector MuzzleOffset;
 
-	// Convert Blueprint to C++
-
 	// Wire System
 public:
+
 	bool GetCppHooked() const { return cppHooked; }
 	void SetCppHooked(bool val) { cppHooked = val; }
 
@@ -272,8 +260,10 @@ public:
 	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 protected:
+
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;
+
 	bool cppHookMoveFinished = false;
 	float cppHookedWireLength;
 	bool cppisLaunching = false;
