@@ -122,6 +122,7 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(AWireHunterCharacter, Health);
+	DOREPLIFETIME(AWireHunterCharacter, Bullets);
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -133,12 +134,7 @@ void AWireHunterCharacter::BeginPlay()
 
 	TimerBetweenShots = 0.1f;
 	Bullets = 30;
-
-	SetFloatingPos(GetActorLocation());
 }
-
-//////////////////////////////////////////////////////////////////////////
-// Input
 
 void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
@@ -195,16 +191,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		SetActorRotation(SmoothRotator);
 	}
 
-	if (GetisWithdrawing())
-	{
-		FVector dist = GetActorLocation() - GetCppHookLocation();
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), dist.Size()));
-		if (dist.Size() < 60.f)
-		{
-			SetisWithdrawing(false);
-		}
-	}
-
 	if (cppHooked)
 	{
 		WireSwing();
@@ -229,6 +215,28 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	}
 }
 
+void AWireHunterCharacter::Withdraw_Implementation()
+{
+	if (GetCppHooked())
+	{
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		cppWire->CableLength = dist.Size();
+		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 2000.f);
+		LaunchCharacter(launchVel, true, true);
+	}
+}
+
+void AWireHunterCharacter::PressWithdraw()
+{
+	if (!GetCppisLaunching())
+	{
+		SetCppisLaunching(true);
+	}
+	else
+	{
+		BreakHook();
+	}
+}
 
 void AWireHunterCharacter::OnResetVR()
 {
@@ -435,10 +443,7 @@ void AWireHunterCharacter::HookWire_Implementation()
 			cppWire->SetVisibility(true);
 
 			SetCppHookLocation(WireHit.Location);
-			//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
-
-			// [REVIEW]dragon-kurve 이 경우 모든 클라이언트에서 보이게 하려면 서버에서 실행해야 함
-			// AddForce와 같은 문제임
+		
 			FVector NewLocation;
 			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
 			cppWire->SetWorldLocation(GetCppHookLocation());
@@ -449,17 +454,7 @@ void AWireHunterCharacter::HookWire_Implementation()
 			SetCppHooked(true);
 			float distance = (GetActorLocation() - GetCppHookLocation()).Size();
 
-			// [REVIEW]dragon-kurve 서버에서 실행해야 하는데 클라이언트에서만 실행되고 있음
-			// 이 경우 클라이언트에서 위치를 바꾸려고 시도하지만 동기화 후 서버의 위치로 다시 이동함
-			// Authority에 따라 분기해야 함
-			if (HasAuthority())
-			{
-				GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
-			}
-			else
-			{
-
-			}
+			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 		}
 		else
 		{
@@ -493,30 +488,6 @@ void AWireHunterCharacter::BreakHook()
 	cppWire->SetWorldLocation(GetActorLocation());
 	cppWire->SetVisibility(false);
 	SetCppisLaunching(false);
-}
-
-void AWireHunterCharacter::Withdraw()
-{
-	if (GetCppHooked())
-	{
-		FVector dist = GetActorLocation() - GetCppHookLocation();
-		cppWire->CableLength = dist.Size();
-		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 2000.f);
-		LaunchCharacter(launchVel, true, true);
-	}
-}
-
-void AWireHunterCharacter::PressWithdraw()
-{
-	if (!GetCppisLaunching())
-	{
-		SetCppisLaunching(true);
-		SetisWithdrawing(true);
-	}
-	else
-	{
-		BreakHook();
-	}
 }
 
 void AWireHunterCharacter::Climb()

@@ -90,9 +90,6 @@ public:
 	bool GetisLedgeClimbing() const { return isLedgeClimbing; }
 	void SetisLedgeClimbing(bool val) { isLedgeClimbing = val; }
 
-	bool GetisWithdrawing() const { return isWithdrawing; }
-	void SetisWithdrawing(bool val) { isWithdrawing = val; }
-
 	FRotator GetFloatingRot() const { return FloatingRot; }
 	void SetFloatingRot(FRotator val) { FloatingRot = val; }
 
@@ -139,7 +136,7 @@ protected:
 		float MaxHealth;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MaxBullets = 30;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int Bullets;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MoveForwardValue;
@@ -155,8 +152,6 @@ protected:
 		bool isClimbing = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isLedgeClimbing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isWithdrawing = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isBulletEmpty = false;
 
@@ -259,10 +254,13 @@ public:
 	UFUNCTION(Server, Reliable)
 	void HookWire();
 
+	void PressWithdraw();
+
+	UFUNCTION(Server, Reliable)
+		void Withdraw();
+
 	void WireSwing();
 	void BreakHook();
-	void Withdraw();
-	void PressWithdraw();
 	void Climb();
 	void ClimbTrace();
 	void UpdateWallNormal();
