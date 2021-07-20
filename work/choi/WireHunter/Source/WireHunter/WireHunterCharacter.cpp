@@ -109,6 +109,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	//R
 	MaxHealth = 100.f;
 	Health = MaxHealth - 30;
+
 	bReplicates = true;
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> ImpactParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -120,7 +121,6 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(AWireHunterCharacter, cppWire);
 	DOREPLIFETIME(AWireHunterCharacter, Health);
 }
 
@@ -169,7 +169,7 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
 
 	// Bind WireShot
-	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
+	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::PreHookWire);
 
 	// Bind Launch
 	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::Climb);
@@ -404,98 +404,85 @@ void AWireHunterCharacter::WireTrace()
 	{
 		WirePointLight->SetVisibility(false);
 	}
-
 }
 
-void AWireHunterCharacter::HookWire()
+void AWireHunterCharacter::PreHookWire()
 {
-	//if (GetCharacterMovement()->IsFalling())
-	if (true)
+	HookWire();
+}
+
+void AWireHunterCharacter::HookWire_Implementation()
+{
+	if (GetCppHooked())
 	{
-		// 와이어가 꽂혀있을 경우 와이어를 회수
-		if (GetCppHooked())
+		BreakHook();
+	}
+	else
+	{
+		if (WireHit.bBlockingHit)
 		{
-			BreakHook();
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
 		}
 
-		// 와이어가 꽂혀있지 않을 경우 트레이싱 히트 시 해당 지점에 와이어 꽂기
-		else
+		if (WireHit.bBlockingHit)
 		{
-			// 크로스헤어 지점으로 트레이싱
-			//FHitResult Hit;
+			WirePointLight->SetVisibility(false);
 
-			//const float WireRange = 6000.f;
-			//const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
-			//const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
+			// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
+			// FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
+			// this->SetActorRotation(WireShotRotation);
 
-			//FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-			//QueryParams.AddIgnoredActor(this);
-			//GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-			////
+			cppWire->SetVisibility(true);
 
-			if (WireHit.bBlockingHit)
+			SetCppHookLocation(WireHit.Location);
+			//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
+
+			// [REVIEW]dragon-kurve 이 경우 모든 클라이언트에서 보이게 하려면 서버에서 실행해야 함
+			// AddForce와 같은 문제임
+			FVector NewLocation;
+			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
+			cppWire->SetWorldLocation(GetCppHookLocation());
+			//cppWire->EndLocation = GetActorLocation();
+			float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
+			SetCppHookedWireLength(NewWireLength);
+			cppWire->CableLength = GetCppHookedWireLength();
+			SetCppHooked(true);
+			float distance = (GetActorLocation() - GetCppHookLocation()).Size();
+
+			// [REVIEW]dragon-kurve 서버에서 실행해야 하는데 클라이언트에서만 실행되고 있음
+			// 이 경우 클라이언트에서 위치를 바꾸려고 시도하지만 동기화 후 서버의 위치로 다시 이동함
+			// Authority에 따라 분기해야 함
+			if (HasAuthority())
 			{
-				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
-			}
-
-			// 트레이싱이 충돌하면 와이어를 꽂기
-			if (WireHit.bBlockingHit)
-			{
-				WirePointLight->SetVisibility(false);
-
-				// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
-				// FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
-				// this->SetActorRotation(WireShotRotation);
-
-				cppWire->SetVisibility(true);
-
-				SetCppHookLocation(WireHit.Location);
-				//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *GetCppHookLocation().ToString()));
-
-				// [REVIEW]dragon-kurve 이 경우 모든 클라이언트에서 보이게 하려면 서버에서 실행해야 함
-				// AddForce와 같은 문제임
-				FVector NewLocation;
-				NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
-				cppWire->SetWorldLocation(GetCppHookLocation());
-				//cppWire->EndLocation = GetActorLocation();
-				float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
-				SetCppHookedWireLength(NewWireLength);
-				cppWire->CableLength = GetCppHookedWireLength();
-				SetCppHooked(true);
-				float distance = (GetActorLocation() - GetCppHookLocation()).Size();
-
-				// 와이어 부착 후 Swing 힘을 더 세게
-				// GetCharacterMovement()->AddForce(FollowCamera->GetForwardVector() * 150000000.f);
-
-				// [REVIEW]dragon-kurve 서버에서 실행해야 하는데 클라이언트에서만 실행되고 있음
-				// 이 경우 클라이언트에서 위치를 바꾸려고 시도하지만 동기화 후 서버의 위치로 다시 이동함
-				// Authority에 따라 분기해야 함
 				GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
-
 			}
 			else
 			{
-				// 와이어 회수 상태로
+
 			}
+		}
+		else
+		{
+			// 와이어 회수 상태로
 		}
 	}
 }
 
 void AWireHunterCharacter::WireSwing()
 {
-		if (GetCppHooked())
+	if (GetCppHooked())
+	{
+		cppWire->SetWorldLocation(GetCppHookLocation());
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		float dot = FVector::DotProduct(GetVelocity(), dist);
+		dist.Normalize();
+		GetCharacterMovement()->AddForce(dist * dot * -2.f);
+		if (!GetCppisLaunching())
 		{
-			cppWire->SetWorldLocation(GetCppHookLocation());
-			FVector dist = GetActorLocation() - GetCppHookLocation();
-			float dot = FVector::DotProduct(GetVelocity(), dist);
-			dist.Normalize();
-			GetCharacterMovement()->AddForce(dist * dot * -2.f);
-			if (!GetCppisLaunching())
-			{
-				cppWire->CableLength = GetCppHookedWireLength() - 300.f;
-			}
-			GetCharacterMovement()->AirControl = 1.f;
+			cppWire->CableLength = GetCppHookedWireLength() - 300.f;
 		}
+		GetCharacterMovement()->AirControl = 1.f;
+	}
 }
 
 void AWireHunterCharacter::BreakHook()

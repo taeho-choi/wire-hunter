@@ -26,7 +26,7 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere)
 		class UWidgetComponent* HealthWidget;
 
-	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UCableComponent* cppWire;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
@@ -65,7 +65,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
-
 
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
@@ -255,7 +254,11 @@ public:
 	FVector GetCppWallNormal() const { return cppWallNormal; }
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
+	void PreHookWire();
+
+	UFUNCTION(Server, Reliable)
 	void HookWire();
+
 	void WireSwing();
 	void BreakHook();
 	void Withdraw();

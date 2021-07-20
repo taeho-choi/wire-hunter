@@ -3,10 +3,11 @@
 #include "WireHunterGameMode.h"
 #include "WireHunterCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "MyPlayerController.h"
 
 AWireHunterGameMode::AWireHunterGameMode()
 {
-	// set default pawn class to our Blueprinted character
+	PlayerControllerClass = AMyPlayerController::StaticClass();
 
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPersonCPP/Blueprints/BP_WHCharacter"));
 	if (PlayerPawnBPClass.Class != NULL)
