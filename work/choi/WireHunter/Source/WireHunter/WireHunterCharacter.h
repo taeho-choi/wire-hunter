@@ -135,23 +135,23 @@ protected:
 		int MaxBullets = 30;
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int Bullets;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MoveForwardValue;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MoveRightValue;
 
 	// Floating
-	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 		bool isWithdrawing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 		FVector FloatingPos;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FRotator FloatingRot;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 		bool isClimbing = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isLedgeClimbing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		bool isBulletEmpty = false;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -171,12 +171,6 @@ protected:
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
-
-	/** Called for forwards/backward input */
-	void MoveForward(float Value);
-
-	/** Called for side to side input */
-	void MoveRight(float Value);
 
 	/** 
 	 * Called via input to turn at a given rate. 
@@ -213,10 +207,12 @@ public:
 	UFUNCTION(Server, Reliable)
 	void StopFire();
 	
-	UFUNCTION(NetMulticast, Reliable)//////////////////////////////////
+	UFUNCTION(NetMulticast, Reliable)
 	void FireShot();
 	
+	UFUNCTION(Server, Reliable)
 	void Reload();
+
 	void Reloaded();
 
 	FTimerHandle TimerHandle_HandleRefire;
@@ -239,9 +235,6 @@ public:
 	bool GetCppisLaunching() const { return cppisLaunching; }
 	void SetCppisLaunching(bool val) { cppisLaunching = val; }
 
-	/*FVector GetCppWireDistance() const { return cppWireDistance; }
-	void SetCppWireDistance(FVector val) { cppWireDistance = val; }*/
-
 	FVector GetCppWallNormal() const { return cppWallNormal; }
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
@@ -251,7 +244,7 @@ public:
 	UFUNCTION(Server, Reliable)
 	void PressWithdraw();
 
-	UFUNCTION(Server, Reliable)
+	UFUNCTION(NetMulticast, Reliable)
 		void Withdraw();
 
 	void WireSwing();
@@ -259,10 +252,28 @@ public:
 	UFUNCTION(Server, Reliable)
 	void BreakHook();
 
+
+
+	UFUNCTION(Server, Reliable)
 	void Climb();
+
+	UFUNCTION(Server, Reliable)
 	void ClimbTrace();
+
+	UFUNCTION(Client, Reliable)
 	void UpdateWallNormal();
+
+	/** Called for forwards/backward input */
+	UFUNCTION(NetMulticast, Reliable)
+		void MoveForward(float Value);
+
+	/** Called for side to side input */
+	UFUNCTION(NetMulticast, Reliable)
+		void MoveRight(float Value);
+
+	UFUNCTION(Server, Reliable)
 	void LedgeTrace();
+	
 	void WireTrace();
 
 	void Knockback(FVector force);
@@ -280,12 +291,12 @@ protected:
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppisLaunching = false;
 
-	/*FVector cppWireDistance;*/
-
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppHookLocation;
 	
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppWallNormal;
+
 	FHitResult WireHit;
 
 	//R
@@ -294,6 +305,4 @@ protected:
 		void OnRep_CurrentHealth();
 
 	void OnHealthUpdate();
-
-	void TesT();
 };

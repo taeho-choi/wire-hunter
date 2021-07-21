@@ -125,7 +125,29 @@ void AWireHunterCharacter::BeginPlay()
 	SetBullets(MaxBullets);
 }
 
-void AWireHunterCharacter::Climb()
+void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AWireHunterCharacter, Health);
+
+	DOREPLIFETIME(AWireHunterCharacter, Bullets);
+	DOREPLIFETIME(AWireHunterCharacter, isBulletEmpty);
+
+	DOREPLIFETIME(AWireHunterCharacter, cppHooked);
+	DOREPLIFETIME(AWireHunterCharacter, cppHookLocation);
+	DOREPLIFETIME(AWireHunterCharacter, cppHookedWireLength);
+	DOREPLIFETIME(AWireHunterCharacter, cppisLaunching);
+	DOREPLIFETIME(AWireHunterCharacter, isWithdrawing);
+
+	DOREPLIFETIME(AWireHunterCharacter, isClimbing);
+	DOREPLIFETIME(AWireHunterCharacter, cppWallNormal);
+	DOREPLIFETIME(AWireHunterCharacter, FloatingPos);
+	DOREPLIFETIME(AWireHunterCharacter, MoveForwardValue);
+	DOREPLIFETIME(AWireHunterCharacter, MoveRightValue);
+}
+
+void AWireHunterCharacter::Climb_Implementation()
 {
 	if (!GetisClimbing())
 	{
@@ -139,7 +161,7 @@ void AWireHunterCharacter::Climb()
 	}
 }
 
-void AWireHunterCharacter::ClimbTrace()
+void AWireHunterCharacter::ClimbTrace_Implementation()
 {
 	FHitResult Hit;
 
@@ -155,13 +177,13 @@ void AWireHunterCharacter::ClimbTrace()
 	if (Hit.bBlockingHit)
 	{
 		BreakHook();
-		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);/////////////////////////////////
 		SetisClimbing(true);
 		SetFloatingPos(GetActorLocation());
 	}
 }
 
-void AWireHunterCharacter::UpdateWallNormal()
+void AWireHunterCharacter::UpdateWallNormal_Implementation()
 {
 	FHitResult Hit;
 
@@ -176,9 +198,9 @@ void AWireHunterCharacter::UpdateWallNormal()
 	{
 		SetCppWallNormal(Hit.Normal);
 	}
-}
+}//
 
-void AWireHunterCharacter::LedgeTrace()
+void AWireHunterCharacter::LedgeTrace_Implementation()
 {
 	FHitResult Hit;
 
@@ -196,7 +218,7 @@ void AWireHunterCharacter::LedgeTrace()
 
 		PlayAnimMontage(LedgeClimb, 1, NAME_None);
 	}
-}
+}//
 
 void AWireHunterCharacter::Tick(float DeltaTime)
 {
@@ -204,15 +226,15 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
 	if (GetisClimbing())
 	{
-		LedgeTrace();
+		/*LedgeTrace();*/
 
 		SetActorLocation(GetFloatingPos());
 
 		UpdateWallNormal();
 
-		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
+		/*FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
 		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
-		SetActorRotation(SmoothRotator);
+		SetActorRotation(SmoothRotator);*/
 	}
 
 	if (cppHooked)
@@ -237,7 +259,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	}
 
 	// Game Over
-	if (Health <= 0|| GetActorLocation().Z < 300.f)
+	if (Health <= 0|| GetActorLocation().Z < 1000.f)
 	{
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 	}
@@ -267,6 +289,7 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
+
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
@@ -302,21 +325,6 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	// Reload
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AWireHunterCharacter::Reload);
-}
-
-void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(AWireHunterCharacter, Health);
-
-	DOREPLIFETIME(AWireHunterCharacter, Bullets);
-
-	DOREPLIFETIME(AWireHunterCharacter, cppHooked);
-	DOREPLIFETIME(AWireHunterCharacter, cppHookLocation);
-	DOREPLIFETIME(AWireHunterCharacter, cppHookedWireLength);
-	DOREPLIFETIME(AWireHunterCharacter, cppisLaunching);
-	DOREPLIFETIME(AWireHunterCharacter, isWithdrawing);
 }
 
 void AWireHunterCharacter::PressWithdraw_Implementation()
@@ -355,7 +363,7 @@ void AWireHunterCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AWireHunterCharacter::MoveForward(float Value)
+void AWireHunterCharacter::MoveForward_Implementation(float Value)/////////////////////////////////////////super
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
@@ -382,7 +390,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 	}
 }
 
-void AWireHunterCharacter::MoveRight(float Value)
+void AWireHunterCharacter::MoveRight_Implementation(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
@@ -459,7 +467,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 	}
 }
 
-void AWireHunterCharacter::Reload()
+void AWireHunterCharacter::Reload_Implementation()
 {
 	isBulletEmpty = false;
 
@@ -499,19 +507,10 @@ void AWireHunterCharacter::WireTrace()
 	}
 }
 
-void AWireHunterCharacter::TesT()
-{
-	if (HasAuthority())
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST@!@!@!@!@!@!@!@!@!@!"));
-	}
-}
-
 void AWireHunterCharacter::HookWire_Implementation()
 {
 	if (GetCppHooked())
 	{
-		TesT();
 		BreakHook();
 	}
 	else
