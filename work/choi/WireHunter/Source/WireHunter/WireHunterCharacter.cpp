@@ -309,6 +309,7 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(AWireHunterCharacter, Health);
+
 	DOREPLIFETIME(AWireHunterCharacter, Bullets);
 
 	DOREPLIFETIME(AWireHunterCharacter, cppHooked);
@@ -410,18 +411,19 @@ void AWireHunterCharacter::MoveRight(float Value)
 	}
 }
 
-void AWireHunterCharacter::StartFire()
+void AWireHunterCharacter::StartFire_Implementation()
 {
 	FireShot();
+
 	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &AWireHunterCharacter::FireShot, TimerBetweenShots, true);
 }
 
-void AWireHunterCharacter::StopFire()
+void AWireHunterCharacter::StopFire_Implementation()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_HandleRefire);
 }
 
-void AWireHunterCharacter::FireShot()
+void AWireHunterCharacter::FireShot_Implementation()
 {
 	// [REVIEW]dragon-kurve 여기서도 데미지 처리가 로컬에서 실행되므로 제대로 처리가 안될거임
 	// Bullet의 경우 replication이 진행되어야 하고
@@ -497,10 +499,19 @@ void AWireHunterCharacter::WireTrace()
 	}
 }
 
+void AWireHunterCharacter::TesT()
+{
+	if (HasAuthority())
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST@!@!@!@!@!@!@!@!@!@!"));
+	}
+}
+
 void AWireHunterCharacter::HookWire_Implementation()
 {
 	if (GetCppHooked())
 	{
+		TesT();
 		BreakHook();
 	}
 	else

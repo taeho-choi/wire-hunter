@@ -207,9 +207,15 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	// Fire
+	UFUNCTION(Server, Reliable)
 	void StartFire();
+
+	UFUNCTION(Server, Reliable)
 	void StopFire();
+	
+	UFUNCTION(NetMulticast, Reliable)//////////////////////////////////
 	void FireShot();
+	
 	void Reload();
 	void Reloaded();
 
@@ -288,4 +294,6 @@ protected:
 		void OnRep_CurrentHealth();
 
 	void OnHealthUpdate();
+
+	void TesT();
 };
