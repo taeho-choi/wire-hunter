@@ -75,15 +75,12 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	cppWire = CreateDefaultSubobject<UCableComponent>(TEXT("cppWire"));
 	cppWire->SetupAttachment(this->GetRootComponent());
-	//cppWire->SetAttachEndTo(this, RootComponent->GetDefaultSceneRootVariableName());
 	cppWire->SetAttachEndTo(NULL, NAME_None);
 	cppWire->bAttachStart = true;
-	// Set Cable's Parameters
 	cppWire->CableWidth = 8.f;
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
 	cppWire->bEnableStiffness = true;
-	//cppWire->bEnableCollision = true;
 	cppWire->SetIsReplicated(true);
 
 	WirePointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("WirePointLight"));
@@ -102,7 +99,6 @@ AWireHunterCharacter::AWireHunterCharacter()
 	Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
 	Gun->SetupAttachment(this->GetMesh(), TEXT("Rifle"));
 
-
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
@@ -117,14 +113,6 @@ AWireHunterCharacter::AWireHunterCharacter()
 	ImpactParticle = ParticleAsset;
 }
 
-void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(AWireHunterCharacter, Health);
-	DOREPLIFETIME(AWireHunterCharacter, Bullets);
-}
-
 void AWireHunterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -133,7 +121,146 @@ void AWireHunterCharacter::BeginPlay()
 	HealthBar->SetOwnerCharacter(this);
 
 	TimerBetweenShots = 0.1f;
-	Bullets = 30;
+
+	SetBullets(MaxBullets);
+}
+
+void AWireHunterCharacter::Climb()
+{
+	if (!GetisClimbing())
+	{
+		ClimbTrace();
+	}
+	else
+	{
+		SetisClimbing(false);
+
+		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);
+	}
+}
+
+void AWireHunterCharacter::ClimbTrace()
+{
+	FHitResult Hit;
+
+	SetCppWallNormal(Hit.Normal);
+
+	const float ClimbRange = 200.f;
+	const FVector StartTrace = GetActorLocation();
+	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (Hit.bBlockingHit)
+	{
+		BreakHook();
+		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+		SetisClimbing(true);
+		SetFloatingPos(GetActorLocation());
+	}
+}
+
+void AWireHunterCharacter::UpdateWallNormal()
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 200.f;
+	const FVector StartTrace = GetActorLocation();
+	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (Hit.bBlockingHit)
+	{
+		SetCppWallNormal(Hit.Normal);
+	}
+}
+
+void AWireHunterCharacter::LedgeTrace()
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 1000.f;
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (!Hit.bBlockingHit)
+	{
+		SetisClimbing(false);
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+
+		PlayAnimMontage(LedgeClimb, 1, NAME_None);
+	}
+}
+
+void AWireHunterCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (GetisClimbing())
+	{
+		LedgeTrace();
+
+		SetActorLocation(GetFloatingPos());
+
+		UpdateWallNormal();
+
+		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
+		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
+		SetActorRotation(SmoothRotator);
+	}
+
+	if (cppHooked)
+	{
+		WireSwing();
+	}
+	
+	if (GetCppisLaunching())
+	{
+		Withdraw();
+	}
+
+	WireTrace();
+
+	if (GetisWithdrawing())
+	{
+		FVector dist = GetActorLocation() - GetCppHookLocation();
+		if (dist.Size() < 60.f)
+		{
+			SetisWithdrawing(false);
+		}
+	}
+
+	// Game Over
+	if (Health <= 0|| GetActorLocation().Z < 300.f)
+	{
+		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+	}
+	if (Bullets == 0 && isBulletEmpty == false)
+	{
+		Reload();
+		isBulletEmpty = true;
+	}
+}
+
+void AWireHunterCharacter::OnResetVR()
+{
+	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
+}
+
+void AWireHunterCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
+{
+	Jump();
+}
+
+void AWireHunterCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
+{
+	StopJumping();
 }
 
 void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -165,7 +292,7 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
 
 	// Bind WireShot
-	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::PreHookWire);
+	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
 
 	// Bind Launch
 	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::Climb);
@@ -177,41 +304,30 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AWireHunterCharacter::Reload);
 }
 
-void AWireHunterCharacter::Tick(float DeltaTime)
+void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
 {
-	Super::Tick(DeltaTime);
-	if (GetisClimbing())
-	{
-		LedgeTrace();
-		SetActorLocation(GetFloatingPos());
-		UpdateWallNormal();
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
-		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
-		SetActorRotation(SmoothRotator);
-	}
+	DOREPLIFETIME(AWireHunterCharacter, Health);
+	DOREPLIFETIME(AWireHunterCharacter, Bullets);
 
-	if (cppHooked)
-	{
-		WireSwing();
-	}
-	//Launch Character
-	if (GetCppisLaunching())
-	{
-		Withdraw();
-	}
+	DOREPLIFETIME(AWireHunterCharacter, cppHooked);
+	DOREPLIFETIME(AWireHunterCharacter, cppHookLocation);
+	DOREPLIFETIME(AWireHunterCharacter, cppHookedWireLength);
+	DOREPLIFETIME(AWireHunterCharacter, cppisLaunching);
+	DOREPLIFETIME(AWireHunterCharacter, isWithdrawing);
+}
 
-	WireTrace();
-
-	// Game Over
-	if (Health <= 0|| GetActorLocation().Z < 300.f)
+void AWireHunterCharacter::PressWithdraw_Implementation()
+{
+	if (!GetCppisLaunching())
 	{
-		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+		SetCppisLaunching(true);
+		SetisWithdrawing(true);
 	}
-	if (Bullets == 0 && isBulletEmpty == false)
+	else
 	{
-		Reload();
-		isBulletEmpty = true;
+		BreakHook();
 	}
 }
 
@@ -224,33 +340,6 @@ void AWireHunterCharacter::Withdraw_Implementation()
 		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 2000.f);
 		LaunchCharacter(launchVel, true, true);
 	}
-}
-
-void AWireHunterCharacter::PressWithdraw()
-{
-	if (!GetCppisLaunching())
-	{
-		SetCppisLaunching(true);
-	}
-	else
-	{
-		BreakHook();
-	}
-}
-
-void AWireHunterCharacter::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void AWireHunterCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
-{
-	Jump();
-}
-
-void AWireHunterCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
-{
-	StopJumping();
 }
 
 void AWireHunterCharacter::TurnAtRate(float Rate)
@@ -325,7 +414,6 @@ void AWireHunterCharacter::StartFire()
 {
 	FireShot();
 	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &AWireHunterCharacter::FireShot, TimerBetweenShots, true);
-	//애니메이션aa
 }
 
 void AWireHunterCharacter::StopFire()
@@ -341,12 +429,11 @@ void AWireHunterCharacter::FireShot()
 	if (GetBullets() > 0)
 	{
 		SetBullets(GetBullets() - 1);
-		FHitResult Hit;
 
+		FHitResult Hit;
 		const float GunRange = 50000.f;
 		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
 		const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
-
 		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
 		QueryParams.AddIgnoredActor(this);
 
@@ -356,8 +443,6 @@ void AWireHunterCharacter::FireShot()
 			{
 				ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
 				TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
-				GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%f"), TargetBoss->GetHealth()));
-
 			}
 			if (ImpactParticle)
 			{
@@ -375,6 +460,7 @@ void AWireHunterCharacter::FireShot()
 void AWireHunterCharacter::Reload()
 {
 	isBulletEmpty = false;
+
 	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
@@ -383,8 +469,6 @@ void AWireHunterCharacter::WireTrace()
 	const float WireRange = 7000.f;
 	const FVector StartTrace = (FollowCamera->GetForwardVector() * 200.f) + (FollowCamera->GetComponentLocation());
 	const FVector EndTrace = StartTrace + (FollowCamera->GetForwardVector() * WireRange);
-
-
 	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
 	QueryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(WireHit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
@@ -406,17 +490,11 @@ void AWireHunterCharacter::WireTrace()
 		{
 			WirePointLight->SetWorldLocation(WireHit.Location + WireHit.Normal * 15);
 		}
-		//GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(WireHit.Location + WireHit.Normal * 15).ToString()));
 	}
 	else
 	{
 		WirePointLight->SetVisibility(false);
 	}
-}
-
-void AWireHunterCharacter::PreHookWire()
-{
-	HookWire();
 }
 
 void AWireHunterCharacter::HookWire_Implementation()
@@ -436,10 +514,6 @@ void AWireHunterCharacter::HookWire_Implementation()
 		{
 			WirePointLight->SetVisibility(false);
 
-			// 먼저 플레이어 캐릭터를 와이어를 꽂을 방향으로 회전 (일단 지움. 현재는 마우스 이동에 따라 플레이어 캐릭터가 따라서 회전하는 상태이므로)
-			// FRotator WireShotRotation = FRotator(0.f, UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), Hit.Location).Yaw, 0.f);
-			// this->SetActorRotation(WireShotRotation);
-
 			cppWire->SetVisibility(true);
 
 			SetCppHookLocation(WireHit.Location);
@@ -447,7 +521,6 @@ void AWireHunterCharacter::HookWire_Implementation()
 			FVector NewLocation;
 			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
 			cppWire->SetWorldLocation(GetCppHookLocation());
-			//cppWire->EndLocation = GetActorLocation();
 			float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
 			SetCppHookedWireLength(NewWireLength);
 			cppWire->CableLength = GetCppHookedWireLength();
@@ -456,11 +529,17 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 		}
-		else
-		{
-			// 와이어 회수 상태로
-		}
 	}
+}
+
+void AWireHunterCharacter::BreakHook_Implementation()
+{
+	SetCppHooked(false);
+	cppWire->CableLength = 100.f;
+	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
+	cppWire->SetWorldLocation(GetActorLocation());
+	cppWire->SetVisibility(false);
+	SetCppisLaunching(false);
 }
 
 void AWireHunterCharacter::WireSwing()
@@ -477,97 +556,6 @@ void AWireHunterCharacter::WireSwing()
 			cppWire->CableLength = GetCppHookedWireLength() - 300.f;
 		}
 		GetCharacterMovement()->AirControl = 1.f;
-	}
-}
-
-void AWireHunterCharacter::BreakHook()
-{
-	SetCppHooked(false);
-	cppWire->CableLength = 100.f;
-	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
-	cppWire->SetWorldLocation(GetActorLocation());
-	cppWire->SetVisibility(false);
-	SetCppisLaunching(false);
-}
-
-void AWireHunterCharacter::Climb()
-{
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Press Climb"));
-	if (!GetisClimbing())
-	{
-		ClimbTrace();
-	}
-	else
-	{
-		//GetCharacterMovement()->bOrientRotationToMovement = true;
-		SetisClimbing(false);
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, FString::Printf(TEXT("%s"), *(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000).ToString()));
-		//GetCharacterMovement()->AddForce(UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 50000000);
-		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);
-	}
-}
-
-void AWireHunterCharacter::ClimbTrace()
-{
-	FHitResult Hit;
-	SetCppWallNormal(Hit.Normal);
-
-	const float ClimbRange = 200.f;
-	const FVector StartTrace = GetActorLocation();
-	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
-
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-	if (Hit.bBlockingHit)
-	{
-		//GetCharacterMovement()->bOrientRotationToMovement = false;
-		BreakHook();
-		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
-		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-		SetisClimbing(true);
-		SetFloatingPos(GetActorLocation());
-	}
-}
-
-void AWireHunterCharacter::UpdateWallNormal()
-{
-	FHitResult Hit;
-
-	const float ClimbRange = 200.f;
-	const FVector StartTrace = GetActorLocation();
-	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
-
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-	if (Hit.bBlockingHit)
-	{
-		SetCppWallNormal(Hit.Normal);
-	}
-}
-
-void AWireHunterCharacter::LedgeTrace()
-{
-	FHitResult Hit;
-
-	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
-
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-	//DrawDebugLine(GetWorld(), Hit.TraceStart, Hit.TraceEnd, FColor::Blue, false, 100.f, 0, 1.f);
-	if (!Hit.bBlockingHit)
-	{
-		SetisClimbing(false);
-		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-		PlayAnimMontage(LedgeClimb, 1, NAME_None);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Ledge Climb On!!"));
-		
 	}
 }
 

@@ -4,6 +4,7 @@
 #include "WireHunterCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "MyPlayerController.h"
+#include "WireHunterCharacter.h"
 
 AWireHunterGameMode::AWireHunterGameMode()
 {
@@ -14,4 +15,6 @@ AWireHunterGameMode::AWireHunterGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
+	/*DefaultPawnClass = AWireHunterCharacter::StaticClass();*/
 }

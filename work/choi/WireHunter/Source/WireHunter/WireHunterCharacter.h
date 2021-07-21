@@ -82,6 +82,9 @@ public:
 	void SetMoveForwardValue(int val) { MoveForwardValue = val; }
 
 	// Floating
+	bool GetisWithdrawing() const { return isWithdrawing; }
+	void SetisWithdrawing(bool val) { isWithdrawing = val; }
+
 	FVector GetFloatingPos() const { return FloatingPos; }
 	void SetFloatingPos(FVector val) { FloatingPos = val; }
 
@@ -138,6 +141,8 @@ protected:
 		int MoveRightValue;
 
 	// Floating
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isWithdrawing = false;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector FloatingPos;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
@@ -219,9 +224,6 @@ public:
 	bool GetCppHooked() const { return cppHooked; }
 	void SetCppHooked(bool val) { cppHooked = val; }
 
-	bool GetCppHookMoveFinished() const { return cppHookMoveFinished; }
-	void SetCppHookMoveFinished(bool val) { cppHookMoveFinished = val; }
-
 	FVector GetCppHookLocation() const { return cppHookLocation; }
 	void SetCppHookLocation(FVector val) { cppHookLocation = val; }
 
@@ -231,24 +233,26 @@ public:
 	bool GetCppisLaunching() const { return cppisLaunching; }
 	void SetCppisLaunching(bool val) { cppisLaunching = val; }
 
-	FVector GetCppWireDistance() const { return cppWireDistance; }
-	void SetCppWireDistance(FVector val) { cppWireDistance = val; }
+	/*FVector GetCppWireDistance() const { return cppWireDistance; }
+	void SetCppWireDistance(FVector val) { cppWireDistance = val; }*/
 
 	FVector GetCppWallNormal() const { return cppWallNormal; }
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
-	void PreHookWire();
-
 	UFUNCTION(Server, Reliable)
 	void HookWire();
 
+	UFUNCTION(Server, Reliable)
 	void PressWithdraw();
 
 	UFUNCTION(Server, Reliable)
 		void Withdraw();
 
 	void WireSwing();
+
+	UFUNCTION(Server, Reliable)
 	void BreakHook();
+
 	void Climb();
 	void ClimbTrace();
 	void UpdateWallNormal();
@@ -261,14 +265,20 @@ public:
 
 protected:
 
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked = false;
 
-	bool cppHookMoveFinished = false;
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	float cppHookedWireLength;
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppisLaunching = false;
-	FVector cppWireDistance;
+
+	/*FVector cppWireDistance;*/
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppHookLocation;
+	
 	FVector cppWallNormal;
 	FHitResult WireHit;
 
