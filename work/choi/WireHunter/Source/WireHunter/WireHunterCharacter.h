@@ -200,19 +200,6 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	// Fire
-	UFUNCTION(Server, Reliable)
-	void StartFire();
-
-	UFUNCTION(Server, Reliable)
-	void StopFire();
-	
-	UFUNCTION(NetMulticast, Reliable)
-	void FireShot();
-	
-	UFUNCTION(Server, Reliable)
-	void Reload();
-
 	void Reloaded();
 
 	FTimerHandle TimerHandle_HandleRefire;
@@ -238,21 +225,22 @@ public:
 	FVector GetCppWallNormal() const { return cppWallNormal; }
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
+	UFUNCTION(Client, Reliable)
+	void SetPointLight();
+
 	UFUNCTION(Server, Reliable)
 	void HookWire();
 
 	UFUNCTION(Server, Reliable)
 	void PressWithdraw();
 
-	UFUNCTION(NetMulticast, Reliable)
-		void Withdraw();
-
-	void WireSwing();
+	UFUNCTION(Server, Reliable)
+	void Withdraw();
 
 	UFUNCTION(Server, Reliable)
 	void BreakHook();
 
-
+	void WireSwing();
 
 	UFUNCTION(Server, Reliable)
 	void Climb();
@@ -265,18 +253,37 @@ public:
 
 	/** Called for forwards/backward input */
 	UFUNCTION(NetMulticast, Reliable)
-		void MoveForward(float Value);
+	void MoveForward(float Value);
 
 	/** Called for side to side input */
 	UFUNCTION(NetMulticast, Reliable)
-		void MoveRight(float Value);
+	void MoveRight(float Value);
 
 	UFUNCTION(Server, Reliable)
 	void LedgeTrace();
-	
-	void WireTrace();
+
+	// Fire
+	UFUNCTION(Server, Reliable)
+	void StartFire();
+
+	UFUNCTION(Server, Reliable)
+	void StopFire();
+
+	UFUNCTION(Server, Reliable)
+	void FireShot();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void GenParticles(FHitResult Hit, UWorld* world);
+
+	UFUNCTION(Server, Reliable)
+	void Reload();
 
 	void Knockback(FVector force);
+
+	UFUNCTION(Server, Reliable)
+	void TestFunc();
+
+	void TestTestFunc();
 
 	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
@@ -297,12 +304,10 @@ protected:
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppWallNormal;
 
-	FHitResult WireHit;
-
 	//R
 
 	UFUNCTION()
-		void OnRep_CurrentHealth();
+	void OnRep_CurrentHealth();
 
 	void OnHealthUpdate();
 };
