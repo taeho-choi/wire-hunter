@@ -234,10 +234,10 @@ public:
 	UFUNCTION(Server, Reliable)
 	void PressWithdraw();
 
-	UFUNCTION(Server, Reliable)
+	UFUNCTION(NetMulticast, Reliable)
 	void Withdraw();
 
-	UFUNCTION(Server, Reliable)
+	//UFUNCTION(Server, Reliable)
 	void BreakHook();
 
 	void WireSwing();
@@ -248,7 +248,7 @@ public:
 	UFUNCTION(Server, Reliable)
 	void ClimbTrace();
 
-	UFUNCTION(Client, Reliable)
+	UFUNCTION(Server, Reliable)
 	void UpdateWallNormal();
 
 	/** Called for forwards/backward input */
@@ -279,11 +279,6 @@ public:
 	void Reload();
 
 	void Knockback(FVector force);
-
-	UFUNCTION(Server, Reliable)
-	void TestFunc();
-
-	void TestTestFunc();
 
 	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
