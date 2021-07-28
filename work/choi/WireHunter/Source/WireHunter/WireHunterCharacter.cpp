@@ -1,5 +1,4 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-// Print String Code : 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 
 #include "WireHunterCharacter.h"
 #include "Kismet/GameplayStatics.h"
@@ -178,11 +177,12 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		
 		UpdateWallNormal();
 
-		/*LedgeTrace();
+		//LedgeTrace();
 
 		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
 		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
-		SetActorRotation(SmoothRotator);*/
+		SetActorRotation(SmoothRotator);
+		//이것도 문제
 	}
 	/*else
 	{
@@ -459,7 +459,11 @@ void AWireHunterCharacter::MoveForward_Implementation(float Value)//////////////
 
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
+		if (!GetisClimbing())
+		{
+			AddMovementInput(Direction, Value);
+		}
+		//클라이밍 모드일때 밸류 수정
 
 		if (GetisClimbing())
 		{
@@ -488,7 +492,10 @@ void AWireHunterCharacter::MoveRight_Implementation(float Value)
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
-		AddMovementInput(Direction, Value);
+		if (!GetisClimbing())
+		{
+			AddMovementInput(Direction, Value);
+		}
 
 		if (GetisClimbing())
 		{
@@ -523,7 +530,7 @@ void AWireHunterCharacter::LedgeTrace_Implementation()
 
 		PlayAnimMontage(LedgeClimb, 1, NAME_None);
 	}
-}//
+}
 
 void AWireHunterCharacter::StartFire_Implementation()
 {

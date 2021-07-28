@@ -47,8 +47,6 @@ void ABoss::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeP
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ABoss, Health);
-	/*DOREPLIFETIME(ABoss, BossRoot);
-	DOREPLIFETIME(ABoss, BossSkeletalMesh);*/
 }
 
 void ABoss::MakeMap()
@@ -306,13 +304,13 @@ void ABoss::BeginPlay()
 {
 	Super::BeginPlay();
 
-	MakeMap();
+	/*MakeMap();
 
 	FacePlayer();
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 	this->SetActorRotation(rot);
 
-	SetHealth(MaxHealth);
+	SetHealth(MaxHealth);*/
 }
 
 TArray<FStructNode> ABoss::DoAStar()
@@ -353,7 +351,7 @@ void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (ToFace) {
+	/*if (ToFace) {
 		FacePlayer();
 		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 		this->SetActorRotation(rot);
@@ -364,9 +362,7 @@ void ABoss::Tick(float DeltaTime)
 		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f) {
 			Destroy();
 		}
-	}
-
-	//DetectKick();
+	}*/
 }
 
 // Called to bind functionality to input

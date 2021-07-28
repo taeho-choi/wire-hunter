@@ -263,7 +263,7 @@ public:
 	void LedgeTrace();
 
 	// Fire
-	UFUNCTION(Server, Reliable)
+	UFUNCTION(Server, Reliable, BlueprintCallable)
 	void StartFire();
 
 	UFUNCTION(Server, Reliable)

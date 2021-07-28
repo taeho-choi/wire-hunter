@@ -30,6 +30,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 		float MaxHealth = 10;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		USkeletalMeshComponent* BossSkeletalMesh;
+
 private:
 	char Map[10][10];
 
@@ -57,11 +60,8 @@ private:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<ALightning> ToLightning;
 
-	UPROPERTY(EditAnywhere, Replicated)
+	UPROPERTY(EditAnywhere)
 		USceneComponent* BossRoot;
-
-	UPROPERTY(EditAnywhere, Replicated)
-		USkeletalMeshComponent* BossSkeletalMesh;
 
 public:
 	// Called every frame
