@@ -10,7 +10,5 @@ public class WireHunterTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		ExtraModuleNames.Add("WireHunter");
-		// Ensure that we compile with the Steam OSS
-		bUsesSteam = true;
 	}
 }

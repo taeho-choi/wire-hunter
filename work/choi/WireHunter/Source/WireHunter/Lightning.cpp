@@ -43,7 +43,7 @@ ALightning::ALightning()
 	SphereCollision->SetupAttachment(LightningRoot);
 	SphereCollision->SetWorldScale3D(FVector(1.6f, 1.6f, 1.6f));
 
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("L Spawn"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("L Spawn"));
 
 	bReplicates = true;
 }
