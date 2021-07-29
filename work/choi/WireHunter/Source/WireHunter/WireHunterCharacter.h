@@ -23,9 +23,6 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* FollowCamera;
 
-	UPROPERTY(VisibleAnywhere)
-		class UWidgetComponent* HealthWidget;
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UCableComponent* cppWire;
 
@@ -91,9 +88,6 @@ public:
 	bool GetisClimbing() const { return isClimbing; }
 	void SetisClimbing(bool val) { isClimbing = val; }
 
-	bool GetisLedgeClimbing() const { return isLedgeClimbing; }
-	void SetisLedgeClimbing(bool val) { isLedgeClimbing = val; }
-
 	FRotator GetFloatingRot() const { return FloatingRot; }
 	void SetFloatingRot(FRotator val) { FloatingRot = val; }
 
@@ -142,17 +136,17 @@ protected:
 
 	// Floating
 	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
-		bool isWithdrawing = false;
+		bool isWithdrawing;
 	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 		FVector FloatingPos;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FRotator FloatingRot;
 	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
-		bool isClimbing = false;
+		bool isClimbing;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isLedgeClimbing = false;
+		bool isLedgeClimbing;
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isBulletEmpty = false;
+		bool isBulletEmpty;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallUpVector;
@@ -161,7 +155,7 @@ protected:
 
 	// WireSystem
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool Hooked = false;
+		bool Hooked;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -285,13 +279,13 @@ public:
 protected:
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
-	bool cppHooked = false;
+		bool cppHooked;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	float cppHookedWireLength;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
-	bool cppisLaunching = false;
+		bool cppisLaunching;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppHookLocation;

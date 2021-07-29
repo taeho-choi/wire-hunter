@@ -32,6 +32,15 @@
 
 AWireHunterCharacter::AWireHunterCharacter()
 {
+	isWithdrawing = false;
+	isClimbing = false;
+	isLedgeClimbing = false;
+	isBulletEmpty = false;
+	Hooked = false;
+	cppHooked = false;
+	cppisLaunching = false;
+	//bp로직 보면서 필요없는거 정리
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -68,9 +77,6 @@ AWireHunterCharacter::AWireHunterCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
-	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
-	HealthWidget->SetupAttachment(RootComponent);
 
 	cppWire = CreateDefaultSubobject<UCableComponent>(TEXT("cppWire"));
 	cppWire->SetupAttachment(this->GetRootComponent());
@@ -116,12 +122,14 @@ void AWireHunterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UHealthBar* HealthBar = Cast<UHealthBar>(HealthWidget->GetUserWidgetObject());
-	HealthBar->SetOwnerCharacter(this);
-
 	TimerBetweenShots = 0.1f;
 
 	SetBullets(MaxBullets);
+
+	if (!HasAuthority())
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST TEXT"));
+	}
 }
 
 void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
