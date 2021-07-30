@@ -7,8 +7,6 @@
 #include "BossAIController.h"
 #include "NodeStructure.h"
 #include "WeightStructure.h"
-#include "Obstacle.h"
-#include "TimerManager.h"
 #include "Fireball.h"
 #include "Lightning.h"
 
@@ -27,29 +25,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintCallable)
-		void Spawn();
-
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<AFireball> ToSpawn;
-
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<ALightning> ToLightning;
-
-	UPROPERTY(EditAnywhere)
-		USceneComponent* BossRoot;
-
-	UPROPERTY(EditAnywhere)
-		USkeletalMeshComponent* BossSkeletalMesh;
-
-	/*UPROPERTY(EditAnywhere)
-		UShapeComponent* SphereCollision;*/
-
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, VisibleInstanceOnly, Category = "Status")
 		float Health;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
-		float MaxHealth = 100;
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
+		float MaxHealth = 10;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		USkeletalMeshComponent* BossSkeletalMesh;
 
 private:
 	char Map[10][10];
@@ -71,6 +53,15 @@ private:
 	TArray<FVector> Obstacles;
 
 	bool ToFace;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<AFireball> ToSpawn;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<ALightning> ToLightning;
+
+	UPROPERTY(EditAnywhere)
+		USceneComponent* BossRoot;
 
 public:
 	// Called every frame
@@ -120,7 +111,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetToFace(bool b) { ToFace = b; }
 
-	//
+	UFUNCTION(BlueprintCallable)
+		void DetectKick();
 
 	float GetHealth() const { return Health; }
 
@@ -131,5 +123,5 @@ public:
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
 	UFUNCTION(BlueprintCallable)
-	void DetectKick();
+		void Spawn();
 };

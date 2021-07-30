@@ -52,6 +52,8 @@ AFireball::AFireball()
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AFireball::OnHit);
 	SphereCollision->SetWorldScale3D(FVector(1.6f, 1.6f, 1.6f));
 
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("F Spawn"));
+
 	//R
 
 	/*if (HasAuthority()) {

@@ -4,18 +4,20 @@
 #include "GameFramework/Actor.h"
 #include "Math/UnrealMathUtility.h"
 #include "Kismet/KismetMathLibrary.h"
-#include "Obstacle.h"
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
-#include "BossAIController.h"
 #include "WireHunterCharacter.h"
 #include "DrawDebugHelpers.h"
+#include "Obstacle.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 ABoss::ABoss()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	bReplicates = true;
 
 	BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FireballRoot"));
 	RootComponent = BossRoot;
@@ -32,22 +34,19 @@ ABoss::ABoss()
 	BossSkeletalMesh->SetSkeletalMesh(Asset);
 	BossSkeletalMesh->SetMaterial(0, Material);
 
-	//SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
-	//SphereCollision->SetGenerateOverlapEvents(false);//스켈레탈 메시랑만 false 하면 될 듯. 일단 모양으로 안 겹치게 해놈.
-	//SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &ABoss::OnHit);
-	//SphereCollision->SetupAttachment(BossRoot);//따로 움직이는 듯.
-	//SphereCollision->SetWorldScale3D(FVector(16.f, 16.f, 16.f));
-
-	SetHealth(100);
 	BossSkeletalMesh->SetSimulatePhysics(false);
 
 	//need line to set default ai controller.
 	AIControllerClass = ABossAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
-
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 	ToFace = false;
+}
 
-	bReplicates = true;
+void ABoss::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ABoss, Health);
 }
 
 void ABoss::MakeMap()
@@ -305,15 +304,13 @@ void ABoss::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//////////////////////////////////////////////////////////////////////
-
-	MakeMap();
-
-	//GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &ABoss::Spawn, 2.f, true, 0.f);
+	/*MakeMap();
 
 	FacePlayer();
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 	this->SetActorRotation(rot);
+
+	SetHealth(MaxHealth);*/
 }
 
 TArray<FStructNode> ABoss::DoAStar()
@@ -354,7 +351,7 @@ void ABoss::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (ToFace) {
+	/*if (ToFace) {
 		FacePlayer();
 		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 		this->SetActorRotation(rot);
@@ -365,9 +362,7 @@ void ABoss::Tick(float DeltaTime)
 		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f) {
 			Destroy();
 		}
-	}
-
-	//DetectKick();
+	}*/
 }
 
 // Called to bind functionality to input

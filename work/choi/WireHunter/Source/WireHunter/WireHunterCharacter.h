@@ -23,9 +23,6 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* FollowCamera;
 
-	UPROPERTY(VisibleAnywhere)
-		class UWidgetComponent* HealthWidget;
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = cable, meta = (AllowPrivateAccess = "true"))
 		class UCableComponent* cppWire;
 
@@ -48,6 +45,7 @@ class AWireHunterCharacter : public ACharacter
 		class USkeletalMeshComponent* Gun;
 
 public:
+
 	AWireHunterCharacter();
 
 	//R
@@ -66,7 +64,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
-
 	void SetMaxHealth(float val) { MaxHealth = val; }
 
 	float GetBullets() const { return Bullets; }
@@ -82,17 +79,14 @@ public:
 	void SetMoveForwardValue(int val) { MoveForwardValue = val; }
 
 	// Floating
+	bool GetisWithdrawing() const { return isWithdrawing; }
+	void SetisWithdrawing(bool val) { isWithdrawing = val; }
+
 	FVector GetFloatingPos() const { return FloatingPos; }
 	void SetFloatingPos(FVector val) { FloatingPos = val; }
 
 	bool GetisClimbing() const { return isClimbing; }
 	void SetisClimbing(bool val) { isClimbing = val; }
-
-	bool GetisLedgeClimbing() const { return isLedgeClimbing; }
-	void SetisLedgeClimbing(bool val) { isLedgeClimbing = val; }
-
-	bool GetisWithdrawing() const { return isWithdrawing; }
-	void SetisWithdrawing(bool val) { isWithdrawing = val; }
 
 	FRotator GetFloatingRot() const { return FloatingRot; }
 	void SetFloatingRot(FRotator val) { FloatingRot = val; }
@@ -102,13 +96,6 @@ public:
 
 	FVector GetWallRightVector() const { return WallRightVector; }
 	void SetWallRightVector(FVector val) { WallRightVector = val; }
-
-	bool GetLockRightClimb() const { return LockRightClimb; }
-	void SetLockRightClimb(bool val) { LockRightClimb = val; }
-
-	bool GetLockLeftClimb() const { return LockLeftClimb; }
-	void SetLockLeftClimb(bool val) { LockLeftClimb = val; }
-
 
 	// WireSystem
 	bool GetHooked() const { return Hooked; }
@@ -140,40 +127,35 @@ protected:
 		float MaxHealth;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MaxBullets = 30;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int Bullets;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MoveForwardValue;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 		int MoveRightValue;
 
 	// Floating
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
+		bool isWithdrawing;
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 		FVector FloatingPos;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FRotator FloatingRot;
+	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
+		bool isClimbing;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isClimbing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isLedgeClimbing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isWithdrawing = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool isBulletEmpty = false;
+		bool isLedgeClimbing;
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+		bool isBulletEmpty;
 
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallUpVector;
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 		FVector WallRightVector;
 
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool LockRightClimb = false;
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool LockLeftClimb = false;
-
 	// WireSystem
 	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-		bool Hooked = false;
+		bool Hooked;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -183,12 +165,6 @@ protected:
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
-
-	/** Called for forwards/backward input */
-	void MoveForward(float Value);
-
-	/** Called for side to side input */
-	void MoveRight(float Value);
 
 	/** 
 	 * Called via input to turn at a given rate. 
@@ -218,11 +194,6 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	// Fire
-	void StartFire();
-	void StopFire();
-	void FireShot();
-	void Reload();
 	void Reloaded();
 
 	FTimerHandle TimerHandle_HandleRefire;
@@ -230,18 +201,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
 		FVector MuzzleOffset;
 
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class ABullet> ProjectileClass;
-
-	// Convert Blueprint to C++
-
 	// Wire System
 public:
+
 	bool GetCppHooked() const { return cppHooked; }
 	void SetCppHooked(bool val) { cppHooked = val; }
-
-	bool GetCppHookMoveFinished() const { return cppHookMoveFinished; }
-	void SetCppHookMoveFinished(bool val) { cppHookMoveFinished = val; }
 
 	FVector GetCppHookLocation() const { return cppHookLocation; }
 	void SetCppHookLocation(FVector val) { cppHookLocation = val; }
@@ -252,42 +216,87 @@ public:
 	bool GetCppisLaunching() const { return cppisLaunching; }
 	void SetCppisLaunching(bool val) { cppisLaunching = val; }
 
-	FVector GetCppWireDistance() const { return cppWireDistance; }
-	void SetCppWireDistance(FVector val) { cppWireDistance = val; }
-
 	FVector GetCppWallNormal() const { return cppWallNormal; }
 	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
+	UFUNCTION(Client, Reliable)
+	void SetPointLight();
+
+	UFUNCTION(Server, Reliable)
 	void HookWire();
-	void WireSwing();
-	void BreakHook();
-	void Withdraw();
+
+	UFUNCTION(Server, Reliable)
 	void PressWithdraw();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void Withdraw();
+
+	//UFUNCTION(Server, Reliable)
+	void BreakHook();
+
+	void WireSwing();
+
+	UFUNCTION(Server, Reliable)
 	void Climb();
+
+	UFUNCTION(Server, Reliable)
 	void ClimbTrace();
+
+	UFUNCTION(Server, Reliable)
 	void UpdateWallNormal();
+
+	/** Called for forwards/backward input */
+	UFUNCTION(NetMulticast, Reliable)
+	void MoveForward(float Value);
+
+	/** Called for side to side input */
+	UFUNCTION(NetMulticast, Reliable)
+	void MoveRight(float Value);
+
+	UFUNCTION(Server, Reliable)
 	void LedgeTrace();
-	void WireTrace();
+
+	// Fire
+	UFUNCTION(Server, Reliable, BlueprintCallable)
+	void StartFire();
+
+	UFUNCTION(Server, Reliable)
+	void StopFire();
+
+	UFUNCTION(Server, Reliable)
+	void FireShot();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void GenParticles(FHitResult Hit, UWorld* world);
+
+	UFUNCTION(Server, Reliable)
+	void Reload();
 
 	void Knockback(FVector force);
 
 	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 protected:
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
-	bool cppHooked = false;
-	bool cppHookMoveFinished = false;
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
+		bool cppHooked;
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	float cppHookedWireLength;
-	bool cppisLaunching = false;
-	FVector cppWireDistance;
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
+		bool cppisLaunching;
+
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppHookLocation;
+	
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	FVector cppWallNormal;
-	FHitResult WireHit;
 
 	//R
 
 	UFUNCTION()
-		void OnRep_CurrentHealth();
+	void OnRep_CurrentHealth();
 
 	void OnHealthUpdate();
 };

@@ -13,7 +13,6 @@ class AWireHunterGameMode : public AGameModeBase
 
 public:
 	AWireHunterGameMode();
+
+	
 };
-
-
-
