@@ -8,17 +8,7 @@ public class WireHunter : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "Paper2D" });
-		//PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "CableComponent" });
-		//PrivateDependencyModuleNames.AddRange(new string[] { "CableComponent" });
-
-		//PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "CableComponent" });
-
-		//PrivateDependencyModuleNames.AddRange(new string[] { "CableComponent" });
-		//PrivateIncludePathModuleNames.AddRange(new string[] { "CableComponent" });
-
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "CableComponent", "Paper2D"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "CableComponent", "Paper2D"});
 		PublicIncludePaths.AddRange(new string[] { "CableComponent/Public", "CableComponent/Classes", "Paper2D/Public", "Paper2D/Classes" });
-
 	}
 }

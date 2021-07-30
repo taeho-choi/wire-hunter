@@ -7,7 +7,6 @@
 AWireHunterGameMode::AWireHunterGameMode()
 {
 	// set default pawn class to our Blueprinted character
-
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPersonCPP/Blueprints/BP_WHCharacter"));
 	if (PlayerPawnBPClass.Class != NULL)
 	{
