@@ -473,11 +473,7 @@ void AWireHunterCharacter::MoveForward_Implementation(float Value)//////////////
 		}
 		//클라이밍 모드일때 밸류 수정
 
-		if (GetisClimbing())
-		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetUpVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * Value * GetWorld()->GetDeltaSeconds()));
-			SetActorLocation(GetFloatingPos());
-		}
+
 	}
 	if ((int)Value * 10 < GetMoveForwardValue())
 	{
@@ -505,11 +501,6 @@ void AWireHunterCharacter::MoveRight_Implementation(float Value)
 			AddMovementInput(Direction, Value);
 		}
 
-		if (GetisClimbing())
-		{
-			SetFloatingPos(GetFloatingPos() + (UKismetMathLibrary::GetRightVector(UKismetMathLibrary::MakeRotFromX(GetCppWallNormal())) * 500 * -Value * GetWorld()->GetDeltaSeconds()));
-			SetActorLocation(GetFloatingPos());
-		}
 	}
 	if ((int)Value * 10 < GetMoveRightValue())
 	{
