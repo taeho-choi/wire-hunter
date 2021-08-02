@@ -142,7 +142,6 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 	DOREPLIFETIME(AWireHunterCharacter, isClimbing);
 
 	DOREPLIFETIME(AWireHunterCharacter, cppWallNormal);
-	DOREPLIFETIME(AWireHunterCharacter, FloatingPos);
 	DOREPLIFETIME(AWireHunterCharacter, MoveForwardValue);
 	DOREPLIFETIME(AWireHunterCharacter, MoveRightValue);
 }
@@ -151,7 +150,10 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	SetPointLight();
+	if (!GetCppHooked())
+	{
+		SetPointLight();
+	}
 
 	if (GetisWithdrawing())
 	{
@@ -163,19 +165,8 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		WireSwing();
 	}
 
-	if (GetisWithdrawing())
-	{
-		FVector dist = GetActorLocation() - GetCppHookLocation();
-		if (dist.Size() < 60.f)
-		{
-			SetisWithdrawing(false);
-		}
-	}
-
 	if (GetisClimbing())
 	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-
 		UpdateWallNormal();
 
 		//LedgeTrace();
@@ -183,12 +174,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
 		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
 		SetActorRotation(SmoothRotator);
-		//이것도 문제
 	}
-	/*else
-	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-	}*/
 
 	// Game Over
 	if (Health <= 0.f || GetActorLocation().Z < 7500.f)
@@ -251,11 +237,6 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 		if (Hit.bBlockingHit)
 		{
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Hit"));
-		}
-
-		if (Hit.bBlockingHit)
-		{
 			/*if (!HasAuthority())
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST_HOOKWIRE"));
@@ -281,7 +262,7 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 void AWireHunterCharacter::PressWithdraw_Implementation()
 {
-	if (!GetisWithdrawing())
+	if (GetCppHooked())
 	{
 		SetisWithdrawing(true);
 	}
@@ -289,23 +270,26 @@ void AWireHunterCharacter::PressWithdraw_Implementation()
 
 void AWireHunterCharacter::Withdraw_Implementation()
 {
-	if (GetCppHooked())
+	FVector distance = GetActorLocation() - GetCppHookLocation();
+	cppWire->CableLength = distance.Size();
+	FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
+	LaunchCharacter(launchVel, true, true);
+
+	if (distance.Size() < 60.f)
 	{
-		FVector dist = GetActorLocation() - GetCppHookLocation();
-		cppWire->CableLength = dist.Size();
-		FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
-		LaunchCharacter(launchVel, true, true);
+		SetisWithdrawing(false);
 	}
 }
 
 void AWireHunterCharacter::BreakHook()
 {
 	SetCppHooked(false);
+	SetisWithdrawing(false);
+
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
 	cppWire->SetWorldLocation(GetActorLocation());
 	cppWire->SetVisibility(false);
-	SetisWithdrawing(false);
 }
 
 void AWireHunterCharacter::WireSwing()
@@ -320,6 +304,122 @@ void AWireHunterCharacter::WireSwing()
 		cppWire->CableLength = GetCppHookedWireLength() - 300.f;
 	}
 	GetCharacterMovement()->AirControl = 1.f;
+}
+
+void AWireHunterCharacter::Climb_Implementation()
+{
+	if (!GetisClimbing())
+	{
+		FHitResult Hit;
+
+		const float ClimbRange = 200.f;
+		const FVector StartTrace = GetActorLocation();
+		const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+		QueryParams.AddIgnoredActor(this);
+		GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+		if (Hit.bBlockingHit)
+		{
+			SetisClimbing(true);
+
+			BreakHook();
+
+			GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+
+			GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+		}
+	}
+	else
+	{
+		SetisClimbing(false);
+
+		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);////////////////////////////////////
+
+		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+	}
+}
+
+void AWireHunterCharacter::UpdateWallNormal_Implementation()
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 200.f;
+	const FVector StartTrace = GetActorLocation();
+	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (Hit.bBlockingHit)
+	{
+		SetCppWallNormal(Hit.Normal);
+	}
+}
+
+void AWireHunterCharacter::MoveForward_Implementation(float Value)////////////////////////////////////super?&이거 틱 뺐는데 왜댐?
+{
+	if ((Controller != NULL) && (Value != 0.f))
+	{
+		if (!GetisClimbing())
+		{
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		
+			AddMovementInput(Direction, Value);
+		}
+	}
+	if ((int)Value * 10 < GetMoveForwardValue())
+	{
+		SetMoveForwardValue(GetMoveForwardValue() - 1);
+	}
+	else if ((int)Value * 10 > GetMoveForwardValue())
+	{
+		SetMoveForwardValue(GetMoveForwardValue() + 1);
+	}
+}
+
+void AWireHunterCharacter::MoveRight_Implementation(float Value)
+{
+	if ((Controller != NULL) && (Value != 0.f))
+	{
+		if (!GetisClimbing())
+		{
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+
+			AddMovementInput(Direction, Value);
+		}
+	}
+	if ((int)Value * 10 < GetMoveRightValue())
+	{
+		SetMoveRightValue(GetMoveRightValue() - 1);
+	}
+	else if ((int)Value * 10 > GetMoveRightValue())
+	{
+		SetMoveRightValue(GetMoveRightValue() + 1);
+	}
+}
+
+void AWireHunterCharacter::LedgeTrace_Implementation()//이거 곡선?
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 1000.f;
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (!Hit.bBlockingHit)
+	{
+		SetisClimbing(false);
+
+		PlayAnimMontage(LedgeClimb, 1, NAME_None);
+	}
 }
 
 void AWireHunterCharacter::OnResetVR()
@@ -391,138 +491,6 @@ void AWireHunterCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AWireHunterCharacter::Climb_Implementation()
-{
-	if (!GetisClimbing())
-	{
-		ClimbTrace();
-	}
-	else
-	{
-		SetisClimbing(false);
-
-		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);
-	}
-}
-
-void AWireHunterCharacter::ClimbTrace_Implementation()
-{
-	FHitResult Hit;
-
-	SetCppWallNormal(Hit.Normal);
-
-	const float ClimbRange = 200.f;
-	const FVector StartTrace = GetActorLocation();
-	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-
-	if (Hit.bBlockingHit)
-	{
-		SetisClimbing(true);
-
-		BreakHook();
-
-		GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);/////////////////////////////////
-
-		SetFloatingPos(GetActorLocation());
-
-		SetActorLocation(GetFloatingPos());
-	}
-}
-
-void AWireHunterCharacter::UpdateWallNormal_Implementation()
-{
-	FHitResult Hit;
-
-	const float ClimbRange = 200.f;
-	const FVector StartTrace = GetActorLocation();
-	const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-
-	if (Hit.bBlockingHit)
-	{
-		SetCppWallNormal(Hit.Normal);
-	}
-}
-
-void AWireHunterCharacter::MoveForward_Implementation(float Value)/////////////////////////////////////////super
-{
-	if ((Controller != NULL) && (Value != 0.0f))
-	{
-		// find out which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get forward vector
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		if (!GetisClimbing())
-		{
-			AddMovementInput(Direction, Value);
-		}
-		//클라이밍 모드일때 밸류 수정
-
-
-	}
-	if ((int)Value * 10 < GetMoveForwardValue())
-	{
-		SetMoveForwardValue(GetMoveForwardValue() - 1);
-	}
-	else if ((int)Value * 10 > GetMoveForwardValue())
-	{
-		SetMoveForwardValue(GetMoveForwardValue() + 1);
-	}
-}
-
-void AWireHunterCharacter::MoveRight_Implementation(float Value)
-{
-	if ((Controller != NULL) && (Value != 0.0f))
-	{
-		// find out which way is right
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get right vector 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
-		if (!GetisClimbing())
-		{
-			AddMovementInput(Direction, Value);
-		}
-
-	}
-	if ((int)Value * 10 < GetMoveRightValue())
-	{
-		SetMoveRightValue(GetMoveRightValue() - 1);
-	}
-	else if ((int)Value * 10 > GetMoveRightValue())
-	{
-		SetMoveRightValue(GetMoveRightValue() + 1);
-	}
-}
-
-void AWireHunterCharacter::LedgeTrace_Implementation()
-{
-	FHitResult Hit;
-
-	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-
-	if (!Hit.bBlockingHit)
-	{
-		SetisClimbing(false);
-
-		PlayAnimMontage(LedgeClimb, 1, NAME_None);
-	}
-}
-
 void AWireHunterCharacter::StartFire_Implementation()
 {
 	FireShot();
@@ -578,7 +546,12 @@ void AWireHunterCharacter::Reload_Implementation()
 
 void AWireHunterCharacter::Knockback(FVector force)
 {
-	GetCharacterMovement()->AddForce(force);
+	auto temp = GetCharacterMovement();
+	temp->AddForce(force);
+
+	BreakHook();
+
+	temp->SetMovementMode(MOVE_Walking);
 }
 
 //void AWireHunterCharacter::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

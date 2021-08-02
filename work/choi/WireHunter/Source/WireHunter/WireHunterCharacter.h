@@ -98,9 +98,6 @@ protected:
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 	bool isWithdrawing;/////////////////////////////////////////////////////////////////
 
-	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
-	FVector FloatingPos;
-
 	UPROPERTY(Replicated, BlueprintReadWrite, EditAnywhere, Category = "Floating")
 	bool isClimbing;
 
@@ -155,9 +152,6 @@ public:
 	void Climb();
 
 	UFUNCTION(Server, Reliable)
-	void ClimbTrace();
-
-	UFUNCTION(Server, Reliable)
 	void UpdateWallNormal();
 
 	UFUNCTION(NetMulticast, Reliable)
@@ -194,6 +188,7 @@ public:
 
 	float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
+	UFUNCTION(BlueprintCallable)
 	float GetBullets() const { return Bullets; }
 
 	UFUNCTION(BlueprintCallable)
@@ -204,10 +199,14 @@ public:
 
 	void SetMaxBullets(int val) { MaxBullets = val; }
 
+	UFUNCTION(BlueprintCallable)
 	int GetMoveForwardValue() const { return MoveForwardValue; }
+
 	void SetMoveForwardValue(int val) { MoveForwardValue = val; }
 
+	UFUNCTION(BlueprintCallable)
 	int GetMoveRightValue() const { return MoveRightValue; }
+
 	void SetMoveRightValue(int val) { MoveRightValue = val; }
 
 	UFUNCTION(BlueprintCallable)
@@ -219,9 +218,6 @@ public:
 	bool GetisClimbing() const { return isClimbing; }
 
 	void SetisClimbing(bool val) { isClimbing = val; }
-
-	FVector GetFloatingPos() const { return FloatingPos; }
-	void SetFloatingPos(FVector val) { FloatingPos = val; }
 
 	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
