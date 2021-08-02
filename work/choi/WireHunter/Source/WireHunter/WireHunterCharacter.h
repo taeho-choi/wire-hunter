@@ -95,13 +95,13 @@ protected:
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 	int MoveRightValue;
 
-	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 	bool isWithdrawing;/////////////////////////////////////////////////////////////////
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
 	FVector FloatingPos;
 
-	UPROPERTY(Replicated, BlueprintReadWrite, EditInstanceOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditAnywhere, Category = "Floating")
 	bool isClimbing;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
