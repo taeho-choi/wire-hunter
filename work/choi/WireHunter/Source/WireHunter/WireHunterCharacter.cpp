@@ -34,12 +34,8 @@ AWireHunterCharacter::AWireHunterCharacter()
 {
 	isWithdrawing = false;
 	isClimbing = false;
-	isLedgeClimbing = false;
 	isBulletEmpty = false;
-	Hooked = false;
 	cppHooked = false;
-	cppisLaunching = false;
-	//bp로직 보면서 필요없는거 정리
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -108,8 +104,10 @@ AWireHunterCharacter::AWireHunterCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
 	//R
+	MaxBullets = 30;
 	MaxHealth = 100.f;
-	Health = MaxHealth - 30;
+	Health = MaxHealth - 30.f;
+	Bullets = MaxBullets;
 
 	bReplicates = true;
 
@@ -125,11 +123,6 @@ void AWireHunterCharacter::BeginPlay()
 	TimerBetweenShots = 0.1f;
 
 	SetBullets(MaxBullets);
-
-	if (!HasAuthority())
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST TEXT"));
-	}
 }
 
 void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -144,10 +137,10 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 	DOREPLIFETIME(AWireHunterCharacter, cppHooked);
 	DOREPLIFETIME(AWireHunterCharacter, cppHookLocation);
 	DOREPLIFETIME(AWireHunterCharacter, cppHookedWireLength);
-	DOREPLIFETIME(AWireHunterCharacter, cppisLaunching);
-	DOREPLIFETIME(AWireHunterCharacter, isWithdrawing);
 
+	DOREPLIFETIME(AWireHunterCharacter, isWithdrawing);
 	DOREPLIFETIME(AWireHunterCharacter, isClimbing);
+
 	DOREPLIFETIME(AWireHunterCharacter, cppWallNormal);
 	DOREPLIFETIME(AWireHunterCharacter, FloatingPos);
 	DOREPLIFETIME(AWireHunterCharacter, MoveForwardValue);
@@ -160,7 +153,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
 	SetPointLight();
 
-	if (GetCppisLaunching())
+	if (GetisWithdrawing())
 	{
 		Withdraw();
 	}
@@ -198,7 +191,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 	}*/
 
 	// Game Over
-	if (Health <= 0 || GetActorLocation().Z < 7500.f)
+	if (Health <= 0.f || GetActorLocation().Z < 7500.f)
 	{
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 	}
@@ -288,9 +281,8 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 void AWireHunterCharacter::PressWithdraw_Implementation()
 {
-	if (!GetCppisLaunching())
+	if (!GetisWithdrawing())
 	{
-		SetCppisLaunching(true);
 		SetisWithdrawing(true);
 	}
 }
@@ -313,7 +305,7 @@ void AWireHunterCharacter::BreakHook()
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
 	cppWire->SetWorldLocation(GetActorLocation());
 	cppWire->SetVisibility(false);
-	SetCppisLaunching(false);
+	SetisWithdrawing(false);
 }
 
 void AWireHunterCharacter::WireSwing()
@@ -323,7 +315,7 @@ void AWireHunterCharacter::WireSwing()
 	float dot = FVector::DotProduct(GetVelocity(), dist);
 	dist.Normalize();
 	GetCharacterMovement()->AddForce(dist * dot * -2.f);
-	if (!GetCppisLaunching())
+	if (!GetisWithdrawing())
 	{
 		cppWire->CableLength = GetCppHookedWireLength() - 300.f;
 	}
@@ -615,7 +607,7 @@ void AWireHunterCharacter::OnHealthUpdate()
 		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
 
-		if (Health <= 0)
+		if (Health <= 0.f)
 		{
 			FString deathMessage = FString::Printf(TEXT("You have been killed."));
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, deathMessage);
