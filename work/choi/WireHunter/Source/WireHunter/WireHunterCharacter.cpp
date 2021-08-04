@@ -292,7 +292,7 @@ void AWireHunterCharacter::BreakHook()
 	cppWire->SetVisibility(false);
 }
 
-void AWireHunterCharacter::WireSwing()
+void AWireHunterCharacter::WireSwing()////Ό³Έν
 {
 	cppWire->SetWorldLocation(GetCppHookLocation());
 	FVector dist = GetActorLocation() - GetCppHookLocation();

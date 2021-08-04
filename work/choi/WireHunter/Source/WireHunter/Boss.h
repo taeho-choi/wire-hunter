@@ -123,5 +123,10 @@ public:
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
 	UFUNCTION(BlueprintCallable)
-		void Spawn();
+	void Spawn();
+
+	/*UFUNCTION(BlueprintCallable)
+	void MyAddImpulse(FVector Impulse, FName BoneName, bool bVelChange);
+
+	void MyAddImpulse2(FVector Impulse, bool bVelChange);*/
 };

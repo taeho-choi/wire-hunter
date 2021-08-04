@@ -7,7 +7,6 @@
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
 #include "WireHunterCharacter.h"
-#include "DrawDebugHelpers.h"
 #include "Obstacle.h"
 #include "Net/UnrealNetwork.h"
 
@@ -432,3 +431,30 @@ void ABoss::DetectKick()
 		}
 	}
 }
+
+//void ABoss::MyAddImpulse(FVector Impulse, FName BoneName, bool bVelChange)
+//{
+//	if (FBodyInstance* BI = BossSkeletalMesh->GetBodyInstance(BoneName))
+//	{
+//		MyAddImpulse2(Impulse, bVelChange);
+//	}
+//	else
+//	{
+//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("else"));
+//	}
+//}
+//
+//void ABoss::MyAddImpulse2(FVector Impulse, bool bVelChange)
+//{
+//	if (FPhysicsInterface::IsRigidBody(Actor) && FPhysicsInterface::IsInScene(Actor) && !IsRigidBodyKinematic_AssumesLocked(Actor))
+//	{
+//		if (bVelChange)
+//		{
+//			FPhysicsInterface::AddVelocity_AssumesLocked(Actor, Impulse);
+//		}
+//		else
+//		{
+//			FPhysicsInterface::AddImpulse_AssumesLocked(Actor, Impulse);
+//		}
+//	}
+//}
