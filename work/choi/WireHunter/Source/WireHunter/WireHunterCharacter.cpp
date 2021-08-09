@@ -26,6 +26,8 @@
 #include "Boss.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
 //R
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -111,8 +113,8 @@ AWireHunterCharacter::AWireHunterCharacter()
 
 	bReplicates = true;
 
-	static ConstructorHelpers::FObjectFinder<UParticleSystem> ImpactParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
-	UParticleSystem* ParticleAsset = ImpactParticleAsset.Object;
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> ImpactParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Impact/NS_Impact.NS_Impact'"));
+	UNiagaraSystem* ParticleAsset = ImpactParticleAsset.Object;
 	ImpactParticle = ParticleAsset;
 }
 
@@ -533,7 +535,8 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* world)
 {
-	UGameplayStatics::SpawnEmitterAtLocation(world, ImpactParticle, FTransform(Hit.ImpactNormal.Rotation(), Hit.ImpactPoint), true, EPSCPoolMethod::AutoRelease);
+
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f)) ;
 	UGameplayStatics::SpawnEmitterAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")));
 }
 
