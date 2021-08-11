@@ -114,8 +114,12 @@ AWireHunterCharacter::AWireHunterCharacter()
 	bReplicates = true;
 
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> ImpactParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Impact/NS_Impact.NS_Impact'"));
-	UNiagaraSystem* ParticleAsset = ImpactParticleAsset.Object;
-	ImpactParticle = ParticleAsset;
+	UNiagaraSystem* NS_Impact = ImpactParticleAsset.Object;
+	ImpactParticle = NS_Impact;
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MuzzleParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/MuzzleFlash/NS_MuzzleFlash.NS_MuzzleFlash'"));
+	UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
+	MuzzleParticle = NS_MuzzleFlash;
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -536,8 +540,9 @@ void AWireHunterCharacter::FireShot_Implementation()
 void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* world)
 {
 
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f)) ;
-	UGameplayStatics::SpawnEmitterAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")));
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f));
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+
 }
 
 void AWireHunterCharacter::Reload_Implementation()

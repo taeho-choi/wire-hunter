@@ -46,7 +46,7 @@ class AWireHunterCharacter : public ACharacter
 	class UNiagaraSystem* ImpactParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
-	class UParticleSystem* MuzzleParticle;
+	class UNiagaraSystem* MuzzleParticle;
 
 public:
 
