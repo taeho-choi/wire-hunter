@@ -350,6 +350,11 @@ void ADragon::Tick(float DeltaTime)
 			Destroy();
 		}
 	}*/
+
+	auto tmp = GetActorLocation();
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, tmp.ToString());
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("----------------------------------------------------------"));
 }
 
 // Called to bind functionality to input
