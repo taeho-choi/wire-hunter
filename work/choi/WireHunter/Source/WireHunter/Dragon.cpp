@@ -296,6 +296,8 @@ void ADragon::BeginPlay()
 	this->SetActorRotation(rot);
 
 	SetHealth(MaxHealth);*/
+
+	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 }
 
 TArray<FStructNode> ADragon::DoAStar()

@@ -515,6 +515,8 @@ void AWireHunterCharacter::FireShot_Implementation()
 	{
 		auto world = GetWorld();
 
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+
 		SetBullets(GetBullets() - 1);
 
 		FHitResult Hit;
@@ -539,10 +541,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* world)
 {
-
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f));
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
-
 }
 
 void AWireHunterCharacter::Reload_Implementation()
