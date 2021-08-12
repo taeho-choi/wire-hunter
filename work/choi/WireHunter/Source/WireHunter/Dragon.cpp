@@ -424,3 +424,13 @@ void ADragon::DetectKick()
 		}
 	}
 }
+
+void ADragon::RightTurn()
+{
+
+}
+
+void ADragon::LeftTurn()
+{
+
+}

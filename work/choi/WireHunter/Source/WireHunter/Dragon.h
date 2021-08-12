@@ -29,6 +29,13 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 		float MaxHealth = 10;
 
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
+		TArray<FString> BoneList = 
+	{ 
+		"Bip001-Head", "Bip001-Neck2", "Bip001-Neck1", "Bip001-Neck", "Bip001-Spine3", "Bip001-Spine2", "Bip001-Spine1", "Bip001-Spine", "Bip001-Pelvis",
+		"Bip001-Tail", "Bip001-Tail1", "Bip001-Tail2", "Bip001-Tail3", "Bip001-Tail4",
+	};
+
 private:
 	char Map[10][10];
 
@@ -122,4 +129,10 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		void Spawn();
+
+	UFUNCTION(BlueprintCallable)
+		void RightTurn();
+
+	UFUNCTION(BlueprintCallable)
+		void LeftTurn();
 };
