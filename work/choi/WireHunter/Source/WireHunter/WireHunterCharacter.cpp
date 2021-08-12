@@ -28,6 +28,7 @@
 #include "PaperSprite.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
+#include "TimerManager.h"
 //R
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -99,6 +100,9 @@ AWireHunterCharacter::AWireHunterCharacter()
 	PlayerPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
 	PlayerPointer->SetWorldLocation(FVector(0.f, 0.f, 10000.f));
 
+	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthWidget"));
+	HealthWidget->SetupAttachment(this->GetRootComponent());
+
 	Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
 	Gun->SetupAttachment(this->GetMesh(), TEXT("Rifle"));
 
@@ -129,6 +133,9 @@ void AWireHunterCharacter::BeginPlay()
 	TimerBetweenShots = 0.1f;
 
 	SetBullets(MaxBullets);
+
+	UHealthBar* HealthBar = Cast<UHealthBar>(HealthWidget->GetUserWidgetObject());
+	HealthBar->SetOwnerCharacter(this);
 }
 
 void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -260,6 +267,7 @@ void AWireHunterCharacter::HookWire_Implementation()
 			SetCppHookedWireLength(NewWireLength);
 			cppWire->CableLength = GetCppHookedWireLength();
 			SetCppHooked(true);
+			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
 
 			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 		}
@@ -290,6 +298,7 @@ void AWireHunterCharacter::Withdraw_Implementation()
 void AWireHunterCharacter::BreakHook()
 {
 	SetCppHooked(false);
+	GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 	SetisWithdrawing(false);
 
 	cppWire->CableLength = 100.f;
@@ -580,6 +589,31 @@ void AWireHunterCharacter::Knockback(FVector force)
 //}
 
 //R
+
+void AWireHunterCharacter::GhostTrail()
+{
+	UObject* SpawnActor = Cast<UObject>(StaticLoadObject(UObject::StaticClass(), NULL, TEXT("Blueprint'/Game/ThirdPersonCPP/GraphicResources/WHFX/GhostTrail/BP_GhostTrail.BP_GhostTrail'")));
+
+	UBlueprint* GeneratedBP = Cast<UBlueprint>(SpawnActor);
+	if (!SpawnActor)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CANT FIND OBJECT TO SPAWN")));
+		return;
+	}
+
+	UClass* SpawnClass = SpawnActor->StaticClass();
+	if (SpawnClass == NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CLASS == NULL")));
+		return;
+	}
+
+	UWorld* World = GetWorld();
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	World->SpawnActor<AActor>(GeneratedBP->GeneratedClass, GetActorLocation() - FVector(0.f, 0.f, 100.f), GetActorRotation() - FRotator(0.f, 100.f, 0.f), SpawnParams);
+}
 
 void AWireHunterCharacter::OnHealthUpdate()
 {
