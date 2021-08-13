@@ -351,10 +351,10 @@ void ADragon::Tick(float DeltaTime)
 		}
 	}*/
 
-	auto tmp = GetActorLocation();
+	/*auto tmp = GetActorLocation();
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, tmp.ToString());
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("----------------------------------------------------------"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("---------------"));*/
 }
 
 // Called to bind functionality to input
@@ -423,14 +423,4 @@ void ADragon::DetectKick()
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Kick!"));
 		}
 	}
-}
-
-void ADragon::RightTurn()
-{
-
-}
-
-void ADragon::LeftTurn()
-{
-
 }
