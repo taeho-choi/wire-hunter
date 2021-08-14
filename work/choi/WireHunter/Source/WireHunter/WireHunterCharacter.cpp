@@ -156,30 +156,28 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!GetCppHooked())
+	if (!cppHooked)
 	{
 		SetPointLight();
 	}
 
-	if (GetisWithdrawing())
+	if (isWithdrawing)
 	{
 		Withdraw();
 	}
 
-	if (GetCppHooked())
+	if (cppHooked)
 	{
 		WireSwing();
 	}
 
-	if (GetisClimbing())
+	if (isClimbing)
 	{
 		UpdateWallNormal();
 
-		//LedgeTrace();
+		LedgeTrace();
 
-		FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
-		FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
-		SetActorRotation(SmoothRotator);
+		UpdateRot(DeltaTime);
 	}
 
 	// Game Over
@@ -202,7 +200,7 @@ void AWireHunterCharacter::SetPointLight_Implementation()
 
 	if (Hit.bBlockingHit)
 	{
-		if (!GetCppHooked() && !GetisClimbing())
+		if (!cppHooked && !isClimbing)
 		{
 			WirePointLight->SetVisibility(true);
 		}
@@ -226,7 +224,7 @@ void AWireHunterCharacter::SetPointLight_Implementation()
 
 void AWireHunterCharacter::HookWire_Implementation()
 {
-	if (GetCppHooked())
+	if (cppHooked)
 	{
 		BreakHook();
 	}
@@ -251,15 +249,15 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 			cppWire->SetVisibility(true);
 
-			SetCppHookLocation(Hit.Location);
+			cppHookLocation = Hit.Location;
 
 			FVector NewLocation;
-			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), GetCppHookLocation(), GetWorld()->GetDeltaSeconds(), 50.f);
-			cppWire->SetWorldLocation(GetCppHookLocation());
-			float NewWireLength = (GetActorLocation() - GetCppHookLocation()).Size() - 300.f;
-			SetCppHookedWireLength(NewWireLength);
-			cppWire->CableLength = GetCppHookedWireLength();
-			SetCppHooked(true);
+			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), cppHookLocation, GetWorld()->GetDeltaSeconds(), 50.f);
+			cppWire->SetWorldLocation(cppHookLocation);
+			float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
+			cppHookedWireLength = NewWireLength;
+			cppWire->CableLength = cppHookedWireLength;
+			cppHooked = true;
 
 			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 		}
@@ -268,29 +266,29 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 void AWireHunterCharacter::PressWithdraw_Implementation()
 {
-	if (GetCppHooked())
+	if (cppHooked)
 	{
-		SetisWithdrawing(true);
+		isWithdrawing = true;
 	}
 }
 
 void AWireHunterCharacter::Withdraw_Implementation()
 {
-	FVector distance = GetActorLocation() - GetCppHookLocation();
+	FVector distance = GetActorLocation() - cppHookLocation;
 	cppWire->CableLength = distance.Size();
-	FVector launchVel = (GetCppHookLocation() - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
+	FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
 	LaunchCharacter(launchVel, true, true);
 
 	if (distance.Size() < 60.f)
 	{
-		SetisWithdrawing(false);
+		isWithdrawing = false;
 	}
 }
 
-void AWireHunterCharacter::BreakHook()
+void AWireHunterCharacter::BreakHook_Implementation()
 {
-	SetCppHooked(false);
-	SetisWithdrawing(false);
+	cppHooked = false;
+	isWithdrawing = false;
 
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
@@ -298,23 +296,25 @@ void AWireHunterCharacter::BreakHook()
 	cppWire->SetVisibility(false);
 }
 
-void AWireHunterCharacter::WireSwing()////¼³¸í
+void AWireHunterCharacter::WireSwing_Implementation()
 {
-	cppWire->SetWorldLocation(GetCppHookLocation());
-	FVector dist = GetActorLocation() - GetCppHookLocation();
+	cppWire->SetWorldLocation(cppHookLocation);
+	FVector dist = GetActorLocation() - cppHookLocation;
 	float dot = FVector::DotProduct(GetVelocity(), dist);
 	dist.Normalize();
 	GetCharacterMovement()->AddForce(dist * dot * -2.f);
-	if (!GetisWithdrawing())
+	if (!isWithdrawing)
 	{
-		cppWire->CableLength = GetCppHookedWireLength() - 300.f;
+		cppWire->CableLength = cppHookedWireLength - 300.f;
 	}
 	GetCharacterMovement()->AirControl = 1.f;
 }
 
 void AWireHunterCharacter::Climb_Implementation()
 {
-	if (!GetisClimbing())
+	auto temp = GetCharacterMovement();
+
+	if (!isClimbing)
 	{
 		FHitResult Hit;
 
@@ -327,22 +327,22 @@ void AWireHunterCharacter::Climb_Implementation()
 
 		if (Hit.bBlockingHit)
 		{
-			SetisClimbing(true);
+			isClimbing = true;
 
 			BreakHook();
 
-			GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+			temp->SetMovementMode(MOVE_Flying);
 
-			GetCharacterMovement()->Velocity = FVector(0.f, 0.f, 0.f);
+			temp->Velocity = FVector(0.f, 0.f, 0.f);
 		}
 	}
 	else
 	{
-		SetisClimbing(false);
+		isClimbing = false;
 
-		GetCharacterMovement()->AddForce(GetCppWallNormal() * 20000000);////////////////////////////////////
+		temp->AddForce(cppWallNormal * 20000000);////////////////////////////////////
 
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		temp->SetMovementMode(MOVE_Walking);
 	}
 }
 
@@ -359,23 +359,34 @@ void AWireHunterCharacter::UpdateWallNormal_Implementation()
 
 	if (Hit.bBlockingHit)
 	{
-		SetCppWallNormal(Hit.Normal);
+		cppWallNormal = Hit.Normal;
 	}
 }
 
-void AWireHunterCharacter::MoveForward_Implementation(float Value)////////////////////////////////////super?&ÀÌ°Å Æ½ »°´Âµ¥ ¿Ö´ï?
+void AWireHunterCharacter::MoveForward(float Value)////////////////////////////////////super?&ÀÌ°Å Æ½ »°´Âµ¥ ¿Ö´ï?
 {
 	if ((Controller != NULL) && (Value != 0.f))
 	{
-		if (!GetisClimbing())
+		if (!isClimbing)
 		{
 			const FRotator Rotation = Controller->GetControlRotation();
 			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		
 			AddMovementInput(Direction, Value);
+
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("walking"));
 		}
 	}
+
+	if (isClimbing)
+	{
+		InMoveForward(Value);
+	}
+}
+
+void AWireHunterCharacter::InMoveForward_Implementation(float Value)
+{
 	if ((int)Value * 10 < GetMoveForwardValue())
 	{
 		SetMoveForwardValue(GetMoveForwardValue() - 1);
@@ -386,11 +397,11 @@ void AWireHunterCharacter::MoveForward_Implementation(float Value)//////////////
 	}
 }
 
-void AWireHunterCharacter::MoveRight_Implementation(float Value)
+void AWireHunterCharacter::MoveRight(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.f))
 	{
-		if (!GetisClimbing())
+		if (!isClimbing)
 		{
 			const FRotator Rotation = Controller->GetControlRotation();
 			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
@@ -399,6 +410,16 @@ void AWireHunterCharacter::MoveRight_Implementation(float Value)
 			AddMovementInput(Direction, Value);
 		}
 	}
+
+	if (isClimbing)
+	{
+		InMoveRight(Value);
+	}
+
+}
+
+void AWireHunterCharacter::InMoveRight_Implementation(float Value)
+{
 	if ((int)Value * 10 < GetMoveRightValue())
 	{
 		SetMoveRightValue(GetMoveRightValue() - 1);
@@ -422,10 +443,26 @@ void AWireHunterCharacter::LedgeTrace_Implementation()//ÀÌ°Å °î¼±?
 
 	if (!Hit.bBlockingHit)
 	{
-		SetisClimbing(false);
+		isClimbing = false;
 
-		PlayAnimMontage(LedgeClimb, 1, NAME_None);
+		PlayLedgeAnim();
+
+		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+
+		SetActorRotation(UKismetMathLibrary::MakeRotator(0.f, 0.f, GetActorRotation().Yaw));
 	}
+}
+
+void AWireHunterCharacter::PlayLedgeAnim_Implementation()
+{
+	PlayAnimMontage(LedgeClimb, 1, NAME_None);
+}
+
+void AWireHunterCharacter::UpdateRot_Implementation(float DeltaTime)
+{
+	FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
+	FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
+	SetActorRotation(SmoothRotator);
 }
 
 void AWireHunterCharacter::OnResetVR()
@@ -515,9 +552,9 @@ void AWireHunterCharacter::FireShot_Implementation()
 	{
 		auto world = GetWorld();
 
-		//UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
 
-		SetBullets(GetBullets() - 1);
+		Bullets -= 1;
 
 		FHitResult Hit;
 
@@ -541,19 +578,27 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* world)
 {
-	//UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f));
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, ImpactParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), FVector(1.f, 1.f, 1.f));
 }
 
 void AWireHunterCharacter::Reload_Implementation()
 {
 	isBulletEmpty = false;
 
+	PlayReloadAnim();
+
+	Bullets = MaxBullets;
+}
+
+void AWireHunterCharacter::PlayReloadAnim_Implementation()
+{
 	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
-void AWireHunterCharacter::Knockback(FVector force)
+void AWireHunterCharacter::Knockback_Implementation(FVector force)
 {
 	auto temp = GetCharacterMovement();
+
 	temp->AddForce(force);
 
 	BreakHook();
@@ -580,44 +625,38 @@ void AWireHunterCharacter::Knockback(FVector force)
 
 //R
 
-void AWireHunterCharacter::OnHealthUpdate()
+void AWireHunterCharacter::OnRep_isWithdrawingTest()
 {
-	if (IsLocallyControlled())
+	if (isWithdrawing)
 	{
-		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
-
-		if (Health <= 0.f)
-		{
-			FString deathMessage = FString::Printf(TEXT("You have been killed."));
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, deathMessage);
-		}
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("isWithdrawing-True"));
 	}
-
-	if (GetLocalRole() == ROLE_Authority)
+	else
 	{
-		FString healthMessage = FString::Printf(TEXT("%s now has %f health remaining."), *GetFName().ToString(), Health);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("isWithdrawing-False"));
 	}
 }
 
-void AWireHunterCharacter::OnRep_CurrentHealth()
+void AWireHunterCharacter::OnRep_cppHookedTest()
 {
-	OnHealthUpdate();
-}
-
-void AWireHunterCharacter::SetHealth(float healthValue)
-{
-	if (GetLocalRole() == ROLE_Authority)
+	if (cppHooked)
 	{
-		Health = FMath::Clamp(healthValue, 0.f, MaxHealth);
-		OnHealthUpdate();
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("cppHooked-True"));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("cppHooked-False"));
 	}
 }
 
-float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+void AWireHunterCharacter::OnRep_isClimbingTest()
 {
-	float damageApplied = Health - DamageTaken;
-	SetHealth(damageApplied);
-	return damageApplied;
+	if (isClimbing)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("isClimbing-True"));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("isClimbing-False"));
+	}
 }
