@@ -387,9 +387,10 @@ void ADragon::Spawn_Implementation()
 		FActorSpawnParameters spawnParameters;
 		spawnParameters.Instigator = GetInstigator();
 		spawnParameters.Owner = this;
-
+		
 		FindPlayer();
 		FacePlayer();
+		//버그 가능성 있음
 
 		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, TargetRotation, spawnParameters);
 

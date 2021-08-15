@@ -108,7 +108,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 	//R
 	MaxBullets = 30;
 	MaxHealth = 100.f;
-	Health = MaxHealth - 30.f;
+	Health = MaxHealth - 60.f;
 	Bullets = MaxBullets;
 
 	bReplicates = true;
@@ -130,8 +130,6 @@ void AWireHunterCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	TimerBetweenShots = 0.1f;
-
-	SetBullets(MaxBullets);
 }
 
 void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -183,7 +181,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		UpdateRot(DeltaTime);
 	}
 
-	if (Health <= 0.f || GetActorLocation().Z < 7500.f)
+	if (GetActorLocation().Z < 7500.f)
 	{
 		Destroy();
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
@@ -667,8 +665,7 @@ void AWireHunterCharacter::OnHealthUpdate()
 
 		if (Health <= 0)
 		{
-			FString deathMessage = FString::Printf(TEXT("You have been killed."));
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, deathMessage);
+			Destroy();
 		}
 	}
 
@@ -677,6 +674,16 @@ void AWireHunterCharacter::OnHealthUpdate()
 	{
 		FString healthMessage = FString::Printf(TEXT("%s now has %f health remaining."), *GetFName().ToString(), Health);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+		if (Health <= 0)
+		{
+			Destroy();
+
+			if (GetFName() == "BP_WHCharacter_C_0")
+			{
+				UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+			}
+		}
 	}
 
 	//Functions that occur on all machines. 
