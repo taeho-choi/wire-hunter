@@ -23,7 +23,7 @@
 #include "Components/SceneComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
-#include "Boss.h"
+#include "Dragon.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
 #include "NiagaraFunctionLibrary.h"
@@ -433,7 +433,7 @@ void AWireHunterCharacter::InMoveRight_Implementation(float Value)
 void AWireHunterCharacter::LedgeTrace_Implementation()//ÀÌ°Å °î¼±?
 {
 	FHitResult Hit;
-
+	
 	const float ClimbRange = 1000.f;
 	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
 	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
@@ -558,7 +558,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		FHitResult Hit;
 
-		const float GunRange = 50000.f;
+		const float GunRange = 50000.f;//
 		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
 		const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
 		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
@@ -566,9 +566,9 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		if (world->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams))
 		{
-			if (Hit.Actor->IsA(ABoss::StaticClass()))
+			if (Hit.Actor->IsA(ADragon::StaticClass()))
 			{
-				ABoss* TargetBoss = Cast<ABoss>(Hit.Actor);
+				ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
 				TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
 			}
 			GenParticles(Hit, world);

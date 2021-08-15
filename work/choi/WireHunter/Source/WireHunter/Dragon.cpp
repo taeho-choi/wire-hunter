@@ -9,6 +9,7 @@
 #include "PaperSpriteComponent.h"
 
 #include "Net/UnrealNetwork.h"
+#include "Engine/Engine.h"
 
 // Sets default values
 ADragon::ADragon()
@@ -16,11 +17,14 @@ ADragon::ADragon()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	bReplicates = true;
+	/*BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("DragonRoot"));
+	RootComponent = BossRoot;*/
 
 	//need line to set default ai controller.
 	AIControllerClass = ABossAIController::StaticClass();
 	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+
+	bReplicates = true;
 
 	ToFace = false;
 }
@@ -289,13 +293,11 @@ void ADragon::BeginPlay()
 
 	Health = MaxHealth;
 
-	/*MakeMap();
+	MakeMap();
 
 	FacePlayer();
 	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 	this->SetActorRotation(rot);
-
-	SetHealth(MaxHealth);*/
 
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 }
@@ -342,14 +344,18 @@ void ADragon::Tick(float DeltaTime)
 		FacePlayer();
 		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
 		this->SetActorRotation(rot);
-	}
-
-	if (Health < 0) {
-		BossSkeletalMesh->SetSimulatePhysics(true);
-		if (BossSkeletalMesh->GetComponentLocation().Z < -4000.f) {
-			Destroy();
-		}
 	}*/
+
+	if (Health < 0)
+	{
+		GetMesh()->SetSimulatePhysics(true);
+
+		if (GetMesh()->GetComponentLocation().Z < -4000.f)
+		{
+			Destroy();
+			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+		}
+	}
 
 	/*auto tmp = GetActorLocation();
 
@@ -398,7 +404,6 @@ void ADragon::Lightning()
 
 void ADragon::DetectKick()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Kick!"));
 	FHitResult hit;
 
 	const float range = 2000.f;
@@ -412,7 +417,6 @@ void ADragon::DetectKick()
 
 	if (hit.bBlockingHit)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!"));
 		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
 		{
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
@@ -420,7 +424,6 @@ void ADragon::DetectKick()
 			TargetCharacter->BreakHook();
 			TargetCharacter->SetisClimbing(false);
 			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Kick!"));
 		}
 	}
 }
