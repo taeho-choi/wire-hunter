@@ -4,6 +4,7 @@
 
 #include "EngineMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Dragon.h"
 
 #include "Fireball.generated.h"
 
@@ -22,15 +23,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UStaticMeshComponent* StaticMesh;
 
-	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		class UProjectileMovementComponent* ProjectileMovementComponent;*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UProjectileMovementComponent* ProjectileMovementComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
 		class UParticleSystem* ExplosionEffect;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
-		TSubclassOf<class UDamageType> DamageType; //for editor
-		//class UClass* DamageType; ³ë»ó°ü?
+		TSubclassOf<class UDamageType> DamageType; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		float Damage;

@@ -38,7 +38,7 @@ AFireball::AFireball()
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
 		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 37.5f));
-		StaticMesh->SetRelativeScale3D(FVector(1.f, 1.f, 1.f));
+		StaticMesh->SetRelativeScale3D(FVector(3.f, 3.f, 3.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExposionEffect(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -51,12 +51,12 @@ AFireball::AFireball()
 	UMaterial* Material = MaterialAsset.Object;
 	StaticMesh->SetMaterial(0, Material);
 
-	//ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
-	//ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	//ProjectileMovementComponent->InitialSpeed = 1500.f;
-	//ProjectileMovementComponent->MaxSpeed = 1500.f;
-	//ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
-	//ProjectileMovementComponent->ProjectileGravityScale = 0.f;
+	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
+	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
+	ProjectileMovementComponent->InitialSpeed = 1500.f;
+	ProjectileMovementComponent->MaxSpeed = 1500.f;
+	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
+	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
 	DamageType = UDamageType::StaticClass();
 
@@ -68,7 +68,7 @@ void AFireball::BeginPlay()
 {
 	Super::BeginPlay();
 
-	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();// +FVector(0.f, 0.f, -100.f);
 	TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
 	SetActorRotation(TargetRotation);
 }
@@ -93,9 +93,10 @@ void AFireball::Destroyed()
 
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
-	if (otherActor) 
+	if ( !( otherActor->IsA(ADragon::StaticClass()) ) )
 	{
 		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+		Destroy();
 	}
-	Destroy();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "HitTest");
 }

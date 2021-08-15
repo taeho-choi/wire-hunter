@@ -99,8 +99,8 @@ FVector ADragon::FindPlayer()
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 	//TargetLocation = Players.Last();
 
-	FString healthMessage = FString::Printf(TEXT("HP: %f"), Players.Num());
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+	//FString healthMessage = FString::Printf(TEXT("HP: %f"), Players.Num());//0
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
 
 	return TargetLocation;
 }
@@ -308,9 +308,9 @@ void ADragon::BeginPlay()
 	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
 
-	for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
+	/*for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
 		Players.Push(e->GetActorLocation()); 
-	}
+	}*/
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -391,7 +391,10 @@ void ADragon::Spawn_Implementation()
 		spawnParameters.Owner = this;
 
 		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "SpawnTest");
 	}
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "SpawnTest2");
 }
 
 void ADragon::Lightning()
@@ -435,7 +438,6 @@ void ADragon::DetectKick_Implementation()
 			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
 
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *temp);
-			//GEngine->AddOnScreenDebugMessage(-10, 1.f, FColor::Yellow, FString::printf(TEXT("Rotation: %f - %f - %f"), CameraRotation.Pitch, CameraRotation.Yaw, CameraRotation.Roll));
 		}
 	}
 }
