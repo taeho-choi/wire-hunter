@@ -48,6 +48,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UNiagaraSystem* MuzzleParticle;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UWidgetComponent* HealthWidget;
+
 public:
 
 	AWireHunterCharacter();
@@ -215,6 +218,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool GetisClimbing() const { return isClimbing; }
 
+	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
 
 	void SetHealth(float health) {
@@ -224,6 +228,7 @@ public:
 		}
 	}
 
+	UFUNCTION(BlueprintCallable)
 	float GetMaxHealth() const { return MaxHealth; }
 
 	void SetisClimbing(bool b) { isClimbing = b; }

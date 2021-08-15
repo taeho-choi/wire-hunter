@@ -36,7 +36,7 @@ protected:
 		"Bip001-Tail", "Bip001-Tail1", "Bip001-Tail2", "Bip001-Tail3", "Bip001-Tail4",
 	};
 
-	TArray<AActor*> Players;
+	TArray<FVector> Players;
 
 	UPROPERTY(BlueprintReadWrite)
 	TSubclassOf<class AFireball> ProjectileClass;
@@ -119,7 +119,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetToFace(bool b) { ToFace = b; }
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Server, Reliable)
 		void DetectKick();
 
 	UFUNCTION(BlueprintCallable)
@@ -144,5 +144,5 @@ public:
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
 
 	UFUNCTION(BlueprintCallable)
-		TArray<AActor*> GetPlayers() const { return Players; }
+		TArray<FVector> GetPlayers() const { return Players; }
 };

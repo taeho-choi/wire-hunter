@@ -97,7 +97,10 @@ void ADragon::MakeMap()
 FVector ADragon::FindPlayer()
 {
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-	//TargetLocation = Players[1]->GetActorLocation();
+	//TargetLocation = Players.Last();
+
+	FString healthMessage = FString::Printf(TEXT("HP: %f"), Players.Num());
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
 
 	return TargetLocation;
 }
@@ -303,7 +306,11 @@ void ADragon::BeginPlay()
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
 	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
+	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
+
+	for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
+		Players.Push(e->GetActorLocation()); 
+	}
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -321,7 +328,7 @@ FVector ADragon::GetGoal()
 {
 	FVector goal;
 	goal = RealMap[Path[Path.Num() - 1].second][Path[Path.Num() - 1].first];
-	goal.Z = TargetLocation.Z + 1000.f;
+	goal.Z = TargetLocation.Z + 500.f;
 
 	return goal;
 }
@@ -330,7 +337,7 @@ FVector ADragon::GetPath()////////////////////////////////////////////////////
 {
 	FVector path;
 	path = RealMap[Path[0].second][Path[0].first];
-	path.Z = TargetLocation.Z + 1000.f;
+	path.Z = TargetLocation.Z + 500.f;
 
 	Path.RemoveAt(0);
 
@@ -404,11 +411,11 @@ void ADragon::Lightning()
 	}
 }
 
-void ADragon::DetectKick()
+void ADragon::DetectKick_Implementation()
 {
 	FHitResult hit;
 
-	const float range = 2000.f;
+	const float range = 1500.f;
 	FVector startTrace = GetCapsuleComponent()->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
 	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
 
@@ -422,8 +429,8 @@ void ADragon::DetectKick()
 		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
 		{
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 10.f);
-			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
+			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
 
 			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
 

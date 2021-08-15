@@ -120,6 +120,9 @@ AWireHunterCharacter::AWireHunterCharacter()
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MuzzleParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/MuzzleFlash/NS_MuzzleFlash.NS_MuzzleFlash'"));
 	UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
 	MuzzleParticle = NS_MuzzleFlash;
+
+	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
+	HealthWidget->SetupAttachment(RootComponent);
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -611,7 +614,7 @@ float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent co
 	float damageApplied = Health - DamageTaken;
 	SetHealth(damageApplied);
 
-	Knockback((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+	Knockback((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
 
 	return damageApplied;
 }
