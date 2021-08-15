@@ -122,7 +122,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 		float GetHealth() const { return Health; }
 
-	void SetHealth(float value) { Health = value; }
+	void SetHealth(float value) { 
+		if (HasAuthority())
+		{
+			Health = value;
+		}
+	}
 
 	UFUNCTION(BlueprintCallable)
 		float GetMaxHealth() const { return MaxHealth; }

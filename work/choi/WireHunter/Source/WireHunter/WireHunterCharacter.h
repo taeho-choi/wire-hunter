@@ -217,7 +217,12 @@ public:
 
 	float GetHealth() const { return Health; }
 
-	void SetHealth(float health) { Health = health; }
+	void SetHealth(float health) {
+		if (HasAuthority())
+		{
+			Health = health;
+		}
+	}
 
 	float GetMaxHealth() const { return MaxHealth; }
 
