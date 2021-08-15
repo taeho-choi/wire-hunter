@@ -36,6 +36,8 @@ protected:
 		"Bip001-Tail", "Bip001-Tail1", "Bip001-Tail2", "Bip001-Tail3", "Bip001-Tail4",
 	};
 
+	TArray<AActor*> Players;
+
 private:
 	char Map[10][10];
 
@@ -127,9 +129,12 @@ public:
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Server, Reliable)
 		void Spawn();
 
 	UFUNCTION(BlueprintCallable)
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
+
+	UFUNCTION(BlueprintCallable)
+		TArray<AActor*> GetPlayers() const { return Players; }
 };

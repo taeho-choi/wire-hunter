@@ -11,14 +11,13 @@
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
 
+#include "DrawDebugHelpers.h"
+
 // Sets default values
 ADragon::ADragon()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	/*BossRoot = CreateDefaultSubobject<USceneComponent>(TEXT("DragonRoot"));
-	RootComponent = BossRoot;*/
 
 	//need line to set default ai controller.
 	AIControllerClass = ABossAIController::StaticClass();
@@ -95,6 +94,7 @@ void ADragon::MakeMap()
 FVector ADragon::FindPlayer()
 {
 	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+	//TargetLocation = Players[1]->GetActorLocation();
 
 	return TargetLocation;
 }
@@ -296,10 +296,11 @@ void ADragon::BeginPlay()
 	MakeMap();
 
 	FacePlayer();
-	auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
-	this->SetActorRotation(rot);
 
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+
+	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -369,7 +370,7 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void ADragon::Spawn()
+void ADragon::Spawn_Implementation()
 {
 	if (ToSpawn) {
 		UWorld* world = GetWorld();
@@ -407,23 +408,26 @@ void ADragon::DetectKick()
 	FHitResult hit;
 
 	const float range = 2000.f;
-	FVector startTrace = BossRoot->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
-	FVector endTrace = (BossRoot->GetForwardVector() * range) + startTrace;
+	FVector startTrace = GetCapsuleComponent()->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
+	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
 
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
 	queryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
-	//DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 
 	if (hit.bBlockingHit)
 	{
 		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
 		{
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
-			TargetCharacter->BreakHook();
-			TargetCharacter->SetisClimbing(false);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 10.f);
 			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+
+			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
+
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, *temp);
+			//GEngine->AddOnScreenDebugMessage(-10, 1.f, FColor::Yellow, FString::printf(TEXT("Rotation: %f - %f - %f"), CameraRotation.Pitch, CameraRotation.Yaw, CameraRotation.Roll));
 		}
 	}
 }
