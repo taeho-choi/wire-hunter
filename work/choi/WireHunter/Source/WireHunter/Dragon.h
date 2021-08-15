@@ -38,6 +38,9 @@ protected:
 
 	TArray<AActor*> Players;
 
+	UPROPERTY(BlueprintReadWrite)
+	TSubclassOf<class AFireball> ProjectileClass;
+
 private:
 	char Map[10][10];
 

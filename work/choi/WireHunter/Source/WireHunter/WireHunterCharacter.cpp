@@ -606,22 +606,15 @@ void AWireHunterCharacter::Knockback_Implementation(FVector force)
 	temp->SetMovementMode(MOVE_Walking);
 }
 
-//void AWireHunterCharacter::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-//{
-//	if (OtherActor->IsA(ABoss::StaticClass())) {
-//		this->SetHealth(this->GetHealth() - 1);
-//		this->BreakHook();
-//		this->SetisClimbing(false);
-//		this->Knockback((this->GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
-//		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Kick!!!!!!!!!!!!!!!!!!!!"));
-//	}GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("On Hit"));
-//}
+float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) 
+{
+	float damageApplied = Health - DamageTaken;
+	SetHealth(damageApplied);
 
-//void AWireHunterCharacter::AnimNotify_LedgeClimbEnd()
-//{
-//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("LedgeClimbing False!!!!!!!!!"));
-//	SetisLedgeClimbing(false);
-//}
+	Knockback((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 10000000);
+
+	return damageApplied;
+}
 
 //R
 

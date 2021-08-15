@@ -7,6 +7,7 @@
 #include "Obstacle.h"
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
+#include "Fireball.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -26,6 +27,8 @@ ADragon::ADragon()
 	bReplicates = true;
 
 	ToFace = false;
+
+	ProjectileClass = AFireball::StaticClass();
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -373,16 +376,14 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void ADragon::Spawn_Implementation()
 {
 	if (ToSpawn) {
-		UWorld* world = GetWorld();
-		if (world) {
-			FActorSpawnParameters spawnParams;
-			spawnParams.Owner = this;
+		FVector spawnLocation = GetActorLocation() + (GetControlRotation().Vector() * 100.f) + (GetActorUpVector() * 50.f);
+		FRotator spawnRotation = GetControlRotation();
 
-			FRotator rot;
-			FVector spawnLocation = this->GetActorLocation();
+		FActorSpawnParameters spawnParameters;
+		spawnParameters.Instigator = GetInstigator();
+		spawnParameters.Owner = this;
 
-			world->SpawnActor<AFireball>(ToSpawn, spawnLocation, rot, spawnParams);
-		}
+		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
 	}
 }
 
