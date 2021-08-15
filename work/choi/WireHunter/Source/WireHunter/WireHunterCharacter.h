@@ -79,8 +79,13 @@ protected:
 
 	float BaseLookUpRate;
 
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status", Replicated)
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status", ReplicatedUsing=OnRep_Health)
 	float Health;
+
+	UFUNCTION()
+		void OnRep_Health();
+
+	void OnHealthUpdate();
 
 	float MaxHealth;
 
@@ -221,12 +226,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
 
-	void SetHealth(float health) {
-		if (HasAuthority())
-		{
-			Health = health;
-		}
-	}
+	void SetHealth(float health);
 
 	UFUNCTION(BlueprintCallable)
 	float GetMaxHealth() const { return MaxHealth; }

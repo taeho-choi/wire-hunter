@@ -36,8 +36,6 @@ protected:
 		"Bip001-Tail", "Bip001-Tail1", "Bip001-Tail2", "Bip001-Tail3", "Bip001-Tail4",
 	};
 
-	TArray<FVector> Players;
-
 	UPROPERTY(BlueprintReadWrite)
 	TSubclassOf<class AFireball> ProjectileClass;
 
@@ -70,6 +68,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 		USceneComponent* BossRoot;
+
+	TArray<FVector> Players;
 
 public:
 	// Called every frame
@@ -119,7 +119,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetToFace(bool b) { ToFace = b; }
 
-	UFUNCTION(BlueprintCallable, Server, Reliable)
+	UFUNCTION(BlueprintCallable)
 		void DetectKick();
 
 	UFUNCTION(BlueprintCallable)

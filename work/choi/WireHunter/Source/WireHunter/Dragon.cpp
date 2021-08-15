@@ -96,11 +96,16 @@ void ADragon::MakeMap()
 
 FVector ADragon::FindPlayer()
 {
-	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-	//TargetLocation = Players.Last();
+	Players.Empty();
+	
+	for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
+		Players.Push(e->GetActorLocation());
+	}
 
-	//FString healthMessage = FString::Printf(TEXT("HP: %f"), Players.Num());//0
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+	auto idx = rand() % 2;
+	TargetLocation = Players[idx];
+
+	//TargetLocation = Players.Last();
 
 	return TargetLocation;
 }
@@ -301,16 +306,9 @@ void ADragon::BeginPlay()
 
 	MakeMap();
 
-	FacePlayer();
-
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
-	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
-
-	/*for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
-		Players.Push(e->GetActorLocation()); 
-	}*/
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -383,18 +381,31 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void ADragon::Spawn_Implementation()
 {
 	if (ToSpawn) {
-		FVector spawnLocation = GetActorLocation() + (GetControlRotation().Vector() * 100.f) + (GetActorUpVector() * 50.f);
+		FVector spawnLocation = GetActorLocation() + GetActorForwardVector() * 1500.f;
 		FRotator spawnRotation = GetControlRotation();
 
 		FActorSpawnParameters spawnParameters;
 		spawnParameters.Instigator = GetInstigator();
 		spawnParameters.Owner = this;
 
-		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
+		FindPlayer();
+		FacePlayer();
 
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "SpawnTest");
+		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, TargetRotation, spawnParameters);
+
+		//FVector outVelocity = FVector::ZeroVector;   // 결과 Velocity
+		//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
+		//{
+		//	FPredictProjectilePathParams predictParams(20.0f, spawnLocation, outVelocity, 15.0f);   // 20: tracing 보여질 프로젝타일 크기, 15: 시물레이션되는 Max 시간(초)
+		//	predictParams.DrawDebugTime = 15.0f;     //디버그 라인 보여지는 시간 (초)
+		//	predictParams.DrawDebugType = EDrawDebugTrace::Type::ForDuration;  // DrawDebugTime 을 지정하면 EDrawDebugTrace::Type::ForDuration 필요.
+		//	predictParams.OverrideGravityZ = GetWorld()->GetGravityZ();
+		//	FPredictProjectilePathResult result;
+		//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
+		//	
+		//	//spwanedProjectile->ProjectileMovementComponent->AddImpulse(outVelocity); // objectToSend는 발사체
+		//}
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "SpawnTest2");
 }
 
 void ADragon::Lightning()
@@ -414,7 +425,7 @@ void ADragon::Lightning()
 	}
 }
 
-void ADragon::DetectKick_Implementation()
+void ADragon::DetectKick()
 {
 	FHitResult hit;
 
@@ -432,7 +443,7 @@ void ADragon::DetectKick_Implementation()
 		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
 		{
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1.f);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 10.f);
 			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
 
 			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());

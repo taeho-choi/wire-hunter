@@ -9,6 +9,8 @@
 #include "UObject/Constructorhelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "WireHunterCharacter.h"
+#include "EngineUtils.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -22,7 +24,7 @@ AFireball::AFireball()
 	bReplicates = true;
 
 	SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("RootComponent"));
-	SphereComponent->InitSphereRadius(37.5f);
+	SphereComponent->InitSphereRadius(200.f);
 	SphereComponent->SetCollisionProfileName(TEXT("BlockAllDynamic"));
 	RootComponent = SphereComponent;
 
@@ -37,7 +39,7 @@ AFireball::AFireball()
 	if (DefaultMesh.Succeeded()) 
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
-		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 37.5f));
+		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, -140.f));
 		StaticMesh->SetRelativeScale3D(FVector(3.f, 3.f, 3.f));
 	}
 
@@ -53,8 +55,8 @@ AFireball::AFireball()
 
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 1500.f;
-	ProjectileMovementComponent->MaxSpeed = 1500.f;
+	ProjectileMovementComponent->InitialSpeed = 4000.f;
+	ProjectileMovementComponent->MaxSpeed = 4000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
@@ -68,9 +70,20 @@ void AFireball::BeginPlay()
 {
 	Super::BeginPlay();
 
-	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();// +FVector(0.f, 0.f, -100.f);
-	TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
-	SetActorRotation(TargetRotation);
+	//TArray<FVector> Players;
+
+	////Players.Empty();
+
+	//for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
+	//	Players.Push(e->GetActorLocation());
+	//}
+
+	//auto idx = rand() % 2;
+	//TargetLocation = Players[idx];
+
+	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+	/*TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
+	SetActorRotation(TargetRotation);*/
 }
 
 // Called every frame
@@ -78,8 +91,29 @@ void AFireball::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 100));
-	if (GetActorLocation().Z < 0.f) 
+	//InTick();
+
+	/*if (!HasAuthority())
+	{
+		InTick2();
+	}*/
+
+	//ProjectileMovementComponent->ComputeHomingAcceleration(FVector(0.f, 0.f, 0.f), DeltaTime);
+}
+
+void AFireball::InTick_Implementation()
+{
+	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 200));
+	if (GetActorLocation().Z < 0.f)
+	{
+		this->Destroy();
+	}
+}
+
+void AFireball::InTick2_Implementation()
+{
+	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 200));
+	if (GetActorLocation().Z < 0.f)
 	{
 		this->Destroy();
 	}
@@ -98,5 +132,12 @@ void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* ot
 		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
 		Destroy();
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "HitTest");
+	//////////////////////////////////////////////////////////////////////////////////////////
+}
+
+void AFireball::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	/*DOREPLIFETIME(AFireball, Health);*/
 }

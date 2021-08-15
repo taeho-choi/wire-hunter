@@ -183,9 +183,9 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 		UpdateRot(DeltaTime);
 	}
 
-	// Game Over
 	if (Health <= 0.f || GetActorLocation().Z < 7500.f)
 	{
+		Destroy();
 		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 	}
 }
@@ -654,5 +654,47 @@ void AWireHunterCharacter::OnRep_isClimbingTest()
 	else
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("isClimbing-False"));
+	}
+}
+
+void AWireHunterCharacter::OnHealthUpdate()
+{
+	//Client-specific functionality
+	if (IsLocallyControlled())
+	{
+		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+		if (Health <= 0)
+		{
+			FString deathMessage = FString::Printf(TEXT("You have been killed."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, deathMessage);
+		}
+	}
+
+	//Server-specific functionality
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		FString healthMessage = FString::Printf(TEXT("%s now has %f health remaining."), *GetFName().ToString(), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+	}
+
+	//Functions that occur on all machines. 
+	/*
+		Any special functionality that should occur as a result of damage or death should be placed here.
+	*/
+}
+
+void AWireHunterCharacter::OnRep_Health()
+{
+	OnHealthUpdate();
+}
+
+void AWireHunterCharacter::SetHealth(float health)
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		Health = health;
+		OnHealthUpdate();
 	}
 }
