@@ -51,6 +51,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UWidgetComponent* HealthWidget;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UNiagaraComponent* AuraEffect;
+
 public:
 
 	AWireHunterCharacter();

@@ -28,6 +28,7 @@
 #include "PaperSprite.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
 #include "TimerManager.h"
 //R
 #include "Net/UnrealNetwork.h"
@@ -124,6 +125,13 @@ AWireHunterCharacter::AWireHunterCharacter()
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MuzzleParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/MuzzleFlash/NS_MuzzleFlash.NS_MuzzleFlash'"));
 	UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
 	MuzzleParticle = NS_MuzzleFlash;
+
+	AuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("AuraEffect"));
+	AuraEffect->SetupAttachment(this->GetRootComponent());
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> YellowAuraEffect(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Aura/NS_YellowAura.NS_YellowAura'"));
+	UNiagaraSystem* NS_YellowAuraEffect = YellowAuraEffect.Object;
+	AuraEffect->SetAsset(NS_YellowAuraEffect);
 }
 
 void AWireHunterCharacter::BeginPlay()
