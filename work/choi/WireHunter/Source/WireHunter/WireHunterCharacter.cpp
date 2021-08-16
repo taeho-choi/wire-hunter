@@ -28,6 +28,8 @@
 #include "PaperSprite.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
+#include "TimerManager.h"
 //R
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -101,6 +103,9 @@ AWireHunterCharacter::AWireHunterCharacter()
 	PlayerPointer->SetWorldScale3D(FVector(5.f, 5.f, 5.f));
 	PlayerPointer->SetWorldLocation(FVector(0.f, 0.f, 10000.f));
 
+	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthWidget"));
+	HealthWidget->SetupAttachment(this->GetRootComponent());
+
 	Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
 	Gun->SetupAttachment(this->GetMesh(), TEXT("Rifle"));
 
@@ -123,8 +128,13 @@ AWireHunterCharacter::AWireHunterCharacter()
 	UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
 	MuzzleParticle = NS_MuzzleFlash;
 
-	HealthWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBar"));
-	HealthWidget->SetupAttachment(RootComponent);
+
+	AuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("AuraEffect"));
+	AuraEffect->SetupAttachment(this->GetRootComponent());
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> YellowAuraEffect(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Aura/NS_YellowAura.NS_YellowAura'"));
+	UNiagaraSystem* NS_YellowAuraEffect = YellowAuraEffect.Object;
+	AuraEffect->SetAsset(NS_YellowAuraEffect);
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -132,6 +142,9 @@ void AWireHunterCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	TimerBetweenShots = 0.1f;
+
+	UHealthBar* HealthBar = Cast<UHealthBar>(HealthWidget->GetUserWidgetObject());
+	HealthBar->SetOwnerCharacter(this);
 }
 
 void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -221,6 +234,31 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
 }
 
+void AWireHunterCharacter::GhostTrail()
+{
+	UObject* SpawnActor = Cast<UObject>(StaticLoadObject(UObject::StaticClass(), NULL, TEXT("Blueprint'/Game/ThirdPersonCPP/GraphicResources/WHFX/GhostTrail/BP_GhostTrail.BP_GhostTrail'")));
+
+	UBlueprint* GeneratedBP = Cast<UBlueprint>(SpawnActor);
+	if (!SpawnActor)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CANT FIND OBJECT TO SPAWN")));
+		return;
+	}
+
+	UClass* SpawnClass = SpawnActor->StaticClass();
+	if (SpawnClass == NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CLASS == NULL")));
+		return;
+	}
+
+	UWorld* World = GetWorld();
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	World->SpawnActor<AActor>(GeneratedBP->GeneratedClass, GetActorLocation() - FVector(0.f, 0.f, 100.f), GetActorRotation() - FRotator(0.f, 100.f, 0.f), SpawnParams);
+}
+
 void AWireHunterCharacter::SetPointLight_Implementation()
 {
 	FHitResult Hit;
@@ -290,6 +328,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 
 			if(GetLocalRole() == ROLE_Authority)
 			cppHooked = true;
+			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
 		}
 	}
 }
@@ -366,6 +405,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
 	{
 		isWithdrawing = false;
 		cppHooked = false;
+		GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 	}
 
 	cppWire->CableLength = 100.f;

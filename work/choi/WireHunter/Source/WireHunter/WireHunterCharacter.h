@@ -51,6 +51,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UWidgetComponent* HealthWidget;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UNiagaraComponent* AuraEffect;
+
 public:
 
 	AWireHunterCharacter();
@@ -262,6 +265,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	bool GetisClimbing() const { return isClimbing; }
+	void GhostTrail();
+	FTimerHandle SpawnTimerHandle;
 
 	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
