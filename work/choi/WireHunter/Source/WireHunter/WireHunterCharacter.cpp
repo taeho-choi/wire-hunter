@@ -38,6 +38,8 @@ AWireHunterCharacter::AWireHunterCharacter()
 	isClimbing = false;
 	isBulletEmpty = false;
 	cppHooked = false;
+	isEnd = false;
+	isEnd2 = false;
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -151,41 +153,72 @@ void AWireHunterCharacter::GetLifetimeReplicatedProps(TArray< FLifetimeProperty 
 	DOREPLIFETIME(AWireHunterCharacter, cppWallNormal);
 	DOREPLIFETIME(AWireHunterCharacter, MoveForwardValue);
 	DOREPLIFETIME(AWireHunterCharacter, MoveRightValue);
+
+	DOREPLIFETIME(AWireHunterCharacter, isEnd);
+	DOREPLIFETIME(AWireHunterCharacter, isEnd2);
 }
 
 void AWireHunterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!cppHooked)
+	if (!cppHooked)//
 	{
 		SetPointLight();
 	}
 
 	if (isWithdrawing)
 	{
-		Withdraw();
+		WithdrawServer();
+	}
+
+	if (isEnd)
+	{
+		OffWithdrawServer();
 	}
 
 	if (cppHooked)
 	{
-		WireSwing();
+		WireSwingServer();
 	}
 
 	if (isClimbing)
 	{
-		UpdateWallNormal();
+		UpdateWallNormalServer();
 
-		LedgeTrace();
+		UpdateRotServer(DeltaTime);
 
-		UpdateRot(DeltaTime);
+		LedgeTraceServer();
 	}
+
+	if (isEnd2)
+	{
+		PlayLedgeAnimServer();
+	}
+
+	/// <summary>
+	/// /
+	/// </summary>
+	/// <param name="DeltaTime"></param>
 
 	if (GetActorLocation().Z < 7500.f)
 	{
-		Destroy();
-		UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+		if (IsLocallyControlled())
+		{
+			Destroy();
+		}
+
+		if (GetLocalRole() == ROLE_Authority)
+		{
+			Destroy();
+
+			if (GetFName() == "BP_WHCharacter_C_0")
+			{
+				UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+			}
+		}
 	}
+
 }
 
 void AWireHunterCharacter::SetPointLight_Implementation()
@@ -223,11 +256,11 @@ void AWireHunterCharacter::SetPointLight_Implementation()
 	}
 }
 
-void AWireHunterCharacter::HookWire_Implementation()
+void AWireHunterCharacter::HookWireServer_Implementation()
 {
 	if (cppHooked)
 	{
-		BreakHook();
+		BreakHookServer();
 	}
 	else
 	{
@@ -242,54 +275,98 @@ void AWireHunterCharacter::HookWire_Implementation()
 
 		if (Hit.bBlockingHit)
 		{
-			/*if (!HasAuthority())
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST_HOOKWIRE"));
-			}*/
 			WirePointLight->SetVisibility(false);
 
 			cppWire->SetVisibility(true);
 
+			if (GetLocalRole() == ROLE_Authority)
 			cppHookLocation = Hit.Location;
 
-			FVector NewLocation;
-			NewLocation = FMath::VInterpTo(cppWire->GetComponentLocation(), cppHookLocation, GetWorld()->GetDeltaSeconds(), 50.f);
 			cppWire->SetWorldLocation(cppHookLocation);
 			float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
+			if (GetLocalRole() == ROLE_Authority)
 			cppHookedWireLength = NewWireLength;
 			cppWire->CableLength = cppHookedWireLength;
-			cppHooked = true;
 
-			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
+			if(GetLocalRole() == ROLE_Authority)
+			cppHooked = true;
 		}
 	}
 }
 
-void AWireHunterCharacter::PressWithdraw_Implementation()
+bool AWireHunterCharacter::HookWireServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::PressWithdrawServer_Implementation()
+{
+	PressWithdrawMulti();
+}
+
+bool AWireHunterCharacter::PressWithdrawServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::PressWithdrawMulti_Implementation()
 {
 	if (cppHooked)
 	{
-		isWithdrawing = true;
+		if (GetLocalRole() == ROLE_Authority)
+		{
+			isWithdrawing = true;
+		}
 	}
 }
 
-void AWireHunterCharacter::Withdraw_Implementation()
+void AWireHunterCharacter::OffWithdrawServer_Implementation()
+{
+	if(GetLocalRole()==ROLE_Authority)
+	isEnd = false;
+
+	OffWithdrawMulti();
+}
+
+bool AWireHunterCharacter::OffWithdrawServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::OffWithdrawMulti_Implementation()
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		isWithdrawing = false;
+	}
+}
+
+void AWireHunterCharacter::WithdrawServer_Implementation()
 {
 	FVector distance = GetActorLocation() - cppHookLocation;
 	cppWire->CableLength = distance.Size();
 	FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
 	LaunchCharacter(launchVel, true, true);
 
-	if (distance.Size() < 60.f)
+	if (distance.Size() < 80.f)
 	{
-		isWithdrawing = false;
+		if (GetLocalRole() == ROLE_Authority)
+		isEnd = true;
 	}
 }
 
-void AWireHunterCharacter::BreakHook_Implementation()
+bool AWireHunterCharacter::WithdrawServer_Validate()
 {
-	cppHooked = false;
-	isWithdrawing = false;
+	return true;
+}
+
+void AWireHunterCharacter::BreakHookServer_Implementation()
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		isWithdrawing = false;
+		cppHooked = false;
+	}
 
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
@@ -297,7 +374,12 @@ void AWireHunterCharacter::BreakHook_Implementation()
 	cppWire->SetVisibility(false);
 }
 
-void AWireHunterCharacter::WireSwing_Implementation()
+bool AWireHunterCharacter::BreakHookServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::WireSwingServer_Implementation()
 {
 	cppWire->SetWorldLocation(cppHookLocation);
 	FVector dist = GetActorLocation() - cppHookLocation;
@@ -308,10 +390,14 @@ void AWireHunterCharacter::WireSwing_Implementation()
 	{
 		cppWire->CableLength = cppHookedWireLength - 300.f;
 	}
-	GetCharacterMovement()->AirControl = 1.f;
 }
 
-void AWireHunterCharacter::Climb_Implementation()
+bool AWireHunterCharacter::WireSwingServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::ClimbServer_Implementation()
 {
 	auto temp = GetCharacterMovement();
 
@@ -328,9 +414,9 @@ void AWireHunterCharacter::Climb_Implementation()
 
 		if (Hit.bBlockingHit)
 		{
-			isClimbing = true;
+			ClimbMulti(true);
 
-			BreakHook();
+			BreakHookServer();
 
 			temp->SetMovementMode(MOVE_Flying);
 
@@ -339,15 +425,34 @@ void AWireHunterCharacter::Climb_Implementation()
 	}
 	else
 	{
-		isClimbing = false;
+		ClimbMulti(false);
 
-		temp->AddForce(cppWallNormal * 20000000);////////////////////////////////////
+		temp->AddForce(cppWallNormal * 4000);////////////////////////////////////
 
 		temp->SetMovementMode(MOVE_Walking);
 	}
 }
 
-void AWireHunterCharacter::UpdateWallNormal_Implementation()
+bool AWireHunterCharacter::ClimbServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::ClimbMulti_Implementation(bool b)
+{
+	if (b)
+	{
+		if(GetLocalRole() == ROLE_Authority)
+		isClimbing = true;
+	}
+	else
+	{
+		if (GetLocalRole() == ROLE_Authority)
+		isClimbing = false;
+	}
+}
+
+void AWireHunterCharacter::UpdateWallNormalServer_Implementation()
 {
 	FHitResult Hit;
 
@@ -360,11 +465,91 @@ void AWireHunterCharacter::UpdateWallNormal_Implementation()
 
 	if (Hit.bBlockingHit)
 	{
+		if(GetLocalRole() ==ROLE_Authority)
 		cppWallNormal = Hit.Normal;
 	}
 }
 
-void AWireHunterCharacter::MoveForward(float Value)////////////////////////////////////super?&ÀÌ°Å Æ½ »°´Âµ¥ ¿Ö´ï?
+bool AWireHunterCharacter::UpdateWallNormalServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::UpdateRotServer_Implementation(float DeltaTime)
+{
+	FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
+	FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
+	SetActorRotation(SmoothRotator);
+}
+
+bool AWireHunterCharacter::UpdateRotServer_Validate(float DeltaTime)
+{
+	return true;
+}
+
+void AWireHunterCharacter::LedgeTraceServer_Implementation()//ÀÌ°Å °î¼±?
+{
+	FHitResult Hit;
+
+	const float ClimbRange = 1000.f;
+	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
+	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
+	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
+	QueryParams.AddIgnoredActor(this);
+	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
+
+	if (!Hit.bBlockingHit)
+	{
+		if (GetLocalRole() == ROLE_Authority)
+		isClimbing = false;
+
+		if (GetLocalRole() == ROLE_Authority)
+		isEnd2 = true;
+
+		SetActorRotation(UKismetMathLibrary::MakeRotator(0.f, 0.f, GetActorRotation().Yaw));
+	}
+}
+
+bool AWireHunterCharacter::LedgeTraceServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::PlayLedgeAnimServer_Implementation()
+{
+	if (GetLocalRole() == ROLE_Authority)
+	isEnd2 = false;
+
+	PlayLedgeAnimMulti();
+}
+
+bool AWireHunterCharacter::PlayLedgeAnimServer_Validate()
+{
+	return true;
+}
+
+void AWireHunterCharacter::PlayLedgeAnimMulti_Implementation()
+{
+	PlayAnimMontage(LedgeClimb, 1, NAME_None);
+}
+
+void AWireHunterCharacter::KnockbackServer_Implementation(FVector force)
+{
+	auto temp = GetCharacterMovement();
+
+	temp->AddForce(force);
+
+	BreakHookServer();
+
+	temp->SetMovementMode(MOVE_Walking);
+}
+
+bool AWireHunterCharacter::KnockbackServer_Validate(FVector force)
+{
+	return true;
+}
+
+void AWireHunterCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.f))
 	{
@@ -375,14 +560,24 @@ void AWireHunterCharacter::MoveForward(float Value)/////////////////////////////
 			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		
 			AddMovementInput(Direction, Value);
-
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("walking"));
 		}
 	}
 
 	if (isClimbing)
 	{
-		InMoveForward(Value);
+		//InMoveForward(Value);
+		if ((int)Value * 10 < GetMoveForwardValue())
+		{
+			auto val = GetMoveForwardValue() - 1;
+			if(GetLocalRole() == ROLE_Authority)
+			SetMoveForwardValue(val);
+		}
+		else if ((int)Value * 10 > GetMoveForwardValue())
+		{
+			auto val = GetMoveForwardValue() + 1;
+			if (GetLocalRole() == ROLE_Authority)
+			SetMoveForwardValue(val);
+		}
 	}
 }
 
@@ -390,11 +585,15 @@ void AWireHunterCharacter::InMoveForward_Implementation(float Value)
 {
 	if ((int)Value * 10 < GetMoveForwardValue())
 	{
-		SetMoveForwardValue(GetMoveForwardValue() - 1);
+		auto val = GetMoveForwardValue() - 1;
+		if (GetLocalRole() == ROLE_Authority)
+			SetMoveForwardValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveForwardValue())
 	{
-		SetMoveForwardValue(GetMoveForwardValue() + 1);
+		auto val = GetMoveForwardValue() + 1;
+		if (GetLocalRole() == ROLE_Authority)
+			SetMoveForwardValue(val);
 	}
 }
 
@@ -414,56 +613,36 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 	if (isClimbing)
 	{
-		InMoveRight(Value);
+		//InMoveRight(Value);
+		if ((int)Value * 10 < GetMoveRightValue())
+		{
+			auto val = GetMoveRightValue() - 1;
+			if (GetLocalRole() == ROLE_Authority)
+				SetMoveRightValue(val);
+		}
+		else if ((int)Value * 10 > GetMoveRightValue())
+		{
+			auto val = GetMoveRightValue() + 1;
+			if (GetLocalRole() == ROLE_Authority)
+				SetMoveRightValue(val);
+		}
 	}
-
 }
 
 void AWireHunterCharacter::InMoveRight_Implementation(float Value)
 {
 	if ((int)Value * 10 < GetMoveRightValue())
 	{
-		SetMoveRightValue(GetMoveRightValue() - 1);
+		auto val = GetMoveRightValue() - 1;
+		if (GetLocalRole() == ROLE_Authority)
+			SetMoveRightValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveRightValue())
 	{
-		SetMoveRightValue(GetMoveRightValue() + 1);
+		auto val = GetMoveRightValue() + 1;
+		if (GetLocalRole() == ROLE_Authority)
+			SetMoveRightValue(val);
 	}
-}
-
-void AWireHunterCharacter::LedgeTrace_Implementation()//ÀÌ°Å °î¼±?
-{
-	FHitResult Hit;
-	
-	const float ClimbRange = 1000.f;
-	const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
-	const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
-	FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
-	QueryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-
-	if (!Hit.bBlockingHit)
-	{
-		isClimbing = false;
-
-		PlayLedgeAnim();
-
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-
-		SetActorRotation(UKismetMathLibrary::MakeRotator(0.f, 0.f, GetActorRotation().Yaw));
-	}
-}
-
-void AWireHunterCharacter::PlayLedgeAnim_Implementation()
-{
-	PlayAnimMontage(LedgeClimb, 1, NAME_None);
-}
-
-void AWireHunterCharacter::UpdateRot_Implementation(float DeltaTime)
-{
-	FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
-	FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
-	SetActorRotation(SmoothRotator);
 }
 
 void AWireHunterCharacter::OnResetVR()
@@ -511,13 +690,13 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AWireHunterCharacter::StopFire);
 
 	// Bind WireShot
-	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWire);
+	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWireServer);
 
 	// Bind Launch
-	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::Climb);
+	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::ClimbServer);
 
 	// Bind Withdraw
-	PlayerInputComponent->BindAction("Withdraw", IE_Pressed, this, &AWireHunterCharacter::PressWithdraw);
+	PlayerInputComponent->BindAction("Withdraw", IE_Pressed, this, &AWireHunterCharacter::PressWithdrawServer);
 
 	// Reload
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AWireHunterCharacter::Reload);
@@ -555,6 +734,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
 
+		if(GetLocalRole() == ROLE_Authority)
 		Bullets -= 1;
 
 		FHitResult Hit;
@@ -575,6 +755,11 @@ void AWireHunterCharacter::FireShot_Implementation()
 			GenParticles(Hit, world);
 		}
 	}
+	else
+	{
+		if (GetLocalRole() == ROLE_Authority)
+			isBulletEmpty = true;
+	}
 }
 
 void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* world)
@@ -584,10 +769,12 @@ void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* w
 
 void AWireHunterCharacter::Reload_Implementation()
 {
+	if (GetLocalRole() == ROLE_Authority)
 	isBulletEmpty = false;
 
 	PlayReloadAnim();
 
+	if (GetLocalRole() == ROLE_Authority)
 	Bullets = MaxBullets;
 }
 
@@ -596,64 +783,17 @@ void AWireHunterCharacter::PlayReloadAnim_Implementation()
 	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
-void AWireHunterCharacter::Knockback_Implementation(FVector force)
-{
-	auto temp = GetCharacterMovement();
-
-	temp->AddForce(force);
-
-	BreakHook();
-
-	temp->SetMovementMode(MOVE_Walking);
-}
-
 float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) 
 {
 	float damageApplied = Health - DamageTaken;
 	SetHealth(damageApplied);
 
-	Knockback((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
+	KnockbackServer((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
 
 	return damageApplied;
 }
 
 //R
-
-void AWireHunterCharacter::OnRep_isWithdrawingTest()
-{
-	if (isWithdrawing)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("isWithdrawing-True"));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("isWithdrawing-False"));
-	}
-}
-
-void AWireHunterCharacter::OnRep_cppHookedTest()
-{
-	if (cppHooked)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("cppHooked-True"));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("cppHooked-False"));
-	}
-}
-
-void AWireHunterCharacter::OnRep_isClimbingTest()
-{
-	if (isClimbing)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("isClimbing-True"));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("isClimbing-False"));
-	}
-}
 
 void AWireHunterCharacter::OnHealthUpdate()
 {

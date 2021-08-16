@@ -103,23 +103,14 @@ protected:
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Status")
 	int MoveRightValue;
 
-	UPROPERTY(ReplicatedUsing= OnRep_isWithdrawingTest, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
 	bool isWithdrawing;
 
-	UFUNCTION()
-		void OnRep_isWithdrawingTest();
-
-	UPROPERTY(ReplicatedUsing= OnRep_isClimbingTest, BlueprintReadWrite, EditAnywhere, Category = "Floating")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditAnywhere, Category = "Floating")
 	bool isClimbing;
 
-	UFUNCTION()
-		void OnRep_isClimbingTest();
-
-	UPROPERTY(ReplicatedUsing= OnRep_cppHookedTest, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
+	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	bool cppHooked;
-
-	UFUNCTION()
-		void OnRep_cppHookedTest();
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "WireSystem")
 	float cppHookedWireLength;
@@ -132,50 +123,102 @@ protected:
 
 	FTimerHandle TimerHandle_HandleRefire;
 
+	UPROPERTY(Replicated)
+	bool isEnd;
+
+	UPROPERTY(Replicated)
+	bool isEnd2;
+
 public:
 
 	UFUNCTION(Client, Reliable)
 	void SetPointLight();
 
-	UFUNCTION(Server, Reliable)
-	void HookWire();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void HookWireServer();
+	void HookWireServer_Implementation();
+	bool HookWireServer_Validate();
 
-	UFUNCTION(Server, Reliable)
-	void PressWithdraw();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void BreakHookServer();
+	void BreakHookServer_Implementation();
+	bool BreakHookServer_Validate();
 
-	UFUNCTION(Server, Reliable)
-	void Withdraw();
-
-	UFUNCTION(Server, Reliable)
-	void WireSwing();
-
-	UFUNCTION(Server, Reliable)
-	void BreakHook();
-
-	UFUNCTION(Server, Reliable)
-	void Climb();
-
-	UFUNCTION(Server, Reliable)
-	void UpdateWallNormal();
-
-	void MoveForward(float Value);
-
-	UFUNCTION(Server, Reliable)
-	void InMoveForward(float value);
-
-	void MoveRight(float Value);
-
-	UFUNCTION(Server, Reliable)
-	void InMoveRight(float value);
-
-	UFUNCTION(Server, Reliable)
-	void UpdateRot(float DeltaTime);
-
-	UFUNCTION(Server, Reliable)
-	void LedgeTrace();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void PressWithdrawServer();
+	void PressWithdrawServer_Implementation();
+	bool PressWithdrawServer_Validate();
 
 	UFUNCTION(NetMulticast, Reliable)
-	void PlayLedgeAnim();
+	void PressWithdrawMulti();
+	void PressWithdrawMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void WithdrawServer();
+	void WithdrawServer_Implementation();
+	bool WithdrawServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void OffWithdrawServer();
+	void OffWithdrawServer_Implementation();
+	bool OffWithdrawServer_Validate();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void OffWithdrawMulti();
+	void OffWithdrawMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void WireSwingServer();
+	void WireSwingServer_Implementation();
+	bool WireSwingServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ClimbServer();
+	void ClimbServer_Implementation();
+	bool ClimbServer_Validate();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void ClimbMulti(bool b);
+	void ClimbMulti_Implementation(bool b);
+	
+	UFUNCTION(Server, Reliable, WithValidation)
+	void UpdateWallNormalServer();
+	void UpdateWallNormalServer_Implementation();
+	bool UpdateWallNormalServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void UpdateRotServer(float DeltaTime);
+	void UpdateRotServer_Implementation(float DeltaTime);
+	bool UpdateRotServer_Validate(float DeltaTime);
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void LedgeTraceServer();
+	void LedgeTraceServer_Implementation();
+	bool LedgeTraceServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void PlayLedgeAnimServer();
+	void PlayLedgeAnimServer_Implementation();
+	bool PlayLedgeAnimServer_Validate();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void PlayLedgeAnimMulti();
+	void PlayLedgeAnimMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void KnockbackServer(FVector force);
+	void KnockbackServer_Implementation(FVector force);
+	bool KnockbackServer_Validate(FVector force);
+
+	void MoveForward(float Value);//
+
+	UFUNCTION(Server, Reliable)
+	void InMoveForward(float value);//
+
+	void MoveRight(float Value);//
+
+	UFUNCTION(Server, Reliable)
+	void InMoveRight(float value);//
 
 	UFUNCTION(Server, Reliable, BlueprintCallable)
 	void StartFire();
@@ -194,9 +237,6 @@ public:
 
 	UFUNCTION(NetMulticast, Reliable)
 	void PlayReloadAnim();
-
-	UFUNCTION(Server, Reliable)
-	void Knockback(FVector force);
 
 	UFUNCTION(BlueprintCallable)
 	float GetBullets() const { return Bullets; }

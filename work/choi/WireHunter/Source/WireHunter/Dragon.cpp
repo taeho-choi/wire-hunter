@@ -445,7 +445,7 @@ void ADragon::DetectKick()
 		{
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
 			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 10.f);
-			TargetCharacter->Knockback((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
+			TargetCharacter->KnockbackServer((TargetRotation.Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
 
 			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
 
