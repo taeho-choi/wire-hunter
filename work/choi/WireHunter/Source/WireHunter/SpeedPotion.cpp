@@ -30,11 +30,11 @@ void ASpeedPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, A
 	if (PickupMesh->IsVisible() == true && OtherActor->IsA(AWireHunterCharacter::StaticClass()))
 	{
 		AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
-		TargetCharacter->SetHealth(TargetCharacter->GetHealth() + 10.0f);
 		PickupMesh->SetVisibility(false);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Ate SpeedPotion!"));
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickParticle, GetTransform());
+		TargetCharacter->RedAuraEffect->SetVisibility(true);
 	}
 }
 

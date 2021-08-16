@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "WireHunterCharacter.h"
+#include "NiagaraComponent.h"
+#include "NiagaraSystem.h"
 #include "PickUp.generated.h"
 
 
