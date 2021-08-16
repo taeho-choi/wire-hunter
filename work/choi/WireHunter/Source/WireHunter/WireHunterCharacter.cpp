@@ -50,13 +50,15 @@ AWireHunterCharacter::AWireHunterCharacter()
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
 
+	GetCharacterMovement()->bUseControllerDesiredRotation = true;
+
 	// Don't rotate when the controller rotates. Let that just affect the camera.
-	bUseControllerRotationPitch = false;
-	bUseControllerRotationYaw = false;
-	bUseControllerRotationRoll = false;
+	bUseControllerRotationPitch = true;
+	bUseControllerRotationYaw = true;
+	bUseControllerRotationRoll = true;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
+	GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...	
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
@@ -335,7 +337,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 			float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
 			cppHookedWireLength = NewWireLength;
 			cppWire->CableLength = cppHookedWireLength;
-
+			
 			cppHooked = true;
 			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
 			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
@@ -455,7 +457,7 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 		if (Hit.bBlockingHit)
 		{
 			ClimbMulti(true);
-
+			GetCharacterMovement()->bUseControllerDesiredRotation = false;
 			BreakHookServer();
 
 			temp->SetMovementMode(MOVE_Flying);
@@ -466,8 +468,9 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 	else
 	{
 		ClimbMulti(false);
+		GetCharacterMovement()->bUseControllerDesiredRotation = true;
 
-		temp->AddForce(cppWallNormal * 4000);////////////////////////////////////
+		temp->AddForce(cppWallNormal * 4000000);////////////////////////////////////
 
 		temp->SetMovementMode(MOVE_Walking);
 	}
@@ -516,7 +519,7 @@ bool AWireHunterCharacter::UpdateWallNormalServer_Validate()
 void AWireHunterCharacter::UpdateRotServer_Implementation(float DeltaTime)
 {
 	FRotator TargetRotator = FRotator(GetActorRotation().Pitch, UKismetMathLibrary::MakeRotFromX(GetCppWallNormal()).Yaw, GetActorRotation().Roll) - FRotator(0, 180, 0);
-	FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 50.f);
+	FRotator SmoothRotator = FMath::RInterpTo(GetActorRotation(), TargetRotator, DeltaTime, 15.f);
 	SetActorRotation(SmoothRotator);
 }
 
@@ -847,4 +850,28 @@ void AWireHunterCharacter::SetHealth(float health)
 		Health = health;
 		OnHealthUpdate();
 	}
+}
+
+void AWireHunterCharacter::SetYellowAuraOff()
+{
+	YellowAuraEffect->SetVisibility(false);
+	GetWorldTimerManager().ClearTimer(TimerHandle_YellowAura);
+}
+
+void AWireHunterCharacter::SetRedAuraOff()
+{
+	RedAuraEffect->SetVisibility(false);
+	GetWorldTimerManager().ClearTimer(TimerHandle_RedAura);
+}
+
+void AWireHunterCharacter::SetYellowAuraOn()
+{
+	YellowAuraEffect->SetVisibility(true);
+	GetWorldTimerManager().SetTimer(TimerHandle_YellowAura, this, &AWireHunterCharacter::SetYellowAuraOff, 5.f, false, 20.f);
+}
+
+void AWireHunterCharacter::SetRedAuraOn()
+{
+	RedAuraEffect->SetVisibility(true);
+	GetWorldTimerManager().SetTimer(TimerHandle_RedAura, this, &AWireHunterCharacter::SetRedAuraOff, 5.f, false, 20.f);
 }

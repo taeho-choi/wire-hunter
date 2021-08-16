@@ -34,7 +34,7 @@ void ASpeedPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp, A
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Ate SpeedPotion!"));
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickParticle, GetTransform());
-		TargetCharacter->RedAuraEffect->SetVisibility(true);
+		TargetCharacter->SetRedAuraOn();
 	}
 }
 

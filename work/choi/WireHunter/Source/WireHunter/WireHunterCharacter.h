@@ -129,6 +129,8 @@ protected:
 	FVector cppWallNormal;
 
 	FTimerHandle TimerHandle_HandleRefire;
+	FTimerHandle TimerHandle_YellowAura;
+	FTimerHandle TimerHandle_RedAura;
 
 	UPROPERTY(Replicated)
 	bool isEnd;
@@ -216,6 +218,12 @@ public:
 	void KnockbackServer(FVector force);
 	void KnockbackServer_Implementation(FVector force);
 	bool KnockbackServer_Validate(FVector force);
+
+	UFUNCTION()
+	void SetYellowAuraOn();
+	void SetRedAuraOn();
+	void SetYellowAuraOff();
+	void SetRedAuraOff();
 
 	void MoveForward(float Value);//
 

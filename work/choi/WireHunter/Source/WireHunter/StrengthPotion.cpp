@@ -34,7 +34,7 @@ void AStrengthPotion::OnPlayerEnterPickupBox(UPrimitiveComponent* OverlappedComp
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Ate StrengthPotion!"));
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &APickUp::RandomSpawn, 5.f, false, 5.f);
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), PickParticle, GetTransform());
-		TargetCharacter->YellowAuraEffect->SetVisibility(true);
+		TargetCharacter->SetYellowAuraOn();
 	}
 
 
