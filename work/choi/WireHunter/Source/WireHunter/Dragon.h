@@ -27,7 +27,7 @@ protected:
 	UPROPERTY(Replicated, VisibleInstanceOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
-		float MaxHealth = 10;
+		float MaxHealth = 1000;
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 		TArray<FString> BoneList = 
@@ -159,8 +159,11 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		float GetMaxHealth() const { return MaxHealth; }
+	UFUNCTION(BlueprintCallable)
+		void CheatHealth() { Health = -1; }
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
+
 
 	UFUNCTION(BlueprintCallable, Server, Reliable)
 		void Spawn();

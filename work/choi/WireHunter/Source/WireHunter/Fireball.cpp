@@ -11,6 +11,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "WireHunterCharacter.h"
 #include "EngineUtils.h"
+#include "Dragon.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"

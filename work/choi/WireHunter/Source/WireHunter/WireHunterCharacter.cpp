@@ -50,15 +50,15 @@ AWireHunterCharacter::AWireHunterCharacter()
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
 
-	GetCharacterMovement()->bUseControllerDesiredRotation = true;
+	//GetCharacterMovement()->bUseControllerDesiredRotation = true;
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
-	bUseControllerRotationPitch = true;
+	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = true;
 	bUseControllerRotationRoll = true;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...	
+	//GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...	
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
@@ -458,6 +458,7 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 		{
 			ClimbMulti(true);
 			GetCharacterMovement()->bUseControllerDesiredRotation = false;
+			bUseControllerRotationYaw = false;
 			BreakHookServer();
 
 			temp->SetMovementMode(MOVE_Flying);
@@ -469,6 +470,7 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 	{
 		ClimbMulti(false);
 		GetCharacterMovement()->bUseControllerDesiredRotation = true;
+		bUseControllerRotationYaw = true;
 
 		temp->AddForce(cppWallNormal * 4000000);////////////////////////////////////
 

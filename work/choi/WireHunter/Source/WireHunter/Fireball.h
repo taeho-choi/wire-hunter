@@ -4,7 +4,6 @@
 
 #include "EngineMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Dragon.h"
 
 #include "Fireball.generated.h"
 
