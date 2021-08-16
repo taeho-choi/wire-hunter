@@ -65,7 +65,7 @@ void ALightning::Tick(float DeltaTime)
 
 void ALightning::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (!OtherActor->IsA(ABoss::StaticClass())) {
+	/*if (!OtherActor->IsA(ABoss::StaticClass())) {
 		if (OtherActor->IsA(AWireHunterCharacter::StaticClass())) {
 			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(OtherActor);
 			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 1);
@@ -77,5 +77,5 @@ void ALightning::OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, 
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("1111Attacked"));
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle, FTransform(GetActorRotation(), GetActorLocation()));
 		this->Destroy();
-	}
+	}*/
 }

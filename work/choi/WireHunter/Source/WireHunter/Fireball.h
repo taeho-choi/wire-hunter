@@ -2,8 +2,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Dragon.h"
+
 #include "Fireball.generated.h"
 
 UCLASS()
@@ -15,48 +17,46 @@ public:
 	// Sets default values for this actor's properties
 	AFireball();
 
-	FVector TargetLocation;
-	FRotator TargetRotation;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")//to collision
+		class USphereComponent* SphereComponent;//전방선언
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UStaticMeshComponent* StaticMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UProjectileMovementComponent* ProjectileMovementComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
+		class UParticleSystem* ExplosionEffect;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
+		TSubclassOf<class UDamageType> DamageType; 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
+		float Damage;
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(Client, Reliable)
+	void InTick();
+
+	UFUNCTION(Client, Reliable)
+	void InTick2();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(EditAnywhere)
-		USceneComponent* FireballRoot;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-		UStaticMeshComponent* FireballMesh;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-		UShapeComponent* SphereCollision;
-
-	UPROPERTY(EditAnywhere, Category = "Effects")
-		UParticleSystem* ImpactParticle;
-
-	UFUNCTION()
-		virtual void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-
-	//R
-
-	/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-		class UProjectileMovementComponent* ProjectileMovementComponent;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Damage")
-		TSubclassOf<class UDamageType> DamageType;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Damage")
-		float Damage;
-
-protected:
 	virtual void Destroyed() override;
 
 	UFUNCTION(Category = "Projectile")
-		void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-*/
+		void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit);
 
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+private:
+
+	FVector TargetLocation;
+	FRotator TargetRotation;
 };

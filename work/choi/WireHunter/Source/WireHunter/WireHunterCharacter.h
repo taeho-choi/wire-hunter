@@ -51,9 +51,6 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UWidgetComponent* HealthWidget;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
-	class UNiagaraComponent* AuraEffect;
-
 public:
 
 	AWireHunterCharacter();
@@ -82,8 +79,13 @@ protected:
 
 	float BaseLookUpRate;
 
-	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status", ReplicatedUsing=OnRep_CurrentHealth)
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Status", ReplicatedUsing=OnRep_Health)
 	float Health;
+
+	UFUNCTION()
+		void OnRep_Health();
+
+	void OnHealthUpdate();
 
 	float MaxHealth;
 
@@ -102,7 +104,7 @@ protected:
 	int MoveRightValue;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly, Category = "Floating")
-	bool isWithdrawing;/////////////////////////////////////////////////////////////////
+	bool isWithdrawing;
 
 	UPROPERTY(Replicated, BlueprintReadWrite, EditAnywhere, Category = "Floating")
 	bool isClimbing;
@@ -121,53 +123,102 @@ protected:
 
 	FTimerHandle TimerHandle_HandleRefire;
 
+	UPROPERTY(Replicated)
+	bool isEnd;
+
+	UPROPERTY(Replicated)
+	bool isEnd2;
+
 public:
-
-	void Reloaded();
-
-	bool GetCppHooked() const { return cppHooked; }
-	void SetCppHooked(bool val) { cppHooked = val; }
-
-	FVector GetCppHookLocation() const { return cppHookLocation; }
-	void SetCppHookLocation(FVector val) { cppHookLocation = val; }
-
-	float GetCppHookedWireLength() const { return cppHookedWireLength; }
-	void SetCppHookedWireLength(float val) { cppHookedWireLength = val; }
-
-	FVector GetCppWallNormal() const { return cppWallNormal; }
-	void SetCppWallNormal(FVector val) { cppWallNormal = val; }
 
 	UFUNCTION(Client, Reliable)
 	void SetPointLight();
 
-	UFUNCTION(Server, Reliable)
-	void HookWire();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void HookWireServer();
+	void HookWireServer_Implementation();
+	bool HookWireServer_Validate();
 
-	UFUNCTION(Server, Reliable)
-	void PressWithdraw();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void BreakHookServer();
+	void BreakHookServer_Implementation();
+	bool BreakHookServer_Validate();
 
-	UFUNCTION(NetMulticast, Reliable)
-	void Withdraw();
-
-	//UFUNCTION(Server, Reliable)
-	void BreakHook();
-
-	void WireSwing();
-
-	UFUNCTION(Server, Reliable)
-	void Climb();
-
-	UFUNCTION(Server, Reliable)
-	void UpdateWallNormal();
+	UFUNCTION(Server, Reliable, WithValidation)
+	void PressWithdrawServer();
+	void PressWithdrawServer_Implementation();
+	bool PressWithdrawServer_Validate();
 
 	UFUNCTION(NetMulticast, Reliable)
-	void MoveForward(float Value);
+	void PressWithdrawMulti();
+	void PressWithdrawMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void WithdrawServer();
+	void WithdrawServer_Implementation();
+	bool WithdrawServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void OffWithdrawServer();
+	void OffWithdrawServer_Implementation();
+	bool OffWithdrawServer_Validate();
 
 	UFUNCTION(NetMulticast, Reliable)
-	void MoveRight(float Value);
+	void OffWithdrawMulti();
+	void OffWithdrawMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void WireSwingServer();
+	void WireSwingServer_Implementation();
+	bool WireSwingServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ClimbServer();
+	void ClimbServer_Implementation();
+	bool ClimbServer_Validate();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void ClimbMulti(bool b);
+	void ClimbMulti_Implementation(bool b);
+	
+	UFUNCTION(Server, Reliable, WithValidation)
+	void UpdateWallNormalServer();
+	void UpdateWallNormalServer_Implementation();
+	bool UpdateWallNormalServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void UpdateRotServer(float DeltaTime);
+	void UpdateRotServer_Implementation(float DeltaTime);
+	bool UpdateRotServer_Validate(float DeltaTime);
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void LedgeTraceServer();
+	void LedgeTraceServer_Implementation();
+	bool LedgeTraceServer_Validate();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void PlayLedgeAnimServer();
+	void PlayLedgeAnimServer_Implementation();
+	bool PlayLedgeAnimServer_Validate();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void PlayLedgeAnimMulti();
+	void PlayLedgeAnimMulti_Implementation();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void KnockbackServer(FVector force);
+	void KnockbackServer_Implementation(FVector force);
+	bool KnockbackServer_Validate(FVector force);
+
+	void MoveForward(float Value);//
 
 	UFUNCTION(Server, Reliable)
-	void LedgeTrace();
+	void InMoveForward(float value);//
+
+	void MoveRight(float Value);//
+
+	UFUNCTION(Server, Reliable)
+	void InMoveRight(float value);//
 
 	UFUNCTION(Server, Reliable, BlueprintCallable)
 	void StartFire();
@@ -184,26 +235,17 @@ public:
 	UFUNCTION(Server, Reliable)
 	void Reload();
 
-	void Knockback(FVector force);
-
-	float GetHealth() const { return Health; }
-	void SetHealth(float healthValue);
-
-	float GetMaxHealth() const { return MaxHealth; }
-	void SetMaxHealth(float val) { MaxHealth = val; }
-
-	float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	UFUNCTION(NetMulticast, Reliable)
+	void PlayReloadAnim();
 
 	UFUNCTION(BlueprintCallable)
 	float GetBullets() const { return Bullets; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetBullets(int val) { Bullets = val; }
+	void SetBullets(int val) { Bullets = val; }
 
 	UFUNCTION(BlueprintCallable)
-		float GetMaxBullets() const { return MaxBullets; }
-
-	void SetMaxBullets(int val) { MaxBullets = val; }
+	float GetMaxBullets() const { return MaxBullets; }
 
 	UFUNCTION(BlueprintCallable)
 	int GetMoveForwardValue() const { return MoveForwardValue; }
@@ -218,25 +260,25 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool GetisWithdrawing() const { return isWithdrawing; }
 
-	void SetisWithdrawing(bool val) { isWithdrawing = val; }
-
 	UFUNCTION(BlueprintCallable)
 	bool GetisClimbing() const { return isClimbing; }
 
 	UFUNCTION(BlueprintCallable)
-	void GhostTrail();
-	FTimerHandle SpawnTimerHandle;
+	float GetHealth() const { return Health; }
 
-	void SetisClimbing(bool val) { isClimbing = val; }
+	void SetHealth(float health);
 
-	//void OnHit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION(BlueprintCallable)
+	float GetMaxHealth() const { return MaxHealth; }
+
+	void SetisClimbing(bool b) { isClimbing = b; }
+
+	FVector GetCppWallNormal() const { return cppWallNormal; }
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
 	//R
-
-	UFUNCTION()
-	void OnRep_CurrentHealth();
-
-	void OnHealthUpdate();
 
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 };

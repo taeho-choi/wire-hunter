@@ -29,6 +29,16 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
 		float MaxHealth = 10;
 
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
+		TArray<FString> BoneList = 
+	{ 
+		"Bip001-Head", "Bip001-Neck2", "Bip001-Neck1", "Bip001-Neck", "Bip001-Spine3", "Bip001-Spine2", "Bip001-Spine1", "Bip001-Spine", "Bip001-Pelvis", 
+		"Bip001-Tail", "Bip001-Tail1", "Bip001-Tail2", "Bip001-Tail3", "Bip001-Tail4",
+	};
+
+	UPROPERTY(BlueprintReadWrite)
+	TSubclassOf<class AFireball> ProjectileClass;
+
 private:
 	char Map[10][10];
 
@@ -58,6 +68,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 		USceneComponent* BossRoot;
+
+	TArray<FVector> Players;
 
 public:
 	// Called every frame
@@ -113,13 +125,24 @@ public:
 	UFUNCTION(BlueprintCallable)
 		float GetHealth() const { return Health; }
 
-	void SetHealth(float value) { Health = value; }
+	void SetHealth(float value) { 
+		if (HasAuthority())
+		{
+			Health = value;
+		}
+	}
 
 	UFUNCTION(BlueprintCallable)
 		float GetMaxHealth() const { return MaxHealth; }
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Server, Reliable)
 		void Spawn();
+
+	UFUNCTION(BlueprintCallable)
+	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
+
+	UFUNCTION(BlueprintCallable)
+		TArray<FVector> GetPlayers() const { return Players; }
 };
