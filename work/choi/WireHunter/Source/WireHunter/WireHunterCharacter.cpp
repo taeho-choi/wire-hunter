@@ -565,19 +565,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 
 	if (isClimbing)
 	{
-		//InMoveForward(Value);
-		if ((int)Value * 10 < GetMoveForwardValue())
-		{
-			auto val = GetMoveForwardValue() - 1;
-			if(GetLocalRole() == ROLE_Authority)
-			SetMoveForwardValue(val);
-		}
-		else if ((int)Value * 10 > GetMoveForwardValue())
-		{
-			auto val = GetMoveForwardValue() + 1;
-			if (GetLocalRole() == ROLE_Authority)
-			SetMoveForwardValue(val);
-		}
+		InMoveForward(Value);
 	}
 }
 
@@ -586,13 +574,11 @@ void AWireHunterCharacter::InMoveForward_Implementation(float Value)
 	if ((int)Value * 10 < GetMoveForwardValue())
 	{
 		auto val = GetMoveForwardValue() - 1;
-		if (GetLocalRole() == ROLE_Authority)
 			SetMoveForwardValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveForwardValue())
 	{
 		auto val = GetMoveForwardValue() + 1;
-		if (GetLocalRole() == ROLE_Authority)
 			SetMoveForwardValue(val);
 	}
 }
@@ -613,19 +599,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 
 	if (isClimbing)
 	{
-		//InMoveRight(Value);
-		if ((int)Value * 10 < GetMoveRightValue())
-		{
-			auto val = GetMoveRightValue() - 1;
-			if (GetLocalRole() == ROLE_Authority)
-				SetMoveRightValue(val);
-		}
-		else if ((int)Value * 10 > GetMoveRightValue())
-		{
-			auto val = GetMoveRightValue() + 1;
-			if (GetLocalRole() == ROLE_Authority)
-				SetMoveRightValue(val);
-		}
+		InMoveRight(Value);
 	}
 }
 
@@ -634,13 +608,11 @@ void AWireHunterCharacter::InMoveRight_Implementation(float Value)
 	if ((int)Value * 10 < GetMoveRightValue())
 	{
 		auto val = GetMoveRightValue() - 1;
-		if (GetLocalRole() == ROLE_Authority)
 			SetMoveRightValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveRightValue())
 	{
 		auto val = GetMoveRightValue() + 1;
-		if (GetLocalRole() == ROLE_Authority)
 			SetMoveRightValue(val);
 	}
 }
