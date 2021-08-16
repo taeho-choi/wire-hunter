@@ -28,6 +28,9 @@ ADragon::ADragon()
 
 	ToFace = false;
 
+	TriggerXMoving = false;
+	TriggerFireball = false;
+
 	ProjectileClass = AFireball::StaticClass();
 }
 
@@ -96,16 +99,18 @@ void ADragon::MakeMap()
 
 FVector ADragon::FindPlayer()
 {
-	Players.Empty();
-	
-	for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
-		Players.Push(e->GetActorLocation());
-	}
+	//Players.Empty();
+	//
+	//for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
+	//	Players.Push(e->GetActorLocation());
+	//}
 
-	auto idx = rand() % 2;
-	TargetLocation = Players[idx];
+	//auto idx = rand() % 2;
+	////TargetLocation = Players[0];
 
 	//TargetLocation = Players.Last();
+
+	TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 
 	return TargetLocation;
 }
@@ -308,7 +313,7 @@ void ADragon::BeginPlay()
 
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
-	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWireHunterCharacter::StaticClass(), Players);
+	FindPlayer();
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -388,8 +393,8 @@ void ADragon::Spawn_Implementation()
 		spawnParameters.Instigator = GetInstigator();
 		spawnParameters.Owner = this;
 		
-		FindPlayer();
-		FacePlayer();
+	/*	FindPlayer();
+		FacePlayer();*/
 		//버그 가능성 있음
 
 		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, TargetRotation, spawnParameters);
@@ -437,7 +442,7 @@ void ADragon::DetectKick()
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
 	queryParams.AddIgnoredActor(this);
 	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
-	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
+	//DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
 
 	if (hit.bBlockingHit)
 	{

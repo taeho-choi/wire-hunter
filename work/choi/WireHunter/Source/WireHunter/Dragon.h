@@ -71,6 +71,9 @@ private:
 
 	TArray<FVector> Players;
 
+	bool TriggerXMoving;
+	bool TriggerFireball;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -81,6 +84,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 		FVector FindPlayer();
 
+	UFUNCTION(BlueprintCallable)
 	void FacePlayer();
 
 	void h(FStructNode next, FStructNode end);
@@ -118,6 +122,21 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		void SetToFace(bool b) { ToFace = b; }
+
+	///
+	UFUNCTION(BlueprintCallable)
+		bool GetTriggerXMoving() const { return TriggerXMoving; }
+
+	UFUNCTION(BlueprintCallable)
+		void SetTriggerXMoving(bool b) { TriggerXMoving = b; }
+
+	UFUNCTION(BlueprintCallable)
+		bool GetTriggerFireball() const { return TriggerFireball; }
+
+	UFUNCTION(BlueprintCallable)
+		void SetTriggerFireball(bool b) { TriggerFireball = b; }
+
+	///
 
 	UFUNCTION(BlueprintCallable)
 		void DetectKick();
