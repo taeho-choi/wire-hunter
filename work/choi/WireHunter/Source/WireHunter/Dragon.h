@@ -73,6 +73,7 @@ private:
 
 	bool TriggerXMoving;
 	bool TriggerFireball;
+	bool NotPrecious;
 
 public:
 	// Called every frame
@@ -136,16 +137,21 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetTriggerFireball(bool b) { TriggerFireball = b; }
 
+	UFUNCTION(BlueprintCallable)
+		void Spawn2();
+
 	///
 
-	UFUNCTION(BlueprintCallable)
-		void DetectKick();
+	UFUNCTION(BlueprintCallable, Server, Reliable, WithValidation)
+	void DetectKickServer();
+	void DetectKickServer_Implementation();
+	bool DetectKickServer_Validate();
 
 	UFUNCTION(BlueprintCallable)
 		float GetHealth() const { return Health; }
 
 	void SetHealth(float value) { 
-		if (HasAuthority())
+		if (GetLocalRole() == ROLE_Authority)
 		{
 			Health = value;
 		}

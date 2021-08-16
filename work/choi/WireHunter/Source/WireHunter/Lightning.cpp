@@ -6,7 +6,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "WireHunterCharacter.h"
 #include "Kismet/KismetMathLibrary.h"
-#include "Boss.h"
+//#include "Dragon.h
 
 // Sets default values
 ALightning::ALightning()

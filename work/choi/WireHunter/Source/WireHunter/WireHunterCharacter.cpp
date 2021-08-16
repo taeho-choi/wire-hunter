@@ -118,6 +118,9 @@ AWireHunterCharacter::AWireHunterCharacter()
 	Health = MaxHealth - 60.f;
 	Bullets = MaxBullets;
 
+	GetCharacterMovement()->AirControl = 1.f;
+
+
 	bReplicates = true;
 
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> ImpactParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Impact/NS_Impact.NS_Impact'"));
@@ -129,12 +132,21 @@ AWireHunterCharacter::AWireHunterCharacter()
 	MuzzleParticle = NS_MuzzleFlash;
 
 
-	AuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("AuraEffect"));
-	AuraEffect->SetupAttachment(this->GetRootComponent());
+	YellowAuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("YellowAuraEffect"));
+	YellowAuraEffect->SetupAttachment(this->GetRootComponent());
 
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> YellowAuraEffect(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Aura/NS_YellowAura.NS_YellowAura'"));
-	UNiagaraSystem* NS_YellowAuraEffect = YellowAuraEffect.Object;
-	AuraEffect->SetAsset(NS_YellowAuraEffect);
+	RedAuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("RedAuraEffect"));
+	RedAuraEffect->SetupAttachment(this->GetRootComponent());
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> YellowAuraEffectAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Aura/NS_YellowAura.NS_YellowAura'"));
+	UNiagaraSystem* NS_YellowAuraEffect = YellowAuraEffectAsset.Object;
+	YellowAuraEffect->SetAsset(NS_YellowAuraEffect);
+	YellowAuraEffect->SetVisibility(false);
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> RedAuraEffectAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Aura/NS_GreenAura.NS_GreenAura'"));
+	UNiagaraSystem* NS_RedAuraEffect = RedAuraEffectAsset.Object;
+	RedAuraEffect->SetAsset(NS_RedAuraEffect);
+	RedAuraEffect->SetVisibility(false);
 }
 
 void AWireHunterCharacter::BeginPlay()
@@ -326,6 +338,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 
 			cppHooked = true;
 			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
+			GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
 		}
 	}
 }
@@ -355,8 +368,8 @@ void AWireHunterCharacter::PressWithdrawMulti_Implementation()
 
 void AWireHunterCharacter::OffWithdrawServer_Implementation()
 {
-	if(GetLocalRole()==ROLE_Authority)
-	isEnd = false;
+	if (GetLocalRole() == ROLE_Authority)
+		isEnd = false;
 
 	OffWithdrawMulti();
 }
@@ -490,8 +503,8 @@ void AWireHunterCharacter::UpdateWallNormalServer_Implementation()
 
 	if (Hit.bBlockingHit)
 	{
-		if(GetLocalRole() ==ROLE_Authority)
-		cppWallNormal = Hit.Normal;
+		if (GetLocalRole() == ROLE_Authority)
+			cppWallNormal = Hit.Normal;
 	}
 }
 
@@ -580,7 +593,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 			const FRotator Rotation = Controller->GetControlRotation();
 			const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		
+
 			AddMovementInput(Direction, Value);
 		}
 	}
@@ -596,12 +609,12 @@ void AWireHunterCharacter::InMoveForward_Implementation(float Value)
 	if ((int)Value * 10 < GetMoveForwardValue())
 	{
 		auto val = GetMoveForwardValue() - 1;
-			SetMoveForwardValue(val);
+		SetMoveForwardValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveForwardValue())
 	{
 		auto val = GetMoveForwardValue() + 1;
-			SetMoveForwardValue(val);
+		SetMoveForwardValue(val);
 	}
 }
 
@@ -630,12 +643,12 @@ void AWireHunterCharacter::InMoveRight_Implementation(float Value)
 	if ((int)Value * 10 < GetMoveRightValue())
 	{
 		auto val = GetMoveRightValue() - 1;
-			SetMoveRightValue(val);
+		SetMoveRightValue(val);
 	}
 	else if ((int)Value * 10 > GetMoveRightValue())
 	{
 		auto val = GetMoveRightValue() + 1;
-			SetMoveRightValue(val);
+		SetMoveRightValue(val);
 	}
 }
 
@@ -773,7 +786,7 @@ void AWireHunterCharacter::PlayReloadAnim_Implementation()
 	PlayAnimMontage(ReloadAnim, 1, NAME_None);
 }
 
-float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) 
+float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
 	float damageApplied = Health - DamageTaken;
 	SetHealth(damageApplied);

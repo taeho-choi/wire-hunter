@@ -55,8 +55,8 @@ AFireball::AFireball()
 
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 5000.f;
-	ProjectileMovementComponent->MaxSpeed = 5000.f;
+	ProjectileMovementComponent->InitialSpeed = 1000.f;
+	ProjectileMovementComponent->MaxSpeed = 1000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
