@@ -317,16 +317,13 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 
 			cppWire->SetVisibility(true);
 
-			if (GetLocalRole() == ROLE_Authority)
 			cppHookLocation = Hit.Location;
 
 			cppWire->SetWorldLocation(cppHookLocation);
 			float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
-			if (GetLocalRole() == ROLE_Authority)
 			cppHookedWireLength = NewWireLength;
 			cppWire->CableLength = cppHookedWireLength;
 
-			if(GetLocalRole() == ROLE_Authority)
 			cppHooked = true;
 			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
 		}
@@ -352,10 +349,7 @@ void AWireHunterCharacter::PressWithdrawMulti_Implementation()
 {
 	if (cppHooked)
 	{
-		if (GetLocalRole() == ROLE_Authority)
-		{
-			isWithdrawing = true;
-		}
+		isWithdrawing = true;
 	}
 }
 
@@ -374,10 +368,7 @@ bool AWireHunterCharacter::OffWithdrawServer_Validate()
 
 void AWireHunterCharacter::OffWithdrawMulti_Implementation()
 {
-	if (GetLocalRole() == ROLE_Authority)
-	{
-		isWithdrawing = false;
-	}
+	isWithdrawing = false;
 }
 
 void AWireHunterCharacter::WithdrawServer_Implementation()
@@ -389,7 +380,6 @@ void AWireHunterCharacter::WithdrawServer_Implementation()
 
 	if (distance.Size() < 80.f)
 	{
-		if (GetLocalRole() == ROLE_Authority)
 		isEnd = true;
 	}
 }
@@ -401,12 +391,9 @@ bool AWireHunterCharacter::WithdrawServer_Validate()
 
 void AWireHunterCharacter::BreakHookServer_Implementation()
 {
-	if (GetLocalRole() == ROLE_Authority)
-	{
-		isWithdrawing = false;
-		cppHooked = false;
-		GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
-	}
+	isWithdrawing = false;
+	cppHooked = false;
+	GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
@@ -482,12 +469,10 @@ void AWireHunterCharacter::ClimbMulti_Implementation(bool b)
 {
 	if (b)
 	{
-		if(GetLocalRole() == ROLE_Authority)
 		isClimbing = true;
 	}
 	else
 	{
-		if (GetLocalRole() == ROLE_Authority)
 		isClimbing = false;
 	}
 }
@@ -540,10 +525,8 @@ void AWireHunterCharacter::LedgeTraceServer_Implementation()//ÀÌ°Å °î¼±?
 
 	if (!Hit.bBlockingHit)
 	{
-		if (GetLocalRole() == ROLE_Authority)
 		isClimbing = false;
 
-		if (GetLocalRole() == ROLE_Authority)
 		isEnd2 = true;
 
 		SetActorRotation(UKismetMathLibrary::MakeRotator(0.f, 0.f, GetActorRotation().Yaw));
@@ -557,7 +540,6 @@ bool AWireHunterCharacter::LedgeTraceServer_Validate()
 
 void AWireHunterCharacter::PlayLedgeAnimServer_Implementation()
 {
-	if (GetLocalRole() == ROLE_Authority)
 	isEnd2 = false;
 
 	PlayLedgeAnimMulti();
@@ -746,7 +728,6 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
 
-		if(GetLocalRole() == ROLE_Authority)
 		Bullets -= 1;
 
 		FHitResult Hit;
@@ -769,8 +750,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 	}
 	else
 	{
-		if (GetLocalRole() == ROLE_Authority)
-			isBulletEmpty = true;
+		isBulletEmpty = true;
 	}
 }
 
@@ -781,12 +761,10 @@ void AWireHunterCharacter::GenParticles_Implementation(FHitResult Hit, UWorld* w
 
 void AWireHunterCharacter::Reload_Implementation()
 {
-	if (GetLocalRole() == ROLE_Authority)
 	isBulletEmpty = false;
 
 	PlayReloadAnim();
 
-	if (GetLocalRole() == ROLE_Authority)
 	Bullets = MaxBullets;
 }
 
