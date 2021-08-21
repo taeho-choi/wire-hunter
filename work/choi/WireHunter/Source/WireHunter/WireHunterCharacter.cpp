@@ -242,6 +242,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 			if (GetFName() == "BP_WHCharacter_C_0")
 			{
 				UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+				//need to set another lobby level. 
 			}
 		}
 	}

@@ -61,13 +61,13 @@ private:
 	bool ToFace;
 
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<AFireball> ToSpawn;
+	TSubclassOf<AFireball> ToSpawn;
 
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<ALightning> ToLightning;
+	TSubclassOf<ALightning> ToLightning;
 
 	UPROPERTY(EditAnywhere)
-		USceneComponent* BossRoot;
+	USceneComponent* BossRoot;
 
 	TArray<FVector> Players;
 
@@ -83,7 +83,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintCallable)
-		FVector FindPlayer();
+	FVector FindPlayer();
 
 	UFUNCTION(BlueprintCallable)
 	void FacePlayer();
@@ -107,38 +107,38 @@ public:
 	float FindDistance(FVector a, FVector b);
 
 	UFUNCTION(BlueprintCallable)
-		FVector GetGoal();
+	FVector GetGoal();
 
 	UFUNCTION(BlueprintCallable)
-		TArray<FStructNode> DoAStar();
+	TArray<FStructNode> DoAStar();
 
 	UFUNCTION(BlueprintCallable)
-		FVector GetPath();
+	FVector GetPath();
 
 	UFUNCTION(BlueprintCallable)
-		void Lightning();
+	void Lightning();
 
 	UFUNCTION(BlueprintCallable)
-		bool GetToFace() const { return ToFace; }
+	bool GetToFace() const { return ToFace; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetToFace(bool b) { ToFace = b; }
+	void SetToFace(bool b) { ToFace = b; }
 
 	///
 	UFUNCTION(BlueprintCallable)
-		bool GetTriggerXMoving() const { return TriggerXMoving; }
+	bool GetTriggerXMoving() const { return TriggerXMoving; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetTriggerXMoving(bool b) { TriggerXMoving = b; }
+	void SetTriggerXMoving(bool b) { TriggerXMoving = b; }
 
 	UFUNCTION(BlueprintCallable)
-		bool GetTriggerFireball() const { return TriggerFireball; }
+	bool GetTriggerFireball() const { return TriggerFireball; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetTriggerFireball(bool b) { TriggerFireball = b; }
+	void SetTriggerFireball(bool b) { TriggerFireball = b; }
 
 	UFUNCTION(BlueprintCallable)
-		void Spawn2();
+	void Spawn2();
 
 	///
 
@@ -148,7 +148,7 @@ public:
 	bool DetectKickServer_Validate();
 
 	UFUNCTION(BlueprintCallable)
-		float GetHealth() const { return Health; }
+	float GetHealth() const { return Health; }
 
 	void SetHealth(float value) { 
 		if (GetLocalRole() == ROLE_Authority)
@@ -158,19 +158,18 @@ public:
 	}
 
 	UFUNCTION(BlueprintCallable)
-		float GetMaxHealth() const { return MaxHealth; }
+	float GetMaxHealth() const { return MaxHealth; }
 	UFUNCTION(BlueprintCallable)
-		void CheatHealth() { Health = -1; }
+	void CheatHealth() { Health = -1; }
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
-
 	UFUNCTION(BlueprintCallable, Server, Reliable)
-		void Spawn();
+	void Spawn();
 
 	UFUNCTION(BlueprintCallable)
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
 
 	UFUNCTION(BlueprintCallable)
-		TArray<FVector> GetPlayers() const { return Players; }
+	TArray<FVector> GetPlayers() const { return Players; }
 };

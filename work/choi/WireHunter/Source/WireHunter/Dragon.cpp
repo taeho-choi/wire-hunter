@@ -107,13 +107,12 @@ FVector ADragon::FindPlayer()
 		Players.Push(e->GetActorLocation());
 	}
 
-	//auto idx = rand() % 2;
-	////TargetLocation = Players[0];
-
-	TargetLocation = Players.Last();
+	auto idx = rand() % 2;
+	TargetLocation = Players[0];
 
 	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-
+	//TargetLocation = Players.Last();
+	
 	return TargetLocation;
 }
 
@@ -420,7 +419,9 @@ void ADragon::Tick(float DeltaTime)
 	/*auto tmp = GetActorLocation();
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, tmp.ToString());
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("---------------"));*/
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("---------------"));
+	
+	*/
 }
 
 // Called to bind functionality to input
