@@ -8,6 +8,7 @@
 #include "Runtime/Engine/Public/EngineUtils.h"
 #include "PaperSpriteComponent.h"
 #include "Fireball.h"
+#include "GameFramework/Actor.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -25,8 +26,6 @@ ADragon::ADragon()
 	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
 	bReplicates = true;
-
-	ToFace = false;
 
 	TriggerXMoving = false;
 	TriggerFireball = false;
@@ -542,3 +541,11 @@ bool ADragon::DetectKickServer_Validate()
 {
 	return true;
  }
+
+void ADragon::MySetActorLocation_Implementation(FVector Location)
+{
+	if (GetLocalRole() == ROLE_Authority) 
+	{
+		SetActorLocation(Location, true);
+	}
+}

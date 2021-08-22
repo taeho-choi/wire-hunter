@@ -58,8 +58,6 @@ private:
 
 	TArray<FVector> Obstacles;
 
-	bool ToFace;
-
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AFireball> ToSpawn;
 
@@ -118,12 +116,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Lightning();
 
-	UFUNCTION(BlueprintCallable)
-	bool GetToFace() const { return ToFace; }
-
-	UFUNCTION(BlueprintCallable)
-	void SetToFace(bool b) { ToFace = b; }
-
 	///
 	UFUNCTION(BlueprintCallable)
 	bool GetTriggerXMoving() const { return TriggerXMoving; }
@@ -170,6 +162,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
 
-	UFUNCTION(BlueprintCallable)
-	TArray<FVector> GetPlayers() const { return Players; }
+	UFUNCTION(BlueprintCallable, Server, Reliable)
+	void MySetActorLocation(FVector Location);
 };
