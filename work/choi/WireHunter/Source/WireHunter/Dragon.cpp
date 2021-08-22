@@ -107,8 +107,7 @@ FVector ADragon::FindPlayer()
 		Players.Push(e->GetActorLocation());
 	}
 
-	auto idx = rand() % 2;
-	TargetLocation = Players[0];
+	TargetLocation = Players[0];//일단 서버
 
 	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 	//TargetLocation = Players.Last();
@@ -332,10 +331,8 @@ void ADragon::BeginPlay()
 
 TArray<FStructNode> ADragon::DoAStar()
 {
-	FindPlayer();
-
 	auto ret = Regulate();
-
+	
 	AStar(Map, ret[0], ret[1]);
 
 	return Path;
@@ -345,7 +342,7 @@ FVector ADragon::GetGoal()
 {
 	FVector goal;
 	goal = RealMap[Path[Path.Num() - 1].second][Path[Path.Num() - 1].first];
-	goal.Z = TargetLocation.Z + 1000.f;
+	goal.Z = TargetLocation.Z + 500.f;
 
 	if (!NotPrecious)
 	{
@@ -362,7 +359,7 @@ FVector ADragon::GetPath()////////////////////////////////////////////////////
 	FVector path;
 
 	path = RealMap[Path[0].second][Path[0].first];
-	path.Z = TargetLocation.Z + 1000.f;
+	path.Z = TargetLocation.Z + 500.f;
 
 	//auto myLoc = GetActorLocation();
 	//auto tmp = FMath::Sqrt(FVector::DistSquared(myLoc, path));
