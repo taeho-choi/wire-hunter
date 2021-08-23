@@ -33,6 +33,9 @@ class AWireHunterCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
 	class UAnimMontage* ReloadAnim;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	class UAnimMontage* RollAnim;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Minimap, meta = (AllowPrivateAccess = "true"))
 	class USceneCaptureComponent2D* MinimapCapture;
 

@@ -409,6 +409,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
 	isWithdrawing = false;
 	cppHooked = false;
 	GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
+	PlayAnimMontage(RollAnim, 1, NAME_None);
 
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
