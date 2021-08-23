@@ -161,7 +161,4 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
-
-	UFUNCTION(BlueprintCallable, Server, Reliable)
-	void MySetActorLocation(FVector Location);
 };

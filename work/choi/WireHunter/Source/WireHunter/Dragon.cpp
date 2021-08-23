@@ -319,13 +319,9 @@ void ADragon::BeginPlay()
 
 	Health = MaxHealth;
 
-	MakeMap();
-
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
-	FindPlayer();
-
-	FacePlayer();
+	MakeMap();
 }
 
 TArray<FStructNode> ADragon::DoAStar()
@@ -418,6 +414,10 @@ void ADragon::Tick(float DeltaTime)
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("---------------"));
 	
 	*/
+
+	//SetActorLocation(GetActorLocation() + FVector(40.f, 0.f, 0.f), true);
+	//if(HasAuthority())
+	//AddMovementInput(GetActorForwardVector());
 }
 
 // Called to bind functionality to input
@@ -541,11 +541,3 @@ bool ADragon::DetectKickServer_Validate()
 {
 	return true;
  }
-
-void ADragon::MySetActorLocation_Implementation(FVector Location)
-{
-	if (GetLocalRole() == ROLE_Authority) 
-	{
-		SetActorLocation(Location, true);
-	}
-}
