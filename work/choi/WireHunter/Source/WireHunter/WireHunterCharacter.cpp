@@ -392,6 +392,8 @@ void AWireHunterCharacter::WithdrawServer_Implementation()
 	FVector distance = GetActorLocation() - cppHookLocation;
 	cppWire->CableLength = distance.Size();
 	FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////
 	LaunchCharacter(launchVel, true, true);
 
 	if (distance.Size() < 80.f)
@@ -574,18 +576,17 @@ void AWireHunterCharacter::PlayLedgeAnimMulti_Implementation()
 	PlayAnimMontage(LedgeClimb, 1, NAME_None);
 }
 
-void AWireHunterCharacter::KnockbackServer_Implementation(FVector force)
+void AWireHunterCharacter::KnockbackServer_Implementation()
 {
-	auto temp = GetCharacterMovement();
-
-	temp->AddForce(force);
+	auto LaunchForce = GetActorForwardVector() * -1 * 100.f;
+	LaunchCharacter(LaunchForce, true, true);
 
 	BreakHookServer();
 
-	temp->SetMovementMode(MOVE_Walking);
+	GetCharacterMovement()->SetMovementMode(MOVE_Walking);
 }
 
-bool AWireHunterCharacter::KnockbackServer_Validate(FVector force)
+bool AWireHunterCharacter::KnockbackServer_Validate()
 {
 	return true;
 }
@@ -807,7 +808,7 @@ float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent co
 	float damageApplied = Health - DamageTaken;
 	SetHealth(damageApplied);
 
-	KnockbackServer((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
+	KnockbackServer();
 
 	return damageApplied;
 }

@@ -73,6 +73,8 @@ private:
 	bool TriggerFireball;
 	bool NotPrecious;
 
+	FVector SpawnLocation;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -130,7 +132,7 @@ public:
 	void SetTriggerFireball(bool b) { TriggerFireball = b; }
 
 	UFUNCTION(BlueprintCallable)
-	void Spawn2();
+		AFireball* Spawn2();
 
 	///
 
@@ -164,4 +166,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	FVector GetTargetLocation() const { return TargetLocation; }
+
+	UFUNCTION(BlueprintCallable)
+	FVector GetSpawnLocation();
 };

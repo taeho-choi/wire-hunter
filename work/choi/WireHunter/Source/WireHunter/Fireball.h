@@ -34,6 +34,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		float Damage;
 
+	UFUNCTION(BlueprintCallable)
+	void SetOrbit(FVector Start, FVector End);
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -44,7 +47,5 @@ protected:
 	virtual void Destroyed() override;
 
 	UFUNCTION(Category = "Projectile")
-		void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit);
-
-private:
+	void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit);
 };
