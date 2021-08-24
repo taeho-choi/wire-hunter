@@ -752,7 +752,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		FHitResult Hit;
 
-		const float GunRange = 50000.f;//
+		const float GunRange = 8000.f;//
 		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
 		const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
 		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
