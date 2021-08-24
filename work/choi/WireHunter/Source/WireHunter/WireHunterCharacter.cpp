@@ -768,6 +768,11 @@ void AWireHunterCharacter::FireShot_Implementation()
 					damage *= 4;
 				}
 				TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
+
+				if (TargetBoss->GetHealth() <= 0.f)
+				{
+					TargetBoss->GetMesh()->SetSimulatePhysics(true);
+				}
 			}
 			GenParticles(Hit, world);
 		}

@@ -37,12 +37,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION(Client, Reliable)
-	void InTick();
-
-	UFUNCTION(Client, Reliable)
-	void InTick2();
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -52,10 +46,5 @@ protected:
 	UFUNCTION(Category = "Projectile")
 		void OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit);
 
-	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
 private:
-
-	FVector TargetLocation;
-	FRotator TargetRotation;
 };

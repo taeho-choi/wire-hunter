@@ -386,21 +386,8 @@ void ADragon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	/*if (ToFace) {
-		FacePlayer();
-		auto rot = FMath::RInterpTo(this->GetActorRotation(), TargetRotation, GetWorld()->GetDeltaSeconds(), 2.5f);
-		this->SetActorRotation(rot);
-	}*/
-
-	/*if ((int)DeltaTime % 10 == 0)
-	{
-		Spawn();
-	}*/
-
 	if (Health < 0)
 	{
-		GetMesh()->SetSimulatePhysics(true);
-
 		if (GetMesh()->GetComponentLocation().Z < -4000.f)
 		{
 			Destroy();
@@ -441,19 +428,6 @@ void ADragon::Spawn_Implementation()
 		//버그 가능성 있음
 
 		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, TargetRotation, spawnParameters);
-
-		//FVector outVelocity = FVector::ZeroVector;   // 결과 Velocity
-		//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
-		//{
-		//	FPredictProjectilePathParams predictParams(20.0f, spawnLocation, outVelocity, 15.0f);   // 20: tracing 보여질 프로젝타일 크기, 15: 시물레이션되는 Max 시간(초)
-		//	predictParams.DrawDebugTime = 15.0f;     //디버그 라인 보여지는 시간 (초)
-		//	predictParams.DrawDebugType = EDrawDebugTrace::Type::ForDuration;  // DrawDebugTime 을 지정하면 EDrawDebugTrace::Type::ForDuration 필요.
-		//	predictParams.OverrideGravityZ = GetWorld()->GetGravityZ();
-		//	FPredictProjectilePathResult result;
-		//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
-		//	
-		//	//spwanedProjectile->ProjectileMovementComponent->AddImpulse(outVelocity); // objectToSend는 발사체
-		//}
 	}
 }
 
@@ -477,14 +451,13 @@ void ADragon::Spawn2()
 		//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
 		//{
 		//	FPredictProjectilePathParams predictParams(20.0f, spawnLocation, outVelocity, 15.0f);   // 20: tracing 보여질 프로젝타일 크기, 15: 시물레이션되는 Max 시간(초)
-		//	predictParams.DrawDebugTime = 15.0f;     //디버그 라인 보여지는 시간 (초)
+		//	predictParams.DrawDebugTime = 0.f;     //디버그 라인 보여지는 시간 (초)
 		//	predictParams.DrawDebugType = EDrawDebugTrace::Type::ForDuration;  // DrawDebugTime 을 지정하면 EDrawDebugTrace::Type::ForDuration 필요.
 		//	predictParams.OverrideGravityZ = GetWorld()->GetGravityZ();
 		//	FPredictProjectilePathResult result;
 		//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
-		//	
-		//	//spwanedProjectile->ProjectileMovementComponent->AddImpulse(outVelocity); // objectToSend는 발사체
 		//}
+		//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
 	}
 }
 

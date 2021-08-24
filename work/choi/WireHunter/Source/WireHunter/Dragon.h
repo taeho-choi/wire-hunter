@@ -161,4 +161,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
+
+	UFUNCTION(BlueprintCallable)
+	FVector GetTargetLocation() const { return TargetLocation; }
 };
