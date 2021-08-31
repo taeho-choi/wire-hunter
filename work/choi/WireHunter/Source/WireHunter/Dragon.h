@@ -61,17 +61,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AFireball> ToSpawn;
 
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<ALightning> ToLightning;
-
-	UPROPERTY(EditAnywhere)
-	USceneComponent* BossRoot;
-
 	TArray<FVector> Players;
 
 	bool NotPrecious;
-
-	FVector SpawnLocation;
 
 public:
 	// Called every frame
@@ -113,12 +105,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FVector GetPath();
 
-	UFUNCTION(BlueprintCallable)
-	void Lightning();
-
-	UFUNCTION(BlueprintCallable)
-	AFireball* Spawn2();
-
 	UFUNCTION(BlueprintCallable, Server, Reliable, WithValidation)
 	void DetectKickServer();
 	void DetectKickServer_Implementation();
@@ -143,10 +129,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, Server, Reliable)
 	void Spawn();
-
-	UFUNCTION(BlueprintCallable)
-	FVector GetTargetLocation() const { return TargetLocation; }
-
-	UFUNCTION(BlueprintCallable)
-	FVector GetSpawnLocation();
 };

@@ -41,7 +41,7 @@ AFireball::AFireball()
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
 		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, -140.f));
-		StaticMesh->SetRelativeScale3D(FVector(3.f, 3.f, 3.f));
+		StaticMesh->SetRelativeScale3D(FVector(8.f, 8.f, 8.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExposionEffect(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -50,14 +50,14 @@ AFireball::AFireball()
 		ExplosionEffect = DefaultExposionEffect.Object;
 	}
 
-	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/StarterContent/Materials/M_Fireball.M_Fireball'"));
+	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/AI/MT_Meteor.MT_Meteor'"));
 	UMaterial* Material = MaterialAsset.Object;
 	StaticMesh->SetMaterial(0, Material);
 
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 4000.f;
-	ProjectileMovementComponent->MaxSpeed = 4000.f;
+	ProjectileMovementComponent->InitialSpeed = 12000.f;
+	ProjectileMovementComponent->MaxSpeed = 12000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
@@ -112,12 +112,4 @@ void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* ot
 {
 	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
 	Destroy();
-}
-
-void AFireball::SetOrbit(FVector Start, FVector End)
-{
-	/*FVector vel; 
-	UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, vel, Start, End, GetWorld()->GetGravityZ(), 0.5f);
-	ProjectileMovementComponent->AddForce(vel);*/
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"));
 }

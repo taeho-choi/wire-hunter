@@ -34,9 +34,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		float Damage;
 
-	UFUNCTION(BlueprintCallable)
-	void SetOrbit(FVector Start, FVector End);
-
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

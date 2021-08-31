@@ -393,17 +393,6 @@ void ADragon::Tick(float DeltaTime)
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 		}
 	}
-
-	/*auto tmp = GetActorLocation();
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, tmp.ToString());
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("---------------"));
-	
-	*/
-
-	//SetActorLocation(GetActorLocation() + FVector(40.f, 0.f, 0.f), true);
-	//if(HasAuthority())
-	//AddMovementInput(GetActorForwardVector());
 }
 
 // Called to bind functionality to input
@@ -415,31 +404,20 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void ADragon::Spawn_Implementation()
 {
 	if (ToSpawn) {
-		FVector spawnLocation = GetActorLocation() + GetActorForwardVector() * 1500.f;
-		FRotator spawnRotation = GetActorRotation();
+		int randIdx = rand() % 40 + 1;
+		FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);
+		FVector spawnLocation = targetLocation + FVector(8000.f, 8000.f, 12000.f);
+
+		FRotator spawnRotation = UKismetMathLibrary::FindLookAtRotation(spawnLocation, targetLocation);
 
 		FActorSpawnParameters spawnParameters;
 		spawnParameters.Instigator = GetInstigator();
 		spawnParameters.Owner = this;
-		
-	    FindPlayer();
-		FacePlayer();
-		//버그 가능성 있음
 
-		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, TargetRotation, spawnParameters);
+		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "setting");
 	}
-}
-
-AFireball* ADragon::Spawn2()
-{
-	SpawnLocation = GetActorLocation() + GetActorForwardVector() * 2500.f;
-	FRotator spawnRotation = GetActorRotation();
-
-	FActorSpawnParameters spawnParameters;
-	spawnParameters.Instigator = GetInstigator();
-	spawnParameters.Owner = this;
-
-	AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(SpawnLocation, spawnRotation, spawnParameters);
 
 	//FVector outVelocity = FVector::ZeroVector;   // 결과 Velocity
 	//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
@@ -452,29 +430,9 @@ AFireball* ADragon::Spawn2()
 	//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
 	//}
 	//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
-
-	return spwanedProjectile;
-}
-
-FVector ADragon::GetSpawnLocation()
-{
-	return SpawnLocation;
-}
-
-void ADragon::Lightning()
-{
-	if (ToLightning) {
-		UWorld* world = GetWorld();
-		if (world) {
-			FActorSpawnParameters spawnParams;
-			spawnParams.Owner = this;
-
-			FRotator rot;
-			int randIdx = rand() % 50;
-			FVector spawnLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 25000.f);
-
-			world->SpawnActor<ALightning>(ToLightning, spawnLocation, rot, spawnParams);
-		}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "no setting");
 	}
 }
 
