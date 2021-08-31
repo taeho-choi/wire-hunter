@@ -27,9 +27,6 @@ ADragon::ADragon()
 
 	bReplicates = true;
 
-	TriggerXMoving = false;
-	TriggerFireball = false;
-
 	NotPrecious = false;
 
 	ProjectileClass = AFireball::StaticClass();

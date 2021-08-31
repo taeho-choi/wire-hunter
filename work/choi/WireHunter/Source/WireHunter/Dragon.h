@@ -69,8 +69,6 @@ private:
 
 	TArray<FVector> Players;
 
-	bool TriggerXMoving;
-	bool TriggerFireball;
 	bool NotPrecious;
 
 	FVector SpawnLocation;
@@ -118,23 +116,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Lightning();
 
-	///
 	UFUNCTION(BlueprintCallable)
-	bool GetTriggerXMoving() const { return TriggerXMoving; }
-
-	UFUNCTION(BlueprintCallable)
-	void SetTriggerXMoving(bool b) { TriggerXMoving = b; }
-
-	UFUNCTION(BlueprintCallable)
-	bool GetTriggerFireball() const { return TriggerFireball; }
-
-	UFUNCTION(BlueprintCallable)
-	void SetTriggerFireball(bool b) { TriggerFireball = b; }
-
-	UFUNCTION(BlueprintCallable)
-		AFireball* Spawn2();
-
-	///
+	AFireball* Spawn2();
 
 	UFUNCTION(BlueprintCallable, Server, Reliable, WithValidation)
 	void DetectKickServer();
@@ -160,9 +143,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Server, Reliable)
 	void Spawn();
-
-	UFUNCTION(BlueprintCallable)
-	FString GetBoneListAt(int idx) const { return BoneList[idx]; }
 
 	UFUNCTION(BlueprintCallable)
 	FVector GetTargetLocation() const { return TargetLocation; }
