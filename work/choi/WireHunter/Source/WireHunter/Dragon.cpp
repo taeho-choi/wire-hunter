@@ -406,7 +406,7 @@ void ADragon::Spawn_Implementation()
 	if (ToSpawn) {
 		int randIdx = rand() % 40 + 1;
 		FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);
-		FVector spawnLocation = targetLocation + FVector(8000.f, 8000.f, 12000.f);
+		FVector spawnLocation = targetLocation + FVector(-8000.f, 0.f, 12000.f);
 
 		FRotator spawnRotation = UKismetMathLibrary::FindLookAtRotation(spawnLocation, targetLocation);
 
@@ -414,7 +414,7 @@ void ADragon::Spawn_Implementation()
 		spawnParameters.Instigator = GetInstigator();
 		spawnParameters.Owner = this;
 
-		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
+		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, FRotator(0.f, 0.f, 0.f), spawnParameters);
 
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "setting");
 	}

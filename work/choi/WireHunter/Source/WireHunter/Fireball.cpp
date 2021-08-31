@@ -40,8 +40,20 @@ AFireball::AFireball()
 	if (DefaultMesh.Succeeded()) 
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
-		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, -140.f));
-		StaticMesh->SetRelativeScale3D(FVector(8.f, 8.f, 8.f));
+		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+		StaticMesh->SetRelativeScale3D(FVector(6.f, 12.f, 6.f));
+		StaticMesh->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
+	}
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SubMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
+	SubStaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SubMesh"));
+	SubStaticMesh->SetupAttachment(RootComponent);
+	if (SubMesh.Succeeded())
+	{
+		SubStaticMesh->SetStaticMesh(SubMesh.Object);
+		SubStaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+		SubStaticMesh->SetRelativeScale3D(FVector(4.f, 6.f, 4.f));
+		SubStaticMesh->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExposionEffect(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -54,16 +66,20 @@ AFireball::AFireball()
 	UMaterial* Material = MaterialAsset.Object;
 	StaticMesh->SetMaterial(0, Material);
 
+	static ConstructorHelpers::FObjectFinder<UMaterial>SubMaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/AI/MT_BossRock.MT_BossRock'"));
+	UMaterial* SubMaterial = SubMaterialAsset.Object;
+	SubStaticMesh->SetMaterial(0, SubMaterial);
+
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 12000.f;
-	ProjectileMovementComponent->MaxSpeed = 12000.f;
+	ProjectileMovementComponent->InitialSpeed = 14000.f;
+	ProjectileMovementComponent->MaxSpeed = 14000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
 	DamageType = UDamageType::StaticClass();
 
-	Damage = 10.f;
+	RootComponent->SetWorldRotation(FRotator(-90.f, 0.f, 0.f));
 }
 
 // Called when the game starts or when spawned
@@ -111,5 +127,5 @@ void AFireball::Destroyed()
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
 	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
-	Destroy();
+	//Destroy();
 }

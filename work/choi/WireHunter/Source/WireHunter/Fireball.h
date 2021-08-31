@@ -23,6 +23,9 @@ public:
 		class UStaticMeshComponent* StaticMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UStaticMeshComponent* SubStaticMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UProjectileMovementComponent* ProjectileMovementComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
