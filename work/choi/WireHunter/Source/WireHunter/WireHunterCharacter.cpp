@@ -312,6 +312,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 {
 	if (cppHooked)
 	{
+		PlayAnimMontage(RollAnim, 1, NAME_None);
 		BreakHookServer();
 	}
 	else
@@ -393,9 +394,10 @@ void AWireHunterCharacter::WithdrawServer_Implementation()
 	FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
 	LaunchCharacter(launchVel, true, true);
 
-	if (distance.Size() < 80.f)
+	if (distance.Size() < 60.f)
 	{
 		isEnd = true;
+		//ClimbServer();
 	}
 }
 
@@ -409,7 +411,6 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
 	isWithdrawing = false;
 	cppHooked = false;
 	GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
-	PlayAnimMontage(RollAnim, 1, NAME_None);
 
 	cppWire->CableLength = 100.f;
 	cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
@@ -448,7 +449,7 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 	{
 		FHitResult Hit;
 
-		const float ClimbRange = 200.f;
+		const float ClimbRange = 2000.f;
 		const FVector StartTrace = GetActorLocation();
 		const FVector EndTrace = GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange);
 		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
@@ -461,8 +462,7 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 			GetCharacterMovement()->bUseControllerDesiredRotation = false;
 			bUseControllerRotationYaw = false;
 			BreakHookServer();
-
-			temp->SetMovementMode(MOVE_Flying);
+			temp->SetMovementMode(MOVE_Walking);
 
 			temp->Velocity = FVector(0.f, 0.f, 0.f);
 		}
@@ -705,7 +705,7 @@ void AWireHunterCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	// Bind WireShot
 	PlayerInputComponent->BindAction("WireShot", IE_Pressed, this, &AWireHunterCharacter::HookWireServer);
 
-	// Bind Launch
+	// Bind Climb
 	PlayerInputComponent->BindAction("Climb", IE_Pressed, this, &AWireHunterCharacter::ClimbServer);
 
 	// Bind Withdraw
@@ -811,6 +811,8 @@ void AWireHunterCharacter::OnHealthUpdate()
 	{
 		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+
 
 		if (Health <= 0)
 		{
