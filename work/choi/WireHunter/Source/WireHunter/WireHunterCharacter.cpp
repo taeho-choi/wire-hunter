@@ -242,6 +242,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 			if (GetFName() == "BP_WHCharacter_C_0")
 			{
 				UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+				//need to set another lobby level. 
 			}
 		}
 	}
@@ -391,6 +392,8 @@ void AWireHunterCharacter::WithdrawServer_Implementation()
 	FVector distance = GetActorLocation() - cppHookLocation;
 	cppWire->CableLength = distance.Size();
 	FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////
 	LaunchCharacter(launchVel, true, true);
 
 	if (distance.Size() < 80.f)
@@ -574,18 +577,17 @@ void AWireHunterCharacter::PlayLedgeAnimMulti_Implementation()
 	PlayAnimMontage(LedgeClimb, 1, NAME_None);
 }
 
-void AWireHunterCharacter::KnockbackServer_Implementation(FVector force)
+void AWireHunterCharacter::KnockbackServer_Implementation()
 {
-	auto temp = GetCharacterMovement();
-
-	temp->AddForce(force);
+	auto LaunchForce = GetActorForwardVector() * -1 * 100.f;
+	LaunchCharacter(LaunchForce, true, true);
 
 	BreakHookServer();
 
-	temp->SetMovementMode(MOVE_Walking);
+	GetCharacterMovement()->SetMovementMode(MOVE_Walking);
 }
 
-bool AWireHunterCharacter::KnockbackServer_Validate(FVector force)
+bool AWireHunterCharacter::KnockbackServer_Validate()
 {
 	return true;
 }
@@ -751,7 +753,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
 		FHitResult Hit;
 
-		const float GunRange = 50000.f;//
+		const float GunRange = 8000.f;//
 		const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
 		const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
 		FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
@@ -762,7 +764,17 @@ void AWireHunterCharacter::FireShot_Implementation()
 			if (Hit.Actor->IsA(ADragon::StaticClass()))
 			{
 				ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
-				TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
+				auto damage = 1.f;
+				if (Hit.BoneName == "Bip001-Head")
+				{
+					damage *= 4;
+				}
+				TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
+
+				if (TargetBoss->GetHealth() <= 0.f)
+				{
+					TargetBoss->GetMesh()->SetSimulatePhysics(true);
+				}
 			}
 			GenParticles(Hit, world);
 		}
@@ -797,7 +809,7 @@ float AWireHunterCharacter::TakeDamage(float DamageTaken, struct FDamageEvent co
 	float damageApplied = Health - DamageTaken;
 	SetHealth(damageApplied);
 
-	KnockbackServer((GetActorRotation().Vector() + FVector(0.f, 0.f, 0.5f)) * 200);
+	KnockbackServer();
 
 	return damageApplied;
 }

@@ -218,9 +218,9 @@ public:
 	void PlayLedgeAnimMulti_Implementation();
 
 	UFUNCTION(Server, Reliable, WithValidation)
-	void KnockbackServer(FVector force);
-	void KnockbackServer_Implementation(FVector force);
-	bool KnockbackServer_Validate(FVector force);
+	void KnockbackServer();
+	void KnockbackServer_Implementation();
+	bool KnockbackServer_Validate();
 
 	UFUNCTION()
 	void SetYellowAuraOn();

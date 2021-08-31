@@ -56,8 +56,8 @@ AFireball::AFireball()
 
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 1000.f;
-	ProjectileMovementComponent->MaxSpeed = 1000.f;
+	ProjectileMovementComponent->InitialSpeed = 4000.f;
+	ProjectileMovementComponent->MaxSpeed = 4000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
@@ -71,53 +71,35 @@ void AFireball::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//TArray<FVector> Players;
+	//FVector DragonLocation;
+	//FVector DragonForwardVector;
+	//FVector TargetLocation;
 
-	////Players.Empty();
-
-	//for (const auto& e : TActorRange<AWireHunterCharacter>(GetWorld())) {
-	//	Players.Push(e->GetActorLocation());
+	//for (const auto& e : TActorRange<ADragon>(GetWorld())) {
+	//	DragonLocation = e->GetActorLocation();
+	//	DragonForwardVector = e->GetActorForwardVector();
+	//	TargetLocation = e->GetTargetLocation();
 	//}
 
-	//auto idx = rand() % 2;
-	//TargetLocation = Players[idx];
+	//auto spawnLocation = DragonLocation + DragonForwardVector * 3000.f;
 
-	//TargetLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-	/*TargetRotation = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation(), TargetLocation);
-	SetActorRotation(TargetRotation);*/
+	//FVector outVelocity = FVector::ZeroVector;   // 결과 Velocity
+	//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
+	//{
+	//	FPredictProjectilePathParams predictParams(20.0f, spawnLocation, outVelocity, 15.0f);   // 20: tracing 보여질 프로젝타일 크기, 15: 시물레이션되는 Max 시간(초)
+	//	predictParams.DrawDebugTime = 4.f;     //디버그 라인 보여지는 시간 (초)
+	//	predictParams.DrawDebugType = EDrawDebugTrace::Type::ForDuration;  // DrawDebugTime 을 지정하면 EDrawDebugTrace::Type::ForDuration 필요.
+	//	predictParams.OverrideGravityZ = GetWorld()->GetGravityZ();
+	//	FPredictProjectilePathResult result;
+	//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
+	//}
+	//ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
 }
 
 // Called every frame
 void AFireball::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	//InTick();
-
-	/*if (!HasAuthority())
-	{
-		InTick2();
-	}*/
-
-	//ProjectileMovementComponent->ComputeHomingAcceleration(FVector(0.f, 0.f, 0.f), DeltaTime);
-}
-
-void AFireball::InTick_Implementation()
-{
-	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 200));
-	if (GetActorLocation().Z < 0.f)
-	{
-		this->Destroy();
-	}
-}
-
-void AFireball::InTick2_Implementation()
-{
-	SetActorLocation(GetActorLocation() + (TargetRotation.Vector() * 200));
-	if (GetActorLocation().Z < 0.f)
-	{
-		this->Destroy();
-	}
 }
 
 void AFireball::Destroyed() 
@@ -128,17 +110,14 @@ void AFireball::Destroyed()
 
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
-	if ( !( otherActor->IsA(ADragon::StaticClass()) ) )
-	{
-		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
-		Destroy();
-	}
-	//////////////////////////////////////////////////////////////////////////////////////////
+	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+	Destroy();
 }
 
-void AFireball::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+void AFireball::SetOrbit(FVector Start, FVector End)
 {
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	/*DOREPLIFETIME(AFireball, Health);*/
+	/*FVector vel; 
+	UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, vel, Start, End, GetWorld()->GetGravityZ(), 0.5f);
+	ProjectileMovementComponent->AddForce(vel);*/
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"));
 }
