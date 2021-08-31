@@ -40,9 +40,9 @@ AFireball::AFireball()
 	if (DefaultMesh.Succeeded()) 
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
-		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
-		StaticMesh->SetRelativeScale3D(FVector(6.f, 12.f, 6.f));
-		StaticMesh->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
+		StaticMesh->SetRelativeLocation(FVector(-420.f, -6.666f, -200.f));
+		StaticMesh->SetRelativeScale3D(FVector(4.f, 12.f, 4.f));
+		StaticMesh->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> SubMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
@@ -51,9 +51,9 @@ AFireball::AFireball()
 	if (SubMesh.Succeeded())
 	{
 		SubStaticMesh->SetStaticMesh(SubMesh.Object);
-		SubStaticMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
-		SubStaticMesh->SetRelativeScale3D(FVector(4.f, 6.f, 4.f));
-		SubStaticMesh->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
+		SubStaticMesh->SetRelativeLocation(FVector(-70.f, 0.f, -100.f));
+		SubStaticMesh->SetRelativeScale3D(FVector(2.f, 4.f, 2.f));
+		SubStaticMesh->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExposionEffect(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -79,7 +79,7 @@ AFireball::AFireball()
 
 	DamageType = UDamageType::StaticClass();
 
-	RootComponent->SetWorldRotation(FRotator(-90.f, 0.f, 0.f));
+	RootComponent->SetWorldScale3D(FVector(2.f, 2.f, 2.f));
 }
 
 // Called when the game starts or when spawned
@@ -127,5 +127,5 @@ void AFireball::Destroyed()
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
 	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
-	//Destroy();
+	Destroy();
 }
