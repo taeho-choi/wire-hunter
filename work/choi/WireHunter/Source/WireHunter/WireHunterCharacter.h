@@ -141,6 +141,12 @@ protected:
     UPROPERTY(Replicated)
         bool isEnd2;
 
+    UPROPERTY(Replicated)
+        bool isBossWireSwing;
+    UPROPERTY(Replicated)
+        AActor* dragon;
+
+
 public:
 
     UFUNCTION(Client, Reliable)

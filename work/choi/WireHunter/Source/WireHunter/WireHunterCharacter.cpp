@@ -9,6 +9,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Components/ArrowComponent.h"
 #include "Components/PointLightComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
@@ -50,12 +51,12 @@ AWireHunterCharacter::AWireHunterCharacter()
     BaseTurnRate = 45.f;
     BaseLookUpRate = 45.f;
 
-    //GetCharacterMovement()->bUseControllerDesiredRotation = true;
+    GetCharacterMovement()->bUseControllerDesiredRotation = true;
 
     // Don't rotate when the controller rotates. Let that just affect the camera.
     bUseControllerRotationPitch = false;
-    bUseControllerRotationYaw = true;
-    bUseControllerRotationRoll = true;
+    bUseControllerRotationYaw = false;
+    bUseControllerRotationRoll = false;
 
     // Configure character movement
     //GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...   
@@ -328,20 +329,42 @@ void AWireHunterCharacter::HookWireServer_Implementation()
 
         if (Hit.bBlockingHit)
         {
-            WirePointLight->SetVisibility(false);
+            if (Hit.Actor->IsA(ADragon::StaticClass()))
+            {
+                isBossWireSwing = true;
+                GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("BossFound")));
+                ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
 
-            cppWire->SetVisibility(true);
+                WirePointLight->SetVisibility(false);
+                cppWire->SetVisibility(true);
+                cppHookLocation = TargetBoss->GetActorLocation();
 
-            cppHookLocation = Hit.Location;
+                dragon = TargetBoss;
 
-            cppWire->SetWorldLocation(cppHookLocation);
-            float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
-            cppHookedWireLength = NewWireLength;
-            cppWire->CableLength = cppHookedWireLength;
+                cppWire->SetWorldLocation(cppHookLocation);
+                float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
+                cppHookedWireLength = NewWireLength;
+                
 
-            cppHooked = true;
-            GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
-            GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
+                cppHooked = true;
+                GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
+            }
+            else
+            {
+                WirePointLight->SetVisibility(false);
+
+                cppWire->SetVisibility(true);
+
+                cppHookLocation = Hit.Location;
+
+                cppWire->SetWorldLocation(cppHookLocation);
+                float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
+                cppHookedWireLength = NewWireLength;
+                //cppWire->CableLength = cppHookedWireLength;
+
+                cppHooked = true;
+                GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f)); 
+            }
         }
     }
 }
@@ -366,6 +389,7 @@ void AWireHunterCharacter::PressWithdrawMulti_Implementation()
     if (cppHooked)
     {
         isWithdrawing = true;
+        GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
     }
 }
 
@@ -385,6 +409,8 @@ bool AWireHunterCharacter::OffWithdrawServer_Validate()
 void AWireHunterCharacter::OffWithdrawMulti_Implementation()
 {
     isWithdrawing = false;
+    BreakHookServer();
+    //ClimbServer();
 }
 
 void AWireHunterCharacter::WithdrawServer_Implementation()
@@ -393,7 +419,11 @@ void AWireHunterCharacter::WithdrawServer_Implementation()
     cppWire->CableLength = distance.Size();
     FVector launchVel = (cppHookLocation - GetActorLocation()) * (GetWorld()->GetDeltaSeconds() * 400.f);
     LaunchCharacter(launchVel, true, true);
-
+  
+    if (distance.Size() < 500.f && isBossWireSwing)
+    {
+        isWithdrawing = false;
+    }
     if (distance.Size() < 60.f)
     {
         isEnd = true;
@@ -416,6 +446,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
     cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
     cppWire->SetWorldLocation(GetActorLocation());
     cppWire->SetVisibility(false);
+    isBossWireSwing = false;
 }
 
 bool AWireHunterCharacter::BreakHookServer_Validate()
@@ -425,6 +456,10 @@ bool AWireHunterCharacter::BreakHookServer_Validate()
 
 void AWireHunterCharacter::WireSwingServer_Implementation()
 {
+    if (isBossWireSwing)
+    {
+        cppHookLocation = dragon->GetActorLocation();
+    }
     cppWire->SetWorldLocation(cppHookLocation);
     FVector dist = GetActorLocation() - cppHookLocation;
     float dot = FVector::DotProduct(GetVelocity(), dist);
@@ -432,7 +467,7 @@ void AWireHunterCharacter::WireSwingServer_Implementation()
     GetCharacterMovement()->AddForce(dist * dot * -2.f);
     if (!isWithdrawing)
     {
-        cppWire->CableLength = cppHookedWireLength - 300.f;
+        //cppWire->CableLength = cppHookedWireLength;
     }
 }
 
@@ -462,9 +497,10 @@ void AWireHunterCharacter::ClimbServer_Implementation()
             GetCharacterMovement()->bUseControllerDesiredRotation = false;
             bUseControllerRotationYaw = false;
             BreakHookServer();
-            temp->SetMovementMode(MOVE_Flying);
+            GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
             temp->Velocity = FVector(0.f, 0.f, 0.f);
+            
         }
     }
     else
@@ -506,7 +542,7 @@ void AWireHunterCharacter::UpdateWallNormalServer_Implementation()
     FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
     QueryParams.AddIgnoredActor(this);
     GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
-
+    DrawDebugLine(GetWorld(), StartTrace, EndTrace, FColor::Green, false, 1, 0, 1);
     if (Hit.bBlockingHit)
     {
         if (GetLocalRole() == ROLE_Authority)
@@ -581,7 +617,7 @@ void AWireHunterCharacter::KnockbackServer_Implementation()
 
     BreakHookServer();
 
-    GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+    GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 }
 
 bool AWireHunterCharacter::KnockbackServer_Validate()
