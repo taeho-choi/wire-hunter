@@ -126,6 +126,11 @@ void AFireball::Destroyed()
 
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
-	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+	if (otherActor->IsA(AWireHunterCharacter::StaticClass()))
+	{
+		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "c");
+	}
 	Destroy();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "o");
 }

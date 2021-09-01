@@ -415,8 +415,6 @@ void ADragon::Spawn_Implementation()
 		spawnParameters.Owner = this;
 
 		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
-
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "setting");
 	}
 
 	//FVector outVelocity = FVector::ZeroVector;   // 결과 Velocity
@@ -430,10 +428,6 @@ void ADragon::Spawn_Implementation()
 	//	UGameplayStatics::PredictProjectilePath(this, predictParams, result);
 	//}
 	//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "no setting");
-	}
 }
 
 void ADragon::DetectKickServer_Implementation()

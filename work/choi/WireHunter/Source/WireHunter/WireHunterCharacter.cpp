@@ -761,7 +761,12 @@ void AWireHunterCharacter::FireShot_Implementation()
             if (Hit.Actor->IsA(ADragon::StaticClass()))
             {
                 ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
-                TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
+                float damage = 1.f;
+                if (Hit.BoneName == "Bip001 - Head")
+                {
+                    damage *= 4;
+                }
+                TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
             }
             GenParticles(Hit, world);
         }
