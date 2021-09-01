@@ -122,7 +122,6 @@ AWireHunterCharacter::AWireHunterCharacter()
 
     GetCharacterMovement()->AirControl = 1.f;
 
-
     bReplicates = true;
 
     static ConstructorHelpers::FObjectFinder<UNiagaraSystem> ImpactParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Impact/NS_Impact.NS_Impact'"));
@@ -133,6 +132,9 @@ AWireHunterCharacter::AWireHunterCharacter()
     UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
     MuzzleParticle = NS_MuzzleFlash;
 
+    static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MuzzleSmokeParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_RealisticMuzzleFlash4.NS_RealisticMuzzleFlash4'"));
+    UNiagaraSystem* NS_MuzzleSmokeFlash = MuzzleSmokeParticleAsset.Object;
+    MuzzleSmokeParticle = NS_MuzzleSmokeFlash;
 
     YellowAuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("YellowAuraEffect"));
     YellowAuraEffect->SetupAttachment(this->GetRootComponent());
@@ -745,6 +747,7 @@ void AWireHunterCharacter::FireShot_Implementation()
         auto world = GetWorld();
 
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+        UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleSmokeParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
 
         Bullets -= 1;
 
@@ -768,7 +771,7 @@ void AWireHunterCharacter::FireShot_Implementation()
                 }
                 TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
 
-                UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), true);
+                UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
             }
             else
             {

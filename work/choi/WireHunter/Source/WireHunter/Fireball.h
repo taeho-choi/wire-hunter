@@ -31,6 +31,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
 		class UParticleSystem* ExplosionEffect;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
+		class UNiagaraSystem* MeteorSmokeParticle;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		TSubclassOf<class UDamageType> DamageType; 
 

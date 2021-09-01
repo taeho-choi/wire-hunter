@@ -12,6 +12,9 @@
 #include "WireHunterCharacter.h"
 #include "EngineUtils.h"
 #include "Dragon.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -61,6 +64,10 @@ AFireball::AFireball()
 	{
 		ExplosionEffect = DefaultExposionEffect.Object;
 	}
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MeteorSmokeParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Concrete/PS_Concrete.PS_Concrete'"));
+	UNiagaraSystem* NS_MeteorSmokeParticle = MeteorSmokeParticleAsset.Object;
+	MeteorSmokeParticle = NS_MeteorSmokeParticle;
 
 	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/AI/MT_Meteor.MT_Meteor'"));
 	UMaterial* Material = MaterialAsset.Object;
@@ -121,7 +128,8 @@ void AFireball::Tick(float DeltaTime)
 void AFireball::Destroyed() 
 {
 	FVector spawnLocation = GetActorLocation();
-	UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+	//UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, MeteorSmokeParticle, spawnLocation);
 }
 
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 

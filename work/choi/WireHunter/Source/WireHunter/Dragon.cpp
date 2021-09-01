@@ -9,6 +9,9 @@
 #include "PaperSpriteComponent.h"
 #include "Fireball.h"
 #include "GameFramework/Actor.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -31,8 +34,9 @@ ADragon::ADragon()
 
 	ProjectileClass = AFireball::StaticClass();
 
-	static ConstructorHelpers::FObjectFinder<UParticleSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/PS_Blood.PS_Blood'"));
-	BloodParticle = BloodParticleAsset.Object;
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
+	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
+	BloodParticle = NS_BloodParticleAsset;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -406,19 +410,17 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ADragon::Spawn_Implementation()
 {
-	if (ToSpawn) {
-		int randIdx = rand() % 40 + 1;
-		FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);
-		FVector spawnLocation = targetLocation + FVector(8000.f, 8000.f, 16000.f);
+	int randIdx = rand() % 40 + 1;
+	FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);
+	FVector spawnLocation = targetLocation + FVector(8000.f, 8000.f, 16000.f);
 
-		FRotator spawnRotation = UKismetMathLibrary::FindLookAtRotation(spawnLocation, targetLocation);
+	FRotator spawnRotation = UKismetMathLibrary::FindLookAtRotation(spawnLocation, targetLocation);
 
-		FActorSpawnParameters spawnParameters;
-		spawnParameters.Instigator = GetInstigator();
-		spawnParameters.Owner = this;
+	FActorSpawnParameters spawnParameters;
+	spawnParameters.Instigator = GetInstigator();
+	spawnParameters.Owner = this;
 
-		AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
-	}
+	AFireball* spwanedProjectile = GetWorld()->SpawnActor<AFireball>(spawnLocation, spawnRotation, spawnParameters);
 
 	//FVector outVelocity = FVector::ZeroVector;   // °á°ú Velocity
 	//if (UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, outVelocity, spawnLocation, TargetLocation, GetWorld()->GetGravityZ(), 0.5f))
