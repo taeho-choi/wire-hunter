@@ -39,6 +39,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite)
 	TSubclassOf<class AFireball> ProjectileClass;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UParticleSystem* BloodParticle;
+
 private:
 	char Map[10][10];
 
@@ -129,4 +132,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Server, Reliable)
 	void Spawn();
+
+	UParticleSystem* GetBloodParticle() const { return BloodParticle; }
 };

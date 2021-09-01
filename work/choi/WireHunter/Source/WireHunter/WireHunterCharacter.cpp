@@ -750,7 +750,7 @@ void AWireHunterCharacter::FireShot_Implementation()
 
         FHitResult Hit;
 
-        const float GunRange = 50000.f;//
+        const float GunRange = 20000.f;//
         const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
         const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
         FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
@@ -762,13 +762,18 @@ void AWireHunterCharacter::FireShot_Implementation()
             {
                 ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
                 float damage = 1.f;
-                if (Hit.BoneName == "Bip001 - Head")
+                if (Hit.BoneName == "Bip001 - Ponytail1")
                 {
                     damage *= 4;
                 }
                 TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
+
+                UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation(), true);
             }
-            GenParticles(Hit, world);
+            else
+            {
+                GenParticles(Hit, world);
+            }
         }
     }
     else

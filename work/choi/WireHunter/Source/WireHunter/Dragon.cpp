@@ -30,6 +30,9 @@ ADragon::ADragon()
 	NotPrecious = false;
 
 	ProjectileClass = AFireball::StaticClass();
+
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/PS_Blood.PS_Blood'"));
+	BloodParticle = BloodParticleAsset.Object;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
