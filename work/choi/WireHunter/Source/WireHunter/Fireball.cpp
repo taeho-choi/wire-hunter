@@ -12,6 +12,9 @@
 #include "WireHunterCharacter.h"
 #include "EngineUtils.h"
 #include "Dragon.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -40,8 +43,20 @@ AFireball::AFireball()
 	if (DefaultMesh.Succeeded()) 
 	{
 		StaticMesh->SetStaticMesh(DefaultMesh.Object);
-		StaticMesh->SetRelativeLocation(FVector(0.f, 0.f, -140.f));
-		StaticMesh->SetRelativeScale3D(FVector(3.f, 3.f, 3.f));
+		StaticMesh->SetRelativeLocation(FVector(-420.f, -6.666f, -200.f));
+		StaticMesh->SetRelativeScale3D(FVector(4.f, 12.f, 4.f));
+		StaticMesh->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
+	}
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SubMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
+	SubStaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SubMesh"));
+	SubStaticMesh->SetupAttachment(RootComponent);
+	if (SubMesh.Succeeded())
+	{
+		SubStaticMesh->SetStaticMesh(SubMesh.Object);
+		SubStaticMesh->SetRelativeLocation(FVector(-70.f, 0.f, -100.f));
+		SubStaticMesh->SetRelativeScale3D(FVector(2.f, 4.f, 2.f));
+		SubStaticMesh->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 	}
 
 	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExposionEffect(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
@@ -50,20 +65,28 @@ AFireball::AFireball()
 		ExplosionEffect = DefaultExposionEffect.Object;
 	}
 
-	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/StarterContent/Materials/M_Fireball.M_Fireball'"));
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MeteorSmokeParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Concrete/PS_Concrete.PS_Concrete'"));
+	UNiagaraSystem* NS_MeteorSmokeParticle = MeteorSmokeParticleAsset.Object;
+	MeteorSmokeParticle = NS_MeteorSmokeParticle;
+
+	static ConstructorHelpers::FObjectFinder<UMaterial>MaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/AI/MT_Meteor.MT_Meteor'"));
 	UMaterial* Material = MaterialAsset.Object;
 	StaticMesh->SetMaterial(0, Material);
 
+	static ConstructorHelpers::FObjectFinder<UMaterial>SubMaterialAsset(TEXT("Material'/Game/ThirdPersonCPP/AI/MT_BossRock.MT_BossRock'"));
+	UMaterial* SubMaterial = SubMaterialAsset.Object;
+	SubStaticMesh->SetMaterial(0, SubMaterial);
+
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
 	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
-	ProjectileMovementComponent->InitialSpeed = 4000.f;
-	ProjectileMovementComponent->MaxSpeed = 4000.f;
+	ProjectileMovementComponent->InitialSpeed = 14000.f;
+	ProjectileMovementComponent->MaxSpeed = 14000.f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;//이 발사체는 각 프레임의 회전을 속도 방향에 맞게 업데이트한다.
 	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
 
 	DamageType = UDamageType::StaticClass();
 
-	Damage = 10.f;
+	RootComponent->SetWorldScale3D(FVector(2.f, 2.f, 2.f));
 }
 
 // Called when the game starts or when spawned
@@ -105,19 +128,17 @@ void AFireball::Tick(float DeltaTime)
 void AFireball::Destroyed() 
 {
 	FVector spawnLocation = GetActorLocation();
-	UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+	//UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, MeteorSmokeParticle, spawnLocation);
 }
 
 void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* otherActor, UPrimitiveComponent* otherComp, FVector NormalImpuse, const FHitResult& Hit) 
 {
-	UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+	if (otherActor->IsA(AWireHunterCharacter::StaticClass()))
+	{
+		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "c");
+	}
 	Destroy();
-}
-
-void AFireball::SetOrbit(FVector Start, FVector End)
-{
-	/*FVector vel; 
-	UGameplayStatics::SuggestProjectileVelocity_CustomArc(this, vel, Start, End, GetWorld()->GetGravityZ(), 0.5f);
-	ProjectileMovementComponent->AddForce(vel);*/
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "o");
 }

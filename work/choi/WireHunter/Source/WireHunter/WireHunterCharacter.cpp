@@ -123,7 +123,6 @@ AWireHunterCharacter::AWireHunterCharacter()
 
     GetCharacterMovement()->AirControl = 1.f;
 
-
     bReplicates = true;
 
     static ConstructorHelpers::FObjectFinder<UNiagaraSystem> ImpactParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/GraphicResources/WHFX/Impact/NS_Impact.NS_Impact'"));
@@ -134,6 +133,9 @@ AWireHunterCharacter::AWireHunterCharacter()
     UNiagaraSystem* NS_MuzzleFlash = MuzzleParticleAsset.Object;
     MuzzleParticle = NS_MuzzleFlash;
 
+    static ConstructorHelpers::FObjectFinder<UNiagaraSystem> MuzzleSmokeParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_RealisticMuzzleFlash4.NS_RealisticMuzzleFlash4'"));
+    UNiagaraSystem* NS_MuzzleSmokeFlash = MuzzleSmokeParticleAsset.Object;
+    MuzzleSmokeParticle = NS_MuzzleSmokeFlash;
 
     YellowAuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("YellowAuraEffect"));
     YellowAuraEffect->SetupAttachment(this->GetRootComponent());
@@ -781,12 +783,13 @@ void AWireHunterCharacter::FireShot_Implementation()
         auto world = GetWorld();
 
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+        UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleSmokeParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
 
         Bullets -= 1;
 
         FHitResult Hit;
 
-        const float GunRange = 50000.f;//
+        const float GunRange = 20000.f;//
         const FVector StartTrace = (FollowCamera->GetForwardVector() * 200) + FollowCamera->GetComponentLocation();
         const FVector EndTrace = (FollowCamera->GetForwardVector() * GunRange) + FollowCamera->GetComponentLocation();
         FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WeaponTrace), false, this);
@@ -797,9 +800,19 @@ void AWireHunterCharacter::FireShot_Implementation()
             if (Hit.Actor->IsA(ADragon::StaticClass()))
             {
                 ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
-                TargetBoss->SetHealth(TargetBoss->GetHealth() - 1.f);
+                float damage = 1.f;
+                if (Hit.BoneName == "Bip001-Ponytail1")
+                {
+                    damage *= 4;
+                }
+                TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
+
+                UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
             }
-            GenParticles(Hit, world);
+            else
+            {
+                GenParticles(Hit, world);
+            }
         }
     }
     else

@@ -52,6 +52,9 @@ class AWireHunterCharacter : public ACharacter
         class UNiagaraSystem* MuzzleParticle;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+        class UNiagaraSystem* MuzzleSmokeParticle;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
         class UWidgetComponent* HealthWidget;
 
 public:

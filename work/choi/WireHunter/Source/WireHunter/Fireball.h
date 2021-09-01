@@ -23,19 +23,22 @@ public:
 		class UStaticMeshComponent* StaticMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		class UStaticMeshComponent* SubStaticMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		class UProjectileMovementComponent* ProjectileMovementComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
 		class UParticleSystem* ExplosionEffect;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effects")
+		class UNiagaraSystem* MeteorSmokeParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		TSubclassOf<class UDamageType> DamageType; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage")
 		float Damage;
-
-	UFUNCTION(BlueprintCallable)
-	void SetOrbit(FVector Start, FVector End);
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
