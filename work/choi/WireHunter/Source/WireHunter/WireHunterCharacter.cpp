@@ -218,8 +218,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
     if (cppHooked)
     {
-        auto BossVel = LinkedBoss->GetActorLocation();
-        WireSwingServer(BossVel);
+       WireSwingServer();
     }
 
     if (isClimbing)
@@ -464,11 +463,11 @@ bool AWireHunterCharacter::BreakHookServer_Validate()
     return true;
 }
 
-void AWireHunterCharacter::WireSwingServer_Implementation(FVector BossLoc)
+void AWireHunterCharacter::WireSwingServer_Implementation()
 {
     if (isBossWireSwing)
     {
-        cppHookLocation = BossLoc;
+        cppHookLocation = LinkedBoss->GetActorLocation();
     }
     cppWire->SetWorldLocation(cppHookLocation);
     FVector dist = GetActorLocation() - cppHookLocation;
@@ -481,7 +480,7 @@ void AWireHunterCharacter::WireSwingServer_Implementation(FVector BossLoc)
     }
 }
 
-bool AWireHunterCharacter::WireSwingServer_Validate(FVector BossLoc)
+bool AWireHunterCharacter::WireSwingServer_Validate()
 {
     return true;
 }

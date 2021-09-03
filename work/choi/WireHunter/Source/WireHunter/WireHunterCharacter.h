@@ -190,9 +190,9 @@ public:
     void OffWithdrawMulti_Implementation();
 
     UFUNCTION(Server, Reliable, WithValidation)
-        void WireSwingServer(FVector BossLoc);
-    void WireSwingServer_Implementation(FVector BossLoc);
-    bool WireSwingServer_Validate(FVector BossLoc);
+        void WireSwingServer();
+    void WireSwingServer_Implementation();
+    bool WireSwingServer_Validate();
 
     UFUNCTION(Server, Reliable, WithValidation)
         void ClimbServer();
