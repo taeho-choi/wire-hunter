@@ -136,9 +136,15 @@ void AFireball::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* ot
 {
 	if (otherActor->IsA(AWireHunterCharacter::StaticClass()))
 	{
-		UGameplayStatics::ApplyPointDamage(otherActor, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
+		if (HasAuthority())
+		{
+			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(otherActor);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
+			TargetCharacter->KnockbackServer();
+		}
+		//UGameplayStatics::ApplyPointDamage(TargetCharacter, Damage, NormalImpuse, Hit, GetInstigator()->Controller, this, DamageType);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "c");
 	}
 	Destroy();
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "o");
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "o");
 }
