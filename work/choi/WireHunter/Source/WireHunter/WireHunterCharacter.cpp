@@ -192,6 +192,15 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
+   /* if (isBossWireSwing)
+    {
+        auto BossVel = LinkedBoss->GetVelocity();
+
+        FString healthMessage = FString::Printf(TEXT("%s"), *BossVel.ToString());
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+        LaunchCharacter((FVector(1.f, 1.f, -9.8f) * BossVel * 0.1f), true, true);
+    }*/
     if (!cppHooked)//
     {
         SetPointLight();
@@ -209,7 +218,8 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
     if (cppHooked)
     {
-        WireSwingServer();
+        auto BossVel = LinkedBoss->GetActorLocation();
+        WireSwingServer(BossVel);
     }
 
     if (isClimbing)
@@ -335,14 +345,12 @@ void AWireHunterCharacter::HookWireServer_Implementation()
             {
                 isBossWireSwing = true;
                 GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("BossFound")));
-                ADragon* TargetBoss = Cast<ADragon>(Hit.Actor);
+                LinkedBoss = Cast<ADragon>(Hit.Actor);
 
                 WirePointLight->SetVisibility(false);
                 cppWire->SetVisibility(true);
-                cppHookLocation = TargetBoss->GetActorLocation();
-
-                dragon = TargetBoss;
-
+                cppHookLocation = LinkedBoss->GetActorLocation();
+               
                 cppWire->SetWorldLocation(cppHookLocation);
                 float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
                 cppHookedWireLength = NewWireLength;
@@ -456,11 +464,11 @@ bool AWireHunterCharacter::BreakHookServer_Validate()
     return true;
 }
 
-void AWireHunterCharacter::WireSwingServer_Implementation()
+void AWireHunterCharacter::WireSwingServer_Implementation(FVector BossLoc)
 {
     if (isBossWireSwing)
     {
-        cppHookLocation = dragon->GetActorLocation();
+        cppHookLocation = BossLoc;
     }
     cppWire->SetWorldLocation(cppHookLocation);
     FVector dist = GetActorLocation() - cppHookLocation;
@@ -473,7 +481,7 @@ void AWireHunterCharacter::WireSwingServer_Implementation()
     }
 }
 
-bool AWireHunterCharacter::WireSwingServer_Validate()
+bool AWireHunterCharacter::WireSwingServer_Validate(FVector BossLoc)
 {
     return true;
 }

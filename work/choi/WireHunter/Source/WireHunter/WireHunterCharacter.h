@@ -5,6 +5,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Dragon.h"
 #include "WireHunterCharacter.generated.h"
 
 UCLASS(config = Game)
@@ -146,8 +147,8 @@ protected:
 
     UPROPERTY(Replicated)
         bool isBossWireSwing;
-    UPROPERTY(Replicated)
-        AActor* dragon;
+
+    ADragon* LinkedBoss;
 
 
 public:
@@ -189,9 +190,9 @@ public:
     void OffWithdrawMulti_Implementation();
 
     UFUNCTION(Server, Reliable, WithValidation)
-        void WireSwingServer();
-    void WireSwingServer_Implementation();
-    bool WireSwingServer_Validate();
+        void WireSwingServer(FVector BossLoc);
+    void WireSwingServer_Implementation(FVector BossLoc);
+    bool WireSwingServer_Validate(FVector BossLoc);
 
     UFUNCTION(Server, Reliable, WithValidation)
         void ClimbServer();

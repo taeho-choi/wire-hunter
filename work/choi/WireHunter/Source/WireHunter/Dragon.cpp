@@ -400,6 +400,8 @@ void ADragon::Tick(float DeltaTime)
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 		}
 	}
+
+	SetActorLocation(GetActorLocation() + GetActorForwardVector() * 10.f);
 }
 
 // Called to bind functionality to input
