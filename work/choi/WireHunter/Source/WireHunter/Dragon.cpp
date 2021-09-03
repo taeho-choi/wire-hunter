@@ -12,6 +12,7 @@
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
 #include "NiagaraComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -37,6 +38,10 @@ ADragon::ADragon()
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
 	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
 	BloodParticle = NS_BloodParticleAsset;
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
+	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
+	BreathParticle = NS_BreathParticleAsset;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -400,8 +405,6 @@ void ADragon::Tick(float DeltaTime)
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 		}
 	}
-
-	SetActorLocation(GetActorLocation() + GetActorForwardVector() * 10.f);
 }
 
 // Called to bind functionality to input
@@ -473,3 +476,35 @@ bool ADragon::DetectKickServer_Validate()
 {
 	return true;
  }
+
+void ADragon::Breath()
+{
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+}
+
+void ADragon::BreathTrace()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
+
+	FHitResult hit;
+
+	const float range = 3000.f;
+	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f);
+	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
+
+	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
+	queryParams.AddIgnoredActor(this);
+	TArray<AActor*> ActorsToIgnore;
+	UKismetSystemLibrary::BoxTraceSingle(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, hit, true);//
+
+	if (hit.bBlockingHit)
+	{
+		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
+		{
+			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 0.1f);
+		}
+	}
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
+}
