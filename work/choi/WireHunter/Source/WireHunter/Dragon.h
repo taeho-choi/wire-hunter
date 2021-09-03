@@ -140,4 +140,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void Breath();
+
+	UFUNCTION(BlueprintCallable)
+	void BreathTrace();
 };

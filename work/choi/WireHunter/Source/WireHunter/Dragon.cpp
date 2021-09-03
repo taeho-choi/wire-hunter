@@ -12,6 +12,7 @@
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
 #include "NiagaraComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -479,4 +480,31 @@ bool ADragon::DetectKickServer_Validate()
 void ADragon::Breath()
 {
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+}
+
+void ADragon::BreathTrace()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
+
+	FHitResult hit;
+
+	const float range = 3000.f;
+	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f);
+	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
+
+	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
+	queryParams.AddIgnoredActor(this);
+	TArray<AActor*> ActorsToIgnore;
+	UKismetSystemLibrary::BoxTraceSingle(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, hit, true);//
+
+	if (hit.bBlockingHit)
+	{
+		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
+		{
+			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
+			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 0.1f);
+		}
+	}
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
 }
