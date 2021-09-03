@@ -42,6 +42,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UNiagaraSystem* BloodParticle;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UNiagaraSystem* BreathParticle;
+
 private:
 	char Map[10][10];
 
@@ -134,4 +137,7 @@ public:
 	void Spawn();
 
 	UNiagaraSystem* GetBloodParticle() const { return BloodParticle; }
+
+	UFUNCTION(BlueprintCallable)
+	void Breath();
 };

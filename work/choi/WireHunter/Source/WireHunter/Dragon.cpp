@@ -37,6 +37,10 @@ ADragon::ADragon()
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
 	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
 	BloodParticle = NS_BloodParticleAsset;
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
+	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
+	BreathParticle = NS_BreathParticleAsset;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -400,8 +404,6 @@ void ADragon::Tick(float DeltaTime)
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
 		}
 	}
-
-	SetActorLocation(GetActorLocation() + GetActorForwardVector() * 10.f);
 }
 
 // Called to bind functionality to input
@@ -473,3 +475,8 @@ bool ADragon::DetectKickServer_Validate()
 {
 	return true;
  }
+
+void ADragon::Breath()
+{
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+}
