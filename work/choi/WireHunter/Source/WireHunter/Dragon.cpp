@@ -507,3 +507,9 @@ void ADragon::BreathTrace()
 		}
 	}
 }
+
+void ADragon::Test()
+{
+	PlayAnimMontage(TestAnim, 1, NAME_None);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "play");
+}

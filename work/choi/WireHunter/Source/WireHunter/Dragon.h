@@ -45,6 +45,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
 	class UNiagaraSystem* BreathParticle;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+		class UAnimMontage* TestAnim;
+
 private:
 	char Map[10][10];
 
@@ -143,4 +146,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void BreathTrace();
+
+	UFUNCTION(BlueprintCallable)
+	void Test();
 };
