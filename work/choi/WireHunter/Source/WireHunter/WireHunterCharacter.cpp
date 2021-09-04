@@ -201,7 +201,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
         LaunchCharacter((FVector(1.f, 1.f, -9.8f) * BossVel * 0.1f), true, true);
     }*/
-    if (!cppHooked)//
+    if (!cppHooked && !isClimbing)//
     {
         SetPointLight();
     }
