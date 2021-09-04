@@ -484,9 +484,7 @@ void ADragon::Breath()
 
 void ADragon::BreathTrace()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
-
-	FHitResult hit;
+	TArray<FHitResult> hits;
 
 	const float range = 3000.f;
 	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f);
@@ -495,16 +493,17 @@ void ADragon::BreathTrace()
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
 	queryParams.AddIgnoredActor(this);
 	TArray<AActor*> ActorsToIgnore;
-	UKismetSystemLibrary::BoxTraceSingle(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, hit, true);//
+	UKismetSystemLibrary::BoxTraceMulti(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForDuration, hits, true);
 
-	if (hit.bBlockingHit)
+	for (const auto& e : hits)
 	{
-		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
+		if (e.bBlockingHit)
 		{
-			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 0.1f);
+			if (e.Actor->IsA(AWireHunterCharacter::StaticClass()))
+			{
+				AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(e.Actor);
+				TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
+			}
 		}
 	}
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
 }
