@@ -7,7 +7,6 @@
 #include "NodeStructure.h"
 #include "WeightStructure.h"
 #include "Fireball.h"
-#include "Lightning.h"
 
 #include "Dragon.generated.h"
 
@@ -47,6 +46,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
 		class UAnimMontage* TestAnim;
+
+	FTimerHandle TimerHandle_BreathTracing;
 
 private:
 	char Map[10][10];

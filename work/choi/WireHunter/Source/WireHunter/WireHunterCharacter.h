@@ -150,7 +150,6 @@ protected:
 
     ADragon* LinkedBoss;
 
-
 public:
 
     UFUNCTION(Client, Reliable)

@@ -493,7 +493,7 @@ void ADragon::BreathTrace()
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
 	queryParams.AddIgnoredActor(this);
 	TArray<AActor*> ActorsToIgnore;
-	UKismetSystemLibrary::BoxTraceMulti(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForDuration, hits, true);
+	UKismetSystemLibrary::BoxTraceMulti(this, startTrace, endTrace, FVector(300.f, 300.f, 300.f), GetActorRotation(), TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, hits, true);
 
 	for (const auto& e : hits)
 	{
@@ -510,6 +510,6 @@ void ADragon::BreathTrace()
 
 void ADragon::Test()
 {
-	PlayAnimMontage(TestAnim, 1, NAME_None);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "play");
+	GetWorldTimerManager().SetTimer(TimerHandle_BreathTracing, this, &ADragon::BreathTrace, 0.5f, true, 0.f);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
 }
