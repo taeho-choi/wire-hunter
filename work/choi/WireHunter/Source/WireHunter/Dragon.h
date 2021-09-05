@@ -45,9 +45,10 @@ protected:
 	class UNiagaraSystem* BreathParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
-		class UAnimMontage* TestAnim;
+	class UAnimMontage* BreathAnim;
 
-	FTimerHandle TimerHandle_BreathTracing;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool BreathTrigger;
 
 private:
 	char Map[10][10];
@@ -115,11 +116,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FVector GetPath();
 
-	UFUNCTION(BlueprintCallable, Server, Reliable, WithValidation)
-	void DetectKickServer();
-	void DetectKickServer_Implementation();
-	bool DetectKickServer_Validate();
-
 	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
 
@@ -142,12 +138,18 @@ public:
 
 	UNiagaraSystem* GetBloodParticle() const { return BloodParticle; }
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
 	void Breath();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void PlayBreathAnim();
 
 	UFUNCTION(BlueprintCallable)
 	void BreathTrace();
 
 	UFUNCTION(BlueprintCallable)
-	void Test();
+	bool GetBreathTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetBreathTrigger(bool b);
 };

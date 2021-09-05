@@ -257,7 +257,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
             }
         }
     }
-
 }
 
 void AWireHunterCharacter::GhostTrail_Implementation()
@@ -820,8 +819,7 @@ void AWireHunterCharacter::FireShot_Implementation()
                     damage *= 4;
                 }
                 TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
-
-                UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+                GenBloodParticle(Hit, world, TargetBoss);
             }
             else
             {
@@ -844,6 +842,11 @@ void AWireHunterCharacter::GenParticles2_Implementation(UWorld* world)
 {
     UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
     UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleSmokeParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+}
+
+void AWireHunterCharacter::GenBloodParticle_Implementation(FHitResult Hit, UWorld* world, ADragon* TargetBoss)
+{
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
 }
 
 void AWireHunterCharacter::Reload_Implementation()

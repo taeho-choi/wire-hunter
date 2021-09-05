@@ -25,4 +25,12 @@ private:
 
 	UPROPERTY()
 		class UBlackboardData* BBAsset;
+
+	class ADragon* Dragon;
+
+	class UBlackboardComponent* BB;
+
+protected:
+
+	virtual void Tick(float DeltaSeconds) override;
 };

@@ -262,6 +262,9 @@ public:
     UFUNCTION(NetMulticast, Reliable)
         void GenParticles2(UWorld* world);
 
+    UFUNCTION(NetMulticast, Reliable)
+        void GenBloodParticle(FHitResult Hit, UWorld* world, ADragon* TargetBoss);
+
     UFUNCTION(Server, Reliable)
         void Reload();
 

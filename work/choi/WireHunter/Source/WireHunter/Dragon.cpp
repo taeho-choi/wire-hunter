@@ -32,6 +32,7 @@ ADragon::ADragon()
 	bReplicates = true;
 
 	NotPrecious = false;
+	BreathTrigger = false;
 
 	ProjectileClass = AFireball::StaticClass();
 
@@ -440,46 +441,14 @@ void ADragon::Spawn_Implementation()
 	//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
 }
 
-void ADragon::DetectKickServer_Implementation()
-{
-	FHitResult hit;
-
-	const float range = 500.f;
-	FVector startTrace = GetCapsuleComponent()->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
-	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
-
-	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
-	queryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
-	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
-
-	if (hit.bBlockingHit)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "hit");
-
-		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "HP");
-
-			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
-			TargetCharacter->KnockbackServer();
-
-			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
-		}
-	}
-}
-
-bool ADragon::DetectKickServer_Validate()
-{
-	return true;
- }
-
-void ADragon::Breath()
+void ADragon::Breath_Implementation()
 {
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+}
+
+void ADragon::PlayBreathAnim_Implementation()
+{
+	PlayAnimMontage(BreathAnim, 1, NAME_None);
 }
 
 void ADragon::BreathTrace()
@@ -508,8 +477,12 @@ void ADragon::BreathTrace()
 	}
 }
 
-void ADragon::Test()
+bool ADragon::GetBreathTrigger()
 {
-	GetWorldTimerManager().SetTimer(TimerHandle_BreathTracing, this, &ADragon::BreathTrace, 0.5f, true, 0.f);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
+	return BreathTrigger;
+}
+
+void ADragon::SetBreathTrigger(bool b)
+{
+	BreathTrigger = b;
 }
