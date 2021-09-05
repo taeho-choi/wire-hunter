@@ -259,6 +259,9 @@ public:
     UFUNCTION(NetMulticast, Reliable)
         void GenParticles(FHitResult Hit, UWorld* world);
 
+    UFUNCTION(NetMulticast, Reliable)
+        void GenParticles2(UWorld* world);
+
     UFUNCTION(Server, Reliable)
         void Reload();
 
