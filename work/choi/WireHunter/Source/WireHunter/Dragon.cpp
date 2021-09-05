@@ -435,7 +435,7 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void ADragon::Spawn_Implementation()
+void ADragon::Spawn()
 {
 	int randIdx = rand() % 40 + 1;
 	FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);

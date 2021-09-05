@@ -140,7 +140,8 @@ public:
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
-	UFUNCTION(BlueprintCallable, Server, Reliable)
+	//UFUNCTION(BlueprintCallable, Server, Reliable)
+	UFUNCTION(BlueprintCallable)
 	void Spawn();
 
 	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
