@@ -486,3 +486,8 @@ void ADragon::SetBreathTrigger(bool b)
 {
 	BreathTrigger = b;
 }
+
+void ADragon::Test()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("TEST")));
+}

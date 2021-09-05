@@ -152,4 +152,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetBreathTrigger(bool b);
+
+	UFUNCTION(BlueprintCallable)
+		void Test();
 };
