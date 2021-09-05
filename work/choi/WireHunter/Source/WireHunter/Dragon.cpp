@@ -32,7 +32,9 @@ ADragon::ADragon()
 	bReplicates = true;
 
 	NotPrecious = false;
-	BreathTrigger = false;
+	FirstBreathTrigger = false;
+	SecondBreathTrigger = false;
+	MeteorTrigger = false;
 
 	ProjectileClass = AFireball::StaticClass();
 
@@ -443,7 +445,7 @@ void ADragon::Spawn_Implementation()
 
 void ADragon::Breath_Implementation()
 {
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation());
 }
 
 void ADragon::PlayBreathAnim_Implementation()
@@ -477,17 +479,32 @@ void ADragon::BreathTrace()
 	}
 }
 
-bool ADragon::GetBreathTrigger()
+bool ADragon::GetFirstBreathTrigger()
 {
-	return BreathTrigger;
+	return FirstBreathTrigger;
 }
 
-void ADragon::SetBreathTrigger(bool b)
+void ADragon::SetFirstBreathTrigger(bool b)
 {
-	BreathTrigger = b;
+	FirstBreathTrigger = b;
 }
 
-void ADragon::Test()
+bool ADragon::GetSecondBreathTrigger()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("TEST")));
+	return SecondBreathTrigger;
+}
+
+void ADragon::SetSecondBreathTrigger(bool b)
+{
+	SecondBreathTrigger = b;
+}
+
+bool ADragon::GetMeteorTrigger()
+{
+	return MeteorTrigger;
+}
+
+void ADragon::SetMeteorTrigger(bool b)
+{
+	MeteorTrigger = b;
 }

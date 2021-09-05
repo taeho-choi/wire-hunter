@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "Animation/AnimInstance.h"
 #include "DragonAnimInstance.generated.h"
 
@@ -16,6 +16,8 @@ class WIREHUNTER_API UDragonAnimInstance : public UAnimInstance
 
 public:
 	UDragonAnimInstance();
+
+	virtual void NativeUpdateAnimation(float DeltaSecond) override;
 	
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Meta = (AllowPrivateAccess = true))

@@ -48,7 +48,13 @@ protected:
 	class UAnimMontage* BreathAnim;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
-	bool BreathTrigger;
+	bool FirstBreathTrigger;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool SecondBreathTrigger;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool MeteorTrigger;
 
 private:
 	char Map[10][10];
@@ -148,11 +154,20 @@ public:
 	void BreathTrace();
 
 	UFUNCTION(BlueprintCallable)
-	bool GetBreathTrigger();
+	bool GetFirstBreathTrigger();
 
 	UFUNCTION(BlueprintCallable)
-	void SetBreathTrigger(bool b);
+	void SetFirstBreathTrigger(bool b);
 
 	UFUNCTION(BlueprintCallable)
-		void Test();
+	bool GetSecondBreathTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetSecondBreathTrigger(bool b);
+
+	UFUNCTION(BlueprintCallable)
+	bool GetMeteorTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetMeteorTrigger(bool b);
 };
