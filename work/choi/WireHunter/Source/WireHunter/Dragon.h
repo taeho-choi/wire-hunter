@@ -26,7 +26,7 @@ protected:
 	UPROPERTY(Replicated, VisibleInstanceOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
-		float MaxHealth = 1000;
+		float MaxHealth = 10;
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 		TArray<FString> BoneList = 
@@ -142,13 +142,8 @@ public:
 	UFUNCTION(BlueprintCallable, Server, Reliable)
 	void Spawn();
 
-	UNiagaraSystem* GetBloodParticle() const { return BloodParticle; }
-
 	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
 	void Breath();
-
-	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
-	void PlayBreathAnim();
 
 	UFUNCTION(BlueprintCallable)
 	void BreathTrace();

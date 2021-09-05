@@ -38,10 +38,6 @@ ADragon::ADragon()
 
 	ProjectileClass = AFireball::StaticClass();
 
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
-	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
-	BloodParticle = NS_BloodParticleAsset;
-
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
 	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
 	BreathParticle = NS_BreathParticleAsset;
@@ -406,7 +402,7 @@ void ADragon::Tick(float DeltaTime)
 
 	if (Health < 0)
 	{
-		if (GetMesh()->GetComponentLocation().Z < -4000.f)
+		if (GetActorLocation().Z < -4000.f)
 		{
 			Destroy();
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
@@ -450,11 +446,6 @@ void ADragon::Spawn_Implementation()
 void ADragon::Breath_Implementation()
 {
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation());
-}
-
-void ADragon::PlayBreathAnim_Implementation()
-{
-	PlayAnimMontage(BreathAnim, 1, NAME_None);
 }
 
 void ADragon::BreathTrace()
