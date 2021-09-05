@@ -41,6 +41,10 @@ ADragon::ADragon()
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
 	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
 	BreathParticle = NS_BreathParticleAsset;
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood_2.NS_Blood_2'"));
+	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
+	BloodParticle = NS_BloodParticleAsset;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -399,15 +403,6 @@ FVector ADragon::GetPath()////////////////////////////////////////////////////
 void ADragon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if (Health < 0)
-	{
-		if (GetActorLocation().Z < -4000.f)
-		{
-			Destroy();
-			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
-		}
-	}
 }
 
 // Called to bind functionality to input
@@ -443,9 +438,14 @@ void ADragon::Spawn_Implementation()
 	//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
 }
 
-void ADragon::Breath_Implementation()
+void ADragon::BreathMulti_Implementation()
 {
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation());
+}
+
+void ADragon::GenDeathParticleMulti_Implementation()
+{
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BloodParticle, GetActorLocation(), GetActorRotation(), FVector(100.f, 100.f, 100.f));
 }
 
 void ADragon::BreathTrace()
@@ -502,4 +502,59 @@ bool ADragon::GetMeteorTrigger()
 void ADragon::SetMeteorTrigger(bool b)
 {
 	MeteorTrigger = b;
+}
+
+void ADragon::SetHealth(float value)
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		Health = value;
+		OnHealthUpdate();
+	}
+}
+
+void ADragon::OnRep_Health()
+{
+	OnHealthUpdate();
+}
+
+void ADragon::OnHealthUpdate()
+{
+	//Client-specific functionality
+	/*if (IsLocallyControlled())
+	{
+		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+		if (Health <= 0)
+		{
+			Destroy();
+		}
+	}*/
+
+	//Server-specific functionality
+	if (Health <= 0)
+	{
+		if (HasAuthority())
+		{
+			Death();
+		}
+	}
+
+	//Functions that occur on all machines. 
+	/*
+	   Any special functionality that should occur as a result of damage or death should be placed here.
+	*/
+}
+
+void ADragon::Death()
+{
+	GenDeathParticleMulti();
+	Destroy();
+	FTimerHandle WaitHandle;
+	float WaitTime = 4.f;
+	GetWorld()->GetTimerManager().SetTimer(WaitHandle, FTimerDelegate::CreateLambda([&]()
+		{
+			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+		}), WaitTime, false); //반복도 여기서 추가 변수를 선언해 설정가능
 }

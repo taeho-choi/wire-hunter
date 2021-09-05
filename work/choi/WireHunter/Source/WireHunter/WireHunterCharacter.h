@@ -278,7 +278,7 @@ public:
         void PlayBackRollAnim();
 
     UFUNCTION(NetMulticast, Reliable)
-    void GhostTrail();
+        void GhostTrail();
 
     UFUNCTION(BlueprintCallable)
         float GetBullets() const { return Bullets; }

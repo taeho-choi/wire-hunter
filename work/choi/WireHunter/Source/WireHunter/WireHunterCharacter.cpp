@@ -312,10 +312,7 @@ void AWireHunterCharacter::SetPointLight_Implementation()
             WirePointLight->AttenuationRadius = 30.f;
         }
 
-        if (Hit.Actor->GetName() != FString(TEXT("Boss_1")))
-        {
-            WirePointLight->SetWorldLocation(Hit.Location + Hit.Normal * 15);
-        }
+        WirePointLight->SetWorldLocation(Hit.Location + Hit.Normal * 15);
     }
     else
     {
@@ -822,10 +819,9 @@ void AWireHunterCharacter::FireShot_Implementation()
                 {
                     damage *= 4;
                 }
-                TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
-                if (TargetBoss->GetHealth() <= 0.f)
+                if (HasAuthority())
                 {
-                    TargetBoss->GetMesh()->SetSimulatePhysics(true);
+                    TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
                 }
                 GenBloodParticle(Hit, world);
             }
@@ -890,8 +886,6 @@ void AWireHunterCharacter::OnHealthUpdate()
     {
         FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
         GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
-
-
 
         if (Health <= 0)
         {

@@ -23,10 +23,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(Replicated, VisibleInstanceOnly, Category = "Status")
+	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleInstanceOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
-		float MaxHealth = 10;
+		float MaxHealth = 400;
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 		TArray<FString> BoneList = 
@@ -125,12 +125,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
 
-	void SetHealth(float value) { 
-		if (GetLocalRole() == ROLE_Authority)
-		{
-			Health = value;
-		}
-	}
+	void SetHealth(float value);
 
 	UFUNCTION(BlueprintCallable)
 	float GetMaxHealth() const { return MaxHealth; }
@@ -143,7 +138,10 @@ public:
 	void Spawn();
 
 	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
-	void Breath();
+	void BreathMulti();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void GenDeathParticleMulti();
 
 	UFUNCTION(BlueprintCallable)
 	void BreathTrace();
@@ -165,4 +163,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetMeteorTrigger(bool b);
+
+	UFUNCTION()
+	void OnRep_Health();
+
+	void OnHealthUpdate();
+
+	UFUNCTION(BlueprintCallable)
+	void Death();
 };
