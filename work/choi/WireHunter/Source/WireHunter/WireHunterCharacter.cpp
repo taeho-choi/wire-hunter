@@ -260,7 +260,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
 }
 
-void AWireHunterCharacter::GhostTrail()
+void AWireHunterCharacter::GhostTrail_Implementation()
 {
     UObject* SpawnActor = Cast<UObject>(StaticLoadObject(UObject::StaticClass(), NULL, TEXT("Blueprint'/Game/ThirdPersonCPP/GraphicResources/WHFX/GhostTrail/BP_GhostTrail.BP_GhostTrail'")));
 
@@ -320,11 +320,16 @@ void AWireHunterCharacter::SetPointLight_Implementation()
     }
 }
 
+void AWireHunterCharacter::PlayBackRollAnim_Implementation()
+{
+    PlayAnimMontage(RollAnim, 1, NAME_None);
+}
+
 void AWireHunterCharacter::HookWireServer_Implementation()
 {
     if (cppHooked)
     {
-        PlayAnimMontage(RollAnim, 1, NAME_None);
+        PlayBackRollAnim();
         BreakHookServer();
     }
     else
@@ -398,7 +403,10 @@ void AWireHunterCharacter::PressWithdrawMulti_Implementation()
     if (cppHooked)
     {
         isWithdrawing = true;
-        GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
+        if (HasAuthority())
+        {
+            GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AWireHunterCharacter::GhostTrail, 0.1f, true, 0.f);
+        }
     }
 }
 

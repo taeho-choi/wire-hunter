@@ -265,6 +265,12 @@ public:
     UFUNCTION(NetMulticast, Reliable)
         void PlayReloadAnim();
 
+    UFUNCTION(NetMulticast, Reliable)
+        void PlayBackRollAnim();
+
+    UFUNCTION(NetMulticast, Reliable)
+    void GhostTrail();
+
     UFUNCTION(BlueprintCallable)
         float GetBullets() const { return Bullets; }
 
@@ -289,7 +295,7 @@ public:
 
     UFUNCTION(BlueprintCallable)
         bool GetisClimbing() const { return isClimbing; }
-    void GhostTrail();
+   
     FTimerHandle SpawnTimerHandle;
 
     UFUNCTION(BlueprintCallable)
@@ -305,7 +311,7 @@ public:
     FVector GetCppWallNormal() const { return cppWallNormal; }
 
     UFUNCTION(BlueprintCallable, Category = "Health")
-        float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+    float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
     //R
 
