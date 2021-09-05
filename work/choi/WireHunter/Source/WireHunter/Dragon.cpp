@@ -36,6 +36,7 @@ ADragon::ADragon()
 	FirstBreathTrigger = false;
 	SecondBreathTrigger = false;
 	MeteorTrigger = false;
+	Flare = false;
 
 	ProjectileClass = AFireball::StaticClass();
 
@@ -59,11 +60,13 @@ ADragon::ADragon()
 void ADragon::BreathOnMulti_Implementation()
 {
 	FlameParticle->Activate();
+	Flare = true;
 }
 
 void ADragon::BreathOffMulti_Implementation()
 {
 	FlameParticle->Deactivate();
+	Flare = false;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -75,6 +78,8 @@ void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetim
 	DOREPLIFETIME(ADragon, FirstBreathTrigger);
 	DOREPLIFETIME(ADragon, SecondBreathTrigger);
 	DOREPLIFETIME(ADragon, MeteorTrigger);
+
+	DOREPLIFETIME(ADragon, Flare);
 }
 
 void ADragon::MakeMap()
@@ -472,7 +477,7 @@ void ADragon::BreathTrace()
 	TArray<FHitResult> hits;
 
 	const float range = 3000.f;
-	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f);
+	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2500 + FVector(0.f, 0.f, 300.f);
 	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
 
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
@@ -487,7 +492,7 @@ void ADragon::BreathTrace()
 			if (e.Actor->IsA(AWireHunterCharacter::StaticClass()))
 			{
 				AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(e.Actor);
-				TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
+				TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 0.2f);
 			}
 		}
 	}
@@ -575,5 +580,15 @@ void ADragon::Death()
 	GetWorld()->GetTimerManager().SetTimer(WaitHandle, FTimerDelegate::CreateLambda([&]()
 		{
 			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
-		}), WaitTime, false); //반복도 여기서 추가 변수를 선언해 설정가능
+		}), WaitTime, false); 
+}
+
+bool ADragon::GetFlare()
+{
+	return Flare;
+}
+
+void ADragon::SetFlare(bool b)
+{
+	Flare = b;
 }

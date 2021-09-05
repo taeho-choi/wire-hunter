@@ -26,7 +26,7 @@ protected:
 	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleInstanceOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
-		float MaxHealth = 400;
+		float MaxHealth = 100;
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 		TArray<FString> BoneList = 
@@ -58,6 +58,9 @@ protected:
 
 	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
 	bool MeteorTrigger;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool Flare;
 
 private:
 	char Map[10][10];
@@ -180,4 +183,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
 	void BreathOffMulti();
+
+	UFUNCTION(BlueprintCallable)
+	bool GetFlare();
+
+	UFUNCTION(BlueprintCallable)
+	void SetFlare(bool b);
 };
