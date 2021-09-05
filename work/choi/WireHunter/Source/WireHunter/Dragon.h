@@ -42,7 +42,10 @@ protected:
 	class UNiagaraSystem* BloodParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
-	class UNiagaraSystem* BreathParticle;
+	class UParticleSystem* BreathParticle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UParticleSystemComponent* FlameParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
 	class UAnimMontage* BreathAnim;
@@ -171,4 +174,10 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void Death();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void BreathOnMulti();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void BreathOffMulti();
 };

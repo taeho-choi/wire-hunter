@@ -13,6 +13,7 @@
 #include "NiagaraSystem.h"
 #include "NiagaraComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "Particles/ParticleSystemComponent.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -38,13 +39,31 @@ ADragon::ADragon()
 
 	ProjectileClass = AFireball::StaticClass();
 
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
-	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
-	BreathParticle = NS_BreathParticleAsset;
+	FlameParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("agari"));
+	FlameParticle->SetupAttachment(GetMesh());
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> BreathParticleAsset(TEXT("ParticleSystem'/Game/Automatic_FlameThrower_Turret/Particles/P_flame.P_flame'"));
+	if (BreathParticleAsset.Succeeded())
+	{
+		FlameParticle->Template = BreathParticleAsset.Object;
+	}
+	FlameParticle->SetWorldScale3D(FVector(1.f, 1.f, 1.f));
+	FlameParticle->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
+	FlameParticle->SetRelativeLocation(FVector(0.f, 380.f, 20.f));
+	FlameParticle->Deactivate();
 
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood_2.NS_Blood_2'"));
 	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
 	BloodParticle = NS_BloodParticleAsset;
+}
+
+void ADragon::BreathOnMulti_Implementation()
+{
+	FlameParticle->Activate();
+}
+
+void ADragon::BreathOffMulti_Implementation()
+{
+	FlameParticle->Deactivate();
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -440,7 +459,7 @@ void ADragon::Spawn_Implementation()
 
 void ADragon::BreathMulti_Implementation()
 {
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation());
+	//UGameplayStatics::SpawnEmitterAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation(), true, EPSCPoolMethod::AutoRelease);
 }
 
 void ADragon::GenDeathParticleMulti_Implementation()

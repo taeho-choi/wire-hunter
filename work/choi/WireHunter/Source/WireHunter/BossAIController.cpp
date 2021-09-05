@@ -36,11 +36,11 @@ void ABossAIController::Tick(float DeltaTime)
 
 	if (BB->GetValueAsBool("SetBreath"))
 	{
-		Dragon->BreathMulti();
+		Dragon->BreathOnMulti();
 	}
 
-	/*if (BB->GetValueAsBool("SetBreathAnim"))
+	if (!(BB->GetValueAsBool("SetBreath")))
 	{
-		Dragon->PlayBreathAnim();
-	}*/
+		Dragon->BreathOffMulti();
+	}
 }
