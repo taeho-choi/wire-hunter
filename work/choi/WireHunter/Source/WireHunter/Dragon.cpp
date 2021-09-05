@@ -52,6 +52,10 @@ void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetim
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ADragon, Health);
+
+	DOREPLIFETIME(ADragon, FirstBreathTrigger);
+	DOREPLIFETIME(ADragon, SecondBreathTrigger);
+	DOREPLIFETIME(ADragon, MeteorTrigger);
 }
 
 void ADragon::MakeMap()
