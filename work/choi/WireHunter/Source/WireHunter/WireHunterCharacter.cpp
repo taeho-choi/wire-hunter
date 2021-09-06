@@ -55,7 +55,7 @@ AWireHunterCharacter::AWireHunterCharacter()
 
     // Don't rotate when the controller rotates. Let that just affect the camera.
     bUseControllerRotationPitch = false;
-    bUseControllerRotationYaw = false;
+    bUseControllerRotationYaw = true;
     bUseControllerRotationRoll = false;
 
     // Configure character movement
@@ -89,7 +89,7 @@ AWireHunterCharacter::AWireHunterCharacter()
     cppWire->bAttachStart = true;
     cppWire->CableWidth = 8.f;
     cppWire->CableLength = 100.f;
-    cppWire->EndLocation = FVector(0.f, 0.f, 0.f);
+    cppWire->EndLocation = FVector(50.f, 0.f, 0.f);
     cppWire->bEnableStiffness = true;
     cppWire->SetIsReplicated(true);
 
@@ -218,7 +218,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
 
     if (cppHooked)
     {
-       WireSwingServer();
+       //WireSwingServer();
     }
 
     if (isClimbing)
@@ -331,6 +331,8 @@ void AWireHunterCharacter::HookWireServer_Implementation()
     {
         PlayBackRollAnim();
         BreakHookServer();
+        isWireSwing_Rep = false;
+        isBossWireSwing_Rep = false;
     }
     else
     {
@@ -347,6 +349,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
         {
             if (Hit.Actor->IsA(ADragon::StaticClass()))
             {
+                isBossWireSwing_Rep = true;
                 isBossWireSwing = true;
                 GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("BossFound")));
                 LinkedBoss = Cast<ADragon>(Hit.Actor);
@@ -361,10 +364,13 @@ void AWireHunterCharacter::HookWireServer_Implementation()
                 
 
                 cppHooked = true;
-                GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
+                //GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
             }
             else
             {
+                //테스트
+                isWireSwing_Rep = true;
+
                 WirePointLight->SetVisibility(false);
 
                 cppWire->SetVisibility(true);
@@ -377,7 +383,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
                 //cppWire->CableLength = cppHookedWireLength;
 
                 cppHooked = true;
-                GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f)); 
+                //GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -100000000.f)); 
             }
         }
     }
@@ -390,7 +396,9 @@ bool AWireHunterCharacter::HookWireServer_Validate()
 
 void AWireHunterCharacter::PressWithdrawServer_Implementation()
 {
-    PressWithdrawMulti();
+    repIsWithdrawing_trigger = true;
+    //isWireSwing_Rep = false;
+    //PressWithdrawMulti();
 }
 
 bool AWireHunterCharacter::PressWithdrawServer_Validate()
@@ -459,8 +467,8 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
     cppHooked = false;
     GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 
-    cppWire->CableLength = 100.f;
-    cppWire->EndLocation = FVector(0.f, 0.f, 30.f);
+    cppWire->CableLength = 0.f;
+    cppWire->EndLocation = FVector(50.f, 0.f, 0.f);
     cppWire->SetWorldLocation(GetActorLocation());
     cppWire->SetVisibility(false);
     isBossWireSwing = false;
@@ -481,7 +489,7 @@ void AWireHunterCharacter::WireSwingServer_Implementation()
     FVector dist = GetActorLocation() - cppHookLocation;
     float dot = FVector::DotProduct(GetVelocity(), dist);
     dist.Normalize();
-    GetCharacterMovement()->AddForce(dist * dot * -2.f);
+    //GetCharacterMovement()->AddForce(dist * dot * -2.f);
     if (!isWithdrawing)
     {
         //cppWire->CableLength = cppHookedWireLength;
@@ -510,14 +518,20 @@ void AWireHunterCharacter::ClimbServer_Implementation()
 
         if (Hit.bBlockingHit)
         {
-            ClimbMulti(true);
-            GetCharacterMovement()->bUseControllerDesiredRotation = false;
-            bUseControllerRotationYaw = false;
+
+            if (HasAuthority())
+            {
+                ClimbMulti(true);
+            }
+            isLockControlRot = true;
+            //GetCharacterMovement()->bUseControllerDesiredRotation = false;
+            //bUseControllerRotationYaw = false;
             BreakHookServer();
             GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 
             temp->Velocity = FVector(0.f, 0.f, 0.f);
             
+            repIsClimbing_trigger = true;
         }
     }
     else
@@ -526,9 +540,14 @@ void AWireHunterCharacter::ClimbServer_Implementation()
         GetCharacterMovement()->bUseControllerDesiredRotation = true;
         bUseControllerRotationYaw = true;
 
-        temp->AddForce(cppWallNormal * 4000000);////////////////////////////////////
-
+        if (GetLocalRole() == ROLE_Authority)
+        {
+            GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("Backed")));
+            repClimbBreak_trigger = true;
+        }
         temp->SetMovementMode(MOVE_Walking);
+
+        repIsClimbing_trigger = true;
     }
 }
 
@@ -589,8 +608,8 @@ void AWireHunterCharacter::LedgeTraceServer_Implementation()//이거 곡선?
     FHitResult Hit;
 
     const float ClimbRange = 1000.f;
-    const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 100.f);
-    const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 100.f);
+    const FVector StartTrace = (GetActorLocation() - (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange / 10.f)) + FVector(0.f, 0.f, 110.f);
+    const FVector EndTrace = (GetActorLocation() + (UKismetMathLibrary::GetForwardVector(FRotator(0.f, GetActorRotation().Yaw, 0.f)) * ClimbRange)) + FVector(0.f, 0.f, 110.f);
     FCollisionQueryParams QueryParams = FCollisionQueryParams(SCENE_QUERY_STAT(WireTrace), false, this);
     QueryParams.AddIgnoredActor(this);
     GetWorld()->LineTraceSingleByChannel(Hit, StartTrace, EndTrace, ECC_Visibility, QueryParams);
@@ -658,7 +677,7 @@ void AWireHunterCharacter::MoveForward(float Value)
 
     if (isClimbing)
     {
-        InMoveForward(Value);
+        InMoveForward_Implementation(Value);
     }
 }
 
@@ -692,7 +711,7 @@ void AWireHunterCharacter::MoveRight(float Value)
 
     if (isClimbing)
     {
-        InMoveRight(Value);
+        InMoveRight_Implementation(Value);
     }
 }
 

@@ -139,14 +139,41 @@ protected:
     FTimerHandle TimerHandle_YellowAura;
     FTimerHandle TimerHandle_RedAura;
 
-    UPROPERTY(Replicated)
+    UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly)
         bool isEnd;
 
-    UPROPERTY(Replicated)
+    UPROPERTY(Replicated, BlueprintReadWrite, EditDefaultsOnly)
         bool isEnd2;
 
     UPROPERTY(Replicated)
         bool isBossWireSwing;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool repIsClimbing_trigger = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool repIsWithdrawing_trigger = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool isWireSwing_Rep = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool isBossWireSwing_Rep = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool isLockControlRot = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool isUnlockControlRot = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool repClimbBreak_trigger = false;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool repIsClimbingForward;
+
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool repIsClimbingRight;
 
     ADragon* LinkedBoss;
 
@@ -239,12 +266,12 @@ public:
 
     void MoveForward(float Value);//
 
-    UFUNCTION(Server, Reliable)
+    UFUNCTION(NetMulticast, Reliable)
         void InMoveForward(float value);//
 
     void MoveRight(float Value);//
 
-    UFUNCTION(Server, Reliable)
+    UFUNCTION(NetMulticast, Reliable)
         void InMoveRight(float value);//
 
     UFUNCTION(Server, Reliable, BlueprintCallable)
