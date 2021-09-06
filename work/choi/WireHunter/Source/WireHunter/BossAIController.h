@@ -30,6 +30,8 @@ private:
 
 	class UBlackboardComponent* BB;
 
+	bool canReady;
+
 protected:
 
 	virtual void Tick(float DeltaSeconds) override;

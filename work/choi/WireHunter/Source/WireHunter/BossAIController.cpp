@@ -17,30 +17,38 @@ ABossAIController::ABossAIController()
 	if (BTObject.Succeeded()) {
 		BTAsset = BTObject.Object;
 	}
+
+	canReady = false;
 }
 
 void ABossAIController::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
 
-	RunBehaviorTree(BTAsset);
-
 	Dragon = Cast<ADragon>(InPawn);
 
 	BB = GetBlackboardComponent();
+
+	RunBehaviorTree(BTAsset);
+
+	canReady = true;
 }
 
 void ABossAIController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-	if (BB->GetValueAsBool("SetBreath"))
+	if (canReady)
 	{
-		Dragon->BreathOnMulti();
-	}
 
-	if (!(BB->GetValueAsBool("SetBreath")))
-	{
-		Dragon->BreathOffMulti();
+		if (BB->GetValueAsBool("SetBreath"))
+		{
+			Dragon->BreathOnMulti();
+		}
+
+		if (!(BB->GetValueAsBool("SetBreath")))
+		{
+			Dragon->BreathOffMulti();
+		}
 	}
 }
