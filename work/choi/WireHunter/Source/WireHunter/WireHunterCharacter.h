@@ -56,6 +56,9 @@ class AWireHunterCharacter : public ACharacter
         class UNiagaraSystem* MuzzleSmokeParticle;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+        class UNiagaraSystem* BossBloodParticle;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
         class UWidgetComponent* HealthWidget;
 
 public:
@@ -289,6 +292,9 @@ public:
     UFUNCTION(NetMulticast, Reliable)
         void GenParticles2(UWorld* world);
 
+    UFUNCTION(NetMulticast, Reliable)
+        void GenBloodParticle(FHitResult Hit, UWorld* world);
+
     UFUNCTION(Server, Reliable)
         void Reload();
 
@@ -299,7 +305,7 @@ public:
         void PlayBackRollAnim();
 
     UFUNCTION(NetMulticast, Reliable)
-    void GhostTrail();
+        void GhostTrail();
 
     UFUNCTION(BlueprintCallable)
         float GetBullets() const { return Bullets; }

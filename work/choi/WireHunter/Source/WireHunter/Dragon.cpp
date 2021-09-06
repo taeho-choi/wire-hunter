@@ -13,6 +13,7 @@
 #include "NiagaraSystem.h"
 #include "NiagaraComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "Particles/ParticleSystemComponent.h"
 
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -32,16 +33,40 @@ ADragon::ADragon()
 	bReplicates = true;
 
 	NotPrecious = false;
+	FirstBreathTrigger = false;
+	SecondBreathTrigger = false;
+	MeteorTrigger = false;
+	Flare = false;
 
 	ProjectileClass = AFireball::StaticClass();
 
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
+	FlameParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("agari"));
+	FlameParticle->SetupAttachment(GetMesh());
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> BreathParticleAsset(TEXT("ParticleSystem'/Game/Automatic_FlameThrower_Turret/Particles/P_flame.P_flame'"));
+	if (BreathParticleAsset.Succeeded())
+	{
+		FlameParticle->Template = BreathParticleAsset.Object;
+	}
+	FlameParticle->SetWorldScale3D(FVector(1.f, 1.f, 1.f));
+	FlameParticle->SetRelativeRotation(FRotator(0.f, 90.f, 0.f));
+	FlameParticle->SetRelativeLocation(FVector(0.f, 380.f, 20.f));
+	FlameParticle->Deactivate();
+
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood_2.NS_Blood_2'"));
 	UNiagaraSystem* NS_BloodParticleAsset = BloodParticleAsset.Object;
 	BloodParticle = NS_BloodParticleAsset;
+}
 
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BreathParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/WeaponPack/MuzzleFlashPack/Particles/NS_FlameThrower.NS_FlameThrower'"));
-	UNiagaraSystem* NS_BreathParticleAsset = BreathParticleAsset.Object;
-	BreathParticle = NS_BreathParticleAsset;
+void ADragon::BreathOnMulti_Implementation()
+{
+	FlameParticle->Activate();
+	Flare = true;
+}
+
+void ADragon::BreathOffMulti_Implementation()
+{
+	FlameParticle->Deactivate();
+	Flare = false;
 }
 
 void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
@@ -49,6 +74,12 @@ void ADragon::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetim
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ADragon, Health);
+
+	DOREPLIFETIME(ADragon, FirstBreathTrigger);
+	DOREPLIFETIME(ADragon, SecondBreathTrigger);
+	DOREPLIFETIME(ADragon, MeteorTrigger);
+
+	DOREPLIFETIME(ADragon, Flare);
 }
 
 void ADragon::MakeMap()
@@ -396,15 +427,6 @@ FVector ADragon::GetPath()////////////////////////////////////////////////////
 void ADragon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if (Health < 0)
-	{
-		if (GetMesh()->GetComponentLocation().Z < -4000.f)
-		{
-			Destroy();
-			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
-		}
-	}
 }
 
 // Called to bind functionality to input
@@ -413,7 +435,7 @@ void ADragon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void ADragon::Spawn_Implementation()
+void ADragon::Spawn()
 {
 	int randIdx = rand() % 40 + 1;
 	FVector targetLocation = Obstacles[randIdx] + FVector(0.f, 0.f, 15000.f);
@@ -440,46 +462,14 @@ void ADragon::Spawn_Implementation()
 	//spwanedProjectile->ProjectileMovementComponent->AddForce(outVelocity); // objectToSend는 발사체
 }
 
-void ADragon::DetectKickServer_Implementation()
+void ADragon::BreathMulti_Implementation()
 {
-	FHitResult hit;
-
-	const float range = 500.f;
-	FVector startTrace = GetCapsuleComponent()->GetComponentLocation() - FVector(0.f, 0.f, 400.f);
-	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
-
-	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(KickTrace), false, this);
-	queryParams.AddIgnoredActor(this);
-	GetWorld()->LineTraceSingleByChannel(hit, startTrace, endTrace, ECC_Visibility, queryParams);
-	DrawDebugLine(GetWorld(), hit.TraceStart, hit.TraceEnd, FColor::Red, false, 100.f, 0, 1.f);
-
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
-
-	if (hit.bBlockingHit)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "hit");
-
-		if (hit.Actor->IsA(AWireHunterCharacter::StaticClass()))
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "HP");
-
-			AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(hit.Actor);
-			TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
-			TargetCharacter->KnockbackServer();
-
-			FString temp = FString::SanitizeFloat(TargetCharacter->GetHealth());
-		}
-	}
+	//UGameplayStatics::SpawnEmitterAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 250.f), GetActorRotation(), true, EPSCPoolMethod::AutoRelease);
 }
 
-bool ADragon::DetectKickServer_Validate()
+void ADragon::GenDeathParticleMulti_Implementation()
 {
-	return true;
- }
-
-void ADragon::Breath()
-{
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BreathParticle, GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f), GetActorRotation());
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, BloodParticle, GetActorLocation(), GetActorRotation(), FVector(100.f, 100.f, 100.f));
 }
 
 void ADragon::BreathTrace()
@@ -487,7 +477,7 @@ void ADragon::BreathTrace()
 	TArray<FHitResult> hits;
 
 	const float range = 3000.f;
-	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2000 + FVector(0.f, 0.f, 200.f);
+	FVector startTrace = GetActorLocation() + GetActorForwardVector() * 2500 + FVector(0.f, 0.f, 300.f);
 	FVector endTrace = (GetCapsuleComponent()->GetForwardVector() * range) + startTrace;
 
 	FCollisionQueryParams queryParams = FCollisionQueryParams(SCENE_QUERY_STAT(BreathTrace), false, this);
@@ -502,14 +492,103 @@ void ADragon::BreathTrace()
 			if (e.Actor->IsA(AWireHunterCharacter::StaticClass()))
 			{
 				AWireHunterCharacter* TargetCharacter = Cast<AWireHunterCharacter>(e.Actor);
-				TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 5.f);
+				TargetCharacter->SetHealth(TargetCharacter->GetHealth() - 0.2f);
 			}
 		}
 	}
 }
 
-void ADragon::Test()
+bool ADragon::GetFirstBreathTrigger()
 {
-	GetWorldTimerManager().SetTimer(TimerHandle_BreathTracing, this, &ADragon::BreathTrace, 0.5f, true, 0.f);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "call");
+	return FirstBreathTrigger;
+}
+
+void ADragon::SetFirstBreathTrigger(bool b)
+{
+	FirstBreathTrigger = b;
+}
+
+bool ADragon::GetSecondBreathTrigger()
+{
+	return SecondBreathTrigger;
+}
+
+void ADragon::SetSecondBreathTrigger(bool b)
+{
+	SecondBreathTrigger = b;
+}
+
+bool ADragon::GetMeteorTrigger()
+{
+	return MeteorTrigger;
+}
+
+void ADragon::SetMeteorTrigger(bool b)
+{
+	MeteorTrigger = b;
+}
+
+void ADragon::SetHealth(float value)
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		Health = value;
+		OnHealthUpdate();
+	}
+}
+
+void ADragon::OnRep_Health()
+{
+	OnHealthUpdate();
+}
+
+void ADragon::OnHealthUpdate()
+{
+	//Client-specific functionality
+	/*if (IsLocallyControlled())
+	{
+		FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
+
+		if (Health <= 0)
+		{
+			Destroy();
+		}
+	}*/
+
+	//Server-specific functionality
+	if (Health <= 0)
+	{
+		if (HasAuthority())
+		{
+			Death();
+		}
+	}
+
+	//Functions that occur on all machines. 
+	/*
+	   Any special functionality that should occur as a result of damage or death should be placed here.
+	*/
+}
+
+void ADragon::Death()
+{
+	GenDeathParticleMulti();
+	Destroy();
+	FTimerHandle WaitHandle;
+	float WaitTime = 4.f;
+	GetWorld()->GetTimerManager().SetTimer(WaitHandle, FTimerDelegate::CreateLambda([&]()
+		{
+			UGameplayStatics::OpenLevel(this, "GameMenuLevel");
+		}), WaitTime, false); 
+}
+
+bool ADragon::GetFlare()
+{
+	return Flare;
+}
+
+void ADragon::SetFlare(bool b)
+{
+	Flare = b;
 }

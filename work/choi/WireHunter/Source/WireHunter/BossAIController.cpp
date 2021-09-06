@@ -3,6 +3,8 @@
 #include "BossAIController.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardData.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "Dragon.h"
 
 ABossAIController::ABossAIController()
 {
@@ -22,4 +24,23 @@ void ABossAIController::OnPossess(APawn* InPawn)
 	Super::OnPossess(InPawn);
 
 	RunBehaviorTree(BTAsset);
+
+	Dragon = Cast<ADragon>(InPawn);
+
+	BB = GetBlackboardComponent();
+}
+
+void ABossAIController::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+	if (BB->GetValueAsBool("SetBreath"))
+	{
+		Dragon->BreathOnMulti();
+	}
+
+	if (!(BB->GetValueAsBool("SetBreath")))
+	{
+		Dragon->BreathOffMulti();
+	}
 }

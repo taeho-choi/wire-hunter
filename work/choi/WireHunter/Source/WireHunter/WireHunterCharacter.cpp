@@ -137,6 +137,10 @@ AWireHunterCharacter::AWireHunterCharacter()
     UNiagaraSystem* NS_MuzzleSmokeFlash = MuzzleSmokeParticleAsset.Object;
     MuzzleSmokeParticle = NS_MuzzleSmokeFlash;
 
+    static ConstructorHelpers::FObjectFinder<UNiagaraSystem> BossBloodParticleAsset(TEXT("NiagaraSystem'/Game/ThirdPersonCPP/AI/GunImpactParticles/Particles/Blood/NS_Blood.NS_Blood'"));
+    UNiagaraSystem* NS_BossBloodParticle = BossBloodParticleAsset.Object;
+    BossBloodParticle = NS_BossBloodParticle;
+
     YellowAuraEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("YellowAuraEffect"));
     YellowAuraEffect->SetupAttachment(this->GetRootComponent());
 
@@ -257,7 +261,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
             }
         }
     }
-
 }
 
 void AWireHunterCharacter::GhostTrail_Implementation()
@@ -309,10 +312,7 @@ void AWireHunterCharacter::SetPointLight_Implementation()
             WirePointLight->AttenuationRadius = 30.f;
         }
 
-        if (Hit.Actor->GetName() != FString(TEXT("Boss_1")))
-        {
-            WirePointLight->SetWorldLocation(Hit.Location + Hit.Normal * 15);
-        }
+        WirePointLight->SetWorldLocation(Hit.Location + Hit.Normal * 15);
     }
     else
     {
@@ -838,9 +838,11 @@ void AWireHunterCharacter::FireShot_Implementation()
                 {
                     damage *= 4;
                 }
-                TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
-
-                UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, TargetBoss->GetBloodParticle(), Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+                if (HasAuthority())
+                {
+                    TargetBoss->SetHealth(TargetBoss->GetHealth() - damage);
+                }
+                GenBloodParticle(Hit, world);
             }
             else
             {
@@ -863,6 +865,11 @@ void AWireHunterCharacter::GenParticles2_Implementation(UWorld* world)
 {
     UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
     UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, MuzzleSmokeParticle, Gun->GetSocketTransform(FName("muzzle_socket")).GetLocation(), Gun->GetSocketTransform(FName("muzzle_socket")).Rotator());
+}
+
+void AWireHunterCharacter::GenBloodParticle_Implementation(FHitResult Hit, UWorld* world)
+{
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(world, BossBloodParticle, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
 }
 
 void AWireHunterCharacter::Reload_Implementation()
@@ -898,8 +905,6 @@ void AWireHunterCharacter::OnHealthUpdate()
     {
         FString healthMessage = FString::Printf(TEXT("You now have %f health remaining."), Health);
         GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, healthMessage);
-
-
 
         if (Health <= 0)
         {

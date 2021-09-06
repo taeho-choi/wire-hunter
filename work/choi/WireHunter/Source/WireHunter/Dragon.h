@@ -23,10 +23,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(Replicated, VisibleInstanceOnly, Category = "Status")
+	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleInstanceOnly, Category = "Status")
 		float Health;
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Status")
-		float MaxHealth = 1000;
+		float MaxHealth = 100;
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 		TArray<FString> BoneList = 
@@ -42,12 +42,25 @@ protected:
 	class UNiagaraSystem* BloodParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
-	class UNiagaraSystem* BreathParticle;
+	class UParticleSystem* BreathParticle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay, meta = (AllowPrivateAccess = "true"))
+	class UParticleSystemComponent* FlameParticle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
-		class UAnimMontage* TestAnim;
+	class UAnimMontage* BreathAnim;
 
-	FTimerHandle TimerHandle_BreathTracing;
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool FirstBreathTrigger;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool SecondBreathTrigger;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool MeteorTrigger;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = animation, meta = (AllowPrivateAccess = "true"))
+	bool Flare;
 
 private:
 	char Map[10][10];
@@ -115,20 +128,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FVector GetPath();
 
-	UFUNCTION(BlueprintCallable, Server, Reliable, WithValidation)
-	void DetectKickServer();
-	void DetectKickServer_Implementation();
-	bool DetectKickServer_Validate();
-
 	UFUNCTION(BlueprintCallable)
 	float GetHealth() const { return Health; }
 
-	void SetHealth(float value) { 
-		if (GetLocalRole() == ROLE_Authority)
-		{
-			Health = value;
-		}
-	}
+	void SetHealth(float value);
 
 	UFUNCTION(BlueprintCallable)
 	float GetMaxHealth() const { return MaxHealth; }
@@ -137,17 +140,54 @@ public:
 
 	void SetMaxHealth(float value) { MaxHealth = value; }
 
-	UFUNCTION(BlueprintCallable, Server, Reliable)
+	//UFUNCTION(BlueprintCallable, Server, Reliable)
+	UFUNCTION(BlueprintCallable)
 	void Spawn();
 
-	UNiagaraSystem* GetBloodParticle() const { return BloodParticle; }
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void BreathMulti();
 
-	UFUNCTION(BlueprintCallable)
-	void Breath();
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void GenDeathParticleMulti();
 
 	UFUNCTION(BlueprintCallable)
 	void BreathTrace();
 
 	UFUNCTION(BlueprintCallable)
-	void Test();
+	bool GetFirstBreathTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetFirstBreathTrigger(bool b);
+
+	UFUNCTION(BlueprintCallable)
+	bool GetSecondBreathTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetSecondBreathTrigger(bool b);
+
+	UFUNCTION(BlueprintCallable)
+	bool GetMeteorTrigger();
+
+	UFUNCTION(BlueprintCallable)
+	void SetMeteorTrigger(bool b);
+
+	UFUNCTION()
+	void OnRep_Health();
+
+	void OnHealthUpdate();
+
+	UFUNCTION(BlueprintCallable)
+	void Death();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void BreathOnMulti();
+
+	UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
+	void BreathOffMulti();
+
+	UFUNCTION(BlueprintCallable)
+	bool GetFlare();
+
+	UFUNCTION(BlueprintCallable)
+	void SetFlare(bool b);
 };
