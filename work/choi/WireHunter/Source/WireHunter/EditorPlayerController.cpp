@@ -2,18 +2,9 @@
 
 #include "EditorPlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
-//#include "Components/SceneComponent.h"
-//#include <algorithm>
-#include "Rendering/SkeletalMeshRenderData.h"
-
-//BoneNode AEditorPlayerController::MakeBoneNode(FString boneName, FVector location)
-//{
-//
-//}
 
 AEditorPlayerController::AEditorPlayerController()
 {
-	//BoneTree[0].Push(BoneNode(FString("pelvis"), FVector(0.f, 0.f, 0.f)));
 	PhysicsHandle = CreateDefaultSubobject<UPhysicsHandleComponent>(TEXT("PhysicsHandle"));
 }
 
@@ -23,7 +14,6 @@ void AEditorPlayerController::OnPossess(APawn* InPawn)
 
 	bShowMouseCursor = true;
 	bEnableClickEvents = true;
-	//DefaultMouseCursor = EMouseCursor::GrabHand;
 	DefaultClickTraceChannel = ECollisionChannel::ECC_Visibility;
 	HitResultTraceDistance = 10000.f;
 
@@ -77,18 +67,6 @@ void AEditorPlayerController::Click()
 			PrevBoneTransforms.Push(AvatarHandle[0]->GetBoneTransformByName(BoneName, EBoneSpaces::WorldSpace));
 			PrevBoneNames.Push(BoneName);
 			PrevGrabbedComps.Push(GrabbedComp);
-
-			//FSkeletalMeshRenderData* renderData = AvatarHandle[0]->GetSkeletalMeshRenderData();
-			//FSkeletalMeshLODRenderData
-
-			//for (int32 LODIndex = 0; LODIndex < renderData->LODRenderData.Num(); ++LODIndex)
-			//{
-			//	for (uint32 Index = 0; Index < renderData->LODRenderData[LODIndex].SkinWeightVertexBuffer.GetNumVertices(); ++Index)
-			//	{
-			//		//GetBoneWeight;
-			//		renderData->LODRenderData[LODIndex].SkinWeightVertexBuffer.ResetVertexBoneWeights(Index);
-			//	}
-			//}
 		}
 
 		if (GrabbedComp->IsSimulatingPhysics()) {

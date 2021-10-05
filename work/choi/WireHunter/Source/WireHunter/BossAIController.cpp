@@ -41,7 +41,7 @@ void ABossAIController::Tick(float DeltaTime)
 	if (canReady)
 	{
 
-		if (BB->GetValueAsBool("SetBreath"))
+		/*if (BB->GetValueAsBool("SetBreath"))
 		{
 			Dragon->BreathOnMulti();
 		}
@@ -49,6 +49,6 @@ void ABossAIController::Tick(float DeltaTime)
 		if (!(BB->GetValueAsBool("SetBreath")))
 		{
 			Dragon->BreathOffMulti();
-		}
+		}*/
 	}
 }

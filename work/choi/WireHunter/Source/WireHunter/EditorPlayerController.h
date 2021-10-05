@@ -6,12 +6,8 @@
 #include "GameFramework/PlayerController.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"//Àü¹æ
 #include "Components/PoseableMeshComponent.h"
-//#include <vector>
-#include "EditorPlayerController.generated.h"
 
-/**
- *Bone Controller For Posing
- */
+#include "EditorPlayerController.generated.h"
 
 UCLASS()
 class AEditorPlayerController : public APlayerController
