@@ -17,6 +17,18 @@ AManequinn::AManequinn()
 	if (SKSK.Succeeded()) {
 		SK->SetSkeletalMesh(SKSK.Object);
 	}
+
+	HeadLoc = FVector(0.f, 0.f, 0.f);
+	RHandLoc = FVector(0.f, 0.f, 0.f);
+	LHandLoc = FVector(0.f, 0.f, 0.f);
+	RFootLoc = FVector(0.f, 0.f, 0.f);
+	LFootLoc = FVector(0.f, 0.f, 0.f);
+
+	HeadRot = FRotator(0.f, 0.f, 0.f);
+	RHandRot = FRotator(0.f, 0.f, 0.f);
+	LHandRot = FRotator(0.f, 0.f, 0.f);
+	RFootRot = FRotator(0.f, 0.f, 0.f);
+	LFootRot = FRotator(0.f, 0.f, 0.f);
 }
 
 // Called when the game starts or when spawned
