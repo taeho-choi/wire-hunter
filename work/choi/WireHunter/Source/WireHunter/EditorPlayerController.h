@@ -34,7 +34,7 @@ public:
 
 	void Release();
 
-	void AddYaw();
+	/*void AddYaw();
 
 	void AddRoll();
 
@@ -48,7 +48,7 @@ public:
 
 	void Undo();
 
-	BoneNode MakeBoneNode(FString boneName, FVector location);
+	BoneNode MakeBoneNode(FString boneName, FVector location);*/
 
 protected:
 	virtual void SetupInputComponent() override;
@@ -72,9 +72,10 @@ private:
 
 	TArray<UPoseableMeshComponent*> AvatarHandle;
 
-	TSet<FString> Bones = { FString("neck_01"), FString("spine_03"), FString("spine_02"), FString("spine_01"), FString("pelvis"),
-	FString("thigh_r"), FString("thigh_l"), FString("calf_r"), FString("calf_l"), FString("foot_r"), FString("foot_l"),
-	FString("upperarm_r"), FString("upperarm_l"), FString("lowerarm_r"), FString("lowerarm_l"), FString("hand_r"), FString("hand_l") };
+	TSet<FString> Bones = { 
+	FString("Bip001-Spine1"), FString("Bip001-Head"), FString("Bip001-L-Thigh"), FString("Bip001-R-Thigh"), FString("Bip001-L-Calf"),
+	FString("Bip001-R-Calf"), FString("Bip001-L-UpperArm"), FString("Bip001-R-UpperArm"), FString("Bip001-L-Forearm"), FString("Bip001-R-Forearm"),
+	};
 
 	float RotVal = 2.f;
 
