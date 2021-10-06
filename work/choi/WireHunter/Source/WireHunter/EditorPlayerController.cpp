@@ -20,7 +20,7 @@ void AEditorPlayerController::OnPossess(APawn* InPawn)
 
 	GrabMode = false;
 
-	ConsoleCommand("ShowFlag.Bones 1");
+	ConsoleCommand("ShowFlag.Bones 2");
 }
 
 void AEditorPlayerController::SetupInputComponent()

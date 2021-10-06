@@ -19,9 +19,9 @@ AManequinn::AManequinn()
 	}
 
 	float x, y, z;
-	x = 0.f;
-	y = 0.f;
-	z = 0.f;
+	x = 1000.f;
+	y = 1000.f;
+	z = 1000.f;
 
 	HeadLoc = FVector(x, y, z);
 	RHandLoc = FVector(x, y, z);

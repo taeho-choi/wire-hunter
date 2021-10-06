@@ -357,4 +357,40 @@ public:
     void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
     bool GetHookStart() { return HookStart; }
+
+    UFUNCTION(BlueprintCallable)
+    void SetHeadLoc(FVector newLoc);
+
+    UFUNCTION(BlueprintCallable)
+    void SetRHandLoc(FVector newLoc);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetLHandLoc(FVector newLoc);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetRFootLoc(FVector newLoc);
+
+    UFUNCTION(BlueprintCallable)
+    void SetLFootLoc(FVector newLoc);
+
+    FVector HeadLoc;
+    FVector RHandLoc;
+    FVector LHandLoc;
+    FVector RFootLoc;
+    FVector LFootLoc;
+
+    UFUNCTION(BlueprintCallable)
+    FVector GetHeadLoc();
+
+    UFUNCTION(BlueprintCallable)
+    FVector GetRHandLoc();
+
+    UFUNCTION(BlueprintCallable)
+    FVector GetLHandLoc();
+
+    UFUNCTION(BlueprintCallable)
+    FVector GetRFootLoc();
+
+    UFUNCTION(BlueprintCallable)
+    FVector GetLFootLoc();
 };

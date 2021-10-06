@@ -42,6 +42,7 @@ AWireHunterCharacter::AWireHunterCharacter()
     cppHooked = false;
     isEnd = false;
     isEnd2 = false;
+    HookStart = false;
 
     // Set size for collision capsule
     GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -217,7 +218,6 @@ void AWireHunterCharacter::Tick(float DeltaTime)
     if (isEnd)
     {
         OffWithdrawServer();
-        HookStart = false;
     }
 
     if (cppHooked)
@@ -466,6 +466,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
 {
     isWithdrawing = false;
     cppHooked = false;
+    HookStart = false;
     GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 
     cppWire->CableLength = 0.f;
@@ -972,4 +973,56 @@ void AWireHunterCharacter::SetRedAuraOn()
 {
     RedAuraEffect->SetVisibility(true);
     GetWorldTimerManager().SetTimer(TimerHandle_RedAura, this, &AWireHunterCharacter::SetRedAuraOff, 5.f, false, 20.f);
+}
+
+void AWireHunterCharacter::SetHeadLoc(FVector newLoc)
+{
+    HeadLoc = newLoc;
+}
+
+void AWireHunterCharacter::SetRHandLoc(FVector newLoc)
+{
+    RHandLoc = newLoc;
+}
+
+void AWireHunterCharacter::SetLHandLoc(FVector newLoc)
+{
+    LHandLoc = newLoc;
+}
+
+void AWireHunterCharacter::SetRFootLoc(FVector newLoc)
+{
+    RFootLoc = newLoc;
+}
+
+void AWireHunterCharacter::SetLFootLoc(FVector newLoc)
+{
+    LFootLoc = newLoc;
+}
+
+
+
+FVector AWireHunterCharacter::GetHeadLoc()
+{
+    return HeadLoc;
+}
+
+FVector AWireHunterCharacter::GetRHandLoc()
+{
+    return RHandLoc;
+}
+
+FVector AWireHunterCharacter::GetLHandLoc()
+{
+    return LHandLoc;
+}
+
+FVector AWireHunterCharacter::GetRFootLoc()
+{
+    return RFootLoc;
+}
+
+FVector AWireHunterCharacter::GetLFootLoc()
+{
+    return LFootLoc;
 }

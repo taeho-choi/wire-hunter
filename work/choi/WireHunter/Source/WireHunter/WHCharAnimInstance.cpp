@@ -2,6 +2,7 @@
 
 #include "WHCharAnimInstance.h"
 #include "WireHunterCharacter.h"
+#include "Manequinn.h"
 
 UWHCharAnimInstance::UWHCharAnimInstance()
 {
@@ -17,5 +18,11 @@ void UWHCharAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		auto Char = Cast<AWireHunterCharacter>(Pawn);
 
 		HookStart = Char->GetHookStart();
+
+		HeadLoc = Char->GetHeadLoc();
+		RHandLoc = Char->GetRHandLoc();
+		LHandLoc = Char->GetLHandLoc();
+		RFootLoc = Char->GetRFootLoc();
+		LFootLoc = Char->GetLFootLoc();
 	}
 }
