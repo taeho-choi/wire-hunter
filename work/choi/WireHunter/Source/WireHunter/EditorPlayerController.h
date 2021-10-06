@@ -70,11 +70,12 @@ private:
 
 	FVector NewLocation;
 
+	class AManequinn* GrabbedActor;
+
 	TArray<UPoseableMeshComponent*> AvatarHandle;
 
 	TSet<FString> Bones = { 
-	FString("Bip001-Spine1"), FString("Bip001-Head"), FString("Bip001-L-Thigh"), FString("Bip001-R-Thigh"), FString("Bip001-L-Calf"),
-	FString("Bip001-R-Calf"), FString("Bip001-L-UpperArm"), FString("Bip001-R-UpperArm"), FString("Bip001-L-Forearm"), FString("Bip001-R-Forearm"),
+	FString("Bip001-Head"), FString("Bip001-R-Hand"), FString("Bip001-L-Hand"), FString("Bip001-R-Foot"), FString("Bip001-L-Foot"),
 	};
 
 	float RotVal = 2.f;

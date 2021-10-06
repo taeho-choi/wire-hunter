@@ -2,6 +2,7 @@
 
 #include "EditorPlayerController.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Manequinn.h"
 
 AEditorPlayerController::AEditorPlayerController()
 {
@@ -53,11 +54,14 @@ void AEditorPlayerController::Click()
 
 		BoneName = Hit.BoneName;
 
+		if (Hit.Actor->IsA(AManequinn::StaticClass()))
+		{
+			GrabbedActor = Cast<AManequinn>(Hit.Actor);
+		}
+
 		//BoneName = FName(Hit.GetActor()->GetName());
 
 		//Hit.GetActor()->GetParentActor()->GetComponents(AvatarHandle);//poseableMesh ref
-
-		UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
 
 		//if (Bones.Contains(*BoneName.ToString())) {
 		//	GrabbedComp->SetWorldLocation(AvatarHandle[0]->GetBoneLocationByName(BoneName, EBoneSpaces::WorldSpace));//to Sync
@@ -96,9 +100,16 @@ void AEditorPlayerController::Tick(float DeltaTime)
 		else {
 			NewLocation = UKismetMathLibrary::InverseTransformLocation(FTransform(TempT), TempLocation);
 
-			//AvatarHandle[0]->SetBoneLocationByName(BoneName, NewLocation, EBoneSpaces::WorldSpace);
-		
-			GrabbedComp->SetWorldLocation(NewLocation, false, false);
+			if (Bones.Contains(*BoneName.ToString())) {
+				//AvatarHandle[0]->SetBoneLocationByName(BoneName, NewLocation, EBoneSpaces::WorldSpace);
+
+				//GrabbedActor->SetBoneLoc(BoneName, NewLocation);
+
+				UE_LOG(LogTemp, Warning, TEXT("Bone: %s"), *BoneName.ToString());
+			}
+			else {
+				GrabbedComp->SetWorldLocation(NewLocation, false, false);
+			}
 		}
 	}
 }

@@ -24,7 +24,6 @@
 #include "Components/SceneComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
-#include "Dragon.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
 #include "NiagaraFunctionLibrary.h"

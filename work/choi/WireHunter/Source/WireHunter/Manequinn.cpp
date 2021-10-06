@@ -152,3 +152,26 @@ void AManequinn::SetLFootRot(FRotator newRot)
 {
 	LFootRot = newRot;
 }
+
+void AManequinn::SetBoneLoc(FName boneName, FVector newLoc)
+{
+	if (boneName == FName("Bip001-Head")){
+		HeadLoc = newLoc;
+	}
+
+	if (boneName == FName("Bip001-R-Hand")) {
+		RHandLoc = newLoc;
+	}
+
+	if (boneName == FName("Bip001-L-Hand")) {
+		LHandLoc = newLoc;
+	}
+
+	if (boneName == FName("Bip001-R-Foot")) {
+		RFootLoc = newLoc;
+	}
+
+	if (boneName == FName("Bip001-L-Foot")) {
+		LFootLoc = newLoc;
+	}
+}

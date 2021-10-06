@@ -106,6 +106,9 @@ public:
 	/// </summary>
 
 	UFUNCTION(BlueprintCallable)
+		void SetBoneLoc(FName boneName, FVector newLoc);
+
+	UFUNCTION(BlueprintCallable)
 		void SetHeadLoc(FVector newLoc);
 
 	UFUNCTION(BlueprintCallable)
