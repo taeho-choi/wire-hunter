@@ -217,6 +217,7 @@ void AWireHunterCharacter::Tick(float DeltaTime)
     if (isEnd)
     {
         OffWithdrawServer();
+        HookStart = false;
     }
 
     if (cppHooked)
@@ -385,6 +386,7 @@ void AWireHunterCharacter::HookWireServer_Implementation()
                 //GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -100000000.f)); 
             }
         }
+        HookStart = true;
     }
 }
 

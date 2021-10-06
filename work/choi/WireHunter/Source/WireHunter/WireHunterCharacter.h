@@ -178,6 +178,9 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
         bool repIsClimbingRight;
 
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool HookStart;
+
     ADragon* LinkedBoss;
 
 public:
