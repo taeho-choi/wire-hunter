@@ -18,11 +18,16 @@ AManequinn::AManequinn()
 		SK->SetSkeletalMesh(SKSK.Object);
 	}
 
-	HeadLoc = FVector(0.f, 0.f, 0.f);
-	RHandLoc = FVector(0.f, 0.f, 0.f);
-	LHandLoc = FVector(0.f, 0.f, 0.f);
-	RFootLoc = FVector(0.f, 0.f, 0.f);
-	LFootLoc = FVector(0.f, 0.f, 0.f);
+	float x, y, z;
+	x = 0.f;
+	y = 0.f;
+	z = 0.f;
+
+	HeadLoc = FVector(x, y, z);
+	RHandLoc = FVector(x, y, z);
+	LHandLoc = FVector(x, y, z);
+	RFootLoc = FVector(x, y, z);
+	LFootLoc = FVector(x, y, z);
 
 	HeadRot = FRotator(0.f, 0.f, 0.f);
 	RHandRot = FRotator(0.f, 0.f, 0.f);

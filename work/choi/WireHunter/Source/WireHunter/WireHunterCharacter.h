@@ -355,4 +355,6 @@ public:
     //R
 
     void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+    bool GetHookStart() { return HookStart; }
 };
