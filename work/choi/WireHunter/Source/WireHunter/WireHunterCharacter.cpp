@@ -466,6 +466,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
     isWithdrawing = false;
     cppHooked = false;
     HookStart = false;
+    HookEnd = false;
 
     GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 

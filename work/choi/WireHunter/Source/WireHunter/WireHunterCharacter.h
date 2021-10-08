@@ -181,6 +181,9 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
         bool HookStart;
 
+    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+        bool HookEnd;
+
     ADragon* LinkedBoss;
 
 public:
@@ -357,6 +360,7 @@ public:
     void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
     bool GetHookStart() { return HookStart; }
+    bool GetHookEnd() { return HookEnd; }
 
     UFUNCTION(BlueprintCallable)
     void SetHeadLoc(FVector newLoc);

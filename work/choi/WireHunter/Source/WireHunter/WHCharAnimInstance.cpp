@@ -7,6 +7,7 @@
 UWHCharAnimInstance::UWHCharAnimInstance()
 {
 	HookStart = false;
+	HookEnd = false;
 }
 
 void UWHCharAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -18,6 +19,7 @@ void UWHCharAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		auto Char = Cast<AWireHunterCharacter>(Pawn);
 
 		HookStart = Char->GetHookStart();
+		HookEnd = Char->GetHookEnd();
 
 		HeadLoc = Char->GetHeadLoc();
 		RHandLoc = Char->GetRHandLoc();
