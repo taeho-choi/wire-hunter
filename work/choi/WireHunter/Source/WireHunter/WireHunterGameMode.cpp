@@ -4,7 +4,6 @@
 #include "WireHunterCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "MyPlayerController.h"
-#include "WireHunterCharacter.h"
 
 AWireHunterGameMode::AWireHunterGameMode()
 {

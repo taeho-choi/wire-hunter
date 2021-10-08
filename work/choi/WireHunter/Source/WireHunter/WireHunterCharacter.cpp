@@ -361,7 +361,6 @@ void AWireHunterCharacter::HookWireServer_Implementation()
                 cppWire->SetWorldLocation(cppHookLocation);
                 float NewWireLength = (GetActorLocation() - cppHookLocation).Size() - 300.f;
                 cppHookedWireLength = NewWireLength;
-                
 
                 cppHooked = true;
                 //GetCharacterMovement()->AddForce(FVector(0.f, 0.f, -150000000.f));
@@ -467,6 +466,7 @@ void AWireHunterCharacter::BreakHookServer_Implementation()
     isWithdrawing = false;
     cppHooked = false;
     HookStart = false;
+
     GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
 
     cppWire->CableLength = 0.f;
