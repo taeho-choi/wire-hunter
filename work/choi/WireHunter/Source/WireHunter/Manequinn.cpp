@@ -23,11 +23,11 @@ AManequinn::AManequinn()
 	y = 0.f;
 	z = 0.f;
 
-	HeadLoc = FVector(x, y, z);
-	RHandLoc = FVector(x, y, z);
-	LHandLoc = FVector(x, y, z);
-	RFootLoc = FVector(x, y, z);
-	LFootLoc = FVector(x, y, z);
+	HeadLoc = FVector(x, y, 1000.f);
+	RHandLoc = FVector(-100.f, y, z);
+	LHandLoc = FVector(100.f, y, z);
+	RFootLoc = FVector(-25.f, y, z);
+	LFootLoc = FVector(25.f, y, z);
 
 	HeadRot = FRotator(0.f, 0.f, 0.f);
 	RHandRot = FRotator(0.f, 0.f, 0.f);
