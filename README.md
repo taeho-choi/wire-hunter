@@ -1,3 +1,2 @@
 # wire-hunter
-<iframe width="640" height="360" src="https://youtu.be/HxIvpWWqtGI"  
- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+[![Video Label](http://img.youtube.com/vi/HxIvpWWqtGI/0.jpg)](https://youtu.be/HxIvpWWqtGI?t=0s)
